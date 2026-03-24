@@ -305,7 +305,31 @@
           <span class="meta">Education</span>
         </li>
         <li>
+          <a href="blog/what-is-the-lat-test-11-plus.html">What Is the Language Aptitude Test (LAT) in the 11+?</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
+          <a href="blog/gl-vs-cem-11-plus-exam.html">GL vs CEM: Understanding the Two 11+ Exam Formats</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
+          <a href="blog/verbal-reasoning-tips-11-plus.html">11+ Verbal Reasoning: Tips, Question Types, and How to Practice</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
+          <a href="blog/school-admissions-england-tips.html">School Admissions in England: 10 Things Every Parent Should Know</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
           <a href="blog/stock-research-without-bloomberg.html">How to Research Stocks Without Bloomberg</a>
+          <span class="meta">Finance</span>
+        </li>
+        <li>
+          <a href="blog/how-to-verify-financial-data-sources.html">How to Verify Financial Data Before Making Investment Decisions</a>
+          <span class="meta">Finance</span>
+        </li>
+        <li>
+          <a href="blog/insider-trading-congress-stocks.html">Congress Stock Trading: How to Track What Politicians Are Buying</a>
           <span class="meta">Finance</span>
         </li>
         <li>
@@ -313,7 +337,23 @@
           <span class="meta">Parenting</span>
         </li>
         <li>
+          <a href="blog/getting-rid-of-youtube-kids.html">What Happened When We Replaced YouTube With Creative Apps</a>
+          <span class="meta">Parenting</span>
+        </li>
+        <li>
+          <a href="blog/safe-apps-for-kids-no-ads-privacy.html">The Parent's Guide to Choosing Safe Apps for Kids</a>
+          <span class="meta">Parenting</span>
+        </li>
+        <li>
           <a href="blog/times-tables-tips.html">Best Ways to Learn Times Tables (Backed by Research)</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
+          <a href="blog/year-4-multiplication-tables-check.html">Year 4 Multiplication Tables Check: Everything Parents Need to Know</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
+          <a href="blog/ks2-sats-maths-preparation.html">KS2 SATs Maths: How to Prepare Without the Stress</a>
           <span class="meta">Education</span>
         </li>
       </ul>
@@ -350,23 +390,6 @@
 
   </div>
 
-  <script>
-    function getPreferred() {
-      const saved = localStorage.getItem('theme');
-      if (saved) return saved;
-      return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    }
-    function applyTheme(t) {
-      document.documentElement.setAttribute('data-theme', t);
-      document.querySelector('.theme-toggle').textContent = t === 'dark' ? '☀️' : '🌙';
-    }
-    function toggleTheme() {
-      const current = document.documentElement.getAttribute('data-theme') || getPreferred();
-      const next = current === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', next);
-      applyTheme(next);
-    }
-    applyTheme(getPreferred());
-  </script>
+  <script src="theme.js"></script>
 </body>
 </html>
