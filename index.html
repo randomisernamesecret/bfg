@@ -142,25 +142,25 @@
     .theme-toggle:hover { border-color: var(--accent); }
 
     /* Override system preference when user manually toggles */
-    [data-theme="light"] {
-      --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #888;
-      --surface: #fff; --border: #e5e5e5; --border-hover: #ccc;
-      --badge-bg: #f0f0f0; --badge-border: #ddd;
-      --accent: #ea580c; --heading: #111;
-      --tag-finance-bg: #dbeafe; --tag-finance: #1d4ed8;
-      --tag-edu-bg: #ede9fe; --tag-edu: #7c3aed;
-      --tag-kids-bg: #ffedd5; --tag-kids: #c2410c;
-      --arrow: #bbb; --footer: #999; --footer-link: #777;
+    html[data-theme="light"], html[data-theme="light"] :root {
+      --bg: #fafafa !important; --text: #333 !important; --text-muted: #666 !important; --text-dim: #888 !important;
+      --surface: #fff !important; --border: #e5e5e5 !important; --border-hover: #ccc !important;
+      --badge-bg: #f0f0f0 !important; --badge-border: #ddd !important;
+      --accent: #ea580c !important; --heading: #111 !important;
+      --tag-finance-bg: #dbeafe !important; --tag-finance: #1d4ed8 !important;
+      --tag-edu-bg: #ede9fe !important; --tag-edu: #7c3aed !important;
+      --tag-kids-bg: #ffedd5 !important; --tag-kids: #c2410c !important;
+      --arrow: #bbb !important; --footer: #999 !important; --footer-link: #777 !important;
     }
-    [data-theme="dark"] {
-      --bg: #0a0a0a; --text: #e0e0e0; --text-muted: #888; --text-dim: #666;
-      --surface: #111; --border: #1a1a1a; --border-hover: #333;
-      --badge-bg: #141414; --badge-border: #222;
-      --accent: #f97316; --heading: #fff;
-      --tag-finance-bg: #1e3a5f; --tag-finance: #60a5fa;
-      --tag-edu-bg: #3b1f6e; --tag-edu: #c084fc;
-      --tag-kids-bg: #5c2d0e; --tag-kids: #fb923c;
-      --arrow: #444; --footer: #444; --footer-link: #555;
+    html[data-theme="dark"], html[data-theme="dark"] :root {
+      --bg: #0a0a0a !important; --text: #e0e0e0 !important; --text-muted: #888 !important; --text-dim: #666 !important;
+      --surface: #111 !important; --border: #1a1a1a !important; --border-hover: #333 !important;
+      --badge-bg: #141414 !important; --badge-border: #222 !important;
+      --accent: #f97316 !important; --heading: #fff !important;
+      --tag-finance-bg: #1e3a5f !important; --tag-finance: #60a5fa !important;
+      --tag-edu-bg: #3b1f6e !important; --tag-edu: #c084fc !important;
+      --tag-kids-bg: #5c2d0e !important; --tag-kids: #fb923c !important;
+      --arrow: #444 !important; --footer: #444 !important; --footer-link: #555 !important;
     }
 
     @media (max-width: 600px) {
