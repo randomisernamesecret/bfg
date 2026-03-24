@@ -6,19 +6,19 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #888;
+    --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #595959;
     --surface: #fff; --border: #e5e5e5;
     --accent: #ea580c; --heading: #111;
-    --callout-bg: #f5f5f5; --footer: #999; --footer-link: #777;
+    --callout-bg: #f5f5f5; --footer: #595959; --footer-link: #555;
   }
 }
 
 /* Manual theme override — !important to beat @media queries */
 html[data-theme="light"], html[data-theme="light"] :root {
-  --bg: #fafafa !important; --text: #333 !important; --text-muted: #666 !important; --text-dim: #888 !important;
+  --bg: #fafafa !important; --text: #333 !important; --text-muted: #666 !important; --text-dim: #595959 !important;
   --surface: #fff !important; --border: #e5e5e5 !important;
   --accent: #ea580c !important; --heading: #111 !important;
-  --callout-bg: #f5f5f5 !important; --footer: #999 !important; --footer-link: #777 !important;
+  --callout-bg: #f5f5f5 !important; --footer: #595959 !important; --footer-link: #555 !important;
 }
 html[data-theme="dark"], html[data-theme="dark"] :root {
   --bg: #0a0a0a !important; --text: #d0d0d0 !important; --text-muted: #888 !important; --text-dim: #666 !important;
@@ -30,6 +30,7 @@ html[data-theme="dark"], html[data-theme="dark"] :root {
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
 a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
 header { padding: 24px 0; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
 header a { color: var(--text-muted); font-size: 14px; } header a span { color: var(--accent); font-weight: 700; }
