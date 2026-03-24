@@ -12,13 +12,36 @@
   <meta property="og:url" content="https://bfgapps.co/">
   <link rel="canonical" href="https://bfgapps.co/">
   <style>
+    :root {
+      --bg: #0a0a0a; --text: #e0e0e0; --text-muted: #888; --text-dim: #666;
+      --surface: #111; --border: #1a1a1a; --border-hover: #333;
+      --badge-bg: #141414; --badge-border: #222;
+      --accent: #f97316; --heading: #fff;
+      --tag-finance-bg: #1e3a5f; --tag-finance: #60a5fa;
+      --tag-edu-bg: #3b1f6e; --tag-edu: #c084fc;
+      --tag-kids-bg: #5c2d0e; --tag-kids: #fb923c;
+      --arrow: #444; --footer: #444; --footer-link: #555;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #888;
+        --surface: #fff; --border: #e5e5e5; --border-hover: #ccc;
+        --badge-bg: #f0f0f0; --badge-border: #ddd;
+        --accent: #ea580c; --heading: #111;
+        --tag-finance-bg: #dbeafe; --tag-finance: #1d4ed8;
+        --tag-edu-bg: #ede9fe; --tag-edu: #7c3aed;
+        --tag-kids-bg: #ffedd5; --tag-kids: #c2410c;
+        --arrow: #bbb; --footer: #999; --footer-link: #777;
+      }
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0a0a0a; color: #e0e0e0;
+      background: var(--bg); color: var(--text);
       line-height: 1.6;
     }
-    a { color: #f97316; text-decoration: none; }
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
@@ -26,83 +49,83 @@
     /* Hero */
     .hero {
       text-align: center; padding: 80px 0 60px;
-      border-bottom: 1px solid #1a1a1a;
+      border-bottom: 1px solid var(--border);
     }
-    .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 12px; }
-    .hero h1 span { color: #f97316; }
-    .hero p { font-size: 20px; color: #888; max-width: 500px; margin: 0 auto 32px; }
+    .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 12px; color: var(--heading); }
+    .hero h1 span { color: var(--accent); }
+    .hero p { font-size: 20px; color: var(--text-muted); max-width: 500px; margin: 0 auto 32px; }
     .hero .badges {
       display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
-      font-size: 13px; color: #666;
+      font-size: 13px; color: var(--text-dim);
     }
     .hero .badges span {
-      background: #141414; border: 1px solid #222; border-radius: 20px;
+      background: var(--badge-bg); border: 1px solid var(--badge-border); border-radius: 20px;
       padding: 6px 16px;
     }
 
     /* Apps Grid */
     .apps { padding: 60px 0; }
-    .apps h2 { font-size: 28px; font-weight: 600; margin-bottom: 32px; text-align: center; }
+    .apps h2 { font-size: 28px; font-weight: 600; margin-bottom: 32px; text-align: center; color: var(--heading); }
     .apps-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       gap: 20px;
     }
     .app-card {
-      background: #111; border: 1px solid #1a1a1a; border-radius: 16px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
       padding: 28px; transition: border-color 0.2s;
     }
-    .app-card:hover { border-color: #333; }
+    .app-card:hover { border-color: var(--border-hover); }
     .app-card .tag {
       display: inline-block; font-size: 11px; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.5px;
       padding: 4px 10px; border-radius: 6px; margin-bottom: 12px;
     }
-    .app-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: #fff; }
-    .app-card p { font-size: 14px; color: #888; margin-bottom: 16px; }
+    .app-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: var(--heading); }
+    .app-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
     .app-card .features {
-      list-style: none; font-size: 13px; color: #666; margin-bottom: 16px;
+      list-style: none; font-size: 13px; color: var(--text-dim); margin-bottom: 16px;
     }
     .app-card .features li { padding: 3px 0; }
-    .app-card .features li::before { content: "→ "; color: #444; }
+    .app-card .features li::before { content: "→ "; color: var(--arrow); }
     .app-card .link { font-size: 13px; font-weight: 500; }
 
-    .tag-finance { background: #1e3a5f; color: #60a5fa; }
-    .tag-education { background: #3b1f6e; color: #c084fc; }
-    .tag-kids { background: #5c2d0e; color: #fb923c; }
+    .tag-finance { background: var(--tag-finance-bg); color: var(--tag-finance); }
+    .tag-education { background: var(--tag-edu-bg); color: var(--tag-edu); }
+    .tag-kids { background: var(--tag-kids-bg); color: var(--tag-kids); }
 
     /* Brand Promise */
     .promise {
-      padding: 60px 0; border-top: 1px solid #1a1a1a;
+      padding: 60px 0; border-top: 1px solid var(--border);
       text-align: center;
     }
-    .promise h2 { font-size: 28px; font-weight: 600; margin-bottom: 24px; }
+    .promise h2 { font-size: 28px; font-weight: 600; margin-bottom: 24px; color: var(--heading); }
     .promise-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
       max-width: 700px; margin: 0 auto;
     }
-    .promise-item h3 { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 6px; }
-    .promise-item p { font-size: 13px; color: #666; }
+    .promise-item h3 { font-size: 16px; font-weight: 600; color: var(--heading); margin-bottom: 6px; }
+    .promise-item p { font-size: 13px; color: var(--text-dim); }
 
     /* Blog */
     .blog {
-      padding: 60px 0; border-top: 1px solid #1a1a1a;
+      padding: 60px 0; border-top: 1px solid var(--border);
     }
-    .blog h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; }
-    .blog .subtitle { font-size: 14px; color: #666; text-align: center; margin-bottom: 32px; }
+    .blog h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; color: var(--heading); }
+    .blog .subtitle { font-size: 14px; color: var(--text-dim); text-align: center; margin-bottom: 32px; }
     .blog-list { list-style: none; }
     .blog-list li {
-      padding: 16px 0; border-bottom: 1px solid #141414;
+      padding: 16px 0; border-bottom: 1px solid var(--border);
       display: flex; justify-content: space-between; align-items: baseline;
     }
     .blog-list li a { font-size: 15px; font-weight: 500; }
-    .blog-list li .meta { font-size: 12px; color: #555; }
+    .blog-list li .meta { font-size: 12px; color: var(--text-dim); }
 
     /* Footer */
     footer {
-      padding: 40px 0; border-top: 1px solid #1a1a1a;
-      text-align: center; font-size: 12px; color: #444;
+      padding: 40px 0; border-top: 1px solid var(--border);
+      text-align: center; font-size: 12px; color: var(--footer);
     }
-    footer a { color: #555; }
+    footer a { color: var(--footer-link); }
 
     @media (max-width: 600px) {
       .hero h1 { font-size: 32px; }
@@ -129,12 +152,12 @@
     <!-- Hero -->
     <section class="hero">
       <h1><span>BFG</span></h1>
-      <p>Apps that respect you. No subscriptions. No ads. No cloud. Your data stays on your device.</p>
+      <p>Apps that respect you. No ads. No cloud. Your data stays on your device.</p>
       <div class="badges">
-        <span>On-device only</span>
-        <span>One-time purchase</span>
+        <span>On-device processing</span>
+        <span>No ads</span>
         <span>No tracking</span>
-        <span>No accounts required</span>
+        <span>Privacy first</span>
       </div>
     </section>
 
@@ -207,8 +230,8 @@
           <p>Everything runs and stays on your device. We don't have servers. We can't see your data even if we wanted to.</p>
         </div>
         <div class="promise-item">
-          <h3>Pay once, own forever</h3>
-          <p>No subscriptions. No premium tiers. No "free trial that expires." One purchase, all features, all updates.</p>
+          <h3>Fair pricing</h3>
+          <p>No hidden fees. No upsells. Free tiers that are genuinely useful. Paid tiers that are worth it.</p>
         </div>
         <div class="promise-item">
           <h3>No ads, no tracking</h3>
