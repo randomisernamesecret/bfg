@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
   <title>BFG — Privacy-First Apps</title>
   <meta name="description" content="Apps that respect you. No subscriptions. No ads. No cloud. Your data stays on your device. By Blue Flame Games.">
   <meta name="keywords" content="privacy apps, no subscription apps, iOS apps, financial terminal, 11 plus prep, kids creative app, maths practice">
@@ -24,14 +28,14 @@
     }
     @media (prefers-color-scheme: light) {
       :root {
-        --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #888;
+        --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #595959;
         --surface: #fff; --border: #e5e5e5; --border-hover: #ccc;
         --badge-bg: #f0f0f0; --badge-border: #ddd;
         --accent: #ea580c; --heading: #111;
         --tag-finance-bg: #dbeafe; --tag-finance: #1d4ed8;
         --tag-edu-bg: #ede9fe; --tag-edu: #7c3aed;
         --tag-kids-bg: #ffedd5; --tag-kids: #c2410c;
-        --arrow: #bbb; --footer: #999; --footer-link: #777;
+        --arrow: #999; --footer: #595959; --footer-link: #555;
       }
     }
 
@@ -43,6 +47,7 @@
     }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
 
@@ -143,14 +148,14 @@
 
     /* Override system preference when user manually toggles */
     html[data-theme="light"], html[data-theme="light"] :root {
-      --bg: #fafafa !important; --text: #333 !important; --text-muted: #666 !important; --text-dim: #888 !important;
+      --bg: #fafafa !important; --text: #333 !important; --text-muted: #666 !important; --text-dim: #595959 !important;
       --surface: #fff !important; --border: #e5e5e5 !important; --border-hover: #ccc !important;
       --badge-bg: #f0f0f0 !important; --badge-border: #ddd !important;
       --accent: #ea580c !important; --heading: #111 !important;
       --tag-finance-bg: #dbeafe !important; --tag-finance: #1d4ed8 !important;
       --tag-edu-bg: #ede9fe !important; --tag-edu: #7c3aed !important;
       --tag-kids-bg: #ffedd5 !important; --tag-kids: #c2410c !important;
-      --arrow: #bbb !important; --footer: #999 !important; --footer-link: #777 !important;
+      --arrow: #999 !important; --footer: #595959 !important; --footer-link: #555 !important;
     }
     html[data-theme="dark"], html[data-theme="dark"] :root {
       --bg: #0a0a0a !important; --text: #e0e0e0 !important; --text-muted: #888 !important; --text-dim: #666 !important;
@@ -228,7 +233,7 @@
             <li>Congress trading tracker</li>
             <li>On-device AI — nothing leaves your phone</li>
           </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank">App Store →</a>
+          <a class="link" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store →</a>
         </div>
 
         <div class="app-card">
@@ -242,7 +247,7 @@
             <li>Virtual pet companion for motivation</li>
             <li>Parent dashboard with mastery tracking</li>
           </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank">App Store →</a>
+          <a class="link" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store →</a>
         </div>
 
         <div class="app-card">
@@ -256,7 +261,7 @@
             <li>Times tables 2–12 with progress tracking</li>
             <li>Virtual pet earned through practice</li>
           </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank">App Store →</a>
+          <a class="link" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store →</a>
         </div>
 
         <div class="app-card">
@@ -270,7 +275,7 @@
             <li>Age-adapted: ages 4–6, 7–9, 10–12</li>
             <li>Parental controls via math-challenge gate</li>
           </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank">App Store →</a>
+          <a class="link" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store →</a>
         </div>
 
       </div>
