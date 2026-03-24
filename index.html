@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BFG — Privacy-First Apps</title>
+  <meta name="description" content="Apps that respect you. No subscriptions. No ads. No cloud. Your data stays on your device. By Blue Flame Games.">
+  <meta name="keywords" content="privacy apps, no subscription apps, iOS apps, financial terminal, 11 plus prep, kids creative app, maths practice">
+  <meta property="og:title" content="BFG — Privacy-First Apps">
+  <meta property="og:description" content="Apps that respect you. No subscriptions. No ads. No cloud.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://randomisernamesecret.github.io/bfg/">
+  <link rel="canonical" href="https://randomisernamesecret.github.io/bfg/">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a; color: #e0e0e0;
+      line-height: 1.6;
+    }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero */
+    .hero {
+      text-align: center; padding: 80px 0 60px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 12px; }
+    .hero h1 span { color: #f97316; }
+    .hero p { font-size: 20px; color: #888; max-width: 500px; margin: 0 auto 32px; }
+    .hero .badges {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+      font-size: 13px; color: #666;
+    }
+    .hero .badges span {
+      background: #141414; border: 1px solid #222; border-radius: 20px;
+      padding: 6px 16px;
+    }
+
+    /* Apps Grid */
+    .apps { padding: 60px 0; }
+    .apps h2 { font-size: 28px; font-weight: 600; margin-bottom: 32px; text-align: center; }
+    .apps-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 20px;
+    }
+    .app-card {
+      background: #111; border: 1px solid #1a1a1a; border-radius: 16px;
+      padding: 28px; transition: border-color 0.2s;
+    }
+    .app-card:hover { border-color: #333; }
+    .app-card .tag {
+      display: inline-block; font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      padding: 4px 10px; border-radius: 6px; margin-bottom: 12px;
+    }
+    .app-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: #fff; }
+    .app-card p { font-size: 14px; color: #888; margin-bottom: 16px; }
+    .app-card .features {
+      list-style: none; font-size: 13px; color: #666; margin-bottom: 16px;
+    }
+    .app-card .features li { padding: 3px 0; }
+    .app-card .features li::before { content: "→ "; color: #444; }
+    .app-card .link { font-size: 13px; font-weight: 500; }
+
+    .tag-finance { background: #1e3a5f; color: #60a5fa; }
+    .tag-education { background: #3b1f6e; color: #c084fc; }
+    .tag-kids { background: #5c2d0e; color: #fb923c; }
+
+    /* Brand Promise */
+    .promise {
+      padding: 60px 0; border-top: 1px solid #1a1a1a;
+      text-align: center;
+    }
+    .promise h2 { font-size: 28px; font-weight: 600; margin-bottom: 24px; }
+    .promise-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      max-width: 700px; margin: 0 auto;
+    }
+    .promise-item h3 { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+    .promise-item p { font-size: 13px; color: #666; }
+
+    /* Blog */
+    .blog {
+      padding: 60px 0; border-top: 1px solid #1a1a1a;
+    }
+    .blog h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; }
+    .blog .subtitle { font-size: 14px; color: #666; text-align: center; margin-bottom: 32px; }
+    .blog-list { list-style: none; }
+    .blog-list li {
+      padding: 16px 0; border-bottom: 1px solid #141414;
+      display: flex; justify-content: space-between; align-items: baseline;
+    }
+    .blog-list li a { font-size: 15px; font-weight: 500; }
+    .blog-list li .meta { font-size: 12px; color: #555; }
+
+    /* Footer */
+    footer {
+      padding: 40px 0; border-top: 1px solid #1a1a1a;
+      text-align: center; font-size: 12px; color: #444;
+    }
+    footer a { color: #555; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 16px; }
+      .apps-grid { grid-template-columns: 1fr; }
+      .promise-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BFG",
+    "alternateName": "Blue Flame Games",
+    "url": "https://randomisernamesecret.github.io/bfg/",
+    "description": "Privacy-first iOS apps. No subscriptions. No ads. Your data stays on your device."
+  }
+  </script>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1><span>BFG</span></h1>
+      <p>Apps that respect you. No subscriptions. No ads. No cloud. Your data stays on your device.</p>
+      <div class="badges">
+        <span>On-device only</span>
+        <span>One-time purchase</span>
+        <span>No tracking</span>
+        <span>No accounts required</span>
+      </div>
+    </section>
+
+    <!-- Apps -->
+    <section class="apps">
+      <h2>Our Apps</h2>
+      <div class="apps-grid">
+
+        <div class="app-card">
+          <span class="tag tag-finance">Finance</span>
+          <h3>Kanesh</h3>
+          <p>A source-linked financial data terminal. Every number links to its SEC filing or data source. On-device AI. Interactive 3D globe covering 53 countries.</p>
+          <ul class="features">
+            <li>Source-tagged financial data</li>
+            <li>Natural language queries</li>
+            <li>Congress trading tracker</li>
+            <li>On-device AI — nothing leaves your phone</li>
+          </ul>
+          <a class="link" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank">App Store →</a>
+        </div>
+
+        <div class="app-card">
+          <span class="tag tag-education">Education</span>
+          <h3>Cognithix</h3>
+          <p>The only 11+ app covering all four tested areas — including the Language Aptitude Test. Adaptive difficulty. Unlimited on-device questions.</p>
+          <ul class="features">
+            <li>Verbal, Non-Verbal, English & LAT prep</li>
+            <li>Adaptive difficulty per child</li>
+            <li>Virtual pet companion for motivation</li>
+            <li>Parent dashboard with mastery tracking</li>
+          </ul>
+          <a class="link" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank">App Store →</a>
+        </div>
+
+        <div class="app-card">
+          <span class="tag tag-education">Education</span>
+          <h3>Arithmetix</h3>
+          <p>Maths practice aligned to the UK National Curriculum from Reception to Year 6. Adaptive, gamified, and distraction-free.</p>
+          <ul class="features">
+            <li>30+ topics, thousands of exercises</li>
+            <li>UK National Curriculum aligned</li>
+            <li>Times tables 2–12 with progress tracking</li>
+            <li>Virtual pet earned through practice</li>
+          </ul>
+          <a class="link" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank">App Store →</a>
+        </div>
+
+        <div class="app-card">
+          <span class="tag tag-kids">Kids</span>
+          <h3>Sparks Studios</h3>
+          <p>An AI-powered creative playground. Kids draw, write stories, and compose music — all running on-device with zero data leaving the device.</p>
+          <ul class="features">
+            <li>Drawing canvas, story builder, music composer</li>
+            <li>AI runs locally — no cloud uploads</li>
+            <li>Age-adapted: ages 4–6, 7–9, 10–12</li>
+            <li>Parental controls via math-challenge gate</li>
+          </ul>
+          <a class="link" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank">App Store →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Brand Promise -->
+    <section class="promise">
+      <h2>Why BFG?</h2>
+      <div class="promise-grid">
+        <div class="promise-item">
+          <h3>Your device, your data</h3>
+          <p>Everything runs and stays on your device. We don't have servers. We can't see your data even if we wanted to.</p>
+        </div>
+        <div class="promise-item">
+          <h3>Pay once, own forever</h3>
+          <p>No subscriptions. No premium tiers. No "free trial that expires." One purchase, all features, all updates.</p>
+        </div>
+        <div class="promise-item">
+          <h3>No ads, no tracking</h3>
+          <p>We make money from the app purchase, not from selling your attention or data. Zero analytics. Zero telemetry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog" id="blog">
+      <h2>Blog</h2>
+      <p class="subtitle">Guides, tips, and insights from the apps we build</p>
+      <ul class="blog-list">
+        <li>
+          <a href="blog/best-11-plus-app-2026.html">The Complete Guide to 11+ Exam Preparation in 2026</a>
+          <span class="meta">Education</span>
+        </li>
+        <li>
+          <a href="blog/stock-research-without-bloomberg.html">How to Research Stocks Without Bloomberg</a>
+          <span class="meta">Finance</span>
+        </li>
+        <li>
+          <a href="blog/creative-screen-time-for-kids.html">Screen Time That's Actually Good: Creative Apps vs Passive Scrolling</a>
+          <span class="meta">Parenting</span>
+        </li>
+        <li>
+          <a href="blog/times-tables-tips.html">Best Ways to Learn Times Tables (Backed by Research)</a>
+          <span class="meta">Education</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Blue Flame Games. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="mailto:blueflamegames@proton.me">Contact</a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
