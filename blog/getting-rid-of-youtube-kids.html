@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+  <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
   <div class="container">
     <header>
       <a href="../"><span>BFG</span> — Blog</a>
@@ -89,9 +89,10 @@
     <p>If you're considering making the switch, the evidence from both research and thousands of real families is clear: do it. Have alternatives ready, expect a rough first week, and watch what happens when your child's brain recalibrates to a world without autoplay.</p>
 
     <footer>
-      <p>© 2026 Blue Flame Games · <a href="../">BFG Home</a> · <a href="../#blog">More Articles</a></p>
+      <p>© 2026 Blue Flame Games · <a href="../">BFG Home</a> · <a href="../#blog">More Articles</a> · <a href="../privacy.html">Privacy</a></p>
     </footer>
   </div>
   <script src="../theme.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

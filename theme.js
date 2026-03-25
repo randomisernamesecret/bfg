@@ -15,3 +15,7 @@ function toggleTheme() {
   applyTheme(next);
 }
 applyTheme(getPreferred());
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.querySelector('.theme-toggle');
+  if (btn) btn.addEventListener('click', toggleTheme);
+});
