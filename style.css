@@ -95,7 +95,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu { display: block; }
 .nav-dropdown-menu a {
   display: block; padding: 9px 20px; font-size: 14px;
   color: var(--text) !important; white-space: nowrap;
