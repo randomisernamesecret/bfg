@@ -75,18 +75,75 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
-  <div class="container">
 
-    <header>
-      <a href="/"><span>BFG</span> — PhotoFlight</a>
-    </header>
+  <div class="container">
 
     <div class="app-landing-hero">
       <span class="app-tag app-tag-travel">Travel</span>
       <h1>PhotoFlight</h1>
-      <p class="app-tagline" style="font-size:15px; color:var(--text-muted); margin-bottom:24px;">Your travel map, built from the photos you already took.</p>
-      <img src="/assets/photoflight-hero.png" alt="PhotoFlight app screenshot showing a travel map built from photo GPS data" style="max-width:280px; display:block; margin:0 auto 32px; border-radius:16px;" loading="lazy">
-      <p style="font-size:15px; color:var(--text-muted);">Coming Soon to the App Store</p>
+      <p class="app-subtitle">Your travel map, built from your photos.</p>
+      <div class="hero-visual">
+        <img src="/assets/photoflight-hero.png" alt="PhotoFlight app screenshot showing a travel map built from photo GPS data" loading="lazy">
+      </div>
+      <div class="hero-cta">
+        <span class="app-cta-muted">Coming soon to the App Store</span>
+      </div>
+      <div class="app-quick-facts">
+        <div class="fact"><strong>On-device</strong>All processing local</div>
+        <div class="fact"><strong>No tracking</strong>Zero network requests</div>
+        <div class="fact"><strong>One purchase</strong>No subscriptions</div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>What It Does</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Automatic Travel Map</h3>
+          <p>Reads GPS metadata from your existing photos to plot every city and country you have visited on an interactive map.</p>
+        </div>
+        <div class="feature">
+          <h3>Travel Passport</h3>
+          <p>Tracks flights taken, countries visited, cities explored, and total distance traveled — all from your photo library.</p>
+        </div>
+        <div class="feature">
+          <h3>Trip Albums</h3>
+          <p>Automatically groups your photos into trip albums by destination, with dates and locations attached.</p>
+        </div>
+        <div class="feature">
+          <h3>Flight Log</h3>
+          <p>Estimates flights between distant locations by analyzing timestamps and GPS jumps in your photos.</p>
+        </div>
+        <div class="feature">
+          <h3>Manual Flight Entry</h3>
+          <p>Add flights that your photos missed. Available in Pro to complete your travel history.</p>
+        </div>
+        <div class="feature">
+          <h3>On-device Processing</h3>
+          <p>All photo scanning and map building happens locally. No servers, no uploads, no accounts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <div class="privacy-panel">
+        <h3>Privacy &amp; Data</h3>
+        <ul>
+          <li>No data collected — ever.</li>
+          <li>Reads photo GPS metadata locally on your device.</li>
+          <li>No network requests. Fully offline.</li>
+          <li>No account required.</li>
+          <li>All data stays on-device, encrypted by iOS.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Related Articles</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/travel-map-from-photos.html">How to Build a Travel Map From Your Photos</a></li>
+        <li><a href="/blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps 2026</a></li>
+      </ul>
     </div>
 
     <nav class="app-nav">
@@ -95,46 +152,8 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
-    <div class="app-landing-section">
-      <h2>Your photos know where you've been</h2>
-      <p>You have been traveling for years. Weekend getaways, family vacations, work trips, that spontaneous road trip you almost forgot about. Somewhere in your photo library, there are thousands of images from dozens of cities and countries, each one silently tagged with the exact GPS coordinates of where it was taken.</p>
-      <p>But you have no easy way to see the full picture. Where have you actually been? How many countries? How many flights? Most people could not answer those questions without sitting down and thinking hard about it.</p>
-      <p>The alternatives are not great. Google Maps Timeline tracks your location 24/7, creating a detailed surveillance log of everywhere you go, whether you are traveling or just walking to the grocery store. It requires you to trust Google with a complete record of your movements. Manual travel journals and scratch-off maps demand a level of discipline that most people simply do not maintain past the first few weeks. And services like TripIt or Polarsteps require you to actively log trips as they happen.</p>
-      <p>Here is the thing: the data already exists. Every photo you have ever taken with your phone has GPS coordinates embedded in its metadata. Your photo library is, in effect, an unintentional travel diary spanning years or even decades. The only question is whether anything is reading it.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Your travel history, assembled automatically</h2>
-      <p>PhotoFlight reads the GPS metadata that already exists in your photo library and uses it to reconstruct your travel history. It builds a visual map of every place you have been, clusters your photos into trips, estimates flights between distant locations, and assembles a travel passport with country counts, distance traveled, and time zones crossed.</p>
-      <p>There is no manual logging. No new tracking. No accounts to create. You open the app, grant it access to your photos, and within minutes you are looking at a complete map of your travels going back to whenever you got your first smartphone.</p>
-      <p>Critically, all of this processing happens on your device. Your GPS data, your travel history, and your photos never leave your iPhone. There are no servers involved. PhotoFlight does not phone home, does not collect analytics, and does not transmit anything. Your travel map is yours alone.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What you get</h2>
-      <ul>
-        <li><strong>Automatic travel map</strong> — Every city and country you have visited, plotted on an interactive map</li>
-        <li><strong>Travel passport</strong> — Stats on countries visited, total distance, number of trips, and more</li>
-        <li><strong>Flight log</strong> — Estimated flights between distant locations, reconstructed from your photo timestamps</li>
-        <li><strong>Trip albums</strong> — Photos automatically grouped by trip with dates and locations</li>
-        <li><strong>Fully on-device</strong> — No cloud, no accounts, no data collection whatsoever</li>
-        <li><strong>One-time purchase</strong> — Pay once, own it forever. No subscriptions</li>
-      </ul>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related articles</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/travel-map-from-photos.html">How to Build a Travel Map From Your Photos</a></li>
-        <li><a href="/blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps 2026</a></li>
-      </ul>
-    </div>
-
     <footer>
-      <p>&copy; 2026 Blue Flame Games. All rights reserved.</p>
-      <p style="margin-top: 8px;">
-        <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a>
-      </p>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>
     </footer>
 
   </div>

@@ -75,18 +75,74 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
-  <div class="container">
 
-    <header>
-      <a href="/"><span>BFG</span> — PaceGrid</a>
-    </header>
+  <div class="container">
 
     <div class="app-landing-hero">
       <span class="app-tag app-tag-fitness">Fitness</span>
       <h1>PaceGrid</h1>
-      <p class="app-tagline" style="font-size:15px; color:var(--text-muted); margin-bottom:24px;">Your runs, your data. No subscription required.</p>
-      <img src="/assets/pacegrid-hero.png" alt="PaceGrid app screenshot showing GPS run tracking and training load dashboard" style="max-width:280px; display:block; margin:0 auto 32px; border-radius:16px;" loading="lazy">
-      <p style="font-size:15px; color:var(--text-muted);">Coming Soon to the App Store</p>
+      <p class="app-subtitle">GPS fitness tracking. One purchase. Your data.</p>
+      <div class="hero-visual">
+        <img src="/assets/pacegrid-hero.png" alt="PaceGrid app screenshot showing GPS run tracking and training load dashboard" loading="lazy">
+      </div>
+      <div class="hero-cta">
+        <span class="app-cta-muted">Coming soon to the App Store</span>
+      </div>
+      <div class="app-quick-facts">
+        <div class="fact"><strong>Apple Watch</strong>Independent GPS</div>
+        <div class="fact"><strong>Injury Guard</strong>ACWR training load</div>
+        <div class="fact"><strong>GPX/FIT export</strong>Standard formats</div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>What It Does</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>GPS Run/Ride/Walk/Hike</h3>
+          <p>Track any outdoor activity with real-time pace, distance, and heart rate from your Apple Watch or iPhone.</p>
+        </div>
+        <div class="feature">
+          <h3>Apple Watch Independent GPS</h3>
+          <p>Leave your phone at home. PaceGrid tracks directly from your wrist with full GPS recording.</p>
+        </div>
+        <div class="feature">
+          <h3>Injury Guard</h3>
+          <p>Training load monitor based on acute-to-chronic workload ratio. Flags when you are ramping up too fast.</p>
+        </div>
+        <div class="feature">
+          <h3>Strava Sync</h3>
+          <p>Optionally share individual workouts to Strava when you choose. Nothing uploads automatically.</p>
+        </div>
+        <div class="feature">
+          <h3>GPX &amp; FIT Export</h3>
+          <p>Export any workout in standard formats compatible with virtually any fitness platform.</p>
+        </div>
+        <div class="feature">
+          <h3>Fully Offline Capable</h3>
+          <p>Works without an internet connection. Your watch and GPS are all you need.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <div class="privacy-panel">
+        <h3>Privacy &amp; Data</h3>
+        <ul>
+          <li>All workout data stored locally in encrypted SQLite.</li>
+          <li>No account required. No cloud uploads.</li>
+          <li>Strava sync is optional — uses OAuth, no credentials stored.</li>
+          <li>No analytics, no tracking, no ads.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Related Articles</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/running-apps-no-subscription.html">Running Apps Without a Subscription</a></li>
+        <li><a href="/blog/training-load-injury-prevention.html">Training Load &amp; Injury Prevention</a></li>
+      </ul>
     </div>
 
     <nav class="app-nav">
@@ -95,47 +151,8 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
-    <div class="app-landing-section">
-      <h2>Your runs, your data</h2>
-      <p>Running apps have become rent-seeking software. Strava locks route matching, training logs, and leaderboards behind a monthly subscription. Garmin Connect stores every GPS trace you have ever recorded on their servers. Nike Run Club discontinued its Apple Watch app and then brought it back with fewer features. The pattern across the industry is the same: collect your GPS data, store it on company servers, and then charge you monthly to access insights from your own workouts.</p>
-      <p>Think about what a running app actually knows about you. It has a GPS trace of every route you run, which means it knows your neighborhood, the streets you frequent, the times you leave your house, and when you are away from home. It has your heart rate data, your weight if you logged it, and your fitness trends over months or years. This is a surveillance profile that most people hand over voluntarily because they want to see their pace splits.</p>
-      <p>The subscription model makes this worse. When your running app charges monthly, it needs you to keep paying. That creates an incentive to make your historical data hard to export and to lock increasingly basic features behind the paywall. Your five years of running history becomes leverage to keep you subscribing.</p>
-      <p>Runners deserve better. You should be able to track a run with GPS, see your pace and splits, monitor your training load, and export your data in standard formats, without paying rent on software and without uploading your location history to someone else's servers.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>GPS tracking that stays on your device</h2>
-      <p>PaceGrid records runs, rides, walks, and hikes using your Apple Watch or iPhone GPS. Every workout is stored locally on your device. There are no accounts, no cloud uploads, and no servers holding your route data.</p>
-      <p>The standout feature is Injury Guard, a training load monitor based on the acute-to-chronic workload ratio used in sport science. It compares your recent training volume against your longer-term baseline to flag when you are ramping up too fast. Most running injuries come from doing too much too soon, and Injury Guard gives you a clear, visual warning before you cross into the danger zone.</p>
-      <p>If you want to share specific workouts on Strava, you can. Strava sync is available as an optional feature that you control on a per-workout basis. Nothing is uploaded automatically. And when you want to take your data elsewhere, PaceGrid exports to GPX and FIT formats that work with virtually any fitness platform.</p>
-      <p>PaceGrid is a one-time purchase. No subscriptions, no trials that auto-renew, no premium tiers. You pay once and you own the full app.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What you get</h2>
-      <ul>
-        <li><strong>Apple Watch GPS</strong> — Track directly from your wrist with real-time pace, distance, and heart rate</li>
-        <li><strong>Injury Guard</strong> — Training load monitoring using acute-to-chronic workload ratio to prevent injuries</li>
-        <li><strong>Optional Strava sync</strong> — Share individual workouts to Strava when you choose, never automatically</li>
-        <li><strong>GPX/FIT export</strong> — Export any workout in standard formats compatible with other platforms</li>
-        <li><strong>Offline capable</strong> — Works without an internet connection. Your watch is all you need</li>
-        <li><strong>One-time purchase</strong> — Pay once, own it forever. No subscriptions</li>
-      </ul>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related articles</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/running-apps-no-subscription.html">Running Apps Without a Subscription</a></li>
-        <li><a href="/blog/training-load-injury-prevention.html">Training Load & Injury Prevention</a></li>
-      </ul>
-    </div>
-
     <footer>
-      <p>&copy; 2026 Blue Flame Games. All rights reserved.</p>
-      <p style="margin-top: 8px;">
-        <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a>
-      </p>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>
     </footer>
 
   </div>

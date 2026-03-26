@@ -73,53 +73,75 @@
     </div>
   </nav>
 
-  <button class="theme-toggle" aria-label="Toggle dark/light mode">&#127769;</button>
+  <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
   <div class="container">
-
-    <header>
-      <a href="/"><span>BFG</span> — Kanesh</a>
-    </header>
 
     <div class="app-landing-hero">
       <span class="app-tag app-tag-finance">Finance</span>
       <h1>Kanesh</h1>
-      <p style="font-size:17px; color:var(--text-muted); margin-bottom:24px;">Source-linked financial data you can actually verify.</p>
-      <img src="/assets/kanesh-hero.png" alt="Kanesh app showing source-linked financial data on iPhone" class="app-screenshot" style="max-width:280px; display:block; margin:0 auto 32px; border-radius:16px;">
-      <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" style="display:inline-block; background:var(--accent); color:#fff; padding:12px 28px; border-radius:10px; font-weight:600; font-size:15px; text-decoration:none;">Download on the App Store</a>
+      <p class="app-subtitle">Source-linked financial data you can verify.</p>
+      <div class="hero-visual">
+        <img src="/assets/kanesh-hero.png" alt="Kanesh app displaying source-tagged financial data with SEC filing links on iPhone" loading="lazy">
+      </div>
+      <div class="hero-cta">
+        <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" class="app-cta" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+      </div>
+      <div class="app-quick-facts">
+        <div class="fact"><strong>53 Countries</strong>Global equities</div>
+        <div class="fact"><strong>On-device AI</strong>Private queries</div>
+        <div class="fact"><strong>Source-linked</strong>Every number</div>
+      </div>
     </div>
 
     <div class="app-landing-section">
-      <h2>The Problem with Financial Data</h2>
-      <p>A Bloomberg terminal costs around $25,000 a year. For professional fund managers, that is a line item. For everyone else, it is a non-starter. So most retail investors turn to free alternatives — apps and websites that surface earnings figures, revenue numbers, balance sheet data. The problem is that almost none of them tell you where the data comes from.</p>
-      <p>You see a revenue number. Is it from the latest 10-K filing? A preliminary estimate? A third-party model? There is no way to tell. You are making decisions based on numbers you cannot verify, sourced from pipelines you cannot inspect.</p>
-      <p>The irony is that most of this data originates from public filings. The SEC makes 10-K, 10-Q, and 8-K filings freely available through EDGAR. The Federal Reserve publishes economic data through FRED. These are authoritative, primary sources — but navigating them on a phone is an exercise in frustration. They were built for desktop browsers and institutional workflows, not for someone checking a stock on the train.</p>
+      <h2>What It Does</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Source-tagged financials</h3>
+          <p>Every number links back to its original SEC filing, FRED series, or data provider. Tap any figure to see exactly where it came from.</p>
+        </div>
+        <div class="feature">
+          <h3>Natural language queries</h3>
+          <p>Ask questions in plain English like "What was Apple's gross margin last quarter?" On-device AI processes your query entirely on your phone.</p>
+        </div>
+        <div class="feature">
+          <h3>3D Globe — 53 countries</h3>
+          <p>Browse global equities through an interactive 3D globe. Coverage spans 53 countries, not just US markets.</p>
+        </div>
+        <div class="feature">
+          <h3>Congress trading tracker</h3>
+          <p>See which stocks members of the US Congress are buying and selling, sourced directly from mandatory disclosure filings.</p>
+        </div>
+        <div class="feature">
+          <h3>On-device AI</h3>
+          <p>All queries are processed locally. Your questions never leave the device and no account is required.</p>
+        </div>
+        <div class="feature">
+          <h3>SEC EDGAR direct access</h3>
+          <p>Pull 10-K, 10-Q, and 8-K filings straight from EDGAR. Primary-source data without the desktop-only frustration.</p>
+        </div>
+      </div>
     </div>
 
     <div class="app-landing-section">
-      <h2>How Kanesh Solves This</h2>
-      <p>Kanesh takes a different approach: every financial number in the app is source-tagged. Revenue, net income, EPS, debt ratios — each data point links back to the specific SEC filing, FRED series, or data provider it came from. You can tap any number and see exactly where it originated. No black boxes, no mystery aggregations.</p>
-      <p>Instead of learning financial query languages or navigating complex filing structures, you can ask questions in plain English. "What was Apple's gross margin last quarter?" or "Show me Tesla's debt-to-equity ratio over 5 years." The on-device AI processes your query entirely on your phone — your questions never leave the device, and no account is required.</p>
-      <p>Kanesh covers companies across 53 countries through an interactive 3D globe interface, so you are not limited to US equities. And with the built-in Congress trading tracker, you can see which stocks members of the US Congress are buying and selling — data sourced directly from mandatory disclosure filings.</p>
+      <div class="privacy-panel">
+        <h3>Privacy &amp; Data</h3>
+        <ul>
+          <li>All queries processed on-device — nothing leaves your phone</li>
+          <li>API requests send only ticker symbols, no personal data</li>
+          <li>No account required</li>
+          <li>No analytics or tracking</li>
+        </ul>
+      </div>
     </div>
 
     <div class="app-landing-section">
-      <h2>Key Features</h2>
-      <ul>
-        <li><strong>Source-tagged financials</strong> — every number linked to its original filing or data source</li>
-        <li><strong>Natural language queries</strong> — ask questions in plain English, processed on-device</li>
-        <li><strong>53 countries</strong> — global equity coverage via interactive 3D globe</li>
-        <li><strong>Congress trading tracker</strong> — see what US politicians are buying and selling</li>
-        <li><strong>On-device AI</strong> — no data leaves your phone, no account needed</li>
-      </ul>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Further Reading</h2>
+      <h2>Related Articles</h2>
       <ul class="related-posts">
         <li><a href="/blog/stock-research-without-bloomberg.html">How to Research Stocks Without Bloomberg</a></li>
-        <li><a href="/blog/how-to-verify-financial-data-sources.html">How to Verify Financial Data</a></li>
+        <li><a href="/blog/how-to-verify-financial-data-sources.html">How to Verify Financial Data Sources</a></li>
         <li><a href="/blog/insider-trading-congress-stocks.html">Congress Stock Trading</a></li>
-        <li><a href="/blog/how-to-research-global-stocks-from-your-phone.html">Research International Stocks</a></li>
+        <li><a href="/blog/how-to-research-global-stocks-from-your-phone.html">How to Research Global Stocks From Your Phone</a></li>
       </ul>
     </div>
 
@@ -131,7 +153,6 @@
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>
     </footer>
-
   </div>
 
   <script src="/theme.js"></script>
