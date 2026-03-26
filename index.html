@@ -28,6 +28,7 @@
       --tag-finance-bg: #1e3a5f; --tag-finance: #60a5fa;
       --tag-edu-bg: #3b1f6e; --tag-edu: #c084fc;
       --tag-kids-bg: #5c2d0e; --tag-kids: #fb923c;
+      --tag-travel-bg: #0e3d3d; --tag-travel: #5eead4;
       --arrow: #444; --footer: #444; --footer-link: #555;
     }
     @media (prefers-color-scheme: light) {
@@ -39,6 +40,7 @@
         --tag-finance-bg: #dbeafe; --tag-finance: #1d4ed8;
         --tag-edu-bg: #ede9fe; --tag-edu: #7c3aed;
         --tag-kids-bg: #ffedd5; --tag-kids: #c2410c;
+        --tag-travel-bg: #ccfbf1; --tag-travel: #0f766e;
         --arrow: #999; --footer: #595959; --footer-link: #555;
       }
     }
@@ -105,6 +107,8 @@
     .tag-finance { background: var(--tag-finance-bg); color: var(--tag-finance); }
     .tag-education { background: var(--tag-edu-bg); color: var(--tag-edu); }
     .tag-kids { background: var(--tag-kids-bg); color: var(--tag-kids); }
+    .tag-travel { background: var(--tag-travel-bg); color: var(--tag-travel); }
+    .coming-soon { font-size: 13px; font-weight: 500; color: var(--text-muted); font-style: italic; }
 
     /* Brand Promise */
     .promise {
@@ -280,6 +284,20 @@
             <li>Parental controls via math-challenge gate</li>
           </ul>
           <a class="link" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store →</a>
+        </div>
+
+        <div class="app-card">
+          <img src="assets/photoflight-hero.png" alt="PhotoFlight app showing travel passport with flights, countries, and distance stats" class="app-screenshot" loading="lazy">
+          <span class="tag tag-travel">Travel</span>
+          <h3>PhotoFlight</h3>
+          <p>Your photos already know where you've been. PhotoFlight reads GPS metadata to build your personal travel map, passport, and flight log — all on-device.</p>
+          <ul class="features">
+            <li>Travel map from your photo library</li>
+            <li>Flights, countries, cities tracked automatically</li>
+            <li>Trip albums organised by destination</li>
+            <li>All processing on-device — no data leaves your phone</li>
+          </ul>
+          <span class="coming-soon">Coming soon to the App Store</span>
         </div>
 
       </div>
