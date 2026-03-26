@@ -71,6 +71,12 @@
     .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 12px; color: var(--heading); }
     .hero h1 span { color: var(--accent); }
     .hero p { font-size: 20px; color: var(--text-muted); max-width: 500px; margin: 0 auto 32px; }
+    .hero .stats {
+      display: flex; gap: 40px; justify-content: center; margin-bottom: 28px;
+    }
+    .hero .stat { text-align: center; }
+    .hero .stat strong { display: block; font-size: 32px; color: var(--accent); font-weight: 700; }
+    .hero .stat span { font-size: 13px; color: var(--text-dim); }
     .hero .badges {
       display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
       font-size: 13px; color: var(--text-dim);
@@ -138,13 +144,23 @@
     }
     .blog h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; color: var(--heading); }
     .blog .subtitle { font-size: 14px; color: var(--text-dim); text-align: center; margin-bottom: 32px; }
+    .blog-filters {
+      display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;
+    }
+    .blog-filters button {
+      background: var(--badge-bg); border: 1px solid var(--badge-border); border-radius: 20px;
+      padding: 6px 16px; font-size: 13px; color: var(--text-dim); cursor: pointer;
+      font-family: inherit; transition: all 0.2s;
+    }
+    .blog-filters button:hover { border-color: var(--accent); color: var(--text); }
+    .blog-filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
     .blog-list { list-style: none; }
     .blog-list li {
       padding: 16px 0; border-bottom: 1px solid var(--border);
       display: flex; justify-content: space-between; align-items: baseline;
     }
     .blog-list li a { font-size: 15px; font-weight: 500; }
-    .blog-list li .meta { font-size: 12px; color: var(--text-dim); }
+    .blog-list li .meta { font-size: 12px; color: var(--text-dim); white-space: nowrap; margin-left: 12px; }
 
     /* Footer */
     footer {
@@ -172,6 +188,10 @@
       --tag-finance-bg: #dbeafe !important; --tag-finance: #1d4ed8 !important;
       --tag-edu-bg: #ede9fe !important; --tag-edu: #7c3aed !important;
       --tag-kids-bg: #ffedd5 !important; --tag-kids: #c2410c !important;
+      --tag-travel-bg: #ccfbf1 !important; --tag-travel: #0f766e !important;
+      --tag-health-bg: #f3e8ff !important; --tag-health: #7c3aed !important;
+      --tag-fitness-bg: #d1fae5 !important; --tag-fitness: #047857 !important;
+      --tag-weather-bg: #dbeafe !important; --tag-weather: #0369a1 !important;
       --arrow: #999 !important; --footer: #595959 !important; --footer-link: #555 !important;
     }
     html[data-theme="dark"], html[data-theme="dark"] :root {
@@ -182,6 +202,10 @@
       --tag-finance-bg: #1e3a5f !important; --tag-finance: #60a5fa !important;
       --tag-edu-bg: #3b1f6e !important; --tag-edu: #c084fc !important;
       --tag-kids-bg: #5c2d0e !important; --tag-kids: #fb923c !important;
+      --tag-travel-bg: #0e3d3d !important; --tag-travel: #5eead4 !important;
+      --tag-health-bg: #2d1b4e !important; --tag-health: #d8b4fe !important;
+      --tag-fitness-bg: #0e3d2e !important; --tag-fitness: #6ee7b7 !important;
+      --tag-weather-bg: #1e3a5f !important; --tag-weather: #7dd3fc !important;
       --arrow: #444 !important; --footer: #444 !important; --footer-link: #555 !important;
     }
 
@@ -211,7 +235,11 @@
       {"@type": "Question", "name": "What is a good Bloomberg Terminal alternative for mobile?", "acceptedAnswer": {"@type": "Answer", "text": "Kanesh is a mobile financial data terminal where every number is source-linked to its SEC filing or data source. It features an interactive 3D globe covering 53 countries, on-device AI, natural language queries, and a Congress trading tracker."}},
       {"@type": "Question", "name": "What is the best maths app for primary school children in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Arithmetix is aligned to the UK National Curriculum from Reception to Year 6. It covers 30+ topics including times tables 2-12, uses adaptive difficulty, and includes a virtual pet for motivation. No ads, no tracking."}},
       {"@type": "Question", "name": "What is a safe creative app for kids with no ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sparks Studios is an AI-powered creative playground where children draw, write stories, and compose music. All AI runs on-device with nothing uploaded to any cloud. No ads, no tracking, no account required. Designed for ages 4-12."}},
-      {"@type": "Question", "name": "Are BFG apps safe for children's privacy?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All BFG apps process data on-device only. No data is uploaded to any server. No accounts are required. No analytics or telemetry is collected. The apps contain no ads and no third-party tracking."}}
+      {"@type": "Question", "name": "Are BFG apps safe for children's privacy?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All BFG apps process data on-device only. No data is uploaded to any server. No accounts are required. No analytics or telemetry is collected. The apps contain no ads and no third-party tracking."}},
+      {"@type": "Question", "name": "What is the best privacy-first period tracker?", "acceptedAnswer": {"@type": "Answer", "text": "Cyla tracks your cycle entirely on-device. No accounts, no cloud, no servers. It includes Apple Watch temperature integration for ovulation confirmation, cycle predictions, and data export."}},
+      {"@type": "Question", "name": "What is a good running app without a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "PaceGrid is a one-time purchase fitness tracker with GPS tracking, Apple Watch support, Injury Guard training load monitoring, and Strava sync. All data stays on your device."}},
+      {"@type": "Question", "name": "What is the best weather widget app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudmesh Weather offers 29 home and lock screen widgets, AI weather summaries, a community mesh network, and earthquake detection. One-time purchase with no subscriptions."}},
+      {"@type": "Question", "name": "How does PhotoFlight track your travels?", "acceptedAnswer": {"@type": "Answer", "text": "PhotoFlight reads GPS metadata from your existing photos to automatically build a travel map, passport, and flight log. All processing happens on-device."}}
     ]
   }
   </script>
@@ -225,12 +253,17 @@
     <!-- Hero -->
     <section class="hero">
       <h1><span>BFG</span></h1>
-      <p>Apps that respect you. No ads. No cloud. Your data stays on your device.</p>
+      <p>Privacy-first apps for finance, education, health, fitness, travel, and weather. Your data stays on your device.</p>
+      <div class="stats">
+        <div class="stat"><strong>8</strong><span>Apps</span></div>
+        <div class="stat"><strong>6</strong><span>Categories</span></div>
+        <div class="stat"><strong>0</strong><span>Data collected</span></div>
+      </div>
       <div class="badges">
         <span>On-device processing</span>
         <span>No ads</span>
         <span>No tracking</span>
-        <span>Privacy first</span>
+        <span>No cloud</span>
       </div>
     </section>
 
@@ -376,104 +409,42 @@
     <!-- Blog -->
     <section class="blog" id="blog">
       <h2>Blog</h2>
-      <p class="subtitle">Guides, tips, and insights from the apps we build</p>
+      <p class="subtitle">Guides, tips, and insights across everything we build</p>
+      <div class="blog-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="education">Education</button>
+        <button data-filter="finance">Finance</button>
+        <button data-filter="parenting">Parenting</button>
+        <button data-filter="health">Health</button>
+        <button data-filter="fitness">Fitness</button>
+        <button data-filter="travel">Travel</button>
+        <button data-filter="weather">Weather</button>
+      </div>
       <ul class="blog-list">
-        <li>
-          <a href="blog/best-11-plus-app-2026.html">The Complete Guide to 11+ Exam Preparation in 2026</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/what-is-the-lat-test-11-plus.html">What Is the Language Aptitude Test (LAT) in the 11+?</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/gl-vs-cem-11-plus-exam.html">GL vs CEM: Understanding the Two 11+ Exam Formats</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/verbal-reasoning-tips-11-plus.html">11+ Verbal Reasoning: Tips, Question Types, and How to Practice</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/school-admissions-england-tips.html">School Admissions in England: 10 Things Every Parent Should Know</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/stock-research-without-bloomberg.html">How to Research Stocks Without Bloomberg</a>
-          <span class="meta">Finance</span>
-        </li>
-        <li>
-          <a href="blog/how-to-verify-financial-data-sources.html">How to Verify Financial Data Before Making Investment Decisions</a>
-          <span class="meta">Finance</span>
-        </li>
-        <li>
-          <a href="blog/insider-trading-congress-stocks.html">Congress Stock Trading: How to Track What Politicians Are Buying</a>
-          <span class="meta">Finance</span>
-        </li>
-        <li>
-          <a href="blog/creative-screen-time-for-kids.html">Screen Time That's Actually Good: Creative Apps vs Passive Scrolling</a>
-          <span class="meta">Parenting</span>
-        </li>
-        <li>
-          <a href="blog/getting-rid-of-youtube-kids.html">What Happened When We Replaced YouTube With Creative Apps</a>
-          <span class="meta">Parenting</span>
-        </li>
-        <li>
-          <a href="blog/safe-apps-for-kids-no-ads-privacy.html">The Parent's Guide to Choosing Safe Apps for Kids</a>
-          <span class="meta">Parenting</span>
-        </li>
-        <li>
-          <a href="blog/times-tables-tips.html">Best Ways to Learn Times Tables (Backed by Research)</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/year-4-multiplication-tables-check.html">Year 4 Multiplication Tables Check: Everything Parents Need to Know</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/ks2-sats-maths-preparation.html">KS2 SATs Maths: How to Prepare Without the Stress</a>
-          <span class="meta">Education</span>
-        </li>
-        <li>
-          <a href="blog/travel-map-from-photos.html">How to Build a Travel Map From Your Phone Photos</a>
-          <span class="meta">Travel</span>
-        </li>
-        <li>
-          <a href="blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps in 2026 — Map Your Trips Automatically</a>
-          <span class="meta">Travel</span>
-        </li>
-        <li>
-          <a href="blog/period-tracker-privacy-why-it-matters.html">Why Your Period Tracker's Privacy Policy Actually Matters</a>
-          <span class="meta">Health</span>
-        </li>
-        <li>
-          <a href="blog/cycle-tracking-apple-watch-temperature.html">How Apple Watch Temperature Sensing Improves Cycle Tracking</a>
-          <span class="meta">Health</span>
-        </li>
-        <li>
-          <a href="blog/running-apps-no-subscription.html">The Best Running Apps That Don't Charge Monthly in 2026</a>
-          <span class="meta">Fitness</span>
-        </li>
-        <li>
-          <a href="blog/training-load-injury-prevention.html">What Is Training Load and How It Prevents Running Injuries</a>
-          <span class="meta">Fitness</span>
-        </li>
-        <li>
-          <a href="blog/best-iphone-weather-widgets-2026.html">The Best iPhone Weather Widgets in 2026</a>
-          <span class="meta">Weather</span>
-        </li>
-        <li>
-          <a href="blog/how-community-weather-networks-work.html">How Community Weather Mesh Networks Give You Hyperlocal Forecasts</a>
-          <span class="meta">Weather</span>
-        </li>
-        <li>
-          <a href="blog/on-device-ai-kids-apps-safety.html">Why On-Device AI Makes Kids' Apps Fundamentally Safer</a>
-          <span class="meta">Parenting</span>
-        </li>
-        <li>
-          <a href="blog/how-to-research-global-stocks-from-your-phone.html">How to Research International Stocks From Your Phone</a>
-          <span class="meta">Finance</span>
-        </li>
+        <li data-cat="education"><a href="blog/best-11-plus-app-2026.html">The Complete Guide to 11+ Exam Preparation in 2026</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/what-is-the-lat-test-11-plus.html">What Is the Language Aptitude Test (LAT) in the 11+?</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/gl-vs-cem-11-plus-exam.html">GL vs CEM: Understanding the Two 11+ Exam Formats</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/verbal-reasoning-tips-11-plus.html">11+ Verbal Reasoning: Tips, Question Types, and How to Practice</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/school-admissions-england-tips.html">School Admissions in England: 10 Things Every Parent Should Know</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/times-tables-tips.html">Best Ways to Learn Times Tables (Backed by Research)</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/year-4-multiplication-tables-check.html">Year 4 Multiplication Tables Check: Everything Parents Need to Know</a><span class="meta">Education</span></li>
+        <li data-cat="education"><a href="blog/ks2-sats-maths-preparation.html">KS2 SATs Maths: How to Prepare Without the Stress</a><span class="meta">Education</span></li>
+        <li data-cat="finance"><a href="blog/stock-research-without-bloomberg.html">How to Research Stocks Without Bloomberg</a><span class="meta">Finance</span></li>
+        <li data-cat="finance"><a href="blog/how-to-verify-financial-data-sources.html">How to Verify Financial Data Before Making Investment Decisions</a><span class="meta">Finance</span></li>
+        <li data-cat="finance"><a href="blog/insider-trading-congress-stocks.html">Congress Stock Trading: How to Track What Politicians Are Buying</a><span class="meta">Finance</span></li>
+        <li data-cat="finance"><a href="blog/how-to-research-global-stocks-from-your-phone.html">How to Research International Stocks From Your Phone</a><span class="meta">Finance</span></li>
+        <li data-cat="parenting"><a href="blog/creative-screen-time-for-kids.html">Screen Time That's Actually Good: Creative Apps vs Passive Scrolling</a><span class="meta">Parenting</span></li>
+        <li data-cat="parenting"><a href="blog/getting-rid-of-youtube-kids.html">What Happened When We Replaced YouTube With Creative Apps</a><span class="meta">Parenting</span></li>
+        <li data-cat="parenting"><a href="blog/safe-apps-for-kids-no-ads-privacy.html">The Parent's Guide to Choosing Safe Apps for Kids</a><span class="meta">Parenting</span></li>
+        <li data-cat="parenting"><a href="blog/on-device-ai-kids-apps-safety.html">Why On-Device AI Makes Kids' Apps Fundamentally Safer</a><span class="meta">Parenting</span></li>
+        <li data-cat="health"><a href="blog/period-tracker-privacy-why-it-matters.html">Why Your Period Tracker's Privacy Policy Actually Matters</a><span class="meta">Health</span></li>
+        <li data-cat="health"><a href="blog/cycle-tracking-apple-watch-temperature.html">How Apple Watch Temperature Sensing Improves Cycle Tracking</a><span class="meta">Health</span></li>
+        <li data-cat="fitness"><a href="blog/running-apps-no-subscription.html">The Best Running Apps That Don't Charge Monthly in 2026</a><span class="meta">Fitness</span></li>
+        <li data-cat="fitness"><a href="blog/training-load-injury-prevention.html">What Is Training Load and How It Prevents Running Injuries</a><span class="meta">Fitness</span></li>
+        <li data-cat="travel"><a href="blog/travel-map-from-photos.html">How to Build a Travel Map From Your Phone Photos</a><span class="meta">Travel</span></li>
+        <li data-cat="travel"><a href="blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps in 2026 — Map Your Trips Automatically</a><span class="meta">Travel</span></li>
+        <li data-cat="weather"><a href="blog/best-iphone-weather-widgets-2026.html">The Best iPhone Weather Widgets in 2026</a><span class="meta">Weather</span></li>
+        <li data-cat="weather"><a href="blog/how-community-weather-networks-work.html">How Community Weather Mesh Networks Give You Hyperlocal Forecasts</a><span class="meta">Weather</span></li>
       </ul>
     </section>
 
@@ -494,6 +465,18 @@
 
         <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">Are BFG apps safe for children's privacy?</h3>
         <p style="color: var(--text-muted);">Yes. All BFG apps process data on-device only. No data is uploaded to any server. No accounts are required. No analytics or telemetry is collected. The apps contain no ads and no third-party tracking.</p>
+
+        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is the best privacy-first period tracker?</h3>
+        <p style="color: var(--text-muted);">Cyla tracks your cycle entirely on-device. No accounts, no cloud, no servers. It includes Apple Watch temperature integration for ovulation confirmation, cycle predictions, and data export. Your health data never leaves your phone.</p>
+
+        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is a good running app without a subscription?</h3>
+        <p style="color: var(--text-muted);">PaceGrid is a one-time purchase fitness tracker with GPS tracking, Apple Watch support, Injury Guard training load monitoring, and Strava sync. All data stays on your device. No subscriptions, no recurring fees.</p>
+
+        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is the best weather widget app for iPhone?</h3>
+        <p style="color: var(--text-muted);">Cloudmesh Weather offers 29 home and lock screen widgets, AI weather summaries, a community mesh network for hyperlocal data, and earthquake detection. One-time purchase with no subscriptions.</p>
+
+        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">How does PhotoFlight track your travels?</h3>
+        <p style="color: var(--text-muted);">PhotoFlight reads GPS metadata from your existing photos to automatically build a travel map, passport, and flight log. All processing happens on-device — no data is collected or transmitted.</p>
       </div>
     </section>
 
@@ -508,6 +491,7 @@
   </div>
 
   <script src="theme.js"></script>
+  <script src="blog-filter.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
