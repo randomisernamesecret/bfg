@@ -57,4 +57,42 @@ footer a { color: var(--footer-link); }
 }
 .theme-toggle:hover { border-color: var(--accent); }
 
-@media (max-width: 600px) { h1 { font-size: 26px; } table { font-size: 12px; } }
+/* App page navigation */
+.app-nav {
+  display: flex; gap: 16px; margin-bottom: 32px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--border); font-size: 14px;
+}
+.app-nav a { color: var(--text-muted); font-weight: 500; }
+.app-nav a:hover { color: var(--accent); text-decoration: none; }
+.app-nav a.active { color: var(--accent); }
+
+/* App hero */
+.app-hero {
+  text-align: center; padding: 40px 0 32px;
+  border-bottom: 1px solid var(--border); margin-bottom: 40px;
+}
+.app-hero h1 { margin-bottom: 8px; }
+.app-hero .app-tagline { font-size: 15px; color: var(--text-muted); margin-bottom: 16px; }
+.app-hero .app-tag {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 4px 12px; border-radius: 6px;
+}
+.app-tag-finance { background: #1e3a5f; color: #60a5fa; }
+.app-tag-education { background: #3b1f6e; color: #c084fc; }
+.app-tag-kids { background: #5c2d0e; color: #fb923c; }
+.app-tag-travel { background: #0e3d3d; color: #5eead4; }
+.app-tag-health { background: #2d1b4e; color: #d8b4fe; }
+.app-tag-fitness { background: #0e3d2e; color: #6ee7b7; }
+.app-tag-weather { background: #1e3a5f; color: #7dd3fc; }
+@media (prefers-color-scheme: light) {
+  .app-tag-finance { background: #dbeafe; color: #1d4ed8; }
+  .app-tag-education { background: #ede9fe; color: #7c3aed; }
+  .app-tag-kids { background: #ffedd5; color: #c2410c; }
+  .app-tag-travel { background: #ccfbf1; color: #0f766e; }
+  .app-tag-health { background: #f3e8ff; color: #7c3aed; }
+  .app-tag-fitness { background: #d1fae5; color: #047857; }
+  .app-tag-weather { background: #dbeafe; color: #0369a1; }
+}
+
+@media (max-width: 600px) { h1 { font-size: 26px; } table { font-size: 12px; } .app-nav { flex-wrap: wrap; gap: 12px; } }
