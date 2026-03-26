@@ -3,258 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
-  <title>BFG — Privacy-First Apps</title>
-  <meta name="description" content="Apps that respect you. No ads. No cloud. Your data stays on your device. By Blue Flame Games.">
-  <meta name="keywords" content="privacy apps, no subscription apps, iOS apps, financial terminal, 11 plus prep, kids creative app, maths practice">
-  <meta property="og:title" content="BFG — Privacy-First Apps">
-  <meta property="og:description" content="Apps that respect you. No ads. No cloud. Your data stays on your device.">
+  <title>BFG — Privacy-First Apps for iOS</title>
+  <meta name="description" content="8 iOS apps across finance, education, health, fitness, travel, and weather. Your data stays on your device. By Blue Flame Games.">
+  <meta name="keywords" content="privacy apps, iOS apps, on-device AI, financial terminal, 11 plus prep, kids creative app, maths practice, period tracker, running app, weather widgets">
+  <meta property="og:title" content="BFG — Privacy-First Apps for iOS">
+  <meta property="og:description" content="8 iOS apps across finance, education, health, fitness, travel, and weather. Your data stays on your device.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bfgapps.co/">
+  <meta property="og:image" content="https://bfgapps.co/apple-touch-icon.png">
   <link rel="canonical" href="https://bfgapps.co/">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #0a0a0a; --text: #e0e0e0; --text-muted: #888; --text-dim: #666;
-      --surface: #111; --border: #1a1a1a; --border-hover: #333;
-      --badge-bg: #141414; --badge-border: #222;
-      --accent: #f97316; --heading: #fff;
-      --tag-finance-bg: #1e3a5f; --tag-finance: #60a5fa;
-      --tag-edu-bg: #3b1f6e; --tag-edu: #c084fc;
-      --tag-kids-bg: #5c2d0e; --tag-kids: #fb923c;
-      --tag-travel-bg: #0e3d3d; --tag-travel: #5eead4;
-      --tag-health-bg: #2d1b4e; --tag-health: #d8b4fe;
-      --tag-fitness-bg: #0e3d2e; --tag-fitness: #6ee7b7;
-      --tag-weather-bg: #1e3a5f; --tag-weather: #7dd3fc;
-      --arrow: #444; --footer: #444; --footer-link: #555;
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'DM Sans',sans-serif;background:#f4efe9;color:#2d2a26;line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+    a{color:#e8590c;text-decoration:none}
+    .site-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(244,239,233,.9);border-bottom:1px solid #e8e2da;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
+    .site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
+    .nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:#e8590c;text-decoration:none}
+    .site-nav .nav-links{display:flex;gap:32px;align-items:center}
+    .site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;color:#6b6560;text-decoration:none}
+    .nav-dropdown{position:relative}
+    .nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;background:#fff;border:1px solid #ddd6cc;border-radius:16px;padding:12px 0;min-width:230px;box-shadow:0 12px 40px rgba(26,23,20,.12)}
+    .nav-dropdown.open .nav-dropdown-menu{display:block}
+    .nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px;color:#2d2a26!important}
+    .nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;color:#9a948d;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}
+    .nav-hamburger{display:none;background:none;border:none;font-size:22px;color:#6b6560;padding:6px;cursor:pointer}
+    .theme-toggle{position:fixed;top:76px;right:20px;z-index:100;width:36px;height:36px;font-size:15px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #ddd6cc}
+    @media(prefers-color-scheme:dark){body{background:#141210;color:#cdc7be}h1,h2,h3{color:#f0ebe4}.site-nav{background:rgba(20,18,16,.92);border-color:#2a2723}.nav-dropdown-menu{background:#1e1c19;border-color:#2a2723}.nav-dropdown-menu a{color:#cdc7be!important}.theme-toggle{background:#1e1c19;border-color:#2a2723}}
+    @media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;background:#f4efe9;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}}
+    @media(min-width:701px){.nav-hamburger{display:none!important}}
+  </style>
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Homepage-specific styles */
+    .hero { text-align: center; padding: 80px 32px 64px; max-width: 720px; margin: 0 auto; }
+    .hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
+    .hero h1 em { color: var(--accent); font-style: normal; }
+    .hero .subtitle { font-size: 19px; color: var(--text-muted); max-width: 480px; margin: 0 auto 36px; line-height: 1.6; }
+    .hero .ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+    .proof-strip {
+      display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+      padding: 20px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);
+      font-size: 14px; color: var(--text-dim);
     }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #fafafa; --text: #333; --text-muted: #666; --text-dim: #595959;
-        --surface: #fff; --border: #e5e5e5; --border-hover: #ccc;
-        --badge-bg: #f0f0f0; --badge-border: #ddd;
-        --accent: #ea580c; --heading: #111;
-        --tag-finance-bg: #dbeafe; --tag-finance: #1d4ed8;
-        --tag-edu-bg: #ede9fe; --tag-edu: #7c3aed;
-        --tag-kids-bg: #ffedd5; --tag-kids: #c2410c;
-        --tag-travel-bg: #ccfbf1; --tag-travel: #0f766e;
-        --tag-health-bg: #f3e8ff; --tag-health: #7c3aed;
-        --tag-fitness-bg: #d1fae5; --tag-fitness: #047857;
-        --tag-weather-bg: #dbeafe; --tag-weather: #0369a1;
-        --arrow: #999; --footer: #595959; --footer-link: #555;
-      }
-    }
+    .proof-strip .proof { display: flex; align-items: center; gap: 8px; }
+    .proof-strip .proof strong { color: var(--heading); font-weight: 600; }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg); color: var(--text);
-      line-height: 1.6; padding-top: 60px;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .section-header { text-align: center; margin-bottom: 40px; }
+    .section-header h2 { font-size: 34px; margin-bottom: 8px; margin-top: 0; }
+    .section-header p { font-size: 16px; color: var(--text-muted); }
 
-    /* Critical nav styles — prevent unstyled flash */
-    .site-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      background: var(--bg); border-bottom: 1px solid var(--border);
-      height: 60px; backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
+    .products { padding: 72px 0; }
+    .products-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+      max-width: 1080px; margin: 0 auto; padding: 0 32px;
     }
-    .site-nav .nav-inner {
-      max-width: 900px; margin: 0 auto; width: 100%; height: 100%;
-      padding: 0 24px; display: flex; align-items: center; justify-content: space-between;
+    .product-card {
+      background: var(--surface); border: 1px solid var(--border-light);
+      border-radius: 20px; padding: 0; overflow: hidden;
+      box-shadow: var(--shadow-sm); transition: all 0.3s ease;
     }
-    .site-nav .nav-brand { font-size: 20px; font-weight: 800; color: var(--accent); text-decoration: none; }
-    .site-nav .nav-links { display: flex; gap: 28px; align-items: center; }
-    .site-nav .nav-links > a,
-    .site-nav .nav-links > .nav-dropdown > a {
-      font-size: 14px; font-weight: 500; color: var(--text-muted); text-decoration: none;
+    .product-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--border); }
+    .product-card .card-visual {
+      background: var(--bg-alt); padding: 32px 24px 0; text-align: center;
+      border-bottom: 1px solid var(--border-light);
     }
-    .nav-dropdown { position: relative; }
-    .nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 12px); left: -16px;
-      background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
-      padding: 10px 0; min-width: 220px; box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    .product-card .card-visual img {
+      max-width: 180px; border-radius: 12px 12px 0 0; display: block; margin: 0 auto;
     }
-    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
-    .nav-dropdown-menu a { display: block; padding: 9px 20px; font-size: 14px; color: var(--text) !important; }
-    .nav-dropdown-menu .menu-label { padding: 10px 20px 6px; font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
-    .nav-dropdown-menu .menu-label:first-child { padding-top: 6px; }
-    .nav-dropdown-menu hr { border: none; border-top: 1px solid var(--border); margin: 6px 0; }
-    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; font-size: 22px; color: var(--text-muted); padding: 6px; }
-    .theme-toggle { position: fixed; top: 72px; right: 16px; z-index: 100; }
-    @media (max-width: 700px) {
-      .nav-hamburger { display: block; }
-      .site-nav .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0;
-        background: var(--surface); border-bottom: 1px solid var(--border);
-        flex-direction: column; gap: 0; padding: 8px 0; }
-      .site-nav .nav-links.open { display: flex; }
-      .site-nav .nav-links > a, .site-nav .nav-links > .nav-dropdown > a { padding: 14px 24px; font-size: 16px; }
-      .nav-dropdown-menu { position: static; display: none; border: none; border-radius: 0; box-shadow: none; margin: 0; background: var(--bg); padding-left: 16px; }
-      .nav-dropdown.open .nav-dropdown-menu { display: block; }
+    .product-card .card-body { padding: 24px 28px 28px; }
+    .product-card .tag { margin-bottom: 10px; }
+    .product-card h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 22px; font-weight: 400; margin-bottom: 8px; color: var(--heading);
     }
-    @media (min-width: 701px) { .nav-hamburger { display: none !important; } }
+    .product-card h3 a { color: var(--heading); text-decoration: none; }
+    .product-card h3 a:hover { color: var(--accent); text-decoration: none; }
+    .product-card .desc { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.65; }
+    .product-card .card-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 16px; border-top: 1px solid var(--border-light);
+    }
+    .product-card .card-meta a { font-size: 14px; font-weight: 600; }
+    .product-card .card-meta .status { font-size: 13px; color: var(--text-dim); font-style: italic; }
 
-    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .coming-soon-section { background: var(--bg-alt); padding: 72px 0; margin: 0; }
+    .coming-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+      max-width: 1080px; margin: 0 auto; padding: 0 32px;
+    }
+    .coming-card {
+      background: var(--surface); border: 1px solid var(--border-light);
+      border-radius: 16px; padding: 24px; text-align: center;
+      box-shadow: var(--shadow-sm); transition: all 0.25s;
+    }
+    .coming-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .coming-card .tag { margin-bottom: 10px; }
+    .coming-card h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 18px; font-weight: 400; margin-bottom: 6px;
+    }
+    .coming-card h3 a { color: var(--heading); text-decoration: none; }
+    .coming-card h3 a:hover { color: var(--accent); }
+    .coming-card .desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
-    /* Hero */
-    .hero {
-      text-align: center; padding: 80px 0 60px;
-      border-bottom: 1px solid var(--border);
-    }
-    .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; margin-bottom: 12px; color: var(--heading); }
-    .hero h1 span { color: var(--accent); }
-    .hero p { font-size: 20px; color: var(--text-muted); max-width: 500px; margin: 0 auto 32px; }
-    .hero .stats {
-      display: flex; gap: 40px; justify-content: center; margin-bottom: 28px;
-    }
-    .hero .stat { text-align: center; }
-    .hero .stat strong { display: block; font-size: 32px; color: var(--accent); font-weight: 700; }
-    .hero .stat span { font-size: 13px; color: var(--text-dim); }
-    .hero .badges {
-      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
-      font-size: 13px; color: var(--text-dim);
-    }
-    .hero .badges span {
-      background: var(--badge-bg); border: 1px solid var(--badge-border); border-radius: 20px;
-      padding: 6px 16px;
-    }
-
-    /* Apps Grid */
-    .apps { padding: 60px 0; }
-    .apps h2 { font-size: 28px; font-weight: 600; margin-bottom: 32px; text-align: center; color: var(--heading); }
-    .apps-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      gap: 20px;
-    }
-    .app-card {
-      background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
-      padding: 28px; transition: border-color 0.2s;
-    }
-    .app-card:hover { border-color: var(--border-hover); }
-    .app-card .tag {
-      display: inline-block; font-size: 11px; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.5px;
-      padding: 4px 10px; border-radius: 6px; margin-bottom: 12px;
-    }
-    .app-screenshot {
-      width: 100%; max-width: 220px; display: block; margin: 0 auto 16px;
-      border-radius: 12px;
-    }
-    .app-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: var(--heading); }
-    .app-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-    .app-card .features {
-      list-style: none; font-size: 13px; color: var(--text-dim); margin-bottom: 16px;
-    }
-    .app-card .features li { padding: 3px 0; }
-    .app-card .features li::before { content: "→ "; color: var(--arrow); }
-    .app-card .link { font-size: 13px; font-weight: 500; }
-
-    .tag-finance { background: var(--tag-finance-bg); color: var(--tag-finance); }
-    .tag-education { background: var(--tag-edu-bg); color: var(--tag-edu); }
-    .tag-kids { background: var(--tag-kids-bg); color: var(--tag-kids); }
-    .tag-travel { background: var(--tag-travel-bg); color: var(--tag-travel); }
-    .tag-health { background: var(--tag-health-bg); color: var(--tag-health); }
-    .tag-fitness { background: var(--tag-fitness-bg); color: var(--tag-fitness); }
-    .tag-weather { background: var(--tag-weather-bg); color: var(--tag-weather); }
-    .coming-soon { font-size: 13px; font-weight: 500; color: var(--text-muted); font-style: italic; }
-
-    /* Brand Promise */
-    .promise {
-      padding: 60px 0; border-top: 1px solid var(--border);
-      text-align: center;
-    }
-    .promise h2 { font-size: 28px; font-weight: 600; margin-bottom: 24px; color: var(--heading); }
-    .promise-grid {
+    .trust-section { padding: 72px 0; }
+    .trust-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-      max-width: 700px; margin: 0 auto;
+      max-width: 900px; margin: 0 auto; padding: 0 32px;
     }
-    .promise-item h3 { font-size: 16px; font-weight: 600; color: var(--heading); margin-bottom: 6px; }
-    .promise-item p { font-size: 13px; color: var(--text-dim); }
+    .trust-item {
+      text-align: center; padding: 32px 20px;
+      background: var(--surface); border: 1px solid var(--border-light);
+      border-radius: 16px; box-shadow: var(--shadow-sm);
+    }
+    .trust-item .trust-icon { font-size: 28px; margin-bottom: 14px; }
+    .trust-item h3 { font-size: 17px; font-weight: 600; font-family: 'DM Sans', sans-serif; margin-bottom: 8px; color: var(--heading); }
+    .trust-item p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
-    /* Blog */
-    .blog {
-      padding: 60px 0; border-top: 1px solid var(--border);
-    }
-    .blog h2 { font-size: 28px; font-weight: 600; margin-bottom: 8px; text-align: center; color: var(--heading); }
-    .blog .subtitle { font-size: 14px; color: var(--text-dim); text-align: center; margin-bottom: 32px; }
-    .blog-filters {
-      display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;
-    }
-    .blog-filters button {
-      background: var(--badge-bg); border: 1px solid var(--badge-border); border-radius: 20px;
-      padding: 6px 16px; font-size: 13px; color: var(--text-dim); cursor: pointer;
-      font-family: inherit; transition: all 0.2s;
-    }
-    .blog-filters button:hover { border-color: var(--accent); color: var(--text); }
-    .blog-filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .blog-list { list-style: none; }
-    .blog-list li {
-      padding: 16px 0; border-bottom: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: baseline;
-    }
-    .blog-list li a { font-size: 15px; font-weight: 500; }
-    .blog-list li .meta { font-size: 12px; color: var(--text-dim); white-space: nowrap; margin-left: 12px; }
+    .blog-section { padding: 72px 0; border-top: 1px solid var(--border-light); }
+    .faq-section { padding: 56px 0; border-top: 1px solid var(--border-light); }
+    .faq-section h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600; color: var(--heading); margin: 28px 0 8px; }
+    .faq-section p { font-size: 15px; color: var(--text-muted); }
 
-    /* Footer */
-    footer {
-      padding: 40px 0; border-top: 1px solid var(--border);
-      text-align: center; font-size: 12px; color: var(--footer);
+    @media (max-width: 700px) {
+      .hero { padding: 48px 20px 40px; }
+      .hero h1 { font-size: 34px; }
+      .hero .subtitle { font-size: 16px; }
+      .products-grid { grid-template-columns: 1fr; padding: 0 20px; }
+      .coming-grid { grid-template-columns: 1fr 1fr; padding: 0 20px; }
+      .trust-grid { grid-template-columns: 1fr; padding: 0 20px; }
+      .proof-strip { gap: 16px; font-size: 13px; }
     }
-    footer a { color: var(--footer-link); }
-
-    /* Theme toggle */
-    .theme-toggle {
-      position: fixed; top: 16px; right: 16px; z-index: 100;
-      background: var(--surface); border: 1px solid var(--border); border-radius: 50%;
-      width: 40px; height: 40px; font-size: 18px; cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
-      transition: border-color 0.2s;
-    }
-    .theme-toggle:hover { border-color: var(--accent); }
-
-    /* Override system preference when user manually toggles */
-    html[data-theme="light"], html[data-theme="light"] :root {
-      --bg: #fafafa !important; --text: #333 !important; --text-muted: #666 !important; --text-dim: #595959 !important;
-      --surface: #fff !important; --border: #e5e5e5 !important; --border-hover: #ccc !important;
-      --badge-bg: #f0f0f0 !important; --badge-border: #ddd !important;
-      --accent: #ea580c !important; --heading: #111 !important;
-      --tag-finance-bg: #dbeafe !important; --tag-finance: #1d4ed8 !important;
-      --tag-edu-bg: #ede9fe !important; --tag-edu: #7c3aed !important;
-      --tag-kids-bg: #ffedd5 !important; --tag-kids: #c2410c !important;
-      --tag-travel-bg: #ccfbf1 !important; --tag-travel: #0f766e !important;
-      --tag-health-bg: #f3e8ff !important; --tag-health: #7c3aed !important;
-      --tag-fitness-bg: #d1fae5 !important; --tag-fitness: #047857 !important;
-      --tag-weather-bg: #dbeafe !important; --tag-weather: #0369a1 !important;
-      --arrow: #999 !important; --footer: #595959 !important; --footer-link: #555 !important;
-    }
-    html[data-theme="dark"], html[data-theme="dark"] :root {
-      --bg: #0a0a0a !important; --text: #e0e0e0 !important; --text-muted: #888 !important; --text-dim: #666 !important;
-      --surface: #111 !important; --border: #1a1a1a !important; --border-hover: #333 !important;
-      --badge-bg: #141414 !important; --badge-border: #222 !important;
-      --accent: #f97316 !important; --heading: #fff !important;
-      --tag-finance-bg: #1e3a5f !important; --tag-finance: #60a5fa !important;
-      --tag-edu-bg: #3b1f6e !important; --tag-edu: #c084fc !important;
-      --tag-kids-bg: #5c2d0e !important; --tag-kids: #fb923c !important;
-      --tag-travel-bg: #0e3d3d !important; --tag-travel: #5eead4 !important;
-      --tag-health-bg: #2d1b4e !important; --tag-health: #d8b4fe !important;
-      --tag-fitness-bg: #0e3d2e !important; --tag-fitness: #6ee7b7 !important;
-      --tag-weather-bg: #1e3a5f !important; --tag-weather: #7dd3fc !important;
-      --arrow: #444 !important; --footer: #444 !important; --footer-link: #555 !important;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 32px; }
-      .hero p { font-size: 16px; }
-      .apps-grid { grid-template-columns: 1fr; }
-      .promise-grid { grid-template-columns: 1fr; }
+    @media (max-width: 480px) {
+      .coming-grid { grid-template-columns: 1fr; }
     }
   </style>
   <script type="application/ld+json">
@@ -276,7 +170,7 @@
       {"@type": "Question", "name": "What is a good Bloomberg Terminal alternative for mobile?", "acceptedAnswer": {"@type": "Answer", "text": "Kanesh is a mobile financial data terminal where every number is source-linked to its SEC filing or data source. It features an interactive 3D globe covering 53 countries, on-device AI, natural language queries, and a Congress trading tracker."}},
       {"@type": "Question", "name": "What is the best maths app for primary school children in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Arithmetix is aligned to the UK National Curriculum from Reception to Year 6. It covers 30+ topics including times tables 2-12, uses adaptive difficulty, and includes a virtual pet for motivation. No ads, no tracking."}},
       {"@type": "Question", "name": "What is a safe creative app for kids with no ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sparks Studios is an AI-powered creative playground where children draw, write stories, and compose music. All AI runs on-device with nothing uploaded to any cloud. No ads, no tracking, no account required. Designed for ages 4-12."}},
-      {"@type": "Question", "name": "Are BFG apps safe for children's privacy?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All BFG apps process data on-device only. No data is uploaded to any server. No accounts are required. No analytics or telemetry is collected. The apps contain no ads and no third-party tracking."}},
+      {"@type": "Question", "name": "Are BFG apps safe for children's privacy?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All BFG apps minimise data collection. Most apps process data on-device only with no accounts required. The apps contain no ads and no third-party tracking."}},
       {"@type": "Question", "name": "What is the best privacy-first period tracker?", "acceptedAnswer": {"@type": "Answer", "text": "Cyla tracks your cycle entirely on-device. No accounts, no cloud, no servers. It includes Apple Watch temperature integration for ovulation confirmation, cycle predictions, and data export."}},
       {"@type": "Question", "name": "What is a good running app without a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "PaceGrid is a one-time purchase fitness tracker with GPS tracking, Apple Watch support, Injury Guard training load monitoring, and Strava sync. All data stays on your device."}},
       {"@type": "Question", "name": "What is the best weather widget app for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudmesh Weather offers 29 home and lock screen widgets, AI weather summaries, a community mesh network, and earthquake detection. One-time purchase with no subscriptions."}},
@@ -290,12 +184,12 @@
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
-      <button class="nav-hamburger" aria-label="Menu">☰</button>
+      <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
       <div class="nav-links">
         <div class="nav-dropdown">
-          <a href="/#apps">Apps</a>
+          <a href="#apps" aria-haspopup="true" aria-expanded="false">Apps</a>
           <div class="nav-dropdown-menu">
-            <div class="menu-label">On the App Store</div>
+            <div class="menu-label">Available Now</div>
             <a href="/apps/kanesh/">Kanesh</a>
             <a href="/apps/cognithix/">Cognithix</a>
             <a href="/apps/arithmetix/">Arithmetix</a>
@@ -308,176 +202,163 @@
             <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
           </div>
         </div>
-        <a href="/#blog">Blog</a>
+        <a href="#blog">Blog</a>
         <a href="mailto:blueflamegames@proton.me">Contact</a>
       </div>
     </div>
   </nav>
 
-  <button class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">☀️</button>
+  <button class="theme-toggle" aria-label="Toggle dark/light mode">&#9788;&#65039;</button>
 
-  <div class="container">
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Apps that keep your <em>data</em> where it belongs</h1>
+    <p class="subtitle">8 iOS apps across finance, education, health, fitness, travel, and weather. No ads. No tracking. Built by Blue Flame Games.</p>
+    <div class="ctas">
+      <a href="#apps" class="btn btn-primary">Browse Apps</a>
+      <a href="#blog" class="btn btn-outline">Read the Blog</a>
+    </div>
+    <div class="proof-strip">
+      <div class="proof"><strong>8</strong> apps</div>
+      <div class="proof"><strong>6</strong> categories</div>
+      <div class="proof"><strong>0</strong> data collected</div>
+      <div class="proof"><strong>24</strong> articles</div>
+    </div>
+  </section>
 
-    <!-- Hero -->
-    <section class="hero">
-      <h1><span>BFG</span></h1>
-      <p>Privacy-first apps for finance, education, health, fitness, travel, and weather. Your data stays on your device.</p>
-      <div class="stats">
-        <div class="stat"><strong>8</strong><span>Apps</span></div>
-        <div class="stat"><strong>6</strong><span>Categories</span></div>
-        <div class="stat"><strong>0</strong><span>Data collected</span></div>
-      </div>
-      <div class="badges">
-        <span>On-device processing</span>
-        <span>No ads</span>
-        <span>No tracking</span>
-        <span>No cloud</span>
-      </div>
-    </section>
+  <!-- Available Now -->
+  <section class="products" id="apps">
+    <div class="section-header">
+      <h2>Available Now</h2>
+      <p>On the App Store. Download today.</p>
+    </div>
+    <div class="products-grid">
 
-    <!-- Apps -->
-    <section class="apps" id="apps">
-      <h2>Our Apps</h2>
-      <div class="apps-grid">
-
-        <div class="app-card">
-          <img src="assets/kanesh-hero.png" alt="Kanesh app showing interactive 3D globe with global economic data" class="app-screenshot" loading="lazy">
+      <div class="product-card">
+        <div class="card-visual">
+          <img src="assets/kanesh-hero.png" alt="Kanesh financial data terminal" loading="lazy">
+        </div>
+        <div class="card-body">
           <span class="tag tag-finance">Finance</span>
-          <h3><a href="/apps/kanesh/" style="color:var(--heading);text-decoration:none">Kanesh</a></h3>
-          <p>A source-linked financial data terminal. Every number links to its SEC filing or data source. On-device AI. Interactive 3D globe covering 53 countries.</p>
-          <ul class="features">
-            <li>Source-tagged financial data</li>
-            <li>Natural language queries</li>
-            <li>Congress trading tracker</li>
-            <li>On-device AI — nothing leaves your phone</li>
-          </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store →</a>
+          <h3><a href="/apps/kanesh/">Kanesh</a></h3>
+          <p class="desc">Source-linked financial data terminal. Every number traces back to its SEC filing. On-device AI. 53 countries.</p>
+          <div class="card-meta">
+            <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+          </div>
         </div>
+      </div>
 
-        <div class="app-card">
-          <img src="assets/cognithix-hero.png" alt="Cognithix app showing 11+ exam subjects and daily practice plan" class="app-screenshot" loading="lazy">
+      <div class="product-card">
+        <div class="card-visual">
+          <img src="assets/cognithix-hero.png" alt="Cognithix 11+ exam preparation" loading="lazy">
+        </div>
+        <div class="card-body">
           <span class="tag tag-education">Education</span>
-          <h3><a href="/apps/cognithix/" style="color:var(--heading);text-decoration:none">Cognithix</a></h3>
-          <p>The only 11+ app covering all four tested areas — including the Language Aptitude Test. Adaptive difficulty. Unlimited on-device questions.</p>
-          <ul class="features">
-            <li>Verbal, Non-Verbal, English & LAT prep</li>
-            <li>Adaptive difficulty per child</li>
-            <li>Virtual pet companion for motivation</li>
-            <li>Parent dashboard with mastery tracking</li>
-          </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store →</a>
+          <h3><a href="/apps/cognithix/">Cognithix</a></h3>
+          <p class="desc">The only 11+ app covering all four tested areas — including the Language Aptitude Test. Adaptive difficulty. Unlimited questions.</p>
+          <div class="card-meta">
+            <a href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+          </div>
         </div>
+      </div>
 
-        <div class="app-card">
-          <img src="assets/arithmetix-hero.png" alt="Arithmetix app showing maths topics and daily practice plan" class="app-screenshot" loading="lazy">
+      <div class="product-card">
+        <div class="card-visual">
+          <img src="assets/arithmetix-hero.png" alt="Arithmetix maths practice" loading="lazy">
+        </div>
+        <div class="card-body">
           <span class="tag tag-education">Education</span>
-          <h3><a href="/apps/arithmetix/" style="color:var(--heading);text-decoration:none">Arithmetix</a></h3>
-          <p>Maths practice aligned to the UK National Curriculum from Reception to Year 6. Adaptive, gamified, and distraction-free.</p>
-          <ul class="features">
-            <li>30+ topics, thousands of exercises</li>
-            <li>UK National Curriculum aligned</li>
-            <li>Times tables 2–12 with progress tracking</li>
-            <li>Virtual pet earned through practice</li>
-          </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store →</a>
+          <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
+          <p class="desc">UK National Curriculum maths from Reception to Year 6. Adaptive difficulty. Spaced repetition. Virtual pet motivation.</p>
+          <div class="card-meta">
+            <a href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+          </div>
         </div>
+      </div>
 
-        <div class="app-card">
-          <img src="assets/sparks-hero.png" alt="Sparks Studios app showing story builder, drawing, and music tools for kids" class="app-screenshot" loading="lazy">
+      <div class="product-card">
+        <div class="card-visual">
+          <img src="assets/sparks-hero.png" alt="Sparks Studios creative app for kids" loading="lazy">
+        </div>
+        <div class="card-body">
           <span class="tag tag-kids">Kids</span>
-          <h3><a href="/apps/sparks-studios/" style="color:var(--heading);text-decoration:none">Sparks Studios</a></h3>
-          <p>An AI-powered creative playground. Kids draw, write stories, and compose music — all running on-device with zero data leaving the device.</p>
-          <ul class="features">
-            <li>Drawing canvas, story builder, music composer</li>
-            <li>AI runs locally — no cloud uploads</li>
-            <li>Age-adapted: ages 4–6, 7–9, 10–12</li>
-            <li>Parental controls via math-challenge gate</li>
-          </ul>
-          <a class="link" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store →</a>
+          <h3><a href="/apps/sparks-studios/">Sparks Studios</a></h3>
+          <p class="desc">AI-powered creative playground. Kids draw, write stories, and compose music — all on-device. No ads. No tracking. Ages 4-12.</p>
+          <div class="card-meta">
+            <a href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+          </div>
         </div>
-
-        <div class="app-card">
-          <img src="assets/photoflight-hero.png" alt="PhotoFlight app showing travel passport with flights, countries, and distance stats" class="app-screenshot" loading="lazy">
-          <span class="tag tag-travel">Travel</span>
-          <h3><a href="/apps/photoflight/" style="color:var(--heading);text-decoration:none">PhotoFlight</a></h3>
-          <p>Your photos already know where you've been. PhotoFlight reads GPS metadata to build your personal travel map, passport, and flight log — all on-device.</p>
-          <ul class="features">
-            <li>Travel map from your photo library</li>
-            <li>Flights, countries, cities tracked automatically</li>
-            <li>Trip albums organised by destination</li>
-            <li>All processing on-device — no data leaves your phone</li>
-          </ul>
-          <span class="coming-soon">Coming soon to the App Store</span>
-        </div>
-
-        <div class="app-card">
-          <img src="assets/cyla-hero.png" alt="Cyla app showing on-device cycle tracking with privacy-first design" class="app-screenshot" loading="lazy">
-          <span class="tag tag-health">Health</span>
-          <h3><a href="/apps/cyla/" style="color:var(--heading);text-decoration:none">Cyla</a></h3>
-          <p>Cycle tracking that stays on your device. No accounts, no cloud, no servers. Your most intimate health data never leaves your phone.</p>
-          <ul class="features">
-            <li>Cycle predictions calculated on-device</li>
-            <li>Apple Watch temperature integration</li>
-            <li>No account required</li>
-            <li>Export your data anytime</li>
-          </ul>
-          <span class="coming-soon">Coming soon to the App Store</span>
-        </div>
-
-        <div class="app-card">
-          <img src="assets/pacegrid-hero.png" alt="PaceGrid app showing GPS activity map with run, ride, walk tracking" class="app-screenshot" loading="lazy">
-          <span class="tag tag-fitness">Fitness</span>
-          <h3><a href="/apps/pacegrid/" style="color:var(--heading);text-decoration:none">PaceGrid</a></h3>
-          <p>Privacy-first fitness tracking. GPS runs, rides, and walks — all stored on your device. One-time purchase. No subscriptions.</p>
-          <ul class="features">
-            <li>Apple Watch independent GPS</li>
-            <li>Injury Guard training load monitoring</li>
-            <li>Strava sync optional — your choice</li>
-            <li>GPX and FIT export</li>
-          </ul>
-          <span class="coming-soon">Coming soon to the App Store</span>
-        </div>
-
-        <div class="app-card">
-          <img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather app showing forecast, AI summary, and umbrella widget" class="app-screenshot" loading="lazy">
-          <span class="tag tag-weather">Weather</span>
-          <h3><a href="/apps/cloudmesh/" style="color:var(--heading);text-decoration:none">Cloudmesh Weather</a></h3>
-          <p>29 widgets. AI weather summaries. Community mesh network. One-time purchase — no subscriptions.</p>
-          <ul class="features">
-            <li>29 home and lock screen widgets</li>
-            <li>AI weather summaries</li>
-            <li>Anonymous community mesh network</li>
-            <li>Earthquake detection beta</li>
-          </ul>
-          <span class="coming-soon">Coming soon to the App Store</span>
-        </div>
-
       </div>
-    </section>
 
-    <!-- Brand Promise -->
-    <section class="promise">
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="coming-soon-section">
+    <div class="section-header">
+      <h2>Coming Soon</h2>
+      <p>In development. Launching on the App Store soon.</p>
+    </div>
+    <div class="coming-grid">
+
+      <div class="coming-card">
+        <span class="tag tag-travel">Travel</span>
+        <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
+        <p class="desc">Travel map from your photo library. Automatic. On-device.</p>
+      </div>
+
+      <div class="coming-card">
+        <span class="tag tag-health">Health</span>
+        <h3><a href="/apps/cyla/">Cyla</a></h3>
+        <p class="desc">Private cycle tracking. No accounts. No cloud. Apple Watch.</p>
+      </div>
+
+      <div class="coming-card">
+        <span class="tag tag-fitness">Fitness</span>
+        <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
+        <p class="desc">GPS fitness tracking. Injury Guard. One-time purchase.</p>
+      </div>
+
+      <div class="coming-card">
+        <span class="tag tag-weather">Weather</span>
+        <h3><a href="/apps/cloudmesh/">Cloudmesh</a></h3>
+        <p class="desc">29 widgets. AI summaries. Community mesh. No subscription.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="trust-section">
+    <div class="section-header">
       <h2>Why BFG?</h2>
-      <div class="promise-grid">
-        <div class="promise-item">
-          <h3>Your device, your data</h3>
-          <p>Everything runs and stays on your device. We don't have servers. We can't see your data even if we wanted to.</p>
-        </div>
-        <div class="promise-item">
-          <h3>Fair pricing</h3>
-          <p>No hidden fees. No upsells. Free tiers that are genuinely useful. Paid tiers that are worth it.</p>
-        </div>
-        <div class="promise-item">
-          <h3>No ads, no tracking</h3>
-          <p>We make money from the app purchase, not from selling your attention or data. Zero analytics. Zero telemetry.</p>
-        </div>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">&#128274;</div>
+        <h3>Your device, your data</h3>
+        <p>Most BFG apps process everything on-device. We can't see your data even if we wanted to.</p>
       </div>
-    </section>
+      <div class="trust-item">
+        <div class="trust-icon">&#128176;</div>
+        <h3>Fair pricing</h3>
+        <p>No hidden fees. No upsells. Free tiers that work. Paid tiers that are worth it.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">&#128683;</div>
+        <h3>No ads, no tracking</h3>
+        <p>We make money from the product, not from selling your attention or your data.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Blog -->
-    <section class="blog" id="blog">
-      <h2>Blog</h2>
-      <p class="subtitle">Guides, tips, and insights across everything we build</p>
+  <!-- Blog -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Blog</h2>
+        <p>Guides, tips, and insights across everything we build</p>
+      </div>
       <div class="blog-filters">
         <button class="active" data-filter="all">All</button>
         <button data-filter="education">Education</button>
@@ -514,49 +395,55 @@
         <li data-cat="weather"><a href="blog/best-iphone-weather-widgets-2026.html">The Best iPhone Weather Widgets in 2026</a><span class="meta">Weather</span></li>
         <li data-cat="weather"><a href="blog/how-community-weather-networks-work.html">How Community Weather Mesh Networks Give You Hyperlocal Forecasts</a><span class="meta">Weather</span></li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="blog" id="faq" style="padding-bottom: 20px;">
-      <h2>Frequently Asked Questions</h2>
-      <div style="margin-top: 24px; font-size: 15px;">
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is the best app for 11+ exam preparation?</h3>
-        <p style="color: var(--text-muted);">Cognithix is the only 11+ preparation app that covers all four tested areas: English, Verbal Reasoning, Non-Verbal Reasoning, and the Language Aptitude Test (LAT). It features adaptive difficulty, unlimited on-device question generation, and a parent dashboard. Available on the App Store for iPhone and iPad.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is a good Bloomberg Terminal alternative for mobile?</h3>
-        <p style="color: var(--text-muted);">Kanesh is a mobile financial data terminal where every number is source-linked to its SEC filing or data source. It features an interactive 3D globe covering 53 countries, on-device AI, natural language queries, and a Congress trading tracker. Available on the App Store.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is the best maths app for primary school children in the UK?</h3>
-        <p style="color: var(--text-muted);">Arithmetix is aligned to the UK National Curriculum from Reception to Year 6. It covers 30+ topics including times tables 2–12, uses adaptive difficulty that adjusts to your child's accuracy, and includes a virtual pet for motivation. No ads, no tracking.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is a safe creative app for kids with no ads?</h3>
-        <p style="color: var(--text-muted);">Sparks Studios is an AI-powered creative playground where children draw, write stories, and compose music. All AI runs on-device — nothing is uploaded to any cloud. No ads, no tracking, no account required. Designed for ages 4–12 with age-adapted content.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">Are BFG apps safe for children's privacy?</h3>
-        <p style="color: var(--text-muted);">Yes. All BFG apps process data on-device only. No data is uploaded to any server. No accounts are required. No analytics or telemetry is collected. The apps contain no ads and no third-party tracking.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is the best privacy-first period tracker?</h3>
-        <p style="color: var(--text-muted);">Cyla tracks your cycle entirely on-device. No accounts, no cloud, no servers. It includes Apple Watch temperature integration for ovulation confirmation, cycle predictions, and data export. Your health data never leaves your phone.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is a good running app without a subscription?</h3>
-        <p style="color: var(--text-muted);">PaceGrid is a one-time purchase fitness tracker with GPS tracking, Apple Watch support, Injury Guard training load monitoring, and Strava sync. All data stays on your device. No subscriptions, no recurring fees.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">What is the best weather widget app for iPhone?</h3>
-        <p style="color: var(--text-muted);">Cloudmesh Weather offers 29 home and lock screen widgets, AI weather summaries, a community mesh network for hyperlocal data, and earthquake detection. One-time purchase with no subscriptions.</p>
-
-        <h3 style="font-size: 16px; color: var(--heading); margin: 24px 0 8px;">How does PhotoFlight track your travels?</h3>
-        <p style="color: var(--text-muted);">PhotoFlight reads GPS metadata from your existing photos to automatically build a travel map, passport, and flight log. All processing happens on-device — no data is collected or transmitted.</p>
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
       </div>
-    </section>
+      <div>
+        <h3>What is the best app for 11+ exam preparation?</h3>
+        <p>Cognithix covers all four tested areas: English, Verbal Reasoning, Non-Verbal Reasoning, and the Language Aptitude Test (LAT). Adaptive difficulty, unlimited on-device questions, and a parent dashboard.</p>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2026 Blue Flame Games. All rights reserved.</p>
-      <p style="margin-top: 8px;">
-        <a href="mailto:blueflamegames@proton.me">Contact</a> · <a href="/privacy.html">Privacy Policy</a>
+        <h3>What is a good Bloomberg Terminal alternative for mobile?</h3>
+        <p>Kanesh is a mobile financial data terminal where every number is source-linked to its SEC filing or data source. 53 countries, on-device AI, Congress trading tracker.</p>
+
+        <h3>What is the best maths app for primary school children in the UK?</h3>
+        <p>Arithmetix is aligned to the UK National Curriculum from Reception to Year 6. 30+ topics, adaptive difficulty, virtual pet motivation. No ads, no tracking.</p>
+
+        <h3>What is a safe creative app for kids with no ads?</h3>
+        <p>Sparks Studios is an AI-powered creative playground. Drawing, stories, and music — all on-device. No ads, no tracking, no account required. Ages 4-12.</p>
+
+        <h3>What is the best privacy-first period tracker?</h3>
+        <p>Cyla tracks your cycle entirely on-device. No accounts, no cloud, no servers. Apple Watch temperature integration, cycle predictions, data export.</p>
+
+        <h3>What is a good running app without a subscription?</h3>
+        <p>PaceGrid is a one-time purchase fitness tracker with GPS, Apple Watch, Injury Guard training load monitoring, and optional Strava sync.</p>
+
+        <h3>What is the best weather widget app for iPhone?</h3>
+        <p>Cloudmesh Weather offers 29 widgets, AI weather summaries, a community mesh network, and earthquake detection. One-time purchase.</p>
+
+        <h3>How does PhotoFlight track your travels?</h3>
+        <p>PhotoFlight reads GPS metadata from your existing photos to build a travel map, passport, and flight log. All processing on-device.</p>
+
+        <h3>Are BFG apps safe for children's privacy?</h3>
+        <p>Yes. BFG apps minimise data collection. Most apps process everything on-device with no accounts required. No ads and no third-party tracking in any BFG app.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Blue Flame Games. All rights reserved.</p>
+      <p style="margin-top: 10px;">
+        <a href="mailto:blueflamegames@proton.me">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a>
       </p>
-    </footer>
-
-  </div>
+    </div>
+  </footer>
 
   <script src="theme.js"></script>
   <script src="nav.js"></script>
