@@ -6,7 +6,7 @@ function getPreferred() {
 function applyTheme(t) {
   document.documentElement.setAttribute('data-theme', t);
   var btn = document.querySelector('.theme-toggle');
-  if (btn) btn.textContent = t === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+  if (btn) btn.textContent = t === 'dark' ? 'Light' : 'Dark';
 }
 function toggleTheme() {
   var current = document.documentElement.getAttribute('data-theme') || getPreferred();
