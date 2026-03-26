@@ -29,6 +29,9 @@
       --tag-edu-bg: #3b1f6e; --tag-edu: #c084fc;
       --tag-kids-bg: #5c2d0e; --tag-kids: #fb923c;
       --tag-travel-bg: #0e3d3d; --tag-travel: #5eead4;
+      --tag-health-bg: #2d1b4e; --tag-health: #d8b4fe;
+      --tag-fitness-bg: #0e3d2e; --tag-fitness: #6ee7b7;
+      --tag-weather-bg: #1e3a5f; --tag-weather: #7dd3fc;
       --arrow: #444; --footer: #444; --footer-link: #555;
     }
     @media (prefers-color-scheme: light) {
@@ -41,6 +44,9 @@
         --tag-edu-bg: #ede9fe; --tag-edu: #7c3aed;
         --tag-kids-bg: #ffedd5; --tag-kids: #c2410c;
         --tag-travel-bg: #ccfbf1; --tag-travel: #0f766e;
+        --tag-health-bg: #f3e8ff; --tag-health: #7c3aed;
+        --tag-fitness-bg: #d1fae5; --tag-fitness: #047857;
+        --tag-weather-bg: #dbeafe; --tag-weather: #0369a1;
         --arrow: #999; --footer: #595959; --footer-link: #555;
       }
     }
@@ -108,6 +114,9 @@
     .tag-education { background: var(--tag-edu-bg); color: var(--tag-edu); }
     .tag-kids { background: var(--tag-kids-bg); color: var(--tag-kids); }
     .tag-travel { background: var(--tag-travel-bg); color: var(--tag-travel); }
+    .tag-health { background: var(--tag-health-bg); color: var(--tag-health); }
+    .tag-fitness { background: var(--tag-fitness-bg); color: var(--tag-fitness); }
+    .tag-weather { background: var(--tag-weather-bg); color: var(--tag-weather); }
     .coming-soon { font-size: 13px; font-weight: 500; color: var(--text-muted); font-style: italic; }
 
     /* Brand Promise */
@@ -296,6 +305,48 @@
             <li>Flights, countries, cities tracked automatically</li>
             <li>Trip albums organised by destination</li>
             <li>All processing on-device — no data leaves your phone</li>
+          </ul>
+          <span class="coming-soon">Coming soon to the App Store</span>
+        </div>
+
+        <div class="app-card">
+          <img src="assets/cyla-hero.png" alt="Cyla app showing on-device cycle tracking with privacy-first design" class="app-screenshot" loading="lazy">
+          <span class="tag tag-health">Health</span>
+          <h3>Cyla</h3>
+          <p>Cycle tracking that stays on your device. No accounts, no cloud, no servers. Your most intimate health data never leaves your phone.</p>
+          <ul class="features">
+            <li>Cycle predictions calculated on-device</li>
+            <li>Apple Watch temperature integration</li>
+            <li>No account required</li>
+            <li>Export your data anytime</li>
+          </ul>
+          <span class="coming-soon">Coming soon to the App Store</span>
+        </div>
+
+        <div class="app-card">
+          <img src="assets/pacegrid-hero.png" alt="PaceGrid app showing GPS activity map with run, ride, walk tracking" class="app-screenshot" loading="lazy">
+          <span class="tag tag-fitness">Fitness</span>
+          <h3>PaceGrid</h3>
+          <p>Privacy-first fitness tracking. GPS runs, rides, and walks — all stored on your device. One-time purchase. No subscriptions.</p>
+          <ul class="features">
+            <li>Apple Watch independent GPS</li>
+            <li>Injury Guard training load monitoring</li>
+            <li>Strava sync optional — your choice</li>
+            <li>GPX and FIT export</li>
+          </ul>
+          <span class="coming-soon">Coming soon to the App Store</span>
+        </div>
+
+        <div class="app-card">
+          <img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather app showing forecast, AI summary, and umbrella widget" class="app-screenshot" loading="lazy">
+          <span class="tag tag-weather">Weather</span>
+          <h3>Cloudmesh Weather</h3>
+          <p>29 widgets. AI weather summaries. Community mesh network. One-time purchase — no subscriptions.</p>
+          <ul class="features">
+            <li>29 home and lock screen widgets</li>
+            <li>AI weather summaries</li>
+            <li>Anonymous community mesh network</li>
+            <li>Earthquake detection beta</li>
           </ul>
           <span class="coming-soon">Coming soon to the App Store</span>
         </div>
