@@ -456,7 +456,7 @@ footer a:hover { color: var(--accent); }
   .container-wide { padding: 0 20px; }
   table { font-size: 12px; }
   .app-nav { flex-wrap: wrap; gap: 14px; }
-  .theme-toggle { top: 72px; right: 12px; width: 32px; height: 32px; font-size: 13px; }
+  .theme-toggle { top: 72px; right: 12px; font-size: 13px; padding: 6px 10px; white-space: nowrap; }
   .blog-list li { flex-direction: column; gap: 4px; }
   .blog-list li .meta { margin-left: 0; }
 }
