@@ -5,7 +5,7 @@ Static website for Blue Flame Games (BFG) at bfgapps.co. Hosted on GitHub Pages 
 ## Structure
 - `index.html` — Homepage (10 apps, blog filters, FAQ)
 - `apps/{name}/` — Per-app landing page + privacy, support, terms
-- `blog/` — 24 articles across 7 categories
+- `blog/` — 27 articles across 7 categories
 - `style.css` — Shared CSS (dark/light, nav, app pages)
 - `theme.js` — Dark/light toggle
 - `nav.js` — Mobile hamburger menu
