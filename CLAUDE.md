@@ -12,8 +12,8 @@ Static website for Blue Flame Games (BFG) at bfgapps.co. Hosted on GitHub Pages 
 - `blog-filter.js` — Blog category filtering
 
 ## Apps
-Live: Kanesh, Cognithix, Arithmetix, Sparks Studios, PhotoFlight, Cyla, Cloudmesh Weather
-Coming Soon: PaceGrid
+Live: Kanesh, Cognithix, Arithmetix, Sparks Studios, PhotoFlight, Cyla, Cloudmesh Weather, PaceGrid
+Coming Soon: Minua
 
 ## Rules
 - All pages must include: site-nav, theme toggle, Cloudflare analytics, CSP meta tag
