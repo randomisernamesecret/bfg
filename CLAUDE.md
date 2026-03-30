@@ -3,7 +3,7 @@
 Static website for Blue Flame Games (BFG) at bfgapps.co. Hosted on GitHub Pages with Cloudflare DNS.
 
 ## Structure
-- `index.html` — Homepage (9 apps, blog filters, FAQ)
+- `index.html` — Homepage (10 apps, blog filters, FAQ)
 - `apps/{name}/` — Per-app landing page + privacy, support, terms
 - `blog/` — 24 articles across 7 categories
 - `style.css` — Shared CSS (dark/light, nav, app pages)
@@ -13,7 +13,7 @@ Static website for Blue Flame Games (BFG) at bfgapps.co. Hosted on GitHub Pages 
 
 ## Apps
 Live: Kanesh, Cognithix, Arithmetix, Sparks Studios, PhotoFlight, Cyla, Cloudmesh Weather, PaceGrid
-Coming Soon: Minua
+Coming Soon: Minua, PingNear
 
 ## Rules
 - All pages must include: site-nav, theme toggle, Cloudflare analytics, CSP meta tag
