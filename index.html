@@ -115,6 +115,24 @@
     .trust-item h3 { font-size: 17px; font-weight: 600; font-family: 'DM Sans', sans-serif; margin-bottom: 8px; color: var(--heading); }
     .trust-item p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
+    .intent-section { padding: 72px 0; border-top: 1px solid var(--border-light); }
+    .intent-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
+      max-width: 1080px; margin: 0 auto; padding: 0 32px;
+    }
+    .intent-card {
+      background: var(--surface); border: 1px solid var(--border-light);
+      border-radius: 18px; padding: 24px 24px 22px; box-shadow: var(--shadow-sm);
+    }
+    .intent-card h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 24px; font-weight: 400; margin-bottom: 10px; color: var(--heading);
+    }
+    .intent-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 14px; }
+    .intent-card ul { padding-left: 18px; color: var(--text-muted); }
+    .intent-card li { margin: 0 0 10px; }
+    .intent-card li a { font-weight: 600; }
+
     .blog-section { padding: 72px 0; border-top: 1px solid var(--border-light); }
     .faq-section { padding: 56px 0; border-top: 1px solid var(--border-light); }
     .faq-section h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600; color: var(--heading); margin: 28px 0 8px; }
@@ -127,6 +145,7 @@
       .products-grid { grid-template-columns: 1fr; padding: 0 20px; }
       .coming-grid { grid-template-columns: 1fr 1fr; padding: 0 20px; }
       .trust-grid { grid-template-columns: 1fr; padding: 0 20px; }
+      .intent-grid { grid-template-columns: 1fr; padding: 0 20px; }
       .proof-strip { gap: 16px; font-size: 13px; }
     }
     @media (max-width: 480px) {
@@ -140,7 +159,48 @@
     "name": "BFG",
     "alternateName": "Blue Flame Games",
     "url": "https://bfgapps.co/",
-    "description": "Privacy-first iOS apps. No ads. No cloud. Your data stays on your device."
+    "description": "Privacy-first iOS apps. No ads. No cloud. Your data stays on your device.",
+    "founder": {
+      "@type": "Person",
+      "name": "Daniel Hart",
+      "url": "https://bfgapps.co/authors/daniel-hart/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BFG",
+    "url": "https://bfgapps.co/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Blue Flame Games"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "BFG App Directory",
+    "url": "https://bfgapps.co/",
+    "about": [
+      "Privacy-first iPhone apps",
+      "Educational apps",
+      "Finance apps",
+      "Travel apps",
+      "Health apps",
+      "Weather apps"
+    ],
+    "hasPart": [
+      { "@type": "SoftwareApplication", "name": "Kanesh", "url": "https://bfgapps.co/apps/kanesh/" },
+      { "@type": "SoftwareApplication", "name": "Cognithix", "url": "https://bfgapps.co/apps/cognithix/" },
+      { "@type": "SoftwareApplication", "name": "Arithmetix", "url": "https://bfgapps.co/apps/arithmetix/" },
+      { "@type": "SoftwareApplication", "name": "PhotoFlight", "url": "https://bfgapps.co/apps/photoflight/" },
+      { "@type": "SoftwareApplication", "name": "Cyla", "url": "https://bfgapps.co/apps/cyla/" },
+      { "@type": "SoftwareApplication", "name": "Cloudmesh Weather", "url": "https://bfgapps.co/apps/cloudmesh/" }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -185,6 +245,7 @@
           </div>
         </div>
         <a href="#blog">Blog</a>
+        <a href="/about/">About</a>
         <a href="mailto:blueflamegames@proton.me">Contact</a>
       </div>
     </div>
@@ -375,6 +436,51 @@
     </div>
   </section>
 
+  <section class="intent-section">
+    <div class="section-header">
+      <h2>Start With What You Need</h2>
+      <p>These are the questions people usually ask before they discover a BFG app.</p>
+    </div>
+    <div class="intent-grid">
+      <div class="intent-card">
+        <h3>Education</h3>
+        <p>For parents comparing 11+ prep, times tables, and UK primary maths apps.</p>
+        <ul>
+          <li><a href="/apps/cognithix/">Cognithix</a> for <strong>11+ exam preparation</strong> and <strong>LAT practice</strong>.</li>
+          <li><a href="/apps/arithmetix/">Arithmetix</a> for <strong>UK curriculum maths</strong> and <strong>times tables practice</strong>.</li>
+          <li><a href="/blog/best-11-plus-app-2026.html">11+ guide</a> and <a href="/blog/arithmetix-vs-doodlemaths.html">DoodleMaths comparison</a> for deeper research.</li>
+        </ul>
+      </div>
+      <div class="intent-card">
+        <h3>Finance</h3>
+        <p>For people searching for a Bloomberg alternative or a better way to verify financial numbers on iPhone.</p>
+        <ul>
+          <li><a href="/apps/kanesh/">Kanesh</a> for <strong>source-linked financial data</strong> and <strong>mobile stock research</strong>.</li>
+          <li><a href="/blog/stock-research-without-bloomberg.html">How to research stocks without Bloomberg</a>.</li>
+          <li><a href="/blog/best-finance-apps-investors-2026.html">Best finance apps for DIY investors</a>.</li>
+        </ul>
+      </div>
+      <div class="intent-card">
+        <h3>Health &amp; Privacy</h3>
+        <p>For people who want private tracking tools without accounts, cloud storage, or ad-tech baggage.</p>
+        <ul>
+          <li><a href="/apps/cyla/">Cyla</a> for a <strong>private period tracker</strong> and <strong>Apple Watch cycle tracking</strong>.</li>
+          <li><a href="/apps/cloudmesh/">Cloudmesh Weather</a> for a <strong>privacy-first weather app</strong> with rich widgets.</li>
+          <li><a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a> and <a href="/blog/best-weather-apps-uk-2026.html">best weather apps guide</a>.</li>
+        </ul>
+      </div>
+      <div class="intent-card">
+        <h3>Travel &amp; Parenting</h3>
+        <p>For people looking for private travel utilities or safer, more thoughtful screen time tools for families.</p>
+        <ul>
+          <li><a href="/apps/photoflight/">PhotoFlight</a> for a <strong>travel map from photos</strong> and a <strong>Polarsteps alternative</strong>.</li>
+          <li><a href="/apps/pingnear/">PingNear</a> for <strong>what to do near me</strong> and <strong>context-aware travel discovery</strong>.</li>
+          <li><a href="/apps/minua/">Minua</a> for <strong>earned screen time</strong> and <strong>privacy-first parental controls</strong>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- Blog -->
   <section class="blog-section" id="blog">
     <div class="container">
@@ -472,7 +578,7 @@
     <div class="container">
       <p>&copy; 2026 Blue Flame Games. All rights reserved.</p>
       <p style="margin-top: 10px;">
-        <a href="mailto:blueflamegames@proton.me">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a>
+        <a href="/about/">About</a> &middot; <a href="mailto:blueflamegames@proton.me">Contact</a> &middot; <a href="/privacy.html">Privacy Policy</a>
       </p>
     </div>
   </footer>

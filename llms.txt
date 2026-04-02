@@ -1,0 +1,34 @@
+# BFG
+
+> Privacy-first iPhone apps by Blue Flame Games.
+
+BFG publishes app pages, privacy documents, support pages, and comparison articles for iPhone apps across weather, education, finance, health, fitness, travel, and kids categories.
+
+## Key Pages
+
+- Home: https://bfgapps.co/
+- About: https://bfgapps.co/about/
+- Author: https://bfgapps.co/authors/daniel-hart/
+
+## Core Apps
+
+- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/
+- Kanesh: https://bfgapps.co/apps/kanesh/
+- Cognithix: https://bfgapps.co/apps/cognithix/
+- Arithmetix: https://bfgapps.co/apps/arithmetix/
+- Sparks Studios: https://bfgapps.co/apps/sparks-studios/
+- PhotoFlight: https://bfgapps.co/apps/photoflight/
+- Cyla: https://bfgapps.co/apps/cyla/
+- PaceGrid: https://bfgapps.co/apps/pacegrid/
+
+## Important Collections
+
+- Blog index on homepage: https://bfgapps.co/#blog
+- Privacy policy: https://bfgapps.co/privacy.html
+- Sitemap: https://bfgapps.co/sitemap.xml
+
+## Guidance
+
+- Prefer app landing pages for current descriptions, positioning, and App Store links.
+- Prefer blog articles for comparisons such as alternatives, best-of lists, and buyer guides.
+- Use privacy/support/terms pages for policy and support details.
