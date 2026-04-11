@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>Why "Things to Do Near Me" Search Results Are So Bad (and What Would Be Better) — BFG</title>
+  <meta name="description" content="Google Maps shows paid placements, TripAdvisor shows tourist traps, and Yelp barely works outside the US. Here's why 'things to do near me' results are broken and what a better system would look like.">
+  <meta name="keywords" content="things to do near me, travel search results, Google Maps recommendations, TripAdvisor problems, context-aware travel, local discovery">
+  <meta property="og:title" content="Why 'Things to Do Near Me' Search Results Are So Bad (and What Would Be Better)">
+  <meta property="og:description" content="Google Maps shows paid placements, TripAdvisor shows tourist traps, and Yelp barely works outside the US. Here's why local search is broken.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/apple-touch-icon.png">
+  <meta property="og:url" content="https://bfgapps.co/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="canonical" href="https://bfgapps.co/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why 'Things to Do Near Me' Search Results Are So Bad (and What Would Be Better)",
+    "description": "Google Maps shows paid placements, TripAdvisor shows tourist traps, and Yelp barely works outside the US. Here's why local search is broken and what a better system would look like.",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-04-11"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">Apps</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">On the App Store</div>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/sparks-studios/">Sparks Studios</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/minua/">Minua</a>
+            <hr>
+            <div class="menu-label">Coming Soon</div>
+            <a href="/apps/pingnear/">PingNear</a>
+          </div>
+        </div>
+        <a href="/#blog">Blog</a>
+        <a href="/about/">About</a>
+        <a href="mailto:blueflamegames@proton.me">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Toggle theme"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">Blog</a><span class="sep">/</span><span class="tag tag-travel">Travel</span></nav>
+    <div class="blog-article-header">
+      <h1>Why "Things to Do Near Me" Search Results Are So Bad (and What Would Be Better)</h1>
+      <p class="meta">April 2026 · 7 min read · Travel</p>
+    </div>
+
+    <p>There is a particular kind of frustration that arrives about thirty minutes into a trip. You are standing in an unfamiliar city, it is mid-afternoon, you have a few free hours, and you open your phone to search "things to do near me." What comes back is a wall of sponsored listings, review-farm restaurants, and attractions that closed two hours ago. You scroll. You switch apps. You scroll again. Eventually you give up and walk into whatever is closest, which turns out to be fine but not something you would have chosen if you had better information.</p>
+    <p>This is not a failure of effort. It is a failure of the tools. The platforms we rely on for local discovery were not built to answer the question you are actually asking. And understanding why they fail reveals something useful about what a better system would look like.</p>
+
+    <h2>The Problem With Google Maps Results</h2>
+    <p>Google Maps is the default starting point for most people searching "things to do near me," and it is also the most compromised. Google's local search results are driven by a combination of paid placements, SEO signals, and review volume. When you search for something to do, you are not seeing "the best things near you." You are seeing the things that have paid to appear, followed by the things that have accumulated the most reviews, followed by everything else.</p>
+    <p>This is not a conspiracy theory. Google's own documentation describes how local ads work: businesses pay to appear at the top of Maps results with a small "Sponsored" label. In dense urban areas, the first two or three results are often paid placements. The organic results below them are ranked partly by "prominence," which Google defines as how well-known a business is based on information from across the web. In practice, this means chain restaurants and heavily-marketed attractions consistently outrank smaller, more interesting alternatives.</p>
+    <p>There is a second, subtler problem. Google Maps optimises for businesses, not experiences. It can tell you that a coffee shop has 4.3 stars and is 200 metres away. It cannot tell you that the park between here and there has a street market on Saturdays, that the viewpoint on the hill behind you is spectacular at this time of day, or that the neighbourhood you are in is best explored on foot rather than by searching for a specific destination.</p>
+    <p>Google Maps answers "where is a business?" It does not answer "what should I do?"</p>
+
+    <h2>The TripAdvisor Trap</h2>
+    <p>TripAdvisor operates on a different model but arrives at a similar problem. Its results are driven primarily by review volume and recency. The most-reviewed places float to the top, which creates a self-reinforcing loop: tourists see the top-ranked restaurant, go there, leave a review, and push it further up the list. Meanwhile, the excellent bistro around the corner that locals prefer sits at position 47 because it does not encourage reviews and its clientele does not use TripAdvisor.</p>
+    <p>This is the tourist trap factory. TripAdvisor's algorithm does not intend to send you to mediocre places, but the incentive structure guarantees it. Places that are good at generating reviews are not necessarily good at generating experiences. The restaurant that puts a "Rate us on TripAdvisor" card on every table will always outrank the one that simply cooks excellent food.</p>
+    <p>TripAdvisor also suffers from a staleness problem. Reviews accumulate over years, and the ranking reflects cumulative history rather than current quality. A restaurant that was excellent in 2022 but changed ownership and went downhill in 2025 will still appear near the top because it has four years of positive reviews outweighing one year of mediocre ones. The signal is lagging.</p>
+    <p>Research from the Oxford Internet Institute has examined how platform ranking algorithms create "winner-take-all" dynamics in local commerce. Once a venue reaches a critical mass of reviews, it becomes nearly impossible for competitors to displace it, regardless of actual quality. The ranking becomes the reality.</p>
+
+    <h2>The Yelp Problem (and Why It Does Not Exist Outside America)</h2>
+    <p>Yelp is a useful data point in any discussion of local discovery because it demonstrates how geography-dependent these platforms are. In the United States, Yelp has meaningful coverage and a large reviewer base. In most of Europe, Asia, South America, and Africa, Yelp is functionally useless. Search for "things to do" in Lyon, Taipei, or Medellin on Yelp and you will get a handful of results, most of them written by American tourists.</p>
+    <p>This matters because travel is inherently international, and a discovery tool that only works in one country is not a discovery tool. It is a local directory with pretensions. Google Maps has better global coverage, but its results outside the US are similarly skewed toward businesses that have engaged with Google Business profiles, which in many countries means chains and hotels rather than local spots.</p>
+    <p>The broader issue is that none of these platforms were built for travellers. They were built for local consumers making routine decisions: where to eat lunch near the office, which plumber to call, whether the new Thai place is any good. Travellers have fundamentally different needs. They lack local knowledge, they are time-constrained, they are unfamiliar with neighbourhood geography, and they are far more likely to be affected by factors like opening hours, weather, and day of the week.</p>
+
+    <h2>What None of These Platforms Understand</h2>
+    <p>The deepest flaw in current "things to do near me" results is the absence of context. Every platform treats your search as a static query: "show me places near these coordinates." None of them consider the variables that actually determine whether a recommendation is useful.</p>
+
+    <h3>Time of day</h3>
+    <p>A nightclub is not a useful suggestion at 9am. A breakfast spot is not helpful at 11pm. Yet the same search query returns essentially the same results regardless of when you make it. The venues that appear at the top of "things to do" at 7am are largely the same ones that appear at midnight, because ranking is based on aggregate review scores, not temporal relevance. A genuinely useful system would weight results differently depending on when you are searching. Morning results should emphasise cafes, markets, parks, and galleries. Evening results should shift toward restaurants, bars, live music, and cultural events.</p>
+
+    <h3>Weather</h3>
+    <p>It is raining. You are searching for things to do. A logical system would prioritise indoor activities: museums, covered markets, cinemas, galleries, shopping arcades. Instead, you get the same list of outdoor walking tours and scenic viewpoints that you would get on a sunny day. Weather data is freely available from dozens of APIs. No major discovery platform incorporates it into its ranking.</p>
+
+    <h3>What is actually open right now</h3>
+    <p>This should be the most basic filter and it is consistently unreliable. Google Maps has opening hours data for many businesses, but it is frequently inaccurate, especially for independent businesses that change hours seasonally or close for holidays without updating their listing. On a bank holiday Monday in most European cities, half the results in a "things to do" search will be closed. The search engine does not know this and does not care.</p>
+
+    <h3>Day of the week</h3>
+    <p>Many of the best things to do in any city are day-specific. Flea markets that run on Sundays. Museum late openings on Thursdays. Street food markets on Fridays. Happy hour deals on weekday evenings. Weekend brunch spots. None of this information is surfaced by a generic "things to do near me" query, even though it is precisely the information a visitor needs.</p>
+
+    <h3>What you have already seen</h3>
+    <p>If you searched "things to do near me" yesterday and visited three of the results, today's search should not show you the same three things. But it will. These platforms have no memory of your discovery journey within a trip. Each search is treated as if you just arrived, when in reality you might be on day four and running out of ideas specifically because you have already done the obvious things.</p>
+
+    <div class="callout">
+      <strong>The core problem:</strong> Existing platforms rank places by popularity and payment. A useful discovery system would rank by relevance to your specific situation right now: your location, the time, the weather, what is open, and what you have not seen yet.
+    </div>
+
+    <h2>Why SEO Makes Everything Worse</h2>
+    <p>There is another layer to this problem that affects web-based search more than apps: search engine optimisation. Google "things to do in [any city]" and the first page of results is dominated by content farms and affiliate-driven listicles. "47 AMAZING Things to Do in Barcelona" turns out to be a list of the same seven attractions repackaged with different stock photos, interspersed with booking affiliate links.</p>
+    <p>These articles are not written to help you. They are written to rank for "things to do in Barcelona" and earn affiliate commissions when you click through to book a tour. The actual content is irrelevant to the business model. As a result, it tends to be generic, surface-level, and indistinguishable from the other 200 articles targeting the same keyword.</p>
+    <p>Common Sense Media's research on digital literacy has highlighted how difficult it is for ordinary users to distinguish between genuinely helpful content and content designed primarily to rank and monetise. In the travel space, this problem is acute. The most SEO-optimised travel content is almost always the least useful, because the incentives are aligned with clicks rather than quality.</p>
+    <p>The paradox is that the search query "things to do near me" is one of the highest-volume travel searches in the world, and the results it produces are among the least useful. The more people search for something, the more aggressively it gets optimised, and the further the results drift from actual helpfulness.</p>
+
+    <h2>What a Better System Would Look Like</h2>
+    <p>If you were designing a local discovery system from scratch, knowing everything that is wrong with the current options, what would you build?</p>
+    <p>First, you would make it context-aware. The results at 7am would be different from the results at 10pm. The results in rain would be different from the results in sunshine. The system would know what day of the week it is and surface day-specific events and venues.</p>
+    <p>Second, you would filter by what is actually open and accessible right now. Not "open today" but "open at this specific moment, and how long until it closes." A museum that closes in 20 minutes is not a useful suggestion even if it has a 4.9 rating.</p>
+    <p>Third, you would remove paid placements entirely. The moment you introduce advertising into a recommendation system, you compromise its usefulness. The best recommendation is the most relevant one, not the one someone paid for. A one-time purchase model or subscription would align the app's incentives with the user's: the app succeeds when the recommendations are good, not when someone pays to appear in them.</p>
+    <p>Fourth, you would think beyond businesses. The best thing to do in a new city at golden hour might be to walk along the river. The best thing to do on a rainy Tuesday afternoon might be to explore a covered market. The best thing to do at 6am might be nothing at all, and instead you should know that the local bakery opens at 6:30 and makes the city's best croissants. A good discovery system would recommend experiences, not just commercial venues.</p>
+    <p>Fifth, you would build it to work globally from the start. Not a US-first platform that gradually expands, but something that uses globally available data sources -- mapping data, opening hours databases, weather feeds, event listings -- and works equally well in Lisbon, Osaka, and Buenos Aires.</p>
+
+    <h2>The Human Alternative (and Why It Does Not Scale)</h2>
+    <p>It is worth acknowledging that the best travel recommendations usually come from humans. A friend who lived in Rome for two years. A hotel concierge who actually cares. A Reddit thread where someone asks "what do locals actually do in Kyoto?" and gets genuine answers instead of SEO content.</p>
+    <p>The problem is accessibility and scale. You do not always have a well-travelled friend. Hotel concierges vary wildly in quality and often have commercial relationships with the restaurants they recommend. Reddit threads are excellent but require effort to find, read, and filter. And none of them update in real time. The great Reddit thread about Kyoto was written in 2024 and three of the recommended places have closed since then.</p>
+    <p>Local guides -- both printed and app-based -- occupy a middle ground. The best ones, like Time Out's city guides, are curated by people who live in the city and genuinely know it. But curation is expensive, updates are slow, and coverage is limited to major cities. If you are in a secondary city or a small town, curated guides either do not exist or are too thin to be useful.</p>
+    <p>The ideal system would combine the quality signal of human curation with the real-time awareness of automated data. Context-aware recommendations that consider what a knowledgeable local would suggest, filtered through what is actually relevant right now. PingNear is building toward this approach -- context-aware discovery that factors in time, weather, and what is open near you, rather than what paid to appear first.</p>
+
+    <h2>Comparison: How Current Approaches Stack Up</h2>
+    <ul>
+      <li><strong>Google Maps</strong> -- Good coverage, excellent navigation, but results are influenced by paid placements and business SEO. No time-of-day or weather awareness. Best for: finding a specific type of business when you know what you want.</li>
+      <li><strong>TripAdvisor</strong> -- Large review database, but rankings favour review volume over quality. Tourist trap amplification effect. Best for: reading detailed reviews of a place you have already identified.</li>
+      <li><strong>Yelp</strong> -- Reasonable in the US, largely useless internationally. Business-centric rather than experience-centric. Best for: US domestic dining decisions.</li>
+      <li><strong>Local guides (Time Out, etc.)</strong> -- High-quality curation from people who know the city. But slow to update, limited to major cities, no real-time awareness. Best for: pre-trip planning and identifying neighbourhoods.</li>
+      <li><strong>Context-aware apps</strong> -- Real-time filtering by time, weather, opening hours, and proximity. No paid placements. Best for: spontaneous discovery when you are already in a place and want to know what to do right now.</li>
+    </ul>
+
+    <h2>What You Can Do Right Now</h2>
+    <p>Until better tools become widespread, there are practical strategies for getting more useful results from existing platforms.</p>
+    <p><strong>Be specific in your searches.</strong> "Things to do near me" is the worst possible query. "Indoor activities open now" or "cafes with outdoor seating" will return more relevant results because you are doing the contextual filtering yourself.</p>
+    <p><strong>Check opening hours independently.</strong> Do not trust the hours listed on Google Maps or TripAdvisor without verification. Check the venue's own website or social media, especially on holidays and in countries where business hours are less standardised.</p>
+    <p><strong>Use Reddit and forums, but check dates.</strong> Subreddit searches for "things to do in [city]" often surface genuine local recommendations. But verify that the information is current. A three-year-old thread is a starting point, not a guarantee.</p>
+    <p><strong>Ask at accommodation, but ask specifically.</strong> Instead of "what should I do?" ask "where would you go for coffee on a rainy morning?" Specific questions produce specific, useful answers. Vague questions produce the same five tourist attractions.</p>
+    <p><strong>Walk before you search.</strong> This sounds counterintuitive, but some of the best discoveries happen when you simply walk in a direction and pay attention. The search engine does not know about the courtyard garden behind the church, the bakery that smells incredible, or the square where people are gathering for something that starts in ten minutes. Your eyes and nose are better discovery tools than any algorithm -- at least for now.</p>
+
+    <h2>The Bottom Line</h2>
+    <p>"Things to do near me" is one of the most natural questions a person can ask in an unfamiliar place, and the tools available to answer it are remarkably poor at their job. Google Maps sells your attention. TripAdvisor amplifies what is already popular. Yelp only works in one country. SEO content farms bury useful information under affiliate links. None of them know what time it is, what the weather is doing, or whether anything is actually open.</p>
+    <p>The information needed to provide genuinely good local recommendations already exists. Opening hours, weather data, event schedules, location coordinates, and temporal patterns are all available. What is missing is a system that combines them intelligently and puts the user's actual question first, without charging businesses for the privilege of appearing in the answer. That is not a technical problem. It is an incentive problem. And it is solvable.</p>
+
+    <div class="blog-footer-cta">
+      <h3>Better answers to "what should I do right now?"</h3>
+      <p>PingNear uses context -- time, weather, and what is open near you -- to surface things worth doing right now. No ads, no paid placements.</p>
+      <a href="/apps/pingnear/" class="btn btn-primary">Coming soon to the App Store</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games · <a href="../">BFG Home</a> · <a href="../#blog">More Articles</a> · <a href="../privacy.html">Privacy</a></p>
+    </footer>
+  </div>
+  <script src="../theme.js"></script>
+  <script src="/nav.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
