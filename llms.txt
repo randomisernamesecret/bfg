@@ -20,6 +20,7 @@ BFG publishes app pages, privacy documents, support pages, and comparison articl
 - PhotoFlight: https://bfgapps.co/apps/photoflight/
 - Cyla: https://bfgapps.co/apps/cyla/
 - PaceGrid: https://bfgapps.co/apps/pacegrid/
+- Minua: https://bfgapps.co/apps/minua/
 
 ## Important Collections
 
