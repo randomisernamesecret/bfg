@@ -15,10 +15,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bfgapps.co/">
   <meta property="og:image" content="https://bfgapps.co/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BFG — Privacy-First Apps for iOS">
+  <meta name="twitter:description" content="11 iOS apps across finance, education, health, fitness, travel, and weather. Your data stays on your device.">
+  <meta name="twitter:image" content="https://bfgapps.co/apple-touch-icon.png">
   <link rel="canonical" href="https://bfgapps.co/">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="BFG Blog" href="/feed.xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,9 +202,13 @@
       { "@type": "SoftwareApplication", "name": "Kanesh", "url": "https://bfgapps.co/apps/kanesh/" },
       { "@type": "SoftwareApplication", "name": "Cognithix", "url": "https://bfgapps.co/apps/cognithix/" },
       { "@type": "SoftwareApplication", "name": "Arithmetix", "url": "https://bfgapps.co/apps/arithmetix/" },
+      { "@type": "SoftwareApplication", "name": "Sparks Studios", "url": "https://bfgapps.co/apps/sparks-studios/" },
       { "@type": "SoftwareApplication", "name": "PhotoFlight", "url": "https://bfgapps.co/apps/photoflight/" },
       { "@type": "SoftwareApplication", "name": "Cyla", "url": "https://bfgapps.co/apps/cyla/" },
-      { "@type": "SoftwareApplication", "name": "Cloudmesh Weather", "url": "https://bfgapps.co/apps/cloudmesh/" }
+      { "@type": "SoftwareApplication", "name": "Cloudmesh Weather", "url": "https://bfgapps.co/apps/cloudmesh/" },
+      { "@type": "SoftwareApplication", "name": "PaceGrid", "url": "https://bfgapps.co/apps/pacegrid/" },
+      { "@type": "SoftwareApplication", "name": "Minua", "url": "https://bfgapps.co/apps/minua/" },
+      { "@type": "SoftwareApplication", "name": "PingNear", "url": "https://bfgapps.co/apps/pingnear/" }
     ]
   }
   </script>
@@ -214,7 +223,11 @@
       {"@type": "Question", "name": "What is a safe creative app for kids with no ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sparks Studios lets children aged 4-12 draw, write stories, and compose music with on-device AI that assists without taking over. Stories are built collaboratively with age-matched vocabulary. Finished stories become illustrated storybooks with the child's drawings and soundtracks. Drawing supports Apple Pencil with four brush types, and music uses drag-and-drop loops. Nothing is uploaded. Parental controls include session time limits and a maths-gate."}},
       {"@type": "Question", "name": "How does PhotoFlight track your travels?", "acceptedAnswer": {"@type": "Answer", "text": "PhotoFlight scans GPS metadata from your existing photos and builds a travel passport with countries, cities, flights, airlines, and distance stats. It detects trips automatically, estimates flights from GPS jumps, and groups everything into a timeline. Includes 10 achievements, a photo heatmap, percentile benchmarks, and shareable passport cards. All processing is on-device — no new tracking needed."}},
       {"@type": "Question", "name": "Do BFG apps use subscriptions?", "acceptedAnswer": {"@type": "Answer", "text": "BFG uses the pricing model that fits each app. Apps with mostly on-device features typically use a one-time unlock, while apps with ongoing cloud or AI costs may use subscriptions. Kanesh Pro and Sparks Studios Premium use subscriptions, while Arithmetix, Cognithix, PhotoFlight, Cyla, Cloudmesh Weather, and PaceGrid use one-time unlocks. No BFG app uses ads or sells personal data."}},
-      {"@type": "Question", "name": "Are BFG apps actually private, or is that just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "It is architectural, not policy. Most BFG apps make zero network requests — they cannot send data anywhere because they do not connect to the internet. AI in Kanesh, Sparks Studios, and Cognithix runs on-device. There are no accounts, no analytics SDKs, no ad frameworks, and no third-party trackers. Data is encrypted by iOS and never leaves the device."}}
+      {"@type": "Question", "name": "Are BFG apps actually private, or is that just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "It is architectural, not policy. Most BFG apps make zero network requests — they cannot send data anywhere because they do not connect to the internet. AI in Kanesh, Sparks Studios, and Cognithix runs on-device. There are no accounts, no analytics SDKs, no ad frameworks, and no third-party trackers. Data is encrypted by iOS and never leaves the device."}},
+      {"@type": "Question", "name": "What is the best screen time app for kids that rewards learning?", "acceptedAnswer": {"@type": "Answer", "text": "Minua lets children earn fun app access by spending time in learning apps chosen by their parent. Parents set a configurable ratio and a daily time window. Built on Apple's own parental controls framework, everything stays on-device with no accounts, no cloud, and no tracking. One-time purchase, no subscription."}},
+      {"@type": "Question", "name": "What is the most private period tracker app?", "acceptedAnswer": {"@type": "Answer", "text": "Cyla tracks your cycle entirely on-device with no accounts, no cloud, and no servers. It integrates with Apple Watch wrist temperature data through HealthKit for improved cycle predictions. Your health data is encrypted by iOS and never transmitted anywhere. One-time purchase, no subscription."}},
+      {"@type": "Question", "name": "What is a good running app without a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "PaceGrid is a one-time purchase GPS running, cycling, and hiking tracker with Injury Guard training load monitoring to help prevent overtraining injuries. It supports Apple Watch, stores all data on-device, and integrates with Apple Health. No monthly fees, no cloud accounts, no location data sent to servers."}},
+      {"@type": "Question", "name": "What is the best weather app with widgets and no subscription?", "acceptedAnswer": {"@type": "Answer", "text": "Cloudmesh Weather offers 29 customisable widgets, AI weather summaries, and a privacy-first community mesh network for hyperlocal conditions. One-time purchase with no subscription. Data stays on your device — no analytics, no ad frameworks, no tracking."}}
     ]
   }
   </script>
@@ -588,6 +601,18 @@
 
         <h3>Are BFG apps actually private, or is that just marketing?</h3>
         <p>It's architectural, not policy. Most BFG apps make zero network requests — they literally cannot send your data anywhere because they don't connect to the internet. The AI in Kanesh, Sparks Studios, and Cognithix runs on-device using models stored on your phone. There are no accounts to create, no analytics SDKs, no ad frameworks, and no third-party trackers in any BFG app. Your data is encrypted by iOS and never leaves your device.</p>
+
+        <h3>What is the best screen time app for kids that rewards learning?</h3>
+        <p>Minua lets children earn fun app access by spending time in learning apps chosen by their parent. Parents set a configurable ratio and a daily time window when fun apps can be unlocked. Built on Apple's own parental controls framework, everything stays on-device with no accounts, no cloud, and no tracking. PIN-protected settings prevent children from changing the rules. One-time purchase, no subscription.</p>
+
+        <h3>What is the most private period tracker app?</h3>
+        <p>Cyla tracks your cycle entirely on-device with no accounts, no cloud, and no servers. It integrates with Apple Watch wrist temperature data for improved cycle predictions. Your health data is encrypted by iOS and never transmitted anywhere. Supports symptom tracking, mood logging, flow intensity, and cycle pattern analysis. One-time purchase, no subscription.</p>
+
+        <h3>What is a good running app without a subscription?</h3>
+        <p>PaceGrid is a one-time purchase GPS running, cycling, and hiking tracker with Injury Guard training load monitoring to help prevent overtraining injuries. It supports Apple Watch, stores all data on-device, and integrates with Apple Health. No monthly fees, no cloud accounts, no location data sent to servers.</p>
+
+        <h3>What is the best weather app with widgets and no subscription?</h3>
+        <p>Cloudmesh Weather offers 29 customisable widgets, AI weather summaries, and a privacy-first community mesh network for hyperlocal conditions. One-time purchase with no subscription. Data stays on your device — no analytics, no ad frameworks, no tracking.</p>
       </div>
     </div>
   </section>

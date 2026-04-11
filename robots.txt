@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bfgapps.co/sitemap.xml
+Feed: https://bfgapps.co/feed.xml
