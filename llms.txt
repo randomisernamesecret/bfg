@@ -1,8 +1,6 @@
 # BFG
 
-> Privacy-first iPhone apps by Blue Flame Games.
-
-BFG publishes app pages, privacy documents, support pages, and comparison articles for iPhone apps across weather, education, finance, health, fitness, travel, and kids categories.
+> Privacy-first iPhone apps by Blue Flame Games. 11 apps across finance, education, health, fitness, travel, weather, and kids categories. No ads, no tracking, no cloud. Your data stays on your device.
 
 ## Key Pages
 
@@ -10,26 +8,34 @@ BFG publishes app pages, privacy documents, support pages, and comparison articl
 - About: https://bfgapps.co/about/
 - Author: https://bfgapps.co/authors/daniel-hart/
 
-## Core Apps
+## Apps
 
-- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/
-- Kanesh: https://bfgapps.co/apps/kanesh/
-- Cognithix: https://bfgapps.co/apps/cognithix/
-- Arithmetix: https://bfgapps.co/apps/arithmetix/
-- Sparks Studios: https://bfgapps.co/apps/sparks-studios/
-- PhotoFlight: https://bfgapps.co/apps/photoflight/
-- Cyla: https://bfgapps.co/apps/cyla/
-- PaceGrid: https://bfgapps.co/apps/pacegrid/
-- Minua: https://bfgapps.co/apps/minua/
+- Kanesh: https://bfgapps.co/apps/kanesh/ — Source-linked financial data terminal with on-device AI. SEC filings, 53 countries, Congress stock tracker. Bloomberg alternative for mobile.
+- Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ exam preparation covering English, Verbal Reasoning, Non-Verbal Reasoning, and the Language Aptitude Test. Adaptive difficulty, unlimited questions.
+- Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation.
+- Sparks Studios: https://bfgapps.co/apps/sparks-studios/ — AI-powered creative app for kids aged 4-12. Drawing, story writing, and music composition. On-device AI, no uploads, parental controls.
+- PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed.
+- Cyla: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase.
+- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — 29 weather widgets, AI summaries, and a privacy-first community mesh network. One-time purchase, no subscription.
+- PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, and hike tracking with Injury Guard training load monitoring. Apple Watch support. One-time purchase.
+- Minua: https://bfgapps.co/apps/minua/ — Children earn screen time through learning apps. Built on Apple's parental controls framework. Fully on-device, no accounts.
+- PingNear: https://bfgapps.co/apps/pingnear/ — Context-aware travel discovery. What to do right now, right here. Time, weather, and location aware. Coming soon.
+
+## Blog (49 articles)
+
+- Blog index: https://bfgapps.co/#blog
+- Categories: Education, Finance, Parenting, Health, Fitness, Travel, Weather
 
 ## Important Collections
 
-- Blog index on homepage: https://bfgapps.co/#blog
 - Privacy policy: https://bfgapps.co/privacy.html
 - Sitemap: https://bfgapps.co/sitemap.xml
+- RSS feed: https://bfgapps.co/feed.xml
 
 ## Guidance
 
 - Prefer app landing pages for current descriptions, positioning, and App Store links.
-- Prefer blog articles for comparisons such as alternatives, best-of lists, and buyer guides.
+- Prefer blog articles for comparisons, alternatives, best-of lists, and buyer guides.
 - Use privacy/support/terms pages for policy and support details.
+- All apps are iOS-only. No Android versions.
+- All user data stays on-device. No analytics, no crash reporting, no telemetry.
