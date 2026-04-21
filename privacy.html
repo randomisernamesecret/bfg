@@ -46,9 +46,10 @@
             <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
             <a href="/apps/pacegrid/">PaceGrid</a>
             <a href="/apps/minua/">Minua</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
-
+            <a href="/apps/pingnear/">PingNear</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -93,18 +94,40 @@
     <p>The following general principles apply to all BFG apps. Each app also has its own privacy policy with specific details — linked from its page on this site and from its App Store listing.</p>
 
     <h3>Our privacy approach</h3>
-    <p>All BFG apps are designed to minimise data collection. Common principles across our apps:</p>
+    <p>All BFG apps are designed to minimise data collection. Common principles across every app, with no exceptions:</p>
     <ul>
-      <li><strong>No advertising</strong> — no ads, no ad networks, no ad identifiers in any BFG app</li>
-      <li><strong>No third-party analytics</strong> — we do not use tracking SDKs like Firebase Analytics, Mixpanel, or similar</li>
-      <li><strong>No data selling</strong> — we never sell or share personal data with third parties</li>
+      <li><strong>No advertising</strong> — no ads, no ad networks, no advertising identifiers</li>
+      <li><strong>No third-party analytics</strong> — no Firebase Analytics, no Mixpanel, no Amplitude, no behavioural tracking SDKs</li>
+      <li><strong>No data selling</strong> — we never sell, rent, or share personal data with data brokers or advertisers</li>
+      <li><strong>No cross-app tracking</strong> — we do not link activity between BFG apps or across other apps</li>
     </ul>
+    <p>When we say "no tracking," that is what we mean: no advertising identifiers, no third-party analytics SDKs, no behavioural profiling, no cross-app tracking, and no data shared with third parties for marketing.</p>
 
     <h3>How data is handled varies by app</h3>
-    <p>Our apps fall into two categories:</p>
-    <p><strong>Fully on-device apps</strong> (Kanesh, Sparks Studios, PhotoFlight, Cyla, PaceGrid) require no account and make no network requests beyond their core function (e.g. fetching financial data or weather). All user data is stored locally on the device.</p>
-    <p><strong>Apps with cloud sync</strong> (Arithmetix, Cognithix) use Google Firebase for parent accounts and progress syncing. These apps collect a parent email for authentication and store aggregated learning progress in the cloud. No per-question answers are uploaded. See each app's individual privacy policy for full details.</p>
-    <p><strong>Apps with network features</strong> (Cloudmesh Weather) transmit anonymous barometric readings and weather observations to support the community mesh network. No personal identifiers are attached. See the Cloudmesh privacy policy for specifics.</p>
+    <p>We group our apps into three categories. Each app's own privacy policy goes into full detail.</p>
+
+    <p><strong>1. Fully on-device, no network requests.</strong> These apps do not connect to the internet during normal use. All data is stored locally on the device.</p>
+    <ul>
+      <li><strong>Sparks Studios</strong> — on-device AI for drawing, stories, and music</li>
+      <li><strong>PhotoFlight</strong> — reads GPS metadata from existing photos locally</li>
+      <li><strong>Cyla</strong> — cycle and Apple Watch temperature data via HealthKit</li>
+      <li><strong>PaceGrid</strong> — GPS traces and training load stored locally</li>
+      <li><strong>Minua</strong> — built on Apple's parental controls framework; works in airplane mode</li>
+      <li><strong>Bellgrave</strong> — single-player game with no cloud saves and no telemetry</li>
+    </ul>
+
+    <p><strong>2. Network used, but no data collected from you.</strong></p>
+    <ul>
+      <li><strong>Kanesh</strong> — connects to public financial data sources (SEC filings, FRED, market data providers). BFG collects no data about you. The AI runs on your device.</li>
+    </ul>
+
+    <p><strong>3. Apps that transmit limited, disclosed data.</strong></p>
+    <ul>
+      <li><strong>Arithmetix</strong> and <strong>Cognithix</strong> offer optional parent accounts via Google Firebase for cross-device progress sync. A parent email is stored for authentication and aggregated learning progress is stored in the cloud. No per-question answers are uploaded. Accounts are created and managed by a parent or guardian — children cannot create accounts independently.</li>
+      <li><strong>Cloudmesh Weather</strong> fetches weather data and transmits anonymous barometric readings and weather observations to support the community mesh network. Location is coarsened and no user ID is attached.</li>
+    </ul>
+
+    <p>Apple publishes its own per-app privacy labels on the App Store. Seven BFG apps are labelled "Data Not Collected." Arithmetix is labelled "Data Linked to You" because the Firebase parent account links an email and progress to an account identifier. Cloudmesh Weather is labelled "Data Not Linked to You" for precise location and app-functionality data used by the mesh. We consider the App Store labels and this policy together the authoritative description of what each app does.</p>
 
     <h3>Children's privacy</h3>
     <p>Several of our apps are designed for children. All children's apps comply with:</p>
@@ -128,12 +151,14 @@
       <li><a href="/apps/cyla/privacy.html">Cyla</a></li>
       <li><a href="/apps/pacegrid/privacy.html">PaceGrid</a></li>
       <li><a href="/apps/cloudmesh/privacy.html">Cloudmesh Weather</a></li>
+      <li><a href="/apps/minua/privacy.html">Minua</a></li>
+      <li><a href="/apps/bellgrave/privacy.html">Bellgrave</a></li>
     </ul>
 
     <h2>3. Your Rights</h2>
 
-    <p>Under the UK GDPR and EU GDPR, you have the right to access, correct, delete, and port your personal data. Because we do not collect any personal data, there is nothing for us to provide, correct, or delete.</p>
-    <p>If you believe we hold any of your data or have questions, contact us and we will respond within 30 days.</p>
+    <p>Under the UK GDPR and EU GDPR, you have the right to access, correct, delete, and port your personal data. For the website and for apps that do not collect personal data, there is nothing for us to provide, correct, or delete.</p>
+    <p>For Arithmetix and Cognithix, parents can delete their account and associated progress data from within the app, which also removes it from our Firebase storage. If you need help exercising any of these rights — or have any other question about your data — contact us at <a href="mailto:blueflamegames@proton.me">blueflamegames@proton.me</a> and we will respond within 30 days.</p>
 
     <h2>4. Data Controller</h2>
 
