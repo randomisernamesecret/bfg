@@ -8,16 +8,16 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
   <title>BFG — Privacy-First Apps for iOS</title>
-  <meta name="description" content="11 iOS apps across finance, education, health, fitness, travel, weather, and games. Your data stays on your device. By Blue Flame Games.">
+  <meta name="description" content="11 iOS apps across finance, education, health, fitness, travel, weather, and games. No ads, no third-party trackers. Most are fully on-device; a few use clearly disclosed network features. By Blue Flame Games.">
   <meta name="keywords" content="privacy apps, iOS apps, on-device AI, financial terminal, 11 plus prep, kids creative app, maths practice, period tracker, running app, weather widgets, action roguelike">
   <meta property="og:title" content="BFG — Privacy-First Apps for iOS">
-  <meta property="og:description" content="11 iOS apps across finance, education, health, fitness, travel, weather, and games. Your data stays on your device.">
+  <meta property="og:description" content="11 iOS apps. No ads, no third-party trackers. Most are fully on-device; a few use clearly disclosed network features.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bfgapps.co/">
   <meta property="og:image" content="https://bfgapps.co/apple-touch-icon.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BFG — Privacy-First Apps for iOS">
-  <meta name="twitter:description" content="11 iOS apps across finance, education, health, fitness, travel, weather, and games. Your data stays on your device.">
+  <meta name="twitter:description" content="11 iOS apps. No ads, no third-party trackers. Most are fully on-device; a few use clearly disclosed network features.">
   <meta name="twitter:image" content="https://bfgapps.co/apple-touch-icon.png">
   <link rel="canonical" href="https://bfgapps.co/">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -106,6 +106,24 @@
     .coming-card h3 a:hover { color: var(--accent); }
     .coming-card .desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
+    .transparency-section { padding: 72px 0; border-top: 1px solid var(--border-light); }
+    .transparency-wrap { max-width: 980px; margin: 0 auto; padding: 0 32px; }
+    .transparency-lede { font-size: 15px; color: var(--text-muted); max-width: 720px; margin: 0 auto 28px; text-align: center; }
+    .transparency-table-wrap { overflow-x: auto; border: 1px solid var(--border-light); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow-sm); }
+    .transparency-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .transparency-table th, .transparency-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-light); }
+    .transparency-table thead th { font-weight: 600; color: var(--heading); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; background: var(--bg-alt); }
+    .transparency-table tbody tr:last-child td { border-bottom: none; }
+    .transparency-table td.app-name { font-weight: 600; color: var(--heading); white-space: nowrap; }
+    .transparency-table td.app-name a { color: var(--heading); text-decoration: none; }
+    .transparency-table td.app-name a:hover { color: var(--accent); }
+    .transparency-table .yes { color: var(--accent); font-weight: 600; }
+    .transparency-table .no { color: var(--text-dim); }
+    .transparency-notes { font-size: 13px; color: var(--text-muted); margin-top: 18px; line-height: 1.6; }
+    .transparency-notes p { margin-bottom: 8px; }
+    .transparency-notes a { font-weight: 600; }
+    .tracking-def { margin-top: 28px; background: var(--bg-alt); border: 1px solid var(--border-light); border-radius: 14px; padding: 18px 22px; font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+    .tracking-def strong { color: var(--heading); }
     .trust-section { padding: 72px 0; }
     .trust-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
@@ -224,7 +242,7 @@
       {"@type": "Question", "name": "What is a safe creative app for kids with no ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sparks Studios lets children aged 4-12 draw, write stories, and compose music with on-device AI that assists without taking over. Stories are built collaboratively with age-matched vocabulary. Finished stories become illustrated storybooks with the child's drawings and soundtracks. Drawing supports Apple Pencil with four brush types, and music uses drag-and-drop loops. Nothing is uploaded. Parental controls include session time limits and a maths-gate."}},
       {"@type": "Question", "name": "How does PhotoFlight track your travels?", "acceptedAnswer": {"@type": "Answer", "text": "PhotoFlight scans GPS metadata from your existing photos and builds a travel passport with countries, cities, flights, airlines, and distance stats. It detects trips automatically, estimates flights from GPS jumps, and groups everything into a timeline. Includes 10 achievements, a photo heatmap, percentile benchmarks, and shareable passport cards. All processing is on-device — no new tracking needed."}},
       {"@type": "Question", "name": "Do BFG apps use subscriptions?", "acceptedAnswer": {"@type": "Answer", "text": "BFG uses the pricing model that fits each app. Apps with mostly on-device features typically use a one-time unlock, while apps with ongoing cloud or AI costs may use subscriptions. Kanesh Pro and Sparks Studios Premium use subscriptions, while Arithmetix, Cognithix, PhotoFlight, Cyla, Cloudmesh Weather, and PaceGrid use one-time unlocks. No BFG app uses ads or sells personal data."}},
-      {"@type": "Question", "name": "Are BFG apps actually private, or is that just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "It is architectural, not policy. Most BFG apps make zero network requests — they cannot send data anywhere because they do not connect to the internet. AI in Kanesh, Sparks Studios, and Cognithix runs on-device. There are no accounts, no analytics SDKs, no ad frameworks, and no third-party trackers. Data is encrypted by iOS and never leaves the device."}},
+      {"@type": "Question", "name": "Are BFG apps actually private, or is that just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "Most BFG apps make zero network requests — Sparks Studios, PhotoFlight, Cyla, PaceGrid, Minua, and Bellgrave are fully on-device. Kanesh connects to fetch public market data but collects nothing about you. Cloudmesh Weather transmits anonymous barometric readings for its optional community mesh. Arithmetix and Cognithix offer optional parent accounts via Firebase for progress sync — a parent email is stored, no per-question answers are uploaded. No BFG app uses advertising SDKs, third-party analytics, or behavioural profiling. See the per-app breakdown on the homepage for the exact picture."}},
       {"@type": "Question", "name": "What is the best screen time app for kids that rewards learning?", "acceptedAnswer": {"@type": "Answer", "text": "Minua lets children earn fun app access by spending time in learning apps chosen by their parent. Parents set a configurable ratio and a daily time window. Built on Apple's own parental controls framework, everything stays on-device with no accounts, no cloud, and no tracking. One-time purchase, no subscription."}},
       {"@type": "Question", "name": "What is the most private period tracker app?", "acceptedAnswer": {"@type": "Answer", "text": "Cyla tracks your cycle entirely on-device with no accounts, no cloud, and no servers. It integrates with Apple Watch wrist temperature data through HealthKit for improved cycle predictions. Your health data is encrypted by iOS and never transmitted anywhere. One-time purchase, no subscription."}},
       {"@type": "Question", "name": "What is a good running app without a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "PaceGrid is a one-time purchase GPS running, cycling, and hiking tracker with Injury Guard training load monitoring to help prevent overtraining injuries. It supports Apple Watch, stores all data on-device, and integrates with Apple Health. No monthly fees, no cloud accounts, no location data sent to servers."}},
@@ -271,15 +289,15 @@
   <!-- Hero -->
   <section class="hero">
     <h1>Apps that keep your <em>data</em> where it belongs</h1>
-    <p class="subtitle">11 iOS apps across finance, education, health, fitness, travel, weather, and games. No ads. No tracking. Built by Blue Flame Games.</p>
+    <p class="subtitle">11 iOS apps across finance, education, health, fitness, travel, weather, and games. No ads. No third-party trackers. Most run fully on-device; the ones that use the network say exactly what for.</p>
     <div class="ctas">
       <a href="#apps" class="btn btn-primary">Browse Apps</a>
-      <a href="#blog" class="btn btn-outline">Read the Blog</a>
+      <a href="#transparency" class="btn btn-outline">What each app does</a>
     </div>
     <div class="proof-strip">
       <div class="proof"><strong>11</strong> apps</div>
       <div class="proof"><strong>6</strong> categories</div>
-      <div class="proof"><strong>0</strong> data collected</div>
+      <div class="proof"><strong>No</strong> ads or trackers</div>
       <div class="proof"><strong>49</strong> articles</div>
     </div>
   </section>
@@ -397,7 +415,6 @@
         <div class="card-body">
           <span class="tag tag-fitness">Fitness</span>
           <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
-            <a href="/apps/minua/">Minua</a>
           <p class="desc">GPS run, ride, and hike tracking with Injury Guard training load monitoring. One-time purchase. Fully on-device.</p>
           <div class="card-meta">
             <a href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
@@ -453,6 +470,108 @@
     </div>
   </section>
 
+  <!-- Transparency -->
+  <section class="transparency-section" id="transparency">
+    <div class="section-header">
+      <h2>What each app actually does</h2>
+    </div>
+    <div class="transparency-wrap">
+      <p class="transparency-lede">No BFG app shows ads, uses third-party analytics SDKs, or sells data. Beyond that, apps differ — some are fully offline, some fetch public data, and a couple offer optional parent accounts. Here's the honest per-app picture.</p>
+      <div class="transparency-table-wrap">
+        <table class="transparency-table">
+          <thead>
+            <tr>
+              <th>App</th>
+              <th>Data BFG receives</th>
+              <th>Account</th>
+              <th>Network</th>
+              <th>What the network is used for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="app-name"><a href="/apps/kanesh/">Kanesh</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="yes">Yes</td>
+              <td>Fetching public financial data (SEC, FRED, market providers). AI runs on device.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/cognithix/">Cognithix</a></td>
+              <td>Parent email + aggregated progress</td>
+              <td>Parent (optional)</td>
+              <td class="yes">Yes</td>
+              <td>Firebase for parent accounts and progress sync. No per-question answers uploaded.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/arithmetix/">Arithmetix</a></td>
+              <td>Parent email + aggregated progress</td>
+              <td>Parent (optional)</td>
+              <td class="yes">Yes</td>
+              <td>Firebase for parent accounts and progress sync. No per-question answers uploaded.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/sparks-studios/">Sparks Studios</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>On-device AI. Drawings, stories, and music stay on the device.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/photoflight/">PhotoFlight</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>Reads GPS metadata from your existing photos on device.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/cyla/">Cyla</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>Cycle + Apple Watch temperature data stay on device via HealthKit.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/cloudmesh/">Cloudmesh Weather</a></td>
+              <td>Anonymous barometric / weather observations</td>
+              <td class="no">No</td>
+              <td class="yes">Yes</td>
+              <td>Weather fetch plus the optional community mesh. Readings are anonymous and location is coarsened.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/pacegrid/">PaceGrid</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>GPS traces, training load, and Apple Health data stay on device.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/minua/">Minua</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>Uses Apple's parental controls framework locally. Works in airplane mode.</td>
+            </tr>
+            <tr>
+              <td class="app-name"><a href="/apps/bellgrave/">Bellgrave</a></td>
+              <td class="no">None</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>Single-player game. No cloud saves, no accounts, no telemetry.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="transparency-notes">
+        <p><strong>Apple's App Store labels.</strong> Apple reports labels per app. Seven BFG apps are labelled "Data Not Collected." Arithmetix is labelled "Data Linked to You" (parent email, user ID, product interaction) because of the Firebase parent account. Cloudmesh Weather is labelled "Data Not Linked to You" for precise location and app-functionality data used by the mesh.</p>
+        <p>Full details live in each app's <a href="/privacy.html">privacy policy</a>.</p>
+      </div>
+      <div class="tracking-def">
+        <strong>What we mean by "no tracking":</strong> no advertising identifiers, no third-party analytics SDKs, no behavioural profiling, no cross-app tracking, and no data sold or shared with data brokers. The only data that ever leaves your device is the specific, disclosed data listed for each app above.
+      </div>
+    </div>
+  </section>
+
   <!-- Trust -->
   <section class="trust-section">
     <div class="section-header">
@@ -460,16 +579,16 @@
     </div>
     <div class="trust-grid">
       <div class="trust-item">
-        <h3>Your device, your data</h3>
-        <p>Most BFG apps process everything on-device. We can't see your data even if we wanted to.</p>
+        <h3>On-device by default</h3>
+        <p>Most BFG apps process everything locally and never make a network request. The ones that do are listed above with the reason why.</p>
       </div>
       <div class="trust-item">
         <h3>Fair pricing</h3>
         <p>No hidden fees. No upsells. Free tiers that work. Paid tiers that are worth it.</p>
       </div>
       <div class="trust-item">
-        <h3>No ads, no tracking</h3>
-        <p>We make money from the product, not from selling your attention or your data.</p>
+        <h3>No ads, no trackers</h3>
+        <p>No advertising SDKs, no third-party analytics, no behavioural profiling. We make money from the product.</p>
       </div>
     </div>
   </section>
@@ -616,7 +735,7 @@
         <p>BFG uses the pricing model that fits each app. Apps with mostly on-device features typically use a one-time unlock, while apps with ongoing cloud or AI costs may use subscriptions instead. Kanesh Pro and Sparks Studios Premium use subscriptions, while Arithmetix, Cognithix, PhotoFlight, Cyla, Cloudmesh Weather, and PaceGrid use one-time unlocks. Across all of them, the constant is no ads and no data monetisation.</p>
 
         <h3>Are BFG apps actually private, or is that just marketing?</h3>
-        <p>It's architectural, not policy. Most BFG apps make zero network requests — they literally cannot send your data anywhere because they don't connect to the internet. The AI in Kanesh, Sparks Studios, and Cognithix runs on-device using models stored on your phone. There are no accounts to create, no analytics SDKs, no ad frameworks, and no third-party trackers in any BFG app. Your data is encrypted by iOS and never leaves your device.</p>
+        <p>Tiered transparency rather than a blanket claim. <strong>Six apps are fully on-device</strong> and make zero network requests: Sparks Studios, PhotoFlight, Cyla, PaceGrid, Minua, and Bellgrave. <strong>Kanesh</strong> connects to the internet to fetch public market data (SEC filings, FRED series, market providers) but BFG collects nothing about you — its AI runs on-device. <strong>Cloudmesh Weather</strong> fetches weather data and contributes anonymous barometric readings to an optional community mesh; location is coarsened and no user ID is attached. <strong>Arithmetix and Cognithix</strong> offer optional parent accounts via Google Firebase for cross-device progress sync — a parent email and aggregated progress are stored, but no per-question answers are uploaded. No BFG app uses ads, advertising identifiers, third-party analytics SDKs, or behavioural profiling. The full per-app table is at the top of this page.</p>
 
         <h3>What is the best screen time app for kids that rewards learning?</h3>
         <p>Minua lets children earn fun app access by spending time in learning apps chosen by their parent. Parents set a configurable ratio and a daily time window when fun apps can be unlocked. Built on Apple's own parental controls framework, everything stays on-device with no accounts, no cloud, and no tracking. PIN-protected settings prevent children from changing the rules. One-time purchase, no subscription.</p>
