@@ -1,6 +1,6 @@
 # BFG
 
-> Privacy-first iPhone apps by Blue Flame Games. 11 apps across finance, education, health, fitness, travel, weather, and kids categories. No ads, no tracking, no cloud. Your data stays on your device.
+> Privacy-first iPhone and iPad apps by Blue Flame Games. 12 apps across finance, education, health, fitness, travel, weather, and kids categories. No ads, no tracking, no cloud. Your data stays on your device.
 
 ## Key Pages
 
@@ -19,6 +19,8 @@
 - Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — 29 weather widgets, AI summaries, and a privacy-first community mesh network. One-time purchase, no subscription.
 - PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, and hike tracking with Injury Guard training load monitoring. Apple Watch support. One-time purchase.
 - Minua: https://bfgapps.co/apps/minua/ — Children earn screen time through learning apps. Built on Apple's parental controls framework. Fully on-device, no accounts.
+- Bellgrave: https://bfgapps.co/apps/bellgrave/ — Action roguelike in a dark 3D cathedral. 11 heroes, 8 bosses, weapon evolutions. One-time unlock, no subscription, no ads.
+- Pen Licence: https://bfgapps.co/apps/penlicence/ — Handwriting practice for iPad with Apple Pencil pressure feedback. 26-letter Zaner-Bloser curriculum, honest stroke checking. On-device, no accounts.
 - PingNear: https://bfgapps.co/apps/pingnear/ — Context-aware travel discovery. What to do right now, right here. Time, weather, and location aware. Coming soon.
 
 ## Blog (49 articles)
