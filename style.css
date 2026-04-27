@@ -165,6 +165,7 @@ th { color: var(--text-dim); font-weight: 600; font-size: 11px; text-transform: 
 .tag-fitness { background: #d1fae5; color: #047857; }
 .tag-weather { background: #dbeafe; color: #0369a1; }
 .tag-games { background: #fee2e2; color: #b91c1c; }
+.tag-music { background: #fef3c7; color: #b45309; }
 
 /* Dark mode tag overrides */
 @media (prefers-color-scheme: dark) {
@@ -176,6 +177,7 @@ th { color: var(--text-dim); font-weight: 600; font-size: 11px; text-transform: 
   .tag-fitness { background: #0e3d2e; color: #6ee7b7; }
   .tag-weather { background: #1e3a5f; color: #7dd3fc; }
   .tag-games { background: #4c1d1d; color: #fca5a5; }
+  .tag-music { background: #4a2e0a; color: #fcd34d; }
 }
 html[data-theme="light"] .tag-finance { background: #dbeafe; color: #1d4ed8; }
 html[data-theme="light"] .tag-education { background: #ede9fe; color: #7c3aed; }
@@ -185,6 +187,7 @@ html[data-theme="light"] .tag-health { background: #f3e8ff; color: #7c3aed; }
 html[data-theme="light"] .tag-fitness { background: #d1fae5; color: #047857; }
 html[data-theme="light"] .tag-weather { background: #dbeafe; color: #0369a1; }
 html[data-theme="light"] .tag-games { background: #fee2e2; color: #b91c1c; }
+html[data-theme="light"] .tag-music { background: #fef3c7; color: #b45309; }
 html[data-theme="dark"] .tag-finance { background: #1e3a5f; color: #60a5fa; }
 html[data-theme="dark"] .tag-education { background: #3b1f6e; color: #c084fc; }
 html[data-theme="dark"] .tag-kids { background: #5c2d0e; color: #fb923c; }
@@ -193,6 +196,7 @@ html[data-theme="dark"] .tag-health { background: #2d1b4e; color: #d8b4fe; }
 html[data-theme="dark"] .tag-fitness { background: #0e3d2e; color: #6ee7b7; }
 html[data-theme="dark"] .tag-weather { background: #1e3a5f; color: #7dd3fc; }
 html[data-theme="dark"] .tag-games { background: #4c1d1d; color: #fca5a5; }
+html[data-theme="dark"] .tag-music { background: #4a2e0a; color: #fcd34d; }
 
 /* Same tag styles for app pages */
 .app-tag { display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; padding: 5px 14px; border-radius: 20px; }
@@ -203,6 +207,7 @@ html[data-theme="dark"] .tag-games { background: #4c1d1d; color: #fca5a5; }
 .app-tag-health { background: #f3e8ff; color: #7c3aed; }
 .app-tag-fitness { background: #d1fae5; color: #047857; }
 .app-tag-weather { background: #dbeafe; color: #0369a1; }
+.app-tag-music { background: #fef3c7; color: #b45309; }
 @media (prefers-color-scheme: dark) {
   .app-tag-finance { background: #1e3a5f; color: #60a5fa; }
   .app-tag-education { background: #3b1f6e; color: #c084fc; }
@@ -211,6 +216,7 @@ html[data-theme="dark"] .tag-games { background: #4c1d1d; color: #fca5a5; }
   .app-tag-health { background: #2d1b4e; color: #d8b4fe; }
   .app-tag-fitness { background: #0e3d2e; color: #6ee7b7; }
   .app-tag-weather { background: #1e3a5f; color: #7dd3fc; }
+  .app-tag-music { background: #4a2e0a; color: #fcd34d; }
 }
 html[data-theme="light"] .app-tag-finance { background: #dbeafe; color: #1d4ed8; }
 html[data-theme="light"] .app-tag-education { background: #ede9fe; color: #7c3aed; }
@@ -219,6 +225,7 @@ html[data-theme="light"] .app-tag-travel { background: #ccfbf1; color: #0f766e; 
 html[data-theme="light"] .app-tag-health { background: #f3e8ff; color: #7c3aed; }
 html[data-theme="light"] .app-tag-fitness { background: #d1fae5; color: #047857; }
 html[data-theme="light"] .app-tag-weather { background: #dbeafe; color: #0369a1; }
+html[data-theme="light"] .app-tag-music { background: #fef3c7; color: #b45309; }
 html[data-theme="dark"] .app-tag-finance { background: #1e3a5f; color: #60a5fa; }
 html[data-theme="dark"] .app-tag-education { background: #3b1f6e; color: #c084fc; }
 html[data-theme="dark"] .app-tag-kids { background: #5c2d0e; color: #fb923c; }
@@ -226,6 +233,7 @@ html[data-theme="dark"] .app-tag-travel { background: #0e3d3d; color: #5eead4; }
 html[data-theme="dark"] .app-tag-health { background: #2d1b4e; color: #d8b4fe; }
 html[data-theme="dark"] .app-tag-fitness { background: #0e3d2e; color: #6ee7b7; }
 html[data-theme="dark"] .app-tag-weather { background: #1e3a5f; color: #7dd3fc; }
+html[data-theme="dark"] .app-tag-music { background: #4a2e0a; color: #fcd34d; }
 
 /* ─── App Page: Hero ─── */
 .app-hero {
