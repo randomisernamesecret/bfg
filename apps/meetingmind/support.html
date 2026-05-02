@@ -71,11 +71,11 @@
 
     <h2>Frequently Asked Questions</h2>
 
-    <h3>Why does the app ask to download a file on first launch?</h3>
-    <p>MeetingMind needs an on-device AI model to summarise your meetings. We use Google's Gemma 4 E2B (the smaller of the two Gemma 4 edge variants) — around 2 GB, downloaded from Google's public model repository on first launch. After the download, the app needs no internet connection — every meeting is processed entirely on your iPhone.</p>
+    <h3>Why is MeetingMind a larger download than typical apps?</h3>
+    <p>Everything the app needs to process meetings ships inside the App Store download itself, including the on-device AI. No separate fetch after install, no network traffic ever. The trade-off: a larger initial install, but zero "first launch waiting" once the App Store finishes — and a privacy story that's actually verifiable.</p>
 
     <h3>Can I record without internet?</h3>
-    <p>Yes. After the one-time model download, MeetingMind works fully offline. The download is the only network activity the app ever does.</p>
+    <p>Yes — always, immediately. MeetingMind doesn't make a single network request after install. You can record and process meetings on a plane, in a basement, on a yacht with no signal — every feature works the same.</p>
 
     <h3>Is the audio uploaded anywhere?</h3>
     <p>No. Recording, transcription, and AI summarisation all happen on your iPhone. There is no server.</p>
@@ -87,7 +87,7 @@
     <p>By default, MeetingMind deletes audio files after the summary is generated. You can change this in Settings → Audio → Retention if you want to keep recordings.</p>
 
     <h3>How do speakers get attributed?</h3>
-    <p>You add attendees before the meeting; MeetingMind uses voice fingerprinting plus contextual cues from the transcript to attribute decisions and action items to the right person. You can correct any attribution after the fact in the notes editor.</p>
+    <p>You add attendees before the meeting; MeetingMind attributes decisions and action items to the right person automatically. You can correct any attribution after the fact in the notes editor.</p>
 
     <h3>Can I edit the notes after the AI generates them?</h3>
     <p>Yes. Every section in the notes editor is editable inline — summary, decisions, action items, open questions, key quotes, and the full transcript.</p>

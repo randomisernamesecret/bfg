@@ -72,7 +72,7 @@
     <p><em>Last updated: 2 May 2026</em></p>
 
     <h2>1. Summary in plain English</h2>
-    <p>MeetingMind is designed so your meetings never leave your iPhone. There is no account, no server, no telemetry, no analytics, no advertising. The only network request the app ever makes is downloading the AI model file on first launch. After that, MeetingMind works fully offline.</p>
+    <p>MeetingMind makes zero network calls. The app ships entirely inside the App Store download — no cloud, no account, no telemetry, no analytics, no advertising. After install, MeetingMind works fully offline. Forever.</p>
     <div class="callout">
       <strong>App Store privacy label:</strong> "Data Not Collected".
     </div>
@@ -92,12 +92,11 @@
       <li>AI-generated summaries, decisions, action items, key quotes, and chat history</li>
       <li>Attendee names you enter</li>
       <li>App preferences (audio retention policy, default meeting type, theme)</li>
-      <li>The downloaded AI model file</li>
     </ul>
 
     <h2>5. Network Activity</h2>
-    <p>MeetingMind makes exactly one type of network request: downloading the on-device AI model the first time you use the app. The download is from the public model repository (Hugging Face) and contains only the model file — no telemetry, no identifiers, no metadata about you. You can verify network activity using iOS Privacy Reports.</p>
-    <p>After the model is downloaded, the app needs no internet connection. You can use it on a plane, in a basement, or anywhere else without service.</p>
+    <p>MeetingMind makes <strong>zero</strong> network requests. Everything the app needs ships inside the App Store download itself, so there is no first-launch fetch and no per-meeting traffic. You can verify this using iOS Privacy Reports.</p>
+    <p>You can use MeetingMind on a plane, in a basement, in a vault — anywhere without service — and every feature works exactly the same.</p>
 
     <h2>6. Permissions MeetingMind Requests</h2>
     <ul>
@@ -115,9 +114,8 @@
     <h2>9. Third-Party Services</h2>
     <ul>
       <li><strong>Apple Inc.</strong> — App Store distribution, in-app purchase processing, on-device speech recognition, ActivityKit, EventKit, WatchConnectivity. Apple's standard privacy practices apply to App Store transactions.</li>
-      <li><strong>Hugging Face / model host</strong> — used only for the one-time AI model download. The download contains only the model file.</li>
     </ul>
-    <p>MeetingMind does not include any other third-party SDK, analytics provider, or telemetry library.</p>
+    <p>MeetingMind does not include any analytics provider or telemetry library, and contacts no third-party hosting service at any point.</p>
 
     <h2>10. Your Rights</h2>
     <p>Because MeetingMind does not collect any personal data, there is no centralised data to access, correct, delete, or port. To remove all MeetingMind data, simply uninstall the app — everything is removed with it.</p>
@@ -126,7 +124,7 @@
     <p>All meeting data is stored in iOS Data-Protection-encrypted storage tied to your device passcode. Audio, transcripts, and notes are protected by iOS Data Protection.</p>
 
     <h2>12. International Transfers</h2>
-    <p>Because no data is uploaded, there is no international transfer of your meeting content. The one-time model download may be served from CDNs around the world.</p>
+    <p>Because no data is uploaded and the app makes no network requests, there is no international transfer of your meeting content.</p>
 
     <h2>13. Changes</h2>
     <p>If we update this policy, we will revise the "Last updated" date and provide in-app notice where appropriate.</p>
