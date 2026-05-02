@@ -208,6 +208,7 @@ html[data-theme="dark"] .tag-music { background: #4a2e0a; color: #fcd34d; }
 .app-tag-fitness { background: #d1fae5; color: #047857; }
 .app-tag-weather { background: #dbeafe; color: #0369a1; }
 .app-tag-music { background: #fef3c7; color: #b45309; }
+.app-tag-productivity { background: #e0e7ff; color: #1e3a8a; }
 @media (prefers-color-scheme: dark) {
   .app-tag-finance { background: #1e3a5f; color: #60a5fa; }
   .app-tag-education { background: #3b1f6e; color: #c084fc; }
@@ -217,6 +218,7 @@ html[data-theme="dark"] .tag-music { background: #4a2e0a; color: #fcd34d; }
   .app-tag-fitness { background: #0e3d2e; color: #6ee7b7; }
   .app-tag-weather { background: #1e3a5f; color: #7dd3fc; }
   .app-tag-music { background: #4a2e0a; color: #fcd34d; }
+  .app-tag-productivity { background: #1e2a5e; color: #93c5fd; }
 }
 html[data-theme="light"] .app-tag-finance { background: #dbeafe; color: #1d4ed8; }
 html[data-theme="light"] .app-tag-education { background: #ede9fe; color: #7c3aed; }
@@ -226,6 +228,7 @@ html[data-theme="light"] .app-tag-health { background: #f3e8ff; color: #7c3aed; 
 html[data-theme="light"] .app-tag-fitness { background: #d1fae5; color: #047857; }
 html[data-theme="light"] .app-tag-weather { background: #dbeafe; color: #0369a1; }
 html[data-theme="light"] .app-tag-music { background: #fef3c7; color: #b45309; }
+html[data-theme="light"] .app-tag-productivity { background: #e0e7ff; color: #1e3a8a; }
 html[data-theme="dark"] .app-tag-finance { background: #1e3a5f; color: #60a5fa; }
 html[data-theme="dark"] .app-tag-education { background: #3b1f6e; color: #c084fc; }
 html[data-theme="dark"] .app-tag-kids { background: #5c2d0e; color: #fb923c; }
@@ -234,6 +237,7 @@ html[data-theme="dark"] .app-tag-health { background: #2d1b4e; color: #d8b4fe; }
 html[data-theme="dark"] .app-tag-fitness { background: #0e3d2e; color: #6ee7b7; }
 html[data-theme="dark"] .app-tag-weather { background: #1e3a5f; color: #7dd3fc; }
 html[data-theme="dark"] .app-tag-music { background: #4a2e0a; color: #fcd34d; }
+html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c5fd; }
 
 /* ─── App Page: Hero ─── */
 .app-hero {
