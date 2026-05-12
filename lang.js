@@ -51,8 +51,10 @@
     if (label) label.textContent = code.toUpperCase();
 
     var home = localeHomeFor(code);
-    // Pages that have a translated copy under /<locale>/<path>/. We rewrite
-    // English links to /foo/ → /<locale>/foo/ when the user has a non-EN locale.
+    // Anchors that exist on every locale homepage. Others (blog, faq,
+    // transparency) only exist on the English page — leave links to them
+    // alone so the click lands on /#section, not /<locale>/#section.
+    var LOCAL_ANCHORS = ['#apps'];
     var LOCALIZED_PATHS = ['/about/'];
     document.querySelectorAll('a[href]').forEach(function (a) {
       if (a.hasAttribute('data-lang')) return;
@@ -63,12 +65,16 @@
         a.setAttribute('href', home);
         return;
       }
-      // Any anchor on the English homepage (/#apps, /#blog, /#faq, …).
+      // Anchor on the English homepage (/#apps, /#blog, /#faq, …).
       var anchorIdx = -1;
       if (href.indexOf('/#') === 0) anchorIdx = 1;
       else if (href.indexOf('/index.html#') === 0) anchorIdx = '/index.html'.length;
       if (anchorIdx > -1) {
-        a.setAttribute('href', home + href.slice(anchorIdx));
+        var anchor = href.slice(anchorIdx);
+        if (LOCAL_ANCHORS.indexOf(anchor) !== -1) {
+          a.setAttribute('href', home + anchor);
+        }
+        // else: keep the link pointing at the English homepage section.
         return;
       }
       // Pages that exist in every locale: rewrite their root-relative links.
@@ -88,13 +94,19 @@
     // Let the browser follow the link as normal.
   });
 
-  // 2) Load-time: redirect homepages to the user's saved language.
+  // 2) Load-time: redirect homepages to the user's saved language — except
+  // when the URL points at an English-only section like #blog. In that case
+  // we keep the user on the English home so the anchor actually resolves.
+  var ENGLISH_ONLY_ANCHORS = ['#blog', '#faq', '#transparency'];
   var saved = readSavedLocale();
   if (saved) {
     var current = currentLocaleFromPath();
     if (isHomePath() && current !== saved) {
-      window.location.replace(localeHomeFor(saved));
-      return;
+      var hash = window.location.hash;
+      if (ENGLISH_ONLY_ANCHORS.indexOf(hash) === -1) {
+        window.location.replace(localeHomeFor(saved) + hash);
+        return;
+      }
     }
   }
 
