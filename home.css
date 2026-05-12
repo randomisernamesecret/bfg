@@ -2,15 +2,37 @@
 .hero {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 56px 32px 34px;
+  padding: 72px 32px 48px;
   text-align: left;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.65fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.hero::after {
+  content: '';
+  display: block;
+  min-height: 360px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background:
+    url('/assets/cloudmesh-hero.png') right 30px center / auto 82% no-repeat,
+    url('/assets/keystrike-hero.png') left 28px top 42px / 54% auto no-repeat,
+    url('/assets/photoflight-hero.png') left 64px bottom 32px / 34% auto no-repeat,
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), transparent 44%),
+    linear-gradient(180deg, var(--surface), var(--bg-alt));
+  box-shadow: var(--shadow-lg);
 }
 
 .hero h1 {
-  font-size: 56px;
-  line-height: 1.03;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 62px;
+  font-weight: 850;
+  line-height: 0.98;
   letter-spacing: 0;
-  max-width: 12ch;
+  max-width: 13ch;
   margin: 0 0 20px;
 }
 
@@ -34,6 +56,7 @@
 .hero .btn-outline {
   border-radius: 8px;
   text-decoration: none;
+  min-height: 52px;
 }
 
 .hero .btn-primary {
@@ -62,7 +85,9 @@
 
 .section-head h2,
 .section-header h2 {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 34px;
+  font-weight: 850;
   line-height: 1.15;
   letter-spacing: 0;
   margin: 0;
@@ -95,7 +120,7 @@
   padding: 0 32px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .app-card,
@@ -112,17 +137,19 @@
   background: var(--surface);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
 }
 
 .app-card:hover {
   border-color: var(--border);
   box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
 .app-card .card-img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 5 / 4;
   background: linear-gradient(150deg, var(--bg-alt), var(--surface));
-  padding: 18px;
+  padding: 20px;
 }
 
 .app-card .card-img img {
@@ -140,7 +167,9 @@
 }
 
 .app-card h3 {
-  font-size: 21px;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
   letter-spacing: 0;
 }
 
@@ -162,7 +191,7 @@
   padding: 0 32px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .coming-card,
@@ -171,6 +200,13 @@
   background: var(--surface);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-sm);
+}
+
+.intent-card h3,
+.trust-item h3,
+.coming-card h3 {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 800;
 }
 
 .transparency-section,
@@ -200,6 +236,15 @@
 }
 
 @media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
   .hero h1 {
     font-size: 44px;
   }
