@@ -41,249 +41,367 @@
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ─── Editorial Refresh — Fraunces + JetBrains Mono ─── */
-    :root { --fraunces: 'Fraunces', 'DM Serif Display', Georgia, serif; --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
-    body { font-family: 'DM Sans', -apple-system, sans-serif; }
+    /* ═══ Field Almanac — Vol. 01 ═══ */
+    :root {
+      --fraunces: 'Fraunces', 'DM Serif Display', Georgia, serif;
+      --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+      --ink: var(--heading);
+      --paper: var(--bg);
+      --rule: var(--border);
+    }
+    body { font-family: 'DM Sans', -apple-system, sans-serif; background: var(--paper); }
+    .container-wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
 
-    /* Masthead */
-    .masthead { padding: 88px 32px 32px; max-width: 1080px; margin: 0 auto; }
-    .masthead .eyebrow {
+    /* — Almanac masthead — */
+    .almanac-head {
+      max-width: 1240px; margin: 0 auto; padding: 32px 40px 0;
+      display: grid; grid-template-columns: auto 1fr auto;
+      gap: 28px; align-items: baseline;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 12px;
+    }
+    .almanac-head .lhs, .almanac-head .rhs {
+      font-family: var(--mono); font-size: 10.5px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted);
+    }
+    .almanac-head .center {
+      text-align: center; font-family: var(--fraunces);
+      font-size: 16px; font-weight: 400; letter-spacing: 0.3em;
+      text-transform: uppercase; color: var(--ink);
+    }
+
+    /* — Hero — */
+    .masthead {
+      max-width: 1240px; margin: 0 auto; padding: 48px 40px 24px;
+      display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px;
+      align-items: end; position: relative;
+    }
+    .masthead .lede { padding-right: 0; }
+    .masthead .kicker {
       font-family: var(--mono); font-size: 11px; font-weight: 500;
       letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);
-      margin-bottom: 28px; display: flex; gap: 18px; align-items: center;
+      margin-bottom: 20px; display: flex; align-items: center; gap: 14px;
     }
-    .masthead .eyebrow::after { content: ''; flex: 1; height: 1px; background: var(--border); max-width: 220px; }
+    .masthead .kicker::before { content: ''; width: 36px; height: 1px; background: var(--accent); }
     .masthead h1 {
-      font-family: var(--fraunces); font-size: clamp(40px, 6.5vw, 84px);
-      font-weight: 400; letter-spacing: -0.02em; line-height: 1.02;
-      color: var(--heading); margin: 0 0 28px; max-width: 14ch;
+      font-family: var(--fraunces); font-weight: 300;
+      font-size: clamp(48px, 8.5vw, 116px); line-height: 0.96;
+      letter-spacing: -0.035em; color: var(--ink); margin: 0 0 24px;
       font-variation-settings: 'opsz' 144, 'SOFT' 50;
     }
     .masthead h1 em {
-      font-style: italic; font-weight: 300; color: var(--accent);
+      font-style: italic; font-weight: 400; color: var(--accent);
       font-variation-settings: 'opsz' 144, 'SOFT' 100;
     }
     .masthead .standfirst {
-      font-family: var(--fraunces); font-size: clamp(18px, 1.8vw, 22px);
-      font-weight: 400; font-style: italic; color: var(--text);
-      max-width: 56ch; line-height: 1.55; margin: 0 0 36px;
+      font-family: var(--fraunces); font-style: italic; font-weight: 400;
+      font-size: clamp(18px, 1.7vw, 22px); line-height: 1.5;
+      max-width: 48ch; color: var(--text); margin: 0 0 32px;
       font-variation-settings: 'opsz' 36;
     }
-    .masthead .ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
-    .masthead .ctas a {
+    .masthead .ctas { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .masthead .cta-primary {
+      font-family: var(--mono); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      background: var(--ink); color: var(--paper);
+      padding: 16px 26px; border-radius: 2px; transition: all 0.2s;
+      display: inline-flex; align-items: center; gap: 10px;
+    }
+    .masthead .cta-primary:hover { background: var(--accent); text-decoration: none; transform: translateY(-2px); }
+    .masthead .cta-primary .pulse { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.4); } }
+    .masthead .cta-primary:hover .pulse { background: var(--paper); }
+    .masthead .cta-ghost {
       font-family: var(--mono); font-size: 12px; font-weight: 500;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      padding: 14px 22px; border-radius: 2px; transition: all 0.2s;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--text);
+      border-bottom: 1px solid var(--text); padding: 4px 0; transition: all 0.2s;
     }
-    .masthead .ctas .cta-primary { background: var(--heading); color: var(--bg); }
-    .masthead .ctas .cta-primary:hover { background: var(--accent); text-decoration: none; }
-    .masthead .ctas .cta-ghost { color: var(--text); border-bottom: 1px solid var(--text); padding: 6px 0; border-radius: 0; }
-    .masthead .ctas .cta-ghost:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+    .masthead .cta-ghost:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 
-    .masthead .colophon {
-      display: grid; grid-template-columns: repeat(4, auto); gap: 48px;
-      padding-top: 28px; border-top: 1px solid var(--border);
-      font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--text-muted);
+    /* Hero artwork — big Keystrike iPad screenshot, slightly rotated */
+    .masthead .artwork {
+      position: relative; aspect-ratio: 3/4;
+      max-width: 460px; justify-self: end; width: 100%;
     }
-    .masthead .colophon strong {
-      display: block; font-family: var(--fraunces); font-size: 32px;
-      font-weight: 400; color: var(--heading); letter-spacing: -0.02em;
-      text-transform: none; margin-bottom: 4px;
+    .masthead .artwork .stack-back, .masthead .artwork .stack-front {
+      position: absolute; inset: 0; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 30px 80px rgba(26,23,20,0.18), 0 1px 0 rgba(26,23,20,0.06);
+      background: var(--surface); border: 1px solid var(--border);
     }
+    .masthead .artwork .stack-back {
+      transform: rotate(-4deg) translate(-18%, 4%) scale(0.86);
+      filter: saturate(0.85);
+    }
+    .masthead .artwork .stack-front {
+      transform: rotate(3deg) translate(8%, -2%);
+      transition: transform 0.5s cubic-bezier(.2,.7,.2,1);
+    }
+    .masthead .artwork:hover .stack-front { transform: rotate(0deg) translate(0, -6%); }
+    .masthead .artwork img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .masthead .artwork .art-label {
+      position: absolute; bottom: -36px; right: 0; text-align: right;
+      font-family: var(--mono); font-size: 10.5px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .masthead .artwork .art-label strong { display: block; color: var(--ink); font-weight: 600; font-size: 11px; }
 
-    /* Section headers — editorial */
-    .section-rule {
-      max-width: 1080px; margin: 96px auto 0; padding: 0 32px;
-      display: flex; align-items: baseline; gap: 24px;
-      border-top: 1px solid var(--heading); padding-top: 20px;
+    /* Colophon strip */
+    .colophon-strip {
+      max-width: 1240px; margin: 80px auto 0; padding: 28px 40px;
+      border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
     }
-    .section-rule .folio {
+    .colophon-strip .col-item {
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .colophon-strip .col-num {
+      font-family: var(--fraunces); font-size: 64px; font-weight: 300;
+      line-height: 1; letter-spacing: -0.04em; color: var(--ink);
+      font-variation-settings: 'opsz' 144;
+    }
+    .colophon-strip .col-num.accent { color: var(--accent); font-style: italic; }
+    .colophon-strip .col-label {
+      font-family: var(--mono); font-size: 10.5px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted);
+    }
+    .colophon-strip .col-label em { font-style: normal; color: var(--ink); font-weight: 600; }
+
+    /* — Section divider with folio — */
+    .section-folio {
+      max-width: 1240px; margin: 96px auto 0; padding: 0 40px;
+      display: grid; grid-template-columns: auto 1fr; gap: 40px;
+      align-items: end; padding-bottom: 24px;
+      border-bottom: 1px solid var(--ink);
+    }
+    .section-folio .folio-num {
+      font-family: var(--fraunces); font-size: clamp(60px, 8vw, 96px);
+      font-weight: 300; line-height: 0.85; letter-spacing: -0.04em;
+      color: var(--accent); font-style: italic;
+      font-variation-settings: 'opsz' 144;
+    }
+    .section-folio .folio-meta {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .section-folio .folio-kicker {
       font-family: var(--mono); font-size: 11px; font-weight: 500;
-      letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);
-      flex-shrink: 0;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-muted);
     }
-    .section-rule h2 {
-      font-family: var(--fraunces); font-size: clamp(28px, 3.4vw, 44px);
-      font-weight: 400; letter-spacing: -0.01em; color: var(--heading);
-      margin: 0; line-height: 1.05;
+    .section-folio h2 {
+      font-family: var(--fraunces); font-size: clamp(36px, 5vw, 64px);
+      font-weight: 400; line-height: 1; letter-spacing: -0.025em;
+      color: var(--ink); margin: 0;
+      font-variation-settings: 'opsz' 144;
     }
-    .section-rule .kicker {
-      font-family: 'DM Sans', sans-serif; font-size: 14px;
-      color: var(--text-muted); margin-left: auto; max-width: 32ch;
-      text-align: right; line-height: 1.5;
+    .section-folio h2 em { font-style: italic; color: var(--accent); font-weight: 300; }
+    .section-folio .folio-kicker-r {
+      align-self: end; justify-self: end;
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted);
+      max-width: 32ch; text-align: right; line-height: 1.6;
     }
 
-    /* Featured stories — three lead apps */
-    .featured-strip {
-      max-width: 1080px; margin: 32px auto 0; padding: 0 32px;
-      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 28px;
-    }
-    .featured-card {
-      background: var(--surface); border: 1px solid var(--border-light);
-      padding: 0; overflow: hidden; transition: all 0.3s;
-      display: flex; flex-direction: column;
-    }
-    .featured-card:hover {
-      border-color: var(--heading);
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-    .featured-card .feature-img {
-      aspect-ratio: 4/3; background: var(--bg-alt); overflow: hidden;
+    /* — Lead spreads (3 hero apps, alternating) — */
+    .leads { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+    .lead {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: center; padding: 80px 0;
       border-bottom: 1px solid var(--border-light);
+      position: relative;
+    }
+    .lead:nth-child(even) .lead-art { order: 2; }
+    .lead:nth-child(even) .lead-text { order: 1; }
+    .lead-art {
+      position: relative; aspect-ratio: 4/5;
+      background: linear-gradient(135deg, var(--bg-alt) 0%, var(--surface) 100%);
+      border-radius: 8px; overflow: hidden;
       display: flex; align-items: center; justify-content: center;
+      padding: 32px;
     }
-    .featured-card .feature-img img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 0.5s ease;
+    .lead-art::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(232,89,12,0.08), transparent 60%);
+      pointer-events: none;
     }
-    .featured-card:hover .feature-img img { transform: scale(1.04); }
-    .featured-card .feature-body { padding: 24px 24px 22px; flex: 1; display: flex; flex-direction: column; }
-    .featured-card .feature-cat {
-      font-family: var(--mono); font-size: 10px; font-weight: 500;
-      letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);
-      margin-bottom: 12px;
+    .lead-art img {
+      max-width: 78%; max-height: 100%; object-fit: contain;
+      border-radius: 18px; box-shadow: 0 24px 60px rgba(26,23,20,0.22), 0 0 0 1px rgba(26,23,20,0.04);
+      transition: transform 0.6s cubic-bezier(.2,.7,.2,1);
     }
-    .featured-card h3 {
-      font-family: var(--fraunces); font-size: 26px; font-weight: 400;
-      letter-spacing: -0.01em; line-height: 1.1; margin: 0 0 10px;
-      color: var(--heading);
+    .lead:hover .lead-art img { transform: scale(1.03) translateY(-6px); }
+
+    .lead-text { padding: 12px 0; }
+    .lead-text .lead-meta {
+      display: flex; align-items: baseline; gap: 18px; margin-bottom: 24px;
+    }
+    .lead-text .lead-num {
+      font-family: var(--fraunces); font-size: 56px; font-weight: 300;
+      letter-spacing: -0.03em; line-height: 1; color: var(--accent);
+      font-style: italic; font-variation-settings: 'opsz' 144;
+    }
+    .lead-text .lead-cat {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-muted);
+      padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+      flex: 1;
+    }
+    .lead-text h3 {
+      font-family: var(--fraunces); font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 400; line-height: 1.02; letter-spacing: -0.025em;
+      color: var(--ink); margin: 0 0 18px;
+      font-variation-settings: 'opsz' 144;
+    }
+    .lead-text h3 a { color: inherit; text-decoration: none; }
+    .lead-text h3 a:hover { color: var(--accent); }
+    .lead-text .lead-tag {
+      font-family: var(--fraunces); font-style: italic; font-weight: 400;
+      font-size: 20px; line-height: 1.45; color: var(--accent);
+      margin: 0 0 18px;
       font-variation-settings: 'opsz' 36;
     }
-    .featured-card h3 a { color: inherit; text-decoration: none; background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size 0.3s; }
-    .featured-card:hover h3 a { background-size: 100% 1px; color: var(--heading); }
-    .featured-card .feature-desc {
-      font-size: 14px; color: var(--text-muted); line-height: 1.65;
-      margin-bottom: 18px; flex: 1;
+    .lead-text .lead-body {
+      font-size: 15.5px; line-height: 1.7; color: var(--text); margin: 0 0 28px;
+      max-width: 42ch;
     }
-    .featured-card .feature-cta {
+    .lead-text .lead-actions { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .lead-text .btn-store {
+      font-family: var(--mono); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      background: var(--ink); color: var(--paper);
+      padding: 14px 22px; border-radius: 2px;
+      display: inline-flex; align-items: center; gap: 10px;
+      transition: all 0.2s;
+    }
+    .lead-text .btn-store:hover { background: var(--accent); text-decoration: none; transform: translateY(-2px); }
+    .lead-text .btn-store .arrow { transition: transform 0.2s; }
+    .lead-text .btn-store:hover .arrow { transform: translateX(4px); }
+    .lead-text .btn-secondary-ghost {
       font-family: var(--mono); font-size: 11px; font-weight: 500;
-      letter-spacing: 0.18em; text-transform: uppercase; color: var(--heading);
-      padding-top: 14px; border-top: 1px solid var(--border-light);
-      display: inline-flex; align-items: center; gap: 8px;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--text);
+      border-bottom: 1px solid var(--text); padding-bottom: 4px; transition: all 0.2s;
     }
-    .featured-card .feature-cta:hover { color: var(--accent); text-decoration: none; }
-    .featured-card .feature-cta .arrow { transition: transform 0.2s; }
-    .featured-card:hover .feature-cta .arrow { transform: translateX(4px); }
+    .lead-text .btn-secondary-ghost:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 
-    /* Editorial index — remaining apps */
-    .editorial-index {
-      max-width: 1080px; margin: 32px auto 0; padding: 0 32px;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-      border-top: 1px solid var(--border-light);
+    /* — Spec sheet (remaining 9 apps in grid w/ screenshots) — */
+    .spec-sheet {
+      max-width: 1240px; margin: 80px auto 0; padding: 0 40px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 32px;
     }
-    .index-row {
-      display: grid; grid-template-columns: 56px 1fr auto;
-      gap: 20px; padding: 24px 0;
-      border-bottom: 1px solid var(--border-light);
-      align-items: baseline;
-      transition: all 0.25s;
+    .spec {
+      display: flex; flex-direction: column;
+      transition: transform 0.3s;
     }
-    .index-row:nth-child(odd) { border-right: 1px solid var(--border-light); padding-right: 28px; }
-    .index-row:nth-child(even) { padding-left: 28px; }
-    .index-row:hover { background: var(--surface-hover); }
-    .index-row .index-num {
-      font-family: var(--mono); font-size: 12px; font-weight: 500;
-      color: var(--accent); letter-spacing: 0.1em; padding-top: 4px;
+    .spec:hover { transform: translateY(-6px); }
+    .spec .spec-art {
+      aspect-ratio: 3/4; background: linear-gradient(180deg, var(--bg-alt), var(--surface));
+      border-radius: 6px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      padding: 22px 22px 0; margin-bottom: 22px;
+      position: relative;
     }
-    .index-row .index-content { min-width: 0; }
-    .index-row .index-cat {
+    .spec .spec-art img {
+      max-width: 80%; max-height: 100%; object-fit: contain;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(26,23,20,0.18), 0 0 0 1px rgba(26,23,20,0.04);
+      transition: transform 0.4s cubic-bezier(.2,.7,.2,1);
+    }
+    .spec:hover .spec-art img { transform: scale(1.04); }
+    .spec .spec-meta {
+      display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;
+    }
+    .spec .spec-num {
+      font-family: var(--mono); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.16em; color: var(--accent);
+    }
+    .spec .spec-cat {
       font-family: var(--mono); font-size: 10px; font-weight: 500;
       letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);
-      margin-bottom: 8px;
+      flex: 1; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;
     }
-    .index-row h3 {
-      font-family: var(--fraunces); font-size: 22px; font-weight: 400;
-      letter-spacing: -0.005em; line-height: 1.15; margin: 0 0 6px;
-      color: var(--heading);
-      font-variation-settings: 'opsz' 36;
+    .spec h3 {
+      font-family: var(--fraunces); font-size: 28px; font-weight: 400;
+      letter-spacing: -0.015em; line-height: 1.05; margin: 0 0 10px;
+      color: var(--ink);
+      font-variation-settings: 'opsz' 72;
     }
-    .index-row h3 a { color: inherit; text-decoration: none; }
-    .index-row h3 a:hover { color: var(--accent); }
-    .index-row .index-desc {
-      font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin: 0;
+    .spec h3 a { color: inherit; text-decoration: none; }
+    .spec h3 a:hover { color: var(--accent); }
+    .spec .spec-desc {
+      font-size: 14px; line-height: 1.65; color: var(--text-muted);
+      margin: 0 0 16px; flex: 1;
     }
-    .index-row .index-store {
-      font-family: var(--mono); font-size: 11px; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--text-muted); padding-top: 4px;
-      white-space: nowrap;
+    .spec .spec-cta {
+      font-family: var(--mono); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink);
+      padding-top: 14px; border-top: 1px solid var(--rule);
+      display: inline-flex; align-items: center; gap: 8px;
+      align-self: flex-start;
     }
-    .index-row .index-store:hover { color: var(--accent); text-decoration: none; }
+    .spec .spec-cta:hover { color: var(--accent); text-decoration: none; }
+    .spec .spec-cta .arrow { transition: transform 0.2s; }
+    .spec:hover .spec-cta .arrow { transform: translateX(4px); }
 
-    /* Coming soon — compressed */
+    /* — Coming soon — */
     .coming-soon-section {
-      max-width: 1080px; margin: 64px auto 0; padding: 32px 32px 0;
-      border-top: 1px solid var(--border);
+      max-width: 1240px; margin: 96px auto 0; padding: 0 40px;
     }
     .coming-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-      margin-top: 24px;
+      margin-top: 32px;
+      border-top: 1px solid var(--rule);
     }
     .coming-card {
-      padding: 20px 28px 20px 0; border-right: 1px solid var(--border-light);
+      padding: 32px 32px 32px 0; border-right: 1px solid var(--border-light);
       transition: all 0.25s;
     }
-    .coming-card:last-child { border-right: none; padding-left: 28px; padding-right: 0; }
+    .coming-card:last-child { border-right: none; padding: 32px 0 32px 32px; }
     .coming-card .coming-tag {
-      font-family: var(--mono); font-size: 10px; font-weight: 500;
-      letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);
-      margin-bottom: 10px;
+      font-family: var(--mono); font-size: 10.5px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
     }
+    .coming-card .coming-tag::before { content: '◆'; color: var(--accent); font-size: 8px; }
     .coming-card h3 {
-      font-family: var(--fraunces); font-size: 22px; font-weight: 400;
-      letter-spacing: -0.01em; margin: 0 0 8px;
-    }
-    .coming-card h3 a { color: var(--heading); text-decoration: none; }
-    .coming-card h3 a:hover { color: var(--accent); }
-    .coming-card .desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin: 0; }
-
-    /* Override base section-header for sections we still use (transparency, trust, etc) */
-    .section-header { text-align: center; margin-bottom: 40px; padding: 0 32px; }
-    .section-header h2 {
-      font-family: var(--fraunces); font-size: clamp(28px, 3.4vw, 40px);
-      font-weight: 400; letter-spacing: -0.01em; margin: 0 0 12px;
+      font-family: var(--fraunces); font-size: 28px; font-weight: 400;
+      letter-spacing: -0.015em; margin: 0 0 10px;
       font-variation-settings: 'opsz' 72;
     }
-    .section-header p { font-size: 15px; color: var(--text-muted); max-width: 56ch; margin: 0 auto; }
+    .coming-card h3 a { color: var(--ink); text-decoration: none; }
+    .coming-card h3 a:hover { color: var(--accent); }
+    .coming-card .desc { font-size: 14.5px; color: var(--text-muted); line-height: 1.65; margin: 0; max-width: 44ch; }
 
-    /* Mobile */
-    @media (max-width: 900px) {
-      .featured-strip { grid-template-columns: 1fr 1fr; }
-      .featured-strip .featured-card:first-child { grid-column: 1 / -1; }
-      .editorial-index { grid-template-columns: 1fr; }
-      .index-row:nth-child(odd) { border-right: none; padding-right: 0; }
-      .index-row:nth-child(even) { padding-left: 0; }
+    /* — Mobile — */
+    @media (max-width: 980px) {
+      .almanac-head { display: none; }
+      .masthead { grid-template-columns: 1fr; gap: 48px; padding: 32px 24px 16px; }
+      .masthead .artwork { max-width: 360px; justify-self: center; }
+      .colophon-strip { grid-template-columns: repeat(2, 1fr); gap: 32px 20px; padding: 24px; margin-top: 48px; }
+      .colophon-strip .col-num { font-size: 52px; }
+      .section-folio { grid-template-columns: 1fr; gap: 14px; padding: 0 24px; margin-top: 72px; }
+      .section-folio .folio-kicker-r { text-align: left; justify-self: start; margin-top: 14px; }
+      .leads { padding: 0 24px; }
+      .lead { grid-template-columns: 1fr; gap: 36px; padding: 56px 0; }
+      .lead:nth-child(even) .lead-art { order: 1; }
+      .lead:nth-child(even) .lead-text { order: 2; }
+      .lead-text h3 { font-size: 36px; }
+      .lead-text .lead-num { font-size: 44px; }
+      .spec-sheet { grid-template-columns: 1fr 1fr; padding: 0 24px; gap: 40px 20px; margin-top: 48px; }
+      .coming-soon-section { padding: 0 24px; margin-top: 64px; }
+      .coming-grid { grid-template-columns: 1fr; }
+      .coming-card { padding: 24px 0; border-right: none; border-bottom: 1px solid var(--border-light); }
+      .coming-card:last-child { border-bottom: none; padding: 24px 0; }
     }
-    @media (max-width: 700px) {
-      .masthead { padding: 56px 20px 24px; }
-      .masthead .eyebrow { font-size: 10px; gap: 12px; margin-bottom: 20px; }
-      .masthead h1 { font-size: clamp(36px, 11vw, 56px); margin-bottom: 22px; }
-      .masthead .standfirst { font-size: 17px; margin-bottom: 28px; }
-      .masthead .ctas { gap: 12px; margin-bottom: 32px; }
-      .masthead .ctas a { font-size: 11px; padding: 12px 18px; }
-      .masthead .colophon {
-        grid-template-columns: 1fr 1fr; gap: 24px 32px;
-        font-size: 10px;
-      }
-      .masthead .colophon strong { font-size: 26px; }
-      .section-rule { margin-top: 64px; padding: 16px 20px 0; gap: 16px; flex-wrap: wrap; }
-      .section-rule .kicker { width: 100%; text-align: left; margin-left: 0; margin-top: 4px; }
-      .section-rule h2 { font-size: 28px; }
-      .featured-strip { grid-template-columns: 1fr; padding: 0 20px; gap: 20px; margin-top: 24px; }
-      .featured-strip .featured-card:first-child { grid-column: auto; }
-      .featured-card h3 { font-size: 22px; }
-      .editorial-index { padding: 0 20px; margin-top: 24px; }
-      .index-row { grid-template-columns: 36px 1fr; padding: 18px 0; gap: 14px; }
-      .index-row .index-store { grid-column: 2; padding-top: 8px; }
-      .index-row h3 { font-size: 19px; }
-      .coming-soon-section { padding: 24px 20px 0; margin-top: 48px; }
-      .coming-grid { grid-template-columns: 1fr; gap: 0; }
-      .coming-card { padding: 18px 0; border-right: none; border-bottom: 1px solid var(--border-light); }
-      .coming-card:last-child { border-bottom: none; padding-left: 0; }
-      .coming-card h3 { font-size: 20px; }
+    @media (max-width: 600px) {
+      .masthead h1 { font-size: clamp(40px, 12vw, 64px); }
+      .masthead .standfirst { font-size: 17px; }
+      .colophon-strip .col-num { font-size: 44px; }
+      .spec-sheet { grid-template-columns: 1fr; }
+      .spec .spec-art { padding: 18px 18px 0; }
+      .lead-art { padding: 22px; }
     }
+
 
     .transparency-section { padding: 72px 0; border-top: 1px solid var(--border-light); }
     .transparency-wrap { max-width: 980px; margin: 0 auto; padding: 0 32px; }
@@ -481,172 +599,208 @@
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
 
-  <!-- Masthead -->
-  <section class="masthead">
-    <div class="eyebrow">Vol. 01 — Field Guide to Private Software</div>
-    <h1>Apps that belong to <em>your device</em>, not someone else's server.</h1>
-    <p class="standfirst">Thirteen iOS apps across finance, education, health, fitness, travel, weather, music, and games. No ads. No third-party trackers. Most run fully on-device; the few that use the network tell you exactly what for.</p>
-    <div class="ctas">
-      <a href="#apps" class="cta-primary">Browse the Catalogue</a>
-      <a href="#transparency" class="cta-ghost">What each app does &rarr;</a>
-    </div>
-    <div class="colophon">
-      <div><strong>13</strong>Apps</div>
-      <div><strong>7</strong>Categories</div>
-      <div><strong>0</strong>Trackers</div>
-      <div><strong>55</strong>Articles</div>
-    </div>
-  </section>
-
-  <!-- Section header: Available Now -->
-  <div class="section-rule">
-    <div class="folio">§ 01 — On the App Store</div>
-    <h2>The Catalogue</h2>
-    <p class="kicker">Ordered roughly by readership. Tap any title for the long write-up; tap App Store to install.</p>
+  <!-- Almanac head -->
+  <div class="almanac-head">
+    <div class="lhs">Blue Flame Games · Bureau of Private Software</div>
+    <div class="center">Field Almanac · Vol. 01</div>
+    <div class="rhs">MMXXVI · GB</div>
   </div>
 
-  <!-- Featured trio -->
-  <section class="featured-strip" id="apps">
-
-    <article class="featured-card">
-      <div class="feature-img">
-        <img src="assets/keystrike-hero.png" alt="Keystrike piano practice app with falling notes on a keyboard" loading="lazy">
+  <!-- Hero -->
+  <section class="masthead">
+    <div class="lede">
+      <div class="kicker">No. 01 — Catalogue Issue</div>
+      <h1>Software that <em>ends</em> at your front door.</h1>
+      <p class="standfirst">Thirteen iOS apps for finance, education, health, fitness, travel, weather, music, and games. No ads. No third-party trackers. Most run fully on-device — the few that use the network tell you exactly what for.</p>
+      <div class="ctas">
+        <a href="#apps" class="cta-primary"><span class="pulse"></span>Browse the Catalogue</a>
+        <a href="#transparency" class="cta-ghost">What each app does &rarr;</a>
       </div>
-      <div class="feature-body">
-        <div class="feature-cat">Music — iPad &amp; Mac</div>
+    </div>
+    <div class="artwork" aria-hidden="true">
+      <div class="stack-back"><img src="assets/store/cloudmesh/01.png" alt=""></div>
+      <div class="stack-front"><img src="assets/store/keystrike/01.png" alt=""></div>
+      <div class="art-label">
+        <strong>Plate I · Keystrike</strong>
+        Piano lessons · iPad &amp; Mac
+      </div>
+    </div>
+  </section>
+
+  <!-- Colophon strip -->
+  <div class="colophon-strip">
+    <div class="col-item"><div class="col-num">13</div><div class="col-label">Apps in <em>circulation</em></div></div>
+    <div class="col-item"><div class="col-num">7</div><div class="col-label">Subject <em>categories</em></div></div>
+    <div class="col-item"><div class="col-num accent">0</div><div class="col-label"><em>Trackers</em>, ads, or SDKs</div></div>
+    <div class="col-item"><div class="col-num">55</div><div class="col-label">Articles in the <em>archive</em></div></div>
+  </div>
+
+  <!-- §01 The Catalogue — Lead spreads -->
+  <div class="section-folio" id="apps">
+    <div class="folio-num">§ 01</div>
+    <div class="folio-meta">
+      <div class="folio-kicker">On the App Store · Available now</div>
+      <h2>The <em>Catalogue</em></h2>
+    </div>
+    <div class="folio-kicker-r">Ordered roughly by readership. Tap any title for the long write-up; tap App Store to install.</div>
+  </div>
+
+  <section class="leads">
+
+    <article class="lead">
+      <div class="lead-art">
+        <img src="assets/store/keystrike/01.png" alt="Keystrike piano practice on iPad with falling notes" loading="lazy">
+      </div>
+      <div class="lead-text">
+        <div class="lead-meta">
+          <div class="lead-num">01</div>
+          <div class="lead-cat">Music · iPad &amp; Mac</div>
+        </div>
         <h3><a href="/apps/keystrike/">Keystrike</a></h3>
-        <p class="feature-desc">Guided piano practice with falling notes, section loops, MIDI input, and acoustic mode. Seven-day trial, then one-time unlock — no subscription.</p>
-        <a class="feature-cta" href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+        <p class="lead-tag">A patient piano teacher, in your hands.</p>
+        <p class="lead-body">Guided practice with falling notes, section loops, MIDI input, and an acoustic listening mode that grades real performance. Seven-day trial, then a one-time unlock. No subscription, no account, no telemetry.</p>
+        <div class="lead-actions">
+          <a class="btn-store" href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+          <a class="btn-secondary-ghost" href="/apps/keystrike/">Read the case</a>
+        </div>
       </div>
     </article>
 
-    <article class="featured-card">
-      <div class="feature-img">
-        <img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather app with widgets and AI forecasts" loading="lazy">
+    <article class="lead">
+      <div class="lead-art">
+        <img src="assets/store/cloudmesh/01.png" alt="Cloudmesh Weather widgets" loading="lazy">
       </div>
-      <div class="feature-body">
-        <div class="feature-cat">Weather</div>
+      <div class="lead-text">
+        <div class="lead-meta">
+          <div class="lead-num">02</div>
+          <div class="lead-cat">Weather</div>
+        </div>
         <h3><a href="/apps/cloudmesh/">Cloudmesh Weather</a></h3>
-        <p class="feature-desc">Twenty-nine widgets, AI summaries, and a privacy-first community mesh for hyperlocal conditions. No subscription.</p>
-        <a class="feature-cta" href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+        <p class="lead-tag">A weather app that earns its place on the home screen.</p>
+        <p class="lead-body">Twenty-nine customisable widgets, AI weather summaries, and a privacy-first community mesh that builds hyperlocal forecasts from anonymous barometric readings. One purchase. No subscription.</p>
+        <div class="lead-actions">
+          <a class="btn-store" href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+          <a class="btn-secondary-ghost" href="/apps/cloudmesh/">Read the case</a>
+        </div>
       </div>
     </article>
 
-    <article class="featured-card">
-      <div class="feature-img">
-        <img src="assets/bellgrave-hero.png" alt="Bellgrave action roguelike in a dark 3D cathedral" loading="lazy">
+    <article class="lead">
+      <div class="lead-art">
+        <img src="assets/store/bellgrave/01.png" alt="Bellgrave action roguelike" loading="lazy">
       </div>
-      <div class="feature-body">
-        <div class="feature-cat">Games</div>
+      <div class="lead-text">
+        <div class="lead-meta">
+          <div class="lead-num">03</div>
+          <div class="lead-cat">Games</div>
+        </div>
         <h3><a href="/apps/bellgrave/">Bellgrave</a></h3>
-        <p class="feature-desc">Action roguelike in a dark 3D cathedral. Eleven heroes, eight bosses, weapon evolutions. One-time unlock — no battle pass.</p>
-        <a class="feature-cta" href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+        <p class="lead-tag">A premium action roguelike that respects your wallet.</p>
+        <p class="lead-body">Action roguelike in a dark 3D cathedral. Eleven heroes, eight bosses, weapon evolutions, full controller support. One-time unlock — no battle pass, no energy timers, no microtransactions. Ever.</p>
+        <div class="lead-actions">
+          <a class="btn-store" href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+          <a class="btn-secondary-ghost" href="/apps/bellgrave/">Read the case</a>
+        </div>
       </div>
     </article>
 
   </section>
 
-  <!-- Editorial index — nine remaining apps -->
-  <section class="editorial-index">
+  <!-- §02 Spec Sheet — nine remaining -->
+  <div class="section-folio">
+    <div class="folio-num">§ 02</div>
+    <div class="folio-meta">
+      <div class="folio-kicker">Also in circulation · 04 — 12</div>
+      <h2>The <em>Spec Sheet</em></h2>
+    </div>
+    <div class="folio-kicker-r">Nine more apps — education, fitness, health, finance, and travel — each working the same way: on the device, no accounts, no surveillance.</div>
+  </div>
 
-    <article class="index-row">
-      <div class="index-num">04</div>
-      <div class="index-content">
-        <div class="index-cat">Kids</div>
-        <h3><a href="/apps/minua/">Minua</a></h3>
-        <p class="index-desc">Earn screen time through learning. On-device parental controls. No accounts, no cloud, no tracking.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+  <section class="spec-sheet">
+
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/minua/01.png" alt="Minua earn screen time through learning" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">04</div><div class="spec-cat">Kids</div></div>
+      <h3><a href="/apps/minua/">Minua</a></h3>
+      <p class="spec-desc">Earn screen time through learning. On-device parental controls. No accounts, no cloud, no tracking.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">05</div>
-      <div class="index-content">
-        <div class="index-cat">Education — 11+</div>
-        <h3><a href="/apps/cognithix/">Cognithix</a></h3>
-        <p class="index-desc">The only 11+ app covering all four tested areas, including the Language Aptitude Test. Adaptive difficulty. Unlimited questions.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/cognithix/01.png" alt="Cognithix 11+ preparation" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">05</div><div class="spec-cat">Education · 11+</div></div>
+      <h3><a href="/apps/cognithix/">Cognithix</a></h3>
+      <p class="spec-desc">The only 11+ app covering all four tested areas, including the Language Aptitude Test. Adaptive difficulty. Unlimited questions.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">06</div>
-      <div class="index-content">
-        <div class="index-cat">Fitness</div>
-        <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
-        <p class="index-desc">GPS run, ride, and hike tracking with Injury Guard training-load monitoring. One-time purchase. Fully on-device.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/pacegrid/01.png" alt="PaceGrid fitness tracker" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">06</div><div class="spec-cat">Fitness</div></div>
+      <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
+      <p class="spec-desc">GPS run, ride, and hike tracking with Injury Guard training-load monitoring. One-time purchase. Fully on-device.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">07</div>
-      <div class="index-content">
-        <div class="index-cat">Education — KS1 &amp; KS2</div>
-        <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
-        <p class="index-desc">UK National Curriculum maths, Reception through Year 6. Adaptive difficulty, spaced repetition, virtual-pet motivation.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/arithmetix/01.png" alt="Arithmetix maths practice" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">07</div><div class="spec-cat">Education · KS1 &amp; KS2</div></div>
+      <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
+      <p class="spec-desc">UK National Curriculum maths, Reception through Year 6. Adaptive difficulty, spaced repetition, virtual-pet motivation.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">08</div>
-      <div class="index-content">
-        <div class="index-cat">Travel</div>
-        <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
-        <p class="index-desc">Travel map built from photos you already have. Reads GPS metadata locally — no upload, no new tracking.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/photoflight/01.png" alt="PhotoFlight travel map" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">08</div><div class="spec-cat">Travel</div></div>
+      <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
+      <p class="spec-desc">Travel map built from photos you already have. Reads GPS metadata locally — no upload, no new tracking.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">09</div>
-      <div class="index-content">
-        <div class="index-cat">Health</div>
-        <h3><a href="/apps/cyla/">Cyla</a></h3>
-        <p class="index-desc">Private period and cycle tracker. Entirely on-device with Apple Watch temperature integration. No accounts, no cloud, no servers.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/cyla/01.png" alt="Cyla private cycle tracker" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">09</div><div class="spec-cat">Health</div></div>
+      <h3><a href="/apps/cyla/">Cyla</a></h3>
+      <p class="spec-desc">Private period and cycle tracker. Entirely on-device with Apple Watch temperature integration. No servers.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">10</div>
-      <div class="index-content">
-        <div class="index-cat">Finance</div>
-        <h3><a href="/apps/kanesh/">Kanesh</a></h3>
-        <p class="index-desc">Source-linked financial data terminal. Every figure traces back to its SEC filing. On-device AI across 53 countries.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/kanesh/01.png" alt="Kanesh financial terminal" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">10</div><div class="spec-cat">Finance</div></div>
+      <h3><a href="/apps/kanesh/">Kanesh</a></h3>
+      <p class="spec-desc">Source-linked financial data terminal. Every figure traces back to its SEC filing. On-device AI across 53 countries.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">11</div>
-      <div class="index-content">
-        <div class="index-cat">Kids — Ages 4–12</div>
-        <h3><a href="/apps/sparks-studios/">Sparks Studios</a></h3>
-        <p class="index-desc">AI-powered creative playground. Children draw, write stories, and compose music — all on-device.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/sparks/01.png" alt="Sparks Studio creative app for kids" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">11</div><div class="spec-cat">Kids · Ages 4–12</div></div>
+      <h3><a href="/apps/sparks-studios/">Sparks Studio</a></h3>
+      <p class="spec-desc">AI-powered creative playground. Children draw, write stories, and compose music — all on-device.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
-    <article class="index-row">
-      <div class="index-num">12</div>
-      <div class="index-content">
-        <div class="index-cat">Education — Handwriting</div>
-        <h3><a href="/apps/penlicence/">Pen Licence</a></h3>
-        <p class="index-desc">Handwriting practice for iPad with Apple Pencil pressure feedback. Honest stroke checking. On-device, no accounts.</p>
-      </div>
-      <a class="index-store" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    <article class="spec">
+      <div class="spec-art"><img src="assets/store/penlicence/01.png" alt="Pen Licence handwriting practice for iPad" loading="lazy"></div>
+      <div class="spec-meta"><div class="spec-num">12</div><div class="spec-cat">Education · Handwriting</div></div>
+      <h3><a href="/apps/penlicence/">Pen Licence</a></h3>
+      <p class="spec-desc">Handwriting practice for iPad with Apple Pencil pressure feedback. Honest stroke checking. On-device, no accounts.</p>
+      <a class="spec-cta" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
     </article>
 
   </section>
 
-  <!-- Coming Soon -->
+  <!-- §03 In the Pipeline -->
   <section class="coming-soon-section">
-    <div class="section-rule" style="margin-top: 0; padding-left: 0; padding-right: 0;">
-      <div class="folio">§ 02 — In the Pipeline</div>
-      <h2>Coming Soon</h2>
-      <p class="kicker">Two apps in development. Launching to the App Store later this year.</p>
+    <div class="section-folio" style="margin-top: 0;">
+      <div class="folio-num">§ 03</div>
+      <div class="folio-meta">
+        <div class="folio-kicker">Coming soon · In the pipeline</div>
+        <h2><em>Pipeline</em></h2>
+      </div>
+      <div class="folio-kicker-r">Two apps in development. Launching to the App Store later this year.</div>
     </div>
     <div class="coming-grid">
 
