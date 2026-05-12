@@ -65,6 +65,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   animation: dropdown-in 0.18s ease-out;
 }
 .nav-dropdown.open .nav-dropdown-menu { display: block; }
+.lang-dropdown .nav-dropdown-menu { left: auto; right: -12px; min-width: 180px; }
 @keyframes dropdown-in {
   from { opacity: 0; transform: translateY(-6px); }
   to { opacity: 1; transform: translateY(0); }
