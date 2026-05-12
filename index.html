@@ -242,6 +242,10 @@
     .intent-card li { margin: 0 0 10px; }
     .intent-card li a { font-weight: 600; }
 
+    /* Make anchor jumps land clear of the fixed nav. */
+    html { scroll-padding-top: 80px; }
+    .blog-section, #apps, #transparency, #faq { scroll-margin-top: 80px; }
+
     /* Shared lower-section header (transparency / trust / intent / blog / FAQ) */
     .section-header { text-align: center; max-width: 720px; margin: 0 auto 32px; padding: 0 28px; }
     .section-header h2 {

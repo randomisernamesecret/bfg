@@ -51,6 +51,9 @@
     if (label) label.textContent = code.toUpperCase();
 
     var home = localeHomeFor(code);
+    // Pages that have a translated copy under /<locale>/<path>/. We rewrite
+    // English links to /foo/ → /<locale>/foo/ when the user has a non-EN locale.
+    var LOCALIZED_PATHS = ['/about/'];
     document.querySelectorAll('a[href]').forEach(function (a) {
       if (a.hasAttribute('data-lang')) return;
       var href = a.getAttribute('href');
@@ -66,6 +69,11 @@
       else if (href.indexOf('/index.html#') === 0) anchorIdx = '/index.html'.length;
       if (anchorIdx > -1) {
         a.setAttribute('href', home + href.slice(anchorIdx));
+        return;
+      }
+      // Pages that exist in every locale: rewrite their root-relative links.
+      if (code !== 'en' && LOCALIZED_PATHS.indexOf(href) !== -1) {
+        a.setAttribute('href', home.replace(/\/$/, '') + href);
       }
     });
   }
