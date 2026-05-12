@@ -9,7 +9,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg); color: var(--text);
-  line-height: 1.75; padding-top: 64px;
+  line-height: 1.7; padding-top: 64px;
   -webkit-font-smoothing: antialiased;
   position: relative;
 }
@@ -39,7 +39,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .site-nav .nav-brand {
   font-family: 'DM Serif Display', Georgia, serif;
   font-size: 22px; font-weight: 400; color: var(--accent);
-  text-decoration: none; letter-spacing: -0.5px;
+  text-decoration: none; letter-spacing: 0;
 }
 .site-nav .nav-brand:hover { text-decoration: none; opacity: 0.85; }
 .site-nav .nav-links { display: flex; gap: 32px; align-items: center; }
@@ -60,7 +60,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .nav-dropdown-menu {
   display: none; position: absolute; top: calc(100% + 10px); left: -20px;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 16px; padding: 12px 0; min-width: 230px;
+  border-radius: 8px; padding: 12px 0; min-width: 230px;
   box-shadow: var(--shadow-lg);
   animation: dropdown-in 0.18s ease-out;
 }
@@ -104,7 +104,7 @@ header a span { color: var(--accent); font-weight: 700; }
 h1 {
   font-family: 'DM Serif Display', Georgia, serif;
   font-size: 42px; font-weight: 400; color: var(--heading);
-  letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.15;
+  letter-spacing: 0; margin-bottom: 16px; line-height: 1.15;
 }
 h2 {
   font-family: 'DM Serif Display', Georgia, serif;
@@ -124,14 +124,14 @@ strong { color: var(--heading); font-weight: 600; }
 /* ─── Components ─── */
 .callout {
   background: var(--callout-bg); border-left: 3px solid var(--accent);
-  padding: 20px 24px; border-radius: 0 12px 12px 0;
+  padding: 20px 24px; border-radius: 0 8px 8px 0;
   margin: 28px 0; font-size: 15px;
   box-shadow: var(--shadow-sm);
 }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 28px; font-size: 15px; font-weight: 600;
-  border-radius: 10px; text-decoration: none; transition: all 0.2s;
+  border-radius: 8px; text-decoration: none; transition: all 0.2s;
   letter-spacing: 0.01em;
 }
 .btn:hover { text-decoration: none; transform: translateY(-1px); }
@@ -147,7 +147,7 @@ th { color: var(--text-dim); font-weight: 600; font-size: 11px; text-transform: 
 /* ─── Cards ─── */
 .card {
   background: var(--surface); border: 1px solid var(--border-light);
-  border-radius: 16px; padding: 32px;
+  border-radius: 8px; padding: 32px;
   box-shadow: var(--shadow-sm); transition: all 0.25s ease;
 }
 .card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--border); }
@@ -269,12 +269,12 @@ html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c
 .app-landing-hero h1 { font-size: 48px; margin-bottom: 12px; }
 .app-landing-hero .app-subtitle { font-size: 18px; color: var(--text-muted); margin-bottom: 28px; line-height: 1.5; }
 .app-landing-hero .hero-visual {
-  max-width: 240px; margin: 0 auto 32px; border-radius: 20px;
+  max-width: 240px; margin: 0 auto 32px; border-radius: 8px;
   box-shadow: var(--shadow-lg); overflow: hidden;
 }
 .app-landing-hero .hero-visual img { width: 100%; display: block; }
 .app-landing-hero .hero-cta { margin-bottom: 24px; }
-.app-landing-hero .app-cta { display: inline-block; padding: 14px 32px; font-size: 15px; font-weight: 600; background: var(--accent); color: #fff; border-radius: 10px; text-decoration: none; transition: all 0.2s; }
+.app-landing-hero .app-cta { display: inline-block; padding: 14px 32px; font-size: 15px; font-weight: 600; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; transition: all 0.2s; }
 .app-landing-hero .app-cta:hover { background: var(--accent-hover); color: #fff; text-decoration: none; transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .app-landing-hero .app-cta-muted { display: inline-block; padding: 14px 32px; font-size: 15px; font-weight: 500; color: var(--text-muted); font-style: italic; }
 
@@ -284,7 +284,7 @@ html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c
 }
 .app-quick-facts .fact {
   text-align: center; padding: 12px; background: var(--surface);
-  border: 1px solid var(--border-light); border-radius: 12px;
+  border: 1px solid var(--border-light); border-radius: 8px;
   font-size: 13px; color: var(--text-muted);
 }
 .app-quick-facts .fact strong { display: block; color: var(--heading); font-size: 14px; margin-bottom: 2px; }
@@ -298,7 +298,7 @@ html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c
 }
 .feature-grid .feature {
   padding: 20px; background: var(--surface);
-  border: 1px solid var(--border-light); border-radius: 14px;
+  border: 1px solid var(--border-light); border-radius: 8px;
   box-shadow: var(--shadow-sm);
 }
 .feature-grid .feature h3 {
@@ -309,7 +309,7 @@ html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c
 
 .privacy-panel {
   background: var(--surface); border: 1px solid var(--border-light);
-  border-radius: 16px; padding: 28px; margin: 24px 0;
+  border-radius: 8px; padding: 28px; margin: 24px 0;
   box-shadow: var(--shadow-sm);
 }
 .privacy-panel h3 {
@@ -356,7 +356,7 @@ html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c
 
 .callout {
   background: var(--callout-bg); border-left: 3px solid var(--accent);
-  padding: 24px 28px; border-radius: 0 14px 14px 0;
+  padding: 24px 28px; border-radius: 0 8px 8px 0;
   margin: 32px 0; font-size: 15px; line-height: 1.7;
   box-shadow: var(--shadow-sm);
 }
@@ -365,7 +365,7 @@ html[data-theme="dark"] .app-tag-productivity { background: #1e2a5e; color: #93c
 table {
   width: 100%; border-collapse: collapse; margin: 24px 0;
   font-size: 14px; background: var(--surface);
-  border: 1px solid var(--border-light); border-radius: 12px;
+  border: 1px solid var(--border-light); border-radius: 8px;
   overflow: hidden; box-shadow: var(--shadow-sm);
 }
 th {
@@ -395,7 +395,7 @@ code {
 /* Blog footer CTA */
 .blog-footer-cta {
   background: var(--surface); border: 1px solid var(--border-light);
-  border-radius: 16px; padding: 32px; margin: 48px 0 0;
+  border-radius: 8px; padding: 32px; margin: 48px 0 0;
   text-align: center; box-shadow: var(--shadow-sm);
 }
 .blog-footer-cta h3 {

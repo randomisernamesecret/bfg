@@ -36,10 +36,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
-  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="/style.css" as="style">
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <style>
     /* ─── Homepage styles ─── */
     :root {
@@ -261,6 +261,7 @@
       .coming-grid { grid-template-columns: 1fr; }
     }
   </style>
+  <link rel="stylesheet" href="/home.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -406,7 +407,7 @@
   <section class="apps-grid" id="apps">
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/keystrike-hero.png" alt="Keystrike — guided piano practice" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/keystrike-hero.png" alt="Keystrike — guided piano practice" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">音乐</div>
         <h3><a href="/apps/keystrike/">Keystrike</a></h3>
@@ -416,7 +417,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather — widgets and forecasts" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/cloudmesh-hero.png" alt="Cloudmesh Weather — widgets and forecasts" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">天气</div>
         <h3><a href="/apps/cloudmesh/">Cloudmesh Weather</a></h3>
@@ -426,7 +427,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/bellgrave-hero.png" alt="Bellgrave action roguelike" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/bellgrave-hero.png" alt="Bellgrave action roguelike" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">游戏</div>
         <h3><a href="/apps/bellgrave/">Bellgrave</a></h3>
@@ -436,7 +437,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/Minua/01_earn_screen_time_through_learning.png" alt="Minua — earn screen time through learning" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/Minua/01_earn_screen_time_through_learning.png" alt="Minua — earn screen time through learning" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">儿童</div>
         <h3><a href="/apps/minua/">Minua</a></h3>
@@ -446,7 +447,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/cognithix-hero.png" alt="Cognithix — 11+ exam preparation" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/cognithix-hero.png" alt="Cognithix — 11+ exam preparation" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">教育</div>
         <h3><a href="/apps/cognithix/">Cognithix</a></h3>
@@ -456,7 +457,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/pacegrid-hero.png" alt="PaceGrid — fitness tracker" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/pacegrid-hero.png" alt="PaceGrid — fitness tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">健身</div>
         <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
@@ -466,7 +467,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/arithmetix-hero.png" alt="Arithmetix — UK curriculum maths" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/arithmetix-hero.png" alt="Arithmetix — UK curriculum maths" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">教育</div>
         <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
@@ -476,7 +477,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/photoflight-hero.png" alt="PhotoFlight — travel map from photos" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/photoflight-hero.png" alt="PhotoFlight — travel map from photos" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">旅行</div>
         <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
@@ -486,7 +487,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/cyla-hero.png" alt="Cyla — private cycle tracker" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/cyla-hero.png" alt="Cyla — private cycle tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">健康</div>
         <h3><a href="/apps/cyla/">Cyla</a></h3>
@@ -496,7 +497,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/kanesh-hero.png" alt="Kanesh — financial data terminal" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/kanesh-hero.png" alt="Kanesh — financial data terminal" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">金融</div>
         <h3><a href="/apps/kanesh/">Kanesh</a></h3>
@@ -506,7 +507,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/sparks-hero.png" alt="Sparks Studio — creative app for kids" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/sparks-hero.png" alt="Sparks Studio — creative app for kids" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">儿童</div>
         <h3><a href="/apps/sparks-studios/">Sparks Studio</a></h3>
@@ -516,7 +517,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/penlicence-hero.png" alt="Pen Licence — handwriting practice for iPad" loading="lazy"></div>
+      <div class="card-img"><img src="/assets/penlicence-hero.png" alt="Pen Licence — handwriting practice for iPad" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">教育</div>
         <h3><a href="/apps/penlicence/">Pen Licence</a></h3>
@@ -563,10 +564,10 @@
     </div>
   </footer>
 
-  <script src="theme.js"></script>
-  <script src="nav.js"></script>
+  <script src="/theme.js"></script>
+  <script src="/nav.js"></script>
   <script src="/lang.js"></script>
-  <script src="blog-filter.js"></script>
+  <script src="/blog-filter.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
