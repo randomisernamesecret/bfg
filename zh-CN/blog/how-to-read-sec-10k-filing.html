@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>无需金融学位也能读懂10-K年报 — BFG</title>
+  <meta name="description" content="面向初学者的SEC 10-K年报阅读指南。了解哪些章节最重要、需要警惕哪些危险信号，以及如何在15分钟内评估任何一家公司。">
+  <meta name="keywords" content="如何阅读10-K申报文件, SEC年度报告指南, 10-K初学者, SEC EDGAR教程, SEC文件股票研究, 阅读年度报告">
+  <meta property="og:title" content="无需金融学位也能读懂10-K年报">
+  <meta property="og:description" content="面向初学者的SEC 10-K年报阅读指南。了解哪些章节最重要、需要警惕哪些危险信号。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="无需金融学位也能读懂10-K年报">
+  <meta name="twitter:description" content="面向初学者的SEC 10-K年报阅读指南。了解哪些章节最重要、需要警惕哪些危险信号。">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta property="og:url" content="https://bfgapps.co/zh-CN/blog/how-to-read-sec-10k-filing.html">
+  <link rel="canonical" href="https://bfgapps.co/zh-CN/blog/how-to-read-sec-10k-filing.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/how-to-read-sec-10k-filing.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/how-to-read-sec-10k-filing.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/how-to-read-sec-10k-filing.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "无需金融学位也能读懂10-K年报",
+    "description": "面向初学者的SEC 10-K年报阅读指南。了解哪些章节最重要、需要警惕哪些危险信号，以及如何在15分钟内评估任何一家公司。",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-04-11"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"文章"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">应用</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">App Store 上架</div>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <hr>
+            <div class="menu-label">即将推出</div>
+            <a href="/apps/meetingmind/">MeetingMind</a>
+            <a href="/apps/pingnear/">PingNear</a>
+          </div>
+        </div>
+        <a href="/#blog">博客</a>
+        <a href="/about/">关于</a>
+        <a href="mailto:blueflamegames@proton.me">联系</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Language">ZH</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Toggle theme"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">博客</a><span class="sep">/</span><span class="tag tag-finance">财经</span></nav>
+    <div class="blog-article-header">
+      <h1>无需金融学位也能读懂10-K年报</h1>
+      <p class="meta">2026年4月 · 9分钟阅读 · 财经</p>
+    </div>
+
+    <p>美国每一家上市公司每年都会向美国证券交易委员会（SEC）提交一份10-K年报。它是公司关于自身所撰写的最为全面的文件——比任何业绩电话会议都更详细，比任何投资者演示稿都更坦诚，而且免费可读。然而绝大多数散户投资者从未翻开过它。</p>
+    <p>这种现象不难理解。一份典型的10-K动辄100到300页，充斥着法律术语、会计行话和密密麻麻的数字表格，仿佛专门为了劝退普通读者而设计。但关键在于：你并不需要把整份文件从头读到尾，也不需要拥有会计学位，就能从中获取有用的信息。你只需要知道哪些章节最重要，以及在每个章节里应该关注什么。</p>
+    <p>本指南将10-K拆解为几个关键章节，说明每个章节传达了什么信息，并提供一个能在大约15分钟内评估任何一家公司年报的实用框架。</p>
+
+    <h2>如何在SEC EDGAR上找到10-K</h2>
+    <p>在阅读10-K之前，首先得能找到它。SEC的电子数据收集、分析和检索系统（EDGAR）是所有公开申报文件的官方资料库。</p>
+    <ul>
+      <li>访问 <strong>sec.gov/cgi-bin/browse-edgar</strong>，或使用 <strong>efts.sec.gov/LATEST/search-index</strong> 上的全文搜索</li>
+      <li>输入公司名称或股票代码</li>
+      <li>按申报类型筛选：<strong>10-K</strong>（年度报告）或 <strong>10-K/A</strong>（修订后的年度报告）</li>
+      <li>点击最新的申报日期，打开索引页面</li>
+      <li>找到主文档，通常体积最大的那个文件——这就是真正的10-K</li>
+    </ul>
+    <p>EDGAR的界面看起来像是上世纪90年代末设计的，因为它确实如此。但数据本身是权威的。10-K中出现的每一个数字都经过独立会计师事务所的审计，如果存在重大不实陈述，公司将承担法律责任。这是任何金融网站或选股工具都无法比拟的标准。</p>
+    <div class="callout">
+      <strong>小提示：</strong>许多公司也会在自己的投资者关系页面发布10-K，通常以更易阅读的PDF格式提供。搜索"[公司名称] investor relations annual report"即可找到。
+    </div>
+
+    <h2>10-K的结构</h2>
+    <p>每份10-K都遵循SEC规定的同一套结构。一旦你熟悉了这个布局，就能在任何公司的申报文件中游刃有余。最重要的部分包括：</p>
+    <ul>
+      <li><strong>第一部分 项目1：</strong>业务——公司在做什么</li>
+      <li><strong>第一部分 项目1A：</strong>风险因素——可能出什么问题</li>
+      <li><strong>第二部分 项目7：</strong>管理层讨论与分析（MD&amp;A）——管理层如何解读这些数字</li>
+      <li><strong>第二部分 项目8：</strong>财务报表与补充数据——实际的数字</li>
+      <li><strong>财务报表附注：</strong>常常隐藏着最重要信息的小字部分</li>
+    </ul>
+    <p>法律诉讼章节、不动产章节，以及大部分附件和签字部分，都可以放心地略读甚至跳过。它们在某些特定情形下很关键，但并不是你应该从这里开始阅读的地方。</p>
+
+    <h2>项目1：业务概述</h2>
+    <p>从这里入手。业务章节解释了公司实际在做什么、如何赚钱以及所处的行业。这听起来很基础，但许多投资者只凭股票代码和价格图表就买入股票，对商业模式并没有充分理解。</p>
+    <p>需要关注的内容：</p>
+    <ul>
+      <li><strong>收入分部。</strong>大多数公司会按产品线、地区或客户类型拆分收入。一家看似软件公司的企业，可能60%的收入来自咨询服务。分部拆分告诉你公司的真实面貌，而不是它的品牌定位。</li>
+      <li><strong>客户集中度。</strong>如果某个客户贡献了超过10%的收入，公司必须披露。一家40%的收入来自单一客户的企业，其根本风险远高于拥有数千个小客户的企业。</li>
+      <li><strong>竞争优势。</strong>留意有关专利、监管批准、转换成本或网络效应的描述。管理层会用美好的措辞来介绍这些，但他们具体提到的资产会告诉你这家公司究竟拥有怎样的护城河（如果有的话）。</li>
+      <li><strong>监管环境。</strong>身处受监管行业（银行、医疗、能源）的公司会在此描述监管格局。监管变化可能一夜之间重塑行业，因此理解约束业务的规则至关重要。</li>
+    </ul>
+
+    <h2>项目1A：风险因素</h2>
+    <p>这一章节是公司在法律上必须告诉你"可能出什么问题"的地方。读起来像是一份灾难清单，其中大部分都是用于保护公司免遭诉讼的模板化法律语言。但在这些标准化免责声明中，确实埋藏着真正有价值的披露。</p>
+    <p>诀窍是关注变化之处。把本年度的风险因素与上一年度的进行比对。新增的风险因素——或者措辞被大幅改写的条目——意味着管理层意识到了真正的新兴威胁。一家突然新增"企业版块客户流失"风险因素的公司，是在向你传达某些具体信息。</p>
+    <p>需要警惕的危险信号：</p>
+    <ul>
+      <li><strong>持续经营相关表述。</strong>如果审计师或管理层质疑公司能否在未来十二个月内继续运营，这是一个严重的警告。诸如"对公司持续经营能力存在重大疑虑"的措辞应当令你立刻驻足。</li>
+      <li><strong>诉讼风险。</strong>泛泛提及"各种法律诉讼"是常态，但对涉及巨额潜在赔偿的具体诉讼的详细描述则值得仔细阅读。</li>
+      <li><strong>债务契约条款（Covenants）。</strong>如果公司提到可能违反贷款契约条款的风险，它可能正陷入财务困境。条款违约可能触发加速还款要求，进而演变为更大的问题。</li>
+      <li><strong>客户或供应商依赖。</strong>讨论失去重要客户或依赖单一供应商的风险因素，揭示了业务在结构层面的脆弱性。</li>
+    </ul>
+    <div class="callout">
+      <strong>逐年对比：</strong>下载上一年的10-K，把风险因素章节并排阅读。新增条目或被大幅修订的措辞往往指向业务前景的真实变化，而不仅仅是法律模板。
+    </div>
+
+    <h2>项目7：管理层讨论与分析（MD&amp;A）</h2>
+    <p>如果你只读10-K中的一个章节，就读MD&amp;A。这是管理层用自己的话解读公司财务结果的地方。与只是一堆数字的财务报表不同，MD&amp;A提供了上下文：收入为何增长或下滑、什么因素推动了利润率的变化、公司打算如何投资、以及对未来有什么预期。</p>
+    <p>重点关注：</p>
+    <ul>
+      <li><strong>收入驱动因素。</strong>管理层会说明收入增长是来自销量增加、提价、收购另一家公司还是进入新市场。有机增长（更多客户或更高价格）通常比通过收购获得的增长更可持续。</li>
+      <li><strong>利润率趋势。</strong>留意对毛利率和营业利润率变化的解释。利润率扩张的公司具有定价能力或效率改善，利润率收缩则暗示成本上升或竞争压力。</li>
+      <li><strong>现金流讨论。</strong>MD&amp;A应当解释经营性现金流的重大变化。一家报出强劲盈利但现金流却在下降的公司值得仔细审视——盈利可以通过会计选择被操纵，但现金流更难造假。</li>
+      <li><strong>资本配置。</strong>公司的钱花在哪里？股票回购、分红、收购、研发、资本支出——配置方式告诉你管理层的优先级以及他们对增长的思考方式。</li>
+      <li><strong>已知趋势与不确定性。</strong>SEC要求管理层讨论那些"合理可能"影响未来业绩的已知趋势。这是10-K中最接近前瞻指引的部分，管理层对此处的遗漏负有法律责任。</li>
+    </ul>
+    <p>阅读MD&amp;A时要保持一定的怀疑态度。管理层会强调正面信息，淡化负面信息。留意"部分被……抵消"或"剔除……的影响"这类措辞——它们后面常常跟着不太光彩的细节。</p>
+
+    <h2>项目8：财务报表</h2>
+    <p>财务报表是10-K的核心。共有三大主要报表，每一份各自讲述不同的故事：</p>
+
+    <h3>利润表（经营成果表）</h3>
+    <p>展示一个财年内的收入、成本和利润。关键数字是收入、毛利润、营业利润和净利润。至少查看三年的数据以识别趋势。脱离了上下文，单独一年的数字几乎说明不了什么。</p>
+
+    <h3>资产负债表（财务状况表）</h3>
+    <p>展示公司在某一时点拥有什么（资产）、欠下什么（负债）以及留给股东什么（权益）。最重要的检查项：</p>
+    <ul>
+      <li><strong>现金及现金等价物。</strong>公司有多少现金？在增加还是减少？</li>
+      <li><strong>总负债。</strong>把长期债务与权益做对比。负债是权益三倍的公司杠杆较高，对利率上升或收入下滑较为敏感。</li>
+      <li><strong>流动比率。</strong>流动资产除以流动负债。低于1.0意味着公司可能难以偿付短期债务。</li>
+      <li><strong>商誉。</strong>巨额商誉表明公司进行过收购，并支付了高于账面价值的对价。若商誉占总资产较大比例，未来减值可能对盈利造成重大影响。</li>
+    </ul>
+
+    <h3>现金流量表</h3>
+    <p>许多资深投资者认为这是最重要的一张报表。它展示了实际流入和流出企业的现金，分为三类：经营活动、投资活动和融资活动。</p>
+    <p>最重要的单一数字是<strong>自由现金流</strong>——经营性现金流减去资本支出。它表明在维持运营之后，公司还能产生多少现金。公司完全可能在报告正盈利的同时持续消耗现金，这种背离会在现金流量表上暴露无遗。</p>
+
+    <h2>附注：真相藏身之处</h2>
+    <p>财务报表附注是大多数人会跳过的章节，却很可能是最关键的一节。公司在此解释其会计政策、披露表外义务、详述股权激励，并揭示关联方交易。</p>
+    <p>需要重点核查的附注：</p>
+    <ul>
+      <li><strong>收入确认。</strong>公司如何判断收入已被"赚取"？激进的收入确认政策会以牺牲未来期间为代价，膨胀当期盈利。</li>
+      <li><strong>租赁义务。</strong>按当前会计准则，大部分租赁都会出现在资产负债表上。但附注详述了未来租赁付款的时间和金额，从而揭示公司的固定成本结构。</li>
+      <li><strong>股权激励。</strong>许多科技公司用股票支付员工薪酬的相当一部分。这是一项稀释现有股东权益的实实在在的成本。附注告诉你发行了多少股票以及发行的节奏。</li>
+      <li><strong>养老金和福利义务。</strong>对于较老牌、规模较大的公司，未提供资金支持的养老金义务可能构成重大的隐性负债。附注披露了公司承诺支付给退休员工的金额与已为之拨备金额之间的差距。</li>
+      <li><strong>关联方交易。</strong>公司与高管、董事会成员或其家属之间的任何交易都必须在此披露。它们并不总意味着问题，但值得关注。</li>
+    </ul>
+
+    <h2>你的15分钟10-K阅读框架</h2>
+    <p>你不必读完每一页。下面是一个能在约15分钟内覆盖要点的实用顺序：</p>
+    <ul>
+      <li><strong>第1–3分钟：</strong>阅读业务概述。理解收入分部和客户集中度。确认你真的明白公司是怎么赚钱的。</li>
+      <li><strong>第3–5分钟：</strong>扫读风险因素，对照去年找出新增条目。留意持续经营相关措辞、具体诉讼或契约条款风险。</li>
+      <li><strong>第5–10分钟：</strong>阅读MD&amp;A。聚焦于收入驱动因素、利润率趋势和现金流讨论。注意管理层在强调什么、又在淡化什么。</li>
+      <li><strong>第10–12分钟：</strong>查看三张财务报表。关注三年期收入与盈利趋势、资产负债率、流动比率和自由现金流。</li>
+      <li><strong>第12–15分钟：</strong>查阅有关收入确认、股权激励以及任何关联方交易的附注。</li>
+    </ul>
+    <p>这不会让你立刻成为该公司的专家，但所获得的信息远超任何选股工具、摘要文章或社交媒体帖子。而且这些信息直接来自一手来源，每一个数字背后都有法律责任作为背书。</p>
+    <div class="callout">
+      <strong>养成习惯：</strong>你读的第一份10-K一定会超过15分钟，这很正常。由于格式在公司间高度一致，第二份就会快很多。读到第五份时，你自然就知道该看哪里、该警惕什么模式。
+    </div>
+
+    <h2>跨章节通用的危险信号</h2>
+    <p>随着阅读的10-K越来越多，某些反复出现的模式应当引起警觉。它们都不是自动否决项，但每一项都值得进一步调查：</p>
+    <ul>
+      <li><strong>盈利增长快于现金流。</strong>如果净利润上升但经营性现金流持平或下降，公司可能在通过激进的会计处理粉饰报告盈利。</li>
+      <li><strong>频繁更换会计政策。</strong>变更会计政策本身是被允许的，但频繁的变更——尤其是恰好使报告盈利变得更好看的那种——暗示管理层在管理数字，而不是在管理业务。</li>
+      <li><strong>应收账款相对收入的增速更快。</strong>如果应收账款比销售收入增长得更快，公司可能在确认尚未收回的收入。这可能预示着信用标准放松或渠道压货。</li>
+      <li><strong>更换审计师。</strong>公司偶尔出于合理原因更换审计师，但频繁更换审计师，或者在出具保留意见后不久就更换，是危险信号。</li>
+      <li><strong>大量使用非GAAP指标。</strong>许多公司会公布"调整后"盈利，剔除股权激励、重组费用或其他项目。如果GAAP盈利和调整后盈利之间的差距越来越大，被剔除的项目可能就是管理层不愿正视的经常性成本。</li>
+    </ul>
+
+    <p>阅读SEC申报文件是散户投资者能够真正建立起来的少数几项优势之一。绝大多数市场参与者依赖的是摘要、分析师报告以及金融数据聚合器。直接走到一手来源——真正的申报文件——会让你获得一个未经任何中介解读或简化的业务全貌。诸如 <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">Kanesh</a> 这样的工具能够直接从SEC文件中获取财务数据并回链至原始文档，让你只需轻轻一点便能验证任何数字，从而带来便利。但即便没有任何工具，EDGAR也是免费的，申报文件本就是公开的。散户与机构投资者之间的信息不对称，远比大多数人想象的要小。差距并不在于"能否获取"，而在于"是否愿意去读真正的文件"。</p>
+
+    <h2>10-K之外：其他值得了解的申报文件</h2>
+    <p>熟悉了10-K之后，还有几种SEC申报文件也能提供有价值的信息：</p>
+    <ul>
+      <li><strong>10-Q（季度报告）：</strong>每季度提交的、更简短且未经审计的10-K版本。用它来追踪业务在年报之间的演变。</li>
+      <li><strong>8-K（当前报告）：</strong>当发生重大事件时提交——CEO离任、重大并购、财务报表更正等。它们以事件驱动，常常具有时效性。</li>
+      <li><strong>DEF 14A（委托投票声明书）：</strong>详细列出高管薪酬、董事会构成和股东投票事项。如果你想知道CEO挣多少钱、他们的激励机制如何设计，就看这里。</li>
+      <li><strong>表格4（内部人交易）：</strong>当公司内部人买入或卖出股票时提交。集中出现的内部人买入可以是一个看涨信号，但内部人卖出常常是出于分散化或税务考虑的例行操作。</li>
+    </ul>
+    <p>10-K是基础。其他申报文件则填补了年报之间的细节。把它们结合起来，你将获得比任何第三方摘要都更完整的画面。</p>
+
+    <h2>相关文章</h2>
+    <ul class="related-posts">
+      <li><a href="/zh-CN/blog/stock-research-without-bloomberg.html">没有彭博终端，如何研究股票</a></li>
+      <li><a href="/zh-CN/blog/how-to-verify-financial-data-sources.html">作出投资决策前如何验证财务数据</a></li>
+      <li><a href="/zh-CN/blog/how-to-research-global-stocks-from-your-phone.html">如何用手机研究海外股票</a></li>
+      <li><a href="/zh-CN/blog/best-finance-apps-investors-2026.html">2026年DIY投资者最佳金融应用</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>用可溯源的数据研究股票</h3>
+      <p>Kanesh 直接从SEC申报文件中获取财务数据，让你能够核实每一个数字。</p>
+      <a href="/apps/kanesh/" class="btn btn-primary">了解更多 Kanesh</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG 首页</a> &middot; <a href="../../#blog">更多文章</a> &middot; <a href="../../privacy.html">隐私政策</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

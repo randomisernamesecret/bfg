@@ -2,9 +2,9 @@
 // - When the user picks a language from the dropdown, we save it to localStorage.
 // - On any page load, if a saved language is set AND the current page is a homepage
 //   (root "/" or "/<locale>/"), we redirect to the saved-language homepage.
-// - Sub-pages (/apps/*, /blog/*) are English-only, so we do not redirect them.
-//   We still keep the selected language visible and route Home / Blog links back
-//   to that locale's homepage.
+// - Sub-pages (/apps/*, /blog/*, /<loc>/blog/*) are not redirected — only
+//   homepages are. We still keep the selected language visible and route Home /
+//   Blog links back to that locale's homepage.
 (function () {
   var STORAGE_KEY = 'bfg_lang';
   var LOCALES = ['en', 'de', 'es', 'fr', 'ja', 'zh-CN'];
@@ -54,7 +54,7 @@
     // Anchors that exist on every locale homepage. Others (blog, faq,
     // transparency) only exist on the English page — leave links to them
     // alone so the click lands on /#section, not /<locale>/#section.
-    var LOCAL_ANCHORS = ['#apps'];
+    var LOCAL_ANCHORS = ['#apps', '#blog'];
     var LOCALIZED_PATHS = ['/about/'];
     document.querySelectorAll('a[href]').forEach(function (a) {
       if (a.hasAttribute('data-lang')) return;
@@ -97,7 +97,7 @@
   // 2) Load-time: redirect homepages to the user's saved language — except
   // when the URL points at an English-only section like #blog. In that case
   // we keep the user on the English home so the anchor actually resolves.
-  var ENGLISH_ONLY_ANCHORS = ['#blog', '#faq', '#transparency'];
+  var ENGLISH_ONLY_ANCHORS = ['#faq', '#transparency'];
   var saved = readSavedLocale();
   if (saved) {
     var current = currentLocaleFromPath();

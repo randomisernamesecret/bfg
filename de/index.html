@@ -369,7 +369,7 @@
             <a href="/apps/pingnear/">PingNear</a>
           </div>
         </div>
-        <a href="/#blog">Blog</a>
+        <a href="#blog">Blog</a>
         <a href="/about/">Über uns</a>
         <a href="mailto:blueflamegames@proton.me">Kontakt</a>
         <div class="nav-dropdown lang-dropdown">
@@ -548,11 +548,58 @@
     </article>
 
   </section>
-
-  <!-- Blog (English only) -->
-  <section style="max-width:720px;margin:80px auto 0;padding:0 32px;text-align:center;color:var(--text-muted);font-family:var(--fraunces);font-style:italic;font-size:17px;line-height:1.6;">
-    <p>Unser Blog mit ausführlichen Anleitungen ist derzeit nur auf <a href="/#blog">Englisch verfügbar</a>. Deutsche Übersetzungen folgen.</p>
+  <!-- Blog -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Blog</h2>
+        <p>Anleitungen, Tipps und Einblicke zu allem, was wir bauen</p>
+      </div>
+      <div class="blog-filters">
+        <button class="active" data-filter="all">Alle</button>
+        <button data-filter="education">Bildung</button>
+        <button data-filter="finance">Finanzen</button>
+        <button data-filter="fitness">Fitness</button>
+        <button data-filter="health">Gesundheit</button>
+        <button data-filter="music">Musik</button>
+        <button data-filter="parenting">Erziehung</button>
+        <button data-filter="travel">Reisen</button>
+        <button data-filter="weather">Wetter</button>
+      </div>
+      <ul class="blog-list">
+        <li data-cat="education"><a href="blog/family-learning-app-stack-uk-primary.html">Der Familien-App-Stack zum Lernen: Ein Setup von Reception bis 11+</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/11-plus-timeline-when-to-start.html">Der 11+-Zeitplan: Wann anfangen, was in jedem Schuljahr üben</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/best-handwriting-apps-ipad-apple-pencil-2026.html">Die besten Handschrift-Apps für iPad und Apple Pencil (2026)</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/why-handwriting-still-matters-2026.html">Warum Handschrift im Jahr 2026 noch immer wichtig ist</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/cognithix-vs-atom-learning.html">Cognithix vs Atom Learning: Welche 11+-App ist die richtige für Ihr Kind?</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/arithmetix-vs-doodlemaths.html">Arithmetix vs DoodleMaths: UK-Mathe-Apps im Vergleich 2026</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/best-11-plus-app-2026.html">Der vollständige Leitfaden zur 11+-Prüfungsvorbereitung 2026</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/gl-vs-cem-11-plus-exam.html">GL vs CEM: Die zwei 11+-Prüfungsformate im Vergleich</a><span class="meta">Bildung</span></li>
+        <li data-cat="education"><a href="blog/11-plus-without-expensive-tutor.html">Kann Ihr Kind den 11+ ohne teuren Nachhilfelehrer bestehen?</a><span class="meta">Bildung</span></li>
+        <li data-cat="finance"><a href="blog/best-finance-apps-investors-2026.html">Die besten Finance-Apps für eigenständige Anleger 2026</a><span class="meta">Finanzen</span></li>
+        <li data-cat="finance"><a href="blog/how-to-read-sec-10k-filing.html">Wie man einen 10-K-Bericht ohne Finanzstudium liest</a><span class="meta">Finanzen</span></li>
+        <li data-cat="parenting"><a href="blog/earn-screen-time-kids.html">Bildschirmzeit verdienen: Warum Lernen belohnen besser funktioniert als starre Limits</a><span class="meta">Erziehung</span></li>
+        <li data-cat="parenting"><a href="blog/best-parental-control-apps-iphone-2026.html">Die besten Kindersicherungs-Apps für iPhone 2026</a><span class="meta">Erziehung</span></li>
+        <li data-cat="parenting"><a href="blog/creative-screen-time-for-kids.html">Bildschirmzeit, die wirklich nutzt: Kreativ-Apps vs. passives Scrollen</a><span class="meta">Erziehung</span></li>
+        <li data-cat="parenting"><a href="blog/getting-rid-of-youtube-kids.html">Was passierte, als wir YouTube durch kreative Apps ersetzten</a><span class="meta">Erziehung</span></li>
+        <li data-cat="health"><a href="blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue: Datenschutzvergleich für Periodentracker 2026</a><span class="meta">Gesundheit</span></li>
+        <li data-cat="health"><a href="blog/cycle-tracking-apple-watch-temperature.html">Wie die Apple Watch-Temperatursensorik das Zyklus-Tracking verbessert</a><span class="meta">Gesundheit</span></li>
+        <li data-cat="fitness"><a href="blog/garmin-connect-plus-subscription-alternatives.html">Garmin Connect+ und das Abo-Problem bei Fitness-Apps</a><span class="meta">Fitness</span></li>
+        <li data-cat="fitness"><a href="blog/best-running-apps-apple-watch-2026.html">Die besten Lauf-Apps für Apple Watch 2026</a><span class="meta">Fitness</span></li>
+        <li data-cat="travel"><a href="blog/best-travel-tracking-apps-2026.html">Die besten Reise-Tracking-Apps 2026 — Routen automatisch aufzeichnen</a><span class="meta">Reisen</span></li>
+        <li data-cat="travel"><a href="blog/best-things-to-do-apps-travel-2026.html">Die besten Apps für Freizeitaktivitäten auf Reisen 2026</a><span class="meta">Reisen</span></li>
+        <li data-cat="travel"><a href="blog/how-to-find-restaurants-while-travelling.html">Wie man auf Reisen gute Restaurants findet (ohne in Touristenfallen zu tappen)</a><span class="meta">Reisen</span></li>
+        <li data-cat="travel"><a href="blog/context-aware-travel-discovery.html">Warum die besten Reiseempfehlungen sich mit der Tageszeit ändern</a><span class="meta">Reisen</span></li>
+        <li data-cat="weather"><a href="blog/best-weather-apps-uk-2026.html">Die besten Wetter-Apps für Großbritannien 2026</a><span class="meta">Wetter</span></li>
+        <li data-cat="weather"><a href="blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather: Welche Wetter-App hat die besseren Widgets?</a><span class="meta">Wetter</span></li>
+        <li data-cat="weather"><a href="blog/best-iphone-weather-widgets-2026.html">Die besten iPhone-Wetter-Widgets 2026</a><span class="meta">Wetter</span></li>
+        <li data-cat="weather"><a href="blog/how-community-weather-networks-work.html">Wie Community-Wetter-Mesh-Netzwerke hyperlokale Vorhersagen liefern</a><span class="meta">Wetter</span></li>
+        <li data-cat="music"><a href="blog/best-piano-learning-apps-ipad-2026.html">Die besten Klavier-Lern-Apps für iPad 2026</a><span class="meta">Musik</span></li>
+      </ul>
+      <p style="text-align:center;margin-top:32px;color:var(--text-muted);font-family:var(--fraunces);font-style:italic;font-size:15px;">Weitere deutsche Übersetzungen folgen in Kürze.</p>
+    </div>
   </section>
+
 
   <!-- Footer -->
   <footer>

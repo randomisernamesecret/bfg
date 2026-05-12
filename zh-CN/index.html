@@ -369,7 +369,7 @@
             <a href="/apps/pingnear/">PingNear</a>
           </div>
         </div>
-        <a href="/#blog">博客</a>
+        <a href="#blog">博客</a>
         <a href="/about/">关于我们</a>
         <a href="mailto:blueflamegames@proton.me">联系我们</a>
         <div class="nav-dropdown lang-dropdown">
@@ -548,11 +548,57 @@
     </article>
 
   </section>
-
-  <!-- Blog (English only) -->
-  <section style="max-width:720px;margin:80px auto 0;padding:0 32px;text-align:center;color:var(--text-muted);font-family:var(--fraunces);font-style:italic;font-size:17px;line-height:1.6;">
-    <p>我们的博客（详细指南）目前仅提供<a href="/#blog">英文版本</a>。中文翻译将陆续推出。</p>
+  <!-- Blog -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>博客</h2>
+        <p>关于我们所做一切的指南、技巧和见解</p>
+      </div>
+      <div class="blog-filters">
+        <button class="active" data-filter="all">全部</button>
+        <button data-filter="education">教育</button>
+        <button data-filter="finance">金融</button>
+        <button data-filter="fitness">健身</button>
+        <button data-filter="health">健康</button>
+        <button data-filter="music">音乐</button>
+        <button data-filter="parenting">育儿</button>
+        <button data-filter="travel">旅行</button>
+        <button data-filter="weather">天气</button>
+      </div>
+      <ul class="blog-list">
+        <li data-cat="education"><a href="blog/family-learning-app-stack-uk-primary.html">家庭学习应用组合：从幼儿园到11+的一套完整方案</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/11-plus-timeline-when-to-start.html">11+ 备考时间线：何时开始、各年级练什么</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/best-handwriting-apps-ipad-apple-pencil-2026.html">2026年最佳iPad与Apple Pencil书写应用</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/cognithix-vs-atom-learning.html">Cognithix 与 Atom Learning 对比：哪款 11+ 应用更适合您的孩子？</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/arithmetix-vs-doodlemaths.html">Arithmetix 与 DoodleMaths：2026年英国数学应用横向评测</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/best-11-plus-app-2026.html">2026年11+考试备考完整指南</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/gl-vs-cem-11-plus-exam.html">GL 与 CEM：了解两种 11+ 考试格式</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/11-plus-without-expensive-tutor.html">孩子不请昂贵的家教也能通过11+考试吗？</a><span class="meta">教育</span></li>
+        <li data-cat="finance"><a href="blog/best-finance-apps-investors-2026.html">2026年DIY投资者最佳理财应用</a><span class="meta">金融</span></li>
+        <li data-cat="finance"><a href="blog/how-to-read-sec-10k-filing.html">无需金融学位也能读懂10-K年报</a><span class="meta">金融</span></li>
+        <li data-cat="parenting"><a href="blog/earn-screen-time-kids.html">赚取屏幕时间：为什么奖励学习比硬性限制更有效</a><span class="meta">育儿</span></li>
+        <li data-cat="parenting"><a href="blog/best-parental-control-apps-iphone-2026.html">2026年iPhone最佳家长控制应用推荐</a><span class="meta">育儿</span></li>
+        <li data-cat="parenting"><a href="blog/creative-screen-time-for-kids.html">真正有益的屏幕时间：创意应用与被动刷屏的区别</a><span class="meta">育儿</span></li>
+        <li data-cat="parenting"><a href="blog/getting-rid-of-youtube-kids.html">当我们用创意应用替代 YouTube Kids 后发生了什么</a><span class="meta">育儿</span></li>
+        <li data-cat="health"><a href="blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue：2026年经期追踪应用隐私对比</a><span class="meta">健康</span></li>
+        <li data-cat="health"><a href="blog/cycle-tracking-apple-watch-temperature.html">Apple Watch 体温感应如何改善周期追踪</a><span class="meta">健康</span></li>
+        <li data-cat="fitness"><a href="blog/garmin-connect-plus-subscription-alternatives.html">Garmin Connect+ 与健身应用订阅问题</a><span class="meta">健身</span></li>
+        <li data-cat="fitness"><a href="blog/best-running-apps-apple-watch-2026.html">2026年最佳 Apple Watch 跑步应用</a><span class="meta">健身</span></li>
+        <li data-cat="travel"><a href="blog/best-travel-tracking-apps-2026.html">2026年最佳旅行记录应用 — 自动记录你的行程</a><span class="meta">旅行</span></li>
+        <li data-cat="travel"><a href="blog/best-things-to-do-apps-travel-2026.html">2026年旅行者最佳&quot;附近可玩&quot;应用推荐</a><span class="meta">旅行</span></li>
+        <li data-cat="travel"><a href="blog/how-to-find-restaurants-while-travelling.html">旅行中如何找到好餐厅（避开游客陷阱）</a><span class="meta">旅行</span></li>
+        <li data-cat="travel"><a href="blog/context-aware-travel-discovery.html">为什么最佳旅行推荐会随时间而变化</a><span class="meta">旅行</span></li>
+        <li data-cat="weather"><a href="blog/best-weather-apps-uk-2026.html">2026年英国最佳天气应用</a><span class="meta">天气</span></li>
+        <li data-cat="weather"><a href="blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather 与 CARROT Weather：哪款天气应用的小组件更好？</a><span class="meta">天气</span></li>
+        <li data-cat="weather"><a href="blog/best-iphone-weather-widgets-2026.html">2026年最佳 iPhone 天气小组件</a><span class="meta">天气</span></li>
+        <li data-cat="weather"><a href="blog/how-community-weather-networks-work.html">社区气象网格网络如何为你提供超本地预报</a><span class="meta">天气</span></li>
+        <li data-cat="music"><a href="blog/best-piano-learning-apps-ipad-2026.html">2026年iPad最佳钢琴学习应用</a><span class="meta">音乐</span></li>
+      </ul>
+      <p style="text-align:center;margin-top:32px;color:var(--text-muted);font-family:var(--fraunces);font-style:italic;font-size:15px;">更多中文翻译即将推出。</p>
+    </div>
   </section>
+
 
   <!-- Footer -->
   <footer>

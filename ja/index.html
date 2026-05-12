@@ -369,7 +369,7 @@
             <a href="/apps/pingnear/">PingNear</a>
           </div>
         </div>
-        <a href="/#blog">ブログ</a>
+        <a href="#blog">ブログ</a>
         <a href="/about/">私たちについて</a>
         <a href="mailto:blueflamegames@proton.me">お問い合わせ</a>
         <div class="nav-dropdown lang-dropdown">
@@ -548,11 +548,57 @@
     </article>
 
   </section>
-
-  <!-- Blog (English only) -->
-  <section style="max-width:720px;margin:80px auto 0;padding:0 32px;text-align:center;color:var(--text-muted);font-family:var(--fraunces);font-style:italic;font-size:17px;line-height:1.6;">
-    <p>詳細ガイドを集めたブログは現在<a href="/#blog">英語のみ</a>でご覧いただけます。日本語訳は順次公開予定です。</p>
+  <!-- Blog -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>ブログ</h2>
+        <p>私たちが作るすべてに関するガイドとヒント</p>
+      </div>
+      <div class="blog-filters">
+        <button class="active" data-filter="all">すべて</button>
+        <button data-filter="education">教育</button>
+        <button data-filter="finance">金融</button>
+        <button data-filter="fitness">フィットネス</button>
+        <button data-filter="health">健康</button>
+        <button data-filter="music">音楽</button>
+        <button data-filter="parenting">子育て</button>
+        <button data-filter="travel">旅行</button>
+        <button data-filter="weather">天気</button>
+      </div>
+      <ul class="blog-list">
+        <li data-cat="education"><a href="blog/family-learning-app-stack-uk-primary.html">家族の学習アプリ構成：Reception から 11+ まで一貫したセットアップ</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/11-plus-timeline-when-to-start.html">11+ 試験スケジュール：いつ始め、各学年で何を練習するか</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/best-handwriting-apps-ipad-apple-pencil-2026.html">iPad と Apple Pencil に対応した最良の習字アプリ（2026年）</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/cognithix-vs-atom-learning.html">Cognithix vs Atom Learning: お子さまに合う11+アプリはどちら?</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/arithmetix-vs-doodlemaths.html">Arithmetix vs DoodleMaths: 2026年版UK算数アプリ比較</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/best-11-plus-app-2026.html">2026年の11+試験対策 完全ガイド</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/gl-vs-cem-11-plus-exam.html">GL vs CEM: 11+試験の2つの形式を理解する</a><span class="meta">教育</span></li>
+        <li data-cat="education"><a href="blog/11-plus-without-expensive-tutor.html">高額な家庭教師なしで11+に合格できるか</a><span class="meta">教育</span></li>
+        <li data-cat="finance"><a href="blog/best-finance-apps-investors-2026.html">2026年、個人投資家に最適なファイナンスアプリ</a><span class="meta">金融</span></li>
+        <li data-cat="finance"><a href="blog/how-to-read-sec-10k-filing.html">財務学の学位なしで10-K申告書を読む方法</a><span class="meta">金融</span></li>
+        <li data-cat="parenting"><a href="blog/earn-screen-time-kids.html">スクリーンタイムを稼ぐ：学習への報酬が厳しい制限より効果的な理由</a><span class="meta">子育て</span></li>
+        <li data-cat="parenting"><a href="blog/best-parental-control-apps-iphone-2026.html">2026年のiPhone向け保護者管理アプリ 最良の選択肢</a><span class="meta">子育て</span></li>
+        <li data-cat="parenting"><a href="blog/creative-screen-time-for-kids.html">本当に良いスクリーンタイム：クリエイティブアプリと受動的スクロールの違い</a><span class="meta">子育て</span></li>
+        <li data-cat="parenting"><a href="blog/getting-rid-of-youtube-kids.html">YouTube Kids をクリエイティブアプリに置き換えたら何が起きたか</a><span class="meta">子育て</span></li>
+        <li data-cat="health"><a href="blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue: 2026年 生理トラッカーのプライバシー比較</a><span class="meta">健康</span></li>
+        <li data-cat="health"><a href="blog/cycle-tracking-apple-watch-temperature.html">Apple Watchの体温センサーが生理周期トラッキングを向上させる方法</a><span class="meta">健康</span></li>
+        <li data-cat="fitness"><a href="blog/garmin-connect-plus-subscription-alternatives.html">Garmin Connect+ とフィットネスアプリのサブスクリプション問題</a><span class="meta">フィットネス</span></li>
+        <li data-cat="fitness"><a href="blog/best-running-apps-apple-watch-2026.html">2026年 Apple Watch 向けランニングアプリ比較</a><span class="meta">フィットネス</span></li>
+        <li data-cat="travel"><a href="blog/best-travel-tracking-apps-2026.html">2026年のおすすめ旅行記録アプリ — 旅の記録を自動でマップに</a><span class="meta">旅行</span></li>
+        <li data-cat="travel"><a href="blog/best-things-to-do-apps-travel-2026.html">2026年版・旅行者向け「周辺スポット検索」アプリ比較</a><span class="meta">旅行</span></li>
+        <li data-cat="travel"><a href="blog/how-to-find-restaurants-while-travelling.html">旅行中に良いレストランを見つける方法（観光客向けの罠を避けながら）</a><span class="meta">旅行</span></li>
+        <li data-cat="travel"><a href="blog/context-aware-travel-discovery.html">最良の旅行情報が時間帯によって変わる理由</a><span class="meta">旅行</span></li>
+        <li data-cat="weather"><a href="blog/best-weather-apps-uk-2026.html">2026年イギリスにおけるおすすめ天気アプリ</a><span class="meta">天気</span></li>
+        <li data-cat="weather"><a href="blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather: どちらの天気アプリのウィジェットが優れているか</a><span class="meta">天気</span></li>
+        <li data-cat="weather"><a href="blog/best-iphone-weather-widgets-2026.html">2026年のiPhone天気ウィジェット最良の選択</a><span class="meta">天気</span></li>
+        <li data-cat="weather"><a href="blog/how-community-weather-networks-work.html">コミュニティ気象メッシュネットワークが超ローカル予報を届ける仕組み</a><span class="meta">天気</span></li>
+        <li data-cat="music"><a href="blog/best-piano-learning-apps-ipad-2026.html">2026年iPad向けピアノ学習アプリ比較</a><span class="meta">音楽</span></li>
+      </ul>
+      <p style="text-align:center;margin-top:32px;color:var(--text-muted);font-family:var(--fraunces);font-style:italic;font-size:15px;">日本語訳は順次追加予定です。</p>
+    </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
