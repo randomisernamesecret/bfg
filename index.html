@@ -34,84 +34,256 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
   <link rel="preload" href="style.css" as="style">
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Homepage-specific styles */
-    .hero { text-align: center; padding: 80px 32px 64px; max-width: 720px; margin: 0 auto; }
-    .hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
-    .hero h1 em { color: var(--accent); font-style: normal; }
-    .hero .subtitle { font-size: 19px; color: var(--text-muted); max-width: 480px; margin: 0 auto 36px; line-height: 1.6; }
-    .hero .ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
-    .proof-strip {
-      display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
-      padding: 20px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);
-      font-size: 14px; color: var(--text-dim);
-    }
-    .proof-strip .proof { display: flex; align-items: center; gap: 8px; }
-    .proof-strip .proof strong { color: var(--heading); font-weight: 600; }
+    /* ─── Editorial Refresh — Fraunces + JetBrains Mono ─── */
+    :root { --fraunces: 'Fraunces', 'DM Serif Display', Georgia, serif; --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    body { font-family: 'DM Sans', -apple-system, sans-serif; }
 
-    .section-header { text-align: center; margin-bottom: 40px; }
-    .section-header h2 { font-size: 34px; margin-bottom: 8px; margin-top: 0; }
-    .section-header p { font-size: 16px; color: var(--text-muted); }
-
-    .products { padding: 72px 0; }
-    .products-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
-      max-width: 1080px; margin: 0 auto; padding: 0 32px;
+    /* Masthead */
+    .masthead { padding: 88px 32px 32px; max-width: 1080px; margin: 0 auto; }
+    .masthead .eyebrow {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 28px; display: flex; gap: 18px; align-items: center;
     }
-    .product-card {
+    .masthead .eyebrow::after { content: ''; flex: 1; height: 1px; background: var(--border); max-width: 220px; }
+    .masthead h1 {
+      font-family: var(--fraunces); font-size: clamp(40px, 6.5vw, 84px);
+      font-weight: 400; letter-spacing: -0.02em; line-height: 1.02;
+      color: var(--heading); margin: 0 0 28px; max-width: 14ch;
+      font-variation-settings: 'opsz' 144, 'SOFT' 50;
+    }
+    .masthead h1 em {
+      font-style: italic; font-weight: 300; color: var(--accent);
+      font-variation-settings: 'opsz' 144, 'SOFT' 100;
+    }
+    .masthead .standfirst {
+      font-family: var(--fraunces); font-size: clamp(18px, 1.8vw, 22px);
+      font-weight: 400; font-style: italic; color: var(--text);
+      max-width: 56ch; line-height: 1.55; margin: 0 0 36px;
+      font-variation-settings: 'opsz' 36;
+    }
+    .masthead .ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+    .masthead .ctas a {
+      font-family: var(--mono); font-size: 12px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 14px 22px; border-radius: 2px; transition: all 0.2s;
+    }
+    .masthead .ctas .cta-primary { background: var(--heading); color: var(--bg); }
+    .masthead .ctas .cta-primary:hover { background: var(--accent); text-decoration: none; }
+    .masthead .ctas .cta-ghost { color: var(--text); border-bottom: 1px solid var(--text); padding: 6px 0; border-radius: 0; }
+    .masthead .ctas .cta-ghost:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+
+    .masthead .colophon {
+      display: grid; grid-template-columns: repeat(4, auto); gap: 48px;
+      padding-top: 28px; border-top: 1px solid var(--border);
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--text-muted);
+    }
+    .masthead .colophon strong {
+      display: block; font-family: var(--fraunces); font-size: 32px;
+      font-weight: 400; color: var(--heading); letter-spacing: -0.02em;
+      text-transform: none; margin-bottom: 4px;
+    }
+
+    /* Section headers — editorial */
+    .section-rule {
+      max-width: 1080px; margin: 96px auto 0; padding: 0 32px;
+      display: flex; align-items: baseline; gap: 24px;
+      border-top: 1px solid var(--heading); padding-top: 20px;
+    }
+    .section-rule .folio {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);
+      flex-shrink: 0;
+    }
+    .section-rule h2 {
+      font-family: var(--fraunces); font-size: clamp(28px, 3.4vw, 44px);
+      font-weight: 400; letter-spacing: -0.01em; color: var(--heading);
+      margin: 0; line-height: 1.05;
+    }
+    .section-rule .kicker {
+      font-family: 'DM Sans', sans-serif; font-size: 14px;
+      color: var(--text-muted); margin-left: auto; max-width: 32ch;
+      text-align: right; line-height: 1.5;
+    }
+
+    /* Featured stories — three lead apps */
+    .featured-strip {
+      max-width: 1080px; margin: 32px auto 0; padding: 0 32px;
+      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 28px;
+    }
+    .featured-card {
       background: var(--surface); border: 1px solid var(--border-light);
-      border-radius: 20px; padding: 0; overflow: hidden;
-      box-shadow: var(--shadow-sm); transition: all 0.3s ease;
+      padding: 0; overflow: hidden; transition: all 0.3s;
+      display: flex; flex-direction: column;
     }
-    .product-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--border); }
-    .product-card .card-visual {
-      background: var(--bg-alt); padding: 32px 24px 8px; text-align: center;
+    .featured-card:hover {
+      border-color: var(--heading);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .featured-card .feature-img {
+      aspect-ratio: 4/3; background: var(--bg-alt); overflow: hidden;
       border-bottom: 1px solid var(--border-light);
+      display: flex; align-items: center; justify-content: center;
     }
-    .product-card .card-visual img {
-      max-width: 180px; border-radius: 12px; display: block; margin: 0 auto;
+    .featured-card .feature-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
     }
-    .product-card .card-body { padding: 24px 28px 28px; }
-    .product-card .tag { margin-bottom: 10px; }
-    .product-card h3 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: 22px; font-weight: 400; margin-bottom: 8px; color: var(--heading);
+    .featured-card:hover .feature-img img { transform: scale(1.04); }
+    .featured-card .feature-body { padding: 24px 24px 22px; flex: 1; display: flex; flex-direction: column; }
+    .featured-card .feature-cat {
+      font-family: var(--mono); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 12px;
     }
-    .product-card h3 a { color: var(--heading); text-decoration: none; }
-    .product-card h3 a:hover { color: var(--accent); text-decoration: none; }
-    .product-card .desc { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.65; }
-    .product-card .card-meta {
-      display: flex; justify-content: space-between; align-items: center;
-      padding-top: 16px; border-top: 1px solid var(--border-light);
+    .featured-card h3 {
+      font-family: var(--fraunces); font-size: 26px; font-weight: 400;
+      letter-spacing: -0.01em; line-height: 1.1; margin: 0 0 10px;
+      color: var(--heading);
+      font-variation-settings: 'opsz' 36;
     }
-    .product-card .card-meta a { font-size: 14px; font-weight: 600; }
-    .product-card .card-meta .status { font-size: 13px; color: var(--text-dim); font-style: italic; }
+    .featured-card h3 a { color: inherit; text-decoration: none; background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size 0.3s; }
+    .featured-card:hover h3 a { background-size: 100% 1px; color: var(--heading); }
+    .featured-card .feature-desc {
+      font-size: 14px; color: var(--text-muted); line-height: 1.65;
+      margin-bottom: 18px; flex: 1;
+    }
+    .featured-card .feature-cta {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--heading);
+      padding-top: 14px; border-top: 1px solid var(--border-light);
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .featured-card .feature-cta:hover { color: var(--accent); text-decoration: none; }
+    .featured-card .feature-cta .arrow { transition: transform 0.2s; }
+    .featured-card:hover .feature-cta .arrow { transform: translateX(4px); }
 
-    .coming-soon-section { background: var(--bg-alt); padding: 72px 0; margin: 0; }
+    /* Editorial index — remaining apps */
+    .editorial-index {
+      max-width: 1080px; margin: 32px auto 0; padding: 0 32px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      border-top: 1px solid var(--border-light);
+    }
+    .index-row {
+      display: grid; grid-template-columns: 56px 1fr auto;
+      gap: 20px; padding: 24px 0;
+      border-bottom: 1px solid var(--border-light);
+      align-items: baseline;
+      transition: all 0.25s;
+    }
+    .index-row:nth-child(odd) { border-right: 1px solid var(--border-light); padding-right: 28px; }
+    .index-row:nth-child(even) { padding-left: 28px; }
+    .index-row:hover { background: var(--surface-hover); }
+    .index-row .index-num {
+      font-family: var(--mono); font-size: 12px; font-weight: 500;
+      color: var(--accent); letter-spacing: 0.1em; padding-top: 4px;
+    }
+    .index-row .index-content { min-width: 0; }
+    .index-row .index-cat {
+      font-family: var(--mono); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .index-row h3 {
+      font-family: var(--fraunces); font-size: 22px; font-weight: 400;
+      letter-spacing: -0.005em; line-height: 1.15; margin: 0 0 6px;
+      color: var(--heading);
+      font-variation-settings: 'opsz' 36;
+    }
+    .index-row h3 a { color: inherit; text-decoration: none; }
+    .index-row h3 a:hover { color: var(--accent); }
+    .index-row .index-desc {
+      font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin: 0;
+    }
+    .index-row .index-store {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text-muted); padding-top: 4px;
+      white-space: nowrap;
+    }
+    .index-row .index-store:hover { color: var(--accent); text-decoration: none; }
+
+    /* Coming soon — compressed */
+    .coming-soon-section {
+      max-width: 1080px; margin: 64px auto 0; padding: 32px 32px 0;
+      border-top: 1px solid var(--border);
+    }
     .coming-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;
-      max-width: 1080px; margin: 0 auto; padding: 0 32px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      margin-top: 24px;
     }
     .coming-card {
-      background: var(--surface); border: 1px solid var(--border-light);
-      border-radius: 16px; padding: 24px; text-align: center;
-      box-shadow: var(--shadow-sm); transition: all 0.25s;
+      padding: 20px 28px 20px 0; border-right: 1px solid var(--border-light);
+      transition: all 0.25s;
     }
-    .coming-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-    .coming-card .tag { margin-bottom: 10px; }
+    .coming-card:last-child { border-right: none; padding-left: 28px; padding-right: 0; }
+    .coming-card .coming-tag {
+      font-family: var(--mono); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 10px;
+    }
     .coming-card h3 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: 18px; font-weight: 400; margin-bottom: 6px;
+      font-family: var(--fraunces); font-size: 22px; font-weight: 400;
+      letter-spacing: -0.01em; margin: 0 0 8px;
     }
     .coming-card h3 a { color: var(--heading); text-decoration: none; }
     .coming-card h3 a:hover { color: var(--accent); }
-    .coming-card .desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+    .coming-card .desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+    /* Override base section-header for sections we still use (transparency, trust, etc) */
+    .section-header { text-align: center; margin-bottom: 40px; padding: 0 32px; }
+    .section-header h2 {
+      font-family: var(--fraunces); font-size: clamp(28px, 3.4vw, 40px);
+      font-weight: 400; letter-spacing: -0.01em; margin: 0 0 12px;
+      font-variation-settings: 'opsz' 72;
+    }
+    .section-header p { font-size: 15px; color: var(--text-muted); max-width: 56ch; margin: 0 auto; }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .featured-strip { grid-template-columns: 1fr 1fr; }
+      .featured-strip .featured-card:first-child { grid-column: 1 / -1; }
+      .editorial-index { grid-template-columns: 1fr; }
+      .index-row:nth-child(odd) { border-right: none; padding-right: 0; }
+      .index-row:nth-child(even) { padding-left: 0; }
+    }
+    @media (max-width: 700px) {
+      .masthead { padding: 56px 20px 24px; }
+      .masthead .eyebrow { font-size: 10px; gap: 12px; margin-bottom: 20px; }
+      .masthead h1 { font-size: clamp(36px, 11vw, 56px); margin-bottom: 22px; }
+      .masthead .standfirst { font-size: 17px; margin-bottom: 28px; }
+      .masthead .ctas { gap: 12px; margin-bottom: 32px; }
+      .masthead .ctas a { font-size: 11px; padding: 12px 18px; }
+      .masthead .colophon {
+        grid-template-columns: 1fr 1fr; gap: 24px 32px;
+        font-size: 10px;
+      }
+      .masthead .colophon strong { font-size: 26px; }
+      .section-rule { margin-top: 64px; padding: 16px 20px 0; gap: 16px; flex-wrap: wrap; }
+      .section-rule .kicker { width: 100%; text-align: left; margin-left: 0; margin-top: 4px; }
+      .section-rule h2 { font-size: 28px; }
+      .featured-strip { grid-template-columns: 1fr; padding: 0 20px; gap: 20px; margin-top: 24px; }
+      .featured-strip .featured-card:first-child { grid-column: auto; }
+      .featured-card h3 { font-size: 22px; }
+      .editorial-index { padding: 0 20px; margin-top: 24px; }
+      .index-row { grid-template-columns: 36px 1fr; padding: 18px 0; gap: 14px; }
+      .index-row .index-store { grid-column: 2; padding-top: 8px; }
+      .index-row h3 { font-size: 19px; }
+      .coming-soon-section { padding: 24px 20px 0; margin-top: 48px; }
+      .coming-grid { grid-template-columns: 1fr; gap: 0; }
+      .coming-card { padding: 18px 0; border-right: none; border-bottom: 1px solid var(--border-light); }
+      .coming-card:last-child { border-bottom: none; padding-left: 0; }
+      .coming-card h3 { font-size: 20px; }
+    }
 
     .transparency-section { padding: 72px 0; border-top: 1px solid var(--border-light); }
     .transparency-wrap { max-width: 980px; margin: 0 auto; padding: 0 32px; }
@@ -309,220 +481,186 @@
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Apps that keep your <em>data</em> where it belongs</h1>
-    <p class="subtitle">13 iOS apps across finance, education, health, fitness, travel, weather, music, and games. No ads. No third-party trackers. Most run fully on-device; the ones that use the network say exactly what for.</p>
+  <!-- Masthead -->
+  <section class="masthead">
+    <div class="eyebrow">Vol. 01 — Field Guide to Private Software</div>
+    <h1>Apps that belong to <em>your device</em>, not someone else's server.</h1>
+    <p class="standfirst">Thirteen iOS apps across finance, education, health, fitness, travel, weather, music, and games. No ads. No third-party trackers. Most run fully on-device; the few that use the network tell you exactly what for.</p>
     <div class="ctas">
-      <a href="#apps" class="btn btn-primary">Browse Apps</a>
-      <a href="#transparency" class="btn btn-outline">What each app does</a>
+      <a href="#apps" class="cta-primary">Browse the Catalogue</a>
+      <a href="#transparency" class="cta-ghost">What each app does &rarr;</a>
     </div>
-    <div class="proof-strip">
-      <div class="proof"><strong>13</strong> apps</div>
-      <div class="proof"><strong>7</strong> categories</div>
-      <div class="proof"><strong>No</strong> ads or trackers</div>
-      <div class="proof"><strong>55</strong> articles</div>
+    <div class="colophon">
+      <div><strong>13</strong>Apps</div>
+      <div><strong>7</strong>Categories</div>
+      <div><strong>0</strong>Trackers</div>
+      <div><strong>55</strong>Articles</div>
     </div>
   </section>
 
-  <!-- Available Now -->
-  <section class="products" id="apps">
-    <div class="section-header">
-      <h2>Available Now</h2>
-      <p>On the App Store. Download today.</p>
-    </div>
-    <div class="products-grid">
+  <!-- Section header: Available Now -->
+  <div class="section-rule">
+    <div class="folio">§ 01 — On the App Store</div>
+    <h2>The Catalogue</h2>
+    <p class="kicker">Ordered roughly by readership. Tap any title for the long write-up; tap App Store to install.</p>
+  </div>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/keystrike-hero.png" alt="Keystrike piano practice app with falling notes on a keyboard" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-music">Music</span>
-          <h3><a href="/apps/keystrike/">Keystrike</a></h3>
-          <p class="desc">Guided piano practice for iPhone, iPad, and Mac. Falling notes, section loops, MIDI input, acoustic mode. 7-day trial, then one-time unlock.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+  <!-- Featured trio -->
+  <section class="featured-strip" id="apps">
+
+    <article class="featured-card">
+      <div class="feature-img">
+        <img src="assets/keystrike-hero.png" alt="Keystrike piano practice app with falling notes on a keyboard" loading="lazy">
       </div>
-
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather app with widgets and AI forecasts" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-weather">Weather</span>
-          <h3><a href="/apps/cloudmesh/">Cloudmesh Weather</a></h3>
-          <p class="desc">29 weather widgets, AI summaries, and a privacy-first community mesh network. No subscription.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+      <div class="feature-body">
+        <div class="feature-cat">Music — iPad &amp; Mac</div>
+        <h3><a href="/apps/keystrike/">Keystrike</a></h3>
+        <p class="feature-desc">Guided piano practice with falling notes, section loops, MIDI input, and acoustic mode. Seven-day trial, then one-time unlock — no subscription.</p>
+        <a class="feature-cta" href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
       </div>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/bellgrave-hero.png" alt="Bellgrave action roguelike in a dark 3D cathedral" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-games">Games</span>
-          <h3><a href="/apps/bellgrave/">Bellgrave</a></h3>
-          <p class="desc">Action roguelike in a dark 3D cathedral. 11 heroes, 8 bosses, weapon evolutions. One-time unlock — no subscription, no ads, no battle pass.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="featured-card">
+      <div class="feature-img">
+        <img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather app with widgets and AI forecasts" loading="lazy">
       </div>
-
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/Minua/01_earn_screen_time_through_learning.png" alt="Minua earn screen time through learning" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-kids">Kids</span>
-          <h3><a href="/apps/minua/">Minua</a></h3>
-          <p class="desc">Earn screen time through learning. On-device parental controls. No accounts, no cloud, no tracking.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+      <div class="feature-body">
+        <div class="feature-cat">Weather</div>
+        <h3><a href="/apps/cloudmesh/">Cloudmesh Weather</a></h3>
+        <p class="feature-desc">Twenty-nine widgets, AI summaries, and a privacy-first community mesh for hyperlocal conditions. No subscription.</p>
+        <a class="feature-cta" href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
       </div>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/cognithix-hero.png" alt="Cognithix 11+ exam preparation" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-education">Education</span>
-          <h3><a href="/apps/cognithix/">Cognithix</a></h3>
-          <p class="desc">The only 11+ app covering all four tested areas — including the Language Aptitude Test. Adaptive difficulty. Unlimited questions.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="featured-card">
+      <div class="feature-img">
+        <img src="assets/bellgrave-hero.png" alt="Bellgrave action roguelike in a dark 3D cathedral" loading="lazy">
       </div>
-
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/pacegrid-hero.png" alt="PaceGrid fitness tracker with GPS and training load analytics" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-fitness">Fitness</span>
-          <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
-          <p class="desc">GPS run, ride, and hike tracking with Injury Guard training load monitoring. One-time purchase. Fully on-device.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+      <div class="feature-body">
+        <div class="feature-cat">Games</div>
+        <h3><a href="/apps/bellgrave/">Bellgrave</a></h3>
+        <p class="feature-desc">Action roguelike in a dark 3D cathedral. Eleven heroes, eight bosses, weapon evolutions. One-time unlock — no battle pass.</p>
+        <a class="feature-cta" href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
       </div>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/arithmetix-hero.png" alt="Arithmetix maths practice" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-education">Education</span>
-          <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
-          <p class="desc">UK National Curriculum maths from Reception to Year 6. Adaptive difficulty. Spaced repetition. Virtual pet motivation.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+  </section>
+
+  <!-- Editorial index — nine remaining apps -->
+  <section class="editorial-index">
+
+    <article class="index-row">
+      <div class="index-num">04</div>
+      <div class="index-content">
+        <div class="index-cat">Kids</div>
+        <h3><a href="/apps/minua/">Minua</a></h3>
+        <p class="index-desc">Earn screen time through learning. On-device parental controls. No accounts, no cloud, no tracking.</p>
       </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/photoflight-hero.png" alt="PhotoFlight travel map from photos" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-travel">Travel</span>
-          <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
-          <p class="desc">Travel map from your photo library. Reads GPS metadata from your existing photos. Automatic. On-device.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="index-row">
+      <div class="index-num">05</div>
+      <div class="index-content">
+        <div class="index-cat">Education — 11+</div>
+        <h3><a href="/apps/cognithix/">Cognithix</a></h3>
+        <p class="index-desc">The only 11+ app covering all four tested areas, including the Language Aptitude Test. Adaptive difficulty. Unlimited questions.</p>
       </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/cyla-hero.png" alt="Cyla private cycle tracker" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-health">Health</span>
-          <h3><a href="/apps/cyla/">Cyla</a></h3>
-          <p class="desc">Private period and cycle tracker. Entirely on-device with Apple Watch temperature integration. No accounts, no cloud, no servers.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="index-row">
+      <div class="index-num">06</div>
+      <div class="index-content">
+        <div class="index-cat">Fitness</div>
+        <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
+        <p class="index-desc">GPS run, ride, and hike tracking with Injury Guard training-load monitoring. One-time purchase. Fully on-device.</p>
       </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/kanesh-hero.png" alt="Kanesh financial data terminal" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-finance">Finance</span>
-          <h3><a href="/apps/kanesh/">Kanesh</a></h3>
-          <p class="desc">Source-linked financial data terminal. Every number traces back to its SEC filing. On-device AI. 53 countries.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="index-row">
+      <div class="index-num">07</div>
+      <div class="index-content">
+        <div class="index-cat">Education — KS1 &amp; KS2</div>
+        <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
+        <p class="index-desc">UK National Curriculum maths, Reception through Year 6. Adaptive difficulty, spaced repetition, virtual-pet motivation.</p>
       </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/sparks-hero.png" alt="Sparks Studios creative app for kids" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-kids">Kids</span>
-          <h3><a href="/apps/sparks-studios/">Sparks Studios</a></h3>
-          <p class="desc">AI-powered creative playground. Kids draw, write stories, and compose music — all on-device. No ads. No tracking. Ages 4-12.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="index-row">
+      <div class="index-num">08</div>
+      <div class="index-content">
+        <div class="index-cat">Travel</div>
+        <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
+        <p class="index-desc">Travel map built from photos you already have. Reads GPS metadata locally — no upload, no new tracking.</p>
       </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
 
-      <div class="product-card">
-        <div class="card-visual">
-          <img src="assets/penlicence-hero.png" alt="Pen Licence handwriting practice app for iPad" loading="lazy">
-        </div>
-        <div class="card-body">
-          <span class="tag tag-education">Education</span>
-          <h3><a href="/apps/penlicence/">Pen Licence</a></h3>
-          <p class="desc">Handwriting practice for iPad with Apple Pencil pressure feedback. Honest stroke checking. On-device, no accounts.</p>
-          <div class="card-meta">
-            <a href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
-          </div>
-        </div>
+    <article class="index-row">
+      <div class="index-num">09</div>
+      <div class="index-content">
+        <div class="index-cat">Health</div>
+        <h3><a href="/apps/cyla/">Cyla</a></h3>
+        <p class="index-desc">Private period and cycle tracker. Entirely on-device with Apple Watch temperature integration. No accounts, no cloud, no servers.</p>
       </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
 
-    </div>
+    <article class="index-row">
+      <div class="index-num">10</div>
+      <div class="index-content">
+        <div class="index-cat">Finance</div>
+        <h3><a href="/apps/kanesh/">Kanesh</a></h3>
+        <p class="index-desc">Source-linked financial data terminal. Every figure traces back to its SEC filing. On-device AI across 53 countries.</p>
+      </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
+
+    <article class="index-row">
+      <div class="index-num">11</div>
+      <div class="index-content">
+        <div class="index-cat">Kids — Ages 4–12</div>
+        <h3><a href="/apps/sparks-studios/">Sparks Studios</a></h3>
+        <p class="index-desc">AI-powered creative playground. Children draw, write stories, and compose music — all on-device.</p>
+      </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
+
+    <article class="index-row">
+      <div class="index-num">12</div>
+      <div class="index-content">
+        <div class="index-cat">Education — Handwriting</div>
+        <h3><a href="/apps/penlicence/">Pen Licence</a></h3>
+        <p class="index-desc">Handwriting practice for iPad with Apple Pencil pressure feedback. Honest stroke checking. On-device, no accounts.</p>
+      </div>
+      <a class="index-store" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">App Store &rarr;</a>
+    </article>
+
   </section>
 
   <!-- Coming Soon -->
   <section class="coming-soon-section">
-    <div class="section-header">
+    <div class="section-rule" style="margin-top: 0; padding-left: 0; padding-right: 0;">
+      <div class="folio">§ 02 — In the Pipeline</div>
       <h2>Coming Soon</h2>
-      <p>In development. Launching on the App Store soon.</p>
+      <p class="kicker">Two apps in development. Launching to the App Store later this year.</p>
     </div>
     <div class="coming-grid">
 
-      <div class="coming-card">
-        <span class="tag tag-productivity">Productivity</span>
+      <article class="coming-card">
+        <div class="coming-tag">Productivity</div>
         <h3><a href="/apps/meetingmind/">MeetingMind</a></h3>
         <p class="desc">Private meeting notes for in-person conversations. Records, transcribes, and summarises entirely on your iPhone — no cloud, no account.</p>
-      </div>
+      </article>
 
-      <div class="coming-card">
-        <span class="tag tag-travel">Travel</span>
+      <article class="coming-card">
+        <div class="coming-tag">Travel</div>
         <h3><a href="/apps/pingnear/">PingNear</a></h3>
         <p class="desc">Discover what to do right now, right here. Context-aware travel discovery.</p>
-      </div>
+      </article>
 
     </div>
   </section>
