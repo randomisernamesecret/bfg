@@ -13,7 +13,7 @@
 - Kanesh: https://bfgapps.co/apps/kanesh/ — Source-linked financial data terminal with on-device AI. SEC filings, 53 countries, Congress stock tracker. Bloomberg alternative for mobile.
 - Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ exam preparation covering English, Verbal Reasoning, Non-Verbal Reasoning, and the Language Aptitude Test. Adaptive difficulty, unlimited questions.
 - Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation.
-- Sparks Studios: https://bfgapps.co/apps/sparks-studios/ — AI-powered creative app for kids aged 4-12. Drawing, story writing, and music composition. On-device AI, no uploads, parental controls.
+- Sparks Studio: https://bfgapps.co/apps/sparks-studios/ — AI-powered creative app for kids aged 4-12. Drawing, story writing, and music composition. On-device AI, no uploads, parental controls.
 - PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed.
 - Cyla: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase.
 - Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — 29 weather widgets, AI summaries, and a privacy-first community mesh network. One-time purchase, no subscription.
