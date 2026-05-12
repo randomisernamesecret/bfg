@@ -50,13 +50,22 @@
     var label = document.querySelector('.lang-dropdown > a');
     if (label) label.textContent = code.toUpperCase();
 
+    var home = localeHomeFor(code);
     document.querySelectorAll('a[href]').forEach(function (a) {
       if (a.hasAttribute('data-lang')) return;
       var href = a.getAttribute('href');
+      if (!href) return;
+      // Plain home link.
       if (href === '/' || href === '/index.html') {
-        a.setAttribute('href', localeHomeFor(code));
-      } else if (href === '/#blog' || href === '/index.html#blog') {
-        a.setAttribute('href', localeHomeFor(code) + '#blog');
+        a.setAttribute('href', home);
+        return;
+      }
+      // Any anchor on the English homepage (/#apps, /#blog, /#faq, …).
+      var anchorIdx = -1;
+      if (href.indexOf('/#') === 0) anchorIdx = 1;
+      else if (href.indexOf('/index.html#') === 0) anchorIdx = '/index.html'.length;
+      if (anchorIdx > -1) {
+        a.setAttribute('href', home + href.slice(anchorIdx));
       }
     });
   }
