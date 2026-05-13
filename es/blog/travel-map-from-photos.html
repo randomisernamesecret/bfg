@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>Cómo crear un mapa de viaje a partir de tus fotos — BFG</title>
+  <meta name="description" content="Cómo usar los metadatos GPS de tus fotos para crear un mapa de viaje automáticamente. Qué fotos tienen datos de ubicación y cómo aprovecharlos.">
+  <meta name="keywords" content="crear mapa viaje fotos, mapa viaje gps fotos, fotos con metadatos gps, mapa ruta viaje iphone, app mapa fotos de viaje">
+  <meta property="og:title" content="Cómo crear un mapa de viaje a partir de tus fotos">
+  <meta property="og:description" content="Cómo usar los metadatos GPS de tus fotos para crear un mapa de viaje automáticamente.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/photoflight-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cómo crear un mapa de viaje a partir de tus fotos">
+  <meta name="twitter:description" content="Cómo usar los metadatos GPS de tus fotos para crear un mapa de viaje automáticamente.">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/photoflight-hero.png">
+  <meta property="og:url" content="https://bfgapps.co/es/blog/travel-map-from-photos.html">
+  <link rel="canonical" href="https://bfgapps.co/es/blog/travel-map-from-photos.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/travel-map-from-photos.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/travel-map-from-photos.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/travel-map-from-photos.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo crear un mapa de viaje a partir de tus fotos",
+    "description": "Cómo usar los metadatos GPS de tus fotos para crear un mapa de viaje automáticamente. Qué fotos tienen datos de ubicación y cómo aprovecharlos.",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-04-01"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"Article"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menú">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">Apps</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">En el App Store</div>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <hr>
+            <div class="menu-label">Próximamente</div>
+            <a href="/apps/meetingmind/">MeetingMind</a>
+            <a href="/apps/pingnear/">PingNear</a>
+          </div>
+        </div>
+        <a href="/#blog">Blog</a>
+        <a href="/about/">Acerca de</a>
+        <a href="mailto:blueflamegames@proton.me">Contacto</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">ES</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Cambiar tema"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/es/#blog">Blog</a><span class="sep">/</span><span class="tag tag-travel">Viajes</span></nav>
+    <div class="blog-article-header">
+      <h1>Cómo crear un mapa de viaje a partir de tus fotos</h1>
+      <p class="meta">Abril 2026 · 6 min de lectura · Viajes</p>
+    </div>
+
+    <p>Si tienes un iPhone relativamente reciente y has viajado con él en los últimos años, probablemente tienes cientos o miles de fotos con datos GPS incrustados que nunca has mirado. Cada foto tomada con la ubicación activada contiene las coordenadas exactas de donde estabas cuando la tomaste. Eso es suficiente para construir un mapa detallado de cualquier viaje — sin haber necesitado activar ningún rastreador especial.</p>
+
+    <h2>Qué fotos tienen datos GPS</h2>
+    <p>No todas las fotos tienen datos de ubicación. Depende de:</p>
+    <ul>
+      <li><strong>iPhone / Android:</strong> Sí, si tienes los servicios de ubicación activados para la cámara</li>
+      <li><strong>Cámara con GPS incorporado:</strong> Sí (algunas Sony, Nikon, etc.)</li>
+      <li><strong>Cámara DSLR/mirrorless sin GPS:</strong> No, a menos que uses una app de geolocalización o sincronices con el teléfono</li>
+      <li><strong>Fotos enviadas por WhatsApp o Telegram:</strong> Normalmente no — estas apps eliminan los metadatos por defecto para proteger la privacidad</li>
+      <li><strong>Fotos descargadas de redes sociales:</strong> No — Instagram, Facebook y similares eliminan los metadatos EXIF</li>
+    </ul>
+    <p>Para comprobar si una foto específica tiene datos GPS: en iPhone, ve a la app Fotos, abre la foto, desliza hacia arriba y busca el mapa de ubicación. Si aparece, tiene GPS. También puedes comprobar los metadatos con apps como Exif Viewer.</p>
+
+    <h2>Tres enfoques para crear el mapa</h2>
+
+    <h3>Enfoque manual: Google Maps o Apple Maps</h3>
+    <p>Puedes identificar manualmente los lugares de tus fotos y añadirlos como marcadores en un mapa. Es el método más laborioso, pero funciona con cualquier foto, tenga o no datos GPS. Para viajes cortos con pocos puntos de interés, puede ser perfectamente suficiente.</p>
+
+    <h3>Enfoque semi-automático: la app Fotos de iPhone</h3>
+    <p>La app Fotos nativa de iPhone tiene una vista de mapa que muestra automáticamente todas tus fotos organizadas geográficamente. Si tienes un viaje relativamente reciente con datos GPS, puedes navegar al álbum del viaje y ver la vista de mapa para obtener una idea de tu ruta. No es un mapa de viaje propiamente dicho, pero para uso personal puede ser suficiente.</p>
+
+    <h3>Enfoque automático: apps especializadas</h3>
+    <p>Las apps diseñadas específicamente para este propósito leen los metadatos GPS de todas tus fotos seleccionadas, las ordenan cronológicamente, las colocan en el mapa en las posiciones correctas, y construyen una línea de tiempo visual del viaje. El resultado es un diario de viaje completo sin trabajo manual.</p>
+
+    <div class="callout">
+      <strong>Para el enfoque automático:</strong> <a href="/apps/photoflight/">PhotoFlight</a> lee los metadatos GPS de tus fotos existentes y construye automáticamente un mapa de viaje y una línea de tiempo. Funciona con cualquier foto de tu carrete con datos GPS — incluso fotos de hace años. Todo ocurre en tu dispositivo.
+    </div>
+
+    <h2>Qué hacer cuando faltan datos GPS</h2>
+    <p>Si tienes un viaje con fotos sin GPS — fotos tomadas con una cámara sin GPS, fotos descargadas de otra fuente, o fotos del carrete sin ubicación — todavía puedes crear un mapa parcial. Las opciones son:</p>
+    <ul>
+      <li><strong>Geolocalización manual:</strong> Añadir la ubicación manualmente a las fotos que lo permitan (iPhone permite editar la ubicación de una foto desde la app Fotos)</li>
+      <li><strong>Usar el historial de ubicación del teléfono:</strong> Si tienes Google Maps Timeline o un servicio similar activado, puedes usar esos datos para inferir dónde estabas cuando tomaste cada foto</li>
+      <li><strong>Aceptar los vacíos:</strong> Un mapa de viaje con algunos puntos bien geolocalizados es mejor que ninguno</li>
+    </ul>
+
+    <h2>Privacidad al compartir fotos geolocalizadas</h2>
+    <p>Un punto importante: si compartes fotos con datos GPS, estás compartiendo también tu ubicación exacta en el momento de la foto. Esto es normalmente irrelevante para fotos de paisajes o monumentos, pero puede ser un problema si las fotos muestran tu casa, tu trabajo, o un lugar que preferirías mantener privado.</p>
+    <p>Cuando compartes fotos por iMessage o correo electrónico desde iPhone, puedes elegir si incluir o no los datos de ubicación. Al compartir, busca la opción «Eliminar ubicación» antes de enviar.</p>
+
+    <h2>Artículos relacionados</h2>
+    <ul class="related-posts">
+      <li><a href="/es/blog/travel-journal-from-photos-no-tracking.html">Diario de viaje con fotos sin rastreo</a></li>
+      <li><a href="/es/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps: comparativa</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>Tu mapa de viaje ya existe en tus fotos</h3>
+      <p>PhotoFlight extrae los datos GPS de tus fotos existentes y crea un mapa de viaje automáticamente. Sin rastreo, sin cuenta.</p>
+      <a href="/apps/photoflight/" class="btn btn-primary">Descubre PhotoFlight</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG Home</a> &middot; <a href="../../#blog">Más artículos</a> &middot; <a href="../../privacy.html">Privacidad</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

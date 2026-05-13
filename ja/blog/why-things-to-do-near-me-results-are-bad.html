@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>「近くの観光スポット」検索結果がなぜこんなにひどいのか — BFG</title>
+  <meta name="description" content="Googleマップは有料プロモーション、TripAdvisorは観光客の罠、Yelpは日本ではほぼ使えない。「近くでできること」の検索結果が壊れている理由と、より良いシステムとは何かを考えます。">
+  <meta name="keywords" content="近くの観光スポット 検索, Googleマップ おすすめ 問題, TripAdvisor 問題点, ローカル検索 精度, 旅行アプリ おすすめ">
+  <meta property="og:title" content="「近くの観光スポット」検索結果がなぜこんなにひどいのか">
+  <meta property="og:description" content="Googleマップは有料プロモーション、TripAdvisorは観光客の罠。「近くでできること」検索が壊れている理由を解説します。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="「近くの観光スポット」検索結果がなぜこんなにひどいのか">
+  <meta name="twitter:description" content="Googleマップは有料プロモーション、TripAdvisorは観光客の罠。「近くでできること」検索が壊れている理由を解説します。">
+  <meta name="twitter:image" content="https://bfgapps.co/apple-touch-icon.png">
+  <meta property="og:url" content="https://bfgapps.co/ja/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="canonical" href="https://bfgapps.co/ja/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/why-things-to-do-near-me-results-are-bad.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "「近くの観光スポット」検索結果がなぜこんなにひどいのか",
+    "description": "Googleマップは有料プロモーション、TripAdvisorは観光客の罠、Yelpは日本ではほぼ使えない。「近くでできること」の検索結果が壊れている理由と、より良いシステムとは何かを考えます。",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-04-11",
+    "inLanguage": "ja-JP"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://bfgapps.co/ja/#blog"},{"@type":"ListItem","position":3,"name":"記事"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/ja/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="メニュー">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/ja/#apps">アプリ</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">App Store で入手</div>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <hr>
+            <div class="menu-label">近日公開</div>
+            <a href="/apps/meetingmind/">MeetingMind</a>
+            <a href="/apps/pingnear/">PingNear</a>
+          </div>
+        </div>
+        <a href="/ja/#blog">ブログ</a>
+        <a href="/ja/about/">概要</a>
+        <a href="mailto:blueflamegames@proton.me">お問い合わせ</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="言語">JA</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="テーマ切替"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/ja/">BFG</a><span class="sep">/</span><a href="/ja/#blog">ブログ</a><span class="sep">/</span><span class="tag tag-travel">旅行</span></nav>
+    <div class="blog-article-header">
+      <h1>「近くの観光スポット」検索結果がなぜこんなにひどいのか</h1>
+      <p class="meta">2026年4月 · 7分で読める · 旅行</p>
+    </div>
+
+    <p>旅先で空き時間ができて、スマートフォンで「近くでできること」を検索する——その30分後には、スポンサー広告の羅列、評価が水増しされたレストラン、すでに閉まっている観光スポットを延々とスクロールしている自分に気づく。アプリを変えても同じ。結局、一番近くにある場所に入ってみる。悪くはなかったけれど、もっと良い情報があれば別の選択をしていたはずだ。</p>
+    <p>これは努力不足の問題ではありません。ツール自体の問題です。私たちが使うローカルディスカバリーのプラットフォームは、ユーザーが実際に尋ねている質問に答えるように設計されていないのです。なぜ失敗するのかを理解することで、より良いシステムのあり方が見えてきます。</p>
+
+    <h2>Googleマップの検索結果の問題</h2>
+    <p>多くの人が「近くでできること」の検索でまず開くのがGoogleマップです。そして最も歪んでもいます。Googleのローカル検索結果は、有料掲載、SEOシグナル、レビュー数の組み合わせで決まります。あなたが見ているのは「近くにある最高のもの」ではなく、「広告費を払ったもの」、次に「最もレビューが集まったもの」、そしてその他の順番です。</p>
+    <p>これは陰謀論ではありません。Googleの公式ドキュメントはローカル広告の仕組みを説明しており、企業はマップ結果の上位に「スポンサー」という小さなラベル付きで表示されるために費用を払います。市街地では最初の2〜3件が有料掲載のことが多い。その下のオーガニック結果は「知名度」で順位付けされますが、これは実質的にチェーン店や大手観光施設が小規模で魅力的な代替を常に上回ることを意味します。</p>
+    <p>Googleマップは「ビジネスはどこにあるか？」に答えます。「今、何をすべきか？」には答えません。</p>
+
+    <h2>TripAdvisorの罠</h2>
+    <p>TripAdvisorは別のモデルで動いていますが、同じ問題に行き着きます。結果はレビュー数と新しさで決まります。最もレビューされた場所が上位に浮かび上がり、自己強化ループが生まれます。観光客がトップのレストランを見て行き、レビューを残し、さらに上位に押し上げる。一方で地元の人が好む路地裏のビストロは47位に留まったまま——レビューを積極的に集めておらず、常連客はTripAdvisorを使わないからです。</p>
+    <p>TripAdvisorのアルゴリズムは意図して残念な場所に送ろうとしているわけではありませんが、インセンティブ構造がそれを保証します。レビューを生成するのが得意な場所が、体験を生成するのが得意な場所とは限りません。</p>
+    <p>もうひとつの問題は古さです。レビューは年を超えて積み上がり、ランキングは現在の質ではなく累積した歴史を反映します。2022年に素晴らしかったレストランが2025年にオーナーが変わって品質が落ちても、4年分の好評価が1年分の低評価を上回り上位に留まります。</p>
+    <p>Oxford Internet Institute の研究は、プラットフォームのランキングアルゴリズムがローカルコマースにおいて「勝者総取り」のダイナミクスを生むことを指摘しています。</p>
+
+    <h2>Yelpの問題（そして日本ではほぼ機能しない理由）</h2>
+    <p>Yelpはアメリカでは有意義なカバレッジと大きなレビュワーベースを持ちますが、ヨーロッパ、アジア、南米、アフリカの大部分では実質的に役立ちません。日本の都市でYelpを使っても、アメリカ人旅行者が書いたわずかな結果が返ってくるだけです。</p>
+    <p>旅行は本質的に国際的であるにもかかわらず、1カ国でしか機能しない発見ツールは発見ツールではありません。これらのプラットフォームはそもそも旅行者のために作られていない。地元の消費者——会社近くのランチ場所を探す、新しいタイ料理店はどうか——のために作られたのです。旅行者のニーズは根本的に異なります。</p>
+
+    <h2>どのプラットフォームも理解していないこと</h2>
+    <p>現在の「近くでできること」の最も深い欠陥は、文脈の欠如です。すべてのプラットフォームが検索を静的なクエリとして扱います。「これらの座標の近くにある場所を表示」——時間、天気、何が今開いているか、すでに見たものは何かを考慮しません。</p>
+
+    <h3>時間帯</h3>
+    <p>午前9時にナイトクラブを勧めても意味がありません。深夜に朝食スポットも同様。しかし同じ検索クエリが何時に入力しても本質的に同じ結果を返します。有用なシステムは時間帯によって結果を変えるべきです。朝はカフェ、マーケット、公園、ギャラリーを前面に。夜はレストラン、バー、ライブミュージック、文化イベントに移行する。</p>
+
+    <h3>天気</h3>
+    <p>雨が降っています。何かをしたいと検索しています。論理的なシステムは屋内アクティビティを優先するはずです。しかし晴れた日と同じウォーキングツアーや絶景スポットが返ってきます。天気データは多くのAPIから無料で入手可能ですが、主要な発見プラットフォームでランキングに組み込んでいるものはありません。</p>
+
+    <h3>今実際に開いているもの</h3>
+    <p>最も基本的なフィルターのはずが、一貫して信頼できません。Googleマップは多くのビジネスの営業時間データを持っていますが、特に季節ごとに営業時間が変わる独立経営の店や祝日に閉店するのにリスティングを更新しない場合など、頻繁に不正確です。</p>
+
+    <h3>曜日</h3>
+    <p>どの都市でも最良の体験の多くは曜日特定です。日曜のフリーマーケット。木曜の夜間開館の博物館。金曜のストリートフードマーケット。週末のブランチスポット。しかしこの情報は「近くでできること」の汎用クエリでは表示されません。</p>
+
+    <h3>すでに見たもの</h3>
+    <p>昨日同じ検索をして3か所訪れたとしても、今日の検索は同じ3か所を表示します。これらのプラットフォームには旅程内の発見の記憶がありません。4日目の旅行者は、明らかなものをすでに見てしまったからこそアイデアが尽きているのに、まるで初日のように扱われます。</p>
+
+    <div class="callout">
+      <strong>核心的な問題：</strong>既存のプラットフォームは人気度と支払いで場所を順位付けします。有用な発見システムは、今この瞬間のあなたの特定の状況——場所、時間、天気、開いているもの、まだ見ていないもの——に対する関連性でランク付けするべきです。
+    </div>
+
+    <h2>SEOがすべてをさらに悪化させる理由</h2>
+    <p>「バルセロナでできること」をGoogle検索すると、最初のページはコンテンツファームとアフィリエイト主導のリスト記事に占領されています。「バルセロナで絶対やるべき47のこと」は、さまざまなストック写真で再パッケージされた同じ7つの観光スポットのリストで、ツアー予約のアフィリエイトリンクが散りばめられています。</p>
+    <p>Common Sense Media のデジタルリテラシーに関する研究は、一般ユーザーが本当に役立つコンテンツとランクインしてマネタイズするために設計されたコンテンツを区別するのが難しいことを強調しています。旅行分野ではこの問題が深刻です。</p>
+
+    <h2>より良いシステムはどのようなものか</h2>
+    <p>現在の選択肢のすべての問題点を知った上でゼロからローカル発見システムを設計するなら、何を作るでしょうか。</p>
+    <p>第一に、文脈認識型にします。午前7時の結果は午後10時と異なる。雨の日の結果は晴れの日と異なる。曜日を把握し、曜日特定のイベントや場所を表示します。</p>
+    <p>第二に、今実際に開いていてアクセス可能なものだけでフィルタリングします。「今日の営業」ではなく「今この瞬間開いていて、閉店まで何時間か」を表示します。</p>
+    <p>第三に、有料掲載を完全に排除します。推薦システムに広告を導入した瞬間、その有用性が損なわれます。最良の推薦は最も関連性の高いもの——支払ったものではありません。</p>
+    <p>第四に、ビジネスの枠を超えて考えます。新しい都市の黄金時間に最良の活動は川沿いを歩くことかもしれません。雨の火曜日の午後は屋根付き市場を探索することかもしれない。良い発見システムは商業施設だけでなく体験を推薦します。</p>
+    <p>第五に、最初からグローバルに機能するよう作ります。米国優先で徐々に拡大するプラットフォームではなく、リスボン、大阪、ブエノスアイレスで同様に機能するものです。</p>
+
+    <h2>人間の代替案（そしてなぜスケールしないか）</h2>
+    <p>最良の旅行推薦は通常、人間から来ます。ローマに2年住んでいた友人。本当に気にかけるホテルのコンシェルジュ。Redditのスレッドで「地元の人が実際に京都で何をするか？」と聞いてSEOコンテンツではなく本物の答えが返ってきたもの。</p>
+    <p>問題はアクセシビリティとスケールです。よく旅した友人がいつもいるわけではありません。Redditのスレッドは優れていますが、見つけて読んでフィルタリングする努力が必要です。そして2024年に書かれた京都のスレッドでは、推薦された場所の3つがすでに閉店しているかもしれません。</p>
+    <p>PingNear はこのアプローチを目指しています——文脈認識型の発見で、時間、天気、今あなたの近くで開いているものを考慮し、最初に支払ったものではなく。</p>
+
+    <h2>比較：現在のアプローチの評価</h2>
+    <ul>
+      <li><strong>Googleマップ</strong>——優れたカバレッジとナビゲーション。ただし有料掲載とビジネスSEOの影響あり。時間帯や天気の認識なし。最適用途：何が欲しいかわかっている場合の特定ビジネス検索。</li>
+      <li><strong>TripAdvisor</strong>——大きなレビューデータベース。ただしランキングはレビュー数より品質を優先しない。観光客の罠増幅効果あり。最適用途：すでに特定した場所の詳細レビューを読む。</li>
+      <li><strong>Yelp</strong>——アメリカでは使えるが、国際的にはほぼ役立たない。体験より商業施設中心。最適用途：米国国内の食事決定。</li>
+      <li><strong>ローカルガイド（Time Outなど）</strong>——その都市を知る人々による高品質なキュレーション。ただし更新が遅く、主要都市に限定、リアルタイム認識なし。最適用途：旅行前の計画と近隣の把握。</li>
+      <li><strong>文脈認識アプリ</strong>——時間、天気、営業時間、近さによるリアルタイムフィルタリング。有料掲載なし。最適用途：すでにある場所にいて今何をすべきかを知りたい場合の自発的な発見。</li>
+    </ul>
+
+    <h2>今すぐできること</h2>
+    <p>より良いツールが普及するまで、既存のプラットフォームからより有用な結果を得るための実践的な戦略があります。</p>
+    <p><strong>検索を具体的にする：</strong>「近くでできること」は最悪のクエリです。「今開いている屋内アクティビティ」や「屋外席のあるカフェ」はより関連性の高い結果をもたらします。</p>
+    <p><strong>営業時間を独自に確認する：</strong>GoogleマップやTripAdvisorに記載された時間を鵜呑みにしないでください。特に祝日や営業時間が標準化されていない国では、場所自身のウェブサイトやSNSを確認しましょう。</p>
+    <p><strong>Redditやフォーラムを使い、日付を確認する：</strong>「[都市]でできること」のサブレディット検索は本物のローカル推薦を見つけることが多い。ただし情報が現在のものか確認してください。</p>
+    <p><strong>宿泊先で聞く、ただし具体的に：</strong>「何をすればいいですか？」ではなく「雨の朝にコーヒーを飲むならどこに行きますか？」と聞きましょう。</p>
+    <p><strong>歩いてから検索する：</strong>直感に反しますが、方向を決めて歩き、注意を払うことで最良の発見が生まれることがあります。検索エンジンは教会の裏の中庭、素晴らしい匂いのするパン屋、10分後に何かが始まる広場のことを知りません。目と鼻は今のところどんなアルゴリズムより優れた発見ツールです。</p>
+
+    <h2>まとめ</h2>
+    <p>「近くでできること」は見慣れない場所にいる人が発する最も自然な質問のひとつであり、それに答えるツールは仕事を著しく苦手としています。Googleマップはあなたの注目を売ります。TripAdvisorはすでに人気のあるものを増幅させます。Yelpは1カ国でしか機能しません。SEOコンテンツファームはアフィリエイトリンクの下に有用な情報を埋めます。そのどれも時刻、天気、何かが実際に開いているかを知りません。</p>
+    <p>本当に良いローカル推薦を提供するのに必要な情報はすでに存在しています。欠けているのは、それらを知的に組み合わせ、ビジネスが答えの中に現れるために料金を払う特権なしにユーザーの実際の質問を最初に置くシステムです。これは技術的な問題ではありません。インセンティブの問題です。そして解決可能です。</p>
+
+    <h2>関連記事</h2>
+    <ul class="related-posts">
+      <li><a href="/ja/blog/travel-map-from-photos.html">写真から旅行マップを作る方法</a></li>
+      <li><a href="/ja/blog/travel-journal-from-photos-no-tracking.html">トラッキングなしで写真から旅行日記を作る</a></li>
+      <li><a href="/ja/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps：旅行記録アプリ比較</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>「今、何をすべきか？」への より良い答えを</h3>
+      <p>PingNear は時間、天気、今近くで開いているものを考慮して、今する価値のあることを見つけます。広告も有料掲載もありません。</p>
+      <a href="/apps/pingnear/" class="btn btn-primary">App Store で近日公開</a>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 Blue Flame Games · <a href="../../">BFG ホーム</a> · <a href="../../#blog">その他の記事</a> · <a href="../../privacy.html">プライバシー</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
