@@ -327,6 +327,7 @@
       { "@type": "SoftwareApplication", "name": "PaceGrid", "url": "https://bfgapps.co/apps/pacegrid/" },
       { "@type": "SoftwareApplication", "name": "Minua", "url": "https://bfgapps.co/apps/minua/" },
       { "@type": "SoftwareApplication", "name": "Bellgrave", "url": "https://bfgapps.co/apps/bellgrave/" },
+      { "@type": "SoftwareApplication", "name": "Card Bash", "url": "https://bfgapps.co/apps/cardbash/" },
       { "@type": "SoftwareApplication", "name": "PingNear", "url": "https://bfgapps.co/apps/pingnear/" },
       { "@type": "SoftwareApplication", "name": "Keystrike", "url": "https://bfgapps.co/apps/keystrike/" },
       { "@type": "SoftwareApplication", "name": "Pen Licence", "url": "https://bfgapps.co/apps/penlicence/" }
@@ -344,7 +345,7 @@
       {"@type": "Question", "name": "What is a safe creative app for kids with no ads?", "acceptedAnswer": {"@type": "Answer", "text": "Sparks Studios lets children aged 4-12 draw, write stories, and compose music with on-device AI that assists without taking over. Stories are built collaboratively with age-matched vocabulary. Finished stories become illustrated storybooks with the child's drawings and soundtracks. Drawing supports Apple Pencil with four brush types, and music uses drag-and-drop loops. Nothing is uploaded. Parental controls include session time limits and a maths-gate."}},
       {"@type": "Question", "name": "How does PhotoFlight track your travels?", "acceptedAnswer": {"@type": "Answer", "text": "PhotoFlight scans GPS metadata from your existing photos and builds a travel passport with countries, cities, flights, airlines, and distance stats. It detects trips automatically, estimates flights from GPS jumps, and groups everything into a timeline. Includes 10 achievements, a photo heatmap, percentile benchmarks, and shareable passport cards. All processing is on-device — no new tracking needed."}},
       {"@type": "Question", "name": "Do BFG apps use subscriptions?", "acceptedAnswer": {"@type": "Answer", "text": "BFG uses the pricing model that fits each app. Apps with mostly on-device features typically use a one-time unlock, while apps with ongoing cloud or AI costs may use subscriptions. Kanesh Pro and Sparks Studios Premium use subscriptions, while Arithmetix, Cognithix, PhotoFlight, Cyla, Cloudmesh Weather, and PaceGrid use one-time unlocks. No BFG app uses ads or sells personal data."}},
-      {"@type": "Question", "name": "Are BFG apps actually private, or is that just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "Most BFG apps make zero network requests — Sparks Studios, PhotoFlight, Cyla, PaceGrid, Minua, Bellgrave, and Pen Licence are fully on-device. Kanesh connects to fetch public market data but collects nothing about you. Cloudmesh Weather transmits anonymous barometric readings for its optional community mesh. Arithmetix and Cognithix offer optional parent accounts via Firebase for progress sync — a parent email is stored, no per-question answers are uploaded. No BFG app uses advertising SDKs, third-party analytics, or behavioural profiling. See the per-app breakdown on the homepage for the exact picture."}},
+      {"@type": "Question", "name": "Are BFG apps actually private, or is that just marketing?", "acceptedAnswer": {"@type": "Answer", "text": "Most BFG apps make zero network requests — Sparks Studios, PhotoFlight, Cyla, PaceGrid, Minua, Bellgrave, and Pen Licence are fully on-device. Card Bash stores game progress locally and uses Apple's App Store only for optional purchases. Kanesh connects to fetch public market data but collects nothing about you. Cloudmesh Weather transmits anonymous barometric readings for its optional community mesh. Arithmetix and Cognithix offer optional parent accounts via Firebase for progress sync — a parent email is stored, no per-question answers are uploaded. No BFG app uses advertising SDKs, third-party analytics, or behavioural profiling. See the per-app breakdown on the homepage for the exact picture."}},
       {"@type": "Question", "name": "What is the best screen time app for kids that rewards learning?", "acceptedAnswer": {"@type": "Answer", "text": "Minua lets children earn fun app access by spending time in learning apps chosen by their parent. Parents set a configurable ratio and a daily time window. Built on Apple's own parental controls framework, everything stays on-device with no accounts, no cloud, and no tracking. One-time purchase, no subscription."}},
       {"@type": "Question", "name": "What is the most private period tracker app?", "acceptedAnswer": {"@type": "Answer", "text": "Cyla tracks your cycle entirely on-device with no accounts, no cloud, and no servers. It integrates with Apple Watch wrist temperature data through HealthKit for improved cycle predictions. Your health data is encrypted by iOS and never transmitted anywhere. One-time purchase, no subscription."}},
       {"@type": "Question", "name": "What is a good running app without a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "PaceGrid is a one-time purchase GPS running, cycling, and hiking tracker with Injury Guard training load monitoring to help prevent overtraining injuries. It supports Apple Watch, stores all data on-device, and integrates with Apple Health. No monthly fees, no cloud accounts, no location data sent to servers."}},
@@ -378,6 +379,7 @@
             <a href="/apps/penlicence/">Pen Licence</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
+            <a href="/apps/cardbash/">Card Bash</a>
             <a href="/apps/meetingmind/">MeetingMind</a>
             <a href="/apps/pingnear/">PingNear</a>
           </div>
@@ -405,7 +407,7 @@
   <!-- Hero -->
   <section class="hero">
     <h1>Apps that keep your data <strong>where it belongs</strong>.</h1>
-    <p class="subtitle">Thirteen iOS apps for finance, education, health, fitness, travel, weather, music, and games. No ads. No third-party trackers. Most run fully on-device; the few that use the network say exactly what for.</p>
+    <p class="subtitle">Fourteen iOS apps for finance, education, health, fitness, travel, weather, music, and games. No ads. No third-party trackers. Most run fully on-device; the few that use the network say exactly what for.</p>
     <div class="ctas">
       <a href="#apps" class="btn-primary">Browse apps</a>
       <a href="#transparency" class="btn-outline">What each app does</a>
@@ -446,6 +448,16 @@
         <h3><a href="/apps/bellgrave/">Bellgrave</a></h3>
         <p class="card-desc">Action roguelike in a dark 3D cathedral. 11 heroes, 8 bosses, full controller support. One-time unlock, no battle pass.</p>
         <a class="card-link" href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">App Store <span class="arrow">&rarr;</span></a>
+      </div>
+    </article>
+
+    <article class="app-card">
+      <div class="card-img"><img src="assets/cardbash-hero.png" alt="Card Bash creature card battler" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-cat">Games</div>
+        <h3><a href="/apps/cardbash/">Card Bash</a></h3>
+        <p class="card-desc">Creature card battles, pack openings, quests, deck building, and endgame card upgrades. Optional App Store purchases.</p>
+        <a class="card-link" href="/apps/cardbash/">Coming soon <span class="arrow">&rarr;</span></a>
       </div>
     </article>
 
@@ -652,6 +664,13 @@
               <td>Single-player game. No cloud saves, no accounts, no telemetry.</td>
             </tr>
             <tr>
+              <td class="app-name"><a href="/apps/cardbash/">Card Bash</a></td>
+              <td>Local game progress + optional Apple purchase state</td>
+              <td class="no">No</td>
+              <td class="no">No</td>
+              <td>Card collection and battles stay on device. Network use is limited to Apple's App Store purchase flow.</td>
+            </tr>
+            <tr>
               <td class="app-name"><a href="/apps/penlicence/">Pen Licence</a></td>
               <td class="no">None</td>
               <td class="no">No</td>
@@ -851,7 +870,7 @@
         <p>BFG uses the pricing model that fits each app. Apps with mostly on-device features typically use a one-time unlock, while apps with ongoing cloud or AI costs may use subscriptions instead. Kanesh Pro and Sparks Studios Premium use subscriptions, while Arithmetix, Cognithix, PhotoFlight, Cyla, Cloudmesh Weather, and PaceGrid use one-time unlocks. Across all of them, the constant is no ads and no data monetisation.</p>
 
         <h3>Are BFG apps actually private, or is that just marketing?</h3>
-        <p>Tiered transparency rather than a blanket claim. <strong>Seven apps are fully on-device</strong> and make zero network requests: Sparks Studios, PhotoFlight, Cyla, PaceGrid, Minua, Bellgrave, and Pen Licence. <strong>Kanesh</strong> connects to the internet to fetch public market data (SEC filings, FRED series, market providers) but BFG collects nothing about you — its AI runs on-device. <strong>Cloudmesh Weather</strong> fetches weather data and contributes anonymous barometric readings to an optional community mesh; location is coarsened and no user ID is attached. <strong>Arithmetix and Cognithix</strong> offer optional parent accounts via Google Firebase for cross-device progress sync — a parent email and aggregated progress are stored, but no per-question answers are uploaded. No BFG app uses ads, advertising identifiers, third-party analytics SDKs, or behavioural profiling. The full per-app table is at the top of this page.</p>
+        <p>Tiered transparency rather than a blanket claim. <strong>Seven apps are fully on-device</strong> and make zero network requests: Sparks Studios, PhotoFlight, Cyla, PaceGrid, Minua, Bellgrave, and Pen Licence. <strong>Card Bash</strong> stores gameplay locally and uses the network only for Apple's optional purchase flow. <strong>Kanesh</strong> connects to the internet to fetch public market data (SEC filings, FRED series, market providers) but BFG collects nothing about you — its AI runs on-device. <strong>Cloudmesh Weather</strong> fetches weather data and contributes anonymous barometric readings to an optional community mesh; location is coarsened and no user ID is attached. <strong>Arithmetix and Cognithix</strong> offer optional parent accounts via Google Firebase for cross-device progress sync — a parent email and aggregated progress are stored, but no per-question answers are uploaded. No BFG app uses ads, advertising identifiers, third-party analytics SDKs, or behavioural profiling. The full per-app table is at the top of this page.</p>
 
         <h3>What is the best screen time app for kids that rewards learning?</h3>
         <p>Minua lets children earn fun app access by spending time in learning apps chosen by their parent. Parents set a configurable ratio and a daily time window when fun apps can be unlocked. Built on Apple's own parental controls framework, everything stays on-device with no accounts, no cloud, and no tracking. PIN-protected settings prevent children from changing the rules. One-time purchase, no subscription.</p>
