@@ -7,8 +7,8 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
-  <title>Card Bash — BFG</title>
-  <meta name="description" content="Card Bash is an original creature card battler for iPhone and iPad with pack openings, quests, deck building, arena routes, and card upgrades.">
+  <title>Card Bash - Creature Card RPG for iPhone and iPad</title>
+  <meta name="description" content="Open a free pack every day, collect 200+ original Bash Beasts, and outplay your rivals in quick, tactical battles. Card Bash for iPhone and iPad.">
   <link rel="canonical" href="https://bfgapps.co/apps/cardbash/">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,13 +18,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:760px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}.cardbash-icon{width:132px;height:132px;border-radius:30px;box-shadow:0 24px 70px rgba(120,40,255,.34);margin:24px 0}.feature-list{display:grid;gap:16px;margin:24px 0}.feature-list li{list-style:none;padding:18px 20px;border:1px solid var(--border,rgba(0,0,0,.12));border-radius:16px;background:var(--panel,rgba(255,255,255,.48))}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}.cardbash-icon{width:104px;height:104px;border-radius:24px}}</style>
+  <style>
+    body.cardbash-page{background:#12051e;color:#f7f4ff}
+    body.cardbash-page .container{max-width:1180px}
+    .cb-hero{min-height:calc(100vh - 64px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:44px;align-items:center;padding:44px 0 34px}
+    .cb-hero-media{position:relative;border-radius:22px;overflow:hidden;min-height:520px;background:#1b0930;box-shadow:0 30px 90px rgba(17,237,255,.18)}
+    .cb-hero-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+    .cb-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,4,20,.12),rgba(9,4,20,.55))}
+    .cb-kicker{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#37e6ff;margin-bottom:14px}
+    .cb-hero h1{font-family:'DM Sans',sans-serif;font-size:clamp(48px,7vw,96px);font-weight:900;letter-spacing:0;line-height:.95;margin-bottom:20px}
+    .cb-lede{font-size:clamp(18px,2.1vw,25px);line-height:1.45;color:rgba(247,244,255,.82);max-width:620px}
+    .cb-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.cb-button{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:900;border:1px solid rgba(255,255,255,.18)}.cb-button.primary{background:#ff2f7d;color:#fff}.cb-button.secondary{background:rgba(255,255,255,.08);color:#fff}
+    .cb-pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.cb-pill{padding:8px 11px;border:1px solid rgba(55,230,255,.32);border-radius:999px;background:rgba(55,230,255,.1);font-size:13px;font-weight:800;color:#cdf9ff}
+    .cb-section{padding:46px 0}.cb-section h2{font-family:'DM Sans',sans-serif;font-size:clamp(30px,4vw,52px);font-weight:900;letter-spacing:0;line-height:1.05;margin-bottom:12px}.cb-section>p{max-width:760px;color:rgba(247,244,255,.72);font-size:18px}
+    .cb-screens{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:16px;margin-top:26px}.cb-shot{border-radius:18px;overflow:hidden;background:#211031;border:1px solid rgba(255,255,255,.1);box-shadow:0 22px 60px rgba(0,0,0,.25)}.cb-shot img{display:block;width:100%;height:100%;object-fit:cover}
+    .cb-loop{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}.cb-loop article{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.065);border-radius:16px;padding:20px}.cb-loop h3{font-size:20px;line-height:1.2;margin-bottom:8px}.cb-loop p{color:rgba(247,244,255,.68);line-height:1.55}
+    .cb-split{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:28px;align-items:center}.cb-split img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(0,0,0,.28)}.cb-copy p{color:rgba(247,244,255,.72);font-size:17px;margin-top:12px}.cb-copy ul{margin:18px 0 0 18px;color:rgba(247,244,255,.78)}
+    .cb-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.cb-trust div{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;background:rgba(0,0,0,.18)}.cb-trust strong{display:block;color:#fff;margin-bottom:4px}.cb-trust span{color:rgba(247,244,255,.65)}
+    body.cardbash-page footer{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;color:rgba(247,244,255,.62)}body.cardbash-page a{color:#37e6ff}
+    @media(max-width:900px){.cb-hero,.cb-split{grid-template-columns:1fr}.cb-hero-media{min-height:360px}.cb-screens{grid-template-columns:repeat(2,1fr);overflow:visible}.cb-loop,.cb-trust{grid-template-columns:1fr 1fr}}
+    @media(max-width:620px){body.cardbash-page .container{padding:0 18px}.cb-hero{padding-top:28px}.cb-hero h1{font-size:48px}.cb-screens{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}.cb-shot{min-width:250px;scroll-snap-align:start}.cb-loop,.cb-trust{grid-template-columns:1fr}.cb-actions a{width:100%}}
+  </style>
   <link rel="preload" href="/style.css" as="style">
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Card Bash","item":"https://bfgapps.co/apps/cardbash/"}]}</script>
 </head>
-<body>
+<body class="cardbash-page">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -71,21 +92,84 @@
   </nav>
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
   <div class="container">
-    <div class="app-hero">
-      <img class="cardbash-icon" src="/assets/cardbash-hero.png" alt="Card Bash app icon">
-      <h1>Card Bash</h1>
-      <p class="app-tagline">Creature cards, arena runs, and pack collecting</p>
-    </div>
+    <section class="cb-hero">
+      <div>
+        <div class="cb-kicker">Collect. Battle. Bash.</div>
+        <h1>Card Bash</h1>
+        <p class="cb-lede">Open a free pack every day, collect 200+ original Bash Beasts, and outplay your rivals in fast, tactical battles — where smart choices beat brute force and every pull can become a long-term favorite.</p>
+        <div class="cb-actions">
+          <a class="cb-button primary" href="https://apps.apple.com/app/id6775067276">View on the App Store</a>
+          <a class="cb-button secondary" href="#screens">See gameplay</a>
+        </div>
+        <div class="cb-pill-row" aria-label="Game highlights">
+          <span class="cb-pill">Over 200 cards</span>
+          <span class="cb-pill">Pack openings</span>
+          <span class="cb-pill">Arena routes</span>
+          <span class="cb-pill">Card XP</span>
+          <span class="cb-pill">iPhone and iPad</span>
+        </div>
+      </div>
+      <div class="cb-hero-media" aria-label="Card Bash key art">
+        <img src="/assets/CardBash/key-art.png" alt="Neon Card Bash creature card key art">
+      </div>
+    </section>
+
     <nav class="app-nav"><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a><a href="terms.html">Terms of Use</a></nav>
 
-    <p>Card Bash is an original mobile card battler built around pack openings, creature collecting, daily quests, and short arena runs. Build a deck from the cards you unlock, battle AI rivals, and improve favorite cards over time.</p>
-    <ul class="feature-list">
-      <li><strong>Collect Bash Beasts.</strong> Open packs, discover rarity tiers, and fill a collection that starts empty.</li>
-      <li><strong>Battle through arena routes.</strong> Manage mana, items, squad health, and rival encounters in short sessions.</li>
-      <li><strong>Progress daily.</strong> Quests, free packs, and duplicate conversion feed a conservative in-game economy.</li>
-      <li><strong>Build your deck.</strong> Choose which cards go into battle and upgrade favorites with levels, forge boosts, and fusion.</li>
-    </ul>
-    <p>Progress is stored locally on your device. Optional purchases are processed by Apple through the App Store.</p>
+    <section id="screens" class="cb-section">
+      <h2>What players see first</h2>
+      <p>Card Bash is built around moments that are easy to understand at a glance: a pack is ready, a new creature joins the collection, a deck gets stronger, and the next arena route asks for one more fight.</p>
+      <div class="cb-screens">
+        <div class="cb-shot"><img src="/assets/CardBash/01-home.png" alt="Card Bash home screen with free pack, quests, and battle shortcuts"></div>
+        <div class="cb-shot"><img src="/assets/CardBash/02-pack-summary.png" alt="Pack opening summary with newly revealed cards"></div>
+        <div class="cb-shot"><img src="/assets/CardBash/04-card-art.png" alt="Bash Beasts creature card artwork collection"></div>
+        <div class="cb-shot"><img src="/assets/CardBash/03-battle.png" alt="Card Bash tactical creature battle"></div>
+        <div class="cb-shot"><img src="/assets/CardBash/05-card-detail.png" alt="Detailed card inspection with stats and backstory"></div>
+      </div>
+    </section>
+
+    <section class="cb-section">
+      <h2>The loop is simple</h2>
+      <p>Every system is there to support the same player journey: collect something exciting, make a decision, see your deck improve, and come back when the next pack or run is ready.</p>
+      <div class="cb-loop">
+        <article><h3>Open packs</h3><p>Start from an empty collection, claim daily packs, and reveal original Bash Beasts across different rarity tiers.</p></article>
+        <article><h3>Build a squad</h3><p>Pick cards from your own collection, inspect stats and backstories, then choose who earns a place in battle.</p></article>
+        <article><h3>Battle it out</h3><p>Take your squad into quick, tactical fights where the right call beats brute force, and climb toward tougher rivals.</p></article>
+        <article><h3>Grow favorites</h3><p>Cards earn XP, level up, and can be improved over time so a favorite pull can stay relevant.</p></article>
+      </div>
+    </section>
+
+    <section class="cb-section cb-split">
+      <img src="/assets/CardBash/03-battle.png" alt="Card Bash battle gameplay screenshot">
+      <div class="cb-copy">
+        <h2>Fast battles, smart choices</h2>
+        <p>Battles are quick but tactical — the right creature and a clever play beat raw power. Easy to pick up, with enough depth to keep every run interesting.</p>
+        <ul>
+          <li>Quick fights you can finish in one sitting.</li>
+          <li>Smart matchups reward thinking over button-mashing.</li>
+          <li>Climb toward tougher rivals as you go.</li>
+          <li>Tap any card for its art, stats, and lore.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cb-section cb-split">
+      <div class="cb-copy">
+        <h2>Collectible first, store second</h2>
+        <p>The Store exists for optional boosts, but the core promise is the collection: art worth looking at, cards worth upgrading, and a clear reason to open the next pack. Duplicate pulls turn into useful currency so pack openings still move the account forward.</p>
+        <p>Progress is stored locally on your device. Optional purchases are processed by Apple through the App Store.</p>
+      </div>
+      <img src="/assets/CardBash/04-card-art.png" alt="Card Bash creature collection artwork screenshot">
+    </section>
+
+    <section class="cb-section">
+      <h2>Built for trust</h2>
+      <div class="cb-trust">
+        <div><strong>No account required</strong><span>Start playing without creating a profile.</span></div>
+        <div><strong>Local progress</strong><span>Collection, quests, wallet, and settings are stored on device.</span></div>
+        <div><strong>Apple purchases</strong><span>Optional in-app purchases are processed by Apple.</span></div>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games. All rights reserved.</p>
