@@ -25,7 +25,7 @@
 - Pen Licence: https://bfgapps.co/apps/penlicence/ — Handwriting practice for iPad with Apple Pencil pressure feedback. 26-letter Zaner-Bloser curriculum, honest stroke checking. On-device, no accounts.
 - Keystrike: https://bfgapps.co/apps/keystrike/ — Guided piano practice for iPhone, iPad, and Mac. Falling notes, section loops, MIDI input, acoustic mode, imports, and reports. 7-day trial, then one-time unlock.
 
-## Blog (49 articles)
+## Blog (54 articles)
 
 - Blog index: https://bfgapps.co/#blog
 - Categories: Education, Finance, Parenting, Health, Fitness, Travel, Weather
