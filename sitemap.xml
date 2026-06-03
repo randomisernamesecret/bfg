@@ -18,6 +18,10 @@
   <url><loc>https://bfgapps.co/apps/cardbash/privacy.html</loc><lastmod>2026-06-01</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/cardbash/support.html</loc><lastmod>2026-06-01</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/cardbash/terms.html</loc><lastmod>2026-06-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bfgapps.co/apps/mergebash/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://bfgapps.co/apps/mergebash/privacy.html</loc><lastmod>2026-06-03</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://bfgapps.co/apps/mergebash/support.html</loc><lastmod>2026-06-03</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://bfgapps.co/apps/mergebash/terms.html</loc><lastmod>2026-06-03</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bfgapps.co/apps/cloudmesh/</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://bfgapps.co/apps/cloudmesh/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/cloudmesh/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
@@ -37,10 +41,6 @@
   <url><loc>https://bfgapps.co/apps/keystrike/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/keystrike/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/keystrike/terms.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://bfgapps.co/apps/meetingmind/</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bfgapps.co/apps/meetingmind/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://bfgapps.co/apps/meetingmind/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://bfgapps.co/apps/meetingmind/terms.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bfgapps.co/apps/minua/</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://bfgapps.co/apps/minua/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/minua/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
@@ -57,10 +57,6 @@
   <url><loc>https://bfgapps.co/apps/photoflight/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/photoflight/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/photoflight/terms.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://bfgapps.co/apps/pingnear/</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bfgapps.co/apps/pingnear/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://bfgapps.co/apps/pingnear/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://bfgapps.co/apps/pingnear/terms.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bfgapps.co/apps/sparks-studios/</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://bfgapps.co/apps/sparks-studios/privacy.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/sparks-studios/support.html</loc><lastmod>2026-05-13</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>

@@ -28,8 +28,14 @@
     body.cardbash-page .site-nav .nav-brand,body.cardbash-page .site-nav .nav-links>a,body.cardbash-page .site-nav .nav-links>.nav-dropdown>a{color:#f7f4ff}
     body.cardbash-page .site-nav .nav-links>a:hover,body.cardbash-page .site-nav .nav-links>.nav-dropdown>a:hover{color:#37e6ff}
     body.cardbash-page .nav-dropdown-menu{background:#1a0a2b;border:1px solid rgba(255,255,255,.1)}
-    body.cardbash-page .nav-dropdown-menu a{color:#e9e2ff}
-    body.cardbash-page .nav-dropdown-menu .menu-label{color:#9a8bbf}
+    /* The dark game-page dropdown is forced dark in BOTH theme toggles, so its
+       link text must stay light. style.css sets `.nav-dropdown-menu a` color
+       with !important, so the override needs !important too — otherwise the
+       links go dark-on-dark and vanish in light mode. */
+    body.cardbash-page .nav-dropdown-menu a{color:#e9e2ff !important}
+    body.cardbash-page .nav-dropdown-menu a:hover{background:rgba(255,255,255,.06);color:#37e6ff !important}
+    body.cardbash-page .nav-dropdown-menu .menu-label{color:#9a8bbf !important}
+    body.cardbash-page .nav-dropdown-menu hr{border-top-color:rgba(255,255,255,.12)}
     body.cardbash-page .theme-toggle{background:rgba(255,255,255,.08);color:#f7f4ff;border:1px solid rgba(255,255,255,.18)}
     body.cardbash-page .container{max-width:1180px}
     .cb-hero{min-height:calc(100vh - 64px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:44px;align-items:center;padding:44px 0 34px}
@@ -80,8 +86,7 @@
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/meetingmind/">MeetingMind</a>
-            <a href="/apps/pingnear/">PingNear</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>

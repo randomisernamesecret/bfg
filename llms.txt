@@ -20,10 +20,10 @@
 - PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, and hike tracking with Injury Guard training load monitoring. Apple Watch support. One-time purchase.
 - Minua: https://bfgapps.co/apps/minua/ — Children earn screen time through learning apps. Built on Apple's parental controls framework. Fully on-device, no accounts.
 - Bellgrave: https://bfgapps.co/apps/bellgrave/ — Action roguelike in a dark 3D cathedral. 11 heroes, 8 bosses, weapon evolutions. One-time unlock, no subscription, no ads.
-- Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device.
+- Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device. Coming soon.
+- Merge Bash: https://bfgapps.co/apps/mergebash/ — Merge-to-evolve creature collector with league orders and idle rewards. No energy walls. Game progress stays on device. Coming soon.
 - Pen Licence: https://bfgapps.co/apps/penlicence/ — Handwriting practice for iPad with Apple Pencil pressure feedback. 26-letter Zaner-Bloser curriculum, honest stroke checking. On-device, no accounts.
 - Keystrike: https://bfgapps.co/apps/keystrike/ — Guided piano practice for iPhone, iPad, and Mac. Falling notes, section loops, MIDI input, acoustic mode, imports, and reports. 7-day trial, then one-time unlock.
-- PingNear: https://bfgapps.co/apps/pingnear/ — Context-aware travel discovery. What to do right now, right here. Time, weather, and location aware. Coming soon.
 
 ## Blog (49 articles)
 
