@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="apple-itunes-app" content="app-id=6760582379">
+  <title>Kanesh — Terminal de données financières avec sources liées | BFG</title>
+  <meta name="description" content="Kanesh relie chaque chiffre financier à son dépôt d'origine. IA sur l'appareil, 53 pays, suivi des transactions du Congrès. Aucun terminal Bloomberg requis.">
+  <meta property="og:title" content="Kanesh — Terminal de données financières avec sources liées">
+  <meta property="og:description" content="Chaque chiffre lié à sa source. Requêtes IA sur l'appareil, 53 pays, suivi du Congrès. Des données financières que vous pouvez vraiment vérifier.">
+  <meta property="og:url" content="https://bfgapps.co/fr/apps/kanesh/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kanesh — Terminal de données financières avec sources liées">
+  <meta name="twitter:description" content="Chaque chiffre lié à sa source. Requêtes IA sur l'appareil, 53 pays, suivi du Congrès. Des données financières que vous pouvez vraiment vérifier.">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <link rel="canonical" href="https://bfgapps.co/fr/apps/kanesh/">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/apps/kanesh/">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/apps/kanesh/">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/apps/kanesh/">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/apps/kanesh/">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/apps/kanesh/">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/apps/kanesh/">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/apps/kanesh/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="/style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Kanesh",
+    "description": "Source-linked financial data terminal with on-device AI. Every number traced back to its original SEC filing or data source.",
+    "brand": { "@type": "Organization", "name": "Blue Flame Games" },
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "iOS",
+    "image": "https://bfgapps.co/assets/kanesh-hero.png",
+    "url": "https://bfgapps.co/fr/apps/kanesh/",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://apps.apple.com/gb/app/kanesh/id6760582379",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "2"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Kanesh best used for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kanesh is built for people who want to research stocks, check financial statements, and verify where financial numbers come from directly on an iPhone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Kanesh a Bloomberg alternative?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kanesh is positioned as a mobile alternative for people who want source-linked financial data and on-device AI queries without the cost and complexity of Bloomberg."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Kanesh track my portfolio or questions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kanesh emphasizes on-device processing and privacy-first design, with queries processed locally rather than tied to an account-based cloud workflow."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/fr/apps/kanesh/"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/fr/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/fr/#apps">Apps</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">Sur l'App Store</div>
+            <a href="/fr/apps/kanesh/">Kanesh</a>
+            <a href="/fr/apps/cognithix/">Cognithix</a>
+            <a href="/fr/apps/arithmetix/">Arithmetix</a>
+            <a href="/fr/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/fr/apps/photoflight/">PhotoFlight</a>
+            <a href="/fr/apps/cyla/">Cyla</a>
+            <a href="/fr/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/fr/apps/pacegrid/">PaceGrid</a>
+            <a href="/fr/apps/minua/">Minua</a>
+            <a href="/fr/apps/penlicence/">Pen Licence</a>
+            <hr>
+            <div class="menu-label">Bientôt disponible</div>
+            <a href="/fr/apps/cardbash/">Card Bash</a>
+            <a href="/fr/apps/mergebash/">Merge Bash</a>
+          </div>
+        </div>
+        <a href="/fr/#blog">Blog</a>
+        <a href="/fr/about/">À propos</a>
+        <a href="mailto:blueflamegames@proton.me">Contact</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Language">EN</a>
+          <div class="nav-dropdown-menu">
+            <a href="/apps/kanesh/" data-lang="en">English</a>
+            <a href="/de/apps/kanesh/" data-lang="de">Deutsch</a>
+            <a href="/es/apps/kanesh/" data-lang="es">Español</a>
+            <a href="/fr/apps/kanesh/" data-lang="fr">Français</a>
+            <a href="/ja/apps/kanesh/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/apps/kanesh/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+  <div class="container">
+
+    <div class="app-landing-hero">
+      <span class="app-tag app-tag-finance">Finance</span>
+      <h1>Kanesh</h1>
+      <p class="app-subtitle">Données financières avec sources liées, vérifiables à la demande.</p>
+      <div class="hero-visual">
+        <img src="/assets/kanesh-hero.png" alt="L'app Kanesh affichant des données financières étiquetées avec leur source et des liens vers les dépôts SEC sur iPhone" loading="lazy">
+      </div>
+      <div class="hero-cta">
+        <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" class="app-cta" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+      </div>
+      <div class="app-quick-facts">
+        <div class="fact"><strong>53 pays</strong>Actions mondiales</div>
+        <div class="fact"><strong>IA sur l'appareil</strong>Requêtes privées</div>
+        <div class="fact"><strong>Sources liées</strong>Chaque chiffre</div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Ce que fait l'app</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Données financières avec source étiquetée</h3>
+          <p>Chaque chiffre renvoie à son dépôt SEC d'origine, à sa série FRED ou à son fournisseur de données. Appuyez sur n'importe quelle valeur pour voir exactement d'où elle provient.</p>
+        </div>
+        <div class="feature">
+          <h3>Requêtes en langage naturel</h3>
+          <p>Posez des questions en français comme « Quelle était la marge brute d'Apple le trimestre dernier ? » L'IA sur l'appareil traite votre requête entièrement sur votre iPhone.</p>
+        </div>
+        <div class="feature">
+          <h3>Globe 3D — 53 pays</h3>
+          <p>Explorez les actions mondiales via un globe 3D interactif. La couverture s'étend à 53 pays, pas seulement aux marchés américains.</p>
+        </div>
+        <div class="feature">
+          <h3>Suivi des transactions du Congrès</h3>
+          <p>Découvrez quelles actions les membres du Congrès américain achètent et vendent, directement à partir des déclarations de divulgation obligatoire.</p>
+        </div>
+        <div class="feature">
+          <h3>IA sur l'appareil</h3>
+          <p>Toutes les requêtes sont traitées localement. Vos questions ne quittent jamais l'appareil et aucun compte n'est nécessaire.</p>
+        </div>
+        <div class="feature">
+          <h3>Accès direct à SEC EDGAR</h3>
+          <p>Consultez les dépôts 10-K, 10-Q et 8-K directement depuis EDGAR. Des données de source primaire, sans dépendance au bureau.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <div class="privacy-panel">
+        <h3>Confidentialité et données</h3>
+        <ul>
+          <li>Toutes les requêtes traitées sur l'appareil — rien ne quitte votre téléphone</li>
+          <li>Les requêtes API n'envoient que des symboles boursiers, aucune donnée personnelle</li>
+          <li>Aucun compte requis</li>
+          <li>Ni analytique ni pistage</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>À qui s'adresse l'app</h2>
+      <p>Kanesh s'adresse aux investisseurs, aux professionnels de la finance, aux étudiants et aux particuliers curieux qui souhaitent rechercher une information rapidement depuis leur téléphone sans perdre le lien vers la source originale. Elle est conçue pour répondre aux intentions de recherche derrière des expressions comme <strong>alternative à Bloomberg</strong>, <strong>app d'analyse boursière</strong> et <strong>app de données financières pour iPhone</strong>.</p>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Ce qui distingue Kanesh</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Ancrage dans les sources primaires</h3>
+          <p>Kanesh est conçue autour de la traçabilité. L'objectif n'est pas seulement d'afficher un chiffre, mais de montrer d'où il provient.</p>
+        </div>
+        <div class="feature">
+          <h3>Recherche pensée pour le mobile</h3>
+          <p>Beaucoup d'outils financiers donnent encore l'impression d'un logiciel de bureau comprimé sur petit écran. Kanesh vise une recherche rapide et fiable depuis un téléphone.</p>
+        </div>
+        <div class="feature">
+          <h3>Couverture mondiale</h3>
+          <p>La couverture de 53 pays donne à Kanesh une proposition plus solide que les apps qui se limitent aux actions américaines.</p>
+        </div>
+        <div class="feature">
+          <h3>Requêtes privées</h3>
+          <p>L'IA sur l'appareil signifie que vos requêtes de recherche ne font pas partie d'un flux de travail SaaS lié à un compte.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Requêtes les plus pertinentes</h2>
+      <p>Kanesh est la réponse idéale aux recherches comme <strong>meilleures apps financières pour investisseurs</strong>, <strong>comment analyser des actions sans Bloomberg</strong>, <strong>alternative mobile à Bloomberg</strong> et <strong>app de données financières avec sources liées</strong>. La page de l'app rend désormais ces correspondances plus explicites pour les moteurs de recherche et les assistants IA.</p>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Questions fréquentes</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Puis-je vérifier les données moi-même ?</h3>
+          <p>Oui. La vérification fait partie de la proposition de valeur. Kanesh est conçue pour relier les chiffres aux dépôts et aux jeux de données sources.</p>
+        </div>
+        <div class="feature">
+          <h3>Kanesh est-elle uniquement pour les marchés américains ?</h3>
+          <p>Non. L'une de ses caractéristiques distinctives est la couverture internationale dans 53 pays.</p>
+        </div>
+        <div class="feature">
+          <h3>Et si je cherche simplement une alternative à Bloomberg sur mon téléphone ?</h3>
+          <p>C'est précisément là où Kanesh se positionne. Consultez les guides ci-dessous pour voir comment elle se compare à d'autres outils.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-landing-section">
+      <h2>Articles associés</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/best-finance-apps-investors-2026.html">Les meilleures apps financières pour les investisseurs particuliers en 2026</a></li>
+        <li><a href="/blog/stock-research-without-bloomberg.html">Comment analyser des actions sans Bloomberg</a></li>
+        <li><a href="/blog/how-to-verify-financial-data-sources.html">Comment vérifier les sources de données financières</a></li>
+        <li><a href="/blog/insider-trading-congress-stocks.html">Transactions boursières du Congrès américain</a></li>
+        <li><a href="/blog/how-to-research-global-stocks-from-your-phone.html">Comment analyser des actions mondiales depuis son téléphone</a></li>
+      </ul>
+    </div>
+
+    <nav class="app-nav">
+      <a href="/apps/kanesh/privacy.html">Politique de confidentialité</a>
+      <a href="/apps/kanesh/terms.html">Conditions d'utilisation</a>
+    </nav>
+
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>
+    </footer>
+  </div>
+
+  <script src="/theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

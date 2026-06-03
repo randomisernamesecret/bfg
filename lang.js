@@ -29,10 +29,12 @@
   // Detect the locale of the page we're on.
   function currentLocaleFromPath() {
     var path = window.location.pathname;
-    var m = path.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\/(?:$|index\.html)/);
+    // Any path under a locale prefix (/de/, /de/apps/x/, /de/blog/x) is that
+    // locale — this keeps the preference correct on localized sub-pages too.
+    var m = path.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
     if (m && normaliseLocale(m[1])) return m[1];
     if (path === '/' || path === '/index.html') return 'en';
-    return null; // sub-page
+    return null; // English sub-page — don't clobber a saved preference
   }
 
   // Are we on a locale homepage (one we might redirect)?
