@@ -116,18 +116,18 @@
       aspect-ratio: 4/5;
       background: linear-gradient(160deg, var(--bg-alt) 0%, var(--surface) 100%);
       border-bottom: 1px solid var(--border-light);
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden; padding: 22px;
+      overflow: hidden;
     }
     .app-card .card-img img {
-      max-width: 100%; max-height: 100%;
-      width: auto; height: auto;
-      object-fit: contain;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(26,23,20,0.18);
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top center;
+      display: block;
       transition: transform 0.5s cubic-bezier(.2,.7,.2,1);
     }
-    .app-card:hover .card-img img { transform: scale(1.03) translateY(-3px); }
+    /* landscape art (Keystrike mockup, Merge Bash key art) reads better whole */
+    .app-card .card-img.contain { display:flex; align-items:center; justify-content:center; padding:18px; }
+    .app-card .card-img.contain img { width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; border-radius:10px; box-shadow:0 10px 26px rgba(26,23,20,0.18); }
+    .app-card:hover .card-img img { transform: scale(1.03); }
     .app-card .card-body {
       padding: 22px 22px 20px; flex: 1;
       display: flex; flex-direction: column;
@@ -421,7 +421,7 @@
   <section class="apps-grid" id="apps">
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/keystrike-hero.png" alt="Keystrike — guided piano practice" loading="lazy"></div>
+      <div class="card-img contain"><img src="assets/keystrike-hero.png" alt="Keystrike — guided piano practice" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Music</div>
         <h3><a href="/apps/keystrike/">Keystrike</a></h3>
@@ -431,7 +431,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/cloudmesh-hero.png" alt="Cloudmesh Weather — widgets and forecasts" loading="lazy"></div>
+      <div class="card-img"><img src="assets/cloudmesh/01.webp" alt="Cloudmesh Weather — widgets and forecasts" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Weather</div>
         <h3><a href="/apps/cloudmesh/">Cloudmesh Weather</a></h3>
@@ -441,7 +441,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/bellgrave-hero.png" alt="Bellgrave action roguelike" loading="lazy"></div>
+      <div class="card-img"><img src="assets/bellgrave/01.webp" alt="Bellgrave action roguelike" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Games</div>
         <h3><a href="/apps/bellgrave/">Bellgrave</a></h3>
@@ -451,7 +451,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/Minua/01_earn_screen_time_through_learning.png" alt="Minua — earn screen time through learning" loading="lazy"></div>
+      <div class="card-img"><img src="assets/minua/01.webp" alt="Minua — earn screen time through learning" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Kids</div>
         <h3><a href="/apps/minua/">Minua</a></h3>
@@ -461,7 +461,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/cognithix-hero.png" alt="Cognithix — 11+ exam preparation" loading="lazy"></div>
+      <div class="card-img"><img src="assets/cognithix/01.webp" alt="Cognithix — 11+ exam preparation" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Education</div>
         <h3><a href="/apps/cognithix/">Cognithix</a></h3>
@@ -471,7 +471,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/pacegrid-hero.png" alt="PaceGrid — fitness tracker" loading="lazy"></div>
+      <div class="card-img"><img src="assets/pacegrid/01.webp" alt="PaceGrid — fitness tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Fitness</div>
         <h3><a href="/apps/pacegrid/">PaceGrid</a></h3>
@@ -481,7 +481,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/arithmetix-hero.png" alt="Arithmetix — UK curriculum maths" loading="lazy"></div>
+      <div class="card-img"><img src="assets/arithmetix/01.webp" alt="Arithmetix — UK curriculum maths" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Education</div>
         <h3><a href="/apps/arithmetix/">Arithmetix</a></h3>
@@ -491,7 +491,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/photoflight-hero.png" alt="PhotoFlight — travel map from photos" loading="lazy"></div>
+      <div class="card-img"><img src="assets/photoflight/01.webp" alt="PhotoFlight — travel map from photos" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Travel</div>
         <h3><a href="/apps/photoflight/">PhotoFlight</a></h3>
@@ -501,7 +501,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/cyla-hero.png" alt="Cyla — private cycle tracker" loading="lazy"></div>
+      <div class="card-img"><img src="assets/cyla/01.webp" alt="Cyla — private cycle tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Health</div>
         <h3><a href="/apps/cyla/">Cyla</a></h3>
@@ -511,7 +511,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/kanesh-hero.png" alt="Kanesh — financial data terminal" loading="lazy"></div>
+      <div class="card-img"><img src="assets/kanesh/01.webp" alt="Kanesh — financial data terminal" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Finance</div>
         <h3><a href="/apps/kanesh/">Kanesh</a></h3>
@@ -521,7 +521,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/sparks-hero.png" alt="Sparks Studio — creative app for kids" loading="lazy"></div>
+      <div class="card-img"><img src="assets/sparks/01.webp" alt="Sparks Studio — creative app for kids" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Kids</div>
         <h3><a href="/apps/sparks-studios/">Sparks Studio</a></h3>
@@ -531,7 +531,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/penlicence-hero.png" alt="Pen Licence — handwriting practice for iPad" loading="lazy"></div>
+      <div class="card-img"><img src="assets/penlicence/01.webp" alt="Pen Licence — handwriting practice for iPad" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Education</div>
         <h3><a href="/apps/penlicence/">Pen Licence</a></h3>
@@ -541,7 +541,7 @@
     </article>
 
     <article class="app-card">
-      <div class="card-img"><img src="assets/MergeBash/hero.webp" alt="Merge Bash — neon creature merge game" loading="lazy"></div>
+      <div class="card-img contain"><img src="assets/MergeBash/hero.webp" alt="Merge Bash — neon creature merge game" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Games</div>
         <h3><a href="/apps/mergebash/">Merge Bash</a></h3>
