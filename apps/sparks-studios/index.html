@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#140a1f;--ink:#fbf2ff;--ink-soft:rgba(251,242,255,.85);--ink-faint:rgba(251,242,255,.64);--accent:#c084fc;--accent-ink:#ecd6ff;--cta:#fb7185;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#33184a 0%,#1f1030 60%,#140a1f 100%);--media-glow:rgba(192,132,252,.2);--nav-bg:rgba(20,10,31,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,7 +70,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"sparks-studios","item":"https://bfgapps.co/apps/sparks-studios/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -86,10 +90,10 @@
             <a href="/apps/pacegrid/">PaceGrid</a>
             <a href="/apps/minua/">Minua</a>
             <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -111,96 +115,30 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-kids">Kids</span>
-      <h1>Sparks Studio</h1>
-      <p class="app-subtitle">AI-powered creative playground for ages 4-12.</p>
-      <div class="hero-visual">
-        <img src="/assets/sparks-hero.png" alt="Sparks Studio app showing drawing, story, and music creation tools for kids on iPhone" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" class="app-cta" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>Ages 4-12</strong>Three age tiers</div>
-        <div class="fact"><strong>On-device AI</strong>Nothing uploaded</div>
-        <div class="fact"><strong>No ads</strong>Zero tracking</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What It Does</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Drawing canvas</h3>
-          <p>Freeform sketching with AI-powered prompts and suggestions. The AI assists without taking over.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Made for young creators</div>
+        <h1>Sparks Studio</h1>
+        <p class="ap-lede">A creative playground where kids draw, write stories and compose music — with a gentle on-device helper that gives ideas without ever taking over. Ages 4&ndash;12.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          <a class="ap-button secondary" href="#screens">See the app</a>
         </div>
-        <div class="feature">
-          <h3>Story builder</h3>
-          <p>Write stories with AI assistance for structure and vocabulary. Offers ideas when a child gets stuck, rather than writing for them.</p>
-        </div>
-        <div class="feature">
-          <h3>Music composer</h3>
-          <p>Create melodies by placing notes and hearing them played back. AI suggests harmonies and rhythmic patterns to accept or ignore.</p>
-        </div>
-        <div class="feature">
-          <h3>On-device AI</h3>
-          <p>All AI processing happens locally. Nothing is uploaded to any server. No account creation required.</p>
-        </div>
-        <div class="feature">
-          <h3>Age-adapted content</h3>
-          <p>Three tiers (4-6, 7-9, 10-12) adjust the interface, prompts, vocabulary, and complexity. One app from Reception through primary school.</p>
-        </div>
-        <div class="feature">
-          <h3>Parental controls</h3>
-          <p>Math gate entry, session time limits, and a creation gallery. No social sharing, no public gallery, no stranger interaction.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">On-device</span>
+          <span class="ap-pill">No ads</span>
+          <span class="ap-pill">No tracking</span>
+          <span class="ap-pill">No account</span>
+          <span class="ap-pill">Ages 4&ndash;12</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacy &amp; Data</h3>
-        <ul>
-          <li>Zero data collection — no accounts, no cloud, no analytics</li>
-          <li>All AI runs entirely on-device</li>
-          <li>COPPA compliant</li>
-          <li>No ads or tracking of any kind</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Sparks Studio creative tools for kids">
+        <img src="/assets/sparks/01.webp" alt="Sparks Studio home screen with drawing, story and music creation tools for kids" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>How Sparks Studio Compares</h2>
-      <table>
-        <thead>
-          <tr><th></th><th>Sparks Studio</th><th>Toca Boca</th><th>Sago Mini</th><th>GarageBand</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Core activity</td><td><strong>Create (draw, write, compose)</strong></td><td>Explore play worlds</td><td>Mini-games</td><td>Music production</td></tr>
-          <tr><td>Age range</td><td>4&ndash;12 (3 tiers)</td><td>3&ndash;9</td><td>2&ndash;5</td><td>8+ realistically</td></tr>
-          <tr><td>Pricing</td><td>Free + Premium subscription</td><td>Free + IAPs (&pound;1&ndash;5 each)</td><td>~&pound;7/mo</td><td>Free</td></tr>
-          <tr><td>AI features</td><td><strong>On-device AI (age-adapted)</strong></td><td>None</td><td>None</td><td>None</td></tr>
-          <tr><td>Apple Pencil</td><td><strong>Full pressure sensitivity</strong></td><td>Limited</td><td>No</td><td>No</td></tr>
-          <tr><td>Creative output</td><td>Storybooks, drawings, music</td><td>Screenshots of play</td><td>Screenshots</td><td>Music tracks</td></tr>
-          <tr><td>Privacy</td><td><strong>Zero data collection</strong></td><td>Some data</td><td>Minimal</td><td>Apple standard</td></tr>
-          <tr><td>Ads / IAPs</td><td>No ads / subscription</td><td>IAPs</td><td>None</td><td>None</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related Articles</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/sparks-studios-vs-toca-boca.html">Sparks Studio vs Toca Boca Compared</a></li>
-        <li><a href="/blog/creative-screen-time-for-kids.html">Creative Apps vs Passive Scrolling</a></li>
-        <li><a href="/blog/getting-rid-of-youtube-kids.html">Replacing YouTube With Creative Apps</a></li>
-        <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">Choosing Safe Apps for Kids</a></li>
-        <li><a href="/blog/on-device-ai-kids-apps-safety.html">On-Device AI Safety for Kids</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="privacy.html">Privacy Policy</a>
@@ -208,9 +146,99 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
+    <section id="screens" class="ap-section">
+      <h2>A whole studio in their hands</h2>
+      <p>Draw, tell stories and make music — three creative tools designed for small hands and big imaginations. Everything a child makes stays on the device.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/sparks/01.webp" alt="Sparks Studio home screen with creative activities for kids" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/02.webp" alt="Sparks Studio drawing canvas with brushes and colours" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/03.webp" alt="Sparks Studio story builder for young writers" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/04.webp" alt="Sparks Studio music composer placing notes" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/05.webp" alt="Sparks Studio creation gallery of saved drawings, stories and music" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>What it does</h2>
+      <p>One app for drawing, writing and composing — with a helper that suggests ideas a child can accept or ignore, never one that creates for them.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Drawing canvas</h3><p>Freeform sketching with friendly prompts and suggestions. The helper assists without taking over the page.</p></article>
+        <article><h3>Story builder</h3><p>Write stories with support for structure and vocabulary. Offers ideas when a child gets stuck, rather than writing for them.</p></article>
+        <article><h3>Music composer</h3><p>Build melodies by placing notes and hearing them played back. Suggests harmonies and rhythms to accept or ignore.</p></article>
+        <article><h3>On-device creativity</h3><p>The creative helper runs entirely on the device. Nothing a child makes is uploaded, and no account is required.</p></article>
+        <article><h3>Age-adapted content</h3><p>Three tiers (4&ndash;6, 7&ndash;9, 10&ndash;12) adjust the interface, prompts, vocabulary and complexity — one app from Reception through primary school.</p></article>
+        <article><h3>Parental controls</h3><p>A maths gate to enter, session time limits, and a private creation gallery. No social sharing, no public gallery, no strangers.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/sparks/02.webp" alt="Sparks Studio drawing canvas with brushes and colour palette">
+      <div class="ap-copy">
+        <h2>Creating, not just consuming</h2>
+        <p>Most apps aimed at children are built to hold attention. Sparks Studio is built to spark it — every session ends with something a child actually made.</p>
+        <ul>
+          <li>Three creative tools: draw, write and compose.</li>
+          <li>A helper that offers ideas, never finishes the work.</li>
+          <li>Apple Pencil support with full pressure sensitivity.</li>
+          <li>Finished drawings, storybooks and tunes saved in a private gallery.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Who it's for</h2>
+      <p>Sparks Studio is for parents who want a <strong>creative app for kids</strong> that replaces passive scrolling — a <strong>safe, ad-free drawing and storytelling app</strong> that grows from Reception through primary school without ever asking for an account.</p>
+      <div class="ap-loop">
+        <article><h3>Families leaving passive video</h3><p>A creative alternative to endless watching — children make drawings, stories and music instead of just consuming them.</p></article>
+        <article><h3>Privacy-minded parents</h3><p>No accounts, no cloud uploads, no ads and no tracking. What a child makes stays on the device.</p></article>
+        <article><h3>One app that grows</h3><p>Three age tiers mean the same app suits a four-year-old scribbling shapes and a ten-year-old writing a chapter.</p></article>
+        <article><h3>Apple Pencil households</h3><p>Full pressure sensitivity makes the drawing canvas feel natural on iPad with Apple Pencil.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Built for trust</h2>
+      <div class="ap-trust">
+        <div><strong>On-device</strong><span>The creative helper runs locally; nothing is uploaded.</span></div>
+        <div><strong>No ads, no tracking</strong><span>No advertising and no analytics of any kind.</span></div>
+        <div><strong>No account</strong><span>Open the app and start creating — no sign-up.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>How Sparks Studio compares</h2>
+      <div class="ap-loop" style="--loop-cols:2">
+        <article><h3>Create, don't just play</h3><p>Where many kids' apps centre on exploring play worlds or mini-games, Sparks Studio is built around making things — drawings, storybooks and music.</p></article>
+        <article><h3>Grows with the child</h3><p>Three age tiers cover 4&ndash;12 in a single app, instead of a narrow age band you outgrow in a year or two.</p></article>
+        <article><h3>On-device helper</h3><p>An age-adapted creative helper runs on the device rather than sending a child's work to a server.</p></article>
+        <article><h3>Privacy by default</h3><p>No data collection, no ads and full Apple Pencil pressure sensitivity for natural drawing.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Frequently asked questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Is it safe for young children?</h3><p>Yes. There is no social sharing, no public gallery and no stranger interaction — a maths gate keeps settings out of little hands.</p></article>
+        <article><h3>Does it need an account or the internet?</h3><p>No. The creative helper runs on-device, nothing is uploaded, and there is no sign-up.</p></article>
+        <article><h3>How does the AI help?</h3><p>Read <a href="/blog/on-device-ai-kids-apps-safety.html">On-Device AI Safety for Kids</a> for how a helper can suggest ideas without doing the creating.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Related articles</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/sparks-studios-vs-toca-boca.html">Sparks Studio vs Toca Boca Compared</a></li>
+        <li><a href="/blog/creative-screen-time-for-kids.html">Creative Apps vs Passive Scrolling</a></li>
+        <li><a href="/blog/getting-rid-of-youtube-kids.html">Replacing YouTube With Creative Apps</a></li>
+        <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">Choosing Safe Apps for Kids</a></li>
+        <li><a href="/blog/on-device-ai-kids-apps-safety.html">On-Device AI Safety for Kids</a></li>
+      </ul>
+    </section>
+
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>
     </footer>
+
   </div>
 
   <script src="/theme.js"></script>

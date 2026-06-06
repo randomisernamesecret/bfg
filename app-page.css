@@ -1,0 +1,132 @@
+/* ============================================================
+   app-page.css — shared immersive app landing layout.
+   Generalised from the Card Bash page so every BFG app gets the
+   same premium structure while keeping its OWN colour palette.
+
+   A page opts in with <body class="app-immersive"> and sets its
+   palette in a small inline <style> block, e.g.
+
+     body.app-immersive{
+       --page-bg:#0b1020; --ink:#eef2ff; --ink-soft:rgba(238,242,255,.82);
+       --ink-faint:rgba(238,242,255,.66); --accent:#5ad1ff; --accent-ink:#cdeeff;
+       --cta:#ff4d6d; --cta-ink:#fff; --panel:rgba(255,255,255,.06);
+       --border:rgba(255,255,255,.12); --media-bg:#101830; --media-glow:rgba(90,209,255,.18);
+       --nav-bg:rgba(11,16,32,.82);
+     }
+
+   The palette is LOCKED in both theme-toggle states (like Card Bash)
+   so the page always looks intentional. Class prefix: ap-
+   ============================================================ */
+
+body.app-immersive{
+  background:var(--page-bg);
+  color:var(--ink);
+}
+body.app-immersive h1,
+body.app-immersive h2,
+body.app-immersive h3,
+body.app-immersive h4,
+body.app-immersive strong{color:var(--ink)}
+body.app-immersive .container{max-width:1180px}
+body.app-immersive a{color:var(--accent)}
+
+/* ---- nav locked to the page palette in both toggles ---- */
+body.app-immersive .site-nav{background:var(--nav-bg);border-bottom:1px solid var(--border)}
+body.app-immersive .site-nav .nav-brand,
+body.app-immersive .site-nav .nav-links>a,
+body.app-immersive .site-nav .nav-links>.nav-dropdown>a{color:var(--ink)}
+body.app-immersive .site-nav .nav-links>a:hover,
+body.app-immersive .site-nav .nav-links>.nav-dropdown>a:hover{color:var(--accent)}
+body.app-immersive .nav-dropdown-menu{background:var(--media-bg);border:1px solid var(--border)}
+body.app-immersive .nav-dropdown-menu a{color:var(--ink-soft) !important}
+body.app-immersive .nav-dropdown-menu a:hover{background:rgba(127,127,127,.10);color:var(--accent) !important}
+body.app-immersive .nav-dropdown-menu .menu-label{color:var(--ink-faint) !important}
+body.app-immersive .nav-dropdown-menu hr{border-top-color:var(--border)}
+body.app-immersive .theme-toggle{background:rgba(127,127,127,.12);color:var(--ink);border:1px solid var(--border)}
+body.app-immersive .app-nav a{color:var(--ink-soft)}
+body.app-immersive .app-nav a:hover{color:var(--accent)}
+
+/* ---- hero ---- */
+.ap-hero{min-height:calc(100vh - 64px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:44px;align-items:center;padding:44px 0 34px}
+.ap-hero-media{position:relative;border-radius:22px;overflow:hidden;min-height:520px;background:var(--media-bg);box-shadow:0 30px 90px var(--media-glow)}
+.ap-hero-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.ap-hero-media.contain img{object-fit:contain;padding:22px}
+.ap-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.20));pointer-events:none}
+.ap-hero-media.contain:after{display:none}
+.ap-kicker{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.ap-hero h1{font-family:'DM Sans',sans-serif;font-size:clamp(46px,7vw,92px);font-weight:900;letter-spacing:-.01em;line-height:.97;margin-bottom:20px}
+.ap-lede{font-size:clamp(18px,2.1vw,25px);line-height:1.45;color:var(--ink-soft);max-width:620px}
+.ap-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ap-button{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:900;border:1px solid var(--border)}
+.ap-button.primary{background:var(--cta);color:var(--cta-ink);border-color:transparent}
+.ap-button.secondary{background:var(--panel);color:var(--ink)}
+.ap-pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
+.ap-pill{padding:8px 11px;border:1px solid var(--accent);border-radius:999px;background:color-mix(in srgb, var(--accent) 12%, transparent);font-size:13px;font-weight:800;color:var(--accent-ink,var(--accent))}
+
+/* ---- generic section ---- */
+.ap-section{padding:46px 0}
+.ap-section h2{font-family:'DM Sans',sans-serif;font-size:clamp(30px,4vw,52px);font-weight:900;letter-spacing:-.01em;line-height:1.05;margin-bottom:12px}
+.ap-section>p{max-width:760px;color:var(--ink-faint);font-size:18px}
+
+/* ---- screenshot strip ---- */
+.ap-screens{display:grid;grid-template-columns:repeat(var(--shot-cols,5),minmax(180px,1fr));gap:16px;margin-top:26px}
+.ap-shot{border-radius:18px;overflow:hidden;background:var(--media-bg);border:1px solid var(--border);box-shadow:0 22px 60px rgba(0,0,0,.22)}
+.ap-shot img{display:block;width:100%;height:100%;object-fit:cover}
+/* landscape apps (Keystrike): show wide shots whole, fewer per row */
+.ap-screens.landscape{grid-template-columns:repeat(2,1fr)}
+.ap-screens.landscape .ap-shot img{object-fit:contain;background:var(--media-bg)}
+
+/* ---- four-up loop / feature cards ---- */
+.ap-loop{display:grid;grid-template-columns:repeat(var(--loop-cols,4),1fr);gap:16px;margin-top:26px}
+.ap-loop article{border:1px solid var(--border);background:var(--panel);border-radius:16px;padding:20px}
+.ap-loop h3{font-size:20px;line-height:1.2;margin-bottom:8px}
+.ap-loop p{color:var(--ink-faint);line-height:1.55}
+
+/* ---- split image + copy ---- */
+.ap-split{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:28px;align-items:center}
+.ap-split img{width:100%;border-radius:18px;border:1px solid var(--border);box-shadow:0 24px 70px rgba(0,0,0,.26)}
+.ap-split.portrait img{max-width:300px;margin:0 auto;display:block}
+.ap-copy p{color:var(--ink-faint);font-size:17px;margin-top:12px}
+.ap-copy ul{margin:18px 0 0 18px;color:var(--ink-soft)}
+.ap-copy li{margin-bottom:6px}
+
+/* ---- trust row ---- */
+.ap-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.ap-trust div{border:1px solid var(--border);border-radius:14px;padding:16px;background:var(--panel)}
+.ap-trust strong{display:block;color:var(--ink);margin-bottom:4px}
+.ap-trust span{color:var(--ink-faint)}
+
+/* ---- comparison tables (re-homed from old pages) themed for dark ---- */
+body.app-immersive table{width:100%;margin-top:22px;border-collapse:separate;border-spacing:0;background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden;font-size:15px}
+body.app-immersive table th,
+body.app-immersive table td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border);color:var(--ink-soft)}
+body.app-immersive table thead th{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--ink);font-weight:800}
+body.app-immersive table tbody tr:last-child td{border-bottom:none}
+body.app-immersive table td:first-child{color:var(--ink-faint);font-weight:600}
+body.app-immersive table strong{color:var(--accent-ink,var(--accent))}
+
+/* ---- related-articles list ---- */
+body.app-immersive .related-posts{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+body.app-immersive .related-posts li{border:1px solid var(--border);background:var(--panel);border-radius:12px}
+body.app-immersive .related-posts a{display:block;padding:13px 16px;color:var(--accent);text-decoration:none;font-weight:600}
+body.app-immersive .related-posts a:hover{background:rgba(127,127,127,.08)}
+
+body.app-immersive footer{border-top:1px solid var(--border);margin-top:34px;color:var(--ink-faint)}
+
+@media(max-width:900px){
+  .ap-hero,.ap-split{grid-template-columns:1fr}
+  .ap-hero-media{min-height:360px}
+  .ap-screens{grid-template-columns:repeat(2,1fr)}
+  .ap-loop,.ap-trust{grid-template-columns:1fr 1fr}
+  .ap-split.reverse>div{order:-1}
+}
+@media(max-width:620px){
+  body.app-immersive .container{padding:0 18px}
+  .ap-hero{padding-top:28px}
+  .ap-hero h1{font-size:46px}
+  .ap-screens{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;-webkit-overflow-scrolling:touch}
+  .ap-shot{min-width:240px;scroll-snap-align:start}
+  .ap-screens.landscape .ap-shot{min-width:320px}
+  .ap-loop,.ap-trust{grid-template-columns:1fr}
+  .ap-actions a{width:100%}
+}

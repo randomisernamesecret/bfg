@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0c1424;--ink:#fdf1f8;--ink-soft:rgba(253,241,248,.85);--ink-faint:rgba(253,241,248,.64);--accent:#f472b6;--accent-ink:#ffd4ea;--cta:#fbbf24;--cta-ink:#1a1206;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#262044 0%,#15162c 60%,#0c1424 100%);--media-glow:rgba(244,114,182,.18);--nav-bg:rgba(12,20,36,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +103,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"arithmetix","item":"https://bfgapps.co/apps/arithmetix/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -119,10 +123,10 @@
             <a href="/apps/pacegrid/">PaceGrid</a>
             <a href="/apps/minua/">Minua</a>
             <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -144,68 +148,106 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">Education</span>
-      <h1>Arithmetix</h1>
-      <p class="app-subtitle">UK curriculum maths from Reception to Year 6.</p>
-      <div class="hero-visual">
-        <img src="/assets/arithmetix-hero.png" alt="Arithmetix app showing adaptive maths practice aligned to the UK National Curriculum on iPhone" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">UK curriculum maths</div>
+        <h1>Arithmetix</h1>
+        <p class="ap-lede">Maths practice that actually matches what your child learns in class — from Reception right through to Year 6. Adaptive difficulty, times tables, and 30+ topics that grow with them.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          <a class="ap-button secondary" href="#screens">See the app</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Reception to Year 6</span>
+          <span class="ap-pill">Times tables 2&ndash;12</span>
+          <span class="ap-pill">Adaptive practice</span>
+          <span class="ap-pill">One-time purchase</span>
+          <span class="ap-pill">iPhone &amp; iPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" class="app-cta" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+      <div class="ap-hero-media" aria-label="Arithmetix maths practice">
+        <img src="/assets/arithmetix/01.webp" alt="Arithmetix home screen showing curriculum-aligned maths topics for a young learner" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>30+ Topics</strong>Reception to Y6</div>
-        <div class="fact"><strong>UK Curriculum</strong>Nationally aligned</div>
-        <div class="fact"><strong>Adaptive</strong>Per-child difficulty</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>What It Does</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>30+ topics</h3>
-          <p>Covers the full UK primary maths curriculum from Reception through Year 6, organised by year group and strand.</p>
-        </div>
-        <div class="feature">
-          <h3>UK National Curriculum aligned</h3>
-          <p>Topics match what children learn in class — number, addition, subtraction, multiplication, fractions, measurement, geometry, and statistics.</p>
-        </div>
-        <div class="feature">
-          <h3>Adaptive difficulty</h3>
-          <p>Adjusts based on accuracy. Keeps children in the zone of proximal development — challenged enough to learn, supported enough not to give up.</p>
-        </div>
-        <div class="feature">
-          <h3>Times tables 2-12</h3>
-          <p>Dedicated practice modes for multiplication fluency. Prepares children for the Year 4 Multiplication Tables Check.</p>
-        </div>
-        <div class="feature">
-          <h3>Virtual pet motivation</h3>
-          <p>Rewards consistent daily practice rather than perfect scores. Encourages showing up regularly over occasional cramming.</p>
-        </div>
-        <div class="feature">
-          <h3>Spaced repetition</h3>
-          <p>Mastered topics resurface at increasing intervals. Weak areas come back sooner. Long-term fluency without manual scheduling.</p>
-        </div>
-      </div>
-    </div>
+    <nav class="app-nav">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Use</a>
+    </nav>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacy &amp; Data</h3>
+    <section id="screens" class="ap-section">
+      <h2>See it in action</h2>
+      <p>Bright, friendly practice that keeps children moving forward — questions tuned to their level, instant feedback, and progress they can be proud of.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/arithmetix/01.webp" alt="Arithmetix home screen with curriculum maths topics" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/02.webp" alt="Arithmetix topic selection by year group and strand" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/03.webp" alt="Arithmetix maths question with multiple-choice answers" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/04.webp" alt="Arithmetix correct-answer feedback and encouragement" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/05.webp" alt="Arithmetix times tables practice mode" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/arithmetix/06.webp" alt="Arithmetix challenge mode with a timed session" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/07.webp" alt="Arithmetix progress tracking across topics" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/08.webp" alt="Arithmetix reward and streak motivation screen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/09.webp" alt="Arithmetix parent overview of a child's practice" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/10.webp" alt="Arithmetix achievement and mastery celebration" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>What it does</h2>
+      <p>A complete primary maths companion — curriculum-aligned topics, adaptive difficulty, and dedicated times tables practice that keeps children showing up.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>30+ topics</h3><p>Covers the full UK primary maths curriculum from Reception through Year 6, organised by year group and strand.</p></article>
+        <article><h3>Curriculum aligned</h3><p>Topics match what children learn in class — number, addition, subtraction, multiplication, fractions, measurement, geometry and statistics.</p></article>
+        <article><h3>Adaptive difficulty</h3><p>Adjusts to each child's accuracy, keeping them challenged enough to learn but supported enough not to give up.</p></article>
+        <article><h3>Times tables 2&ndash;12</h3><p>Dedicated multiplication practice that builds fluency and prepares children for the Year 4 Multiplication Tables Check.</p></article>
+        <article><h3>Reward motivation</h3><p>Rewards consistent daily practice over perfect scores, encouraging children to show up regularly rather than cram.</p></article>
+        <article><h3>Spaced repetition</h3><p>Mastered topics resurface at increasing intervals while weak areas come back sooner — long-term fluency, no manual scheduling.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/arithmetix/05.webp" alt="Arithmetix times tables practice screen">
+      <div class="ap-copy">
+        <h2>Built to fit the classroom</h2>
+        <p>Most maths apps are generic games or rolling subscriptions. Arithmetix is designed around what UK children are actually expected to learn, year by year — so parents can trust what they're practising.</p>
         <ul>
-          <li>Parent account via Firebase for cross-device sync</li>
-          <li>Child progress data aggregated — no per-question data uploaded</li>
-          <li>No ads</li>
+          <li>Aligned to Reception through Year 6 expectations.</li>
+          <li>Dedicated times tables support for Year 4 fluency.</li>
+          <li>Adaptive practice tuned to each child's level.</li>
+          <li>One-time purchase — no monthly subscription.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>How Arithmetix Compares</h2>
+    <section class="ap-section">
+      <h2>Who it's for</h2>
+      <p>Arithmetix is for UK parents, children and tutors looking for a <strong>primary maths app</strong>, a <strong>DoodleMaths alternative</strong>, or a <strong>times tables app</strong> that fits the National Curriculum clearly. It is especially relevant for families who want something aligned to what children are actually learning in school rather than a generic maths game.</p>
+      <div class="ap-loop">
+        <article><h3>UK curriculum fit</h3><p>Designed around Reception to Year 6 expectations, so it's easier for parents to trust what their child is practising.</p></article>
+        <article><h3>One-time purchase</h3><p>Many children's maths apps are subscriptions. Arithmetix is built for families who'd rather buy once and keep using it.</p></article>
+        <article><h3>Times tables and fluency</h3><p>Dedicated multiplication support makes it a strong answer for times tables practice and Year 4 MTC revision.</p></article>
+        <article><h3>Adaptive, not abstract</h3><p>The adaptive layer makes it feel personal to the child while the curriculum framing keeps it clear for the adults comparing options.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Built for trust</h2>
+      <div class="ap-trust">
+        <div><strong>Curriculum aligned</strong><span>Reception to Year 6, by year group and strand.</span></div>
+        <div><strong>One-time purchase</strong><span>No subscription, no ongoing monthly cost.</span></div>
+        <div><strong>No ads</strong><span>A calm, focused practice environment for children.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>How Arithmetix compares</h2>
+      <p>A quick look at how Arithmetix lines up against the maths apps families most often consider.</p>
       <table>
         <thead>
           <tr><th></th><th>Arithmetix</th><th>DoodleMaths</th><th>Mathletics</th><th>TTRS</th></tr>
@@ -221,78 +263,32 @@
           <tr><td>Colour-blind modes</td><td><strong>3 modes</strong></td><td>No</td><td>No</td><td>No</td></tr>
         </tbody>
       </table>
-      <p style="font-size:13px;color:var(--text-dim);margin-top:8px;">Competitor pricing checked March 2026. See each provider for current prices.</p>
-    </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:8px;">Competitor pricing checked March 2026. See each provider for current prices.</p>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>Who It Is For</h2>
-      <p>Arithmetix is for UK parents, children, and tutors looking for a <strong>primary maths app</strong>, a <strong>DoodleMaths alternative</strong>, or a <strong>times tables app</strong> that fits the National Curriculum clearly. It is especially relevant for families who want something aligned to what children are actually learning in school rather than a generic maths game.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Why Choose Arithmetix?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>UK curriculum fit</h3>
-          <p>The pitch is straightforward: Arithmetix is designed around Reception to Year 6 expectations, which makes it easier for parents to trust what their child is practising.</p>
-        </div>
-        <div class="feature">
-          <h3>One-time purchase positioning</h3>
-          <p>Many maths apps for children are subscription products. Arithmetix is better positioned for families who want to buy once and keep using it.</p>
-        </div>
-        <div class="feature">
-          <h3>Times tables and fluency</h3>
-          <p>The dedicated multiplication support gives Arithmetix a strong answer for search intent around <strong>times tables practice</strong> and <strong>Year 4 MTC revision</strong>.</p>
-        </div>
-        <div class="feature">
-          <h3>Adaptive without feeling abstract</h3>
-          <p>The adaptive layer helps the app feel personal to the child, but the curriculum framing still keeps it understandable for adults comparing options.</p>
-        </div>
+    <section class="ap-section">
+      <h2>Frequently asked questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Is it only for one age group?</h3><p>No. Arithmetix covers the full primary range from Reception through Year 6, organised by year group.</p></article>
+        <article><h3>Does it help with times tables?</h3><p>Yes. Times tables practice is one of its clearest strengths, especially for families preparing for the Year 4 Multiplication Tables Check.</p></article>
+        <article><h3>Why over a subscription app?</h3><p>If you want curriculum-aligned maths practice without ongoing monthly cost, Arithmetix is deliberately built for that tradeoff.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>Best Search Fits</h2>
-      <p>Arithmetix is a strong fit for searches like <strong>best maths app for primary school</strong>, <strong>DoodleMaths alternative</strong>, <strong>UK curriculum maths app</strong>, and <strong>times tables app no subscription</strong>. This page now makes those use cases much clearer to search engines and AI assistants.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Is Arithmetix only for one age group?</h3>
-          <p>No. It is designed to cover the full primary range from Reception through Year 6.</p>
-        </div>
-        <div class="feature">
-          <h3>Does it help with times tables?</h3>
-          <p>Yes. Times tables practice is one of the app's clearest strengths, especially for families thinking about the Year 4 Multiplication Tables Check.</p>
-        </div>
-        <div class="feature">
-          <h3>Why would I choose it over a subscription app?</h3>
-          <p>If you want curriculum-aligned maths practice without ongoing monthly cost, Arithmetix is deliberately positioned for that tradeoff.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related Articles</h2>
+    <section class="ap-section">
+      <h2>Related articles</h2>
       <ul class="related-posts">
         <li><a href="/blog/arithmetix-vs-doodlemaths.html">Arithmetix vs DoodleMaths Compared</a></li>
         <li><a href="/blog/times-tables-tips.html">Best Ways to Learn Times Tables</a></li>
         <li><a href="/blog/year-4-multiplication-tables-check.html">Year 4 Multiplication Tables Check Guide</a></li>
         <li><a href="/blog/ks2-sats-maths-preparation.html">KS2 SATs Maths Preparation</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="support.html">Support</a>
-      <a href="terms.html">Terms of Use</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>
     </footer>
+
   </div>
 
   <script src="/theme.js"></script>

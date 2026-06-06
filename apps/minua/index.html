@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#0a1714;--ink:#eafff7;--ink-soft:rgba(234,255,247,.84);--ink-faint:rgba(234,255,247,.64);
+      --accent:#34d399;--accent-ink:#bbf7e0;--cta:#f59e0b;--cta-ink:#1a1206;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#123026 0%,#0d1f19 60%,#0a1714 100%);
+      --media-glow:rgba(52,211,153,.18);--nav-bg:rgba(10,23,20,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -101,7 +111,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"minua","item":"https://bfgapps.co/apps/minua/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -121,10 +131,10 @@
             <a href="/apps/pacegrid/">PaceGrid</a>
             <a href="/apps/minua/">Minua</a>
             <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -149,130 +159,115 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-kids">Kids</span>
-      <h1>Minua</h1>
-      <p class="app-subtitle">Screen time children earn through learning.</p>
-      <div class="hero-visual">
-        <img src="/assets/Minua/01_earn_screen_time_through_learning.png" alt="Minua app showing the earn screen time interface" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>On-device</strong>All data stays local</div>
-        <div class="fact"><strong>Apple Screen Time</strong>Built-in parental controls</div>
-        <div class="fact"><strong>No account</strong>No sign-up required</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What It Does</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Earn Screen Time</h3>
-          <p>Children earn fun app access by spending time in learning apps chosen by their parent. Configurable ratios from 1:1 to 12:1.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Earn it through learning</div>
+        <h1>Minua</h1>
+        <p class="ap-lede">Screen time children earn by learning. Kids unlock fun apps by spending time in the learning apps you choose — at a ratio you set. Everything stays on your device.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          <a class="ap-button secondary" href="#screens">See the app</a>
         </div>
-        <div class="feature">
-          <h3>Apple Screen Time API</h3>
-          <p>Uses Apple's built-in FamilyControls, ManagedSettings, and DeviceActivity frameworks for reliable, OS-level app restrictions.</p>
-        </div>
-        <div class="feature">
-          <h3>Allowed Hours</h3>
-          <p>Parents set a daily time window (e.g. 3pm-8pm) when fun apps can be unlocked. Outside these hours, fun apps stay locked.</p>
-        </div>
-        <div class="feature">
-          <h3>Daily Reset</h3>
-          <p>The time bank resets at midnight each day. Children start fresh every morning with a clean balance.</p>
-        </div>
-        <div class="feature">
-          <h3>PIN-Protected Settings</h3>
-          <p>All parent settings are locked behind a 4-digit PIN with lockout after failed attempts. Children cannot change the rules.</p>
-        </div>
-        <div class="feature">
-          <h3>No Account Required</h3>
-          <p>No email, no sign-up, no cloud sync. Set up the app and hand the device to your child. Everything stays on-device.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Earn-to-play</span>
+          <span class="ap-pill">On-device only</span>
+          <span class="ap-pill">No account</span>
+          <span class="ap-pill">Configurable ratio</span>
+          <span class="ap-pill">One-time purchase</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacy &amp; Data</h3>
-        <ul>
-          <li>All usage data stored locally with iOS encryption.</li>
-          <li>No accounts, no cloud, no servers.</li>
-          <li>Screen Time API runs entirely on-device via Apple's frameworks.</li>
-          <li>Nothing to subpoena, nothing to breach, nothing to sell.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Minua earn screen time">
+        <img src="/assets/minua/01.webp" alt="Minua home screen showing the screen time children have earned through learning" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Who It Is For</h2>
-      <p>Minua is for parents searching for a <strong>screen time app for kids</strong>, a <strong>parental control app without tracking</strong>, or a better way to connect learning time with recreational screen time. It is especially relevant for families who dislike the feel of surveillance-heavy parental control software.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Why Choose Minua?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Earned screen time model</h3>
-          <p>The value proposition is more specific than generic parental control: Minua reframes screen time as something children earn through useful activity.</p>
-        </div>
-        <div class="feature">
-          <h3>Apple-native controls</h3>
-          <p>Using Apple's own Screen Time frameworks gives the product a cleaner, more trustworthy story than many cross-platform monitoring apps.</p>
-        </div>
-        <div class="feature">
-          <h3>Private by default</h3>
-          <p>No account and no cloud means the app can appeal to privacy-conscious parents who do not want family routines or child data living on a vendor server.</p>
-        </div>
-        <div class="feature">
-          <h3>Better framing for family use</h3>
-          <p>Rewarding learning is easier to explain and live with than endless punishment loops around screen limits alone.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Best Search Fits</h2>
-      <p>Minua is a strong fit for searches like <strong>screen time app children earn</strong>, <strong>best parental control app for iPhone</strong>, <strong>private screen time app for kids</strong>, and <strong>learn to earn screen time</strong>. This page now states those fits more clearly.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Does Minua spy on children?</h3>
-          <p>No. The page is intentionally positioned around on-device controls rather than tracking-heavy surveillance software.</p>
-        </div>
-        <div class="feature">
-          <h3>Do children earn time by using learning apps?</h3>
-          <p>Yes. That earned-time mechanic is the core product concept.</p>
-        </div>
-        <div class="feature">
-          <h3>Will it need another family account?</h3>
-          <p>No. Minua is designed around local setup and Apple system frameworks, not another cloud account to manage.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related Articles</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/screen-time-without-guilt-parents-guide.html">Screen Time Without the Guilt</a></li>
-        <li><a href="/blog/earn-screen-time-kids.html">Why Earned Screen Time Works Better</a></li>
-        <li><a href="/blog/best-parental-control-apps-iphone-2026.html">Best Parental Control Apps for iPhone in 2026</a></li>
-        <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">Safe Apps for Kids With No Ads or Tracking</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms of Use</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>How Minua works</h2>
+      <p>Set the rules once, then hand the device over. Children see exactly how much time they have earned and what learning unlocks more — no surveillance, no nagging, nothing sent anywhere.</p>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/minua/01.webp" alt="Minua home screen with earned screen time balance" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/minua/02.webp" alt="Minua learning apps that earn screen time" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/minua/03.webp" alt="Minua fun apps unlocked with earned time" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/minua/04.webp" alt="Minua PIN-protected parent settings" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>What it does</h2>
+      <p>A complete earn-to-play screen time tool — children earn fun app access through learning, and parents stay in control without another account to manage.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Earn screen time</h3><p>Children earn fun app access by spending time in learning apps chosen by their parent, at a configurable ratio.</p></article>
+        <article><h3>Built on Apple's parental controls</h3><p>App locks are enforced at the system level for reliable, OS-grade restrictions — no separate monitoring service.</p></article>
+        <article><h3>Allowed hours</h3><p>Set a daily time window when fun apps can be unlocked. Outside those hours, fun apps stay locked.</p></article>
+        <article><h3>Daily reset</h3><p>The earned-time bank resets each day, so children start fresh every morning with a clean balance.</p></article>
+        <article><h3>PIN-protected settings</h3><p>Parent settings sit behind a private PIN with a lockout after failed attempts. Children cannot change the rules.</p></article>
+        <article><h3>No account required</h3><p>No email, no sign-up, no cloud sync. Set it up, hand over the device, and everything stays on-device.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/minua/04.webp" alt="Minua PIN-protected parent settings screen">
+      <div class="ap-copy">
+        <h2>Private by default</h2>
+        <p>Most parental control apps ask for a family account, then route your child's routines through a vendor cloud. Minua doesn't. It is built on Apple's own parental controls framework and runs entirely on your device.</p>
+        <ul>
+          <li>All usage data stays local on the device.</li>
+          <li>No accounts, no cloud, no servers, no tracking.</li>
+          <li>App locks enforced at the system level on-device.</li>
+          <li>One-time purchase — nothing to subscribe to.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Who it's for</h2>
+      <p>Minua is for parents searching for a <strong>screen time app for kids</strong>, a <strong>parental control app without tracking</strong>, or a better way to connect learning time with recreational screen time. It is especially relevant for families who dislike the feel of surveillance-heavy parental control software.</p>
+      <div class="ap-loop">
+        <article><h3>Earned screen time model</h3><p>More specific than generic parental control: Minua reframes screen time as something children earn through useful activity.</p></article>
+        <article><h3>Apple-native controls</h3><p>Built on Apple's own parental controls gives a cleaner, more trustworthy story than many cross-platform monitoring apps.</p></article>
+        <article><h3>Private by default</h3><p>No account and no cloud, so it appeals to privacy-conscious parents who don't want child data living on a vendor server.</p></article>
+        <article><h3>Better framing for family use</h3><p>Rewarding learning is easier to explain and live with than endless punishment loops around screen limits alone.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Built for trust</h2>
+      <div class="ap-trust">
+        <div><strong>On-device</strong><span>All data stays local on the device.</span></div>
+        <div><strong>Apple parental controls</strong><span>Restrictions enforced at the system level.</span></div>
+        <div><strong>No account</strong><span>No sign-up, no cloud, no tracking.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Best search fits</h2>
+      <p>Minua is a strong fit for searches like <strong>screen time app children earn</strong>, <strong>best parental control app for iPhone</strong>, <strong>private screen time app for kids</strong>, and <strong>learn to earn screen time</strong>.</p>
+    </section>
+
+    <section class="ap-section">
+      <h2>Frequently asked questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Does Minua spy on children?</h3><p>No. Minua is built around on-device controls, not tracking-heavy surveillance software.</p></article>
+        <article><h3>Do children earn time by using learning apps?</h3><p>Yes. That earned-time mechanic is the core product concept.</p></article>
+        <article><h3>Will it need another family account?</h3><p>No. Minua is designed around local setup, not another cloud account to manage.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Related articles</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/screen-time-without-guilt-parents-guide.html">Screen Time Without the Guilt</a></li>
+        <li><a href="/blog/earn-screen-time-kids.html">Why Earned Screen Time Works Better</a></li>
+        <li><a href="/blog/best-parental-control-apps-iphone-2026.html">Best Parental Control Apps for iPhone in 2026</a></li>
+        <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">Safe Apps for Kids With No Ads or Tracking</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>

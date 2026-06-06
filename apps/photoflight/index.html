@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0a1320;--ink:#eef6ff;--ink-soft:rgba(238,246,255,.85);--ink-faint:rgba(238,246,255,.64);--accent:#38bdf8;--accent-ink:#bfe8ff;--cta:#f97316;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#10273f 0%,#0c1a2c 60%,#0a1320 100%);--media-glow:rgba(56,189,248,.18);--nav-bg:rgba(10,19,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -100,7 +104,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"photoflight","item":"https://bfgapps.co/apps/photoflight/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -120,10 +124,10 @@
             <a href="/apps/pacegrid/">PaceGrid</a>
             <a href="/apps/minua/">Minua</a>
             <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -148,149 +152,115 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-travel">Travel</span>
-      <h1>PhotoFlight</h1>
-      <p class="app-subtitle">Your travel map, built from your photos.</p>
-      <div class="hero-visual">
-        <img src="/assets/photoflight-hero.png" alt="PhotoFlight app screenshot showing a travel map built from photo GPS data" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>On-device</strong>All processing local</div>
-        <div class="fact"><strong>No tracking</strong>Zero network requests</div>
-        <div class="fact"><strong>One purchase</strong>No subscriptions</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What It Does</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Automatic Travel Map</h3>
-          <p>Reads GPS metadata from your existing photos to plot every city and country you have visited on an interactive map.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Travel · Private by design</div>
+        <h1>PhotoFlight</h1>
+        <p class="ap-lede">Your travel map, built from the photos you already have. PhotoFlight reads the location stamps in your library to map every country and city you've visited — passport, flight log and future trip wishlist, all on your phone.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          <a class="ap-button secondary" href="#screens">See the app</a>
         </div>
-        <div class="feature">
-          <h3>Travel Passport</h3>
-          <p>Tracks flights taken, countries visited, cities explored, and total distance traveled — all from your photo library.</p>
-        </div>
-        <div class="feature">
-          <h3>Trip Albums</h3>
-          <p>Automatically groups your photos into trip albums by destination, with dates and locations attached.</p>
-        </div>
-        <div class="feature">
-          <h3>Flight Log</h3>
-          <p>Estimates flights between distant locations by analyzing timestamps and GPS jumps in your photos.</p>
-        </div>
-        <div class="feature">
-          <h3>Manual Flight Entry</h3>
-          <p>Add flights that your photos missed. Available in Pro to complete your travel history.</p>
-        </div>
-        <div class="feature">
-          <h3>On-device Processing</h3>
-          <p>All photo scanning and map building happens locally. No servers, no uploads, no accounts.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">On-device only</span>
+          <span class="ap-pill">No tracking</span>
+          <span class="ap-pill">Works from old photos</span>
+          <span class="ap-pill">No account</span>
+          <span class="ap-pill">One-time purchase</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacy &amp; Data</h3>
-        <ul>
-          <li>No data collected — ever.</li>
-          <li>Reads photo GPS metadata locally on your device.</li>
-          <li>No network requests. Fully offline.</li>
-          <li>No account required.</li>
-          <li>All data stays on-device, encrypted by iOS.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="PhotoFlight travel map">
+        <img src="/assets/photoflight/01.webp" alt="PhotoFlight world map filled in with the countries and cities visited, built from photo location data" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>How PhotoFlight Compares</h2>
-      <table>
-        <thead>
-          <tr><th></th><th>PhotoFlight</th><th>Polarsteps</th><th>Visited</th><th>TripIt</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Tracking method</td><td><strong>Existing photos (automatic)</strong></td><td>Background GPS</td><td>Manual tap</td><td>Email parsing</td></tr>
-          <tr><td>Retroactive</td><td><strong>Yes (all past photos)</strong></td><td>No (forward only)</td><td>Manual entry</td><td>No</td></tr>
-          <tr><td>Pricing</td><td>One-time purchase</td><td>~&pound;30/yr</td><td>~&pound;6/yr</td><td>~&pound;49/yr</td></tr>
-          <tr><td>Data storage</td><td><strong>On-device only</strong></td><td>Company servers</td><td>Local + iCloud</td><td>SAP servers</td></tr>
-          <tr><td>Battery impact</td><td><strong>None</strong></td><td>Significant</td><td>None</td><td>None</td></tr>
-          <tr><td>Flight tracking</td><td>Auto-detected</td><td>Manual entry</td><td>No</td><td>From bookings</td></tr>
-          <tr><td>Stats &amp; achievements</td><td><strong>17+ stats, 10 achievements</strong></td><td>Basic stats</td><td>% of world</td><td>Loyalty tracking</td></tr>
-          <tr><td>Print books</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Who It Is For</h2>
-      <p>PhotoFlight is for people searching for a <strong>travel map app from photos</strong>, a <strong>Polarsteps alternative</strong>, or a <strong>private travel tracker</strong> that does not rely on background location collection. It is especially relevant if you already have years of travel photos and want value from the history you already carry in your library.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Why Choose PhotoFlight?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Retroactive by design</h3>
-          <p>Most travel apps start tracking from the day you install them. PhotoFlight has a better story for people who want to rebuild years of trips from old photos.</p>
-        </div>
-        <div class="feature">
-          <h3>Privacy-first travel mapping</h3>
-          <p>The on-device angle is a real differentiator if you want to explore your travel history without handing over live location or a social feed.</p>
-        </div>
-        <div class="feature">
-          <h3>No battery tradeoff</h3>
-          <p>Because it works from existing metadata, it avoids the usual background tracking story that many travel apps rely on.</p>
-        </div>
-        <div class="feature">
-          <h3>Better fit for photo-heavy travellers</h3>
-          <p>If your memories already live in your camera roll, PhotoFlight feels more natural than logging every movement manually.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Best Search Fits</h2>
-      <p>PhotoFlight should be a strong fit for searches like <strong>travel map from photos</strong>, <strong>best travel tracking app</strong>, <strong>Polarsteps alternative</strong>, and <strong>photo travel map iPhone</strong>. The page now makes those connections clearer for search and AI retrieval.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Do I need to start a new trip log?</h3>
-          <p>No. The product is designed to work from photos you already have, not just trips you start recording today.</p>
-        </div>
-        <div class="feature">
-          <h3>Does PhotoFlight upload my photos anywhere?</h3>
-          <p>No. The privacy story is one of the app's clearest strengths: scanning and map-building happen on-device.</p>
-        </div>
-        <div class="feature">
-          <h3>Why choose it over a live travel diary app?</h3>
-          <p>If you care more about rebuilding and exploring your travel history than posting trips socially, PhotoFlight is positioned much more directly for that use case.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related Articles</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps Compared</a></li>
-        <li><a href="/blog/travel-map-from-photos.html">How to Build a Travel Map From Your Photos</a></li>
-        <li><a href="/blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps 2026</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms of Use</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Your travels, already mapped</h2>
+      <p>Open the app and the history you've been carrying in your camera roll turns into a map. No new logging, no live tracking — just the places your photos already remember.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/photoflight/01.webp" alt="PhotoFlight world map showing visited countries and cities plotted from photo locations" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/02.webp" alt="PhotoFlight travel passport with countries visited, cities and distance travelled" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/03.webp" alt="PhotoFlight trip albums grouped automatically by destination and date" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/04.webp" alt="PhotoFlight flight log with journeys detected from photo location jumps" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/05.webp" alt="PhotoFlight travel plans wishlist of future destinations" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>What it does</h2>
+      <p>A full travel map, passport and flight log — assembled from the location data already inside your photos, then a wishlist for the trips still to come.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Automatic travel map</h3><p>Plots every city and country you've visited onto an interactive map, read straight from your existing photos.</p></article>
+        <article><h3>Travel passport</h3><p>Counts countries visited, cities explored, flights taken and total distance travelled — built from your library.</p></article>
+        <article><h3>Trip albums</h3><p>Groups your photos into trips by destination automatically, with dates and places already attached.</p></article>
+        <article><h3>Flight log</h3><p>Detects journeys between distant places by reading the time and location jumps between your photos.</p></article>
+        <article><h3>Travel plans</h3><p>Add future destinations to a free wishlist and tick them off as your trips become memories.</p></article>
+        <article><h3>On-device, no account</h3><p>All scanning and map-building happens on your phone. No uploads, no servers, no sign-up.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/photoflight/02.webp" alt="PhotoFlight travel passport summary screen">
+      <div class="ap-copy">
+        <h2>Retroactive, not from scratch</h2>
+        <p>Most travel apps only start mapping the day you install them. PhotoFlight does the opposite — it reaches back through the photos you already have and rebuilds years of trips in one pass.</p>
+        <ul>
+          <li>Works from old photos, not just trips you start today.</li>
+          <li>No background location, so no battery drain.</li>
+          <li>Everything stays on your device, encrypted by the system.</li>
+          <li>No accounts, no cloud, nothing uploaded anywhere.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Who it's for</h2>
+      <p>PhotoFlight is for people searching for a <strong>travel map app from photos</strong>, a <strong>Polarsteps alternative</strong>, or a <strong>private travel tracker</strong> that does not rely on background location collection. It is especially relevant if you already have years of travel photos and want value from the history you already carry in your library.</p>
+      <div class="ap-loop">
+        <article><h3>Retroactive by design</h3><p>Most travel apps start tracking from install day. PhotoFlight is built for people who want to rebuild years of trips from old photos.</p></article>
+        <article><h3>Privacy-first mapping</h3><p>The on-device approach is a real difference if you want to explore your travel history without handing over live location or a social feed.</p></article>
+        <article><h3>No battery tradeoff</h3><p>Because it works from photos you already took, it avoids the background tracking that many travel apps depend on.</p></article>
+        <article><h3>For photo-heavy travellers</h3><p>If your memories already live in your camera roll, PhotoFlight feels far more natural than logging every movement by hand.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Built for trust</h2>
+      <div class="ap-trust">
+        <div><strong>On-device</strong><span>All scanning and mapping stays local, encrypted by the system.</span></div>
+        <div><strong>No tracking</strong><span>No background location, no network requests, no battery drain.</span></div>
+        <div><strong>No account</strong><span>No sign-up, no cloud, one-time purchase.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Frequently asked questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Do I need to start a new trip log?</h3><p>No. PhotoFlight is designed to work from the photos you already have, not just trips you start recording today.</p></article>
+        <article><h3>Does it upload my photos anywhere?</h3><p>No. Scanning and map-building happen on your device — nothing is sent to a server.</p></article>
+        <article><h3>How does it compare to Polarsteps?</h3><p>Read <a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps</a> for a privacy-first comparison.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Best search fits</h2>
+      <p>PhotoFlight is a strong fit for searches like <strong>travel map from photos</strong>, <strong>best travel tracking app</strong>, <strong>Polarsteps alternative</strong>, and <strong>photo travel map iPhone</strong> — built for travellers who want their existing library, not a live tracker, to draw the map.</p>
+    </section>
+
+    <section class="ap-section">
+      <h2>Related articles</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps Compared</a></li>
+        <li><a href="/blog/travel-map-from-photos.html">How to Build a Travel Map From Your Photos</a></li>
+        <li><a href="/blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps 2026</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>

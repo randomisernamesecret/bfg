@@ -38,6 +38,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#1a1206;--ink:#fff7e8;--ink-soft:rgba(255,247,232,.86);--ink-faint:rgba(255,247,232,.66);
+      --accent:#ffd166;--accent-ink:#fff0c2;--cta:#ef476f;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.06);--border:rgba(255,255,255,.13);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#3a2a0f 0%,#241a08 60%,#1a1206 100%);
+      --media-glow:rgba(255,209,102,.2);--nav-bg:rgba(26,18,6,.84);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"penlicence","item":"https://bfgapps.co/apps/penlicence/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -120,10 +130,10 @@
             <a href="/apps/minua/">Minua</a>
             <a href="/apps/bellgrave/">Bellgrave</a>
             <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -148,120 +158,116 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">Education</span>
-      <h1>Pen Licence</h1>
-      <p class="app-subtitle">Teach kids to write — on iPad.</p>
-      <div class="hero-visual">
-        <img src="/assets/penlicence-hero.png" alt="Pen Licence app screenshot showing practice pathways, warm-up, and transfer-to-real-writing sections" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/pen-licence/id6761393693" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>Ages 4–8</strong>Early-primary handwriting</div>
-        <div class="fact"><strong>Pressure-aware</strong>Real stylus pressure feedback</div>
-        <div class="fact"><strong>On-device</strong>No accounts, no cloud</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What It Does</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Letter-by-Letter Curriculum</h3>
-          <p>A structured 26-letter curriculum in Zaner-Bloser pedagogical order with an alphabetical toggle. Children see exactly where they are and what is coming next.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Handwriting, done right</div>
+        <h1>Pen Licence</h1>
+        <p class="ap-lede">Teach kids to write — letter by letter, stroke by stroke. Gentle guidance, honest feedback, and real pressure coaching with Apple Pencil. Everything stays on the iPad.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          <a class="ap-button secondary" href="#screens">See the app</a>
         </div>
-        <div class="feature">
-          <h3>Pressure Coaching</h3>
-          <p>Real-time pressure feedback shows when a stroke is too light, just right, or too heavy. Pressure metrics only apply when using a compatible stylus, so finger practice stays encouraging.</p>
-        </div>
-        <div class="feature">
-          <h3>Stroke Recognition</h3>
-          <p>Each letter is checked against its model stroke path so children get honest feedback on shape, direction, and completion — not a stamp of approval for any squiggle.</p>
-        </div>
-        <div class="feature">
-          <h3>Ghost Letter Guide</h3>
-          <p>A faint ghost of the target letter appears on the writing zone, scaled to x-height, so young learners can trace confidently before moving to freehand practice.</p>
-        </div>
-        <div class="feature">
-          <h3>Progress Strip</h3>
-          <p>A 26-dot progress strip under every screen shows completed letters, current letter, and the next few upcoming — nothing is hidden behind menus.</p>
-        </div>
-        <div class="feature">
-          <h3>Sticky Controls</h3>
-          <p>Check, Try Again, and Next Lesson buttons live in a sticky footer so the next action is always one tap away, even on smaller iPads.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Ages 4–8</span>
+          <span class="ap-pill">Pressure coaching</span>
+          <span class="ap-pill">On-device only</span>
+          <span class="ap-pill">No accounts</span>
+          <span class="ap-pill">One-time purchase</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacy &amp; Data</h3>
-        <ul>
-          <li>No account required. No sign-up, no email, no password.</li>
-          <li>All practice data — strokes, scores, progress — stays on your child's iPad.</li>
-          <li>No ads, no third-party analytics, no tracking SDKs.</li>
-          <li>No network connection required. The app works offline end-to-end.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Pen Licence handwriting practice">
+        <img src="/assets/penlicence/01.webp" alt="Pen Licence handwriting practice screen with a ghost letter guide and stroke feedback" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Who It Is For</h2>
-      <p>Pen Licence is built for parents, teachers, and therapists looking for a serious <strong>handwriting practice app for iPad</strong>, a <strong>learn to write app</strong>, or a <strong>kids writing app with Apple Pencil</strong>. It fits families practicing at home, classrooms using iPads as a station, and occupational-therapy work where pressure and stroke formation matter.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Why Choose Pen Licence?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Built around stylus pressure</h3>
-          <p>Most handwriting apps ignore stylus pressure. Pen Licence treats it as first-class feedback — the difference between "light enough" and "dig-through-paper heavy" is visible stroke-by-stroke.</p>
-        </div>
-        <div class="feature">
-          <h3>Honest stroke checking</h3>
-          <p>No rewards for scribbles. The app checks stroke path against the letter's model and explains what to fix — shape, direction, or completeness.</p>
-        </div>
-        <div class="feature">
-          <h3>Pedagogical first, alphabetical optional</h3>
-          <p>Ships in the Zaner-Bloser order (c, o, a, d, g, q, …) that builds motor skills efficiently, with a one-tap alphabetical toggle for children who prefer a familiar sequence.</p>
-        </div>
-        <div class="feature">
-          <h3>Parent-friendly privacy</h3>
-          <p>Nothing about your child leaves the iPad. No sign-up, no progress sync, no cloud. The app is a tool, not a surveillance device.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Best Search Fits</h2>
-      <p>Pen Licence should be a strong fit for searches like <strong>handwriting practice app for iPad</strong>, <strong>learn to write letters app</strong>, <strong>Apple Pencil writing app for kids</strong>, <strong>kids handwriting app</strong>, and <strong>trace letters app</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>What age group is it for?</h3>
-          <p>Pen Licence is designed for early-primary children — roughly ages 4 to 8 — but older learners building handwriting confidence can benefit too.</p>
-        </div>
-        <div class="feature">
-          <h3>Do we need an Apple Pencil?</h3>
-          <p>No. Finger practice works. Apple Pencil unlocks the pressure-coaching features; without one, the app silently skips the pressure stat instead of scoring a child unfairly.</p>
-        </div>
-        <div class="feature">
-          <h3>Is there a subscription?</h3>
-          <p>No recurring subscription. Pen Licence is a one-time purchase on the App Store, matching the rest of the BFG education lineup.</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms of Use</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>A whole alphabet, one confident stroke at a time</h2>
+      <p>Children trace, write, and get clear feedback the moment they lift the pen. Everything they do stays on the iPad — no accounts, no uploads, no ads.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/penlicence/01.webp" alt="Pen Licence letter practice with ghost guide and live stroke feedback" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/02.webp" alt="Pen Licence pressure coaching showing a stroke that is just right" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/03.webp" alt="Pen Licence 26-letter progress strip with completed and upcoming letters" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/04.webp" alt="Pen Licence stroke checking with honest shape and direction feedback" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/05.webp" alt="Pen Licence native-script tracing for kana, hanzi and Devanagari letters" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>What it does</h2>
+      <p>A serious handwriting tutor built for small hands — structured, encouraging, and honest about what to fix next.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Letter-by-letter curriculum</h3><p>A structured 26-letter curriculum in Zaner-Bloser pedagogical order with an alphabetical toggle. Children see exactly where they are and what is coming next.</p></article>
+        <article><h3>Pressure coaching</h3><p>Real-time feedback shows when a stroke is too light, just right, or too heavy. Pressure only counts with Apple Pencil, so finger practice stays encouraging.</p></article>
+        <article><h3>Stroke recognition</h3><p>Every letter is checked against its model stroke path, so children get honest feedback on shape, direction, and completion — not a gold star for any squiggle.</p></article>
+        <article><h3>Ghost letter guide</h3><p>A faint ghost of the target letter appears on the writing zone, scaled to x-height, so young learners can trace confidently before moving to freehand.</p></article>
+        <article><h3>Progress strip</h3><p>A 26-dot strip under every screen shows completed letters, the current letter, and the next few coming up — nothing hidden behind menus.</p></article>
+        <article><h3>Sticky controls</h3><p>Check, Try Again, and Next Lesson live in a fixed footer so the next action is always one tap away, even on smaller iPads.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/penlicence/02.webp" alt="Pen Licence pressure coaching feedback on a single stroke">
+      <div class="ap-copy">
+        <h2>Honest feedback, never a fake gold star</h2>
+        <p>Most handwriting apps reward any scribble and ignore how hard a child is pressing. Pen Licence does neither.</p>
+        <ul>
+          <li>Real pressure coaching with Apple Pencil — light enough, just right, or dig-through-paper heavy.</li>
+          <li>Strokes checked against the letter's model for shape, direction, and completeness.</li>
+          <li>Pedagogical order by default, with a one-tap alphabetical toggle.</li>
+          <li>Finger practice hides pressure stats so no child is scored unfairly.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Who it's for</h2>
+      <p>Pen Licence is built for parents, teachers, and therapists looking for a serious <strong>handwriting practice app for iPad</strong>, a <strong>learn to write app</strong>, or a <strong>kids writing app with Apple Pencil</strong>. It fits families practicing at home, classrooms using iPads as a station, and occupational-therapy work where pressure and stroke formation matter.</p>
+      <div class="ap-loop">
+        <article><h3>Home practice</h3><p>A calm, encouraging place for early-primary children to build letter confidence a few minutes at a time.</p></article>
+        <article><h3>Classroom station</h3><p>Drop it on a shared iPad and let children work through the curriculum at their own pace, no logins to manage.</p></article>
+        <article><h3>Occupational therapy</h3><p>Pressure and stroke-formation feedback make it a genuine tool where letter motor skills matter.</p></article>
+        <article><h3>Native-script learners</h3><p>Beyond the Latin alphabet, Pen Licence also supports tracing kana, hanzi, and Devanagari letterforms.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Built for trust</h2>
+      <div class="ap-trust">
+        <div><strong>On-device</strong><span>Strokes, scores and progress stay on the iPad.</span></div>
+        <div><strong>No accounts</strong><span>No sign-up, no email, no cloud, no ads.</span></div>
+        <div><strong>Works offline</strong><span>No network needed — practice anywhere.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Why choose Pen Licence?</h2>
+      <div class="ap-loop">
+        <article><h3>Built around stylus pressure</h3><p>Most handwriting apps ignore stylus pressure. Pen Licence treats it as first-class feedback — the difference between "light enough" and "dig-through-paper heavy" is visible stroke by stroke.</p></article>
+        <article><h3>Honest stroke checking</h3><p>No rewards for scribbles. The app checks stroke path against the letter's model and explains what to fix — shape, direction, or completeness.</p></article>
+        <article><h3>Pedagogical first, alphabetical optional</h3><p>Ships in the Zaner-Bloser order (c, o, a, d, g, q, …) that builds motor skills efficiently, with a one-tap alphabetical toggle for children who prefer a familiar sequence.</p></article>
+        <article><h3>Parent-friendly privacy</h3><p>Nothing about your child leaves the iPad. No sign-up, no progress sync, no cloud. The app is a tool, not a surveillance device.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Frequently asked questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>What age group is it for?</h3><p>Pen Licence is designed for early-primary children — roughly ages 4 to 8 — but older learners building handwriting confidence can benefit too.</p></article>
+        <article><h3>Do we need an Apple Pencil?</h3><p>No. Finger practice works. Apple Pencil unlocks the pressure-coaching features; without one, the app silently skips the pressure stat instead of scoring a child unfairly.</p></article>
+        <article><h3>Is there a subscription?</h3><p>No recurring subscription. Pen Licence is a one-time purchase on the App Store, matching the rest of the BFG education lineup.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Best search fits</h2>
+      <p>Pen Licence should be a strong fit for searches like <strong>handwriting practice app for iPad</strong>, <strong>learn to write letters app</strong>, <strong>Apple Pencil writing app for kids</strong>, <strong>kids handwriting app</strong>, and <strong>trace letters app</strong>.</p>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>

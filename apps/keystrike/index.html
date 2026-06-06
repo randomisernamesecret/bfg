@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0b1220;--ink:#eef3ff;--ink-soft:rgba(238,243,255,.84);--ink-faint:rgba(238,243,255,.64);--accent:#7aa2ff;--accent-ink:#cfe0ff;--cta:#5b8cff;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#16233f 0%,#0e1830 60%,#0b1220 100%);--media-glow:rgba(122,162,255,.18);--nav-bg:rgba(11,18,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -116,7 +120,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"keystrike","item":"https://bfgapps.co/apps/keystrike/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/" class="nav-brand">BFG</a>
@@ -138,10 +142,10 @@
             <a href="/apps/bellgrave/">Bellgrave</a>
             <a href="/apps/penlicence/">Pen Licence</a>
             <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/mergebash/">Merge Bash</a>
             <hr>
             <div class="menu-label">Coming Soon</div>
             <a href="/apps/cardbash/">Card Bash</a>
-            <a href="/apps/mergebash/">Merge Bash</a>
           </div>
         </div>
         <a href="/#blog">Blog</a>
@@ -166,158 +170,121 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-music">Music</span>
-      <h1>Keystrike</h1>
-      <p class="app-subtitle">Guided piano practice for iPhone, iPad, and Mac. Falling notes, section loops, MIDI input, acoustic mode, imports, and reports.</p>
-      <div class="hero-visual">
-        <img src="/assets/keystrike-hero.png" alt="Keystrike piano practice app showing falling notes labelled G, A, B, C, D above a piano keyboard for Minuet in G" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>7-day trial</strong>Then one-time unlock</div>
-        <div class="fact"><strong>iPhone, iPad &amp; Mac</strong>Responsive layouts</div>
-        <div class="fact"><strong>Local-first</strong>No accounts or ads</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>What's Inside</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Guided Grade Journey</h3>
-          <p>Students are guided through foundation skills, graded lessons, and readiness checks at their own pace.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Piano practice, guided</div>
+        <h1>Keystrike</h1>
+        <p class="ap-lede">Guided piano practice for iPad and Mac. Falling notes, section loops, MIDI keyboard input, acoustic mode, your own imports, and clear progress reports — local-first, with no accounts and no ads.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+          <a class="ap-button secondary" href="#screens">See the app</a>
         </div>
-        <div class="feature">
-          <h3>Falling-Note Practice</h3>
-          <p>Notes fall toward a hit line; students play the matching key. Tempo can be slowed, hands can be isolated, and notes are labelled for early learners.</p>
-        </div>
-        <div class="feature">
-          <h3>Theory Inside Practice</h3>
-          <p>Staff reading, rhythm, intervals, scales, chords, dynamics, and articulation are introduced through lesson steps and reference material.</p>
-        </div>
-        <div class="feature">
-          <h3>Sight-Reading and Ear Training</h3>
-          <p>Treble and bass clef reading drills, ear-copy challenges, and short checks help practice move beyond memorising songs.</p>
-        </div>
-        <div class="feature">
-          <h3>Scales, Chords, and Improv</h3>
-          <p>Scale tests, chord drills, and free-piano recording give students a place to practise technique and create their own ideas.</p>
-        </div>
-        <div class="feature">
-          <h3>Built-In Pieces</h3>
-          <p>Public-domain repertoire is included for falling-note practice and section loops.</p>
-        </div>
-        <div class="feature">
-          <h3>Bring Your Own MIDI</h3>
-          <p>Import standard .mid or .midi files from Files. Keystrike parses them into playable charts and suggests sections to practise.</p>
-        </div>
-        <div class="feature">
-          <h3>Acoustic-Piano Mode</h3>
-          <p>No MIDI keyboard? Acoustic mode can listen through the microphone for single-note practice when permission is granted.</p>
-        </div>
-        <div class="feature">
-          <h3>Free Play and Recording</h3>
-          <p>An open keyboard for improvisation and composition. Record, edit notes, and export recordings as standard MIDI files.</p>
-        </div>
-        <div class="feature">
-          <h3>Reports and Coach Loop</h3>
-          <p>Practice reports, weak-spot tracking, adaptive drills, and teacher/parent handoff views help make progress easier to trust.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Graded lessons</span>
+          <span class="ap-pill">MIDI keyboard</span>
+          <span class="ap-pill">iPad &amp; Mac</span>
+          <span class="ap-pill">7-day trial</span>
+          <span class="ap-pill">One-time unlock</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacy &amp; Data</h3>
-        <ul>
-          <li>No account required. No sign-up, no email, no password.</li>
-          <li>Progress, recordings, and imported MIDI files stay on your device.</li>
-          <li>Microphone use (acoustic-piano mode) is on-device only — audio never leaves the device.</li>
-          <li>No ads, no tracking, no analytics, no third-party SDKs.</li>
-          <li>Notifications are optional and used only for the daily-practice reminder.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Keystrike piano practice">
+        <img src="/assets/keystrike/01.webp" alt="Keystrike showing labelled falling notes descending toward a piano keyboard during a guided piece" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Who It Is For</h2>
-      <p>Keystrike is built for absolute beginners, returning players, self-taught learners who want more structure, parents helping a child practise, and students who need a clear path between teacher lessons.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Why Choose Keystrike?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>A guided path</h3>
-          <p>The home screen points students toward the next useful step first, then repertoire, imports, and creative work once the daily practice block is done.</p>
-        </div>
-        <div class="feature">
-          <h3>Correction loops</h3>
-          <p>Diagnose, drill, retest, and adapt the path, so mistakes turn into short targeted practice instead of vague advice.</p>
-        </div>
-        <div class="feature">
-          <h3>Designed across devices</h3>
-          <p>The interface is tuned for iPhone landscape, wider iPad layouts, and Mac windows, with different screen sizes treated deliberately.</p>
-        </div>
-        <div class="feature">
-          <h3>Trial, then unlock</h3>
-          <p>A 7-day free trial followed by a one-time unlock. No ads and no monthly piano subscription.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Best Search Fits</h2>
-      <p>Keystrike fits searches like <strong>best piano app for iPhone and iPad</strong>, <strong>graded piano practice app</strong>, <strong>piano app with MIDI keyboard support</strong>, <strong>section loop piano practice</strong>, <strong>piano app with theory and sight reading</strong>, and <strong>learn piano on Mac</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Frequently Asked Questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Do I need a MIDI keyboard?</h3>
-          <p>No. Use a USB or Bluetooth MIDI keyboard if you have one, an acoustic piano with the microphone, or the on-screen keyboard. Many beginners start without any hardware at all.</p>
-        </div>
-        <div class="feature">
-          <h3>How many grades are there?</h3>
-          <p>The app is structured around foundation work and graded progress, with lesson steps and readiness checks at each stage.</p>
-        </div>
-        <div class="feature">
-          <h3>Is there an Android version?</h3>
-          <p>No. Keystrike is built for iPhone, iPad, and Mac.</p>
-        </div>
-        <div class="feature">
-          <h3>Will my progress sync between devices?</h3>
-          <p>Keystrike is local-first, so progress, recordings, and imported MIDI files stay on the device they were created on.</p>
-        </div>
-        <div class="feature">
-          <h3>Can I use my own sheet music?</h3>
-          <p>You cannot import PDFs at launch. You can import MIDI files (.mid, .midi) and Keystrike will parse them into a playable chart automatically.</p>
-        </div>
-        <div class="feature">
-          <h3>Is it for children or adults?</h3>
-          <p>Both. The pacing of the early grades is gentle enough for a focused eight-year-old; the depth of the later grades is enough for adults working toward exam-grade repertoire.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Related Articles</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/best-piano-learning-apps-ipad-2026.html">Best Piano Learning Apps for iPad in 2026</a></li>
-        <li><a href="/blog/piano-app-subscription-vs-one-time.html">Why Subscription Piano Apps Cost More Than They Look</a></li>
-        <li><a href="/blog/learn-piano-on-ipad-without-a-keyboard.html">Can You Really Learn Piano on an iPad Without a Keyboard?</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms of Use</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>See it in action</h2>
+      <p>A clear path through every practice session — play falling notes, loop the hard sections, check your reading, and watch your progress build. Designed for wide iPad and Mac screens.</p>
+      <div class="ap-screens landscape" style="--shot-cols:2">
+        <div class="ap-shot"><img src="/assets/keystrike/01.webp" alt="Keystrike falling-note practice with labelled notes above a piano keyboard" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/02.webp" alt="Keystrike guided lesson step inside a graded course" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/03.webp" alt="Keystrike section loop view for practising a tricky passage" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/04.webp" alt="Keystrike sight-reading and theory drill screen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/05.webp" alt="Keystrike practice report showing progress and weak spots" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>What's inside</h2>
+      <p>A complete practice room — graded lessons, falling-note pieces, theory woven into the steps, and tools to bring your own music.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Guided grade journey</h3><p>Move through foundation skills, graded lessons, and readiness checks at your own pace, with the next useful step always in view.</p></article>
+        <article><h3>Falling-note practice</h3><p>Notes fall toward a hit line; you play the matching key. Slow the tempo, isolate a hand, and let early learners see labelled notes.</p></article>
+        <article><h3>Theory inside practice</h3><p>Staff reading, rhythm, intervals, scales, chords, dynamics, and articulation are introduced through lesson steps and reference material.</p></article>
+        <article><h3>Sight-reading &amp; ear training</h3><p>Treble and bass clef reading drills, ear-copy challenges, and short checks move practice beyond memorising songs.</p></article>
+        <article><h3>Scales, chords &amp; improv</h3><p>Scale tests, chord drills, and a free-piano recorder give you a place to build technique and create your own ideas.</p></article>
+        <article><h3>Built-in pieces</h3><p>Public-domain repertoire is included for falling-note practice and section loops, ready to play from the start.</p></article>
+        <article><h3>Bring your own MIDI</h3><p>Import standard .mid or .midi files from Files. Keystrike parses them into playable charts and suggests sections to practise.</p></article>
+        <article><h3>Acoustic-piano mode</h3><p>No MIDI keyboard? Acoustic mode can listen through the microphone for single-note practice when you grant permission.</p></article>
+        <article><h3>Reports &amp; coach loop</h3><p>Practice reports, weak-spot tracking, adaptive drills, and handoff views for a teacher or parent help make progress easier to trust.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/keystrike/03.webp" alt="Keystrike section loop view for repeating a tricky passage">
+      <div class="ap-copy">
+        <h2>A path you can follow</h2>
+        <p>The home screen points you toward the next useful step first, then repertoire, imports, and creative work once the daily practice block is done. Mistakes turn into short, targeted drills instead of vague advice.</p>
+        <ul>
+          <li>Diagnose, drill, retest, and adapt — the correction loop in full.</li>
+          <li>Tuned deliberately for iPhone landscape, wider iPad layouts, and Mac windows.</li>
+          <li>Free play and recording: improvise, edit notes, and export as standard MIDI.</li>
+          <li>A 7-day free trial, then a one-time unlock — no ads, no monthly subscription.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Who it's for</h2>
+      <p>Keystrike is built for absolute beginners, returning players, self-taught learners who want more structure, parents helping a child practise, and students who need a clear path between teacher lessons.</p>
+      <div class="ap-loop">
+        <article><h3>Absolute beginners</h3><p>Gentle early grades and labelled falling notes mean you can start playing without buying any hardware first.</p></article>
+        <article><h3>Returning players</h3><p>Pick up where your hands left off with graded pieces, section loops, and reading drills to rebuild fluency.</p></article>
+        <article><h3>Parents &amp; teachers</h3><p>Practice reports and handoff views make a child's progress easy to follow between lessons.</p></article>
+        <article><h3>Self-taught learners</h3><p>A credible graded course with theory built in, for when a teacher isn't an option right now.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Built for trust</h2>
+      <div class="ap-trust">
+        <div><strong>Local-first</strong><span>Progress, recordings, and imported MIDI stay on your device.</span></div>
+        <div><strong>No account</strong><span>No sign-up, no email, no password to start playing.</span></div>
+        <div><strong>No ads or tracking</strong><span>No analytics, no third-party SDKs; mic audio never leaves the device.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Best search fits</h2>
+      <p>Keystrike fits searches like <strong>best piano app for iPhone and iPad</strong>, <strong>graded piano practice app</strong>, <strong>piano app with MIDI keyboard support</strong>, <strong>section loop piano practice</strong>, <strong>piano app with theory and sight reading</strong>, and <strong>learn piano on Mac</strong>.</p>
+    </section>
+
+    <section class="ap-section">
+      <h2>Frequently asked questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Do I need a MIDI keyboard?</h3><p>No. Use a USB or Bluetooth MIDI keyboard if you have one, an acoustic piano with the microphone, or the on-screen keyboard. Many beginners start with no hardware at all.</p></article>
+        <article><h3>How many grades are there?</h3><p>The app is structured around foundation work and graded progress, with lesson steps and readiness checks at each stage.</p></article>
+        <article><h3>Is there an Android version?</h3><p>No. Keystrike is built for iPhone, iPad, and Mac.</p></article>
+        <article><h3>Will my progress sync between devices?</h3><p>Keystrike is local-first, so progress, recordings, and imported MIDI files stay on the device they were created on.</p></article>
+        <article><h3>Can I use my own sheet music?</h3><p>You cannot import PDFs at launch. You can import MIDI files (.mid, .midi) and Keystrike will parse them into a playable chart automatically.</p></article>
+        <article><h3>Is it for children or adults?</h3><p>Both. The early grades are gentle enough for a focused eight-year-old; the later grades go deep enough for adults working toward exam-grade repertoire.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Related articles</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/best-piano-learning-apps-ipad-2026.html">Best Piano Learning Apps for iPad in 2026</a></li>
+        <li><a href="/blog/piano-app-subscription-vs-one-time.html">Why Subscription Piano Apps Cost More Than They Look</a></li>
+        <li><a href="/blog/learn-piano-on-ipad-without-a-keyboard.html">Can You Really Learn Piano on an iPad Without a Keyboard?</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/">BFG Home</a> &middot; <a href="/privacy.html">Privacy</a></p>
