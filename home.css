@@ -1,4 +1,8 @@
 /* Shared homepage polish for every localized index page. */
+/* The fanned hero art uses rotate/translate transforms; clip any tiny
+   horizontal spill so it can never widen the page or trigger a scrollbar. */
+body { overflow-x: hidden; }
+
 .hero {
   max-width: 1100px;
   margin: 0 auto;
@@ -9,6 +13,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
   gap: 48px;
   align-items: center;
+  overflow-x: clip; /* contain the fanned art so it never widens the page */
 }
 
 .hero-copy { text-align: left; }
