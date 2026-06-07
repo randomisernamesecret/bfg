@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#0a1118;--ink:#eafdff;--ink-soft:rgba(234,253,255,.84);--ink-faint:rgba(234,253,255,.64);
+      --accent:#22d3ee;--accent-ink:#bdf3fb;--cta:#fb7185;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0f2a33 0%,#0b1a22 60%,#0a1118 100%);
+      --media-glow:rgba(34,211,238,.18);--nav-bg:rgba(10,17,24,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -67,7 +77,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"pacegrid","item":"https://bfgapps.co/de/apps/pacegrid/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -115,78 +125,109 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-fitness">Fitness</span>
-      <h1>PaceGrid</h1>
-      <p class="app-subtitle">GPS-Fitness-Tracking. Einmaliger Kauf. Ihre Daten.</p>
-      <div class="hero-visual">
-        <img src="/assets/pacegrid-hero.png" alt="PaceGrid App-Screenshot mit GPS-Laufverfolgung und Trainingsbelastungs-Dashboard" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>Apple Watch</strong>Unabhängiges GPS</div>
-        <div class="fact"><strong>Injury Guard</strong>ACWR-Trainingsbelastung</div>
-        <div class="fact"><strong>GPX/FIT-Export</strong>Standardformate</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Was die App kann</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>GPS Laufen/Radfahren/Gehen/Wandern</h3>
-          <p>Verfolgen Sie jede Outdoor-Aktivität mit Echtzeit-Tempo, Distanz und Herzfrequenz von Ihrer Apple Watch oder Ihrem iPhone.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Laufen · Radfahren · Wandern</div>
+        <h1>PaceGrid</h1>
+        <p class="ap-lede">Ein GPS-Lauf- &amp; Radtracker, der Ihr Training auf Ihrem Telefon belässt. Tempo und Distanz in Echtzeit, Aufzeichnung mit der Apple Watch, optionale Strava-Synchronisierung — kein Abonnement, keine Cloud, kein Konto.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">App ansehen</a>
         </div>
-        <div class="feature">
-          <h3>Apple Watch mit unabhängigem GPS</h3>
-          <p>Lassen Sie Ihr Smartphone zu Hause. PaceGrid zeichnet direkt vom Handgelenk mit vollständiger GPS-Aufzeichnung auf.</p>
-        </div>
-        <div class="feature">
-          <h3>Injury Guard</h3>
-          <p>Trainingsbelastungsmonitor auf Basis der Akut-Chronisch-Workload-Ratio. Warnt Sie, wenn Sie die Belastung zu schnell steigern.</p>
-        </div>
-        <div class="feature">
-          <h3>Strava Sync</h3>
-          <p>Teilen Sie einzelne Trainingseinheiten optional mit Strava, wann immer Sie möchten. Es wird nichts automatisch hochgeladen.</p>
-        </div>
-        <div class="feature">
-          <h3>GPX &amp; FIT-Export</h3>
-          <p>Exportieren Sie jede Trainingseinheit in Standardformaten, die mit nahezu jeder Fitnessplattform kompatibel sind.</p>
-        </div>
-        <div class="feature">
-          <h3>Vollständig offline nutzbar</h3>
-          <p>Funktioniert ohne Internetverbindung. Ihre Uhr und GPS sind alles, was Sie brauchen.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">GPS-Tracking</span>
+          <span class="ap-pill">Apple Watch</span>
+          <span class="ap-pill">Strava-Sync</span>
+          <span class="ap-pill">Nur auf dem Gerät</span>
+          <span class="ap-pill">Einmaliger Kauf</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Datenschutz &amp; Daten</h3>
-        <ul>
-          <li>Alle Trainingsdaten werden lokal in verschlüsseltem SQLite gespeichert.</li>
-          <li>Kein Konto erforderlich. Kein Cloud-Upload.</li>
-          <li>Strava-Sync ist optional — verwendet OAuth, keine Zugangsdaten werden gespeichert.</li>
-          <li>Keine Analyse, kein Tracking, keine Werbung.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="PaceGrid Aktivitätsverfolgung">
+        <img src="/assets/pacegrid/01.webp" alt="PaceGrid Live-Laufbildschirm mit Tempo, Distanz und Streckenkarte" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Verwandte Artikel</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/running-apps-no-subscription.html">Lauf-Apps ohne Abonnement</a></li>
-        <li><a href="/blog/training-load-injury-prevention.html">Trainingsbelastung &amp; Verletzungsprävention</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/pacegrid/privacy.html">Datenschutzerklärung</a>
       <a href="/apps/pacegrid/support.html">Support</a>
       <a href="/apps/pacegrid/terms.html">Nutzungsbedingungen</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Jeder Lauf, in Ihrer Tasche</h2>
+      <p>Starten Sie eine Einheit, beobachten Sie Tempo und Strecke in Echtzeit und sehen Sie sich nach dem Training die vollständige Historie an. Alles bleibt auf Ihrem Gerät.</p>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/pacegrid/01.webp" alt="PaceGrid Live-Aktivitätsbildschirm mit Tempo, Distanz und Streckenkarte" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/pacegrid/02.webp" alt="PaceGrid Aktivitätshistorie und Trainingsliste" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/pacegrid/03.webp" alt="PaceGrid Trainingsdetail mit Splits und Trainingsbelastung" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/pacegrid/04.webp" alt="PaceGrid Trends und Fortschrittsdiagramme" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Was die App kann</h2>
+      <p>Ein vollständiger Tracker für Läufe, Radtouren, Spaziergänge und Wanderungen — mit intelligenter Trainingsbelastungs-Überwachung und Standard-Exporten, damit Ihre Trainingshistorie Ihnen gehört.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>GPS Laufen, Radfahren, Gehen &amp; Wandern</h3><p>Verfolgen Sie jede Outdoor-Aktivität mit Echtzeit-Tempo, Distanz und Herzfrequenz von Ihrer Apple Watch oder Ihrem iPhone.</p></article>
+        <article><h3>Apple Watch mit unabhängigem GPS</h3><p>Lassen Sie Ihr Smartphone zu Hause. PaceGrid zeichnet direkt vom Handgelenk mit vollständiger GPS-Aufzeichnung auf.</p></article>
+        <article><h3>Injury Guard</h3><p>Ein Trainingsbelastungsmonitor, der Ihre Akut-Chronisch-Workload-Ratio beobachtet und warnt, wenn Sie die Belastung zu schnell steigern.</p></article>
+        <article><h3>Strava-Sync</h3><p>Teilen Sie einzelne Trainingseinheiten mit Strava, wann immer Sie möchten. Es wird nichts automatisch hochgeladen.</p></article>
+        <article><h3>GPX- &amp; FIT-Export</h3><p>Exportieren Sie jede Einheit in Standardformaten, die mit nahezu jeder Fitnessplattform kompatibel sind.</p></article>
+        <article><h3>Funktioniert offline</h3><p>Keine Internetverbindung nötig. Ihre Uhr und GPS sind alles, was Sie brauchen, um eine Einheit aufzuzeichnen.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/pacegrid/03.webp" alt="PaceGrid Trainingsdetail mit Splits und Trainingsbelastung">
+      <div class="ap-copy">
+        <h2>Schlauer trainieren, gesund bleiben</h2>
+        <p>PaceGrid zählt nicht nur Ihre Kilometer — es beobachtet, wie schnell Sie die Belastung steigern, damit Sie hart trainieren können, ohne sich in eine Verletzung zu laufen.</p>
+        <ul>
+          <li>Injury Guard verfolgt die Akut-Chronisch-Workload-Ratio.</li>
+          <li>Tempo, Distanz und Herzfrequenz in Echtzeit während Sie unterwegs sind.</li>
+          <li>Vollständige Trainingshistorie mit Splits und Trends.</li>
+          <li>Export nach GPX oder FIT — Ihre Daten gehen, wohin Sie gehen.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Für wen sie ist</h2>
+      <p>PaceGrid ist für Läufer, Radfahrer und Wanderer, die einen <strong>GPS-Fitness-Tracker ohne Abonnement</strong> wollen — eine <strong>Strava-freundliche Lauf-App</strong>, die am Handgelenk aufzeichnet und Ihre Trainingshistorie auf Ihrem eigenen Gerät statt in einer Anbieter-Cloud behält.</p>
+      <div class="ap-loop">
+        <article><h3>Kein Abonnement</h3><p>Einmaliger Kauf. Tracken Sie so viel Sie wollen, ohne dass eine monatliche Gebühr über jedem Lauf schwebt.</p></article>
+        <article><h3>Apple Watch zuerst</h3><p>Unabhängige GPS-Aufzeichnung vom Handgelenk macht PaceGrid ideal, wenn Sie kein Telefon mitnehmen möchten.</p></article>
+        <article><h3>Strava, zu Ihren Bedingungen</h3><p>Optionale Synchronisierung lässt Sie auf Strava teilen, wann Sie wollen — ohne standardmäßig Ihre ganze Historie preiszugeben.</p></article>
+        <article><h3>Export ohne Lock-in</h3><p>GPX- und FIT-Export halten Ihre Trainingseinheiten portabel, statt sie in einer App gefangen zu halten.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Für Vertrauen gebaut</h2>
+      <div class="ap-trust">
+        <div><strong>Auf dem Gerät</strong><span>Trainingsdaten bleiben lokal und verschlüsselt auf Ihrem Telefon.</span></div>
+        <div><strong>Kein Konto</strong><span>Keine Anmeldung, keine Cloud-Uploads, kein Tracking oder Werbung.</span></div>
+        <div><strong>Optionales Strava</strong><span>Die Synchronisierung verwendet sichere Anmeldung — nichts verlässt das Gerät, außer Sie wollen es.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Benötigt PaceGrid ein Abonnement?</h3><p>Nein. Es ist ein einmaliger Kauf ohne monatliche Gebühr. Lesen Sie <a href="/blog/running-apps-no-subscription.html">Lauf-Apps ohne Abonnement</a>.</p></article>
+        <article><h3>Kann es von meiner Apple Watch aufzeichnen?</h3><p>Ja. PaceGrid zeichnet unabhängiges GPS direkt vom Handgelenk auf, sodass Sie Ihr Telefon zu Hause lassen können.</p></article>
+        <article><h3>Wie funktioniert Injury Guard?</h3><p>Es beobachtet Ihre Trainingsbelastung über die Zeit. Mehr dazu in <a href="/blog/training-load-injury-prevention.html">Trainingsbelastung &amp; Verletzungsprävention</a>.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Verwandte Artikel</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/running-apps-no-subscription.html">Lauf-Apps ohne Abonnement</a></li>
+        <li><a href="/blog/training-load-injury-prevention.html">Trainingsbelastung &amp; Verletzungsprävention</a></li>
+        <li><a href="/blog/best-running-apps-apple-watch-2026.html">Die besten Lauf-Apps für die Apple Watch 2026</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG-Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>

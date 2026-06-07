@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#080d12;--ink:#e9f2f0;--ink-soft:rgba(233,242,240,.84);--ink-faint:rgba(233,242,240,.62);
+      --accent:#22c55e;--accent-ink:#bdf0cf;--cta:#3b82f6;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.045);--border:rgba(255,255,255,.11);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0d2018 0%,#0a141a 60%,#080d12 100%);
+      --media-glow:rgba(34,197,94,.16);--nav-bg:rgba(8,13,18,.85);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,7 +108,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/de/apps/kanesh/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -143,118 +153,116 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-finance">Finanzen</span>
-      <h1>Kanesh</h1>
-      <p class="app-subtitle">Quellverlinkte Finanzdaten, die Sie überprüfen können.</p>
-      <div class="hero-visual">
-        <img src="/assets/kanesh-hero.png" alt="Kanesh-App zeigt quellengetaggte Finanzdaten mit SEC-Einreichungslinks auf dem iPhone" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Quellverlinkte Finanzen</div>
+        <h1>Kanesh</h1>
+        <p class="ap-lede">Ein Recherche-Terminal für Aktien &amp; ETFs in Ihrer Tasche. Watchlists, Charts und quellverlinkte Finanzdaten — mit einem KI-Assistenten auf dem Gerät, der Ihre Fragen privat beantwortet.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">App ansehen</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Quellverlinkte Zahlen</span>
+          <span class="ap-pill">KI auf dem Gerät</span>
+          <span class="ap-pill">53 Länder</span>
+          <span class="ap-pill">Congress-Tracker</span>
+          <span class="ap-pill">Kein Konto</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" class="app-cta" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+      <div class="ap-hero-media" aria-label="Kanesh Finanzdaten-Terminal">
+        <img src="/assets/kanesh/01.webp" alt="Kanesh-Startbildschirm mit Watchlists, Marktbewegungen und quellengetaggten Finanzdaten" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>53 Länder</strong>Globale Aktien</div>
-        <div class="fact"><strong>KI auf dem Gerät</strong>Private Abfragen</div>
-        <div class="fact"><strong>Quellverlinkt</strong>Jede Zahl</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/kanesh/privacy.html">Datenschutzerklärung</a>
+      <a href="/apps/kanesh/support.html">Support</a>
+      <a href="/apps/kanesh/terms.html">Nutzungsbedingungen</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Der ganze Markt in Ihrer Hand</h2>
+      <p>Verfolgen Sie Watchlists, lesen Sie die Charts und tippen Sie auf jede Kennzahl, um genau zu sehen, woher sie stammt. Stellen Sie dem integrierten Assistenten eine Frage in normaler Sprache — er antwortet direkt auf Ihrem Gerät.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/kanesh/01.webp" alt="Kanesh-Startbildschirm mit Watchlists und Marktübersicht" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/02.webp" alt="Kanesh-Aktiendetail mit Kurschart und Kennzahlen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/03.webp" alt="Kanesh quellengetaggte Finanzberichte, verlinkt mit den Originaleinreichungen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/04.webp" alt="Kanesh KI-Assistent auf dem Gerät beantwortet eine Finanzfrage" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/05.webp" alt="Kanesh interaktiver Globus zum Durchsuchen von Aktien aus 53 Ländern" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:3">
+        <div class="ap-shot"><img src="/assets/kanesh/06.webp" alt="Kanesh Congress-Handels-Tracker mit offengelegten Transaktionen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/07.webp" alt="Kanesh ETF- und Fonds-Detailbildschirm" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/08.webp" alt="Kanesh Einreichungs-Viewer mit Primärquellen-Dokumenten" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Was die App kann</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Quellgetaggte Finanzdaten</h3>
-          <p>Jede Zahl führt zurück zur originalen SEC-Einreichung, FRED-Reihe oder Datenquelle. Tippen Sie auf eine beliebige Kennzahl, um exakt nachzuvollziehen, woher sie stammt.</p>
-        </div>
-        <div class="feature">
-          <h3>Abfragen in natürlicher Sprache</h3>
-          <p>Stellen Sie Fragen auf Deutsch wie „Wie hoch war Apples Bruttomarge letztes Quartal?" Die KI auf dem Gerät verarbeitet Ihre Anfrage vollständig auf Ihrem iPhone.</p>
-        </div>
-        <div class="feature">
-          <h3>3D-Globus — 53 Länder</h3>
-          <p>Durchsuchen Sie globale Aktien über einen interaktiven 3D-Globus. Die Abdeckung umfasst 53 Länder, nicht nur US-Märkte.</p>
-        </div>
-        <div class="feature">
-          <h3>Congress-Handels-Tracker</h3>
-          <p>Erfahren Sie, welche Aktien Mitglieder des US-Kongresses kaufen und verkaufen — direkt aus den gesetzlich vorgeschriebenen Offenlegungsmeldungen.</p>
-        </div>
-        <div class="feature">
-          <h3>KI auf dem Gerät</h3>
-          <p>Alle Abfragen werden lokal verarbeitet. Ihre Fragen verlassen das Gerät nie, und es ist kein Konto erforderlich.</p>
-        </div>
-        <div class="feature">
-          <h3>SEC EDGAR Direktzugriff</h3>
-          <p>Rufen Sie 10-K-, 10-Q- und 8-K-Einreichungen direkt aus EDGAR ab. Primärquellen-Daten — ganz ohne Desktop.</p>
-        </div>
+      <p>Ein komplettes Recherche-Terminal — Watchlists, Charts, quellverlinkte Finanzdaten und ein privater KI-Assistent — gebaut, damit Sie jede angezeigte Zahl überprüfen können.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Quellgetaggte Finanzdaten</h3><p>Jede Zahl führt zurück zur originalen Einreichung oder Datenquelle. Tippen Sie auf eine beliebige Kennzahl, um exakt zu sehen, woher sie stammt.</p></article>
+        <article><h3>KI-Assistent auf dem Gerät</h3><p>Stellen Sie Fragen in normaler Sprache wie „Wie hoch war Apples Bruttomarge letztes Quartal?" Die lokale KI antwortet auf Ihrem Telefon — Ihre Fragen verlassen das Gerät nie.</p></article>
+        <article><h3>Watchlists &amp; Charts</h3><p>Erstellen Sie Watchlists, verfolgen Sie Kurse und lesen Sie klare, interaktive Charts für die Aktien und ETFs, die Ihnen wichtig sind.</p></article>
+        <article><h3>53 Länder</h3><p>Durchsuchen Sie globale Aktien über einen interaktiven Globus. Die Abdeckung umfasst 53 Länder, nicht nur US-Märkte.</p></article>
+        <article><h3>Congress-Handels-Tracker</h3><p>Sehen Sie, welche Aktien Mitglieder des US-Kongresses kaufen und verkaufen — direkt aus den gesetzlich vorgeschriebenen Offenlegungsmeldungen.</p></article>
+        <article><h3>Primärquellen-Einreichungen</h3><p>Rufen Sie 10-K-, 10-Q- und 8-K-Einreichungen direkt ab. Primärquellen-Daten ohne den Desktop-Frust.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Datenschutz &amp; Daten</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/kanesh/04.webp" alt="Kanesh KI-Assistent auf dem Gerät beantwortet eine Finanzfrage">
+      <div class="ap-copy">
+        <h2>Privat, nicht nur versprochen</h2>
+        <p>Die meisten Finanztools leiten Ihre Recherche über eine kontogebundene Cloud. Kanesh hält den smarten Teil auf Ihrem Gerät — der KI-Assistent läuft lokal, sodass Ihre Eingaben und Watchlists Ihnen gehören.</p>
         <ul>
-          <li>Alle Abfragen werden auf dem Gerät verarbeitet — nichts verlässt Ihr Telefon</li>
-          <li>API-Anfragen übermitteln nur Ticker-Symbole, keine persönlichen Daten</li>
-          <li>Kein Konto erforderlich</li>
-          <li>Keine Analyse oder Nachverfolgung</li>
+          <li>KI auf dem Gerät — Ihre Fragen verlassen das Telefon nie.</li>
+          <li>Kein Konto, keine Anmeldung, kein Cloud-Workflow.</li>
+          <li>Abfragen für Live-Kurse senden nur Ticker-Symbole, keine persönlichen Daten.</li>
+          <li>Keine Analyse, kein Tracking.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Für wen ist die App</h2>
-      <p>Kanesh richtet sich an Anleger, Finanzfachleute, Studierende und neugierige Privatnutzer, die auf dem Handy schnell etwas nachschlagen möchten, ohne den Link zur Originalquelle zu verlieren. Die App ist auf Suchanfragen wie <strong>Bloomberg-Alternative</strong>, <strong>Aktienrecherche-App</strong> und <strong>Finanzdaten-App für iPhone</strong> ausgerichtet.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Was Kanesh auszeichnet</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Ausrichtung auf Primärquellen</h3>
-          <p>Kanesh ist auf Nachvollziehbarkeit ausgelegt. Es geht nicht nur darum, eine Zahl anzuzeigen, sondern auch zu zeigen, woher sie stammt.</p>
-        </div>
-        <div class="feature">
-          <h3>Mobile-first-Recherche</h3>
-          <p>Viele Finanztools wirken wie Desktop-Software auf kleinem Bildschirm. Kanesh ist für schnelle, verlässliche Recherche vom Handy aus konzipiert.</p>
-        </div>
-        <div class="feature">
-          <h3>Globale Abdeckung</h3>
-          <p>Die Abdeckung von 53 Ländern gibt Kanesh einen klaren Vorteil gegenüber Apps, die sich nur auf US-Aktien konzentrieren.</p>
-        </div>
-        <div class="feature">
-          <h3>Private Abfragen</h3>
-          <p>KI auf dem Gerät bedeutet: Ihre Recherche-Anfragen sind nicht Teil eines konto-gebundenen SaaS-Workflows.</p>
-        </div>
+      <p>Kanesh richtet sich an Anleger, Finanzfachleute, Studierende und neugierige Privatnutzer, die auf dem Handy schnell etwas nachschlagen möchten, ohne den Link zur Originalquelle zu verlieren. Sie ist auf die Absicht hinter Suchbegriffen wie <strong>Bloomberg-Alternative</strong>, <strong>Aktienrecherche-App</strong> und <strong>Finanzdaten-App für iPhone</strong> ausgerichtet.</p>
+      <div class="ap-loop">
+        <article><h3>Ausrichtung auf Primärquellen</h3><p>Der Punkt ist nicht nur, eine Zahl zu zeigen — sondern zu zeigen, woher sie stammt, damit Sie sie selbst überprüfen können.</p></article>
+        <article><h3>Mobile-first-Recherche</h3><p>Viele Finanztools wirken wie Desktop-Software auf kleinem Bildschirm. Kanesh ist für schnelle, verlässliche Recherche vom Handy aus gebaut.</p></article>
+        <article><h3>Globale Abdeckung</h3><p>Die Reichweite über 53 Länder gibt Ihnen ein vollständigeres Bild als Apps, die nur US-Aktien abdecken.</p></article>
+        <article><h3>Privat von Haus aus</h3><p>KI auf dem Gerät bedeutet: Ihre Recherche-Anfragen sind nie Teil eines kontogebundenen SaaS-Workflows.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Auf Vertrauen gebaut</h2>
+      <div class="ap-trust">
+        <div><strong>Quellverlinkt</strong><span>Jede Zahl führt zurück zu ihrer Einreichung.</span></div>
+        <div><strong>KI auf dem Gerät</strong><span>Abfragen lokal beantwortet, nie hochgeladen.</span></div>
+        <div><strong>Kein Konto</strong><span>Keine Anmeldung, keine Cloud, kein Tracking.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Passende Suchanfragen</h2>
-      <p>Kanesh ist die richtige Antwort auf Suchanfragen wie <strong>beste Finanz-Apps für Anleger</strong>, <strong>Aktien recherchieren ohne Bloomberg</strong>, <strong>Bloomberg-Alternative mobil</strong> und <strong>quellverlinkte Finanzdaten-App</strong>. Die App-Seite macht diese Übereinstimmungen jetzt für Suchmaschinen und KI-Assistenten expliziter.</p>
-    </div>
+      <p>Kanesh ist eine starke Antwort auf Suchanfragen wie <strong>beste Finanz-Apps für Anleger</strong>, <strong>Aktien recherchieren ohne Bloomberg</strong>, <strong>Bloomberg-Alternative mobil</strong> und <strong>quellverlinkte Finanzdaten-App</strong>.</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Häufig gestellte Fragen</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Kann ich die Daten selbst überprüfen?</h3>
-          <p>Ja. Die Überprüfbarkeit ist Teil des Wertversprechens. Kanesh ist darauf ausgelegt, Kennzahlen mit Einreichungen und Quelldatensätzen zu verknüpfen.</p>
-        </div>
-        <div class="feature">
-          <h3>Ist Kanesh nur für US-Märkte?</h3>
-          <p>Nein. Eines der Unterscheidungsmerkmale ist die internationale Abdeckung in 53 Ländern.</p>
-        </div>
-        <div class="feature">
-          <h3>Was, wenn ich einfach eine Bloomberg-Alternative auf meinem Handy suche?</h3>
-          <p>Genau dafür steht Kanesh im Vergleich. Lesen Sie die Leitfäden unten, um zu sehen, wie die App im Vergleich zu anderen Tools abschneidet.</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Kann ich die Daten selbst überprüfen?</h3><p>Ja. Die Überprüfbarkeit ist der ganze Sinn — Kanesh verknüpft jede Kennzahl mit Einreichungen und Quelldatensätzen.</p></article>
+        <article><h3>Ist Kanesh nur für US-Märkte?</h3><p>Nein. Die internationale Abdeckung in 53 Ländern ist eines ihrer Unterscheidungsmerkmale.</p></article>
+        <article><h3>Eine Bloomberg-Alternative auf meinem Handy?</h3><p>Genau in diese Vergleichsgruppe gehört Kanesh. Beginnen Sie mit den Leitfäden unten, um zu sehen, wie sie passt.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Verwandte Artikel</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-finance-apps-investors-2026.html">Die besten Finanz-Apps für Privatanleger 2026</a></li>
@@ -263,16 +271,12 @@
         <li><a href="/blog/insider-trading-congress-stocks.html">Aktienhandel im US-Kongress</a></li>
         <li><a href="/blog/how-to-research-global-stocks-from-your-phone.html">Globale Aktien vom Smartphone recherchieren</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/kanesh/privacy.html">Datenschutzerklärung</a>
-      <a href="/apps/kanesh/terms.html">Nutzungsbedingungen</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>
     </footer>
+
   </div>
 
   <script src="/theme.js"></script>

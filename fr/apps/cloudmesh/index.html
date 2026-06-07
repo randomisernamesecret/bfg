@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#081019;--ink:#eaf4ff;--ink-soft:rgba(234,244,255,.85);--ink-faint:rgba(234,244,255,.64);
+      --accent:#38bdf8;--accent-ink:#c2e9ff;--cta:#facc15;--cta-ink:#10182a;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0e2742 0%,#0a1828 60%,#081019 100%);
+      --media-glow:rgba(56,189,248,.2);--nav-bg:rgba(8,16,25,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cloudmesh","item":"https://bfgapps.co/fr/apps/cloudmesh/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/fr/" class="nav-brand">BFG</a>
@@ -147,117 +157,109 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-weather">Météo</span>
-      <h1>Cloudmesh Weather</h1>
-      <p class="app-subtitle">29 widgets. Mesh communautaire. Sans abonnement.</p>
-      <div class="hero-visual">
-        <img src="/assets/cloudmesh-hero.png" alt="Capture d'écran de Cloudmesh Weather montrant des widgets et un résumé météo par IA" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">La météo, bien faite</div>
+        <h1>Cloudmesh</h1>
+        <p class="ap-lede">Une app météo bâtie autour de ce qui vous fait vraiment agir — radar de pluie en direct, qualité de l'air, alertes de pluie avant la première goutte et un planificateur d'itinéraire qui vous guide autour de la météo. Achat unique, sans abonnement.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+          <a class="ap-button secondary" href="#screens">Voir l'app</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Points forts">
+          <span class="ap-pill">Radar de pluie en direct</span>
+          <span class="ap-pill">Qualité de l'air (AQI)</span>
+          <span class="ap-pill">Alertes de pluie</span>
+          <span class="ap-pill">Apple Watch</span>
+          <span class="ap-pill">Sans abonnement</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+      <div class="ap-hero-media" aria-label="Cloudmesh Weather">
+        <img src="/assets/cloudmesh/01.webp" alt="Écran d'accueil de Cloudmesh Weather avec les conditions actuelles et les prévisions" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>29 Widgets</strong>Écran d'accueil &amp; verrouillage</div>
-        <div class="fact"><strong>Résumés par IA</strong>Prévisions en langage clair</div>
-        <div class="fact"><strong>Achat unique</strong>Sans abonnement</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/cloudmesh/privacy.html">Politique de confidentialité</a>
+      <a href="/apps/cloudmesh/support.html">Support</a>
+      <a href="/apps/cloudmesh/terms.html">Conditions d'utilisation</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Voir la météo, pas seulement la lire</h2>
+      <p>Radar en direct, qualité de l'air, détail par heure et alertes — disposés pour que vous jetiez un œil, décidiez et poursuiviez votre journée.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/cloudmesh/01.webp" alt="Écran d'accueil de Cloudmesh Weather avec les conditions actuelles et les prévisions" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/02.webp" alt="Vue des prévisions horaires et journalières de Cloudmesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/03.webp" alt="Carte du radar de pluie en direct de Cloudmesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/04.webp" alt="Qualité de l'air et détail de l'AQI de Cloudmesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/05.webp" alt="Réglages des notifications d'alerte de pluie de Cloudmesh" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cloudmesh/06.webp" alt="Planificateur d'itinéraire météo de Cloudmesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/07.webp" alt="Villes enregistrées et vue multi-localisations de Cloudmesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/08.webp" alt="Complication et aperçu Apple Watch de Cloudmesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/09.webp" alt="Conditions détaillées de Cloudmesh avec vent, pression et humidité" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Ce que fait l'app</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>29 Widgets</h3>
-          <p>Widgets pour l'écran d'accueil et l'écran de verrouillage dans tous les formats pris en charge par Apple — du plus minimaliste au plus détaillé.</p>
-        </div>
-        <div class="feature">
-          <h3>Résumés météo par IA</h3>
-          <p>Des prévisions en langage simple qui vous disent quoi faire, pas seulement ce que fait l'atmosphère.</p>
-        </div>
-        <div class="feature">
-          <h3>Mesh barométrique communautaire</h3>
-          <p>Des relevés anonymes de pression barométrique provenant des téléphones des utilisateurs, agrégés en une carte de pression hyperlocale en temps réel.</p>
-        </div>
-        <div class="feature">
-          <h3>Détection de séismes</h3>
-          <p>Détection sismique par accéléromètre capable d'avertir les utilisateurs proches en quelques secondes. Actuellement en bêta.</p>
-        </div>
-        <div class="feature">
-          <h3>Alertes de pluie</h3>
-          <p>Recevez une notification avant que la pluie commence pour mieux planifier votre journée. Sans interrogation constante de la localisation.</p>
-        </div>
-        <div class="feature">
-          <h3>Précipitations minute par minute</h3>
-          <p>Prévisions de précipitations détaillées pour la prochaine heure. Disponible en version premium.</p>
-        </div>
+      <p>Tout ce qu'il faut pour planifier autour de la météo — radar, qualité de l'air, alertes au bon moment et un planificateur d'itinéraire — sans compte ni abonnement mensuel.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Radar de pluie en direct</h3><p>Regardez la pluie se déplacer sur une carte interactive qui suit la ville sélectionnée, pour voir ce qui arrive avant que ça arrive.</p></article>
+        <article><h3>Qualité de l'air (AQI)</h3><p>La qualité de l'air actuelle en un coup d'œil, avec un détail clair, pour savoir si c'est une bonne journée pour sortir.</p></article>
+        <article><h3>Alertes de pluie</h3><p>Soyez prévenu avant que la pluie commence pour attraper le parapluie ou attendre — sans suivi permanent.</p></article>
+        <article><h3>Planificateur d'itinéraire météo</h3><p>Planifiez un trajet et Cloudmesh vous guide autour de la pluie, en lisant la météo tout au long de votre parcours, pas seulement à l'arrivée.</p></article>
+        <article><h3>Complication Apple Watch</h3><p>Vos conditions les plus récentes au poignet, tenues à jour en arrière-plan pour qu'un coup d'œil soit toujours actuel.</p></article>
+        <article><h3>Prévisions horaires &amp; journalières</h3><p>Des prévisions horaires et sur plusieurs jours claires, avec vent, pression et humidité quand vous voulez le détail.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Confidentialité &amp; données</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/cloudmesh/03.webp" alt="Vue de la carte du radar de pluie en direct de Cloudmesh">
+      <div class="ap-copy">
+        <h2>Pensée pour l'action, pas pour les déluges de données</h2>
+        <p>La plupart des apps météo enfouissent la seule chose qui vous importe vraiment — va-t-il pleuvoir sur moi ? Cloudmesh met en avant le radar en direct et les alertes au bon moment pour que la réponse soit toujours à un coup d'œil.</p>
         <ul>
-          <li>Contributions anonymes au mesh — localisation imprécise, aucun identifiant utilisateur.</li>
-          <li>Tokens push conservés jusqu'à expiration seulement.</li>
-          <li>Pas de comptes, pas d'analytics, pas de publicité.</li>
-          <li>Données supprimées automatiquement en quelques heures.</li>
+          <li>Un radar en direct qui suit la ville que vous regardez.</li>
+          <li>Des alertes de pluie avant la première goutte, pas après.</li>
+          <li>Un planificateur d'itinéraire qui vous guide autour de la météo.</li>
+          <li>La qualité de l'air à côté des prévisions, pas cachée.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Conçue pour la confiance</h2>
+      <div class="ap-trust">
+        <div><strong>Sans abonnement</strong><span>Achetez une fois. Pas de mensualité pour votre météo.</span></div>
+        <div><strong>Sans comptes</strong><span>Pas d'inscription, pas de suivi, pas de publicité.</span></div>
+        <div><strong>Confidentialité d'abord</strong><span>Données minimales, avec une documentation claire propre à l'app.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>À qui s'adresse l'app</h2>
-      <p>Cloudmesh Weather est conçue pour les utilisateurs d'iPhone qui veulent plus qu'une simple carte météo. Si vous tenez aux widgets de l'écran d'accueil, souhaitez des résumés météo clairs et rapides, et préférez payer une application une seule fois plutôt que de régler un abonnement mensuel, Cloudmesh est faite pour vous.</p>
-      <p>Elle est particulièrement pertinente si vous comparez les apps météo populaires pour iPhone et cherchez une <strong>alternative à CARROT Weather</strong>, une <strong>app météo avec plus de widgets</strong> ou une <strong>app météo respectueuse de la vie privée</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Pourquoi choisir Cloudmesh plutôt qu'une app météo classique ?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Design centré sur les widgets</h3>
-          <p>Beaucoup d'apps météo considèrent les widgets comme un accessoire. Cloudmesh les place au cœur de l'expérience, car c'est ainsi que la plupart des gens consultent la météo au quotidien.</p>
-        </div>
-        <div class="feature">
-          <h3>Confidentialité en priorité</h3>
-          <p>Cloudmesh est conçue autour d'une collecte de données minimale, sans obligation de compte et avec des explications claires sur ce qui est réellement stocké.</p>
-        </div>
-        <div class="feature">
-          <h3>Différenciation grâce au mesh</h3>
-          <p>Le mesh barométrique communautaire donne à Cloudmesh un positionnement produit qui la distingue vraiment des apps de prévisions classiques.</p>
-        </div>
-        <div class="feature">
-          <h3>Pas d'abonnement</h3>
-          <p>Si vous en avez assez de payer chaque mois pour des widgets météo, Cloudmesh est délibérément positionnée comme l'option à achat unique.</p>
-        </div>
+      <p>Cloudmesh est faite pour celles et ceux qui veulent plus qu'une simple carte de prévisions. Si vous consultez la météo pour décider quoi porter, quand partir ou s'il faut prendre un parapluie, vous sentirez la différence. C'est particulièrement pertinent si vous cherchez une <strong>app météo avec radar en direct</strong>, une <strong>app météo avec alertes de pluie</strong> ou une <strong>app météo respectueuse de la vie privée</strong> sans abonnement.</p>
+      <div class="ap-loop">
+        <article><h3>Routines sensibles à la pluie</h3><p>Personnes qui font la navette, promènent leur chien, courent ou ont des enfants et doivent savoir exactement quand la pluie arrive.</p></article>
+        <article><h3>Attentifs à la qualité de l'air</h3><p>Tous ceux qui veulent l'AQI au premier plan avant de sortir ou d'ouvrir les fenêtres.</p></article>
+        <article><h3>Voyageurs et planificateurs</h3><p>Ceux qui préparent un trajet et veulent la météo sur tout l'itinéraire, pas seulement à la fin.</p></article>
+        <article><h3>Lassés des abonnements</h3><p>Si vous préférez acheter une app une fois plutôt que payer chaque mois, Cloudmesh est l'option à achat unique.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>Prix &amp; positionnement sur l'App Store</h2>
-      <p>Cloudmesh Weather est présentée comme une <strong>app météo à achat unique</strong>. C'est important, car beaucoup de personnes qui cherchent une nouvelle app météo ne comparent pas seulement la qualité des prévisions, mais aussi les modèles tarifaires. Si vous souhaitez des widgets météo sans ajouter un autre abonnement à votre liste mensuelle, Cloudmesh est conçue pour répondre précisément à cette attente.</p>
-    </div>
-
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Foire aux questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Cloudmesh Weather est-elle bonne pour les widgets ?</h3>
-          <p>Oui. La variété de widgets est l'une des principales raisons de la choisir, surtout si vous souhaitez plusieurs mises en page pour l'écran d'accueil et de verrouillage.</p>
-        </div>
-        <div class="feature">
-          <h3>Cloudmesh Weather respecte-t-elle la vie privée ?</h3>
-          <p>Cloudmesh est construite autour de la confidentialité en priorité : aucun compte requis, collecte de données minimale et documentation de confidentialité claire propre à l'app.</p>
-        </div>
-        <div class="feature">
-          <h3>Et si je dois choisir entre Cloudmesh et CARROT ?</h3>
-          <p>Lisez la comparaison directe dans <a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a> pour les différences en termes de widgets, de prix et de confidentialité.</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Cloudmesh a-t-elle un radar en direct ?</h3><p>Oui. Le radar de pluie en direct suit la ville sélectionnée pour que vous voyiez la météo approcher en temps réel.</p></article>
+        <article><h3>Cloudmesh est-elle un abonnement ?</h3><p>Non. Cloudmesh est un achat unique avec une offre gratuite et un déblocage premium — sans frais récurrents.</p></article>
+        <article><h3>Comment se compare-t-elle à CARROT ?</h3><p>Lisez la comparaison directe dans <a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a> pour les fonctionnalités, le prix et la confidentialité.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Articles connexes</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-iphone-weather-widgets-2026.html">Les meilleurs widgets météo pour iPhone en 2026</a></li>
@@ -265,13 +267,7 @@
         <li><a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a></li>
         <li><a href="/blog/best-weather-apps-uk-2026.html">Meilleures apps météo au Royaume-Uni en 2026</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cloudmesh/privacy.html">Politique de confidentialité</a>
-      <a href="/apps/cloudmesh/support.html">Support</a>
-      <a href="/apps/cloudmesh/terms.html">Conditions d'utilisation</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>

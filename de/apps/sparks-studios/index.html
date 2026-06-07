@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#140a1f;--ink:#fbf2ff;--ink-soft:rgba(251,242,255,.85);--ink-faint:rgba(251,242,255,.64);--accent:#c084fc;--accent-ink:#ecd6ff;--cta:#fb7185;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#33184a 0%,#1f1030 60%,#140a1f 100%);--media-glow:rgba(192,132,252,.2);--nav-bg:rgba(20,10,31,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,7 +70,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"sparks-studios","item":"https://bfgapps.co/de/apps/sparks-studios/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -111,87 +115,116 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-kids">Kinder</span>
-      <h1>Sparks Studio</h1>
-      <p class="app-subtitle">Kreativer KI-Spielplatz für 4–12 Jahre.</p>
-      <div class="hero-visual">
-        <img src="/assets/sparks-hero.png" alt="Sparks Studio App mit Zeichen-, Geschichten- und Musikwerkzeugen für Kinder auf dem iPhone" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Für junge Kreative gemacht</div>
+        <h1>Sparks Studio</h1>
+        <p class="ap-lede">Ein kreativer Spielplatz, auf dem Kinder zeichnen, Geschichten schreiben und Musik komponieren – mit einem behutsamen Helfer auf dem Gerät, der Ideen gibt, ohne je das Ruder zu übernehmen. Für 4&ndash;12 Jahre.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">App ansehen</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Auf dem Gerät</span>
+          <span class="ap-pill">Keine Werbung</span>
+          <span class="ap-pill">Kein Tracking</span>
+          <span class="ap-pill">Kein Konto</span>
+          <span class="ap-pill">4&ndash;12 Jahre</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" class="app-cta" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+      <div class="ap-hero-media" aria-label="Kreativwerkzeuge von Sparks Studio für Kinder">
+        <img src="/assets/sparks/01.webp" alt="Startbildschirm von Sparks Studio mit Zeichen-, Geschichten- und Musikwerkzeugen für Kinder" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4–12 Jahre</strong>Drei Altersstufen</div>
-        <div class="fact"><strong>KI auf dem Gerät</strong>Nichts wird hochgeladen</div>
-        <div class="fact"><strong>Keine Werbung</strong>Kein Tracking</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/sparks-studios/privacy.html">Datenschutzrichtlinie</a>
+      <a href="/apps/sparks-studios/support.html">Support</a>
+      <a href="/apps/sparks-studios/terms.html">Nutzungsbedingungen</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Ein ganzes Studio in Kinderhand</h2>
+      <p>Zeichnen, Geschichten erzählen und Musik machen – drei kreative Werkzeuge für kleine Hände und große Fantasie. Alles, was ein Kind erstellt, bleibt auf dem Gerät.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/sparks/01.webp" alt="Startbildschirm von Sparks Studio mit kreativen Aktivitäten für Kinder" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/02.webp" alt="Zeichenleinwand von Sparks Studio mit Pinseln und Farben" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/03.webp" alt="Geschichtenwerkstatt von Sparks Studio für junge Autoren" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/04.webp" alt="Musikkomponist von Sparks Studio beim Setzen von Noten" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/05.webp" alt="Kreativgalerie von Sparks Studio mit gespeicherten Zeichnungen, Geschichten und Musik" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Was die App kann</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Zeichenleinwand</h3>
-          <p>Freies Skizzieren mit KI-gestützten Impulsen und Vorschlägen. Die KI unterstützt, ohne die Kontrolle zu übernehmen.</p>
-        </div>
-        <div class="feature">
-          <h3>Geschichtenwerkstatt</h3>
-          <p>Geschichten schreiben mit KI-Unterstützung für Struktur und Wortschatz. Die KI bietet Ideen an, wenn ein Kind nicht weiterkommt – schreibt aber nicht für es.</p>
-        </div>
-        <div class="feature">
-          <h3>Musikkomponist</h3>
-          <p>Melodien erstellen, indem Noten gesetzt und angehört werden. Die KI schlägt Harmonien und Rhythmusmuster vor – zum Annehmen oder Ablehnen.</p>
-        </div>
-        <div class="feature">
-          <h3>KI auf dem Gerät</h3>
-          <p>Alle KI-Verarbeitung erfolgt lokal. Nichts wird auf einen Server hochgeladen. Keine Kontoerstellung erforderlich.</p>
-        </div>
-        <div class="feature">
-          <h3>Altersgerechte Inhalte</h3>
-          <p>Drei Stufen (4–6, 7–9, 10–12) passen Oberfläche, Impulse, Wortschatz und Schwierigkeitsgrad an. Eine App von der Vorschule bis zur Grundschule.</p>
-        </div>
-        <div class="feature">
-          <h3>Kindersicherung</h3>
-          <p>Mathe-Zugangssperre, Sitzungszeitlimits und eine Kreativgalerie. Kein soziales Teilen, keine öffentliche Galerie, kein Kontakt mit Fremden.</p>
-        </div>
+      <p>Eine App zum Zeichnen, Schreiben und Komponieren – mit einem Helfer, der Ideen vorschlägt, die ein Kind annehmen oder ignorieren kann, statt für es zu erschaffen.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Zeichenleinwand</h3><p>Freies Skizzieren mit freundlichen Impulsen und Vorschlägen. Der Helfer unterstützt, ohne die Seite zu übernehmen.</p></article>
+        <article><h3>Geschichtenwerkstatt</h3><p>Geschichten schreiben mit Unterstützung für Struktur und Wortschatz. Bietet Ideen an, wenn ein Kind nicht weiterkommt, statt für es zu schreiben.</p></article>
+        <article><h3>Musikkomponist</h3><p>Melodien erstellen, indem Noten gesetzt und angehört werden. Schlägt Harmonien und Rhythmen zum Annehmen oder Ignorieren vor.</p></article>
+        <article><h3>Kreativität auf dem Gerät</h3><p>Der kreative Helfer läuft vollständig auf dem Gerät. Nichts, was ein Kind erstellt, wird hochgeladen, und kein Konto ist erforderlich.</p></article>
+        <article><h3>Altersgerechte Inhalte</h3><p>Drei Stufen (4&ndash;6, 7&ndash;9, 10&ndash;12) passen Oberfläche, Impulse, Wortschatz und Komplexität an – eine App von der Vorschule bis zur Grundschule.</p></article>
+        <article><h3>Kindersicherung</h3><p>Eine Mathe-Sperre zum Einstieg, Sitzungszeitlimits und eine private Kreativgalerie. Kein soziales Teilen, keine öffentliche Galerie, keine Fremden.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Datenschutz &amp; Daten</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/sparks/02.webp" alt="Zeichenleinwand von Sparks Studio mit Pinseln und Farbpalette">
+      <div class="ap-copy">
+        <h2>Erschaffen, nicht nur konsumieren</h2>
+        <p>Die meisten Kinder-Apps sind darauf ausgelegt, Aufmerksamkeit zu binden. Sparks Studio ist darauf ausgelegt, sie zu entfachen – jede Sitzung endet mit etwas, das ein Kind wirklich gemacht hat.</p>
         <ul>
-          <li>Keine Datenerhebung — keine Konten, keine Cloud, keine Analyse</li>
-          <li>Die gesamte KI läuft vollständig auf dem Gerät</li>
-          <li>COPPA-konform</li>
-          <li>Keine Werbung und kein Tracking jeglicher Art</li>
+          <li>Drei kreative Werkzeuge: zeichnen, schreiben und komponieren.</li>
+          <li>Ein Helfer, der Ideen bietet, aber die Arbeit nie beendet.</li>
+          <li>Apple-Pencil-Unterstützung mit voller Druckempfindlichkeit.</li>
+          <li>Fertige Zeichnungen, Bilderbücher und Melodien in einer privaten Galerie gespeichert.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Für wen sie gedacht ist</h2>
+      <p>Sparks Studio ist für Eltern, die eine <strong>Kreativ-App für Kinder</strong> suchen, die passives Scrollen ersetzt – eine <strong>sichere, werbefreie Zeichen- und Erzähl-App</strong>, die von der Vorschule bis zur Grundschule mitwächst, ohne je nach einem Konto zu fragen.</p>
+      <div class="ap-loop">
+        <article><h3>Familien, die passives Video verlassen</h3><p>Eine kreative Alternative zum endlosen Zuschauen – Kinder erstellen Zeichnungen, Geschichten und Musik, statt sie nur zu konsumieren.</p></article>
+        <article><h3>Datenschutzbewusste Eltern</h3><p>Keine Konten, keine Cloud-Uploads, keine Werbung und kein Tracking. Was ein Kind erstellt, bleibt auf dem Gerät.</p></article>
+        <article><h3>Eine App, die mitwächst</h3><p>Drei Altersstufen bedeuten, dass dieselbe App einem Vierjährigen beim Kritzeln und einem Zehnjährigen beim Schreiben eines Kapitels passt.</p></article>
+        <article><h3>Apple-Pencil-Haushalte</h3><p>Volle Druckempfindlichkeit lässt die Zeichenleinwand auf dem iPad mit Apple Pencil natürlich wirken.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Auf Vertrauen gebaut</h2>
+      <div class="ap-trust">
+        <div><strong>Auf dem Gerät</strong><span>Der kreative Helfer läuft lokal; nichts wird hochgeladen.</span></div>
+        <div><strong>Keine Werbung, kein Tracking</strong><span>Keinerlei Werbung und keine Analyse.</span></div>
+        <div><strong>Kein Konto</strong><span>App öffnen und loslegen – ohne Anmeldung.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Sparks Studio im Vergleich</h2>
-      <table>
-        <thead>
-          <tr><th></th><th>Sparks Studio</th><th>Toca Boca</th><th>Sago Mini</th><th>GarageBand</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kernaktivität</td><td><strong>Kreieren (zeichnen, schreiben, komponieren)</strong></td><td>Spielwelten erkunden</td><td>Minispiele</td><td>Musikproduktion</td></tr>
-          <tr><td>Altersbereich</td><td>4&ndash;12 (3 Stufen)</td><td>3&ndash;9</td><td>2&ndash;5</td><td>Realistisch ab 8</td></tr>
-          <tr><td>Preis</td><td>Kostenlos + Premium-Abo</td><td>Kostenlos + In-App-Käufe (&pound;1&ndash;5)</td><td>~&pound;7/Monat</td><td>Kostenlos</td></tr>
-          <tr><td>KI-Funktionen</td><td><strong>KI auf dem Gerät (altersangepasst)</strong></td><td>Keine</td><td>Keine</td><td>Keine</td></tr>
-          <tr><td>Apple Pencil</td><td><strong>Volle Druckempfindlichkeit</strong></td><td>Eingeschränkt</td><td>Nein</td><td>Nein</td></tr>
-          <tr><td>Kreativoutput</td><td>Bilderbücher, Zeichnungen, Musik</td><td>Screenshots des Spiels</td><td>Screenshots</td><td>Musiktracks</td></tr>
-          <tr><td>Datenschutz</td><td><strong>Keine Datenerhebung</strong></td><td>Einige Daten</td><td>Minimal</td><td>Apple-Standard</td></tr>
-          <tr><td>Werbung / In-App-Käufe</td><td>Keine Werbung / Abo</td><td>In-App-Käufe</td><td>Keine</td><td>Keine</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="ap-loop" style="--loop-cols:2">
+        <article><h3>Erschaffen, nicht nur spielen</h3><p>Wo viele Kinder-Apps auf das Erkunden von Spielwelten oder Minispiele setzen, dreht sich Sparks Studio ums Erschaffen – Zeichnungen, Bilderbücher und Musik.</p></article>
+        <article><h3>Wächst mit dem Kind</h3><p>Drei Altersstufen decken 4&ndash;12 in einer einzigen App ab, statt einer engen Altersspanne, der man in ein, zwei Jahren entwächst.</p></article>
+        <article><h3>Helfer auf dem Gerät</h3><p>Ein altersangepasster kreativer Helfer läuft auf dem Gerät, statt die Arbeit eines Kindes an einen Server zu senden.</p></article>
+        <article><h3>Datenschutz von Haus aus</h3><p>Keine Datenerhebung, keine Werbung und volle Apple-Pencil-Druckempfindlichkeit für natürliches Zeichnen.</p></article>
+      </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Ist sie für kleine Kinder sicher?</h3><p>Ja. Es gibt kein soziales Teilen, keine öffentliche Galerie und keinen Kontakt mit Fremden – eine Mathe-Sperre hält Einstellungen aus kleinen Händen.</p></article>
+        <article><h3>Braucht sie ein Konto oder das Internet?</h3><p>Nein. Der kreative Helfer läuft auf dem Gerät, nichts wird hochgeladen, und es gibt keine Anmeldung.</p></article>
+        <article><h3>Wie hilft die KI?</h3><p>Lesen Sie <a href="/blog/on-device-ai-kids-apps-safety.html">KI auf dem Gerät für Kinder-Apps</a>, wie ein Helfer Ideen vorschlagen kann, ohne das Erschaffen zu übernehmen.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Verwandte Artikel</h2>
       <ul class="related-posts">
         <li><a href="/blog/sparks-studios-vs-toca-boca.html">Sparks Studio vs Toca Boca: Kreativ-Apps für Kinder im Vergleich</a></li>
@@ -200,13 +233,7 @@
         <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">Der Eltern-Leitfaden für sichere Kinder-Apps (keine Werbung, kein Tracking)</a></li>
         <li><a href="/blog/on-device-ai-kids-apps-safety.html">Warum KI auf dem Gerät Kinder-Apps grundlegend sicherer macht</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/sparks-studios/privacy.html">Datenschutzrichtlinie</a>
-      <a href="/apps/sparks-studios/support.html">Support</a>
-      <a href="/apps/sparks-studios/terms.html">Nutzungsbedingungen</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>

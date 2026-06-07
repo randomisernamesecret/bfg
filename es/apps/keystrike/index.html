@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0b1220;--ink:#eef3ff;--ink-soft:rgba(238,243,255,.84);--ink-faint:rgba(238,243,255,.64);--accent:#7aa2ff;--accent-ink:#cfe0ff;--cta:#5b8cff;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#16233f 0%,#0e1830 60%,#0b1220 100%);--media-glow:rgba(122,162,255,.18);--nav-bg:rgba(11,18,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -116,7 +120,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"keystrike","item":"https://bfgapps.co/es/apps/keystrike/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/es/" class="nav-brand">BFG</a>
@@ -166,158 +170,121 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-music">Música</span>
-      <h1>Keystrike</h1>
-      <p class="app-subtitle">Práctica guiada de piano para iPhone, iPad y Mac. Notas que caen, bucles por secciones, MIDI, modo acústico, importaciones e informes.</p>
-      <div class="hero-visual">
-        <img src="/assets/keystrike-hero.png" alt="App de práctica de piano Keystrike con notas G, A, B, C, D cayendo sobre un teclado de piano para el Minueto en Sol" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Descargar en el App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>7 días de prueba</strong>Luego compra única</div>
-        <div class="fact"><strong>iPhone, iPad y Mac</strong>Diseño adaptable</div>
-        <div class="fact"><strong>Solo en el dispositivo</strong>Sin cuentas ni anuncios</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Qué incluye</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Recorrido por niveles guiado</h3>
-          <p>Los estudiantes avanzan a su propio ritmo por habilidades fundamentales, lecciones por niveles y comprobaciones de preparación.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Práctica de piano, guiada</div>
+        <h1>Keystrike</h1>
+        <p class="ap-lede">Práctica guiada de piano para iPad y Mac. Notas que caen, bucles por secciones, teclado MIDI, modo acústico, tus propias importaciones e informes de progreso claros — en el dispositivo, sin cuentas y sin anuncios.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">Descargar en el App Store</a>
+          <a class="ap-button secondary" href="#screens">Ver la app</a>
         </div>
-        <div class="feature">
-          <h3>Práctica con notas que caen</h3>
-          <p>Las notas caen hacia una línea de impacto; el estudiante toca la tecla correspondiente. Se puede reducir el tempo, practicar manos por separado y las notas están etiquetadas para principiantes.</p>
-        </div>
-        <div class="feature">
-          <h3>Teoría integrada en la práctica</h3>
-          <p>Lectura de pentagrama, ritmo, intervalos, escalas, acordes, dinámica y articulación se introducen mediante pasos de lección y material de referencia.</p>
-        </div>
-        <div class="feature">
-          <h3>Lectura a vista y entrenamiento auditivo</h3>
-          <p>Ejercicios de lectura en clave de sol y fa, retos de imitación auditiva y comprobaciones breves ayudan a ir más allá de memorizar canciones.</p>
-        </div>
-        <div class="feature">
-          <h3>Escalas, acordes e improvisación</h3>
-          <p>Tests de escalas, ejercicios de acordes y grabación libre al piano ofrecen a los estudiantes un espacio para practicar técnica y crear sus propias ideas.</p>
-        </div>
-        <div class="feature">
-          <h3>Piezas incluidas</h3>
-          <p>Se incluye repertorio de dominio público para la práctica con notas que caen y bucles por secciones.</p>
-        </div>
-        <div class="feature">
-          <h3>Importe su propio MIDI</h3>
-          <p>Importe archivos .mid o .midi estándar desde Archivos. Keystrike los convierte en partituras reproducibles y sugiere secciones para practicar.</p>
-        </div>
-        <div class="feature">
-          <h3>Modo piano acústico</h3>
-          <p>¿Sin teclado MIDI? El modo acústico puede escuchar a través del micrófono para practicar notas individuales cuando se concede el permiso.</p>
-        </div>
-        <div class="feature">
-          <h3>Teclado libre y grabación</h3>
-          <p>Un teclado abierto para improvisación y composición. Grabe, edite notas y exporte grabaciones como archivos MIDI estándar.</p>
-        </div>
-        <div class="feature">
-          <h3>Informes y ciclo de corrección</h3>
-          <p>Informes de práctica, seguimiento de puntos débiles, ejercicios adaptativos y vistas de resumen para profesor o padres facilitan confiar en el progreso.</p>
+        <div class="ap-pill-row" aria-label="Destacados">
+          <span class="ap-pill">Lecciones por niveles</span>
+          <span class="ap-pill">Teclado MIDI</span>
+          <span class="ap-pill">iPad y Mac</span>
+          <span class="ap-pill">7 días de prueba</span>
+          <span class="ap-pill">Compra única</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Privacidad y datos</h3>
-        <ul>
-          <li>Sin cuenta obligatoria. Sin registro, sin correo electrónico, sin contraseña.</li>
-          <li>El progreso, las grabaciones y los archivos MIDI importados permanecen en su dispositivo.</li>
-          <li>El uso del micrófono (modo piano acústico) es exclusivamente local: el audio nunca abandona el dispositivo.</li>
-          <li>Sin anuncios, sin seguimiento, sin análisis, sin SDK de terceros.</li>
-          <li>Las notificaciones son opcionales y se usan solo como recordatorio de práctica diaria.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Práctica de piano Keystrike">
+        <img src="/assets/keystrike/01.webp" alt="Keystrike mostrando notas etiquetadas que caen hacia un teclado de piano durante una pieza guiada" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Para quién es</h2>
-      <p>Keystrike está pensado para principiantes absolutos, estudiantes que retoman el piano, autodidactas que buscan más estructura, padres que ayudan a un hijo a practicar y alumnos que necesitan un camino claro entre las clases con el profesor.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Por qué elegir Keystrike</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Un camino guiado</h3>
-          <p>La pantalla de inicio muestra primero el siguiente paso útil y, una vez completado el bloque de práctica diaria, continúa con el repertorio, las importaciones y el trabajo creativo.</p>
-        </div>
-        <div class="feature">
-          <h3>Ciclos de corrección</h3>
-          <p>Diagnóstico, ejercicio, nueva prueba y ajuste del recorrido, para que los errores se conviertan en práctica breve y específica en lugar de consejos vagos.</p>
-        </div>
-        <div class="feature">
-          <h3>Diseñado para todos los dispositivos</h3>
-          <p>La interfaz está optimizada para iPhone en horizontal, los formatos más amplios del iPad y las ventanas de Mac, con cada tamaño de pantalla tratado de forma deliberada.</p>
-        </div>
-        <div class="feature">
-          <h3>Prueba y luego compra única</h3>
-          <p>7 días de prueba gratuita seguidos de una compra única. Sin anuncios y sin suscripción mensual de piano.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Búsquedas relacionadas</h2>
-      <p>Keystrike aparece en búsquedas como <strong>mejor app de piano para iPhone e iPad</strong>, <strong>app de práctica de piano por niveles</strong>, <strong>app de piano compatible con teclado MIDI</strong>, <strong>práctica de piano con bucles por secciones</strong>, <strong>app de piano con teoría y lectura a vista</strong> y <strong>aprender piano en Mac</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Preguntas frecuentes</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>¿Necesito un teclado MIDI?</h3>
-          <p>No. Puede usar un teclado MIDI por USB o Bluetooth si lo tiene, un piano acústico con el micrófono o el teclado en pantalla. Muchos principiantes empiezan sin ningún hardware.</p>
-        </div>
-        <div class="feature">
-          <h3>¿Cuántos niveles hay?</h3>
-          <p>La app está estructurada en torno a trabajo de base y progresión por niveles, con pasos de lección y comprobaciones de preparación en cada etapa.</p>
-        </div>
-        <div class="feature">
-          <h3>¿Existe una versión para Android?</h3>
-          <p>No. Keystrike está desarrollado para iPhone, iPad y Mac.</p>
-        </div>
-        <div class="feature">
-          <h3>¿Se sincroniza el progreso entre dispositivos?</h3>
-          <p>Keystrike funciona de forma local, por lo que el progreso, las grabaciones y los archivos MIDI importados permanecen en el dispositivo en que fueron creados.</p>
-        </div>
-        <div class="feature">
-          <h3>¿Puedo usar mis propias partituras?</h3>
-          <p>Los PDF no se pueden importar en esta versión. Sí puede importar archivos MIDI (.mid, .midi) y Keystrike los convertirá automáticamente en una partitura reproducible.</p>
-        </div>
-        <div class="feature">
-          <h3>¿Es para niños o adultos?</h3>
-          <p>Para ambos. El ritmo de los niveles iniciales es adecuado para un niño de ocho años concentrado; la profundidad de los niveles avanzados es suficiente para adultos que buscan repertorio de examen.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Artículos relacionados</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/best-piano-learning-apps-ipad-2026.html">Las mejores apps para aprender piano en iPad en 2026</a></li>
-        <li><a href="/blog/piano-app-subscription-vs-one-time.html">Por qué las apps de piano con suscripción cuestan más de lo que parecen</a></li>
-        <li><a href="/blog/learn-piano-on-ipad-without-a-keyboard.html">¿Se puede aprender piano en un iPad sin teclado?</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/keystrike/privacy.html">Política de privacidad</a>
       <a href="/apps/keystrike/support.html">Soporte</a>
       <a href="/apps/keystrike/terms.html">Condiciones de uso</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>En acción</h2>
+      <p>Un camino claro a través de cada sesión de práctica: toca las notas que caen, repite en bucle las secciones difíciles, comprueba tu lectura y observa cómo crece tu progreso. Diseñado para las pantallas amplias de iPad y Mac.</p>
+      <div class="ap-screens landscape" style="--shot-cols:2">
+        <div class="ap-shot"><img src="/assets/keystrike/01.webp" alt="Práctica con notas que caen en Keystrike con notas etiquetadas sobre un teclado de piano" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/02.webp" alt="Paso de lección guiada de Keystrike dentro de un curso por niveles" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/03.webp" alt="Vista de bucle por secciones de Keystrike para practicar un pasaje difícil" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/04.webp" alt="Pantalla de ejercicios de lectura a vista y teoría de Keystrike" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/05.webp" alt="Informe de práctica de Keystrike con el progreso y los puntos débiles" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Qué incluye</h2>
+      <p>Una sala de práctica completa: lecciones por niveles, piezas con notas que caen, teoría integrada en los pasos y herramientas para traer tu propia música.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Recorrido por niveles guiado</h3><p>Avanza por habilidades fundamentales, lecciones por niveles y comprobaciones de preparación a tu propio ritmo, con el siguiente paso útil siempre a la vista.</p></article>
+        <article><h3>Práctica con notas que caen</h3><p>Las notas caen hacia una línea de impacto; tocas la tecla correspondiente. Reduce el tempo, aísla una mano y deja que los principiantes vean las notas etiquetadas.</p></article>
+        <article><h3>Teoría integrada en la práctica</h3><p>Lectura de pentagrama, ritmo, intervalos, escalas, acordes, dinámica y articulación se introducen mediante pasos de lección y material de referencia.</p></article>
+        <article><h3>Lectura a vista y entrenamiento auditivo</h3><p>Ejercicios de lectura en clave de sol y fa, retos de imitación auditiva y comprobaciones breves llevan la práctica más allá de memorizar canciones.</p></article>
+        <article><h3>Escalas, acordes e improvisación</h3><p>Tests de escalas, ejercicios de acordes y una grabadora de piano libre te dan un espacio para construir técnica y crear tus propias ideas.</p></article>
+        <article><h3>Piezas incluidas</h3><p>Se incluye repertorio de dominio público para la práctica con notas que caen y bucles por secciones, listo para tocar desde el principio.</p></article>
+        <article><h3>Trae tu propio MIDI</h3><p>Importa archivos .mid o .midi estándar desde Archivos. Keystrike los convierte en partituras reproducibles y sugiere secciones para practicar.</p></article>
+        <article><h3>Modo piano acústico</h3><p>¿Sin teclado MIDI? El modo acústico puede escuchar a través del micrófono para practicar notas individuales cuando concedes el permiso.</p></article>
+        <article><h3>Informes y ciclo de corrección</h3><p>Informes de práctica, seguimiento de puntos débiles, ejercicios adaptativos y vistas de resumen para profesor o padres ayudan a confiar en el progreso.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/keystrike/03.webp" alt="Vista de bucle por secciones de Keystrike para repetir un pasaje difícil">
+      <div class="ap-copy">
+        <h2>Un camino que puedes seguir</h2>
+        <p>La pantalla de inicio te muestra primero el siguiente paso útil y, después, el repertorio, las importaciones y el trabajo creativo una vez completado el bloque de práctica diaria. Los errores se convierten en ejercicios breves y específicos en lugar de consejos vagos.</p>
+        <ul>
+          <li>Diagnostica, ejercita, vuelve a probar y adapta: el ciclo de corrección completo.</li>
+          <li>Ajustado de forma deliberada para iPhone en horizontal, los formatos más amplios del iPad y las ventanas de Mac.</li>
+          <li>Juego libre y grabación: improvisa, edita notas y exporta como MIDI estándar.</li>
+          <li>7 días de prueba gratuita y luego una compra única: sin anuncios, sin suscripción mensual.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Para quién es</h2>
+      <p>Keystrike está pensado para principiantes absolutos, estudiantes que retoman el piano, autodidactas que buscan más estructura, padres que ayudan a un hijo a practicar y alumnos que necesitan un camino claro entre las clases con el profesor.</p>
+      <div class="ap-loop">
+        <article><h3>Principiantes absolutos</h3><p>Los niveles iniciales suaves y las notas etiquetadas que caen significan que puedes empezar a tocar sin comprar antes ningún hardware.</p></article>
+        <article><h3>Estudiantes que retoman</h3><p>Retoma donde lo dejaron tus manos con piezas por niveles, bucles por secciones y ejercicios de lectura para recuperar la fluidez.</p></article>
+        <article><h3>Padres y profesores</h3><p>Los informes de práctica y las vistas de resumen hacen que el progreso de un niño sea fácil de seguir entre clases.</p></article>
+        <article><h3>Autodidactas</h3><p>Un curso por niveles creíble con teoría integrada, para cuando un profesor no es una opción en este momento.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Diseñado para la confianza</h2>
+      <div class="ap-trust">
+        <div><strong>En el dispositivo</strong><span>El progreso, las grabaciones y el MIDI importado permanecen en tu dispositivo.</span></div>
+        <div><strong>Sin cuenta</strong><span>Sin registro, sin correo, sin contraseña para empezar a tocar.</span></div>
+        <div><strong>Sin anuncios ni seguimiento</strong><span>Sin análisis, sin SDK de terceros; el audio del micrófono nunca abandona el dispositivo.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Búsquedas relacionadas</h2>
+      <p>Keystrike aparece en búsquedas como <strong>mejor app de piano para iPhone e iPad</strong>, <strong>app de práctica de piano por niveles</strong>, <strong>app de piano compatible con teclado MIDI</strong>, <strong>práctica de piano con bucles por secciones</strong>, <strong>app de piano con teoría y lectura a vista</strong> y <strong>aprender piano en Mac</strong>.</p>
+    </section>
+
+    <section class="ap-section">
+      <h2>Preguntas frecuentes</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>¿Necesito un teclado MIDI?</h3><p>No. Puede usar un teclado MIDI por USB o Bluetooth si lo tiene, un piano acústico con el micrófono o el teclado en pantalla. Muchos principiantes empiezan sin ningún hardware.</p></article>
+        <article><h3>¿Cuántos niveles hay?</h3><p>La app está estructurada en torno a trabajo de base y progresión por niveles, con pasos de lección y comprobaciones de preparación en cada etapa.</p></article>
+        <article><h3>¿Existe una versión para Android?</h3><p>No. Keystrike está desarrollado para iPhone, iPad y Mac.</p></article>
+        <article><h3>¿Se sincroniza el progreso entre dispositivos?</h3><p>Keystrike funciona de forma local, por lo que el progreso, las grabaciones y los archivos MIDI importados permanecen en el dispositivo en que fueron creados.</p></article>
+        <article><h3>¿Puedo usar mis propias partituras?</h3><p>Los PDF no se pueden importar en esta versión. Sí puede importar archivos MIDI (.mid, .midi) y Keystrike los convertirá automáticamente en una partitura reproducible.</p></article>
+        <article><h3>¿Es para niños o adultos?</h3><p>Para ambos. El ritmo de los niveles iniciales es adecuado para un niño de ocho años concentrado; la profundidad de los niveles avanzados es suficiente para adultos que buscan repertorio de examen.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Artículos relacionados</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/best-piano-learning-apps-ipad-2026.html">Las mejores apps para aprender piano en iPad en 2026</a></li>
+        <li><a href="/blog/piano-app-subscription-vs-one-time.html">Por qué las apps de piano con suscripción cuestan más de lo que parecen</a></li>
+        <li><a href="/blog/learn-piano-on-ipad-without-a-keyboard.html">¿Se puede aprender piano en un iPad sin teclado?</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/es/">BFG Inicio</a> &middot; <a href="/privacy.html">Privacidad</a></p>

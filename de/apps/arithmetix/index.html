@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0c1424;--ink:#fdf1f8;--ink-soft:rgba(253,241,248,.85);--ink-faint:rgba(253,241,248,.64);--accent:#f472b6;--accent-ink:#ffd4ea;--cta:#fbbf24;--cta-ink:#1a1206;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#262044 0%,#15162c 60%,#0c1424 100%);--media-glow:rgba(244,114,182,.18);--nav-bg:rgba(12,20,36,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +103,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"arithmetix","item":"https://bfgapps.co/de/apps/arithmetix/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -144,68 +148,106 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">Bildung</span>
-      <h1>Arithmetix</h1>
-      <p class="app-subtitle">Mathematik nach britischem Lehrplan, von Reception bis Year 6.</p>
-      <div class="hero-visual">
-        <img src="/assets/arithmetix-hero.png" alt="Arithmetix zeigt adaptive Mathe-Übungen nach britischem National Curriculum auf dem iPhone" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Mathe nach britischem Lehrplan</div>
+        <h1>Arithmetix</h1>
+        <p class="ap-lede">Mathe-Übungen, die wirklich zu dem passen, was Ihr Kind im Unterricht lernt — von Reception bis Year 6. Adaptiver Schwierigkeitsgrad, Einmaleins und über 30 Themen, die mitwachsen.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">App ansehen</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Reception bis Year 6</span>
+          <span class="ap-pill">Einmaleins 2&ndash;12</span>
+          <span class="ap-pill">Adaptive Übungen</span>
+          <span class="ap-pill">Einmaliger Kauf</span>
+          <span class="ap-pill">iPhone &amp; iPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" class="app-cta" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+      <div class="ap-hero-media" aria-label="Arithmetix Mathe-Übungen">
+        <img src="/assets/arithmetix/01.webp" alt="Arithmetix Startbildschirm mit lehrplangerechten Mathe-Themen für ein junges Kind" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>30+ Themen</strong>Reception bis Y6</div>
-        <div class="fact"><strong>Britischer Lehrplan</strong>National ausgerichtet</div>
-        <div class="fact"><strong>Adaptiv</strong>Individueller Schwierigkeitsgrad</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/arithmetix/privacy.html">Datenschutzrichtlinie</a>
+      <a href="/apps/arithmetix/support.html">Support</a>
+      <a href="/apps/arithmetix/terms.html">Nutzungsbedingungen</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Die App in Aktion</h2>
+      <p>Bunte, freundliche Übungen, die Kinder voranbringen — Aufgaben auf ihrem Niveau, sofortige Rückmeldung und Fortschritte, auf die sie stolz sein können.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/arithmetix/01.webp" alt="Arithmetix Startbildschirm mit Lehrplan-Mathethemen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/02.webp" alt="Arithmetix Themenauswahl nach Jahrgang und Lernbereich" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/03.webp" alt="Arithmetix Mathe-Aufgabe mit Multiple-Choice-Antworten" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/04.webp" alt="Arithmetix Rückmeldung bei richtiger Antwort mit Ermutigung" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/05.webp" alt="Arithmetix Einmaleins-Übungsmodus" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/arithmetix/06.webp" alt="Arithmetix Herausforderungsmodus mit Zeitsitzung" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/07.webp" alt="Arithmetix Fortschrittsverfolgung über Themen hinweg" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/08.webp" alt="Arithmetix Belohnungs- und Streak-Motivationsbildschirm" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/09.webp" alt="Arithmetix Elternübersicht über die Übungen eines Kindes" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/10.webp" alt="Arithmetix Erfolgs- und Meisterungs-Feier" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Was die App kann</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>30+ Themen</h3>
-          <p>Deckt den gesamten britischen Grundschullehrplan von Reception bis Year 6 ab, gegliedert nach Jahrgang und Lernbereich.</p>
-        </div>
-        <div class="feature">
-          <h3>Am britischen National Curriculum ausgerichtet</h3>
-          <p>Die Themen entsprechen dem Unterrichtsstoff — Zahlen, Addition, Subtraktion, Multiplikation, Brüche, Maße, Geometrie und Statistik.</p>
-        </div>
-        <div class="feature">
-          <h3>Adaptiver Schwierigkeitsgrad</h3>
-          <p>Passt sich an die Genauigkeit an. Hält Kinder in der Zone der nächsten Entwicklung — genug gefordert, um zu lernen, genug unterstützt, um nicht aufzugeben.</p>
-        </div>
-        <div class="feature">
-          <h3>Einmaleins 2–12</h3>
-          <p>Dedizierte Übungsmodi für Multiplikationsflüssigkeit. Bereitet Kinder auf den Year 4 Multiplication Tables Check vor.</p>
-        </div>
-        <div class="feature">
-          <h3>Virtuelles Haustier als Motivation</h3>
-          <p>Belohnt regelmäßiges tägliches Üben statt perfekte Ergebnisse. Fördert Beständigkeit statt gelegentlichem Pauken.</p>
-        </div>
-        <div class="feature">
-          <h3>Verteiltes Wiederholen</h3>
-          <p>Gemeisterte Themen tauchen in immer größeren Abständen wieder auf. Schwache Bereiche kommen früher zurück. Langfristige Sicherheit ohne manuellen Zeitplan.</p>
-        </div>
+      <p>Ein vollständiger Begleiter für Grundschulmathematik — lehrplangerechte Themen, adaptiver Schwierigkeitsgrad und dediziertes Einmaleins-Training, das Kinder am Ball hält.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>30+ Themen</h3><p>Deckt den gesamten britischen Grundschullehrplan von Reception bis Year 6 ab, gegliedert nach Jahrgang und Lernbereich.</p></article>
+        <article><h3>Am Lehrplan ausgerichtet</h3><p>Die Themen entsprechen dem Unterrichtsstoff — Zahlen, Addition, Subtraktion, Multiplikation, Brüche, Maße, Geometrie und Statistik.</p></article>
+        <article><h3>Adaptiver Schwierigkeitsgrad</h3><p>Passt sich an die Genauigkeit jedes Kindes an — genug gefordert, um zu lernen, genug unterstützt, um nicht aufzugeben.</p></article>
+        <article><h3>Einmaleins 2&ndash;12</h3><p>Dediziertes Multiplikationstraining baut Sicherheit auf und bereitet Kinder auf den Year 4 Multiplication Tables Check vor.</p></article>
+        <article><h3>Belohnung als Motivation</h3><p>Belohnt regelmäßiges tägliches Üben statt perfekter Ergebnisse und fördert Beständigkeit statt Pauken.</p></article>
+        <article><h3>Verteiltes Wiederholen</h3><p>Gemeisterte Themen tauchen in immer größeren Abständen wieder auf, schwache Bereiche kommen früher zurück — langfristige Sicherheit ohne manuellen Zeitplan.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Datenschutz &amp; Daten</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/arithmetix/05.webp" alt="Arithmetix Einmaleins-Übungsbildschirm">
+      <div class="ap-copy">
+        <h2>Für das Klassenzimmer gemacht</h2>
+        <p>Die meisten Mathe-Apps sind generische Spiele oder laufende Abos. Arithmetix ist rund um das gestaltet, was britische Kinder Jahr für Jahr tatsächlich lernen sollen — so können Eltern dem Geübten vertrauen.</p>
         <ul>
-          <li>Elternkonto über Firebase für geräteübergreifende Synchronisierung</li>
-          <li>Lernfortschrittsdaten werden aggregiert — keine aufgabenbezogenen Daten hochgeladen</li>
-          <li>Keine Werbung</li>
+          <li>Ausgerichtet an den Anforderungen von Reception bis Year 6.</li>
+          <li>Dedizierte Einmaleins-Unterstützung für die Year-4-Sicherheit.</li>
+          <li>Adaptive Übungen auf das Niveau jedes Kindes abgestimmt.</li>
+          <li>Einmaliger Kauf — kein Monatsabo.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Für wen ist die App</h2>
+      <p>Arithmetix richtet sich an britische Eltern, Kinder und Nachhilfelehrer, die eine <strong>Grundschul-Mathe-App</strong>, eine <strong>Alternative zu DoodleMaths</strong> oder eine <strong>Einmaleins-App</strong> suchen, die klar am National Curriculum ausgerichtet ist. Sie ist besonders geeignet für Familien, die etwas möchten, das mit dem tatsächlichen Schulstoff übereinstimmt – kein generisches Mathespiel.</p>
+      <div class="ap-loop">
+        <article><h3>Passend zum britischen Lehrplan</h3><p>Konzipiert rund um die Anforderungen von Reception bis Year 6, sodass Eltern leicht vertrauen können, was ihr Kind übt.</p></article>
+        <article><h3>Einmaliger Kauf</h3><p>Viele Mathe-Apps für Kinder sind Abos. Arithmetix ist für Familien gedacht, die lieber einmal kaufen und dauerhaft nutzen.</p></article>
+        <article><h3>Einmaleins und Sicherheit</h3><p>Dedizierte Multiplikationsunterstützung macht sie zur starken Antwort für Einmaleins-Training und Year-4-MTC-Wiederholung.</p></article>
+        <article><h3>Adaptiv, nicht abstrakt</h3><p>Die adaptive Ebene wirkt persönlich für das Kind, während die Lehrplananknüpfung sie für vergleichende Erwachsene klar hält.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Auf Vertrauen gebaut</h2>
+      <div class="ap-trust">
+        <div><strong>Lehrplangerecht</strong><span>Reception bis Year 6, nach Jahrgang und Lernbereich.</span></div>
+        <div><strong>Einmaliger Kauf</strong><span>Kein Abo, keine laufenden Monatskosten.</span></div>
+        <div><strong>Keine Werbung</strong><span>Eine ruhige, fokussierte Übungsumgebung für Kinder.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Arithmetix im Vergleich</h2>
+      <p>Ein kurzer Blick darauf, wie Arithmetix gegenüber den Mathe-Apps abschneidet, die Familien am häufigsten in Betracht ziehen.</p>
       <table>
         <thead>
           <tr><th></th><th>Arithmetix</th><th>DoodleMaths</th><th>Mathletics</th><th>TTRS</th></tr>
@@ -221,60 +263,19 @@
           <tr><td>Farbenblindmodi</td><td><strong>3 Modi</strong></td><td>Nein</td><td>Nein</td><td>Nein</td></tr>
         </tbody>
       </table>
-      <p style="font-size:13px;color:var(--text-dim);margin-top:8px;">Wettbewerberpreise geprüft im März 2026. Aktuelle Preise entnehmen Sie bitte dem jeweiligen Anbieter.</p>
-    </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:8px;">Wettbewerberpreise geprüft im März 2026. Aktuelle Preise entnehmen Sie bitte dem jeweiligen Anbieter.</p>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>Für wen ist die App</h2>
-      <p>Arithmetix richtet sich an britische Eltern, Kinder und Nachhilfelehrer, die eine <strong>Grundschul-Mathe-App</strong>, eine <strong>Alternative zu DoodleMaths</strong> oder eine <strong>Einmaleins-App</strong> suchen, die klar am National Curriculum ausgerichtet ist. Sie ist besonders geeignet für Familien, die etwas möchten, das mit dem tatsächlichen Schulstoff übereinstimmt – kein generisches Mathespiel.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Warum Arithmetix wählen?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Passend zum britischen Lehrplan</h3>
-          <p>Das Konzept ist klar: Arithmetix orientiert sich an den Anforderungen von Reception bis Year 6, sodass Eltern leicht nachvollziehen können, was ihr Kind übt.</p>
-        </div>
-        <div class="feature">
-          <h3>Einmaliger Kauf statt Abo</h3>
-          <p>Viele Mathe-Apps für Kinder sind Abonnementprodukte. Arithmetix ist gezielt für Familien gedacht, die einmalig kaufen und die App dauerhaft nutzen möchten.</p>
-        </div>
-        <div class="feature">
-          <h3>Einmaleins und Rechenflüssigkeit</h3>
-          <p>Die dedizierte Multiplikationsunterstützung macht Arithmetix zur starken Antwort für Suchen rund um <strong>Einmaleins-Training</strong> und <strong>Year 4 MTC-Vorbereitung</strong>.</p>
-        </div>
-        <div class="feature">
-          <h3>Adaptiv ohne abstrakter Wirkung</h3>
-          <p>Die adaptive Ebene lässt die App persönlich für das Kind wirken, während die Lehrplananknüpfung sie für vergleichende Erwachsene nachvollziehbar hält.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Passende Suchanfragen</h2>
-      <p>Arithmetix eignet sich hervorragend für Suchanfragen wie <strong>beste Mathe-App für die Grundschule</strong>, <strong>Alternative zu DoodleMaths</strong>, <strong>Mathe-App nach britischem Lehrplan</strong> und <strong>Einmaleins-App ohne Abo</strong>. Diese Seite macht diese Anwendungsfälle für Suchmaschinen und KI-Assistenten deutlich sichtbar.</p>
-    </div>
-
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Häufig gestellte Fragen</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Ist Arithmetix nur für eine Altersgruppe?</h3>
-          <p>Nein. Die App ist für den gesamten Grundschulbereich von Reception bis Year 6 konzipiert.</p>
-        </div>
-        <div class="feature">
-          <h3>Hilft die App beim Einmaleins?</h3>
-          <p>Ja. Das Einmaleins-Training ist eine der deutlichsten Stärken der App – besonders für Familien, die sich auf den Year 4 Multiplication Tables Check vorbereiten.</p>
-        </div>
-        <div class="feature">
-          <h3>Warum sollte ich sie einer Abo-App vorziehen?</h3>
-          <p>Wenn Sie lehrplanausgerichtetes Mathe-Training ohne laufende Monatskosten wünschen, ist Arithmetix genau dafür konzipiert.</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Ist Arithmetix nur für eine Altersgruppe?</h3><p>Nein. Arithmetix deckt den gesamten Grundschulbereich von Reception bis Year 6 ab, gegliedert nach Jahrgang.</p></article>
+        <article><h3>Hilft die App beim Einmaleins?</h3><p>Ja. Das Einmaleins-Training ist eine ihrer deutlichsten Stärken, besonders für Familien, die sich auf den Year 4 Multiplication Tables Check vorbereiten.</p></article>
+        <article><h3>Warum statt einer Abo-App?</h3><p>Wenn Sie lehrplangerechtes Mathe-Training ohne laufende Monatskosten möchten, ist Arithmetix genau dafür gebaut.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Verwandte Artikel</h2>
       <ul class="related-posts">
         <li><a href="/blog/arithmetix-vs-doodlemaths.html">Arithmetix vs. DoodleMaths im Vergleich</a></li>
@@ -282,13 +283,7 @@
         <li><a href="/blog/year-4-multiplication-tables-check.html">Leitfaden zum Year 4 Multiplication Tables Check</a></li>
         <li><a href="/blog/ks2-sats-maths-preparation.html">KS2 SATs Mathe-Vorbereitung</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/arithmetix/privacy.html">Datenschutzrichtlinie</a>
-      <a href="/apps/arithmetix/support.html">Support</a>
-      <a href="/apps/arithmetix/terms.html">Nutzungsbedingungen</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>

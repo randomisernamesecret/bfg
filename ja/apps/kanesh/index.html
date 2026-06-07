@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#080d12;--ink:#e9f2f0;--ink-soft:rgba(233,242,240,.84);--ink-faint:rgba(233,242,240,.62);
+      --accent:#22c55e;--accent-ink:#bdf0cf;--cta:#3b82f6;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.045);--border:rgba(255,255,255,.11);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0d2018 0%,#0a141a 60%,#080d12 100%);
+      --media-glow:rgba(34,197,94,.16);--nav-bg:rgba(8,13,18,.85);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,7 +108,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/ja/apps/kanesh/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -143,118 +153,116 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-finance">ファイナンス</span>
-      <h1>Kanesh</h1>
-      <p class="app-subtitle">出典を確認できるソースリンク付き金融データ。</p>
-      <div class="hero-visual">
-        <img src="/assets/kanesh-hero.png" alt="iPhoneでSECファイリングリンク付きのソースタグ付き財務データを表示するKaneshアプリ" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">ソースリンク付き金融</div>
+        <h1>Kanesh</h1>
+        <p class="ap-lede">ポケットに収まる株式・ETF リサーチ端末。ウォッチリスト、チャート、ソースリンク付きの財務データ — そしてあなたの質問にプライベートに答えるオンデバイスAIアシスタント。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">App Store でダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
+        </div>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">ソースリンク付きの数値</span>
+          <span class="ap-pill">オンデバイスAI</span>
+          <span class="ap-pill">53カ国</span>
+          <span class="ap-pill">議会取引トラッカー</span>
+          <span class="ap-pill">アカウント不要</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" class="app-cta" target="_blank" rel="noopener noreferrer">App Store でダウンロード</a>
+      <div class="ap-hero-media" aria-label="Kanesh 金融データ端末">
+        <img src="/assets/kanesh/01.webp" alt="ウォッチリスト、値動き、ソースタグ付き財務データを表示する Kanesh のホーム画面" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>53カ国</strong>グローバル株式</div>
-        <div class="fact"><strong>オンデバイスAI</strong>プライベートクエリ</div>
-        <div class="fact"><strong>ソースリンク付き</strong>すべての数値</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/kanesh/privacy.html">プライバシーポリシー</a>
+      <a href="/apps/kanesh/support.html">サポート</a>
+      <a href="/apps/kanesh/terms.html">利用規約</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>市場まるごと、手のひらに</h2>
+      <p>ウォッチリストを追跡し、チャートを読み、任意の数値をタップしてその出典を正確に確認できます。組み込みアシスタントに普通の言葉で質問すれば — お使いのデバイス上で直接答えます。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/kanesh/01.webp" alt="ウォッチリストと市場概況を表示する Kanesh のホーム画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/02.webp" alt="価格チャートと主要統計を表示する Kanesh の銘柄詳細" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/03.webp" alt="原典ファイリングにリンクされた Kanesh のソースタグ付き財務諸表" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/04.webp" alt="金融に関する質問に答える Kanesh のオンデバイスAIアシスタント" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/05.webp" alt="53カ国の株式を閲覧できる Kanesh のインタラクティブな地球儀" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:3">
+        <div class="ap-shot"><img src="/assets/kanesh/06.webp" alt="開示された取引を表示する Kanesh の議会取引トラッカー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/07.webp" alt="Kanesh の ETF・ファンド詳細画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/08.webp" alt="一次資料を表示する Kanesh のファイリングビューア" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>主な機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>ソースタグ付き財務データ</h3>
-          <p>すべての数値が元のSECファイリング、FREDシリーズ、またはデータプロバイダーにリンクされています。任意の数値をタップすると、正確な出典を確認できます。</p>
-        </div>
-        <div class="feature">
-          <h3>自然言語クエリ</h3>
-          <p>「Appleの先四半期の売上総利益率は？」のように日本語で質問できます。オンデバイスAIがクエリをすべてiPhone上で処理します。</p>
-        </div>
-        <div class="feature">
-          <h3>3Dグローブ — 53カ国</h3>
-          <p>インタラクティブな3Dグローブでグローバル株式を閲覧できます。米国市場だけでなく、53カ国をカバーしています。</p>
-        </div>
-        <div class="feature">
-          <h3>議会取引トラッカー</h3>
-          <p>米国議会議員が売買している銘柄を、義務的な開示書類から直接取得して確認できます。</p>
-        </div>
-        <div class="feature">
-          <h3>オンデバイスAI</h3>
-          <p>すべてのクエリはローカルで処理されます。質問がデバイスの外に出ることはなく、アカウントも不要です。</p>
-        </div>
-        <div class="feature">
-          <h3>SEC EDGAR 直接アクセス</h3>
-          <p>10-K、10-Q、8-Kファイリングを EDGAR から直接取得できます。デスクトップ不要で一次資料データを利用できます。</p>
-        </div>
+      <p>ウォッチリスト、チャート、ソースリンク付きの財務データ、そしてプライベートなAIアシスタントを備えた完全なリサーチ端末。表示されるすべての数値を検証できるよう設計されています。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>ソースタグ付き財務データ</h3><p>すべての数値が元のファイリングまたはデータ提供元にリンクされています。任意の数値をタップすると、正確な出典を確認できます。</p></article>
+        <article><h3>オンデバイスAIアシスタント</h3><p>「Apple の先四半期の売上総利益率は？」のように普通の言葉で質問できます。ローカルAIがお使いの端末上で答え — 質問がデバイスの外に出ることはありません。</p></article>
+        <article><h3>ウォッチリストとチャート</h3><p>ウォッチリストを作成し、価格を追い、気になる株式や ETF の見やすいインタラクティブチャートを確認できます。</p></article>
+        <article><h3>53カ国</h3><p>インタラクティブな地球儀でグローバル株式を閲覧できます。米国市場だけでなく、53カ国をカバーしています。</p></article>
+        <article><h3>議会取引トラッカー</h3><p>米国議会議員が売買している銘柄を、義務的な開示書類から直接取得して確認できます。</p></article>
+        <article><h3>一次資料ファイリング</h3><p>10-K、10-Q、8-K ファイリングを直接取得できます。デスクトップ依存の煩わしさなしで一次資料データを利用できます。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシーとデータ</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/kanesh/04.webp" alt="金融に関する質問に答える Kanesh のオンデバイスAIアシスタント">
+      <div class="ap-copy">
+        <h2>約束だけでなく、本当にプライベート</h2>
+        <p>多くの金融ツールは、あなたのリサーチをアカウント紐付けのクラウド経由で処理します。Kanesh はスマートな部分をお使いのデバイス上に保ちます — AIアシスタントはローカルで動作するため、入力やウォッチリストはあなたのものです。</p>
         <ul>
-          <li>すべてのクエリはオンデバイスで処理 — 何もデバイスの外に出ません</li>
-          <li>API リクエストはティッカーシンボルのみを送信し、個人データは一切送りません</li>
-          <li>アカウント不要</li>
-          <li>分析やトラッキングなし</li>
+          <li>オンデバイスAI — 質問が電話の外に出ることはありません。</li>
+          <li>アカウント不要、登録不要、クラウドワークフローもありません。</li>
+          <li>リアルタイム価格のリクエストはティッカーシンボルのみを送信し、個人データは送りません。</li>
+          <li>分析やトラッキングはありません。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>対象ユーザー</h2>
-      <p>Kanesh は、投資家、金融専門家、学生、そして原典へのリンクを失わずにスマートフォンから素早く調べたいと思う好奇心旺盛な個人投資家向けのアプリです。<strong>Bloomberg の代替</strong>、<strong>株式調査アプリ</strong>、<strong>iPhone 向け金融データアプリ</strong>といった検索意図に応えるよう設計されています。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Kanesh が選ばれる理由</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>一次情報源への徹底した紐付け</h3>
-          <p>Kanesh はトレーサビリティを中心に構築されています。数値を表示するだけでなく、その数値がどこから来たのかを示すことが目的です。</p>
-        </div>
-        <div class="feature">
-          <h3>モバイルファーストのリサーチフロー</h3>
-          <p>多くの金融ツールはデスクトップ向けソフトをスモールスクリーンに詰め込んだように感じさせます。Kanesh はスマートフォンから素早く信頼性の高いリサーチができるよう設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>グローバルカバレッジ</h3>
-          <p>53カ国のカバレッジにより、米国株のみに特化したアプリより幅広い提案ができます。</p>
-        </div>
-        <div class="feature">
-          <h3>プライベートクエリ</h3>
-          <p>オンデバイスAI のため、リサーチのプロンプトがアカウント紐付けの SaaS ワークフローに流出することはありません。</p>
-        </div>
+      <p>Kanesh は、投資家、金融専門家、学生、そして原典へのリンクを失わずにスマートフォンから素早く調べたい好奇心旺盛な個人投資家向けのアプリです。<strong>Bloomberg の代替</strong>、<strong>株式調査アプリ</strong>、<strong>iPhone 向け金融データアプリ</strong>といった検索意図に応えるよう設計されています。</p>
+      <div class="ap-loop">
+        <article><h3>一次情報源への徹底した紐付け</h3><p>目的は数値を表示することだけではなく、その数値がどこから来たのかを示し、あなた自身が検証できるようにすることです。</p></article>
+        <article><h3>モバイルファーストのリサーチ</h3><p>多くの金融ツールはデスクトップソフトを小さな画面に詰め込んだように感じさせます。Kanesh はスマートフォンから素早く信頼性の高いリサーチができるよう作られています。</p></article>
+        <article><h3>グローバルカバレッジ</h3><p>53カ国に及ぶ範囲により、米国株のみをカバーするアプリよりも全体像を把握できます。</p></article>
+        <article><h3>標準でプライベート</h3><p>オンデバイスAI のため、リサーチの入力がアカウント紐付けの SaaS ワークフローの一部になることはありません。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>信頼のために</h2>
+      <div class="ap-trust">
+        <div><strong>ソースリンク付き</strong><span>すべての数値がそのファイリングまで辿れます。</span></div>
+        <div><strong>オンデバイスAI</strong><span>クエリはローカルで処理され、アップロードされません。</span></div>
+        <div><strong>アカウント不要</strong><span>登録なし、クラウドなし、トラッキングなし。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>関連する検索キーワード</h2>
-      <p>Kanesh は<strong>投資家向け最高の金融アプリ</strong>、<strong>Bloomberg を使わずに株式を調査する方法</strong>、<strong>Bloomberg モバイル代替</strong>、<strong>ソースリンク付き金融データアプリ</strong>といった検索に対して有力な答えとなります。このアプリページは、検索エンジンとAIアシスタントの双方に対してこれらの関連性をより明確に伝えます。</p>
-    </div>
+      <p>Kanesh は<strong>投資家向け最高の金融アプリ</strong>、<strong>Bloomberg を使わずに株式を調査する方法</strong>、<strong>Bloomberg モバイル代替</strong>、<strong>ソースリンク付き金融データアプリ</strong>といった検索に対して有力な答えとなります。</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>よくある質問</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>自分でデータを検証できますか？</h3>
-          <p>はい。検証可能性はこのアプリの価値提案の一部です。Kanesh は数値をファイリングや原典データセットに結びつけるよう設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>Kanesh は米国市場専用ですか？</h3>
-          <p>いいえ。53カ国をカバーする国際対応がこのアプリの差別化ポイントのひとつです。</p>
-        </div>
-        <div class="feature">
-          <h3>スマートフォンで使える Bloomberg の代替を探しているだけですが？</h3>
-          <p>まさにそのポジションが Kanesh です。下のガイドを参考に、他のツールとの比較をご確認ください。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>自分でデータを検証できますか？</h3><p>はい。検証こそが目的です — Kanesh はすべての数値をファイリングや原典データセットに結びつけます。</p></article>
+        <article><h3>Kanesh は米国市場専用ですか？</h3><p>いいえ。53カ国をカバーする国際対応が差別化ポイントのひとつです。</p></article>
+        <article><h3>スマートフォンで使える Bloomberg の代替？</h3><p>まさに Kanesh が属する比較対象です。下のガイドから、どう位置づけられるかをご確認ください。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-finance-apps-investors-2026.html">2026年 個人投資家向け最高の金融アプリ</a></li>
@@ -263,16 +271,12 @@
         <li><a href="/blog/insider-trading-congress-stocks.html">米国議会の株式取引</a></li>
         <li><a href="/blog/how-to-research-global-stocks-from-your-phone.html">スマートフォンでグローバル株式を調査する方法</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/kanesh/privacy.html">プライバシーポリシー</a>
-      <a href="/apps/kanesh/terms.html">利用規約</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFG ホーム</a> &middot; <a href="/privacy.html">プライバシー</a></p>
     </footer>
+
   </div>
 
   <script src="/theme.js"></script>

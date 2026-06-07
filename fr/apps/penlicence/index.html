@@ -38,6 +38,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#1a1206;--ink:#fff7e8;--ink-soft:rgba(255,247,232,.86);--ink-faint:rgba(255,247,232,.66);
+      --accent:#ffd166;--accent-ink:#fff0c2;--cta:#ef476f;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.06);--border:rgba(255,255,255,.13);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#3a2a0f 0%,#241a08 60%,#1a1206 100%);
+      --media-glow:rgba(255,209,102,.2);--nav-bg:rgba(26,18,6,.84);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"penlicence","item":"https://bfgapps.co/fr/apps/penlicence/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/fr/" class="nav-brand">BFG</a>
@@ -148,120 +158,116 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">Éducation</span>
-      <h1>Pen Licence</h1>
-      <p class="app-subtitle">Apprenez aux enfants à écrire — sur iPad.</p>
-      <div class="hero-visual">
-        <img src="/assets/penlicence-hero.png" alt="Capture d'écran de Pen Licence montrant les parcours de pratique, l'échauffement et les sections de transfert vers l'écriture réelle" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/pen-licence/id6761393693" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4–8 ans</strong>Écriture pour le primaire</div>
-        <div class="fact"><strong>Sensible à la pression</strong>Retour réel de pression du stylet</div>
-        <div class="fact"><strong>Sur l'appareil</strong>Sans compte, sans cloud</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Ce que fait l'application</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Programme lettre par lettre</h3>
-          <p>Un programme structuré de 26 lettres dans l'ordre pédagogique Zaner-Bloser avec une option de basculement alphabétique. Les enfants voient exactement où ils en sont et ce qui vient ensuite.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">L'écriture manuscrite, bien faite</div>
+        <h1>Pen Licence</h1>
+        <p class="ap-lede">Apprenez aux enfants à écrire — lettre par lettre, trait par trait. Guidage en douceur, retour honnête et véritable coaching de pression avec Apple Pencil. Tout reste sur l'iPad.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+          <a class="ap-button secondary" href="#screens">Voir l'app</a>
         </div>
-        <div class="feature">
-          <h3>Coaching de pression</h3>
-          <p>Le retour de pression en temps réel indique quand un trait est trop léger, juste ou trop appuyé. Les métriques de pression ne s'appliquent qu'avec un stylet compatible, de sorte que la pratique au doigt reste encourageante.</p>
-        </div>
-        <div class="feature">
-          <h3>Reconnaissance des tracés</h3>
-          <p>Chaque lettre est comparée à son tracé modèle pour que les enfants reçoivent un retour honnête sur la forme, la direction et la complétude — pas un simple tampon d'approbation pour n'importe quel gribouillis.</p>
-        </div>
-        <div class="feature">
-          <h3>Guide lettre fantôme</h3>
-          <p>Un fantôme discret de la lettre cible apparaît dans la zone d'écriture, mis à l'échelle de la hauteur d'x, afin que les jeunes apprenants puissent tracer avec assurance avant de passer à l'écriture libre.</p>
-        </div>
-        <div class="feature">
-          <h3>Barre de progression</h3>
-          <p>Une barre de progression de 26 points sous chaque écran affiche les lettres terminées, la lettre en cours et les prochaines — rien n'est caché derrière des menus.</p>
-        </div>
-        <div class="feature">
-          <h3>Contrôles fixes</h3>
-          <p>Les boutons Vérifier, Réessayer et Leçon suivante se trouvent dans un pied de page fixe, de sorte que l'action suivante est toujours à un seul toucher, même sur les petits iPads.</p>
+        <div class="ap-pill-row" aria-label="Points forts">
+          <span class="ap-pill">4–8 ans</span>
+          <span class="ap-pill">Coaching de pression</span>
+          <span class="ap-pill">Sur l'appareil uniquement</span>
+          <span class="ap-pill">Sans compte</span>
+          <span class="ap-pill">Achat unique</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Confidentialité &amp; données</h3>
-        <ul>
-          <li>Aucun compte requis. Pas d'inscription, pas d'e-mail, pas de mot de passe.</li>
-          <li>Toutes les données de pratique — tracés, scores, progression — restent sur l'iPad de votre enfant.</li>
-          <li>Sans publicité, sans analyse tierce, sans SDK de suivi.</li>
-          <li>Aucune connexion réseau requise. L'application fonctionne entièrement hors ligne.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Pratique d'écriture manuscrite Pen Licence">
+        <img src="/assets/penlicence/01.webp" alt="Écran de pratique Pen Licence avec guide lettre fantôme et retour de tracé" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Pour qui est-elle conçue ?</h2>
-      <p>Pen Licence est faite pour les parents, les enseignants et les thérapeutes qui recherchent une sérieuse <strong>application de pratique de l'écriture manuscrite pour iPad</strong>, une <strong>application pour apprendre à écrire</strong> ou une <strong>application d'écriture pour enfants avec Apple Pencil</strong>. Elle convient aux familles qui pratiquent à la maison, aux classes utilisant des iPads comme station de travail, et aux séances d'ergothérapie où la pression et la formation des tracés sont essentielles.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Pourquoi choisir Pen Licence ?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Conçue autour de la pression du stylet</h3>
-          <p>La plupart des applications d'écriture ignorent la pression du stylet. Pen Licence en fait un retour de premier plan — la différence entre « assez léger » et « suffisamment fort pour traverser le papier » est visible trait par trait.</p>
-        </div>
-        <div class="feature">
-          <h3>Vérification honnête des tracés</h3>
-          <p>Pas de récompense pour les gribouillis. L'application compare le tracé au modèle de la lettre et explique ce qu'il faut corriger — forme, direction ou complétude.</p>
-        </div>
-        <div class="feature">
-          <h3>Pédagogique d'abord, alphabétique en option</h3>
-          <p>Suit l'ordre Zaner-Bloser (c, o, a, d, g, q, …) qui développe efficacement la motricité, avec un bouton de basculement alphabétique pour les enfants qui préfèrent une séquence familière.</p>
-        </div>
-        <div class="feature">
-          <h3>Confidentialité adaptée aux parents</h3>
-          <p>Rien concernant votre enfant ne quitte l'iPad. Pas d'inscription, pas de synchronisation de la progression, pas de cloud. L'application est un outil, pas un dispositif de surveillance.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Recherches les plus pertinentes</h2>
-      <p>Pen Licence correspond parfaitement aux recherches telles que <strong>application de pratique d'écriture manuscrite pour iPad</strong>, <strong>application pour apprendre à écrire les lettres</strong>, <strong>application d'écriture Apple Pencil pour enfants</strong>, <strong>application d'écriture manuscrite pour enfants</strong> et <strong>application pour tracer des lettres</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Foire aux questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Pour quel groupe d'âge ?</h3>
-          <p>Pen Licence est conçue pour les enfants du début du primaire — environ de 4 à 8 ans —, mais les apprenants plus âgés qui souhaitent renforcer leur confiance en écriture peuvent également en bénéficier.</p>
-        </div>
-        <div class="feature">
-          <h3>Faut-il un Apple Pencil ?</h3>
-          <p>Non. La pratique au doigt fonctionne. Apple Pencil déverrouille les fonctionnalités de coaching de pression ; sans lui, l'application ignore silencieusement la note de pression plutôt que de pénaliser injustement l'enfant.</p>
-        </div>
-        <div class="feature">
-          <h3>Y a-t-il un abonnement ?</h3>
-          <p>Pas d'abonnement récurrent. Pen Licence est un achat unique sur l'App Store, comme toutes les autres applications éducatives de BFG.</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/penlicence/privacy.html">Politique de confidentialité</a>
       <a href="/apps/penlicence/support.html">Support</a>
       <a href="/apps/penlicence/terms.html">Conditions d'utilisation</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Tout un alphabet, un trait assuré à la fois</h2>
+      <p>Les enfants tracent, écrivent et obtiennent un retour clair au moment où ils lèvent le stylo. Tout ce qu'ils font reste sur l'iPad — sans compte, sans envoi, sans publicité.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/penlicence/01.webp" alt="Pratique de lettres Pen Licence avec guide fantôme et retour de tracé en direct" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/02.webp" alt="Coaching de pression Pen Licence montrant un trait parfaitement dosé" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/03.webp" alt="Barre de progression de 26 lettres Pen Licence avec lettres terminées et à venir" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/04.webp" alt="Vérification des tracés Pen Licence avec retour honnête sur la forme et la direction" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/05.webp" alt="Tracé de caractères kana, hanzi et devanagari dans Pen Licence" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Ce que fait l'application</h2>
+      <p>Un véritable tuteur d'écriture conçu pour les petites mains — structuré, encourageant et honnête sur ce qu'il faut corriger ensuite.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Programme lettre par lettre</h3><p>Un programme structuré de 26 lettres dans l'ordre pédagogique Zaner-Bloser avec une option de basculement alphabétique. Les enfants voient exactement où ils en sont et ce qui vient ensuite.</p></article>
+        <article><h3>Coaching de pression</h3><p>Le retour de pression en temps réel indique quand un trait est trop léger, juste ou trop appuyé. Les métriques de pression ne s'appliquent qu'avec un stylet compatible, de sorte que la pratique au doigt reste encourageante.</p></article>
+        <article><h3>Reconnaissance des tracés</h3><p>Chaque lettre est comparée à son tracé modèle pour que les enfants reçoivent un retour honnête sur la forme, la direction et la complétude — pas un simple tampon d'approbation pour n'importe quel gribouillis.</p></article>
+        <article><h3>Guide lettre fantôme</h3><p>Un fantôme discret de la lettre cible apparaît dans la zone d'écriture, mis à l'échelle de la hauteur d'x, afin que les jeunes apprenants puissent tracer avec assurance avant de passer à l'écriture libre.</p></article>
+        <article><h3>Barre de progression</h3><p>Une barre de progression de 26 points sous chaque écran affiche les lettres terminées, la lettre en cours et les prochaines — rien n'est caché derrière des menus.</p></article>
+        <article><h3>Contrôles fixes</h3><p>Les boutons Vérifier, Réessayer et Leçon suivante se trouvent dans un pied de page fixe, de sorte que l'action suivante est toujours à un seul toucher, même sur les petits iPads.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/penlicence/02.webp" alt="Retour de coaching de pression Pen Licence sur un seul trait">
+      <div class="ap-copy">
+        <h2>Un retour honnête, jamais un faux tampon d'approbation</h2>
+        <p>La plupart des applications d'écriture récompensent n'importe quel gribouillis et ignorent la force avec laquelle un enfant appuie. Pen Licence ne fait ni l'un ni l'autre.</p>
+        <ul>
+          <li>Véritable coaching de pression avec Apple Pencil — assez léger, juste, ou assez fort pour traverser le papier.</li>
+          <li>Tracés comparés au modèle de la lettre pour la forme, la direction et la complétude.</li>
+          <li>Ordre pédagogique par défaut, avec basculement alphabétique en un toucher.</li>
+          <li>La pratique au doigt masque les statistiques de pression afin qu'aucun enfant ne soit noté injustement.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Pour qui est-elle conçue ?</h2>
+      <p>Pen Licence est faite pour les parents, les enseignants et les thérapeutes qui recherchent une sérieuse <strong>application de pratique de l'écriture manuscrite pour iPad</strong>, une <strong>application pour apprendre à écrire</strong> ou une <strong>application d'écriture pour enfants avec Apple Pencil</strong>. Elle convient aux familles qui pratiquent à la maison, aux classes utilisant des iPads comme station de travail, et aux séances d'ergothérapie où la pression et la formation des tracés sont essentielles.</p>
+      <div class="ap-loop">
+        <article><h3>Pratique à la maison</h3><p>Un endroit calme et encourageant pour que les enfants du début du primaire gagnent en assurance avec les lettres, quelques minutes à la fois.</p></article>
+        <article><h3>Station en classe</h3><p>Installez-la sur un iPad partagé et laissez les enfants avancer dans le programme à leur rythme, sans connexions à gérer.</p></article>
+        <article><h3>Ergothérapie</h3><p>Le retour sur la pression et la formation des tracés en fait un véritable outil là où la motricité des lettres compte.</p></article>
+        <article><h3>Écritures non latines</h3><p>Au-delà de l'alphabet latin, Pen Licence permet aussi de tracer les caractères kana, hanzi et devanagari.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Conçue pour la confiance</h2>
+      <div class="ap-trust">
+        <div><strong>Sur l'appareil</strong><span>Tracés, scores et progression restent sur l'iPad.</span></div>
+        <div><strong>Sans compte</strong><span>Pas d'inscription, pas d'e-mail, pas de cloud, pas de publicité.</span></div>
+        <div><strong>Fonctionne hors ligne</strong><span>Aucun réseau requis — pratiquez partout.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Pourquoi choisir Pen Licence ?</h2>
+      <div class="ap-loop">
+        <article><h3>Conçue autour de la pression du stylet</h3><p>La plupart des applications d'écriture ignorent la pression du stylet. Pen Licence en fait un retour de premier plan — la différence entre « assez léger » et « suffisamment fort pour traverser le papier » est visible trait par trait.</p></article>
+        <article><h3>Vérification honnête des tracés</h3><p>Pas de récompense pour les gribouillis. L'application compare le tracé au modèle de la lettre et explique ce qu'il faut corriger — forme, direction ou complétude.</p></article>
+        <article><h3>Pédagogique d'abord, alphabétique en option</h3><p>Suit l'ordre Zaner-Bloser (c, o, a, d, g, q, …) qui développe efficacement la motricité, avec un bouton de basculement alphabétique pour les enfants qui préfèrent une séquence familière.</p></article>
+        <article><h3>Confidentialité adaptée aux parents</h3><p>Rien concernant votre enfant ne quitte l'iPad. Pas d'inscription, pas de synchronisation de la progression, pas de cloud. L'application est un outil, pas un dispositif de surveillance.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Foire aux questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Pour quel groupe d'âge ?</h3><p>Pen Licence est conçue pour les enfants du début du primaire — environ de 4 à 8 ans —, mais les apprenants plus âgés qui souhaitent renforcer leur confiance en écriture peuvent également en bénéficier.</p></article>
+        <article><h3>Faut-il un Apple Pencil ?</h3><p>Non. La pratique au doigt fonctionne. Apple Pencil déverrouille les fonctionnalités de coaching de pression ; sans lui, l'application ignore silencieusement la note de pression plutôt que de pénaliser injustement l'enfant.</p></article>
+        <article><h3>Y a-t-il un abonnement ?</h3><p>Pas d'abonnement récurrent. Pen Licence est un achat unique sur l'App Store, comme toutes les autres applications éducatives de BFG.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Recherches les plus pertinentes</h2>
+      <p>Pen Licence correspond parfaitement aux recherches telles que <strong>application de pratique d'écriture manuscrite pour iPad</strong>, <strong>application pour apprendre à écrire les lettres</strong>, <strong>application d'écriture Apple Pencil pour enfants</strong>, <strong>application d'écriture manuscrite pour enfants</strong> et <strong>application pour tracer des lettres</strong>.</p>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>

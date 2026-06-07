@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#140a1f;--ink:#fbf2ff;--ink-soft:rgba(251,242,255,.85);--ink-faint:rgba(251,242,255,.64);--accent:#c084fc;--accent-ink:#ecd6ff;--cta:#fb7185;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#33184a 0%,#1f1030 60%,#140a1f 100%);--media-glow:rgba(192,132,252,.2);--nav-bg:rgba(20,10,31,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -66,7 +70,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"sparks-studios","item":"https://bfgapps.co/ja/apps/sparks-studios/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -111,87 +115,116 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-kids">キッズ</span>
-      <h1>Sparks Studio</h1>
-      <p class="app-subtitle">4〜12歳向けAIクリエイティブプレイグラウンド。</p>
-      <div class="hero-visual">
-        <img src="/assets/sparks-hero.png" alt="iPhone上でお絵描き・物語・音楽制作ツールを表示するSparks Studio アプリ" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">若いクリエイターのために</div>
+        <h1>Sparks Studio</h1>
+        <p class="ap-lede">子どもがお絵描き・物語づくり・音楽制作を楽しめるクリエイティブな遊び場。決して主役を奪わず、そっとアイデアをくれるオンデバイスのアシスタントが寄り添います。対象年齢4〜12歳。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
+        </div>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">オンデバイス</span>
+          <span class="ap-pill">広告なし</span>
+          <span class="ap-pill">追跡なし</span>
+          <span class="ap-pill">アカウント不要</span>
+          <span class="ap-pill">4〜12歳</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/sparks-studios-kids-create/id6760515470" class="app-cta" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+      <div class="ap-hero-media" aria-label="子ども向けSparks Studioのクリエイティブツール">
+        <img src="/assets/sparks/01.webp" alt="お絵描き・物語・音楽制作ツールが並ぶSparks Studioのホーム画面" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4〜12歳</strong>3つの年齢層</div>
-        <div class="fact"><strong>オンデバイスAI</strong>アップロードなし</div>
-        <div class="fact"><strong>広告なし</strong>追跡ゼロ</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/sparks-studios/privacy.html">プライバシーポリシー</a>
+      <a href="/apps/sparks-studios/support.html">サポート</a>
+      <a href="/apps/sparks-studios/terms.html">利用規約</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>手のひらにまるごとスタジオ</h2>
+      <p>描いて、物語を語り、音楽をつくる——小さな手と大きな想像力のために設計された3つのクリエイティブツール。子どもがつくったものはすべてデバイスの中に残ります。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/sparks/01.webp" alt="子ども向けのクリエイティブな活動が並ぶSparks Studioのホーム画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/02.webp" alt="ブラシと色がそろうSparks Studioのお絵描きキャンバス" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/03.webp" alt="若い書き手のためのSparks Studioのストーリービルダー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/04.webp" alt="音符を置くSparks Studioの音楽コンポーザー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/sparks/05.webp" alt="保存した絵・物語・音楽が並ぶSparks Studioの作品ギャラリー" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>主な機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>お絵描きキャンバス</h3>
-          <p>AIのヒントと提案を活用した自由なスケッチ。AIはサポートするだけで、主役は子どもです。</p>
-        </div>
-        <div class="feature">
-          <h3>ストーリービルダー</h3>
-          <p>構成や語彙をAIがサポートしながら物語を書きます。子どもが行き詰まったときにアイデアを提案するだけで、代わりに書くことはありません。</p>
-        </div>
-        <div class="feature">
-          <h3>音楽コンポーザー</h3>
-          <p>音符を置いて再生することでメロディーを作ります。AIはハーモニーやリズムパターンを提案しますが、採用するかどうかは自由です。</p>
-        </div>
-        <div class="feature">
-          <h3>オンデバイスAI</h3>
-          <p>すべてのAI処理はデバイス上で行われます。サーバーへのアップロードは一切なし。アカウント作成も不要です。</p>
-        </div>
-        <div class="feature">
-          <h3>年齢適応コンテンツ</h3>
-          <p>3段階（4〜6歳、7〜9歳、10〜12歳）でインターフェース・ヒント・語彙・難易度を調整。幼児から小学生まで1つのアプリで対応。</p>
-        </div>
-        <div class="feature">
-          <h3>保護者向けコントロール</h3>
-          <p>算数ゲートによるアクセス制限、セッション時間制限、作品ギャラリー。SNS共有なし、公開ギャラリーなし、見知らぬ人との交流なし。</p>
-        </div>
+      <p>お絵描き・物語づくり・作曲を1つのアプリで。アシスタントは子どもが受け入れても無視してもよいアイデアを提案するだけで、代わりに創作することはありません。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>お絵描きキャンバス</h3><p>やさしいヒントと提案を添えた自由なスケッチ。アシスタントはページを奪わずに手助けします。</p></article>
+        <article><h3>ストーリービルダー</h3><p>構成や語彙のサポートを受けながら物語を書けます。子どもが行き詰まったときに、代わりに書くのではなくアイデアを提案します。</p></article>
+        <article><h3>音楽コンポーザー</h3><p>音符を置いて再生しながらメロディーをつくります。ハーモニーやリズムを提案し、採用するかどうかは自由です。</p></article>
+        <article><h3>オンデバイスの創造性</h3><p>クリエイティブアシスタントは完全にデバイス上で動作します。子どもがつくったものは一切アップロードされず、アカウントも不要です。</p></article>
+        <article><h3>年齢適応コンテンツ</h3><p>3段階（4〜6歳、7〜9歳、10〜12歳）でインターフェース・ヒント・語彙・難易度を調整——幼児から小学生まで1つのアプリで対応します。</p></article>
+        <article><h3>保護者向けコントロール</h3><p>入室時の算数ゲート、セッション時間制限、そして非公開の作品ギャラリー。SNS共有なし、公開ギャラリーなし、見知らぬ人もいません。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシーとデータ</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/sparks/02.webp" alt="ブラシとカラーパレットがそろうSparks Studioのお絵描きキャンバス">
+      <div class="ap-copy">
+        <h2>消費するだけでなく、創り出す</h2>
+        <p>子ども向けアプリの多くは注意を引きつけるためにつくられています。Sparks Studioは創造心に火をつけるためにつくられました——どのセッションも、子どもが実際につくった作品で締めくくられます。</p>
         <ul>
-          <li>データ収集ゼロ — アカウントなし、クラウドなし、分析なし</li>
-          <li>すべてのAIは完全にオンデバイスで動作</li>
-          <li>COPPA準拠</li>
-          <li>広告も追跡も一切なし</li>
+          <li>3つのクリエイティブツール：描く・書く・作曲する。</li>
+          <li>アイデアは提案しても、作業を仕上げることはないアシスタント。</li>
+          <li>完全な筆圧対応のApple Pencilサポート。</li>
+          <li>完成した絵・絵本・楽曲は非公開のギャラリーに保存。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>こんな方へ</h2>
+      <p>Sparks Studioは、受動的なスクロールに代わる<strong>子ども向けクリエイティブアプリ</strong>を求める保護者のためのもの——アカウントを一切求めずに幼児から小学生まで一緒に育つ、<strong>安全で広告のないお絵描き＆物語アプリ</strong>です。</p>
+      <div class="ap-loop">
+        <article><h3>受動的な動画から離れる家庭へ</h3><p>果てしない視聴に代わるクリエイティブな選択肢——子どもは絵・物語・音楽をただ消費するのではなく、自分でつくります。</p></article>
+        <article><h3>プライバシー重視の保護者へ</h3><p>アカウントなし、クラウドへのアップロードなし、広告なし、追跡なし。子どもがつくったものはデバイスの中に残ります。</p></article>
+        <article><h3>一緒に育つ1つのアプリ</h3><p>3つの年齢層により、形を描く4歳の子にも、章を書く10歳の子にも、同じアプリが寄り添います。</p></article>
+        <article><h3>Apple Pencilのある家庭へ</h3><p>完全な筆圧対応で、iPadとApple Pencilでのお絵描きキャンバスが自然に感じられます。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>信頼のために</h2>
+      <div class="ap-trust">
+        <div><strong>オンデバイス</strong><span>クリエイティブアシスタントはローカルで動作し、何もアップロードされません。</span></div>
+        <div><strong>広告なし・追跡なし</strong><span>いかなる広告も分析も一切ありません。</span></div>
+        <div><strong>アカウント不要</strong><span>アプリを開いてすぐに創作——登録は不要です。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Sparks Studio の比較</h2>
-      <table>
-        <thead>
-          <tr><th></th><th>Sparks Studio</th><th>Toca Boca</th><th>Sago Mini</th><th>GarageBand</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>主なアクティビティ</td><td><strong>創作（描く・書く・作曲する）</strong></td><td>遊び世界を探索</td><td>ミニゲーム</td><td>音楽制作</td></tr>
-          <tr><td>対象年齢</td><td>4&ndash;12歳（3段階）</td><td>3&ndash;9歳</td><td>2&ndash;5歳</td><td>現実的には8歳以上</td></tr>
-          <tr><td>価格</td><td>無料 + Premiumサブスク</td><td>無料 + アプリ内購入 (&pound;1&ndash;5)</td><td>~&pound;7/月</td><td>無料</td></tr>
-          <tr><td>AI機能</td><td><strong>オンデバイスAI（年齢適応）</strong></td><td>なし</td><td>なし</td><td>なし</td></tr>
-          <tr><td>Apple Pencil</td><td><strong>完全な筆圧対応</strong></td><td>限定的</td><td>非対応</td><td>非対応</td></tr>
-          <tr><td>創作物</td><td>絵本、イラスト、音楽</td><td>プレイのスクリーンショット</td><td>スクリーンショット</td><td>音楽トラック</td></tr>
-          <tr><td>プライバシー</td><td><strong>データ収集ゼロ</strong></td><td>一部収集あり</td><td>最小限</td><td>Apple標準</td></tr>
-          <tr><td>広告 / アプリ内購入</td><td>広告なし / サブスク</td><td>アプリ内購入あり</td><td>なし</td><td>なし</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="ap-loop" style="--loop-cols:2">
+        <article><h3>遊ぶだけでなく、創る</h3><p>多くの子ども向けアプリが遊び世界の探索やミニゲームを中心にする一方、Sparks Studioはものづくり——絵・絵本・音楽——を中心に据えています。</p></article>
+        <article><h3>子どもと一緒に育つ</h3><p>3つの年齢層が4〜12歳を1つのアプリでカバー。1〜2年で卒業してしまう狭い年齢帯ではありません。</p></article>
+        <article><h3>オンデバイスのアシスタント</h3><p>年齢に合わせたクリエイティブアシスタントが、子どもの作品をサーバーに送らずにデバイス上で動作します。</p></article>
+        <article><h3>はじめからプライバシー重視</h3><p>データ収集なし、広告なし、そして自然なお絵描きのための完全なApple Pencil筆圧対応。</p></article>
+      </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>よくある質問</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>小さな子どもにも安全ですか？</h3><p>はい。SNS共有も公開ギャラリーも見知らぬ人との交流もありません——算数ゲートが設定を小さな手から守ります。</p></article>
+        <article><h3>アカウントやインターネットは必要ですか？</h3><p>いいえ。クリエイティブアシスタントはオンデバイスで動作し、何もアップロードされず、登録もありません。</p></article>
+        <article><h3>AIはどう手助けしますか？</h3><p>アシスタントが創作を肩代わりせずにアイデアを提案する仕組みは、<a href="/blog/on-device-ai-kids-apps-safety.html">子ども向けアプリのオンデバイスAIの安全性</a>をご覧ください。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/sparks-studios-vs-toca-boca.html">Sparks Studio vs Toca Boca：子ども向けクリエイティブアプリ比較</a></li>
@@ -200,13 +233,7 @@
         <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">子ども向け安全アプリの選び方（広告なし・追跡なし）</a></li>
         <li><a href="/blog/on-device-ai-kids-apps-safety.html">オンデバイスAIが子ども向けアプリを根本的に安全にする理由</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/sparks-studios/privacy.html">プライバシーポリシー</a>
-      <a href="/apps/sparks-studios/support.html">サポート</a>
-      <a href="/apps/sparks-studios/terms.html">利用規約</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFG ホーム</a> &middot; <a href="/privacy.html">プライバシー</a></p>

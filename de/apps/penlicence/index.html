@@ -38,6 +38,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#1a1206;--ink:#fff7e8;--ink-soft:rgba(255,247,232,.86);--ink-faint:rgba(255,247,232,.66);
+      --accent:#ffd166;--accent-ink:#fff0c2;--cta:#ef476f;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.06);--border:rgba(255,255,255,.13);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#3a2a0f 0%,#241a08 60%,#1a1206 100%);
+      --media-glow:rgba(255,209,102,.2);--nav-bg:rgba(26,18,6,.84);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"penlicence","item":"https://bfgapps.co/de/apps/penlicence/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -148,120 +158,116 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">Bildung</span>
-      <h1>Pen Licence</h1>
-      <p class="app-subtitle">Kindern das Schreiben beibringen — auf dem iPad.</p>
-      <div class="hero-visual">
-        <img src="/assets/penlicence-hero.png" alt="Pen Licence App-Screenshot mit Übungspfaden, Aufwärmübungen und Transferübungen zum echten Schreiben" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/pen-licence/id6761393693" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4–8 Jahre</strong>Handschrift für die Grundschule</div>
-        <div class="fact"><strong>Druckempfindlich</strong>Echtes Stift-Druckfeedback</div>
-        <div class="fact"><strong>Auf dem Gerät</strong>Keine Konten, keine Cloud</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Was die App bietet</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Buchstabe-für-Buchstabe-Lehrplan</h3>
-          <p>Ein strukturierter 26-Buchstaben-Lehrplan in pädagogischer Zaner-Bloser-Reihenfolge mit alphabetischer Umschaltoption. Kinder sehen genau, wo sie stehen und was als Nächstes kommt.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Handschrift, richtig gemacht</div>
+        <h1>Pen Licence</h1>
+        <p class="ap-lede">Bringen Sie Kindern das Schreiben bei — Buchstabe für Buchstabe, Strich für Strich. Sanfte Führung, ehrliches Feedback und echtes Druckcoaching mit Apple Pencil. Alles bleibt auf dem iPad.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">App ansehen</a>
         </div>
-        <div class="feature">
-          <h3>Druckcoaching</h3>
-          <p>Echtzeit-Druckfeedback zeigt, ob ein Strich zu leicht, genau richtig oder zu schwer ist. Druckkennzahlen gelten nur bei Verwendung eines kompatiblen Stifts, sodass das Üben mit dem Finger stets ermutigend bleibt.</p>
-        </div>
-        <div class="feature">
-          <h3>Stricherkennung</h3>
-          <p>Jeder Buchstabe wird mit dem Musterstrichpfad verglichen, sodass Kinder ehrliches Feedback zu Form, Richtung und Vollständigkeit erhalten – nicht einfach einen Stempel für jedes Gekritzel.</p>
-        </div>
-        <div class="feature">
-          <h3>Geisterbuchstaben-Führung</h3>
-          <p>Ein blasses Abbild des Zielbuchstabens erscheint in der Schreibzone, skaliert auf x-Höhe, damit junge Lernende selbstsicher nachzeichnen können, bevor sie zum freien Schreiben übergehen.</p>
-        </div>
-        <div class="feature">
-          <h3>Fortschrittsleiste</h3>
-          <p>Eine 26-Punkte-Fortschrittsleiste unter jedem Bildschirm zeigt abgeschlossene Buchstaben, den aktuellen und die nächsten kommenden – nichts ist hinter Menüs versteckt.</p>
-        </div>
-        <div class="feature">
-          <h3>Fixierte Steuerelemente</h3>
-          <p>Die Schaltflächen „Prüfen", „Nochmal versuchen" und „Nächste Lektion" befinden sich in einer fixierten Fußzeile, sodass der nächste Schritt immer nur einen Tipp entfernt ist – auch auf kleineren iPads.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">4–8 Jahre</span>
+          <span class="ap-pill">Druckcoaching</span>
+          <span class="ap-pill">Nur auf dem Gerät</span>
+          <span class="ap-pill">Keine Konten</span>
+          <span class="ap-pill">Einmaliger Kauf</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Datenschutz &amp; Daten</h3>
-        <ul>
-          <li>Kein Konto erforderlich. Keine Registrierung, keine E-Mail, kein Passwort.</li>
-          <li>Alle Übungsdaten – Striche, Ergebnisse, Fortschritte – bleiben auf dem iPad Ihres Kindes.</li>
-          <li>Keine Werbung, keine Drittanbieter-Analysen, keine Tracking-SDKs.</li>
-          <li>Keine Netzwerkverbindung erforderlich. Die App funktioniert vollständig offline.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Pen Licence Handschriftübung">
+        <img src="/assets/penlicence/01.webp" alt="Pen Licence Übungsbildschirm mit Geisterbuchstaben-Führung und Strich-Feedback" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Für wen ist die App gedacht?</h2>
-      <p>Pen Licence richtet sich an Eltern, Lehrkräfte und Therapeuten, die eine ernsthafte <strong>Handschrift-Übungs-App für iPad</strong>, eine <strong>Schreiben-lernen-App</strong> oder eine <strong>Kinder-Schreib-App mit Apple Pencil</strong> suchen. Sie eignet sich für Familien beim Üben zu Hause, für Klassenzimmer, die iPads als Station einsetzen, sowie für ergotherapeutische Arbeit, bei der Druck und Strichbildung eine Rolle spielen.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Warum Pen Licence wählen?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Konzipiert für Stiftdruck</h3>
-          <p>Die meisten Handschrift-Apps ignorieren den Stiftdruck. Pen Licence behandelt ihn als erstklassiges Feedback – der Unterschied zwischen „leicht genug" und „papier-durchdrückendem Druck" ist Strich für Strich sichtbar.</p>
-        </div>
-        <div class="feature">
-          <h3>Ehrliche Strichkontrolle</h3>
-          <p>Keine Belohnungen für Gekritzel. Die App prüft den Strichpfad gegen das Buchstabenmodell und erklärt, was zu verbessern ist – Form, Richtung oder Vollständigkeit.</p>
-        </div>
-        <div class="feature">
-          <h3>Pädagogisch zuerst, alphabetisch optional</h3>
-          <p>Wird in der Zaner-Bloser-Reihenfolge (c, o, a, d, g, q, …) geliefert, die motorische Fähigkeiten effizient aufbaut – mit einer Ein-Tipp-Umschaltoption auf alphabetische Reihenfolge für Kinder, die eine vertraute Abfolge bevorzugen.</p>
-        </div>
-        <div class="feature">
-          <h3>Elternfreundlicher Datenschutz</h3>
-          <p>Nichts über Ihr Kind verlässt das iPad. Keine Registrierung, keine Fortschrittssynchronisierung, keine Cloud. Die App ist ein Werkzeug, kein Überwachungsgerät.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Passende Suchanfragen</h2>
-      <p>Pen Licence ist die ideale Wahl für Suchanfragen wie <strong>Handschrift-Übungs-App für iPad</strong>, <strong>App zum Buchstaben schreiben lernen</strong>, <strong>Apple Pencil Schreib-App für Kinder</strong>, <strong>Handschrift-App für Kinder</strong> und <strong>App zum Buchstaben nachzeichnen</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Häufig gestellte Fragen</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Für welche Altersgruppe ist die App gedacht?</h3>
-          <p>Pen Licence ist für Grundschulkinder konzipiert – ungefähr im Alter von 4 bis 8 Jahren. Auch ältere Lernende, die ihr Handschriftsicherheit aufbauen möchten, profitieren davon.</p>
-        </div>
-        <div class="feature">
-          <h3>Brauchen wir einen Apple Pencil?</h3>
-          <p>Nein. Üben mit dem Finger funktioniert. Apple Pencil schaltet die Druckcoaching-Funktionen frei; ohne ihn überspringt die App die Druckbewertung, statt ein Kind unfair zu benoten.</p>
-        </div>
-        <div class="feature">
-          <h3>Gibt es ein Abonnement?</h3>
-          <p>Kein wiederkehrendes Abonnement. Pen Licence ist ein einmaliger Kauf im App Store – wie alle anderen Bildungs-Apps von BFG.</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/penlicence/privacy.html">Datenschutzrichtlinie</a>
       <a href="/apps/penlicence/support.html">Support</a>
       <a href="/apps/penlicence/terms.html">Nutzungsbedingungen</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Ein ganzes Alphabet, ein sicherer Strich nach dem anderen</h2>
+      <p>Kinder zeichnen nach, schreiben und erhalten klares Feedback in dem Moment, in dem sie den Stift abheben. Alles bleibt auf dem iPad – keine Konten, keine Uploads, keine Werbung.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/penlicence/01.webp" alt="Pen Licence Buchstabenübung mit Geisterführung und Live-Strich-Feedback" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/02.webp" alt="Pen Licence Druckcoaching zeigt einen Strich mit genau richtigem Druck" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/03.webp" alt="Pen Licence 26-Buchstaben-Fortschrittsleiste mit abgeschlossenen und kommenden Buchstaben" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/04.webp" alt="Pen Licence Strichkontrolle mit ehrlichem Feedback zu Form und Richtung" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/05.webp" alt="Pen Licence Nachzeichnen von Kana-, Hanzi- und Devanagari-Schriftzeichen" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Was die App bietet</h2>
+      <p>Ein ernsthafter Handschrift-Tutor für kleine Hände – strukturiert, ermutigend und ehrlich darüber, was als Nächstes zu verbessern ist.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Buchstabe-für-Buchstabe-Lehrplan</h3><p>Ein strukturierter 26-Buchstaben-Lehrplan in pädagogischer Zaner-Bloser-Reihenfolge mit alphabetischer Umschaltoption. Kinder sehen genau, wo sie stehen und was als Nächstes kommt.</p></article>
+        <article><h3>Druckcoaching</h3><p>Echtzeit-Druckfeedback zeigt, ob ein Strich zu leicht, genau richtig oder zu schwer ist. Druckkennzahlen gelten nur bei Verwendung eines kompatiblen Stifts, sodass das Üben mit dem Finger stets ermutigend bleibt.</p></article>
+        <article><h3>Stricherkennung</h3><p>Jeder Buchstabe wird mit dem Musterstrichpfad verglichen, sodass Kinder ehrliches Feedback zu Form, Richtung und Vollständigkeit erhalten – nicht einfach einen Stempel für jedes Gekritzel.</p></article>
+        <article><h3>Geisterbuchstaben-Führung</h3><p>Ein blasses Abbild des Zielbuchstabens erscheint in der Schreibzone, skaliert auf x-Höhe, damit junge Lernende selbstsicher nachzeichnen können, bevor sie zum freien Schreiben übergehen.</p></article>
+        <article><h3>Fortschrittsleiste</h3><p>Eine 26-Punkte-Fortschrittsleiste unter jedem Bildschirm zeigt abgeschlossene Buchstaben, den aktuellen und die nächsten kommenden – nichts ist hinter Menüs versteckt.</p></article>
+        <article><h3>Fixierte Steuerelemente</h3><p>Die Schaltflächen „Prüfen", „Nochmal versuchen" und „Nächste Lektion" befinden sich in einer fixierten Fußzeile, sodass der nächste Schritt immer nur einen Tipp entfernt ist – auch auf kleineren iPads.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/penlicence/02.webp" alt="Pen Licence Druckcoaching-Feedback zu einem einzelnen Strich">
+      <div class="ap-copy">
+        <h2>Ehrliches Feedback, niemals ein falscher Stempel</h2>
+        <p>Die meisten Handschrift-Apps belohnen jedes Gekritzel und ignorieren, wie stark ein Kind aufdrückt. Pen Licence macht beides nicht.</p>
+        <ul>
+          <li>Echtes Druckcoaching mit Apple Pencil – leicht genug, genau richtig oder papier-durchdrückend schwer.</li>
+          <li>Striche werden gegen das Buchstabenmodell auf Form, Richtung und Vollständigkeit geprüft.</li>
+          <li>Standardmäßig pädagogische Reihenfolge, mit Ein-Tipp-Umschaltung auf alphabetisch.</li>
+          <li>Üben mit dem Finger blendet Druckwerte aus, damit kein Kind unfair bewertet wird.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Für wen ist die App gedacht?</h2>
+      <p>Pen Licence richtet sich an Eltern, Lehrkräfte und Therapeuten, die eine ernsthafte <strong>Handschrift-Übungs-App für iPad</strong>, eine <strong>Schreiben-lernen-App</strong> oder eine <strong>Kinder-Schreib-App mit Apple Pencil</strong> suchen. Sie eignet sich für Familien beim Üben zu Hause, für Klassenzimmer, die iPads als Station einsetzen, sowie für ergotherapeutische Arbeit, bei der Druck und Strichbildung eine Rolle spielen.</p>
+      <div class="ap-loop">
+        <article><h3>Üben zu Hause</h3><p>Ein ruhiger, ermutigender Ort für Grundschulkinder, um Buchstabensicherheit in wenigen Minuten aufzubauen.</p></article>
+        <article><h3>Klassenzimmer-Station</h3><p>Auf einem gemeinsamen iPad einrichten und Kinder den Lehrplan in ihrem eigenen Tempo durcharbeiten lassen – keine Logins zu verwalten.</p></article>
+        <article><h3>Ergotherapie</h3><p>Feedback zu Druck und Strichbildung macht es zu einem echten Werkzeug, wo feinmotorische Fähigkeiten zählen.</p></article>
+        <article><h3>Nicht-lateinische Schriften</h3><p>Über das lateinische Alphabet hinaus unterstützt Pen Licence auch das Nachzeichnen von Kana-, Hanzi- und Devanagari-Schriftzeichen.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Auf Vertrauen gebaut</h2>
+      <div class="ap-trust">
+        <div><strong>Auf dem Gerät</strong><span>Striche, Ergebnisse und Fortschritt bleiben auf dem iPad.</span></div>
+        <div><strong>Keine Konten</strong><span>Keine Registrierung, keine E-Mail, keine Cloud, keine Werbung.</span></div>
+        <div><strong>Funktioniert offline</strong><span>Kein Netzwerk nötig – üben Sie überall.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Warum Pen Licence wählen?</h2>
+      <div class="ap-loop">
+        <article><h3>Konzipiert für Stiftdruck</h3><p>Die meisten Handschrift-Apps ignorieren den Stiftdruck. Pen Licence behandelt ihn als erstklassiges Feedback – der Unterschied zwischen „leicht genug" und „papier-durchdrückendem Druck" ist Strich für Strich sichtbar.</p></article>
+        <article><h3>Ehrliche Strichkontrolle</h3><p>Keine Belohnungen für Gekritzel. Die App prüft den Strichpfad gegen das Buchstabenmodell und erklärt, was zu verbessern ist – Form, Richtung oder Vollständigkeit.</p></article>
+        <article><h3>Pädagogisch zuerst, alphabetisch optional</h3><p>Wird in der Zaner-Bloser-Reihenfolge (c, o, a, d, g, q, …) geliefert, die motorische Fähigkeiten effizient aufbaut – mit einer Ein-Tipp-Umschaltoption auf alphabetische Reihenfolge für Kinder, die eine vertraute Abfolge bevorzugen.</p></article>
+        <article><h3>Elternfreundlicher Datenschutz</h3><p>Nichts über Ihr Kind verlässt das iPad. Keine Registrierung, keine Fortschrittssynchronisierung, keine Cloud. Die App ist ein Werkzeug, kein Überwachungsgerät.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Für welche Altersgruppe ist die App gedacht?</h3><p>Pen Licence ist für Grundschulkinder konzipiert – ungefähr im Alter von 4 bis 8 Jahren. Auch ältere Lernende, die ihre Handschriftsicherheit aufbauen möchten, profitieren davon.</p></article>
+        <article><h3>Brauchen wir einen Apple Pencil?</h3><p>Nein. Üben mit dem Finger funktioniert. Apple Pencil schaltet die Druckcoaching-Funktionen frei; ohne ihn überspringt die App die Druckbewertung, statt ein Kind unfair zu benoten.</p></article>
+        <article><h3>Gibt es ein Abonnement?</h3><p>Kein wiederkehrendes Abonnement. Pen Licence ist ein einmaliger Kauf im App Store – wie alle anderen Bildungs-Apps von BFG.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Passende Suchanfragen</h2>
+      <p>Pen Licence ist die ideale Wahl für Suchanfragen wie <strong>Handschrift-Übungs-App für iPad</strong>, <strong>App zum Buchstaben schreiben lernen</strong>, <strong>Apple Pencil Schreib-App für Kinder</strong>, <strong>Handschrift-App für Kinder</strong> und <strong>App zum Buchstaben nachzeichnen</strong>.</p>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>

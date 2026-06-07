@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0c1424;--ink:#fdf1f8;--ink-soft:rgba(253,241,248,.85);--ink-faint:rgba(253,241,248,.64);--accent:#f472b6;--accent-ink:#ffd4ea;--cta:#fbbf24;--cta-ink:#1a1206;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#262044 0%,#15162c 60%,#0c1424 100%);--media-glow:rgba(244,114,182,.18);--nav-bg:rgba(12,20,36,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +103,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"arithmetix","item":"https://bfgapps.co/ja/apps/arithmetix/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -144,68 +148,106 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">教育</span>
-      <h1>Arithmetix</h1>
-      <p class="app-subtitle">英国カリキュラムの算数、ReceptionからYear 6まで。</p>
-      <div class="hero-visual">
-        <img src="/assets/arithmetix-hero.png" alt="iPhoneで英国ナショナルカリキュラムに準拠した適応型算数練習を表示するArithmetix" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">英国カリキュラムの算数</div>
+        <h1>Arithmetix</h1>
+        <p class="ap-lede">お子さまが授業で実際に学ぶ内容にしっかり対応した算数練習 — ReceptionからYear 6まで。適応型難易度、かけ算九九、そして子どもと一緒に成長する30以上のトピック。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
+        </div>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">Reception〜Year 6</span>
+          <span class="ap-pill">九九 2〜12</span>
+          <span class="ap-pill">適応型練習</span>
+          <span class="ap-pill">買い切り</span>
+          <span class="ap-pill">iPhone・iPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397" class="app-cta" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+      <div class="ap-hero-media" aria-label="Arithmetix 算数練習">
+        <img src="/assets/arithmetix/01.webp" alt="幼い子ども向けにカリキュラム準拠の算数トピックを表示するArithmetixのホーム画面" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>30以上のトピック</strong>Reception〜Y6</div>
-        <div class="fact"><strong>英国カリキュラム</strong>全国準拠</div>
-        <div class="fact"><strong>適応型</strong>子どもごとの難易度</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/arithmetix/privacy.html">プライバシーポリシー</a>
+      <a href="/apps/arithmetix/support.html">サポート</a>
+      <a href="/apps/arithmetix/terms.html">利用規約</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>実際の画面</h2>
+      <p>子どもを前進させる、明るくやさしい練習 — 各自のレベルに合った問題、即時のフィードバック、そして誇れる成長。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/arithmetix/01.webp" alt="カリキュラム算数トピックを表示するArithmetixのホーム画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/02.webp" alt="学年とストランド別のArithmetixトピック選択画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/03.webp" alt="選択式の解答を備えたArithmetixの算数問題" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/04.webp" alt="正解時のフィードバックと励ましを表示するArithmetix" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/05.webp" alt="Arithmetixのかけ算九九練習モード" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/arithmetix/06.webp" alt="制限時間付きセッションのArithmetixチャレンジモード" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/07.webp" alt="トピックごとの進捗を追跡するArithmetix" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/08.webp" alt="Arithmetixの報酬とストリークの動機づけ画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/09.webp" alt="子どもの練習を確認するArithmetixの保護者概要画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/arithmetix/10.webp" alt="Arithmetixの達成と習得のお祝い画面" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>アプリの機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>30以上のトピック</h3>
-          <p>ReceptionからYear 6まで、英国の小学校算数カリキュラム全体をカバー。学年とストランド別に整理されています。</p>
-        </div>
-        <div class="feature">
-          <h3>英国ナショナルカリキュラム準拠</h3>
-          <p>授業で学ぶ内容と一致したトピック — 数、足し算、引き算、掛け算、分数、測定、図形、統計を網羅。</p>
-        </div>
-        <div class="feature">
-          <h3>適応型難易度</h3>
-          <p>正答率に応じて調整されます。子どもを最近接発達領域に保ち、学べるほど挑戦的で、諦めないほどサポートされた状態を維持します。</p>
-        </div>
-        <div class="feature">
-          <h3>かけ算九九2〜12</h3>
-          <p>掛け算の習熟度向上に特化した練習モード。Year 4 Multiplication Tables Checkへの準備をサポートします。</p>
-        </div>
-        <div class="feature">
-          <h3>バーチャルペットによる動機づけ</h3>
-          <p>完璧なスコアではなく、継続的な日々の練習を報酬で評価。一時的な詰め込みより、定期的な取り組みを促します。</p>
-        </div>
-        <div class="feature">
-          <h3>間隔反復学習</h3>
-          <p>習得済みトピックは間隔を広げて再出題。苦手分野は早めに復習。手動のスケジュール管理不要で長期的な習熟度を実現。</p>
-        </div>
+      <p>カリキュラム準拠のトピック、適応型難易度、そして子どもが続けたくなる充実したかけ算九九練習を備えた、小学校算数の総合的な学習パートナー。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>30以上のトピック</h3><p>ReceptionからYear 6まで、英国の小学校算数カリキュラム全体をカバー。学年とストランド別に整理されています。</p></article>
+        <article><h3>カリキュラム準拠</h3><p>授業で学ぶ内容と一致したトピック — 数、足し算、引き算、掛け算、分数、測定、図形、統計を網羅。</p></article>
+        <article><h3>適応型難易度</h3><p>各子どもの正答率に応じて調整。学べるほど挑戦的で、諦めないほどサポートされた状態を保ちます。</p></article>
+        <article><h3>九九 2〜12</h3><p>計算の習熟を育む専用の掛け算練習。Year 4 Multiplication Tables Checkへの準備をサポートします。</p></article>
+        <article><h3>報酬による動機づけ</h3><p>完璧なスコアより継続的な日々の練習を評価し、子どもが定期的に取り組むよう促します。</p></article>
+        <article><h3>間隔反復学習</h3><p>習得済みトピックは間隔を広げて再出題、苦手分野は早めに復習 — 手動管理不要で長期的な習熟度を実現。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシーとデータ</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/arithmetix/05.webp" alt="Arithmetixのかけ算九九練習画面">
+      <div class="ap-copy">
+        <h2>教室にフィットする設計</h2>
+        <p>多くの算数アプリは汎用的なゲームか継続課金です。Arithmetixは、英国の子どもたちが学年ごとに実際に学ぶべき内容を中心に設計されているため、保護者は練習内容を安心して信頼できます。</p>
         <ul>
-          <li>デバイス間同期のためのFirebaseによる保護者アカウント</li>
-          <li>子どもの進捗データは集計のみ — 問題ごとのデータはアップロードされません</li>
-          <li>広告なし</li>
+          <li>ReceptionからYear 6の学習目標に準拠。</li>
+          <li>Year 4の習熟に向けた専用の九九サポート。</li>
+          <li>各子どものレベルに合わせた適応型練習。</li>
+          <li>買い切り — 月額サブスクなし。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>対象ユーザー</h2>
+      <p>Arithmetixは、<strong>小学校算数アプリ</strong>、<strong>DoodleMathsの代替</strong>、または<strong>九九アプリ</strong>をお探しの英国の保護者・子ども・家庭教師向けです。ナショナルカリキュラムに明確に沿っており、汎用的な算数ゲームではなく、実際に学校で学んでいる内容と一致した練習をお求めの家庭に特に適しています。</p>
+      <div class="ap-loop">
+        <article><h3>英国カリキュラムへの適合</h3><p>ReceptionからYear 6の学習目標に沿って設計されており、保護者が子どもの練習内容を安心して信頼できます。</p></article>
+        <article><h3>買い切り</h3><p>子ども向け算数アプリの多くはサブスク制です。Arithmetixは一度購入して長く使い続けたい家庭向けに作られています。</p></article>
+        <article><h3>九九と計算の習熟</h3><p>充実した掛け算サポートにより、九九の練習やYear 4 MTC対策に対する強力な回答となっています。</p></article>
+        <article><h3>適応型でも抽象的でない</h3><p>適応層は子どもにとって個人的な体験を提供し、カリキュラムの枠組みは選択肢を比較する大人にも分かりやすく保ちます。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>信頼のために設計</h2>
+      <div class="ap-trust">
+        <div><strong>カリキュラム準拠</strong><span>ReceptionからYear 6まで、学年とストランド別。</span></div>
+        <div><strong>買い切り</strong><span>サブスクなし、継続的な月額費用なし。</span></div>
+        <div><strong>広告なし</strong><span>子どものための、落ち着いて集中できる練習環境。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Arithmetixと他アプリの比較</h2>
+      <p>家庭が最もよく検討する算数アプリと比べたArithmetixの位置づけを、さっと確認できます。</p>
       <table>
         <thead>
           <tr><th></th><th>Arithmetix</th><th>DoodleMaths</th><th>Mathletics</th><th>TTRS</th></tr>
@@ -221,60 +263,19 @@
           <tr><td>色覚サポートモード</td><td><strong>3モード</strong></td><td>なし</td><td>なし</td><td>なし</td></tr>
         </tbody>
       </table>
-      <p style="font-size:13px;color:var(--text-dim);margin-top:8px;">競合他社の価格は2026年3月時点。最新価格は各提供元でご確認ください。</p>
-    </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:8px;">競合他社の価格は2026年3月時点。最新価格は各提供元でご確認ください。</p>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>対象ユーザー</h2>
-      <p>Arithmetixは、<strong>小学校算数アプリ</strong>、<strong>DoodleMathsの代替</strong>、または<strong>九九アプリ</strong>をお探しの英国の保護者・子ども・家庭教師向けです。ナショナルカリキュラムに明確に沿っており、汎用的な算数ゲームではなく、実際に学校で学んでいる内容と一致した練習をお求めの家庭に特に適しています。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Arithmetixを選ぶ理由</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>英国カリキュラムへの適合</h3>
-          <p>メッセージはシンプルです：ArithmetixはReceptionからYear 6の学習目標に沿って設計されており、保護者が子どもの練習内容を安心して信頼できます。</p>
-        </div>
-        <div class="feature">
-          <h3>買い切り価格の明確さ</h3>
-          <p>子ども向け算数アプリの多くはサブスクリプション制です。Arithmetixは一度購入して長く使い続けたい家庭に向けて設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>九九と計算の習熟</h3>
-          <p>充実した掛け算サポートにより、<strong>九九の練習</strong>や<strong>Year 4 MTC対策</strong>に関する検索ニーズへの強力な回答となっています。</p>
-        </div>
-        <div class="feature">
-          <h3>適応型でも難解にならない</h3>
-          <p>適応層は子どもにとって個人的な体験を提供しますが、カリキュラムの枠組みにより、選択肢を比較する大人にも理解しやすい設計です。</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>関連検索キーワード</h2>
-      <p>Arithmetixは<strong>小学校向けおすすめ算数アプリ</strong>、<strong>DoodleMathsの代替</strong>、<strong>英国カリキュラム対応算数アプリ</strong>、<strong>サブスクなし九九アプリ</strong>といった検索に最適なアプリです。このページにより、それらのユースケースが検索エンジンとAIアシスタントにとって格段に明確になっています。</p>
-    </div>
-
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>よくある質問</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Arithmetixは特定の年齢層だけを対象にしていますか？</h3>
-          <p>いいえ。ReceptionからYear 6まで、小学校全課程をカバーするよう設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>九九の練習に役立ちますか？</h3>
-          <p>はい。九九の練習はこのアプリの最も明確な強みのひとつです。特にYear 4 Multiplication Tables Checkを意識するご家庭に適しています。</p>
-        </div>
-        <div class="feature">
-          <h3>なぜサブスクアプリより選ぶべきなのですか？</h3>
-          <p>毎月のコストなしにカリキュラム準拠の算数練習を望む方向けに、Arithmetixはまさにそのトレードオフを意識して設計されています。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>特定の年齢層だけが対象ですか？</h3><p>いいえ。ArithmetixはReceptionからYear 6まで、小学校全課程を学年別にカバーします。</p></article>
+        <article><h3>九九の練習に役立ちますか？</h3><p>はい。九九の練習は最も明確な強みのひとつで、特にYear 4 Multiplication Tables Checkに備えるご家庭に適しています。</p></article>
+        <article><h3>なぜサブスクアプリより選ぶの？</h3><p>毎月のコストなしにカリキュラム準拠の算数練習を望むなら、Arithmetixはまさにそのために作られています。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/arithmetix-vs-doodlemaths.html">Arithmetix vs DoodleMaths 比較</a></li>
@@ -282,13 +283,7 @@
         <li><a href="/blog/year-4-multiplication-tables-check.html">Year 4 Multiplication Tables Check ガイド</a></li>
         <li><a href="/blog/ks2-sats-maths-preparation.html">KS2 SATs 算数対策</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/arithmetix/privacy.html">プライバシーポリシー</a>
-      <a href="/apps/arithmetix/support.html">サポート</a>
-      <a href="/apps/arithmetix/terms.html">利用規約</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFGホーム</a> &middot; <a href="/privacy.html">プライバシー</a></p>

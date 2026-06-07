@@ -38,6 +38,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#1a1206;--ink:#fff7e8;--ink-soft:rgba(255,247,232,.86);--ink-faint:rgba(255,247,232,.66);
+      --accent:#ffd166;--accent-ink:#fff0c2;--cta:#ef476f;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.06);--border:rgba(255,255,255,.13);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#3a2a0f 0%,#241a08 60%,#1a1206 100%);
+      --media-glow:rgba(255,209,102,.2);--nav-bg:rgba(26,18,6,.84);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"penlicence","item":"https://bfgapps.co/ja/apps/penlicence/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -148,120 +158,116 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">教育</span>
-      <h1>Pen Licence</h1>
-      <p class="app-subtitle">子どもに書き方を教える — iPad で。</p>
-      <div class="hero-visual">
-        <img src="/assets/penlicence-hero.png" alt="Pen Licence のスクリーンショット：練習パス、ウォームアップ、実際の書き取り移行セクションを表示" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/pen-licence/id6761393693" class="btn btn-primary" target="_blank" rel="noopener noreferrer">App Store からダウンロード</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4〜8歳対象</strong>小学校低学年の手書き練習</div>
-        <div class="fact"><strong>筆圧対応</strong>リアルなスタイラス圧力フィードバック</div>
-        <div class="fact"><strong>オンデバイス</strong>アカウント不要、クラウドなし</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>アプリの機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>1文字ずつ進むカリキュラム</h3>
-          <p>Zaner-Bloser の教育的な順序に基づく、アルファベット切り替え付きの体系的な26文字カリキュラムです。子どもたちは自分が今どこにいて、次に何が来るかを正確に把握できます。</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">手書きを、正しく</div>
+        <h1>Pen Licence</h1>
+        <p class="ap-lede">子どもに書き方を教える — 1文字ずつ、1ストロークずつ。やさしいガイド、誠実なフィードバック、そして Apple Pencil によるリアルな筆圧コーチング。すべてが iPad の中にとどまります。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/pen-licence/id6761393693" target="_blank" rel="noopener noreferrer">App Store からダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
         </div>
-        <div class="feature">
-          <h3>筆圧コーチング</h3>
-          <p>リアルタイムの筆圧フィードバックで、ストロークが軽すぎる・適切・重すぎるかを表示します。筆圧指標は対応スタイラス使用時のみ適用されるため、指での練習は常に励みになる形で続けられます。</p>
-        </div>
-        <div class="feature">
-          <h3>ストローク認識</h3>
-          <p>各文字はモデルストロークパスと照合されるため、子どもは形・方向・完成度について誠実なフィードバックを受けられます。どんな落書きにも丸をつけるような評価ではありません。</p>
-        </div>
-        <div class="feature">
-          <h3>ゴーストレターガイド</h3>
-          <p>目標文字の薄いゴーストが書き取りゾーンに x ハイトに合わせて表示されるため、幼い学習者が自信を持ってなぞり書きし、その後フリーハンド練習に移れます。</p>
-        </div>
-        <div class="feature">
-          <h3>進捗ストリップ</h3>
-          <p>全画面下部の26ドット進捗ストリップで、完了した文字・現在の文字・次の文字を一目で確認できます。メニューの奥に隠れているものは何もありません。</p>
-        </div>
-        <div class="feature">
-          <h3>固定コントロール</h3>
-          <p>確認・やり直し・次のレッスンのボタンは固定フッターに常に表示されるため、次のアクションは小さな iPad でもいつもワンタップで行えます。</p>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">4〜8歳</span>
+          <span class="ap-pill">筆圧コーチング</span>
+          <span class="ap-pill">オンデバイスのみ</span>
+          <span class="ap-pill">アカウント不要</span>
+          <span class="ap-pill">買い切り</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシーとデータ</h3>
-        <ul>
-          <li>アカウント不要。登録・メールアドレス・パスワードは一切必要ありません。</li>
-          <li>ストローク・スコア・進捗などすべての練習データはお子さまの iPad 上にのみ保存されます。</li>
-          <li>広告なし、サードパーティ分析なし、トラッキング SDK なし。</li>
-          <li>ネットワーク接続不要。アプリは完全にオフラインで動作します。</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Pen Licence 手書き練習">
+        <img src="/assets/penlicence/01.webp" alt="ゴーストレターガイドとストローク・フィードバックを表示する Pen Licence の練習画面" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>こんな方におすすめ</h2>
-      <p>Pen Licence は、本格的な <strong>iPad 用手書き練習アプリ</strong>、<strong>文字の書き方学習アプリ</strong>、または <strong>Apple Pencil 対応の子ども向け書き取りアプリ</strong>を探している保護者・教師・療法士のために作られています。自宅で練習するご家庭、iPad をステーションとして活用する教室、そして筆圧やストローク形成が重要な作業療法の現場に最適です。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Pen Licence を選ぶ理由</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>スタイラス筆圧を中心に設計</h3>
-          <p>多くの手書きアプリはスタイラスの筆圧を無視しています。Pen Licence はそれを最重要フィードバックとして扱います。「十分に軽い」と「紙を貫くほど重い」の違いがストロークごとに可視化されます。</p>
-        </div>
-        <div class="feature">
-          <h3>誠実なストロークチェック</h3>
-          <p>落書きに報酬はありません。アプリはストロークパスを文字のモデルと照合し、何を直すべきか（形・方向・完成度）を明確に説明します。</p>
-        </div>
-        <div class="feature">
-          <h3>教育的順序が基本、アルファベット順は任意</h3>
-          <p>運動スキルを効率的に育てる Zaner-Bloser 順（c, o, a, d, g, q, …）でスタートし、なじみのある順序を好む子ども向けにアルファベット順への切り替えもワンタップで可能です。</p>
-        </div>
-        <div class="feature">
-          <h3>保護者に優しいプライバシー</h3>
-          <p>お子さまに関する情報は iPad の外へは一切出ません。登録不要、進捗同期なし、クラウドなし。アプリはツールであり、監視装置ではありません。</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>関連する検索キーワード</h2>
-      <p>Pen Licence は、<strong>iPad 用手書き練習アプリ</strong>、<strong>文字の書き方学習アプリ</strong>、<strong>子ども向け Apple Pencil 書き取りアプリ</strong>、<strong>子ども向け手書きアプリ</strong>、<strong>文字なぞり書きアプリ</strong>といった検索に強く対応しています。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>よくある質問</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>何歳向けですか？</h3>
-          <p>Pen Licence は小学校低学年の子ども（おおよそ4〜8歳）向けに設計されていますが、手書きへの自信をつけたい年上の学習者にも役立ちます。</p>
-        </div>
-        <div class="feature">
-          <h3>Apple Pencil は必要ですか？</h3>
-          <p>必要ありません。指での練習でも十分機能します。Apple Pencil を使うと筆圧コーチング機能が有効になります。お持ちでない場合、アプリは筆圧スコアを静かにスキップし、不公平な評価をしません。</p>
-        </div>
-        <div class="feature">
-          <h3>サブスクリプションはありますか？</h3>
-          <p>継続課金はありません。Pen Licence は App Store での買い切りアプリで、BFG の教育アプリラインナップと同様です。</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/penlicence/privacy.html">プライバシーポリシー</a>
       <a href="/apps/penlicence/support.html">サポート</a>
       <a href="/apps/penlicence/terms.html">利用規約</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>アルファベット全体を、自信に満ちた一筆ずつ</h2>
+      <p>子どもがなぞり、書き、ペンを離した瞬間に明確なフィードバックを得られます。やったことはすべて iPad にとどまります — アカウントなし、アップロードなし、広告なし。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/penlicence/01.webp" alt="ゴーストガイドとライブ・ストローク・フィードバックによる Pen Licence の文字練習" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/02.webp" alt="ちょうどよい筆圧のストロークを示す Pen Licence の筆圧コーチング" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/03.webp" alt="完了した文字と次の文字を示す Pen Licence の26文字進捗ストリップ" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/04.webp" alt="形と方向に関する誠実なフィードバックを返す Pen Licence のストロークチェック" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/penlicence/05.webp" alt="かな・漢字・デーヴァナーガリー文字をなぞる Pen Licence" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>アプリの機能</h2>
+      <p>小さな手のために作られた本格的な手書きチューター — 体系的で、励ましに満ち、次に直すべきことに誠実です。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>1文字ずつ進むカリキュラム</h3><p>Zaner-Bloser の教育的な順序に基づく、アルファベット切り替え付きの体系的な26文字カリキュラムです。子どもたちは自分が今どこにいて、次に何が来るかを正確に把握できます。</p></article>
+        <article><h3>筆圧コーチング</h3><p>リアルタイムの筆圧フィードバックで、ストロークが軽すぎる・適切・重すぎるかを表示します。筆圧指標は対応スタイラス使用時のみ適用されるため、指での練習は常に励みになる形で続けられます。</p></article>
+        <article><h3>ストローク認識</h3><p>各文字はモデルストロークパスと照合されるため、子どもは形・方向・完成度について誠実なフィードバックを受けられます。どんな落書きにも丸をつけるような評価ではありません。</p></article>
+        <article><h3>ゴーストレターガイド</h3><p>目標文字の薄いゴーストが書き取りゾーンに x ハイトに合わせて表示されるため、幼い学習者が自信を持ってなぞり書きし、その後フリーハンド練習に移れます。</p></article>
+        <article><h3>進捗ストリップ</h3><p>全画面下部の26ドット進捗ストリップで、完了した文字・現在の文字・次の文字を一目で確認できます。メニューの奥に隠れているものは何もありません。</p></article>
+        <article><h3>固定コントロール</h3><p>確認・やり直し・次のレッスンのボタンは固定フッターに常に表示されるため、次のアクションは小さな iPad でもいつもワンタップで行えます。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/penlicence/02.webp" alt="1本のストロークに対する Pen Licence の筆圧コーチング・フィードバック">
+      <div class="ap-copy">
+        <h2>誠実なフィードバック、見せかけの花丸はなし</h2>
+        <p>多くの手書きアプリは、どんな走り書きにも報酬を与え、子どもがどれだけ強く押しているかを無視します。Pen Licence はそのどちらもしません。</p>
+        <ul>
+          <li>Apple Pencil によるリアルな筆圧コーチング — 十分に軽い、ちょうどよい、紙を貫くほど重い。</li>
+          <li>ストロークは文字のモデルと照合し、形・方向・完成度をチェックします。</li>
+          <li>標準は教育的順序、ワンタップでアルファベット順に切り替え。</li>
+          <li>指での練習では筆圧の数値を隠し、子どもが不公平に採点されないようにします。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>こんな方におすすめ</h2>
+      <p>Pen Licence は、本格的な <strong>iPad 用手書き練習アプリ</strong>、<strong>文字の書き方学習アプリ</strong>、または <strong>Apple Pencil 対応の子ども向け書き取りアプリ</strong>を探している保護者・教師・療法士のために作られています。自宅で練習するご家庭、iPad をステーションとして活用する教室、そして筆圧やストローク形成が重要な作業療法の現場に最適です。</p>
+      <div class="ap-loop">
+        <article><h3>家庭での練習</h3><p>小学校低学年の子どもが、数分ずつ文字への自信を育てられる、穏やかで励みになる場所です。</p></article>
+        <article><h3>教室のステーション</h3><p>共有 iPad に置いて、子どもが自分のペースでカリキュラムを進められます。管理するログインはありません。</p></article>
+        <article><h3>作業療法</h3><p>筆圧とストローク形成のフィードバックにより、文字の運動スキルが重要な場面で本物のツールになります。</p></article>
+        <article><h3>非ラテン文字の学習</h3><p>ラテン文字のアルファベットに加えて、Pen Licence はかな・漢字・デーヴァナーガリー文字のなぞり書きにも対応しています。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>信頼のために作られています</h2>
+      <div class="ap-trust">
+        <div><strong>オンデバイス</strong><span>ストローク・スコア・進捗は iPad にとどまります。</span></div>
+        <div><strong>アカウント不要</strong><span>登録なし、メールなし、クラウドなし、広告なし。</span></div>
+        <div><strong>オフライン動作</strong><span>ネットワーク不要 — どこでも練習できます。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Pen Licence を選ぶ理由</h2>
+      <div class="ap-loop">
+        <article><h3>スタイラス筆圧を中心に設計</h3><p>多くの手書きアプリはスタイラスの筆圧を無視しています。Pen Licence はそれを最重要フィードバックとして扱います。「十分に軽い」と「紙を貫くほど重い」の違いがストロークごとに可視化されます。</p></article>
+        <article><h3>誠実なストロークチェック</h3><p>落書きに報酬はありません。アプリはストロークパスを文字のモデルと照合し、何を直すべきか（形・方向・完成度）を明確に説明します。</p></article>
+        <article><h3>教育的順序が基本、アルファベット順は任意</h3><p>運動スキルを効率的に育てる Zaner-Bloser 順（c, o, a, d, g, q, …）でスタートし、なじみのある順序を好む子ども向けにアルファベット順への切り替えもワンタップで可能です。</p></article>
+        <article><h3>保護者に優しいプライバシー</h3><p>お子さまに関する情報は iPad の外へは一切出ません。登録不要、進捗同期なし、クラウドなし。アプリはツールであり、監視装置ではありません。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>よくある質問</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>何歳向けですか？</h3><p>Pen Licence は小学校低学年の子ども（おおよそ4〜8歳）向けに設計されていますが、手書きへの自信をつけたい年上の学習者にも役立ちます。</p></article>
+        <article><h3>Apple Pencil は必要ですか？</h3><p>必要ありません。指での練習でも十分機能します。Apple Pencil を使うと筆圧コーチング機能が有効になります。お持ちでない場合、アプリは筆圧スコアを静かにスキップし、不公平な評価をしません。</p></article>
+        <article><h3>サブスクリプションはありますか？</h3><p>継続課金はありません。Pen Licence は App Store での買い切りアプリで、BFG の教育アプリラインナップと同様です。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>関連する検索キーワード</h2>
+      <p>Pen Licence は、<strong>iPad 用手書き練習アプリ</strong>、<strong>文字の書き方学習アプリ</strong>、<strong>子ども向け Apple Pencil 書き取りアプリ</strong>、<strong>子ども向け手書きアプリ</strong>、<strong>文字なぞり書きアプリ</strong>といった検索に強く対応しています。</p>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFG ホーム</a> &middot; <a href="/privacy.html">プライバシー</a></p>

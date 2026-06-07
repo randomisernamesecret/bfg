@@ -22,11 +22,11 @@
   <meta property="og:description" content="Minua让孩子们通过使用学习应用来获得屏幕时间。所有数据保留在设备上。无账户、无云端、无追踪。">
   <meta property="og:url" content="https://bfgapps.co/zh-CN/apps/minua/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://bfgapps.co/assets/Minua/01_earn_screen_time_through_learning.png">
+  <meta property="og:image" content="https://bfgapps.co/assets/minua/01_earn_screen_time_through_learning.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Minua — 通过学习获得屏幕时间">
   <meta name="twitter:description" content="Minua让孩子们通过使用学习应用来获得屏幕时间。所有数据保留在设备上。无账户、无云端、无追踪。">
-  <meta name="twitter:image" content="https://bfgapps.co/assets/Minua/01_earn_screen_time_through_learning.png">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/minua/01_earn_screen_time_through_learning.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#0a1714;--ink:#eafff7;--ink-soft:rgba(234,255,247,.84);--ink-faint:rgba(234,255,247,.64);
+      --accent:#34d399;--accent-ink:#bbf7e0;--cta:#f59e0b;--cta-ink:#1a1206;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#123026 0%,#0d1f19 60%,#0a1714 100%);
+      --media-glow:rgba(52,211,153,.18);--nav-bg:rgba(10,23,20,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,7 +64,7 @@
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock"
     },
-    "image": "https://bfgapps.co/assets/Minua/01_earn_screen_time_through_learning.png",
+    "image": "https://bfgapps.co/assets/minua/01_earn_screen_time_through_learning.png",
     "url": "https://bfgapps.co/zh-CN/apps/minua/",
     "downloadUrl": "https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967",
     "isAccessibleForFree": true,
@@ -101,7 +111,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"minua","item":"https://bfgapps.co/zh-CN/apps/minua/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/zh-CN/" class="nav-brand">BFG</a>
@@ -149,116 +159,107 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-kids">儿童</span>
-      <h1>Minua</h1>
-      <p class="app-subtitle">通过学习获得屏幕时间。</p>
-      <div class="hero-visual">
-        <img src="/assets/Minua/01_earn_screen_time_through_learning.png" alt="Minua 应用展示获得屏幕时间的界面" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">通过学习赚取</div>
+        <h1>Minua</h1>
+        <p class="ap-lede">让孩子通过学习赚取屏幕时间。孩子在你选定的学习应用中投入时间，即可解锁娱乐应用——比例由你设定。所有数据都保留在你的设备上。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" target="_blank" rel="noopener noreferrer">在 App Store 下载</a>
+          <a class="ap-button secondary" href="#screens">查看应用</a>
+        </div>
+        <div class="ap-pill-row" aria-label="亮点">
+          <span class="ap-pill">赚取后畅玩</span>
+          <span class="ap-pill">仅在设备上</span>
+          <span class="ap-pill">无需账户</span>
+          <span class="ap-pill">比例可配置</span>
+          <span class="ap-pill">一次性购买</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967" class="btn btn-primary" target="_blank" rel="noopener noreferrer">在 App Store 下载</a>
+      <div class="ap-hero-media" aria-label="Minua 赚取屏幕时间">
+        <img src="/assets/minua/01.webp" alt="Minua 主屏幕，显示孩子通过学习赚取的屏幕时间" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>本地存储</strong>所有数据保留在设备上</div>
-        <div class="fact"><strong>Apple Screen Time</strong>内置家长控制</div>
-        <div class="fact"><strong>无需账户</strong>无需注册</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/minua/privacy.html">隐私政策</a>
+      <a href="/apps/minua/support.html">支持</a>
+      <a href="/apps/minua/terms.html">使用条款</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Minua 如何运作</h2>
+      <p>规则只需设置一次，然后把设备交给孩子。孩子能清楚看到自己赚取了多少时间，以及哪些学习能解锁更多——没有监视，没有唠叨，也不会把任何数据发送到任何地方。</p>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/minua/01.webp" alt="Minua 主屏幕，显示赚取的屏幕时间余额" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/minua/02.webp" alt="可赚取屏幕时间的 Minua 学习应用" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/minua/03.webp" alt="用赚取的时间在 Minua 中解锁的娱乐应用" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/minua/04.webp" alt="由 PIN 码保护的 Minua 家长设置" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>功能介绍</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>赚取屏幕时间</h3>
-          <p>孩子通过使用家长选定的学习应用，获得娱乐应用的访问权限。可配置比例从 1:1 到 12:1。</p>
-        </div>
-        <div class="feature">
-          <h3>Apple Screen Time API</h3>
-          <p>使用 Apple 的内置框架，在操作系统层面实现可靠的应用限制。</p>
-        </div>
-        <div class="feature">
-          <h3>允许使用时段</h3>
-          <p>家长可设置每日时间窗口（例如 15:00–20:00），在此期间娱乐应用可被解锁。超出时间段则保持锁定。</p>
-        </div>
-        <div class="feature">
-          <h3>每日重置</h3>
-          <p>时间余额每天午夜自动重置。孩子每天早晨都能从零开始。</p>
-        </div>
-        <div class="feature">
-          <h3>PIN 保护设置</h3>
-          <p>所有家长设置均由 4 位 PIN 码保护，多次输入错误后将锁定。孩子无法更改规则。</p>
-        </div>
-        <div class="feature">
-          <h3>无需账户</h3>
-          <p>无需电子邮件、注册或云同步。设置好应用后将设备交给孩子即可。一切数据保留在设备上。</p>
-        </div>
+      <p>一套完整的"赚取后畅玩"屏幕时间工具——孩子通过学习赚取娱乐应用的使用权，家长无需管理额外账户即可掌控全局。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>赚取屏幕时间</h3><p>孩子通过在家长选定的学习应用中投入时间，按可配置的比例获得娱乐应用的访问权限。</p></article>
+        <article><h3>构建于 Apple 家长控制之上</h3><p>应用锁定在系统层面执行，实现可靠的操作系统级限制——无需独立的监控服务。</p></article>
+        <article><h3>允许使用时段</h3><p>设置每日时间窗口，在此期间娱乐应用可被解锁。超出时段则保持锁定。</p></article>
+        <article><h3>每日重置</h3><p>赚取的时间余额每天重置，让孩子每天早晨都能从零开始。</p></article>
+        <article><h3>PIN 保护设置</h3><p>家长设置由专属 PIN 码保护，多次输入错误后将锁定。孩子无法更改规则。</p></article>
+        <article><h3>无需账户</h3><p>无需电子邮件、注册或云同步。设置好后把设备交给孩子，一切数据都保留在设备上。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>隐私与数据</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/minua/04.webp" alt="由 PIN 码保护的 Minua 家长设置界面">
+      <div class="ap-copy">
+        <h2>默认即私密</h2>
+        <p>大多数家长控制应用都要求建立家庭账户，再把孩子的日常行为经由厂商云端处理。Minua 不会。它构建于 Apple 自有的家长控制之上，完全在你的设备上运行。</p>
         <ul>
-          <li>所有使用数据通过 iOS 加密存储在本地。</li>
-          <li>无账户、无云端、无服务器。</li>
-          <li>Screen Time API 通过 Apple 的框架完全在设备上运行。</li>
-          <li>没有可被传唤、可被入侵或可被出售的数据。</li>
+          <li>所有使用数据都保留在设备本地。</li>
+          <li>无账户、无云端、无服务器、无追踪。</li>
+          <li>应用锁定在设备上的系统层面执行。</li>
+          <li>一次性购买——无任何订阅。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>适合哪些用户</h2>
       <p>Minua 适合正在寻找<strong>儿童屏幕时间应用</strong>、<strong>无追踪家长控制应用</strong>，或希望将学习时间与娱乐屏幕时间有效结合的家长。对于不喜欢监控型家长控制软件的家庭尤为合适。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>为什么选择 Minua？</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>赚取式屏幕时间模式</h3>
-          <p>比一般家长控制更具针对性：Minua 将屏幕时间重新定义为孩子通过有意义的活动赢得的奖励。</p>
-        </div>
-        <div class="feature">
-          <h3>Apple 原生控制</h3>
-          <p>使用 Apple 自有的 Screen Time 框架，比许多跨平台监控应用提供更简洁、更值得信赖的体验。</p>
-        </div>
-        <div class="feature">
-          <h3>默认保护隐私</h3>
-          <p>无账户、无云端，深受注重隐私的家长青睐——他们不希望家庭习惯或孩子数据存储在第三方服务器上。</p>
-        </div>
-        <div class="feature">
-          <h3>更适合家庭使用的理念</h3>
-          <p>奖励学习比单纯围绕屏幕限制进行的惩罚循环更容易解释，也更易于日常实践。</p>
-        </div>
+      <div class="ap-loop">
+        <article><h3>赚取式屏幕时间模式</h3><p>比一般家长控制更具针对性：Minua 将屏幕时间重新定义为孩子通过有意义的活动赢得的奖励。</p></article>
+        <article><h3>Apple 原生控制</h3><p>构建于 Apple 自有的家长控制之上，比许多跨平台监控应用提供更简洁、更值得信赖的体验。</p></article>
+        <article><h3>默认保护隐私</h3><p>无账户、无云端，深受注重隐私的家长青睐——他们不希望孩子数据存储在第三方服务器上。</p></article>
+        <article><h3>更适合家庭使用的理念</h3><p>奖励学习比单纯围绕屏幕限制进行的惩罚循环更容易解释，也更易于日常实践。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>为信任而打造</h2>
+      <div class="ap-trust">
+        <div><strong>本地存储</strong><span>所有数据都保留在设备本地。</span></div>
+        <div><strong>Apple 家长控制</strong><span>限制在系统层面执行。</span></div>
+        <div><strong>无需账户</strong><span>无需注册、无云端、无追踪。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>相关搜索词</h2>
       <p>Minua 非常适合以下搜索关键词：<strong>儿童赚取屏幕时间应用</strong>、<strong>iPhone 最佳家长控制应用</strong>、<strong>儿童隐私屏幕时间应用</strong>以及<strong>通过学习赚取屏幕时间</strong>。</p>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>常见问题</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Minua 会监视孩子吗？</h3>
-          <p>不会。本应用有意基于设备端控制，而非依赖追踪密集型监控软件。</p>
-        </div>
-        <div class="feature">
-          <h3>孩子使用学习应用能赚取时间吗？</h3>
-          <p>是的。这一"赚取时间"机制是产品的核心概念。</p>
-        </div>
-        <div class="feature">
-          <h3>需要额外创建家庭账户吗？</h3>
-          <p>不需要。Minua 基于本地设置和 Apple 系统框架运行，无需管理额外的云端账户。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Minua 会监视孩子吗？</h3><p>不会。Minua 基于设备端控制，而非依赖追踪密集型监控软件。</p></article>
+        <article><h3>孩子使用学习应用能赚取时间吗？</h3><p>是的。这一"赚取时间"机制是产品的核心概念。</p></article>
+        <article><h3>需要额外创建家庭账户吗？</h3><p>不需要。Minua 围绕本地设置而非另一个需要管理的云端账户构建。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>相关文章</h2>
       <ul class="related-posts">
         <li><a href="/blog/screen-time-without-guilt-parents-guide.html">没有愧疚感的屏幕时间</a></li>
@@ -266,13 +267,7 @@
         <li><a href="/blog/best-parental-control-apps-iphone-2026.html">2026 年 iPhone 最佳家长控制应用</a></li>
         <li><a href="/blog/safe-apps-for-kids-no-ads-privacy.html">无广告无追踪的儿童安全应用</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/minua/privacy.html">隐私政策</a>
-      <a href="/apps/minua/support.html">支持</a>
-      <a href="/apps/minua/terms.html">使用条款</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/zh-CN/">BFG 首页</a> &middot; <a href="/privacy.html">隐私</a></p>

@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#080d12;--ink:#e9f2f0;--ink-soft:rgba(233,242,240,.84);--ink-faint:rgba(233,242,240,.62);
+      --accent:#22c55e;--accent-ink:#bdf0cf;--cta:#3b82f6;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.045);--border:rgba(255,255,255,.11);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0d2018 0%,#0a141a 60%,#080d12 100%);
+      --media-glow:rgba(34,197,94,.16);--nav-bg:rgba(8,13,18,.85);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,7 +108,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/fr/apps/kanesh/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/fr/" class="nav-brand">BFG</a>
@@ -143,118 +153,116 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-finance">Finance</span>
-      <h1>Kanesh</h1>
-      <p class="app-subtitle">Données financières avec sources liées, vérifiables à la demande.</p>
-      <div class="hero-visual">
-        <img src="/assets/kanesh-hero.png" alt="L'app Kanesh affichant des données financières étiquetées avec leur source et des liens vers les dépôts SEC sur iPhone" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Finance avec sources liées</div>
+        <h1>Kanesh</h1>
+        <p class="ap-lede">Un terminal de recherche pour actions et ETF dans votre poche. Listes de suivi, graphiques et données financières avec sources liées — avec un assistant IA sur l'appareil qui répond à vos questions en privé.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+          <a class="ap-button secondary" href="#screens">Voir l'app</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Points forts">
+          <span class="ap-pill">Chiffres avec sources liées</span>
+          <span class="ap-pill">IA sur l'appareil</span>
+          <span class="ap-pill">53 pays</span>
+          <span class="ap-pill">Suivi du Congrès</span>
+          <span class="ap-pill">Sans compte</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/kanesh/id6760582379" class="app-cta" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+      <div class="ap-hero-media" aria-label="Terminal de données financières Kanesh">
+        <img src="/assets/kanesh/01.webp" alt="Écran d'accueil de Kanesh affichant des listes de suivi, les mouvements du marché et des données financières étiquetées avec leur source" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>53 pays</strong>Actions mondiales</div>
-        <div class="fact"><strong>IA sur l'appareil</strong>Requêtes privées</div>
-        <div class="fact"><strong>Sources liées</strong>Chaque chiffre</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/kanesh/privacy.html">Politique de confidentialité</a>
+      <a href="/apps/kanesh/support.html">Assistance</a>
+      <a href="/apps/kanesh/terms.html">Conditions d'utilisation</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Tout le marché dans votre main</h2>
+      <p>Suivez vos listes, lisez les graphiques et appuyez sur n'importe quel chiffre pour voir exactement d'où il provient. Posez une question à l'assistant intégré en langage naturel — il répond directement sur votre appareil.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/kanesh/01.webp" alt="Écran d'accueil de Kanesh avec listes de suivi et aperçu du marché" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/02.webp" alt="Détail d'une action dans Kanesh avec graphique de cours et statistiques clés" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/03.webp" alt="États financiers étiquetés avec leur source dans Kanesh, liés aux dépôts d'origine" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/04.webp" alt="Assistant IA sur l'appareil de Kanesh répondant à une question financière" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/05.webp" alt="Globe interactif de Kanesh pour explorer les actions de 53 pays" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:3">
+        <div class="ap-shot"><img src="/assets/kanesh/06.webp" alt="Suivi des transactions du Congrès dans Kanesh avec transactions divulguées" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/07.webp" alt="Écran de détail d'ETF et de fonds dans Kanesh" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/kanesh/08.webp" alt="Lecteur de dépôts de Kanesh avec documents de source primaire" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Ce que fait l'app</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Données financières avec source étiquetée</h3>
-          <p>Chaque chiffre renvoie à son dépôt SEC d'origine, à sa série FRED ou à son fournisseur de données. Appuyez sur n'importe quelle valeur pour voir exactement d'où elle provient.</p>
-        </div>
-        <div class="feature">
-          <h3>Requêtes en langage naturel</h3>
-          <p>Posez des questions en français comme « Quelle était la marge brute d'Apple le trimestre dernier ? » L'IA sur l'appareil traite votre requête entièrement sur votre iPhone.</p>
-        </div>
-        <div class="feature">
-          <h3>Globe 3D — 53 pays</h3>
-          <p>Explorez les actions mondiales via un globe 3D interactif. La couverture s'étend à 53 pays, pas seulement aux marchés américains.</p>
-        </div>
-        <div class="feature">
-          <h3>Suivi des transactions du Congrès</h3>
-          <p>Découvrez quelles actions les membres du Congrès américain achètent et vendent, directement à partir des déclarations de divulgation obligatoire.</p>
-        </div>
-        <div class="feature">
-          <h3>IA sur l'appareil</h3>
-          <p>Toutes les requêtes sont traitées localement. Vos questions ne quittent jamais l'appareil et aucun compte n'est nécessaire.</p>
-        </div>
-        <div class="feature">
-          <h3>Accès direct à SEC EDGAR</h3>
-          <p>Consultez les dépôts 10-K, 10-Q et 8-K directement depuis EDGAR. Des données de source primaire, sans dépendance au bureau.</p>
-        </div>
+      <p>Un terminal de recherche complet — listes de suivi, graphiques, données financières avec sources liées et un assistant IA privé — conçu pour que vous puissiez vérifier chaque chiffre affiché.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Données financières avec source étiquetée</h3><p>Chaque chiffre renvoie à son dépôt ou à sa source de données d'origine. Appuyez sur n'importe quelle valeur pour voir exactement d'où elle provient.</p></article>
+        <article><h3>Assistant IA sur l'appareil</h3><p>Posez des questions en langage naturel comme « Quelle était la marge brute d'Apple le trimestre dernier ? » L'IA locale répond sur votre téléphone — vos questions ne quittent jamais l'appareil.</p></article>
+        <article><h3>Listes de suivi et graphiques</h3><p>Créez des listes de suivi, suivez les cours et lisez des graphiques interactifs et clairs pour les actions et ETF qui vous intéressent.</p></article>
+        <article><h3>53 pays</h3><p>Explorez les actions mondiales via un globe interactif. La couverture s'étend à 53 pays, pas seulement aux marchés américains.</p></article>
+        <article><h3>Suivi des transactions du Congrès</h3><p>Découvrez quelles actions les membres du Congrès américain achètent et vendent, directement à partir des déclarations de divulgation obligatoire.</p></article>
+        <article><h3>Dépôts de source primaire</h3><p>Consultez les dépôts 10-K, 10-Q et 8-K directement. Des données de source primaire, sans la frustration du bureau.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Confidentialité et données</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/kanesh/04.webp" alt="Assistant IA sur l'appareil de Kanesh répondant à une question financière">
+      <div class="ap-copy">
+        <h2>Privé, pas seulement promis</h2>
+        <p>La plupart des outils financiers font transiter votre recherche par un cloud lié à un compte. Kanesh garde la partie intelligente sur votre appareil — l'assistant IA s'exécute localement, vos requêtes et listes de suivi restent les vôtres.</p>
         <ul>
-          <li>Toutes les requêtes traitées sur l'appareil — rien ne quitte votre téléphone</li>
-          <li>Les requêtes API n'envoient que des symboles boursiers, aucune donnée personnelle</li>
-          <li>Aucun compte requis</li>
-          <li>Ni analytique ni pistage</li>
+          <li>IA sur l'appareil — vos questions ne quittent jamais le téléphone.</li>
+          <li>Aucun compte, aucune inscription, aucun flux de travail cloud.</li>
+          <li>Les requêtes de cours en direct n'envoient que des symboles boursiers, aucune donnée personnelle.</li>
+          <li>Ni analytique ni pistage.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>À qui s'adresse l'app</h2>
-      <p>Kanesh s'adresse aux investisseurs, aux professionnels de la finance, aux étudiants et aux particuliers curieux qui souhaitent rechercher une information rapidement depuis leur téléphone sans perdre le lien vers la source originale. Elle est conçue pour répondre aux intentions de recherche derrière des expressions comme <strong>alternative à Bloomberg</strong>, <strong>app d'analyse boursière</strong> et <strong>app de données financières pour iPhone</strong>.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Ce qui distingue Kanesh</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Ancrage dans les sources primaires</h3>
-          <p>Kanesh est conçue autour de la traçabilité. L'objectif n'est pas seulement d'afficher un chiffre, mais de montrer d'où il provient.</p>
-        </div>
-        <div class="feature">
-          <h3>Recherche pensée pour le mobile</h3>
-          <p>Beaucoup d'outils financiers donnent encore l'impression d'un logiciel de bureau comprimé sur petit écran. Kanesh vise une recherche rapide et fiable depuis un téléphone.</p>
-        </div>
-        <div class="feature">
-          <h3>Couverture mondiale</h3>
-          <p>La couverture de 53 pays donne à Kanesh une proposition plus solide que les apps qui se limitent aux actions américaines.</p>
-        </div>
-        <div class="feature">
-          <h3>Requêtes privées</h3>
-          <p>L'IA sur l'appareil signifie que vos requêtes de recherche ne font pas partie d'un flux de travail SaaS lié à un compte.</p>
-        </div>
+      <p>Kanesh s'adresse aux investisseurs, aux professionnels de la finance, aux étudiants et aux particuliers curieux qui souhaitent rechercher une information rapidement depuis leur téléphone sans perdre le lien vers la source originale. Elle est conçue pour répondre aux intentions derrière des expressions comme <strong>alternative à Bloomberg</strong>, <strong>app d'analyse boursière</strong> et <strong>app de données financières pour iPhone</strong>.</p>
+      <div class="ap-loop">
+        <article><h3>Ancrage dans les sources primaires</h3><p>L'objectif n'est pas seulement d'afficher un chiffre — c'est de montrer d'où il provient, pour que vous puissiez le vérifier vous-même.</p></article>
+        <article><h3>Recherche pensée pour le mobile</h3><p>Beaucoup d'outils financiers donnent l'impression d'un logiciel de bureau comprimé sur petit écran. Kanesh vise une recherche rapide et fiable depuis un téléphone.</p></article>
+        <article><h3>Couverture mondiale</h3><p>La portée de 53 pays vous donne une image plus complète que les apps qui ne couvrent que les actions américaines.</p></article>
+        <article><h3>Privé par défaut</h3><p>L'IA sur l'appareil signifie que vos requêtes de recherche ne font jamais partie d'un flux de travail SaaS lié à un compte.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Conçue pour la confiance</h2>
+      <div class="ap-trust">
+        <div><strong>Sources liées</strong><span>Chaque chiffre renvoie à son dépôt.</span></div>
+        <div><strong>IA sur l'appareil</strong><span>Requêtes traitées localement, jamais envoyées.</span></div>
+        <div><strong>Sans compte</strong><span>Aucune inscription, aucun cloud, aucun pistage.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Requêtes les plus pertinentes</h2>
-      <p>Kanesh est la réponse idéale aux recherches comme <strong>meilleures apps financières pour investisseurs</strong>, <strong>comment analyser des actions sans Bloomberg</strong>, <strong>alternative mobile à Bloomberg</strong> et <strong>app de données financières avec sources liées</strong>. La page de l'app rend désormais ces correspondances plus explicites pour les moteurs de recherche et les assistants IA.</p>
-    </div>
+      <p>Kanesh est une réponse solide aux recherches comme <strong>meilleures apps financières pour investisseurs</strong>, <strong>comment analyser des actions sans Bloomberg</strong>, <strong>alternative mobile à Bloomberg</strong> et <strong>app de données financières avec sources liées</strong>.</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Questions fréquentes</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Puis-je vérifier les données moi-même ?</h3>
-          <p>Oui. La vérification fait partie de la proposition de valeur. Kanesh est conçue pour relier les chiffres aux dépôts et aux jeux de données sources.</p>
-        </div>
-        <div class="feature">
-          <h3>Kanesh est-elle uniquement pour les marchés américains ?</h3>
-          <p>Non. L'une de ses caractéristiques distinctives est la couverture internationale dans 53 pays.</p>
-        </div>
-        <div class="feature">
-          <h3>Et si je cherche simplement une alternative à Bloomberg sur mon téléphone ?</h3>
-          <p>C'est précisément là où Kanesh se positionne. Consultez les guides ci-dessous pour voir comment elle se compare à d'autres outils.</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Puis-je vérifier les données moi-même ?</h3><p>Oui. La vérification est tout l'objectif — Kanesh relie chaque chiffre aux dépôts et aux jeux de données sources.</p></article>
+        <article><h3>Kanesh est-elle uniquement pour les marchés américains ?</h3><p>Non. La couverture internationale dans 53 pays est l'une de ses caractéristiques distinctives.</p></article>
+        <article><h3>Une alternative à Bloomberg sur mon téléphone ?</h3><p>C'est exactement le groupe de comparaison auquel Kanesh appartient. Commencez par les guides ci-dessous pour voir comment elle s'y inscrit.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Articles associés</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-finance-apps-investors-2026.html">Les meilleures apps financières pour les investisseurs particuliers en 2026</a></li>
@@ -263,16 +271,12 @@
         <li><a href="/blog/insider-trading-congress-stocks.html">Transactions boursières du Congrès américain</a></li>
         <li><a href="/blog/how-to-research-global-stocks-from-your-phone.html">Comment analyser des actions mondiales depuis son téléphone</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/kanesh/privacy.html">Politique de confidentialité</a>
-      <a href="/apps/kanesh/terms.html">Conditions d'utilisation</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>
     </footer>
+
   </div>
 
   <script src="/theme.js"></script>

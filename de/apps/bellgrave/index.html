@@ -36,6 +36,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0c0a10;--ink:#f5ece0;--ink-soft:rgba(245,236,224,.84);--ink-faint:rgba(245,236,224,.62);--accent:#f0a85a;--accent-ink:#ffd9a8;--cta:#d4452f;--cta-ink:#fff;--panel:rgba(255,255,255,.045);--border:rgba(255,255,255,.11);--media-bg:radial-gradient(120% 120% at 50% 0%,#241612 0%,#150f12 60%,#0c0a10 100%);--media-glow:rgba(240,168,90,.18);--nav-bg:rgba(12,10,16,.85);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Bellgrave","item":"https://bfgapps.co/de/apps/bellgrave/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -108,90 +112,104 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <h1>Bellgrave</h1>
-      <p class="app-subtitle">Überleb die Horde. Wähle deinen Helden. Brich die Finsternis.</p>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>11 Helden</strong>Einzigartige Waffen und Fähigkeiten</div>
-        <div class="fact"><strong>8 Bosse</strong>Mehrstufige Kämpfe</div>
-        <div class="fact"><strong>Einmaliger Kauf</strong>Kein Abo, keine Werbung</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Das Spiel</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Horden-Überleben</h3>
-          <p>Wellen von Feinden rücken aus allen Richtungen heran. Bewege dich, weiche aus und lass deine automatisch feuernde Waffe den Weg freimachen. Jeder Durchlauf steigert sich von wenigen Nachzüglern bis zu hunderten auf dem Bildschirm.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Einmal zahlen. Für immer spielen.</div>
+        <h1>Bellgrave</h1>
+        <p class="ap-lede">Ein Action-Roguelike in einer dunklen 3D-Kathedrale. Überleb die Horde, wähle deinen Helden, brich die Finsternis — einmaliger Kauf, kein Abo, keine Werbung, kein Battle Pass.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">Gameplay ansehen</a>
         </div>
-        <div class="feature">
-          <h3>3D-Kathedrale als Schauplatz</h3>
-          <p>Kämpf dich durch eine düstere, vollständig in 3D gerenderte Kathedrale. Altäre, Sarkophage, Feuerkörbe und Ruinen geben dem Schlachtfeld eine Atmosphäre wie in Diablo IV.</p>
-        </div>
-        <div class="feature">
-          <h3>11 spielbare Helden</h3>
-          <p>Jeder Held hat ein einzigartiges Waffenverhalten, Basiswerte und eine Signaturferigkeit. Seraphines Stab, Luciens schnelle Messer, Brams weitreichende Ketten, Nyxs zielende Orbs und mehr.</p>
-        </div>
-        <div class="feature">
-          <h3>Waffen-Evolutionen</h3>
-          <p>Kombiniere deine Waffe mit dem richtigen passiven Upgrade, um sie in eine mächtigere Form zu entwickeln. Jeder Held hat einen einzigartigen Evolutionspfad.</p>
-        </div>
-        <div class="feature">
-          <h3>8 Bosskämpfe</h3>
-          <p>Vom Aschebischof bei 4 Minuten bis zum Finsternishüter bei 13,5 Minuten. Jeder Boss hat Schilde, Spezialangriffe, Vorwarnzeichen und Verwundbarkeitsmomente.</p>
-        </div>
-        <div class="feature">
-          <h3>Tägliche Herausforderungen</h3>
-          <p>Täglich ein neuer seeded-Durchlauf mit einem wechselnden Helden. Vergleiche deine Leistung über mehrere Versuche und strebe nach höheren Abschusskombos.</p>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">11 Helden</span>
+          <span class="ap-pill">8 Bosse</span>
+          <span class="ap-pill">Waffen-Evolutionen</span>
+          <span class="ap-pill">Kein Abo</span>
+          <span class="ap-pill">iPhone, iPad &amp; Mac</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Kein Abo. Keine Werbung. Kein Bullshit.</h3>
-        <ul>
-          <li>Einmaliger Kauf. Einmal zahlen, für immer spielen.</li>
-          <li>Keine Werbung, keine Pop-ups, keine Werbevideos zum Durchsitzen.</li>
-          <li>Kein Battle Pass, kein Season Pass, keine FOMO-Timer.</li>
-          <li>Kein Energiesystem. So viele Durchläufe wie du willst.</li>
-          <li>Kein Pay-to-Win. Jeder Held und jedes Upgrade wird im Spiel verdient.</li>
-          <li>Vollständig offline spielbar — kein Konto, kein Login, keine Registrierungspflicht.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Bellgrave Gameplay">
+        <img src="/assets/bellgrave/01.webp" alt="Bellgrave Gameplay — ein Held umringt von einer Horde Feinde in einer dunklen 3D-Kathedrale" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Progression</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Signaturfähigkeiten</h3>
-          <p>Jeder Held besitzt eine einzigartige Signaturfähigkeit, die sich im Kampf automatisch aktiviert. Seraphines Mondlichtschuss, Brams Schwerkraftzug, Mordecais Blutorbs und 8 weitere.</p>
-        </div>
-        <div class="feature">
-          <h3>Passive Upgrades</h3>
-          <p>17 passive Upgrades für Waffenwerte, Überlebensfähigkeit, Ressourcen und Mobilität. Verbessere sie während der Durchläufe und forme deinen Build.</p>
-        </div>
-        <div class="feature">
-          <h3>Errungenschaften &amp; Freischaltungen</h3>
-          <p>Schließe Herausforderungen ab, um neue Helden freizuschalten, Münzen zu verdienen und Reliquienschreine zu entdecken, die dauerhafte Boni gewähren.</p>
-        </div>
-        <div class="feature">
-          <h3>Finsternisphasen</h3>
-          <p>Der Finsternis-Zyklus wechselt zwischen Ruhe-, Ansturm-, Ebbe- und Finsternisphasen und verändert die Feindintensität sowie den Rhythmus der Durchläufe.</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/bellgrave/privacy.html">Datenschutzrichtlinie</a>
       <a href="/apps/bellgrave/support.html">Support</a>
       <a href="/apps/bellgrave/terms.html">Nutzungsbedingungen</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Überleb die Finsternis</h2>
+      <p>Wellen rücken aus allen Richtungen heran, deine Waffe feuert automatisch, und jeder Durchlauf steigert sich von einer Handvoll Nachzügler bis zu hunderten auf dem Bildschirm. Bewege dich, weiche aus, entwickle dich.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/bellgrave/01.webp" alt="Bellgrave-Held kämpft gegen eine Horde in einer 3D-Kathedrale" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/02.webp" alt="Bellgrave: Hunderte Feinde überfluten das Schlachtfeld" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/03.webp" alt="Bellgrave: Upgrade-Auswahl während des Durchlaufs" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/04.webp" alt="Bellgrave: mehrstufiger Bosskampf" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/05.webp" alt="Bellgrave: Heldenauswahl" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/06.webp" alt="Bellgrave: entwickelte Waffe räumt den Bildschirm leer" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Das Spiel</h2>
+      <p>Horden-Überleben im Vampire-Survivors-Stil in einer vollständigen 3D-Kathedrale, mit der Build-Tiefe eines Roguelike und der Inszenierung eines ARPG.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Horden-Überleben</h3><p>Feinde rücken aus allen Richtungen heran. Deine Waffe feuert automatisch — deine Aufgabe ist es, dich zu bewegen, auszuweichen und den Weg freizumachen, während jeder Durchlauf auf hunderte auf dem Bildschirm anwächst.</p></article>
+        <article><h3>Dunkle 3D-Kathedrale</h3><p>Kämpf dich durch eine vollständig in 3D gerenderte Kathedrale aus Altären, Sarkophagen, Feuerkörben und Ruinen, eingebettet in eine düstere Diablo-Atmosphäre.</p></article>
+        <article><h3>11 spielbare Helden</h3><p>Jeder Held hat eine einzigartige Waffe, Basiswerte und eine Signaturfähigkeit — Seraphines Stab, Luciens schnelle Messer, Brams weitreichende Ketten, Nyxs zielende Orbs und mehr.</p></article>
+        <article><h3>Waffen-Evolutionen</h3><p>Kombiniere deine Waffe mit dem richtigen passiven Upgrade, um sie in eine stärkere Form zu entwickeln. Jeder Held hat einen eigenen Evolutionspfad.</p></article>
+        <article><h3>8 Bosskämpfe</h3><p>Vom Aschebischof zu Beginn bis zum Finsternishüter gegen Ende — jeder Boss hat Schilde, Spezialangriffe, Vorwarnzeichen und Verwundbarkeitsmomente.</p></article>
+        <article><h3>Tägliche Herausforderungen</h3><p>Täglich ein neuer seeded-Durchlauf mit wechselndem Helden. Vergleiche deine Versuche und strebe nach höheren Abschusszahlen.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/bellgrave/03.webp" alt="Bellgrave: Upgrade-Auswahl während des Durchlaufs">
+      <div class="ap-copy">
+        <h2>Einmal zahlen. Kein Abo. Keine Werbung.</h2>
+        <p>Bellgrave ist ein Premium-Spiel. Einmal kaufen und es gehört dir — keine Meter zwischen dir und dem nächsten Durchlauf, kein Store, der dich mitten im Kampf nervt.</p>
+        <ul>
+          <li>Einmaliger Kauf — einmal zahlen, für immer spielen.</li>
+          <li>Keine Werbung, keine Pop-ups, keine Werbevideos zum Durchsitzen.</li>
+          <li>Kein Battle Pass, kein Season Pass, keine FOMO-Timer.</li>
+          <li>Kein Energiesystem — so viele Durchläufe, wie du willst.</li>
+          <li>Kein Pay-to-Win — jeder Held und jedes Upgrade wird im Spiel verdient.</li>
+          <li>Vollständig offline spielbar — kein Konto, kein Login, keine Registrierungspflicht.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Progression</h2>
+      <p>Jeder Durchlauf speist ein größeres Spiel — forme im Moment einen Build und schalte dann Helden und dauerhafte Boni über mehrere Versuche frei.</p>
+      <div class="ap-loop">
+        <article><h3>Signaturfähigkeiten</h3><p>Jeder Held hat eine Signatur, die sich im Kampf automatisch aktiviert — Seraphines Mondlichtschuss, Brams Schwerkraftzug, Mordecais Blutorbs und 8 weitere.</p></article>
+        <article><h3>Passive Upgrades</h3><p>17 passive Upgrades für Waffenwerte, Überlebensfähigkeit, Ressourcen und Mobilität. Verbessere sie mitten im Durchlauf, um deinen Build zu formen.</p></article>
+        <article><h3>Errungenschaften &amp; Freischaltungen</h3><p>Schließe Herausforderungen ab, um neue Helden freizuschalten, Münzen zu verdienen und Reliquienschreine zu entdecken, die dauerhafte Boni gewähren.</p></article>
+        <article><h3>Finsternisphasen</h3><p>Der Finsternis-Zyklus wechselt zwischen Ruhe-, Ansturm-, Ebbe- und Finsternisphasen und verändert die Feindintensität sowie den Rhythmus jedes Durchlaufs.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Für Spieler gemacht</h2>
+      <div class="ap-trust">
+        <div><strong>Einmal zahlen</strong><span>Ein Kauf, kein Abo, keine Werbung.</span></div>
+        <div><strong>Offline spielbar</strong><span>Kein Konto, kein Login, keine Registrierungspflicht.</span></div>
+        <div><strong>iPhone, iPad &amp; Mac</strong><span>Ein Kauf für all deine Apple-Geräte.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Gibt es ein Abo?</h3><p>Nein. Bellgrave ist ein einmaliger Kauf — kein Abo, keine Werbung, kein Battle Pass und keine Energie-Timer.</p></article>
+        <article><h3>Wie viele Helden gibt es?</h3><p>11 spielbare Helden, jeder mit einer einzigartigen Waffe, Signaturfähigkeit und einem Evolutionspfad, dazu 8 mehrstufige Bosse zum Bekämpfen.</p></article>
+        <article><h3>Funktioniert es offline?</h3><p>Ja. Bellgrave spielt vollständig offline ohne Konto oder Login, und derselbe Kauf gilt auf iPhone, iPad und Mac.</p></article>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>

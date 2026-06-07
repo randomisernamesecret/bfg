@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0b1220;--ink:#eef3ff;--ink-soft:rgba(238,243,255,.84);--ink-faint:rgba(238,243,255,.64);--accent:#7aa2ff;--accent-ink:#cfe0ff;--cta:#5b8cff;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#16233f 0%,#0e1830 60%,#0b1220 100%);--media-glow:rgba(122,162,255,.18);--nav-bg:rgba(11,18,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -116,7 +120,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"keystrike","item":"https://bfgapps.co/zh-CN/apps/keystrike/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/zh-CN/" class="nav-brand">BFG</a>
@@ -166,158 +170,121 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-music">音乐</span>
-      <h1>Keystrike</h1>
-      <p class="app-subtitle">适用于 iPhone、iPad 和 Mac 的引导式钢琴练习。下落音符、段落循环、MIDI 输入、原声模式、导入与进度报告。</p>
-      <div class="hero-visual">
-        <img src="/assets/keystrike-hero.png" alt="Keystrike 钢琴练习应用截图：G 大调小步舞曲的钢琴键盘上方显示 G、A、B、C、D 下落音符" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" class="btn btn-primary" target="_blank" rel="noopener noreferrer">在 App Store 下载</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>7 天免费试用</strong>之后一次性解锁</div>
-        <div class="fact"><strong>iPhone、iPad 和 Mac</strong>自适应布局</div>
-        <div class="fact"><strong>完全本地化</strong>无需账户，无广告</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>功能概览</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>引导式分级学习</h3>
-          <p>学员按自己的节奏完成基础技能、分级课程和准备度测验。</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">引导式钢琴练习</div>
+        <h1>Keystrike</h1>
+        <p class="ap-lede">适用于 iPad 和 Mac 的引导式钢琴练习。下落音符、段落循环、MIDI 键盘输入、原声模式、导入自己的曲目，以及清晰的进度报告——本地优先，无需账户，无广告。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075" target="_blank" rel="noopener noreferrer">在 App Store 下载</a>
+          <a class="ap-button secondary" href="#screens">查看应用</a>
         </div>
-        <div class="feature">
-          <h3>下落音符练习</h3>
-          <p>音符向判定线下落，学员弹奏对应琴键。可降低速度、单手练习，并为初学者显示音符标签。</p>
-        </div>
-        <div class="feature">
-          <h3>融入练习的乐理</h3>
-          <p>五线谱识读、节奏、音程、音阶、和弦、力度与演奏技法通过课程步骤和参考资料逐步介绍。</p>
-        </div>
-        <div class="feature">
-          <h3>视奏与听音训练</h3>
-          <p>高音谱号和低音谱号识谱练习、听音模仿练习和短测验，帮助学员超越单纯记忆曲目。</p>
-        </div>
-        <div class="feature">
-          <h3>音阶、和弦与即兴演奏</h3>
-          <p>音阶测试、和弦练习和自由弹奏录音，为学员提供磨练技巧、发挥创意的空间。</p>
-        </div>
-        <div class="feature">
-          <h3>内置曲目</h3>
-          <p>收录公共领域曲目，用于下落音符练习和段落循环。</p>
-        </div>
-        <div class="feature">
-          <h3>导入自己的 MIDI 文件</h3>
-          <p>从"文件"应用导入标准 .mid 或 .midi 文件。Keystrike 自动解析为可演奏的谱面，并推荐练习段落。</p>
-        </div>
-        <div class="feature">
-          <h3>原声钢琴模式</h3>
-          <p>没有 MIDI 键盘？开启原声模式后，在授权麦克风使用的情况下，可通过麦克风进行单音练习。</p>
-        </div>
-        <div class="feature">
-          <h3>自由弹奏与录音</h3>
-          <p>开放键盘供即兴演奏和创作。录制、编辑音符，并将录音导出为标准 MIDI 文件。</p>
-        </div>
-        <div class="feature">
-          <h3>报告与辅导循环</h3>
-          <p>练习报告、薄弱点追踪、自适应练习，以及面向教师和家长的交接视图，让进步看得见、信得过。</p>
+        <div class="ap-pill-row" aria-label="亮点">
+          <span class="ap-pill">分级课程</span>
+          <span class="ap-pill">MIDI 键盘</span>
+          <span class="ap-pill">iPad 和 Mac</span>
+          <span class="ap-pill">7 天试用</span>
+          <span class="ap-pill">一次性解锁</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>隐私与数据</h3>
-        <ul>
-          <li>无需账户。无需注册、邮箱或密码。</li>
-          <li>进度、录音和导入的 MIDI 文件均存储在您的设备上。</li>
-          <li>麦克风的使用（原声模式）仅在设备本地进行——音频绝不离开设备。</li>
-          <li>无广告、无追踪、无分析、无第三方 SDK。</li>
-          <li>通知为可选项，仅用于每日练习提醒。</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Keystrike 钢琴练习">
+        <img src="/assets/keystrike/01.webp" alt="Keystrike 在引导式曲目中显示带标签的音符向钢琴键盘下落" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>适合哪些人</h2>
-      <p>Keystrike 专为零基础初学者、重新拾起钢琴的人、希望建立更多体系的自学者、协助孩子练琴的家长，以及需要在课程之间保持清晰学习路径的学员而设计。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>为什么选择 Keystrike</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>有引导的学习路径</h3>
-          <p>主屏幕首先引导学员完成下一个有用的步骤，每日练习结束后再进入曲目、导入和创作环节。</p>
-        </div>
-        <div class="feature">
-          <h3>纠错循环</h3>
-          <p>诊断、练习、再测试、调整路径，让错误转化为有针对性的短时练习，而不是模糊的建议。</p>
-        </div>
-        <div class="feature">
-          <h3>为多设备精心设计</h3>
-          <p>界面针对 iPhone 横屏、更宽的 iPad 布局和 Mac 窗口分别优化，充分考虑不同屏幕尺寸的使用体验。</p>
-        </div>
-        <div class="feature">
-          <h3>试用后一次性解锁</h3>
-          <p>7 天免费试用，之后一次性解锁全部功能。无广告，无月度钢琴订阅费用。</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>相关搜索词</h2>
-      <p>Keystrike 适合以下搜索：<strong>iPhone 和 iPad 最佳钢琴应用</strong>、<strong>分级钢琴练习应用</strong>、<strong>支持 MIDI 键盘的钢琴应用</strong>、<strong>段落循环钢琴练习</strong>、<strong>含乐理和视奏的钢琴应用</strong>以及<strong>在 Mac 上学钢琴</strong>。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>常见问题</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>需要 MIDI 键盘吗？</h3>
-          <p>不需要。如果有，可使用 USB 或蓝牙 MIDI 键盘；也可以使用带麦克风的原声钢琴，或屏幕键盘。很多初学者完全不用任何硬件就能开始练习。</p>
-        </div>
-        <div class="feature">
-          <h3>一共有多少个等级？</h3>
-          <p>应用围绕基础训练和分级进阶构建，每个阶段均包含课程步骤和准备度测验。</p>
-        </div>
-        <div class="feature">
-          <h3>有 Android 版本吗？</h3>
-          <p>没有。Keystrike 专为 iPhone、iPad 和 Mac 开发。</p>
-        </div>
-        <div class="feature">
-          <h3>进度会在设备间同步吗？</h3>
-          <p>Keystrike 采用本地优先模式，进度、录音和导入的 MIDI 文件均保存在创建时使用的设备上。</p>
-        </div>
-        <div class="feature">
-          <h3>可以使用自己的乐谱吗？</h3>
-          <p>目前暂不支持导入 PDF。您可以导入 MIDI 文件（.mid、.midi），Keystrike 会自动将其解析为可演奏的谱面。</p>
-        </div>
-        <div class="feature">
-          <h3>适合儿童还是成人？</h3>
-          <p>两者皆可。初级阶段的节奏对专注的八岁孩子已经足够温和；高级阶段的深度足以支撑成人备考考级曲目。</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>相关文章</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/best-piano-learning-apps-ipad-2026.html">2026 年 iPad 最佳钢琴学习应用</a></li>
-        <li><a href="/blog/piano-app-subscription-vs-one-time.html">订阅制钢琴应用为什么比看起来更贵</a></li>
-        <li><a href="/blog/learn-piano-on-ipad-without-a-keyboard.html">没有键盘，真的能在 iPad 上学钢琴吗？</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/keystrike/privacy.html">隐私政策</a>
       <a href="/apps/keystrike/support.html">支持</a>
       <a href="/apps/keystrike/terms.html">使用条款</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>实际效果</h2>
+      <p>贯穿每次练习的清晰路径——弹奏下落音符、循环练习难点段落、检查识谱，看着进步不断积累。专为 iPad 和 Mac 的宽屏设计。</p>
+      <div class="ap-screens landscape" style="--shot-cols:2">
+        <div class="ap-shot"><img src="/assets/keystrike/01.webp" alt="Keystrike 下落音符练习，钢琴键盘上方显示带标签的音符" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/02.webp" alt="分级课程中的 Keystrike 引导式课程步骤" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/03.webp" alt="用于练习难点段落的 Keystrike 段落循环视图" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/04.webp" alt="Keystrike 视奏与乐理练习界面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/keystrike/05.webp" alt="显示进度与薄弱点的 Keystrike 练习报告" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>功能概览</h2>
+      <p>一个完整的练习室——分级课程、下落音符曲目、融入步骤的乐理，以及导入自己音乐的工具。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>引导式分级学习</h3><p>按自己的节奏完成基础技能、分级课程和准备度测验，下一个有用的步骤始终在视野之中。</p></article>
+        <article><h3>下落音符练习</h3><p>音符向判定线下落，你弹奏对应琴键。可降低速度、单手练习，并为初学者显示音符标签。</p></article>
+        <article><h3>融入练习的乐理</h3><p>五线谱识读、节奏、音程、音阶、和弦、力度与演奏技法通过课程步骤和参考资料逐步介绍。</p></article>
+        <article><h3>视奏与听音训练</h3><p>高音谱号和低音谱号识谱练习、听音模仿练习和短测验，让练习超越单纯记忆曲目。</p></article>
+        <article><h3>音阶、和弦与即兴演奏</h3><p>音阶测试、和弦练习和自由弹奏录音，为你提供磨练技巧、发挥创意的空间。</p></article>
+        <article><h3>内置曲目</h3><p>收录公共领域曲目，用于下落音符练习和段落循环，开箱即可弹奏。</p></article>
+        <article><h3>导入自己的 MIDI</h3><p>从"文件"应用导入标准 .mid 或 .midi 文件。Keystrike 自动解析为可演奏的谱面，并推荐练习段落。</p></article>
+        <article><h3>原声钢琴模式</h3><p>没有 MIDI 键盘？在授权后，原声模式可通过麦克风聆听，进行单音练习。</p></article>
+        <article><h3>报告与辅导循环</h3><p>练习报告、薄弱点追踪、自适应练习，以及面向教师和家长的交接视图，让进步更值得信赖。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/keystrike/03.webp" alt="用于重复练习难点段落的 Keystrike 段落循环视图">
+      <div class="ap-copy">
+        <h2>一条可以跟随的路径</h2>
+        <p>主屏幕首先引导你完成下一个有用的步骤，每日练习结束后再进入曲目、导入和创作环节。错误会转化为有针对性的短时练习，而不是模糊的建议。</p>
+        <ul>
+          <li>诊断、练习、再测试、调整——完整的纠错循环。</li>
+          <li>针对 iPhone 横屏、更宽的 iPad 布局和 Mac 窗口精心调校。</li>
+          <li>自由弹奏与录音：即兴演奏、编辑音符，并导出为标准 MIDI。</li>
+          <li>7 天免费试用，之后一次性解锁——无广告，无月度订阅。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>适合哪些人</h2>
+      <p>Keystrike 专为零基础初学者、重新拾起钢琴的人、希望建立更多体系的自学者、协助孩子练琴的家长，以及需要在课程之间保持清晰学习路径的学员而设计。</p>
+      <div class="ap-loop">
+        <article><h3>零基础初学者</h3><p>平缓的初级阶段和带标签的下落音符，让你无需先购买任何硬件即可开始弹奏。</p></article>
+        <article><h3>重新拾起钢琴的人</h3><p>借助分级曲目、段落循环和识谱练习，从双手停下的地方接续，重建流畅度。</p></article>
+        <article><h3>家长与教师</h3><p>练习报告和交接视图让孩子在课程之间的进步一目了然。</p></article>
+        <article><h3>自学者</h3><p>一门融入乐理、值得信赖的分级课程，适合当下无法请到老师的情况。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>为信任而设计</h2>
+      <div class="ap-trust">
+        <div><strong>本地优先</strong><span>进度、录音和导入的 MIDI 都保存在您的设备上。</span></div>
+        <div><strong>无需账户</strong><span>无需注册、邮箱或密码即可开始弹奏。</span></div>
+        <div><strong>无广告无追踪</strong><span>无分析、无第三方 SDK；麦克风音频绝不离开设备。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>相关搜索词</h2>
+      <p>Keystrike 适合以下搜索：<strong>iPhone 和 iPad 最佳钢琴应用</strong>、<strong>分级钢琴练习应用</strong>、<strong>支持 MIDI 键盘的钢琴应用</strong>、<strong>段落循环钢琴练习</strong>、<strong>含乐理和视奏的钢琴应用</strong>以及<strong>在 Mac 上学钢琴</strong>。</p>
+    </section>
+
+    <section class="ap-section">
+      <h2>常见问题</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>需要 MIDI 键盘吗？</h3><p>不需要。如果有，可使用 USB 或蓝牙 MIDI 键盘；也可以使用带麦克风的原声钢琴，或屏幕键盘。很多初学者完全不用任何硬件就能开始练习。</p></article>
+        <article><h3>一共有多少个等级？</h3><p>应用围绕基础训练和分级进阶构建，每个阶段均包含课程步骤和准备度测验。</p></article>
+        <article><h3>有 Android 版本吗？</h3><p>没有。Keystrike 专为 iPhone、iPad 和 Mac 开发。</p></article>
+        <article><h3>进度会在设备间同步吗？</h3><p>Keystrike 采用本地优先模式，进度、录音和导入的 MIDI 文件均保存在创建时使用的设备上。</p></article>
+        <article><h3>可以使用自己的乐谱吗？</h3><p>目前暂不支持导入 PDF。您可以导入 MIDI 文件（.mid、.midi），Keystrike 会自动将其解析为可演奏的谱面。</p></article>
+        <article><h3>适合儿童还是成人？</h3><p>两者皆可。初级阶段的节奏对专注的八岁孩子已经足够温和；高级阶段的深度足以支撑成人备考考级曲目。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>相关文章</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/best-piano-learning-apps-ipad-2026.html">2026 年 iPad 最佳钢琴学习应用</a></li>
+        <li><a href="/blog/piano-app-subscription-vs-one-time.html">订阅制钢琴应用为什么比看起来更贵</a></li>
+        <li><a href="/blog/learn-piano-on-ipad-without-a-keyboard.html">没有键盘，真的能在 iPad 上学钢琴吗？</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/zh-CN/">BFG 首页</a> &middot; <a href="/privacy.html">隐私</a></p>

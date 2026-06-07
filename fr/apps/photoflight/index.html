@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0a1320;--ink:#eef6ff;--ink-soft:rgba(238,246,255,.85);--ink-faint:rgba(238,246,255,.64);--accent:#38bdf8;--accent-ink:#bfe8ff;--cta:#f97316;--cta-ink:#fff;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#10273f 0%,#0c1a2c 60%,#0a1320 100%);--media-glow:rgba(56,189,248,.18);--nav-bg:rgba(10,19,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -100,7 +104,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"photoflight","item":"https://bfgapps.co/fr/apps/photoflight/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/fr/" class="nav-brand">BFG</a>
@@ -148,149 +152,115 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-travel">Voyage</span>
-      <h1>PhotoFlight</h1>
-      <p class="app-subtitle">Votre carte de voyage, construite à partir de vos photos.</p>
-      <div class="hero-visual">
-        <img src="/assets/photoflight-hero.png" alt="Capture d'écran de PhotoFlight montrant une carte de voyage construite à partir des données GPS des photos" loading="lazy">
-      </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>Sur l'appareil</strong>Tout le traitement en local</div>
-        <div class="fact"><strong>Sans suivi</strong>Aucune requête réseau</div>
-        <div class="fact"><strong>Achat unique</strong>Sans abonnement</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Fonctionnalités</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Carte de voyage automatique</h3>
-          <p>Lit les métadonnées GPS de vos photos existantes pour placer chaque ville et pays visités sur une carte interactive.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Voyage · Confidentialité par conception</div>
+        <h1>PhotoFlight</h1>
+        <p class="ap-lede">Votre carte de voyage, construite à partir des photos que vous avez déjà. PhotoFlight lit les marqueurs de localisation de votre photothèque pour cartographier chaque pays et chaque ville que vous avez visités — passeport, journal de vols et liste de souhaits pour les voyages à venir, le tout sur votre téléphone.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+          <a class="ap-button secondary" href="#screens">Voir l'app</a>
         </div>
-        <div class="feature">
-          <h3>Passeport de voyage</h3>
-          <p>Enregistre les vols effectués, les pays visités, les villes explorées et la distance totale parcourue — le tout depuis votre photothèque.</p>
-        </div>
-        <div class="feature">
-          <h3>Albums de voyage</h3>
-          <p>Regroupe automatiquement vos photos en albums par destination, avec les dates et les lieux associés.</p>
-        </div>
-        <div class="feature">
-          <h3>Journal de vols</h3>
-          <p>Estime les vols entre des lieux éloignés en analysant les horodatages et les sauts GPS dans vos photos.</p>
-        </div>
-        <div class="feature">
-          <h3>Saisie manuelle de vols</h3>
-          <p>Ajoutez les vols que vos photos n'ont pas capturés. Disponible en Pro pour compléter votre historique de voyages.</p>
-        </div>
-        <div class="feature">
-          <h3>Traitement sur l'appareil</h3>
-          <p>Le scan des photos et la construction de la carte se font entièrement en local. Aucun serveur, aucun upload, aucun compte.</p>
+        <div class="ap-pill-row" aria-label="Points forts">
+          <span class="ap-pill">Sur l'appareil uniquement</span>
+          <span class="ap-pill">Sans suivi</span>
+          <span class="ap-pill">Fonctionne avec d'anciennes photos</span>
+          <span class="ap-pill">Sans compte</span>
+          <span class="ap-pill">Achat unique</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Confidentialité et données</h3>
-        <ul>
-          <li>Aucune collecte de données — jamais.</li>
-          <li>Lit les métadonnées GPS des photos en local sur votre appareil.</li>
-          <li>Aucune requête réseau. Entièrement hors ligne.</li>
-          <li>Aucun compte requis.</li>
-          <li>Toutes les données restent sur l'appareil, chiffrées par iOS.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Carte de voyage PhotoFlight">
+        <img src="/assets/photoflight/01.webp" alt="Carte du monde PhotoFlight remplie avec les pays et villes visités, construite à partir des données de localisation des photos" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>PhotoFlight face à la concurrence</h2>
-      <table>
-        <thead>
-          <tr><th></th><th>PhotoFlight</th><th>Polarsteps</th><th>Visited</th><th>TripIt</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Méthode de suivi</td><td><strong>Photos existantes (automatique)</strong></td><td>GPS en arrière-plan</td><td>Tap manuel</td><td>Analyse d'e-mails</td></tr>
-          <tr><td>Rétroactif</td><td><strong>Oui (toutes les photos passées)</strong></td><td>Non (uniquement futur)</td><td>Saisie manuelle</td><td>Non</td></tr>
-          <tr><td>Tarif</td><td>Achat unique</td><td>~&pound;30/an</td><td>~&pound;6/an</td><td>~&pound;49/an</td></tr>
-          <tr><td>Stockage des données</td><td><strong>Sur l'appareil uniquement</strong></td><td>Serveurs de l'entreprise</td><td>Local + iCloud</td><td>Serveurs SAP</td></tr>
-          <tr><td>Impact batterie</td><td><strong>Aucun</strong></td><td>Significatif</td><td>Aucun</td><td>Aucun</td></tr>
-          <tr><td>Suivi de vols</td><td>Détection automatique</td><td>Saisie manuelle</td><td>Non</td><td>Depuis les réservations</td></tr>
-          <tr><td>Stats &amp; succès</td><td><strong>17+ stats, 10 succès</strong></td><td>Stats de base</td><td>% du monde</td><td>Suivi fidélité</td></tr>
-          <tr><td>Livres imprimés</td><td>Non</td><td>Oui</td><td>Non</td><td>Non</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>À qui s'adresse PhotoFlight ?</h2>
-      <p>PhotoFlight s'adresse aux personnes qui cherchent une <strong>app de carte de voyage à partir de photos</strong>, une <strong>alternative à Polarsteps</strong> ou un <strong>tracker de voyages privé</strong> qui ne dépend pas de la collecte de localisation en arrière-plan. Elle est particulièrement pertinente si vous avez déjà des années de photos de voyage et souhaitez valoriser l'histoire que vous portez dans votre photothèque.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Pourquoi choisir PhotoFlight ?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Rétroactif par conception</h3>
-          <p>La plupart des apps de voyage commencent le suivi à partir du jour d'installation. PhotoFlight offre une meilleure proposition pour ceux qui souhaitent reconstruire des années de voyages à partir d'anciennes photos.</p>
-        </div>
-        <div class="feature">
-          <h3>Cartographie avec la confidentialité en priorité</h3>
-          <p>Le traitement sur l'appareil est un vrai différenciateur si vous voulez explorer votre historique de voyages sans transmettre votre localisation en temps réel ni alimenter un profil social.</p>
-        </div>
-        <div class="feature">
-          <h3>Aucun impact sur la batterie</h3>
-          <p>Comme l'app fonctionne à partir de métadonnées existantes, elle évite le suivi en arrière-plan sur lequel reposent beaucoup d'apps de voyage.</p>
-        </div>
-        <div class="feature">
-          <h3>Idéale pour les voyageurs accros à la photo</h3>
-          <p>Si vos souvenirs vivent déjà dans votre pellicule, PhotoFlight semble plus naturelle que de consigner chaque mouvement manuellement.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Requêtes de recherche pertinentes</h2>
-      <p>PhotoFlight correspond parfaitement aux recherches telles que <strong>carte de voyage à partir de photos</strong>, <strong>meilleure app de suivi de voyage</strong>, <strong>alternative à Polarsteps</strong> et <strong>carte de voyage photo iPhone</strong>. Cette page établit ces liens clairement pour la recherche et la récupération par IA.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Foire aux questions</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Dois-je commencer un nouveau journal de voyage ?</h3>
-          <p>Non. L'app est conçue pour fonctionner avec les photos que vous avez déjà, pas seulement les voyages que vous commencez à enregistrer aujourd'hui.</p>
-        </div>
-        <div class="feature">
-          <h3>PhotoFlight envoie-t-il mes photos quelque part ?</h3>
-          <p>Non. La confidentialité est l'un des atouts les plus évidents de l'app : le scan et la construction de la carte se font sur l'appareil.</p>
-        </div>
-        <div class="feature">
-          <h3>Pourquoi la choisir plutôt qu'un journal de voyage en direct ?</h3>
-          <p>Si vous préférez reconstruire et explorer votre historique de voyages plutôt que de les partager sur les réseaux sociaux, PhotoFlight est conçue précisément pour cet usage.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Articles connexes</h2>
-      <ul class="related-posts">
-        <li><a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps : comparaison complète</a></li>
-        <li><a href="/blog/travel-map-from-photos.html">Comment créer une carte de voyage à partir de vos photos</a></li>
-        <li><a href="/blog/best-travel-tracking-apps-2026.html">Les meilleures apps de suivi de voyage 2026</a></li>
-      </ul>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/photoflight/privacy.html">Politique de confidentialité</a>
       <a href="/apps/photoflight/support.html">Support</a>
       <a href="/apps/photoflight/terms.html">Conditions d'utilisation</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Vos voyages, déjà cartographiés</h2>
+      <p>Ouvrez l'app et l'histoire que vous portez dans votre pellicule se transforme en carte. Aucun nouvel enregistrement, aucun suivi en temps réel — seulement les lieux dont vos photos se souviennent déjà.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/photoflight/01.webp" alt="Carte du monde PhotoFlight montrant les pays et villes visités à partir des localisations des photos" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/02.webp" alt="Passeport de voyage PhotoFlight avec pays visités, villes et distance parcourue" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/03.webp" alt="Albums de voyage PhotoFlight regroupés automatiquement par destination et date" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/04.webp" alt="Journal de vols PhotoFlight avec des trajets détectés à partir des sauts de localisation des photos" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/photoflight/05.webp" alt="Plans de voyage PhotoFlight, liste de souhaits de futures destinations" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Ce que fait l'app</h2>
+      <p>Une carte de voyage complète, un passeport et un journal de vols — assemblés à partir des données de localisation déjà présentes dans vos photos, puis une liste de souhaits pour les voyages à venir.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Carte de voyage automatique</h3><p>Place chaque ville et pays que vous avez visités sur une carte interactive, lue directement dans vos photos existantes.</p></article>
+        <article><h3>Passeport de voyage</h3><p>Compte les pays visités, les villes explorées, les vols effectués et la distance totale parcourue — construit depuis votre photothèque.</p></article>
+        <article><h3>Albums de voyage</h3><p>Regroupe automatiquement vos photos en voyages par destination, avec dates et lieux déjà associés.</p></article>
+        <article><h3>Journal de vols</h3><p>Détecte les trajets entre des lieux éloignés en lisant les sauts de temps et de localisation entre vos photos.</p></article>
+        <article><h3>Plans de voyage</h3><p>Ajoutez de futures destinations à une liste de souhaits gratuite et cochez-les à mesure que vos voyages deviennent des souvenirs.</p></article>
+        <article><h3>Sur l'appareil, sans compte</h3><p>Le scan et la construction de la carte se font entièrement sur votre téléphone. Aucun upload, aucun serveur, aucune inscription.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/photoflight/02.webp" alt="Écran récapitulatif du passeport de voyage PhotoFlight">
+      <div class="ap-copy">
+        <h2>Rétroactif, pas à partir de zéro</h2>
+        <p>La plupart des apps de voyage ne commencent à cartographier que le jour où vous les installez. PhotoFlight fait l'inverse — elle remonte dans les photos que vous avez déjà et reconstruit des années de voyages en une seule passe.</p>
+        <ul>
+          <li>Fonctionne avec d'anciennes photos, pas seulement les voyages que vous commencez aujourd'hui.</li>
+          <li>Aucune localisation en arrière-plan, donc aucune décharge de batterie.</li>
+          <li>Tout reste sur votre appareil, chiffré par le système.</li>
+          <li>Aucun compte, aucun cloud, rien n'est envoyé nulle part.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>À qui elle s'adresse</h2>
+      <p>PhotoFlight s'adresse aux personnes qui cherchent une <strong>app de carte de voyage à partir de photos</strong>, une <strong>alternative à Polarsteps</strong> ou un <strong>tracker de voyages privé</strong> qui ne dépend pas de la collecte de localisation en arrière-plan. Elle est particulièrement pertinente si vous avez déjà des années de photos de voyage et souhaitez valoriser l'histoire que vous portez dans votre photothèque.</p>
+      <div class="ap-loop">
+        <article><h3>Rétroactive par conception</h3><p>La plupart des apps de voyage commencent à suivre le jour de l'installation. PhotoFlight est faite pour ceux qui veulent reconstruire des années de voyages à partir d'anciennes photos.</p></article>
+        <article><h3>Cartographie axée sur la confidentialité</h3><p>L'approche sur l'appareil fait une vraie différence si vous voulez explorer votre historique de voyages sans transmettre votre localisation en direct ni alimenter un fil social.</p></article>
+        <article><h3>Sans compromis sur la batterie</h3><p>Comme elle fonctionne à partir de photos déjà prises, elle évite le suivi en arrière-plan dont dépendent beaucoup d'apps de voyage.</p></article>
+        <article><h3>Pour les voyageurs accros à la photo</h3><p>Si vos souvenirs vivent déjà dans votre pellicule, PhotoFlight semble bien plus naturelle que de consigner chaque mouvement à la main.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Conçue pour la confiance</h2>
+      <div class="ap-trust">
+        <div><strong>Sur l'appareil</strong><span>Tout le scan et la cartographie restent en local, chiffrés par le système.</span></div>
+        <div><strong>Sans suivi</strong><span>Aucune localisation en arrière-plan, aucune requête réseau, aucune décharge de batterie.</span></div>
+        <div><strong>Sans compte</strong><span>Aucune inscription, aucun cloud, achat unique.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Foire aux questions</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Dois-je commencer un nouveau journal de voyage ?</h3><p>Non. PhotoFlight est conçue pour fonctionner avec les photos que vous avez déjà, pas seulement les voyages que vous commencez à enregistrer aujourd'hui.</p></article>
+        <article><h3>Envoie-t-elle mes photos quelque part ?</h3><p>Non. Le scan et la construction de la carte se font sur votre appareil — rien n'est envoyé à un serveur.</p></article>
+        <article><h3>Comment se compare-t-elle à Polarsteps ?</h3><p>Lisez <a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps</a> pour une comparaison axée sur la confidentialité.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Requêtes de recherche pertinentes</h2>
+      <p>PhotoFlight correspond parfaitement aux recherches telles que <strong>carte de voyage à partir de photos</strong>, <strong>meilleure app de suivi de voyage</strong>, <strong>alternative à Polarsteps</strong> et <strong>carte de voyage photo iPhone</strong> — pour les voyageurs qui veulent que leur photothèque existante, et non un tracker en direct, dessine la carte.</p>
+    </section>
+
+    <section class="ap-section">
+      <h2>Articles connexes</h2>
+      <ul class="related-posts">
+        <li><a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps : comparaison complète</a></li>
+        <li><a href="/blog/travel-map-from-photos.html">Comment créer une carte de voyage à partir de vos photos</a></li>
+        <li><a href="/blog/best-travel-tracking-apps-2026.html">Les meilleures apps de suivi de voyage 2026</a></li>
+      </ul>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>

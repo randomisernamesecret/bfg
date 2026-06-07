@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#081019;--ink:#eaf4ff;--ink-soft:rgba(234,244,255,.85);--ink-faint:rgba(234,244,255,.64);
+      --accent:#38bdf8;--accent-ink:#c2e9ff;--cta:#facc15;--cta-ink:#10182a;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0e2742 0%,#0a1828 60%,#081019 100%);
+      --media-glow:rgba(56,189,248,.2);--nav-bg:rgba(8,16,25,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cloudmesh","item":"https://bfgapps.co/zh-CN/apps/cloudmesh/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/zh-CN/" class="nav-brand">BFG</a>
@@ -147,117 +157,109 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-weather">天气</span>
-      <h1>Cloudmesh Weather</h1>
-      <p class="app-subtitle">29 个小组件。社区网格。无订阅。</p>
-      <div class="hero-visual">
-        <img src="/assets/cloudmesh-hero.png" alt="Cloudmesh Weather 应用截图，展示小组件和 AI 天气摘要" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">把天气做对</div>
+        <h1>Cloudmesh</h1>
+        <p class="ap-lede">一款围绕你真正会据此行动的信息打造的天气应用 — 实时降雨雷达、空气质量、在第一滴雨落下前就提醒的降雨警报，以及一个带你绕开天气的路线规划器。一次性购买，无订阅。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">在 App Store 下载</a>
+          <a class="ap-button secondary" href="#screens">查看应用</a>
+        </div>
+        <div class="ap-pill-row" aria-label="亮点">
+          <span class="ap-pill">实时降雨雷达</span>
+          <span class="ap-pill">空气质量（AQI）</span>
+          <span class="ap-pill">降雨警报</span>
+          <span class="ap-pill">Apple Watch</span>
+          <span class="ap-pill">无订阅</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" class="btn btn-primary" target="_blank" rel="noopener noreferrer">在 App Store 下载</a>
+      <div class="ap-hero-media" aria-label="Cloudmesh Weather">
+        <img src="/assets/cloudmesh/01.webp" alt="Cloudmesh Weather 主屏幕，显示当前天气和预报" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>29 个小组件</strong>主屏幕 &amp; 锁屏</div>
-        <div class="fact"><strong>AI 摘要</strong>通俗易懂的预报</div>
-        <div class="fact"><strong>一次性购买</strong>无订阅</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/cloudmesh/privacy.html">隐私政策</a>
+      <a href="/apps/cloudmesh/support.html">支持</a>
+      <a href="/apps/cloudmesh/terms.html">使用条款</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>看见天气，而不只是读天气</h2>
+      <p>实时雷达、空气质量、逐小时细节与警报 — 这样布局，让你一眼看清、做出决定，然后继续你的一天。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/cloudmesh/01.webp" alt="Cloudmesh Weather 主屏幕，显示当前天气和预报" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/02.webp" alt="Cloudmesh 逐小时与逐日预报视图" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/03.webp" alt="Cloudmesh 实时降雨雷达地图" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/04.webp" alt="Cloudmesh 空气质量与 AQI 明细" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/05.webp" alt="Cloudmesh 降雨警报通知设置" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cloudmesh/06.webp" alt="Cloudmesh 路线天气规划器" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/07.webp" alt="Cloudmesh 已保存城市与多地点视图" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/08.webp" alt="Cloudmesh Apple Watch 复杂功能与速览" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/09.webp" alt="Cloudmesh 详细天气，含风、气压与湿度" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>功能介绍</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>29 个小组件</h3>
-          <p>支持 Apple 所有尺寸的主屏幕和锁屏小组件 — 从极简速览到详细预报，应有尽有。</p>
-        </div>
-        <div class="feature">
-          <h3>AI 天气摘要</h3>
-          <p>用通俗语言告诉您该做什么，而不仅仅是描述大气状况。</p>
-        </div>
-        <div class="feature">
-          <h3>社区气压网格</h3>
-          <p>汇聚用户手机上的匿名气压数据，生成超本地实时气压地图。</p>
-        </div>
-        <div class="feature">
-          <h3>地震检测</h3>
-          <p>基于加速度传感器的地震检测，可在数秒内通知附近用户。目前处于测试阶段。</p>
-        </div>
-        <div class="feature">
-          <h3>降雨通知</h3>
-          <p>在降雨开始前收到提醒，提前做好安排。无需持续查询位置信息。</p>
-        </div>
-        <div class="feature">
-          <h3>逐分钟降水预报</h3>
-          <p>未来一小时的精细降水预报。高级版可用。</p>
-        </div>
+      <p>围绕天气做计划所需的一切 — 雷达、空气质量、及时警报与路线规划器 — 无需账户，也没有月费。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>实时降雨雷达</h3><p>在跟随你所选城市的交互式地图上观察降雨移动，在它到来之前就看到接下来会发生什么。</p></article>
+        <article><h3>空气质量（AQI）</h3><p>一眼看清当前空气质量，并附清晰明细，让你知道今天是否适合外出。</p></article>
+        <article><h3>降雨警报</h3><p>在降雨开始前收到提醒，让你带伞或等等再走 — 无需持续追踪。</p></article>
+        <article><h3>路线天气规划器</h3><p>规划行程，Cloudmesh 会带你绕开降雨，读取沿途而非仅目的地的天气。</p></article>
+        <article><h3>Apple Watch 复杂功能</h3><p>最新天气就在手腕上，后台保持更新，一瞥即是最新。</p></article>
+        <article><h3>逐小时与逐日预报</h3><p>清晰的逐小时与多日预报，含风、气压与湿度，需要细节时随时查看。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>隐私 &amp; 数据</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/cloudmesh/03.webp" alt="Cloudmesh 实时降雨雷达地图视图">
+      <div class="ap-copy">
+        <h2>为行动而设计，而非堆砌数据</h2>
+        <p>大多数天气应用把你真正在意的那件事埋了起来 — 会不会下到我头上？Cloudmesh 以实时雷达和及时警报开场，让答案始终只在一瞥之间。</p>
         <ul>
-          <li>匿名网格贡献 — 位置信息经过模糊处理，无用户 ID。</li>
-          <li>推送令牌仅保存至过期。</li>
-          <li>无账户、无分析、无广告。</li>
-          <li>数据在数小时内自动删除。</li>
+          <li>跟随你正在查看城市的实时雷达。</li>
+          <li>在第一滴雨之前、而非之后的降雨警报。</li>
+          <li>带你绕开天气的路线规划器。</li>
+          <li>与预报并列、而非藏起来的空气质量。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>为信任而建</h2>
+      <div class="ap-trust">
+        <div><strong>无订阅</strong><span>一次购买。你的天气没有月费。</span></div>
+        <div><strong>无账户</strong><span>无需注册、无追踪、无广告。</span></div>
+        <div><strong>隐私优先</strong><span>最少数据，并附清晰的应用专属说明。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>适合哪些用户</h2>
-      <p>Cloudmesh Weather 专为希望超越基础天气卡片的 iPhone 用户而打造。如果您重视主屏幕小组件、希望快速获取通俗易懂的天气摘要，并且更愿意一次性购买而非按月付费，Cloudmesh 正是为您设计的。</p>
-      <p>如果您正在比较热门 iPhone 天气应用，寻找 <strong>CARROT Weather 的替代方案</strong>、<strong>小组件更丰富的天气应用</strong>或<strong>隐私优先的天气应用</strong>，Cloudmesh 尤其值得关注。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>为什么选择 Cloudmesh 而不是普通天气应用？</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>小组件优先的设计</h3>
-          <p>许多天气应用将小组件视为附加功能。Cloudmesh 将其视为许多人每天查看天气的主要方式。</p>
-        </div>
-        <div class="feature">
-          <h3>隐私优先的理念</h3>
-          <p>Cloudmesh 围绕最少数据收集、无账户要求以及对实际存储内容的清晰说明进行设计。</p>
-        </div>
-        <div class="feature">
-          <h3>网格带来的差异化</h3>
-          <p>社区气压网格赋予 Cloudmesh 有别于标准纯预报应用的独特产品优势。</p>
-        </div>
-        <div class="feature">
-          <h3>无订阅模式</h3>
-          <p>如果您厌倦了为天气小组件每月付费，Cloudmesh 就是专门定位为一次性购买的选择。</p>
-        </div>
+      <p>Cloudmesh 专为想要不止于基础预报卡片的人而打造。如果你查看天气是为了决定穿什么、何时出门或是否带伞，你会感受到差别。如果你在寻找<strong>带实时雷达的天气应用</strong>、<strong>带降雨警报的天气应用</strong>或<strong>隐私优先且无订阅的天气应用</strong>，它尤其值得关注。</p>
+      <div class="ap-loop">
+        <article><h3>对降雨敏感的日常</h3><p>通勤者、遛狗的人、跑者和家长，需要准确知道雨何时落下。</p></article>
+        <article><h3>关注空气质量</h3><p>任何想在出门或开窗前把 AQI 放在首位的人。</p></article>
+        <article><h3>旅行者与规划者</h3><p>规划自驾或行程、想要整条路线而非仅终点天气的人。</p></article>
+        <article><h3>厌倦订阅的人</h3><p>如果你宁愿一次买断也不愿每月付费，Cloudmesh 就是那个一次性购买的选择。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>定价与 App Store 定位</h2>
-      <p>Cloudmesh Weather 定位为<strong>一次性购买的天气应用</strong>。这一点很重要，因为许多人在寻找新天气应用时，不仅比较预报质量，也在比较定价模式。如果您希望拥有天气小组件而不增加每月的订阅负担，Cloudmesh 正是为这一需求而设计的。</p>
-    </div>
-
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>常见问题</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Cloudmesh Weather 的小组件好用吗？</h3>
-          <p>是的。小组件的丰富多样是选择它的主要原因之一，尤其是当您希望拥有多种主屏幕和锁屏布局时。</p>
-        </div>
-        <div class="feature">
-          <h3>Cloudmesh Weather 注重隐私吗？</h3>
-          <p>Cloudmesh 以隐私优先为核心构建：无需账户、最少数据收集，并提供清晰的应用专属隐私说明。</p>
-        </div>
-        <div class="feature">
-          <h3>在 Cloudmesh 和 CARROT 之间难以抉择？</h3>
-          <p>请阅读<a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a>的直接对比，了解小组件、定价和隐私方面的差异。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Cloudmesh 有实时雷达吗？</h3><p>有。实时降雨雷达跟随你所选的城市，让你实时看到天气逼近。</p></article>
+        <article><h3>Cloudmesh 是订阅制吗？</h3><p>不是。Cloudmesh 是一次性购买，带免费版和高级解锁 — 没有周期性费用。</p></article>
+        <article><h3>与 CARROT 相比如何？</h3><p>请阅读<a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a>的直接对比，了解功能、定价和隐私上的取舍。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>相关文章</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-iphone-weather-widgets-2026.html">2026年最佳 iPhone 天气小组件</a></li>
@@ -265,13 +267,7 @@
         <li><a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather 与 CARROT Weather 对比</a></li>
         <li><a href="/blog/best-weather-apps-uk-2026.html">2026年英国最佳天气应用</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cloudmesh/privacy.html">隐私政策</a>
-      <a href="/apps/cloudmesh/support.html">支持</a>
-      <a href="/apps/cloudmesh/terms.html">使用条款</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/zh-CN/">BFG 首页</a> &middot; <a href="/privacy.html">隐私政策</a></p>

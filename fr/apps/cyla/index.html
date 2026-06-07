@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#191020;--ink:#fdf2f8;--ink-soft:rgba(253,242,248,.84);--ink-faint:rgba(253,242,248,.64);
+      --accent:#ff8fc0;--accent-ink:#ffd9ea;--cta:#ff4f87;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#3a1c44 0%,#1f1228 60%,#191020 100%);
+      --media-glow:rgba(255,143,192,.18);--nav-bg:rgba(25,16,32,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cyla","item":"https://bfgapps.co/fr/apps/cyla/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/fr/" class="nav-brand">BFG</a>
@@ -147,56 +157,63 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-health">Santé</span>
-      <h1>Cyla</h1>
-      <p class="app-subtitle">Le suivi de cycle qui ne quitte jamais votre téléphone.</p>
-      <div class="hero-visual">
-        <img src="/assets/cyla-hero.png" alt="Capture d'écran de Cyla montrant l'interface privée de suivi du cycle" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Privé par conception</div>
+        <h1>Cyla</h1>
+        <p class="ap-lede">Un suivi des règles et du cycle qui ne quitte jamais votre téléphone. Pas de compte, pas de cloud, pas de serveurs — prédictions, symptômes et température Apple Watch, le tout sur l'appareil.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+          <a class="ap-button secondary" href="#screens">Voir l'application</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Points forts">
+          <span class="ap-pill">Sur l'appareil uniquement</span>
+          <span class="ap-pill">Température Apple Watch</span>
+          <span class="ap-pill">Sans compte</span>
+          <span class="ap-pill">Achat unique</span>
+          <span class="ap-pill">iPhone &amp; iPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+      <div class="ap-hero-media" aria-label="Suivi du cycle avec Cyla">
+        <img src="/assets/cyla/01.webp" alt="Écran d'accueil de Cyla affichant le jour du cycle, le flux, l'humeur et le suivi du sommeil" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>Sur l'appareil</strong>Toutes les données restent locales</div>
-        <div class="fact"><strong>Apple Watch</strong>Intégration de la température</div>
-        <div class="fact"><strong>Sans compte</strong>Pas d'inscription requise</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>Fonctionnalités</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Prédictions du cycle</h3>
-          <p>Prédictions des règles et du cycle calculées entièrement sur l'appareil à partir de votre historique. Aucun traitement dans le cloud.</p>
-        </div>
-        <div class="feature">
-          <h3>Température Apple Watch</h3>
-          <p>Lit les données de température du poignet via HealthKit pour confirmer l'ovulation et améliorer la précision des prédictions.</p>
-        </div>
-        <div class="feature">
-          <h3>Journal quotidien des symptômes</h3>
-          <p>Notez chaque jour vos symptômes, humeurs et remarques. Tout est stocké localement et chiffré par iOS.</p>
-        </div>
-        <div class="feature">
-          <h3>Suivi de la fertilité</h3>
-          <p>Estimations de la fenêtre de fertilité basées sur vos données de cycle et vos tendances de température. Disponible en version premium.</p>
-        </div>
-        <div class="feature">
-          <h3>Export des données</h3>
-          <p>Exportez toutes vos données en JSON à tout moment. Vos données vous appartiennent — emportez-les si vous changez d'application.</p>
-        </div>
-        <div class="feature">
-          <h3>Sans compte requis</h3>
-          <p>Pas d'e-mail, pas d'inscription, pas de synchronisation cloud. Ouvrez l'application et commencez à suivre immédiatement.</p>
-        </div>
-      </div>
-    </div>
+    <nav class="app-nav">
+      <a href="/apps/cyla/privacy.html">Politique de confidentialité</a>
+      <a href="/apps/cyla/support.html">Assistance</a>
+      <a href="/apps/cyla/terms.html">Conditions d'utilisation</a>
+    </nav>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Confidentialité &amp; données</h3>
+    <section id="screens" class="ap-section">
+      <h2>Votre cycle, en un coup d'œil</h2>
+      <p>Tout ce dont vous avez besoin en quelques touches — notez la journée, lisez vos prédictions et regardez le tableau se préciser à mesure que vous enregistrez. Rien n'est envoyé où que ce soit.</p>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cyla/01.webp" alt="Écran d'accueil de Cyla avec le jour du cycle et le suivi quotidien" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cyla/02.webp" alt="Prédictions du cycle et calendrier de Cyla" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cyla/03.webp" alt="Analyses et tendances de Cyla" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cyla/04.webp" alt="Suivi des symptômes et de l'humeur de Cyla" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Ce que fait l'application</h2>
+      <p>Un suivi de cycle complet — prédictions, fenêtres de fertilité, symptômes et export — conçu pour que vos données de santé les plus intimes restent les vôtres.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Prédictions du cycle</h3><p>Prédictions des règles et du cycle calculées entièrement sur l'appareil à partir de votre historique. Aucun traitement dans le cloud.</p></article>
+        <article><h3>Température Apple Watch</h3><p>Lit les données de température du poignet via HealthKit pour confirmer l'ovulation et améliorer la précision des prédictions.</p></article>
+        <article><h3>Journal quotidien des symptômes</h3><p>Notez chaque jour vos symptômes, humeurs et remarques. Tout est stocké localement et chiffré par iOS.</p></article>
+        <article><h3>Suivi de la fertilité</h3><p>Estimations de la fenêtre de fertilité basées sur vos données de cycle et vos tendances de température. Disponible en version premium.</p></article>
+        <article><h3>Export des données</h3><p>Exportez toutes vos données en JSON à tout moment. Vos données vous appartiennent — emportez-les si vous changez d'application.</p></article>
+        <article><h3>Sans compte requis</h3><p>Pas d'e-mail, pas d'inscription, pas de synchronisation cloud. Ouvrez l'application et commencez à suivre immédiatement.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/cyla/02.webp" alt="Écran des prédictions du cycle de Cyla">
+      <div class="ap-copy">
+        <h2>Privée, pas seulement promise</h2>
+        <p>La plupart des trackers exigent un compte avant que vous puissiez enregistrer une seule journée, puis synchronisent vos données les plus intimes vers un cloud du fournisseur. Pas Cyla.</p>
         <ul>
           <li>Toutes les données de santé sont stockées localement avec le chiffrement iOS.</li>
           <li>Pas de comptes, pas de cloud, pas de serveurs.</li>
@@ -204,72 +221,45 @@
           <li>Rien à saisir par voie judiciaire, rien à pirater, rien à vendre.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>À qui s'adresse Cyla ?</h2>
       <p>Cyla s'adresse aux personnes qui souhaitent un <strong>tracker de règles privé</strong>, une <strong>application de suivi du cycle privée</strong> ou une <strong>alternative à Flo</strong> qui ne commence pas par la création d'un compte. Elle est particulièrement adaptée si la confidentialité n'est pas pour vous une simple préférence abstraite, mais la raison principale du choix d'une nouvelle application de santé.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Pourquoi choisir Cyla plutôt qu'un tracker classique ?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Pas de compte obligatoire</h3>
-          <p>Vous n'avez pas besoin de créer un compte pour enregistrer votre cycle. Cela change immédiatement la perception du produit.</p>
-        </div>
-        <div class="feature">
-          <h3>Confidentialité sur l'appareil</h3>
-          <p>Cyla est conçue pour garder les données sensibles du cycle sur l'appareil, plutôt que de les envoyer par défaut vers un cloud contrôlé par un tiers.</p>
-        </div>
-        <div class="feature">
-          <h3>Intégration dans l'écosystème Apple</h3>
-          <p>L'intégration de la température Apple Watch rend Cyla particulièrement pertinente pour les utilisatrices d'iPhone qui s'appuient déjà sur les fonctions de santé d'Apple.</p>
-        </div>
-        <div class="feature">
-          <h3>Export sans dépendance</h3>
-          <p>La possibilité d'exporter vos données est essentielle si vous souhaitez avoir la certitude qu'elles restent portables et ne sont pas enfermées dans une seule application.</p>
-        </div>
+      <div class="ap-loop">
+        <article><h3>Pas de compte obligatoire</h3><p>Vous n'avez pas besoin de créer un compte pour enregistrer votre cycle. Cela change immédiatement la perception du produit.</p></article>
+        <article><h3>Confidentialité sur l'appareil</h3><p>Cyla est conçue pour garder les données sensibles du cycle sur l'appareil, plutôt que de les envoyer par défaut vers un cloud contrôlé par un tiers.</p></article>
+        <article><h3>Intégration dans l'écosystème Apple</h3><p>L'intégration de la température Apple Watch rend Cyla particulièrement pertinente pour les utilisatrices d'iPhone qui s'appuient déjà sur les fonctions de santé d'Apple.</p></article>
+        <article><h3>Export sans dépendance</h3><p>La possibilité d'exporter vos données signifie qu'elles restent portables plutôt qu'enfermées dans une seule application.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>Recherches fréquentes</h2>
-      <p>Cyla est optimisée pour des recherches telles que <strong>meilleur tracker de règles privé</strong>, <strong>confidentialité tracker de cycle</strong>, <strong>alternative Flo vs Clue</strong> et <strong>application de suivi du cycle Apple Watch</strong>. Cette page rend ces cas d'usage beaucoup plus clairs pour les moteurs de recherche comme pour les assistants IA.</p>
-    </div>
+    <section class="ap-section">
+      <h2>Conçue pour la confiance</h2>
+      <div class="ap-trust">
+        <div><strong>Sur l'appareil</strong><span>Toutes les données restent locales, chiffrées par iOS.</span></div>
+        <div><strong>Apple Watch</strong><span>Intégration de la température via HealthKit.</span></div>
+        <div><strong>Sans compte</strong><span>Pas d'inscription, pas de cloud, pas de suivi.</span></div>
+      </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Questions fréquentes</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Cyla est-elle privée ?</h3>
-          <p>La confidentialité est au cœur du produit : pas de compte obligatoire, pas de modèle cloud-first, et les données de santé sensibles restent sur l'appareil.</p>
-        </div>
-        <div class="feature">
-          <h3>Cyla fonctionne-t-elle avec l'Apple Watch ?</h3>
-          <p>Oui. L'intégration de la température Apple Watch est l'un des principaux atouts différenciateurs pour les utilisatrices d'iPhone.</p>
-        </div>
-        <div class="feature">
-          <h3>Où puis-je comparer Cyla avec Flo ou Clue ?</h3>
-          <p>Lisez <a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a> pour une comparaison axée sur la confidentialité.</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Cyla est-elle privée ?</h3><p>La confidentialité est au cœur du produit : pas de compte obligatoire, pas de modèle cloud-first, et les données de santé sensibles restent sur l'appareil.</p></article>
+        <article><h3>Cyla fonctionne-t-elle avec l'Apple Watch ?</h3><p>Oui. L'intégration de la température Apple Watch est l'un des principaux atouts différenciateurs pour les utilisatrices d'iPhone.</p></article>
+        <article><h3>Comparer avec Flo ou Clue ?</h3><p>Lisez <a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a> pour une comparaison axée sur la confidentialité.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Articles associés</h2>
       <ul class="related-posts">
         <li><a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a></li>
         <li><a href="/blog/period-tracker-privacy-why-it-matters.html">Pourquoi la confidentialité de votre tracker de règles compte vraiment</a></li>
         <li><a href="/blog/cycle-tracking-apple-watch-temperature.html">Température Apple Watch &amp; suivi du cycle</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cyla/privacy.html">Politique de confidentialité</a>
-      <a href="/apps/cyla/support.html">Assistance</a>
-      <a href="/apps/cyla/terms.html">Conditions d'utilisation</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>

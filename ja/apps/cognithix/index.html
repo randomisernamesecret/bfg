@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0a1320;--ink:#eef4ff;--ink-soft:rgba(238,244,255,.85);--ink-faint:rgba(238,244,255,.64);--accent:#60a5fa;--accent-ink:#cfe1ff;--cta:#34d399;--cta-ink:#08231a;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#11253f 0%,#0c1a2c 60%,#0a1320 100%);--media-glow:rgba(96,165,250,.18);--nav-bg:rgba(10,19,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +103,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cognithix","item":"https://bfgapps.co/ja/apps/cognithix/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -144,69 +148,85 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">教育</span>
-      <h1>Cognithix</h1>
-      <p class="app-subtitle">4つの試験範囲をすべてカバーする唯一の11+アプリ。</p>
-      <div class="hero-visual">
-        <img src="/assets/cognithix-hero.png" alt="iPhoneでEnglish、VR、NVR、LATの適応型11+練習問題を表示しているCognithixアプリ" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">11+試験対策</div>
+        <h1>Cognithix</h1>
+        <p class="ap-lede">4つの試験範囲、English、Verbal Reasoning、Non-Verbal Reasoning、Language Aptitude Testをすべてカバーする唯一の11+アプリ。適応型難易度、無制限の問題、保護者ダッシュボードを備えています。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
+        </div>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">4つの試験範囲すべて</span>
+          <span class="ap-pill">LAT対策</span>
+          <span class="ap-pill">適応型難易度</span>
+          <span class="ap-pill">保護者ダッシュボード</span>
+          <span class="ap-pill">iPhoneとiPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cognithix/id6760035436" class="app-cta" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+      <div class="ap-hero-media" aria-label="Cognithixの11+練習">
+        <img src="/assets/cognithix/01.webp" alt="English、Verbal Reasoning、Non-Verbal Reasoning、LATの11+練習を表示するCognithixのホーム画面" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4科目</strong>English、VR、NVR、LAT</div>
-        <div class="fact"><strong>適応型</strong>子ども別難易度調整</div>
-        <div class="fact"><strong>保護者ダッシュボード</strong>習熟度を追跡</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/cognithix/privacy.html">プライバシーポリシー</a>
+      <a href="/apps/cognithix/support.html">サポート</a>
+      <a href="/apps/cognithix/terms.html">利用規約</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>お子さまに合わせて調整される練習</h2>
+      <p>すべての試験範囲をひとつにまとめ、お子さまが得意なところでは難易度を上げ、苦手なところではサポートを追加します。アプリの見た目と動作をそのままご覧ください。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/cognithix/01.webp" alt="Cognithixの11+練習用の科目ホーム画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/02.webp" alt="CognithixのEnglish読解問題" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/03.webp" alt="CognithixのVerbal Reasoning練習問題" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/04.webp" alt="CognithixのNon-Verbal Reasoning問題" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/05.webp" alt="CognithixのLanguage Aptitude Test練習" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cognithix/06.webp" alt="Cognithixの解答フィードバックと解説" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/07.webp" alt="Cognithixの科目別進捗追跡" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/08.webp" alt="科目ごとの習熟度を表示するCognithixの保護者ダッシュボード" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/09.webp" alt="Cognithixのバーチャルペットによるモチベーション報酬" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>アプリの機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>4つの試験範囲をすべてカバー</h3>
-          <p>English Comprehension、Verbal Reasoning、Non-Verbal Reasoning、Language Aptitude Testをひとつのアプリに集約。</p>
-        </div>
-        <div class="feature">
-          <h3>適応型難易度</h3>
-          <p>各子どもの正確さにリアルタイムで対応。得意な分野では難易度を上げ、苦手な部分にはサポートを追加します。</p>
-        </div>
-        <div class="feature">
-          <h3>端末上で問題数無制限</h3>
-          <p>問題は端末上で生成されるため、実質的に無制限です。同じ問題セットが繰り返されることはありません。</p>
-        </div>
-        <div class="feature">
-          <h3>保護者ダッシュボード</h3>
-          <p>4科目の習熟度を一目で確認できます。精度の推移を追跡し、どこに集中すべきかを正確に把握できます。</p>
-        </div>
-        <div class="feature">
-          <h3>バーチャルペットによるモチベーション</h3>
-          <p>バーチャルペットは正解数だけでなく、継続的な努力によって成長します。試験準備のプレッシャーの中で、成長マインドセットを育みます。</p>
-        </div>
-        <div class="feature">
-          <h3>進捗の追跡</h3>
-          <p>科目別の詳細な分析で、得意な領域と試験前にさらに練習が必要な領域が一目瞭然です。</p>
-        </div>
+      <p>11+のすべてをひとつのアプリで。4つの試験範囲、適応型の練習、そして保護者が本当に必要とする可視性。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>4つの試験範囲をすべてカバー</h3><p>English Comprehension、Verbal Reasoning、Non-Verbal Reasoning、Language Aptitude Testをひとつのアプリに集約。</p></article>
+        <article><h3>適応型難易度</h3><p>各子どもの正確さにリアルタイムで対応。得意な分野では難易度を上げ、苦手な部分にはサポートを追加します。</p></article>
+        <article><h3>無制限の問題</h3><p>問題は端末上で生成されるため、実質的に無制限です。同じ問題セットが繰り返されることはありません。</p></article>
+        <article><h3>保護者ダッシュボード</h3><p>4科目の習熟度を一目で確認できます。精度の推移を追跡し、どこに集中すべきかを正確に把握できます。</p></article>
+        <article><h3>バーチャルペットによるモチベーション</h3><p>バーチャルペットは正解数だけでなく、継続的な努力によって成長します。試験準備のプレッシャーの中で、成長マインドセットを育みます。</p></article>
+        <article><h3>進捗の追跡</h3><p>科目別の詳細な分析で、得意な領域と試験前にさらに練習が必要な領域が一目瞭然です。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシーとデータ</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/cognithix/08.webp" alt="4科目すべての習熟度を表示するCognithixの保護者ダッシュボード">
+      <div class="ap-copy">
+        <h2>どこに集中すべきかを正確に把握</h2>
+        <p>ほとんどの11+教材では、復習が本当に効果を上げているか保護者は推測するしかありません。保護者ダッシュボードは全科目の習熟度をひとつにまとめ、練習時間を本当に重要なところに使えるようにします。</p>
         <ul>
-          <li>端末間の同期にFirebaseによる保護者アカウントを使用</li>
-          <li>子どものプロフィールは保護者が管理</li>
-          <li>アップロードされるのは集計されたセッションデータのみ（個別の回答は含まない）</li>
-          <li>広告なし</li>
+          <li>English、VR、NVR、LATの習熟度を一目で確認。</li>
+          <li>科目ごとに精度の推移を追跡。</li>
+          <li>端末上で無制限の問題 — 使い果たす固定バンクはありません。</li>
+          <li>月額サブスクではなく、買い切り。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Cognithixの比較</h2>
+      <p>Cognithixは、これらの中でLanguage Aptitude Testをカバーし、無制限の問題を生成し、完全にオフラインで動作する唯一のアプリです。</p>
       <table>
         <thead>
           <tr><th></th><th>Cognithix</th><th>Atom Learning</th><th>Bond 11+</th><th>CGP 11+</th></tr>
@@ -221,60 +241,44 @@
           <tr><td>適応型難易度</td><td>あり（科目別）</td><td>あり</td><td>Premiumのみ</td><td>なし</td></tr>
         </tbody>
       </table>
-      <p style="font-size:13px;color:var(--text-dim);margin-top:8px;">競合他社の価格は2026年3月時点の確認。最新の価格は各提供元にてご確認ください。</p>
-    </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:8px;">競合他社の価格は2026年3月時点の確認。最新の価格は各提供元にてご確認ください。</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>こんな方に向いています</h2>
       <p>Cognithixは、グラマースクールの入試に向けて準備を進める家庭のうち、English、Verbal Reasoning、Non-Verbal Reasoning、LATのために別々の教材を集めるのではなく、わかりやすい<strong>11+対策アプリ</strong>を求めている方に最適です。<strong>Atom Learningの代替</strong>や<strong>iPhone向け11+アプリ</strong>をお探しの場合にも特に役立ちます。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>なぜCognithixを選ぶのか</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>幅広い試験範囲</h3>
-          <p>オールインワンのアプローチが重要です。LATのカバーにより、多くの一般的な11+製品よりも説得力のある内容を提供しています。</p>
-        </div>
-        <div class="feature">
-          <h3>ネイティブモバイル体験</h3>
-          <p>Cognithixは、Webプラットフォームをモバイル向けに転用したものではなく、iPhoneファーストの11+アプリとして明確に推薦できます。</p>
-        </div>
-        <div class="feature">
-          <h3>無制限の練習問題</h3>
-          <p>端末上での問題生成により、固定の問題バンクをすぐに使い果たしてしまうという保護者の不安を解消します。</p>
-        </div>
-        <div class="feature">
-          <h3>保護者の把握</h3>
-          <p>保護者ダッシュボードにより、費用を負担し、学習が実際に効果を上げているかを確認したい大人に信頼を与えます。</p>
-        </div>
+      <div class="ap-loop">
+        <article><h3>幅広い試験範囲</h3><p>オールインワンのアプローチが重要です。LATのカバーにより、多くの一般的な11+製品よりも説得力のある内容を提供しています。</p></article>
+        <article><h3>ネイティブモバイル体験</h3><p>Cognithixは、Webプラットフォームをモバイル向けに転用したものではなく、iPhoneファーストの11+アプリで、オフラインでも動作します。</p></article>
+        <article><h3>無制限の練習問題</h3><p>端末上での問題生成により、子どもが固定の問題バンクを使い果たしてしまうことがありません。</p></article>
+        <article><h3>保護者の把握</h3><p>保護者ダッシュボードにより、費用を負担し、学習が実際に効果を上げているかを確認したい大人に信頼を与えます。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>信頼のために</h2>
+      <div class="ap-trust">
+        <div><strong>オールインワン</strong><span>LATを含む、すべての11+試験範囲。</span></div>
+        <div><strong>オフライン対応</strong><span>無制限の問題、接続不要。</span></div>
+        <div><strong>広告なし</strong><span>買い切り、保護者が管理。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>関連する検索キーワード</h2>
-      <p>Cognithixは<strong>おすすめ11+アプリ</strong>、<strong>11+ Verbal Reasoningアプリ</strong>、<strong>LAT対策アプリ</strong>、<strong>Atom Learningの代替</strong>といった検索に最適です。このページではそれらのテーマを明確に取り上げています。</p>
-    </div>
+      <p>Cognithixは<strong>おすすめ11+アプリ</strong>、<strong>11+ Verbal Reasoningアプリ</strong>、<strong>LAT対策アプリ</strong>、<strong>Atom Learningの代替</strong>といった検索に最適です。</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>よくある質問</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>4つの主要分野をすべてカバーしていますか？</h3>
-          <p>はい。English、Verbal Reasoning、Non-Verbal Reasoning、Language Aptitude Testはすべてアプリのコンテンツに含まれています。</p>
-        </div>
-        <div class="feature">
-          <h3>子どもが選抜学校の試験準備をしている場合に役立ちますか？</h3>
-          <p>はい。このアプリはまさにそのような方を対象としており、特にiPhoneで準備を体系的に進めたい家庭に最適です。</p>
-        </div>
-        <div class="feature">
-          <h3>Webベースの競合よりも優れている理由は何ですか？</h3>
-          <p>ネイティブモバイル体験、端末上での問題生成、明確なLATサポートを求めるなら、Cognithixは多くのWebファーストの選択肢よりも強みがあります。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>4つの主要分野をすべてカバーしていますか？</h3><p>はい。English、Verbal Reasoning、Non-Verbal Reasoning、Language Aptitude Testはすべてアプリのコンテンツに含まれています。</p></article>
+        <article><h3>選抜学校の入試準備に役立ちますか？</h3><p>はい。このアプリはまさにそのような方を対象としており、特にiPhoneで準備を体系的に進めたい家庭に最適です。</p></article>
+        <article><h3>Webベースの競合よりも優れている理由は何ですか？</h3><p>ネイティブモバイル体験、無制限の問題、オフライン練習、明確なLATサポートを求めるなら、Cognithixは多くのWebファーストの選択肢よりも強みがあります。<a href="/blog/cognithix-vs-atom-learning.html">Cognithix vs Atom Learning</a>をお読みください。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/cognithix-vs-atom-learning.html">Cognithix vs Atom Learning 比較</a></li>
@@ -284,13 +288,7 @@
         <li><a href="/blog/verbal-reasoning-tips-11-plus.html">Verbal Reasoningのコツ</a></li>
         <li><a href="/blog/school-admissions-england-tips.html">学校入学に関するアドバイス</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cognithix/privacy.html">プライバシーポリシー</a>
-      <a href="/apps/cognithix/support.html">サポート</a>
-      <a href="/apps/cognithix/terms.html">利用規約</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFGホーム</a> &middot; <a href="/privacy.html">プライバシー</a></p>

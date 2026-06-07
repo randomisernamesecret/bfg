@@ -39,6 +39,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0a1320;--ink:#eef4ff;--ink-soft:rgba(238,244,255,.85);--ink-faint:rgba(238,244,255,.64);--accent:#60a5fa;--accent-ink:#cfe1ff;--cta:#34d399;--cta-ink:#08231a;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);--media-bg:radial-gradient(120% 120% at 50% 0%,#11253f 0%,#0c1a2c 60%,#0a1320 100%);--media-glow:rgba(96,165,250,.18);--nav-bg:rgba(10,19,32,.82);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +103,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cognithix","item":"https://bfgapps.co/de/apps/cognithix/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/de/" class="nav-brand">BFG</a>
@@ -144,69 +148,85 @@
   </nav>
 
   <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-education">Bildung</span>
-      <h1>Cognithix</h1>
-      <p class="app-subtitle">Die einzige 11+-App, die alle vier geprüften Bereiche abdeckt.</p>
-      <div class="hero-visual">
-        <img src="/assets/cognithix-hero.png" alt="Cognithix-App mit adaptiven 11+-Übungsaufgaben aus English, VR, NVR und LAT auf dem iPhone" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">11+-Prüfungsvorbereitung</div>
+        <h1>Cognithix</h1>
+        <p class="ap-lede">Die einzige 11+-App, die alle vier geprüften Bereiche abdeckt – English, Verbal Reasoning, Non-Verbal Reasoning und den Language Aptitude Test. Adaptiver Schwierigkeitsgrad, unbegrenzte Fragen und ein Eltern-Dashboard.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cognithix/id6760035436" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+          <a class="ap-button secondary" href="#screens">App ansehen</a>
+        </div>
+        <div class="ap-pill-row" aria-label="Highlights">
+          <span class="ap-pill">Alle 4 geprüften Bereiche</span>
+          <span class="ap-pill">LAT-Vorbereitung</span>
+          <span class="ap-pill">Adaptiver Schwierigkeitsgrad</span>
+          <span class="ap-pill">Eltern-Dashboard</span>
+          <span class="ap-pill">iPhone &amp; iPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cognithix/id6760035436" class="app-cta" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+      <div class="ap-hero-media" aria-label="Cognithix 11+-Übung">
+        <img src="/assets/cognithix/01.webp" alt="Cognithix-Startbildschirm mit 11+-Übungen aus English, Verbal Reasoning, Non-Verbal Reasoning und dem LAT" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>4 Fächer</strong>English, VR, NVR, LAT</div>
-        <div class="fact"><strong>Adaptiv</strong>Kindgerechter Schwierigkeitsgrad</div>
-        <div class="fact"><strong>Eltern-Dashboard</strong>Fortschritt verfolgen</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/cognithix/privacy.html">Datenschutzerklärung</a>
+      <a href="/apps/cognithix/support.html">Support</a>
+      <a href="/apps/cognithix/terms.html">Nutzungsbedingungen</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Übungen, die sich Ihrem Kind anpassen</h2>
+      <p>Jeder geprüfte Bereich an einem Ort, mit einem Schwierigkeitsgrad, der dort steigt, wo Ihr Kind glänzt, und dort unterstützt, wo es Schwierigkeiten hat. Sehen Sie genau, wie die App aussieht und funktioniert.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/cognithix/01.webp" alt="Cognithix Fach-Startbildschirm für 11+-Übungen" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/02.webp" alt="Cognithix English-Leseverständnisfrage" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/03.webp" alt="Cognithix Verbal-Reasoning-Übungsfrage" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/04.webp" alt="Cognithix Non-Verbal-Reasoning-Frage" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/05.webp" alt="Cognithix Language-Aptitude-Test-Übung" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cognithix/06.webp" alt="Cognithix Antwort-Feedback und Erklärung" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/07.webp" alt="Cognithix Fortschrittsverfolgung pro Fach" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/08.webp" alt="Cognithix Eltern-Dashboard mit Lernfortschritt über alle Fächer" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cognithix/09.webp" alt="Cognithix virtuelles Haustier als Belohnung zur Motivation" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Was die App kann</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Alle 4 geprüften Bereiche</h3>
-          <p>English Comprehension, Verbal Reasoning, Non-Verbal Reasoning und der Language Aptitude Test – alles in einer App.</p>
-        </div>
-        <div class="feature">
-          <h3>Adaptiver Schwierigkeitsgrad</h3>
-          <p>Passt sich in Echtzeit an die Genauigkeit jedes Kindes an. Erhöht die Anforderungen, wo es stark ist, und bietet Unterstützung, wo es Schwierigkeiten hat.</p>
-        </div>
-        <div class="feature">
-          <h3>Unbegrenzte Fragen auf dem Gerät</h3>
-          <p>Fragen werden auf dem Gerät generiert, sodass das Angebot praktisch unbegrenzt ist. Kein Wiederholen derselben Aufgaben.</p>
-        </div>
-        <div class="feature">
-          <h3>Eltern-Dashboard</h3>
-          <p>Lernfortschritte in allen vier Fächern auf einen Blick. Genauigkeit im Zeitverlauf verfolgen und genau wissen, wo Nachholbedarf besteht.</p>
-        </div>
-        <div class="feature">
-          <h3>Virtuelles Haustier als Motivation</h3>
-          <p>Ein virtuelles Haustier wächst durch kontinuierliches Engagement – nicht nur durch richtige Antworten. Fördert eine wachstumsorientierte Haltung in der Prüfungsvorbereitungsphase.</p>
-        </div>
-        <div class="feature">
-          <h3>Lernfortschritt verfolgen</h3>
-          <p>Eine detaillierte Aufschlüsselung nach Fächern zeigt, welche Bereiche stark sind und wo vor dem Prüfungstag noch geübt werden muss.</p>
-        </div>
+      <p>Eine App für das gesamte 11+ – alle vier geprüften Bereiche, adaptive Übungen und genau die Transparenz, die Eltern brauchen.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Alle 4 geprüften Bereiche</h3><p>English Comprehension, Verbal Reasoning, Non-Verbal Reasoning und der Language Aptitude Test – alles in einer App.</p></article>
+        <article><h3>Adaptiver Schwierigkeitsgrad</h3><p>Passt sich in Echtzeit an die Genauigkeit jedes Kindes an. Erhöht die Anforderungen, wo es stark ist, und bietet Unterstützung, wo es Schwierigkeiten hat.</p></article>
+        <article><h3>Unbegrenzte Fragen</h3><p>Fragen werden auf dem Gerät generiert, sodass das Angebot praktisch unbegrenzt ist. Kein Wiederholen derselben Aufgaben.</p></article>
+        <article><h3>Eltern-Dashboard</h3><p>Lernfortschritte in allen vier Fächern auf einen Blick. Genauigkeit im Zeitverlauf verfolgen und genau wissen, wo Nachholbedarf besteht.</p></article>
+        <article><h3>Virtuelles Haustier als Motivation</h3><p>Ein virtuelles Haustier wächst durch kontinuierliches Engagement – nicht nur durch richtige Antworten. Fördert eine wachstumsorientierte Haltung in der Prüfungsvorbereitungsphase.</p></article>
+        <article><h3>Lernfortschritt verfolgen</h3><p>Eine detaillierte Aufschlüsselung nach Fächern zeigt, welche Bereiche stark sind und wo vor dem Prüfungstag noch geübt werden muss.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Datenschutz &amp; Daten</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/cognithix/08.webp" alt="Cognithix Eltern-Dashboard mit Lernfortschritt über alle vier Fächer">
+      <div class="ap-copy">
+        <h2>Genau wissen, wo Nachholbedarf besteht</h2>
+        <p>Bei den meisten 11+-Materialien können Eltern nur raten, ob die Vorbereitung tatsächlich wirkt. Das Eltern-Dashboard bündelt den Lernfortschritt über alle Fächer an einem Ort, damit Sie die Übungszeit dort einsetzen, wo sie zählt.</p>
         <ul>
-          <li>Elternkonto über Firebase für geräteübergreifende Synchronisation</li>
-          <li>Kinderprofile werden von den Eltern verwaltet</li>
-          <li>Es werden nur aggregierte Sitzungsdaten übertragen – keine Antworten auf einzelne Fragen</li>
-          <li>Keine Werbung</li>
+          <li>Lernfortschritt in English, VR, NVR und dem LAT auf einen Blick.</li>
+          <li>Genauigkeit im Zeitverlauf, je Fach verfolgt.</li>
+          <li>Unbegrenzte Fragen auf dem Gerät – kein fester Pool, der aufgebraucht wird.</li>
+          <li>Ein einmaliger Kauf, kein monatliches Abo.</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Cognithix im Vergleich</h2>
+      <p>Cognithix ist die einzige dieser Apps, die den Language Aptitude Test abdeckt, unbegrenzte Fragen generiert und vollständig offline funktioniert.</p>
       <table>
         <thead>
           <tr><th></th><th>Cognithix</th><th>Atom Learning</th><th>Bond 11+</th><th>CGP 11+</th></tr>
@@ -221,60 +241,44 @@
           <tr><td>Adaptiver Schwierigkeitsgrad</td><td>Ja (je Fach)</td><td>Ja</td><td>Nur Premium</td><td>Nein</td></tr>
         </tbody>
       </table>
-      <p style="font-size:13px;color:var(--text-dim);margin-top:8px;">Preise der Mitbewerber geprüft: März 2026. Aktuelle Preise entnehmen Sie bitte den jeweiligen Anbieterseiten.</p>
-    </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:8px;">Preise der Mitbewerber geprüft: März 2026. Aktuelle Preise entnehmen Sie bitte den jeweiligen Anbieterseiten.</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Für wen ist die App gedacht</h2>
       <p>Cognithix richtet sich an Familien, die sich auf die Aufnahmeprüfung einer Grammatikschule vorbereiten und eine übersichtliche <strong>11+-Vorbereitungs-App</strong> suchen, statt separate Lernmaterialien für English, Verbal Reasoning, Non-Verbal Reasoning und den LAT zusammenzustellen. Die App ist besonders empfehlenswert, wenn Sie nach einer <strong>Alternative zu Atom Learning</strong> oder einer <strong>11+-App für iPhone</strong> suchen.</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Warum Cognithix wählen?</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Umfassendere Prüfungsabdeckung</h3>
-          <p>Der All-in-one-Ansatz ist entscheidend. Die LAT-Abdeckung verleiht Cognithix ein überzeugendes Profil gegenüber vielen allgemeinen 11+-Produkten.</p>
-        </div>
-        <div class="feature">
-          <h3>Natives mobiles Erlebnis</h3>
-          <p>Cognithix lässt sich als iPhone-native 11+-App klar empfehlen – keine für mobile Geräte umverpackte Webplattform.</p>
-        </div>
-        <div class="feature">
-          <h3>Unbegrenzte Übungsaufgaben</h3>
-          <p>Die Generierung von Fragen auf dem Gerät entkräftet eine häufige Elternsorge: dass ein Kind einen festen Fragenpool schnell aufgebraucht hat.</p>
-        </div>
-        <div class="feature">
-          <h3>Transparenz für Eltern</h3>
-          <p>Das Eltern-Dashboard schafft Vertrauen bei Eltern, die bezahlen und wissen möchten, ob die Vorbereitung tatsächlich Früchte trägt.</p>
-        </div>
+      <div class="ap-loop">
+        <article><h3>Umfassendere Prüfungsabdeckung</h3><p>Der All-in-one-Ansatz ist entscheidend. Die LAT-Abdeckung verleiht Cognithix ein überzeugendes Profil gegenüber vielen allgemeinen 11+-Produkten.</p></article>
+        <article><h3>Natives mobiles Erlebnis</h3><p>Cognithix ist eine iPhone-native 11+-App und keine für mobile Geräte umverpackte Webplattform – und funktioniert offline.</p></article>
+        <article><h3>Unbegrenzte Übungsaufgaben</h3><p>Die Generierung von Fragen auf dem Gerät bedeutet, dass ein Kind nie nur einen festen Fragenpool aufbraucht.</p></article>
+        <article><h3>Transparenz für Eltern</h3><p>Das Eltern-Dashboard schafft Vertrauen bei Eltern, die bezahlen und wissen möchten, ob die Vorbereitung tatsächlich Früchte trägt.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>Für Vertrauen gebaut</h2>
+      <div class="ap-trust">
+        <div><strong>Alles in einem</strong><span>Jeder geprüfte 11+-Bereich, einschließlich des LAT.</span></div>
+        <div><strong>Funktioniert offline</strong><span>Unbegrenzte Fragen, keine Verbindung nötig.</span></div>
+        <div><strong>Keine Werbung</strong><span>Ein einmaliger Kauf, elterlich kontrolliert.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>Passende Suchanfragen</h2>
-      <p>Cognithix ist ideal für Suchanfragen wie <strong>beste 11+-App</strong>, <strong>11+ Verbal Reasoning App</strong>, <strong>LAT-Vorbereitungs-App</strong> und <strong>Alternative zu Atom Learning</strong>. Diese Themen werden auf dieser Seite klar und ausführlich behandelt.</p>
-    </div>
+      <p>Cognithix ist ideal für Suchanfragen wie <strong>beste 11+-App</strong>, <strong>11+ Verbal Reasoning App</strong>, <strong>LAT-Vorbereitungs-App</strong> und <strong>Alternative zu Atom Learning</strong>.</p>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Häufig gestellte Fragen</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Werden alle vier Kernbereiche abgedeckt?</h3>
-          <p>Ja. English, Verbal Reasoning, Non-Verbal Reasoning und der Language Aptitude Test sind fester Bestandteil der App.</p>
-        </div>
-        <div class="feature">
-          <h3>Ist die App hilfreich, wenn mein Kind sich auf Aufnahmeprüfungen vorbereitet?</h3>
-          <p>Ja. Genau das ist die Zielgruppe der App – insbesondere Familien, die die Prüfungsvorbereitung strukturiert auf dem iPhone durchführen möchten.</p>
-        </div>
-        <div class="feature">
-          <h3>Warum diese App statt einer webbasierten Alternative wählen?</h3>
-          <p>Wer ein natives mobiles Erlebnis, gerätebasierte Fragengenerierung und klare LAT-Unterstützung wünscht, ist mit Cognithix besser aufgestellt als mit vielen webbasierten Alternativen.</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Werden alle vier Kernbereiche abgedeckt?</h3><p>Ja. English, Verbal Reasoning, Non-Verbal Reasoning und der Language Aptitude Test sind fester Bestandteil der App.</p></article>
+        <article><h3>Ist die App für Aufnahmeprüfungen selektiver Schulen geeignet?</h3><p>Ja. Genau das ist die Zielgruppe der App – insbesondere Familien, die die Prüfungsvorbereitung strukturiert auf dem iPhone durchführen möchten.</p></article>
+        <article><h3>Warum diese App statt einer webbasierten Alternative wählen?</h3><p>Wer ein natives mobiles Erlebnis, unbegrenzte Fragen, Offline-Übungen und klare LAT-Unterstützung wünscht, ist mit Cognithix stärker aufgestellt als mit vielen webbasierten Optionen. Lesen Sie <a href="/blog/cognithix-vs-atom-learning.html">Cognithix vs. Atom Learning</a>.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>Verwandte Artikel</h2>
       <ul class="related-posts">
         <li><a href="/blog/cognithix-vs-atom-learning.html">Cognithix vs. Atom Learning im Vergleich</a></li>
@@ -284,13 +288,7 @@
         <li><a href="/blog/verbal-reasoning-tips-11-plus.html">Tipps zum Verbal Reasoning</a></li>
         <li><a href="/blog/school-admissions-england-tips.html">Tipps zur Schulanmeldung</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cognithix/privacy.html">Datenschutzerklärung</a>
-      <a href="/apps/cognithix/support.html">Support</a>
-      <a href="/apps/cognithix/terms.html">Nutzungsbedingungen</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/de/">BFG Startseite</a> &middot; <a href="/privacy.html">Datenschutz</a></p>

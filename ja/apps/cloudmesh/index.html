@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#081019;--ink:#eaf4ff;--ink-soft:rgba(234,244,255,.85);--ink-faint:rgba(234,244,255,.64);
+      --accent:#38bdf8;--accent-ink:#c2e9ff;--cta:#facc15;--cta-ink:#10182a;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#0e2742 0%,#0a1828 60%,#081019 100%);
+      --media-glow:rgba(56,189,248,.2);--nav-bg:rgba(8,16,25,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cloudmesh","item":"https://bfgapps.co/ja/apps/cloudmesh/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -147,117 +157,109 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-weather">天気</span>
-      <h1>Cloudmesh Weather</h1>
-      <p class="app-subtitle">29ウィジェット。コミュニティメッシュ。サブスクなし。</p>
-      <div class="hero-visual">
-        <img src="/assets/cloudmesh-hero.png" alt="Cloudmesh WeatherのスクリーンショットにウィジェットとAI天気サマリーを表示" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">天気を、ちゃんと</div>
+        <h1>Cloudmesh</h1>
+        <p class="ap-lede">実際に行動を決めることに寄り添った天気アプリ — ライブ雨雲レーダー、大気質、最初の一滴の前に届く雨アラート、そして天気を避けて案内するルートプランナー。買い切り、サブスクなし。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
+        </div>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">ライブ雨雲レーダー</span>
+          <span class="ap-pill">大気質（AQI）</span>
+          <span class="ap-pill">雨アラート</span>
+          <span class="ap-pill">Apple Watch</span>
+          <span class="ap-pill">サブスクなし</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" class="btn btn-primary" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+      <div class="ap-hero-media" aria-label="Cloudmesh Weather">
+        <img src="/assets/cloudmesh/01.webp" alt="Cloudmesh Weatherのホーム画面に現在の天気と予報を表示" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>29ウィジェット</strong>ホーム &amp; ロック画面</div>
-        <div class="fact"><strong>AIサマリー</strong>わかりやすい天気予報</div>
-        <div class="fact"><strong>買い切り</strong>サブスクなし</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <nav class="app-nav">
+      <a href="/apps/cloudmesh/privacy.html">プライバシーポリシー</a>
+      <a href="/apps/cloudmesh/support.html">サポート</a>
+      <a href="/apps/cloudmesh/terms.html">利用規約</a>
+    </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>天気を読むのではなく、見る</h2>
+      <p>ライブレーダー、大気質、時間ごとの詳細、アラート — ひと目で確認し、判断し、その日を進められるように配置しています。</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/cloudmesh/01.webp" alt="Cloudmesh Weatherのホーム画面に現在の天気と予報を表示" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/02.webp" alt="Cloudmeshの時間ごと・日ごとの予報ビュー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/03.webp" alt="Cloudmeshのライブ雨雲レーダーマップ" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/04.webp" alt="Cloudmeshの大気質とAQIの内訳" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/05.webp" alt="Cloudmeshの雨アラート通知設定" loading="lazy"></div>
+      </div>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cloudmesh/06.webp" alt="Cloudmeshのルート天気プランナー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/07.webp" alt="Cloudmeshの保存した都市と複数地点ビュー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/08.webp" alt="CloudmeshのApple Watchコンプリケーションとグランス" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cloudmesh/09.webp" alt="Cloudmeshの詳細な天気（風・気圧・湿度）" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>主な機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>29ウィジェット</h3>
-          <p>Appleがサポートするすべてのサイズでホーム画面とロック画面のウィジェットを提供 — シンプルな一目確認から詳細な予報まで。</p>
-        </div>
-        <div class="feature">
-          <h3>AI天気サマリー</h3>
-          <p>大気の状態だけでなく、何をすべきかを教えてくれるわかりやすい予報です。</p>
-        </div>
-        <div class="feature">
-          <h3>コミュニティ気圧メッシュ</h3>
-          <p>ユーザーのスマートフォンから匿名で収集した気圧データを集約し、超ローカルなリアルタイム気圧マップを作成します。</p>
-        </div>
-        <div class="feature">
-          <h3>地震検知</h3>
-          <p>加速度センサーによる地震検知で、近くのユーザーに数秒以内に通知できます。現在ベータ版です。</p>
-        </div>
-        <div class="feature">
-          <h3>雨の通知</h3>
-          <p>雨が降り始める前に通知を受け取り、事前に計画を立てられます。常時位置情報の取得なし。</p>
-        </div>
-        <div class="feature">
-          <h3>分単位の降水予報</h3>
-          <p>次の1時間の詳細な降水予報。プレミアムで利用可能です。</p>
-        </div>
+      <p>天気に合わせて計画するために必要なすべて — レーダー、大気質、タイミングのよいアラート、ルートプランナー — アカウントも月額料金もなしで。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>ライブ雨雲レーダー</h3><p>選んだ都市に追従するインタラクティブマップで雨の動きを確認。やってくる前に、何が来るかが見えます。</p></article>
+        <article><h3>大気質（AQI）</h3><p>現在の大気質をひと目で、わかりやすい内訳付きで。外出に良い日かどうかがわかります。</p></article>
+        <article><h3>雨アラート</h3><p>雨が降り始める前に通知。傘を持つか待つか判断できます — 常時トラッキングなし。</p></article>
+        <article><h3>ルート天気プランナー</h3><p>旅程を立てると、Cloudmeshが雨を避けて案内。目的地だけでなく経路全体の天気を読みます。</p></article>
+        <article><h3>Apple Watchコンプリケーション</h3><p>最新の天気を手首に。バックグラウンドで更新されるので、ひと目で常に最新です。</p></article>
+        <article><h3>時間ごと &amp; 日ごとの予報</h3><p>風・気圧・湿度を含む、わかりやすい時間ごと・複数日の予報。詳細が欲しいときに。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシー &amp; データ</h3>
+    <section class="ap-section ap-split">
+      <img src="/assets/cloudmesh/03.webp" alt="Cloudmeshのライブ雨雲レーダーマップ表示">
+      <div class="ap-copy">
+        <h2>データの山ではなく、行動のために</h2>
+        <p>多くの天気アプリは、あなたが本当に知りたいこと — 自分のところで雨が降るのか — を埋もれさせます。Cloudmeshはライブレーダーとタイミングのよいアラートを前面に出し、答えがいつもひと目で分かります。</p>
         <ul>
-          <li>匿名のメッシュ提供 — 位置情報は大まかに処理し、ユーザーIDなし。</li>
-          <li>プッシュトークンは有効期限まで保存のみ。</li>
-          <li>アカウントなし、アナリティクスなし、広告なし。</li>
-          <li>データは数時間以内に自動削除。</li>
+          <li>見ている都市に追従するライブレーダー。</li>
+          <li>降った後ではなく、最初の一滴の前に届く雨アラート。</li>
+          <li>天気を避けて案内するルートプランナー。</li>
+          <li>隠さず、予報の隣に並ぶ大気質。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
+      <h2>信頼のために</h2>
+      <div class="ap-trust">
+        <div><strong>サブスクなし</strong><span>一度の購入で。天気のための月額料金はありません。</span></div>
+        <div><strong>アカウントなし</strong><span>サインアップなし、トラッキングなし、広告なし。</span></div>
+        <div><strong>プライバシー最優先</strong><span>最小限のデータと、わかりやすいアプリ固有の説明。</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
       <h2>こんな方に</h2>
-      <p>Cloudmesh Weatherは、基本的な天気カード以上のものを求めるiPhoneユーザー向けに作られています。ホーム画面のウィジェットを重視し、わかりやすい天気サマリーをすぐに確認したい方、月額料金ではなく一度の購入を好む方 — そういった方々のためのアプリです。</p>
-      <p>人気のiPhone天気アプリを比較していて、<strong>CARROT Weatherの代替</strong>、<strong>ウィジェットが豊富な天気アプリ</strong>、または<strong>プライバシー重視の天気アプリ</strong>をお探しの方にも特におすすめです。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>なぜ一般的な天気アプリではなくCloudmeshを選ぶのか</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>ウィジェット最優先の設計</h3>
-          <p>多くの天気アプリはウィジェットをおまけ扱いします。Cloudmeshは多くの人が日々天気を確認する主な手段として、ウィジェットを中心に設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>プライバシー最優先の方針</h3>
-          <p>Cloudmeshは最小限のデータ収集、アカウント不要、そして実際に保存される情報の明確な説明を中心に設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>メッシュによる差別化</h3>
-          <p>コミュニティ気圧メッシュにより、Cloudmeshは標準的な予報のみのアプリとは明確に異なる独自の価値を提供します。</p>
-        </div>
-        <div class="feature">
-          <h3>サブスクなしの選択肢</h3>
-          <p>天気ウィジェットのために毎月費用を払うことに疲れているなら、Cloudmeshは意図的に買い切りの選択肢として位置づけられています。</p>
-        </div>
+      <p>Cloudmeshは、基本的な予報カード以上のものを求める方のためのアプリです。何を着るか、いつ出るか、傘を持つかを決めるために天気を確認するなら、その違いを感じられます。<strong>ライブレーダー付きの天気アプリ</strong>、<strong>雨アラート付きの天気アプリ</strong>、または<strong>プライバシー重視のサブスクなし天気アプリ</strong>をお探しの方に特に最適です。</p>
+      <div class="ap-loop">
+        <article><h3>雨に左右される毎日</h3><p>通勤者、犬の散歩、ランナー、子育て中の方など、雨がいつ来るかを正確に知りたい方へ。</p></article>
+        <article><h3>大気質を気にする方</h3><p>外出前や窓を開ける前に、AQIを一番に確認したい方へ。</p></article>
+        <article><h3>旅行や計画をする方</h3><p>ドライブや旅行を計画し、目的地だけでなく経路全体の天気を知りたい方へ。</p></article>
+        <article><h3>サブスクに疲れた方</h3><p>毎月払うより一度買いたい方には、Cloudmeshが買い切りの選択肢です。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>価格とApp Storeでの位置づけ</h2>
-      <p>Cloudmesh Weatherは<strong>買い切りの天気アプリ</strong>として提供されています。新しい天気アプリを探している多くの方は、予報の精度だけでなく料金モデルも比較しています。毎月の支払いを増やさずに天気ウィジェットを使いたい方のニーズに、Cloudmeshは明確に応えています。</p>
-    </div>
-
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>よくある質問</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Cloudmesh Weatherはウィジェットに強いですか？</h3>
-          <p>はい。ウィジェットの豊富さはCloudmeshを選ぶ主な理由のひとつです。特に複数のホーム画面やロック画面のレイアウトを使いたい方に最適です。</p>
-        </div>
-        <div class="feature">
-          <h3>Cloudmesh Weatherはプライバシーに配慮していますか？</h3>
-          <p>Cloudmeshはプライバシー最優先の設計で作られています。アカウント不要、最小限のデータ収集、明確なアプリ固有のプライバシー説明を備えています。</p>
-        </div>
-        <div class="feature">
-          <h3>CloudmeshとCARROTで迷っている場合は？</h3>
-          <p><a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a>の直接比較記事で、ウィジェット、価格、プライバシーの違いをご確認ください。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Cloudmeshにライブレーダーはありますか？</h3><p>はい。ライブ雨雲レーダーが選んだ都市に追従し、天気が近づく様子をリアルタイムで確認できます。</p></article>
+        <article><h3>Cloudmeshはサブスクですか？</h3><p>いいえ。Cloudmeshは無料枠とプレミアム解除のある買い切りです — 継続課金はありません。</p></article>
+        <article><h3>CARROTとの比較は？</h3><p>機能・価格・プライバシーの違いは<a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a>の直接比較をご覧ください。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-iphone-weather-widgets-2026.html">2026年のiPhone天気ウィジェット最良の選択</a></li>
@@ -265,13 +267,7 @@
         <li><a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather</a></li>
         <li><a href="/blog/best-weather-apps-uk-2026.html">2026年イギリスにおけるおすすめ天気アプリ</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cloudmesh/privacy.html">プライバシーポリシー</a>
-      <a href="/apps/cloudmesh/support.html">サポート</a>
-      <a href="/apps/cloudmesh/terms.html">利用規約</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFGトップ</a> &middot; <a href="/privacy.html">プライバシーポリシー</a></p>

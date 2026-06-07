@@ -36,6 +36,10 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{--page-bg:#0c0a10;--ink:#f5ece0;--ink-soft:rgba(245,236,224,.84);--ink-faint:rgba(245,236,224,.62);--accent:#f0a85a;--accent-ink:#ffd9a8;--cta:#d4452f;--cta-ink:#fff;--panel:rgba(255,255,255,.045);--border:rgba(255,255,255,.11);--media-bg:radial-gradient(120% 120% at 50% 0%,#241612 0%,#150f12 60%,#0c0a10 100%);--media-glow:rgba(240,168,90,.18);--nav-bg:rgba(12,10,16,.85);}
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Bellgrave","item":"https://bfgapps.co/fr/apps/bellgrave/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/fr/" class="nav-brand">BFG</a>
@@ -108,90 +112,104 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <h1>Bellgrave</h1>
-      <p class="app-subtitle">Survivez à la horde. Choisissez votre héros. Brisez l'éclipse.</p>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
-      </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>11 Héros</strong>Armes et capacités uniques</div>
-        <div class="fact"><strong>8 Boss</strong>Combat en plusieurs phases</div>
-        <div class="fact"><strong>Achat unique</strong>Sans abonnement, sans pub</div>
-      </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Le jeu</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Survie en horde</h3>
-          <p>Des vagues d'ennemis se resserrent de toutes parts. Bougez, esquivez et laissez votre arme à tir automatique frayer le chemin. Chaque partie s'intensifie de quelques traînards à des centaines d'adversaires à l'écran.</p>
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">Payez une fois. Jouez pour toujours.</div>
+        <h1>Bellgrave</h1>
+        <p class="ap-lede">Un roguelike d'action dans une sombre cathédrale 3D. Survivez à la horde, choisissez votre héros, brisez l'éclipse — un seul achat, sans abonnement, sans publicité, sans pass de combat.</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396" target="_blank" rel="noopener noreferrer">Télécharger sur l'App Store</a>
+          <a class="ap-button secondary" href="#screens">Voir le jeu</a>
         </div>
-        <div class="feature">
-          <h3>Cathédrale 3D comme décor</h3>
-          <p>Combattez dans une sombre cathédrale rendue en 3D intégrale. Autels, cercueils, braseros et ruines encadrent le champ de bataille dans une atmosphère digne de Diablo IV.</p>
-        </div>
-        <div class="feature">
-          <h3>11 héros jouables</h3>
-          <p>Chaque héros possède un comportement d'arme unique, des statistiques de base et une capacité signature. La baguette de Seraphine, les couteaux rapides de Lucien, les chaînes balayantes de Bram, les orbes à tête chercheuse de Nyx et bien d'autres.</p>
-        </div>
-        <div class="feature">
-          <h3>Évolutions d'armes</h3>
-          <p>Combinez votre arme avec la bonne amélioration passive pour la faire évoluer vers une forme plus puissante. Chaque héros suit un chemin d'évolution unique.</p>
-        </div>
-        <div class="feature">
-          <h3>8 combats de boss</h3>
-          <p>De l'Évêque des Cendres à 4 minutes au Gardien de l'Éclipse à 13,5 minutes. Chaque boss dispose de boucliers, d'attaques spéciales, de signaux d'avertissement et de fenêtres de vulnérabilité.</p>
-        </div>
-        <div class="feature">
-          <h3>Défis quotidiens</h3>
-          <p>Une nouvelle partie générée chaque jour avec un héros rotatif. Comparez vos performances entre les tentatives et visez un nombre de kills toujours plus élevé.</p>
+        <div class="ap-pill-row" aria-label="Points forts">
+          <span class="ap-pill">11 héros</span>
+          <span class="ap-pill">8 boss</span>
+          <span class="ap-pill">Évolutions d'armes</span>
+          <span class="ap-pill">Sans abonnement</span>
+          <span class="ap-pill">iPhone, iPad &amp; Mac</span>
         </div>
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>Sans abonnement. Sans pub. Sans arnaque.</h3>
-        <ul>
-          <li>Déblocage unique. Achetez une fois, jouez pour toujours.</li>
-          <li>Pas de pub, pas de pop-ups, pas de vidéos de récompense à subir.</li>
-          <li>Pas de pass de combat, pas de pass saisonnier, pas de minuteries FOMO.</li>
-          <li>Pas de système d'énergie. Jouez autant de parties que vous voulez.</li>
-          <li>Pas de pay-to-win. Chaque héros et amélioration se gagne en jeu.</li>
-          <li>Fonctionne entièrement hors ligne — sans compte, sans connexion, sans inscription obligatoire.</li>
-        </ul>
+      <div class="ap-hero-media" aria-label="Gameplay de Bellgrave">
+        <img src="/assets/bellgrave/01.webp" alt="Gameplay de Bellgrave — un héros encerclé par une horde d'ennemis dans une sombre cathédrale 3D" loading="eager">
       </div>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>Progression</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Capacités signature</h3>
-          <p>Chaque héros possède une signature unique qui s'active automatiquement en combat. Le tir lunaire de Seraphine, l'attraction gravitationnelle de Bram, les orbes de sang de Mordecai et 8 autres.</p>
-        </div>
-        <div class="feature">
-          <h3>Améliorations passives</h3>
-          <p>17 améliorations passives couvrant les statistiques d'armes, la survie, l'économie et la mobilité. Montez-les en niveau durant les parties pour façonner votre build.</p>
-        </div>
-        <div class="feature">
-          <h3>Succès et déblocages</h3>
-          <p>Accomplissez des défis pour débloquer de nouveaux héros, gagner des pièces et découvrir des reliquaires accordant des bonus permanents.</p>
-        </div>
-        <div class="feature">
-          <h3>Phases de l'éclipse</h3>
-          <p>Le cycle de l'éclipse alterne entre les phases Calme, Montée, Déclin et Éclipse, modifiant l'intensité des ennemis et le rythme des parties.</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <nav class="app-nav">
       <a href="/apps/bellgrave/privacy.html">Politique de confidentialité</a>
       <a href="/apps/bellgrave/support.html">Support</a>
       <a href="/apps/bellgrave/terms.html">Conditions d'utilisation</a>
     </nav>
+
+    <section id="screens" class="ap-section">
+      <h2>Survivez à l'éclipse</h2>
+      <p>Les vagues se resserrent de toutes parts, votre arme tire automatiquement, et chaque partie s'intensifie d'une poignée de traînards à des centaines à l'écran. Bougez, esquivez, évoluez.</p>
+      <div class="ap-screens" style="--shot-cols:5">
+        <div class="ap-shot"><img src="/assets/bellgrave/01.webp" alt="Héros de Bellgrave combattant une horde dans une cathédrale 3D" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/02.webp" alt="Bellgrave : des centaines d'ennemis envahissant le champ de bataille" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/03.webp" alt="Bellgrave : écran de sélection d'amélioration en cours de partie" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/04.webp" alt="Bellgrave : combat de boss en plusieurs phases" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/05.webp" alt="Bellgrave : liste de sélection des héros" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/bellgrave/06.webp" alt="Bellgrave : arme évoluée nettoyant l'écran" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Le concept</h2>
+      <p>Survie en horde façon Vampire Survivors dans une cathédrale entièrement en 3D, avec la profondeur de builds d'un roguelike et la mise en scène d'un ARPG.</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Survie en horde</h3><p>Les ennemis se resserrent de toutes parts. Votre arme tire automatiquement — votre rôle est de bouger, d'esquiver et de frayer le chemin tandis que chaque partie monte à des centaines à l'écran.</p></article>
+        <article><h3>Sombre cathédrale 3D</h3><p>Combattez à travers une cathédrale entièrement en 3D d'autels, de cercueils, de braseros et de ruines, dans une atmosphère sombre digne de Diablo.</p></article>
+        <article><h3>11 héros jouables</h3><p>Chaque héros possède une arme unique, des statistiques de base et une capacité signature — la baguette de Seraphine, les couteaux rapides de Lucien, les chaînes balayantes de Bram, les orbes à tête chercheuse de Nyx et bien d'autres.</p></article>
+        <article><h3>Évolutions d'armes</h3><p>Combinez votre arme avec la bonne amélioration passive pour la faire évoluer vers une forme plus puissante. Chaque héros suit son propre chemin d'évolution.</p></article>
+        <article><h3>8 combats de boss</h3><p>De l'Évêque des Cendres au début au Gardien de l'Éclipse vers la fin — chaque boss dispose de boucliers, d'attaques spéciales, de signaux d'avertissement et de fenêtres de vulnérabilité.</p></article>
+        <article><h3>Défis quotidiens</h3><p>Une nouvelle partie générée chaque jour avec un héros rotatif. Comparez vos tentatives et visez un nombre de kills toujours plus élevé.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/bellgrave/03.webp" alt="Bellgrave : écran de sélection d'amélioration en cours de partie">
+      <div class="ap-copy">
+        <h2>Payez une fois. Sans abonnement. Sans pub.</h2>
+        <p>Bellgrave est un jeu premium. Achetez-le une fois et il est à vous — pas de jauges entre vous et la prochaine partie, pas de boutique qui vous harcèle en plein combat.</p>
+        <ul>
+          <li>Déblocage unique — achetez une fois, jouez pour toujours.</li>
+          <li>Pas de pub, pas de pop-ups, pas de vidéos de récompense à subir.</li>
+          <li>Pas de pass de combat, pas de pass saisonnier, pas de minuteries FOMO.</li>
+          <li>Pas de système d'énergie — jouez autant de parties que vous voulez.</li>
+          <li>Pas de pay-to-win — chaque héros et amélioration se gagne en jeu.</li>
+          <li>Fonctionne entièrement hors ligne — sans compte, sans connexion, sans inscription obligatoire.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Progression</h2>
+      <p>Chaque partie alimente un jeu plus long — façonnez un build sur le moment, puis débloquez des héros et des bonus permanents au fil des tentatives.</p>
+      <div class="ap-loop">
+        <article><h3>Capacités signature</h3><p>Chaque héros possède une signature qui se déclenche automatiquement en combat — le tir lunaire de Seraphine, l'attraction gravitationnelle de Bram, les orbes de sang de Mordecai et 8 autres.</p></article>
+        <article><h3>Améliorations passives</h3><p>17 améliorations passives couvrant les statistiques d'armes, la survie, l'économie et la mobilité. Montez-les en niveau en pleine partie pour façonner votre build.</p></article>
+        <article><h3>Succès et déblocages</h3><p>Accomplissez des défis pour débloquer de nouveaux héros, gagner des pièces et découvrir des reliquaires accordant des bonus permanents.</p></article>
+        <article><h3>Phases de l'éclipse</h3><p>Le cycle de l'éclipse alterne entre les phases Calme, Montée, Déclin et Éclipse, modifiant l'intensité des ennemis et le rythme de chaque partie.</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Conçu pour les joueurs</h2>
+      <div class="ap-trust">
+        <div><strong>Payez une fois</strong><span>Un déblocage, sans abonnement, sans pub.</span></div>
+        <div><strong>Fonctionne hors ligne</strong><span>Sans compte, sans connexion, sans inscription obligatoire.</span></div>
+        <div><strong>iPhone, iPad &amp; Mac</strong><span>Un seul achat pour tous vos appareils Apple.</span></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>Questions fréquentes</h2>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Y a-t-il un abonnement ?</h3><p>Non. Bellgrave est un déblocage unique sans abonnement, sans publicité, sans pass de combat et sans minuteries d'énergie.</p></article>
+        <article><h3>Combien y a-t-il de héros ?</h3><p>11 héros jouables, chacun avec une arme unique, une capacité signature et un chemin d'évolution, plus 8 boss en plusieurs phases à combattre.</p></article>
+        <article><h3>Fonctionne-t-il hors ligne ?</h3><p>Oui. Bellgrave se joue entièrement hors ligne sans compte ni connexion, et le même achat fonctionne sur iPhone, iPad et Mac.</p></article>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/fr/">Accueil BFG</a> &middot; <a href="/privacy.html">Confidentialité</a></p>

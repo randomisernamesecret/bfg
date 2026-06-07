@@ -39,6 +39,16 @@
   <script src="/theme-init.js"></script>
   <link rel="stylesheet" href="/theme-vars.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/app-page.css">
+  <style>
+    body.app-immersive{
+      --page-bg:#191020;--ink:#fdf2f8;--ink-soft:rgba(253,242,248,.84);--ink-faint:rgba(253,242,248,.64);
+      --accent:#ff8fc0;--accent-ink:#ffd9ea;--cta:#ff4f87;--cta-ink:#fff;
+      --panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.12);
+      --media-bg:radial-gradient(120% 120% at 50% 0%,#3a1c44 0%,#1f1228 60%,#191020 100%);
+      --media-glow:rgba(255,143,192,.18);--nav-bg:rgba(25,16,32,.82);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +109,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"cyla","item":"https://bfgapps.co/ja/apps/cyla/"}]}
   </script>
 </head>
-<body>
+<body class="app-immersive">
   <nav class="site-nav">
     <div class="nav-inner">
       <a href="/ja/" class="nav-brand">BFG</a>
@@ -147,56 +157,63 @@
 
   <div class="container">
 
-    <div class="app-landing-hero">
-      <span class="app-tag app-tag-health">ヘルス</span>
-      <h1>Cyla</h1>
-      <p class="app-subtitle">スマートフォンから出ることのない生理周期トラッキング。</p>
-      <div class="hero-visual">
-        <img src="/assets/cyla-hero.png" alt="Cylaアプリのスクリーンショット — プライバシー重視の生理周期トラッキング画面" loading="lazy">
+    <section class="ap-hero">
+      <div>
+        <div class="ap-kicker">設計段階からプライバシー重視</div>
+        <h1>Cyla</h1>
+        <p class="ap-lede">スマートフォンから出ることのない生理・周期トラッカー。アカウントなし、クラウドなし、サーバーなし — 予測も症状もApple Watch体温も、すべてデバイス上で。</p>
+        <div class="ap-actions">
+          <a class="ap-button primary" href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+          <a class="ap-button secondary" href="#screens">アプリを見る</a>
+        </div>
+        <div class="ap-pill-row" aria-label="ハイライト">
+          <span class="ap-pill">オンデバイスのみ</span>
+          <span class="ap-pill">Apple Watch体温</span>
+          <span class="ap-pill">アカウント不要</span>
+          <span class="ap-pill">買い切り</span>
+          <span class="ap-pill">iPhone &amp; iPad</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" class="btn btn-primary" target="_blank" rel="noopener noreferrer">App Storeでダウンロード</a>
+      <div class="ap-hero-media" aria-label="Cylaの生理周期トラッキング">
+        <img src="/assets/cyla/01.webp" alt="周期日・経血量・気分・睡眠を記録するCylaのホーム画面" loading="eager">
       </div>
-      <div class="app-quick-facts">
-        <div class="fact"><strong>オンデバイス</strong>データはすべてローカルに保存</div>
-        <div class="fact"><strong>Apple Watch</strong>体温データ連携</div>
-        <div class="fact"><strong>アカウント不要</strong>登録なしで利用可能</div>
-      </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>主な機能</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>生理周期の予測</h3>
-          <p>記録された履歴をもとに、生理と周期の予測をすべてデバイス上で計算します。クラウド処理は一切なし。</p>
-        </div>
-        <div class="feature">
-          <h3>Apple Watch体温連携</h3>
-          <p>HealthKit経由で手首の体温データを読み取り、排卵の確認と予測精度の向上に役立てます。</p>
-        </div>
-        <div class="feature">
-          <h3>毎日の症状記録</h3>
-          <p>症状、気分、メモを毎日記録できます。すべてローカルに保存され、iOSで暗号化されます。</p>
-        </div>
-        <div class="feature">
-          <h3>妊孕性トラッキング</h3>
-          <p>周期データと体温傾向に基づく妊孕性ウィンドウの推定。プレミアム版でご利用いただけます。</p>
-        </div>
-        <div class="feature">
-          <h3>データエクスポート</h3>
-          <p>いつでもすべてのデータをJSONでエクスポート可能。データはあなたのもの — アプリを変えても持ち出せます。</p>
-        </div>
-        <div class="feature">
-          <h3>アカウント不要</h3>
-          <p>メールアドレス不要、登録不要、クラウド同期なし。アプリを開いてすぐにトラッキングを始められます。</p>
-        </div>
-      </div>
-    </div>
+    <nav class="app-nav">
+      <a href="/apps/cyla/privacy.html">プライバシーポリシー</a>
+      <a href="/apps/cyla/support.html">サポート</a>
+      <a href="/apps/cyla/terms.html">利用規約</a>
+    </nav>
 
-    <div class="app-landing-section">
-      <div class="privacy-panel">
-        <h3>プライバシーとデータ</h3>
+    <section id="screens" class="ap-section">
+      <h2>あなたの周期を一目で</h2>
+      <p>必要なことは数タップで完了 — その日を記録し、予測を確認し、記録を重ねるほど全体像が鮮明になっていきます。これらは一切どこにも送信されません。</p>
+      <div class="ap-screens" style="--shot-cols:4">
+        <div class="ap-shot"><img src="/assets/cyla/01.webp" alt="周期日と日々の記録を表示するCylaのホーム画面" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cyla/02.webp" alt="Cylaの周期予測とカレンダー" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cyla/03.webp" alt="Cylaのインサイトとトレンド" loading="lazy"></div>
+        <div class="ap-shot"><img src="/assets/cyla/04.webp" alt="Cylaの症状・気分の記録" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="ap-section">
+      <h2>できること</h2>
+      <p>予測、妊娠可能期間、症状、エクスポートまで揃った完全な周期トラッカー。最もプライベートな健康データがあなたのものであり続けるように作られています。</p>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>生理周期の予測</h3><p>記録された履歴をもとに、生理と周期の予測をすべてデバイス上で計算します。クラウド処理は一切なし。</p></article>
+        <article><h3>Apple Watch体温連携</h3><p>HealthKit経由で手首の体温データを読み取り、排卵の確認と予測精度の向上に役立てます。</p></article>
+        <article><h3>毎日の症状記録</h3><p>症状、気分、メモを毎日記録できます。すべてローカルに保存され、iOSで暗号化されます。</p></article>
+        <article><h3>妊孕性トラッキング</h3><p>周期データと体温傾向に基づく妊孕性ウィンドウの推定。プレミアム版でご利用いただけます。</p></article>
+        <article><h3>データエクスポート</h3><p>いつでもすべてのデータをJSONでエクスポート可能。データはあなたのもの — アプリを変えても持ち出せます。</p></article>
+        <article><h3>アカウント不要</h3><p>メールアドレス不要、登録不要、クラウド同期なし。アプリを開いてすぐにトラッキングを始められます。</p></article>
+      </div>
+    </section>
+
+    <section class="ap-section ap-split">
+      <img src="/assets/cyla/02.webp" alt="Cylaの周期予測画面">
+      <div class="ap-copy">
+        <h2>口先だけでない、本物のプライバシー</h2>
+        <p>多くのトラッカーは、一日記録する前にアカウントを求め、最もプライベートなデータをベンダーのクラウドに同期します。Cylaは違います。</p>
         <ul>
           <li>すべての健康データはiOS暗号化でローカルに保存されます。</li>
           <li>アカウントなし、クラウドなし、サーバーなし。</li>
@@ -204,72 +221,45 @@
           <li>差し押さえられるものも、侵害されるものも、売られるものも、何もありません。</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>こんな方におすすめです</h2>
       <p>Cylaは、<strong>プライバシー重視の生理トラッカー</strong>、<strong>プライベートな生理周期アプリ</strong>、あるいはアカウント登録から始まらない<strong>Floの代替アプリ</strong>をお探しの方に向けて作られています。プライバシーが漠然とした好みではなく、新しい健康アプリを選ぶ主な理由である方に特に適しています。</p>
-    </div>
-
-    <div class="app-landing-section">
-      <h2>一般的な生理トラッカーよりCylaを選ぶ理由</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>アカウント優先のフローなし</h3>
-          <p>生理周期を記録するためだけにアカウントを作る必要はありません。それだけで製品の使い心地がすぐに変わります。</p>
-        </div>
-        <div class="feature">
-          <h3>オンデバイスのプライバシー</h3>
-          <p>Cylaは、機密性の高い周期データをデフォルトでベンダー管理のクラウドに送信せず、デバイス上に保持するよう設計されています。</p>
-        </div>
-        <div class="feature">
-          <h3>Appleエコシステムとの連携</h3>
-          <p>Apple Watchの体温連携により、すでにAppleのヘルス機能を活用しているiPhoneユーザーにとって、Cylaは特に価値ある選択肢です。</p>
-        </div>
-        <div class="feature">
-          <h3>ロックインなしのエクスポート</h3>
-          <p>データが一つのアプリに閉じ込められることなく、ポータブルであるという安心感を得たい方にとって、エクスポート機能は重要です。</p>
-        </div>
+      <div class="ap-loop">
+        <article><h3>アカウント優先のフローなし</h3><p>生理周期を記録するためだけにアカウントを作る必要はありません。それだけで製品の使い心地がすぐに変わります。</p></article>
+        <article><h3>オンデバイスのプライバシー</h3><p>Cylaは、機密性の高い周期データをデフォルトでベンダー管理のクラウドに送信せず、デバイス上に保持するよう設計されています。</p></article>
+        <article><h3>Appleエコシステムとの連携</h3><p>Apple Watchの体温連携により、すでにAppleのヘルス機能を活用しているiPhoneユーザーにとって、Cylaは特に価値ある選択肢です。</p></article>
+        <article><h3>ロックインなしのエクスポート</h3><p>エクスポート機能により、データは一つのアプリに閉じ込められることなく、ポータブルなまま保たれます。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
-      <h2>よく検索されるキーワード</h2>
-      <p>Cylaは<strong>最もプライバシーに優れた生理トラッカー</strong>、<strong>生理トラッカー プライバシー</strong>、<strong>FloやClueの代替</strong>、<strong>Apple Watch 生理周期アプリ</strong>などの検索に最適化されています。このページは、検索エンジンとAIアシスタントの両方に対して、それらのユースケースをより明確に伝えます。</p>
-    </div>
+    <section class="ap-section">
+      <h2>信頼のために</h2>
+      <div class="ap-trust">
+        <div><strong>オンデバイス</strong><span>すべてのデータはローカルに保存され、iOSで暗号化。</span></div>
+        <div><strong>Apple Watch</strong><span>HealthKit経由の体温連携。</span></div>
+        <div><strong>アカウント不要</strong><span>登録なし、クラウドなし、トラッキングなし。</span></div>
+      </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>よくあるご質問</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>Cylaはプライバシーが守られますか？</h3>
-          <p>プライバシーがこの製品の核心です。アカウント不要、クラウド優先モデルなし、機密性の高い健康データはデバイス上に保持されます。</p>
-        </div>
-        <div class="feature">
-          <h3>CylaはApple Watchと連携しますか？</h3>
-          <p>はい。Apple Watchの体温連携は、iPhoneユーザー向けのアプリの中核となる差別化要素の一つです。</p>
-        </div>
-        <div class="feature">
-          <h3>CylaとFloやClueを比較できる場所はありますか？</h3>
-          <p>プライバシーに焦点を当てた比較については、<a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a>をご覧ください。</p>
-        </div>
+      <div class="ap-loop" style="--loop-cols:3">
+        <article><h3>Cylaはプライバシーが守られますか？</h3><p>プライバシーがこの製品の核心です。アカウント不要、クラウド優先モデルなし、機密性の高い健康データはデバイス上に保持されます。</p></article>
+        <article><h3>CylaはApple Watchと連携しますか？</h3><p>はい。Apple Watchの体温連携は、iPhoneユーザー向けのアプリの中核となる差別化要素の一つです。</p></article>
+        <article><h3>FloやClueとの比較は？</h3><p>プライバシーに焦点を当てた比較については、<a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a>をご覧ください。</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="app-landing-section">
+    <section class="ap-section">
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/cyla-vs-flo-vs-clue.html">Cyla vs Flo vs Clue</a></li>
         <li><a href="/blog/period-tracker-privacy-why-it-matters.html">生理トラッカーのプライバシーが重要な理由</a></li>
         <li><a href="/blog/cycle-tracking-apple-watch-temperature.html">Apple Watch体温 &amp; 生理周期トラッキング</a></li>
       </ul>
-    </div>
-
-    <nav class="app-nav">
-      <a href="/apps/cyla/privacy.html">プライバシーポリシー</a>
-      <a href="/apps/cyla/support.html">サポート</a>
-      <a href="/apps/cyla/terms.html">利用規約</a>
-    </nav>
+    </section>
 
     <footer>
       <p>&copy; 2026 Blue Flame Games &middot; <a href="/ja/">BFGトップ</a> &middot; <a href="/privacy.html">プライバシーポリシー</a></p>
