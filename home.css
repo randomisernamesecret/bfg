@@ -4,28 +4,26 @@
    gets a scrollbar, while the full fan still shows on wide screens. */
 html { overflow-x: clip; }
 
-/* Centered hero: the fanned deck sits ON TOP, copy below. */
+/* Two-column hero: copy on the left, fanned deck on the right. */
 .hero {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 56px 32px 48px;
+  padding: 72px 32px 48px;
+  text-align: left;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
+  gap: 48px;
   align-items: center;
-  text-align: center;
-  gap: 8px;
 }
 
-.hero-copy { text-align: center; }
-.hero-copy .ctas { justify-content: center; }
+.hero-copy { text-align: left; }
+.hero-copy .ctas { justify-content: flex-start; }
 
 /* Fanned deck of app screenshots — same store shots used across the site. */
 .hero-art {
-  order: -1;
   position: relative;
-  width: 100%;
-  min-height: 520px;
+  min-height: 460px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +51,15 @@ html { overflow-x: clip; }
 .hero-art img:nth-child(1) { transform: rotate(-13deg) translateX(-44%) translateY(4%); z-index: 1; }
 .hero-art img:nth-child(2) { transform: translateY(-2%); z-index: 3; }
 .hero-art img:nth-child(3) { transform: rotate(13deg) translateX(44%) translateY(4%); z-index: 2; }
+
+/* Below ~1180px the full fan can't fit beside the copy without clipping the
+   right phone — stack it (full size, centered, below the copy) instead. */
+@media (max-width: 1180px) {
+  .hero { grid-template-columns: 1fr; gap: 26px; justify-items: center; text-align: center; }
+  .hero-copy { text-align: center; }
+  .hero-copy .ctas { justify-content: center; }
+  .hero-art { width: 100%; }
+}
 
 .hero h1 {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -265,11 +272,17 @@ html { overflow-x: clip; }
 
 @media (max-width: 900px) {
   .hero {
-    gap: 6px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+    justify-items: center;
   }
+  .hero-copy { text-align: center; }
+  .hero-copy .ctas { justify-content: center; }
 
   .hero-art {
     min-height: 430px;
+    width: 100%;
   }
   .hero-art img { width: 168px; }
 
