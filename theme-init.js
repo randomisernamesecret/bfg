@@ -1,1 +1,2 @@
-!function(){var t=localStorage.getItem("theme");t||(t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()
+/* Site is dark-only. Force the dark theme before first paint (no flash). */
+!function(){try{localStorage.setItem("theme","dark")}catch(e){}document.documentElement.setAttribute("data-theme","dark")}()
