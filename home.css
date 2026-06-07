@@ -4,24 +4,28 @@
    gets a scrollbar, while the full fan still shows on wide screens. */
 html { overflow-x: clip; }
 
+/* Centered hero: the fanned deck sits ON TOP, copy below. */
 .hero {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 72px 32px 48px;
-  text-align: left;
+  padding: 56px 32px 48px;
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
-  gap: 48px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 8px;
 }
 
-.hero-copy { text-align: left; }
+.hero-copy { text-align: center; }
+.hero-copy .ctas { justify-content: center; }
 
 /* Fanned deck of app screenshots — same store shots used across the site. */
 .hero-art {
+  order: -1;
   position: relative;
-  min-height: 460px;
+  width: 100%;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,14 +265,13 @@ html { overflow-x: clip; }
 
 @media (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 6px;
   }
 
   .hero-art {
-    min-height: 360px;
+    min-height: 430px;
   }
-  .hero-art img { width: 175px; }
+  .hero-art img { width: 168px; }
 
   .hero h1 {
     font-size: 44px;
@@ -283,6 +286,9 @@ html { overflow-x: clip; }
   .hero {
     padding: 42px 20px 24px;
   }
+
+  .hero-art { min-height: 380px; }
+  .hero-art img { width: 150px; }
 
   .hero h1 {
     font-size: 36px;
