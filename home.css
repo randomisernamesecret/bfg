@@ -1,7 +1,8 @@
 /* Shared homepage polish for every localized index page. */
-/* The fanned hero art uses rotate/translate transforms; clip any tiny
-   horizontal spill so it can never widen the page or trigger a scrollbar. */
-body { overflow-x: hidden; }
+/* The fanned hero art uses rotate/translate transforms. Clip horizontal
+   spill at the VIEWPORT edge only (on the root scroller) so the page never
+   gets a scrollbar, while the full fan still shows on wide screens. */
+html { overflow-x: clip; }
 
 .hero {
   max-width: 1100px;
@@ -13,7 +14,6 @@ body { overflow-x: hidden; }
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
   gap: 48px;
   align-items: center;
-  overflow-x: clip; /* contain the fanned art so it never widens the page */
 }
 
 .hero-copy { text-align: left; }
