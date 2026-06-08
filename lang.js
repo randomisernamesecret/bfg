@@ -126,13 +126,19 @@
     if (!loc || loc === 'en') return;
     document.querySelectorAll('img[src]').forEach(function (img) {
       var src = img.getAttribute('src');
-      var m = src && src.match(/^\/assets\/([^/]+)\/(\d+\.webp)$/);
-      if (!m) return;
+      if (!src) return;
+      var localized = null;
+      var m = src.match(/^\/assets\/([^/]+)\/(\d+\.webp)$/);   // hero strip + app-page shots
+      if (m) localized = '/assets/' + m[1] + '/' + loc + '/' + m[2];
+      var h = src.match(/^\/assets\/([a-z]+)-hero\.png$/);     // homepage app cards
+      if (h) localized = '/assets/' + h[1] + '/' + loc + '/01.webp';
+      if (/^\/assets\/Minua\//.test(src)) localized = '/assets/minua/' + loc + '/01.webp';
+      if (!localized) return;
       img.addEventListener('error', function onerr() {
         img.removeEventListener('error', onerr);
         img.src = src; // localized missing → fall back to English
       });
-      img.src = '/assets/' + m[1] + '/' + loc + '/' + m[2];
+      img.src = localized;
     });
   }
 
