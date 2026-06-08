@@ -128,15 +128,13 @@
       var src = img.getAttribute('src');
       if (!src) return;
       var localized = null;
-      // App-page galleries + homepage hero strip (listing style, /assets/<slug>/NN.webp).
+      // Only localize the app-page galleries + homepage hero strip
+      // (/assets/<slug>/NN.webp). The homepage "Available Now" CARDS
+      // (/assets/<slug>-hero.png) are bespoke per-app marketing art with no shared
+      // composer, so they are NEVER swapped — every language shows the identical
+      // English card, keeping the grid's zoom consistent across languages.
       var m = src.match(/^\/assets\/([^/]+)\/(\d+\.webp)$/);
       if (m) localized = '/assets/' + m[1] + '/' + loc + '/' + m[2];
-      // Homepage app CARDS (device-framed /assets/<slug>-hero.png) → a localized
-      // device-framed hero.webp. Apps without one fall back to the English art
-      // (no zoom-level mismatch, since the fallback is the same device-framed style).
-      var h = src.match(/^\/assets\/([a-z]+)-hero\.png$/);
-      if (h) localized = '/assets/' + h[1] + '/' + loc + '/hero.webp';
-      if (/^\/assets\/Minua\//.test(src)) localized = '/assets/minua/' + loc + '/hero.webp';
       if (!localized) return;
       img.addEventListener('error', function onerr() {
         img.removeEventListener('error', onerr);
