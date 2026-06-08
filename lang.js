@@ -128,11 +128,12 @@
       var src = img.getAttribute('src');
       if (!src) return;
       var localized = null;
-      var m = src.match(/^\/assets\/([^/]+)\/(\d+\.webp)$/);   // hero strip + app-page shots
+      // App-page galleries + homepage hero strip (same listing style as EN).
+      // Homepage app CARDS use a different device-framed art style (-hero.png) —
+      // leave those English until localized device-framed art exists, so the
+      // homepage doesn't mix zoom levels.
+      var m = src.match(/^\/assets\/([^/]+)\/(\d+\.webp)$/);
       if (m) localized = '/assets/' + m[1] + '/' + loc + '/' + m[2];
-      var h = src.match(/^\/assets\/([a-z]+)-hero\.png$/);     // homepage app cards
-      if (h) localized = '/assets/' + h[1] + '/' + loc + '/01.webp';
-      if (/^\/assets\/Minua\//.test(src)) localized = '/assets/minua/' + loc + '/01.webp';
       if (!localized) return;
       img.addEventListener('error', function onerr() {
         img.removeEventListener('error', onerr);
