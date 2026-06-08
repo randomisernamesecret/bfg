@@ -117,13 +117,34 @@
   var currentLocale = currentLocaleFromPath();
   if (currentLocale) saveLocale(currentLocale);
 
+  // Swap app screenshots to the page's locale, falling back to the English asset
+  // if a localized one doesn't exist. Uses the PAGE locale (not the saved
+  // preference) so English pages keep English shots. Targets the numbered app
+  // screenshots only (/assets/<slug>/NN.webp), not hero/card images.
+  function localizeScreenshots() {
+    var loc = currentLocaleFromPath();
+    if (!loc || loc === 'en') return;
+    document.querySelectorAll('img[src]').forEach(function (img) {
+      var src = img.getAttribute('src');
+      var m = src && src.match(/^\/assets\/([^/]+)\/(\d+\.webp)$/);
+      if (!m) return;
+      img.addEventListener('error', function onerr() {
+        img.removeEventListener('error', onerr);
+        img.src = src; // localized missing → fall back to English
+      });
+      img.src = '/assets/' + m[1] + '/' + loc + '/' + m[2];
+    });
+  }
+
   // 4) Reflect the effective language on every page, including English-only
   // app/privacy/support/blog pages.
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      updateLanguageUI(effectiveLocale());
-    });
-  } else {
+  function onReady() {
     updateLanguageUI(effectiveLocale());
+    localizeScreenshots();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', onReady);
+  } else {
+    onReady();
   }
 })();
