@@ -124,6 +124,11 @@
   function localizeScreenshots() {
     var loc = currentLocaleFromPath();
     if (!loc || loc === 'en') return;
+    // Homepages mirror the English homepage exactly — the "Available Now" cards
+    // and hero strip use the raw, zoomed /assets/<slug>/01.webp art. Never swap
+    // them for the framed/captioned localized variants, or they'd look different
+    // from EN. Localization applies only to app detail-page galleries.
+    if (isHomePath()) return;
     document.querySelectorAll('img[src]').forEach(function (img) {
       var src = img.getAttribute('src');
       if (!src) return;
