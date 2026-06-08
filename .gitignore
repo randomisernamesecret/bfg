@@ -5,3 +5,7 @@
 .env
 .vscode/
 .idea/
+
+# Internal dev notes — never publish (repo is public + GH Pages serves root)
+CLAUDE.md
+*.local.md
