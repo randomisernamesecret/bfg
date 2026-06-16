@@ -5,7 +5,7 @@
 # Usage: localize_screenshots.sh <slug> <appId>
 set -uo pipefail
 SITE="$HOME/Development/Website/bfg-site"
-ASC="$HOME/Development/AppstoreConnect"
+ASC="$HOME/Development/BFG/AppstoreConnect"
 slug="$1"; appId="$2"
 
 asc_for() { case "$1" in de) echo de-DE;; es) echo es-ES;; fr) echo fr-FR;; ja) echo ja;; zh-CN) echo zh-Hans;; esac; }
