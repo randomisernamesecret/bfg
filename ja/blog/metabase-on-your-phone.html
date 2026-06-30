@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>スマートフォンでMetabase：モバイルでダッシュボードを確認しアラートを受け取る方法 — BFG</title>
+  <meta name="description" content="MetabaseにはiOS向けの公式モバイルアプリがありません。スマートフォンでダッシュボードを確認し、指標が動いたときにアラートを受け取り、データをプライベートに保つ方法を解説します。">
+  <meta name="keywords" content="Metabase モバイルアプリ, Metabase iPhone, Metabase iOS, Metabase アラート, モバイル BIダッシュボード, KPIモニタリングアプリ, ダッシュボード プッシュアラート, ビジネスインテリジェンス モバイル">
+  <meta property="og:title" content="スマートフォンでMetabase：モバイルでダッシュボードを確認しアラートを受け取る方法">
+  <meta property="og:description" content="MetabaseにはiOS向けの公式モバイルアプリがありません。スマートフォンでダッシュボードを確認し、指標が動いたときにアラートを受け取り、データをプライベートに保つ方法を解説します。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/dashpocket/icon.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="スマートフォンでMetabase：モバイルでダッシュボードを確認しアラートを受け取る方法">
+  <meta name="twitter:description" content="MetabaseにはiOS向けの公式モバイルアプリがありません。スマートフォンでダッシュボードを確認し、指標が動いたときにアラートを受け取り、データをプライベートに保つ方法を解説します。">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/dashpocket/icon.jpg">
+  <meta property="og:url" content="https://bfgapps.co/ja/blog/metabase-on-your-phone.html">
+  <link rel="canonical" href="https://bfgapps.co/ja/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/metabase-on-your-phone.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"スマートフォンでMetabase：モバイルでダッシュボードを確認しアラートを受け取る方法","description":"MetabaseにはiOS向けの公式モバイルアプリがありません。スマートフォンでダッシュボードを確認し、指標が動いたときにアラートを受け取り、データをプライベートに保つ方法。","author":{"@type":"Person","name":"Daniel Hart","url":"https://bfgapps.co/authors/daniel-hart/"},"publisher":{"@type":"Organization","name":"BFG"},"datePublished":"2026-06-30"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"記事"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/ja/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="メニュー">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/ja/#apps">アプリ</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">リリース済み</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studios</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/cardbash/">Card Bash</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+          </div>
+        </div>
+        <a href="/ja/#blog">ブログ</a>
+        <a href="/ja/about/">概要</a>
+        <a href="mailto:blueflamegames@proton.me">お問い合わせ</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="言語">JA</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="テーマ切替"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/ja/">BFG</a><span class="sep">/</span><a href="/ja/#blog">ブログ</a><span class="sep">/</span><span class="tag tag-business">ビジネス</span></nav>
+    <div class="blog-article-header">
+      <h1>スマートフォンでMetabase：モバイルでダッシュボードを確認しアラートを受け取る方法</h1>
+      <p class="meta">2026年6月 · 読了8分 · ビジネス</p>
+    </div>
+
+    <p>ダッシュボードを作りました。ビジネスの状況を伝える数字——売上、サインアップ、チャーン、パイプライン——がMetabaseにきれいに並んでいます。それなのに、ラップトップを閉じてから一日が始まるまでの間に、ダッシュボードは確認されないままになってしまいます。関心がないからではありません。確認するには、ラップトップを開き、正しいタブを見つけ、再びログインし、6インチの画面向けに設計されたわけではないグラフを目を細めながら見なければならないからです。</p>
+
+    <p>これがビジネスインテリジェンスの静かな失敗パターンです：誰も開かないダッシュボード。データは問題ない。アクセスも問題ない。欠けているのはラストワンマイル——その数字が必要な人のもとに、必要なタイミングで、すでに手の中にあるデバイスで届けることです。</p>
+
+    <h2>なぜMetabaseの公式モバイルアプリが存在しないのか</h2>
+    <p>Metabaseはセルフサービスアナリティクスにとってのベストプラクティスのひとつです。オープンソースで、すぐに立ち上げられ、SQLを書かない人でも自分で質問に答えられるようにしてくれます。しかしWebファーストでデスクトップ向けに設計されており、それが最も輝く場所です。iPhoneやAndroid向けの公式ネイティブアプリは存在しません。</p>
+    <p>スマートフォンで得られるのはレスポンシブWebバージョンで、Webのフリクションをそのまま抱えています。（しばしば二要素認証を伴って）再ログインし、ダッシュボード全体がレンダリングされるのを待ち、モニター向けに設計されたグラフをピンチ操作してパンしなければなりません。これはMetabaseが何か間違っているわけではありません——単純に、ブラウザのタブにはスマートフォンが特に得意な3つのことができないのです。</p>
+
+    <h2>デスクトップダッシュボードにできないスマートフォンの3つのこと</h2>
+    <p>「Metabaseをモバイルで使いたい」という人たちが本当に望んでいるのは、「同じダッシュボードを小さくしたもの」ではない場合がほとんどです。デスクトップのBIツールが構造上できない、3つの特定の役割を意味しています：</p>
+    <ul>
+      <li><strong>あなたに届く。</strong> ダッシュボードは開かれるのを待ちます。スマートフォンはあなたの肩をトントンできます。モバイルがBIにもたらす最も価値あることは、ある数字が気にしている閾値を超えたときのプッシュ通知です——アプリが開いていなくても。</li>
+      <li><strong>一目でわかる。</strong> 最良の指標は探しに行く必要のないものです。今日の売上やアクティブユーザーを表示するホーム画面またはロック画面のウィジェットは、「確認しよう」を「もう見た」に変えます。</li>
+      <li><strong>瞬時に開く。</strong> Face IDで認証して、すぐに数字が見られる。ログイン画面なし、二要素認証のやり取りなし、ワークスペースを選ぶ手間もなし。インタラクション全体は、それを思いついた考えよりも短くあるべきです。</li>
+    </ul>
+
+    <h2>MetabaseをモバイルのMetabaseで使うための選択肢</h2>
+    <p>今日のギャップを埋めるためのいくつかの誠実な方法があります。それぞれにトレードオフがあります：</p>
+
+    <table>
+      <tr><th>アプローチ</th><th>適した用途</th><th>問題点</th></tr>
+      <tr><td>モバイルWeb（ブラウザでMetabase）</td><td>時々の深掘り調査、フル機能セット</td><td>再ログイン + 二要素認証、レンダリングが遅い、デスクトップ向けのグラフ、プッシュなし、ウィジェットなし</td></tr>
+      <tr><td>メール / Slackサブスクリプション</td><td>決まった時間のスケジュール済みダイジェスト</td><td>スケジュールでのプッシュ（<em>変化</em>時ではない）；タップできない静止画；受信トレイが汚れる</td></tr>
+      <tr><td>グループチャットのスクリーンショット</td><td>チームとひとつの数字を共有する</td><td>手動、すぐに古くなる、履歴なし、アラートなし</td></tr>
+      <tr><td>自分でビルドする（API + スクリプトまたはアプリ）</td><td>エンジニアリングの時間に余裕があるチーム</td><td>今やアプリのメンテナンス担当になった；認証、キャッシュ、ウィジェット、通知は本物の作業</td></tr>
+      <tr><td>読み取り専用モバイルコンパニオン</td><td>外出先でのグランス、モニタリング、アラート</td><td>設計上読み取り専用——ダッシュボードの作成は引き続きMetabase自体で行う</td></tr>
+    </table>
+
+    <p>MetabaseのメールとSlackサブスクリプションは本当に有用で、使う価値があります。しかしサブスクリプションは<em>スケジュール</em>で発火します——平日の午前8時に——指標が実際に動いた瞬間ではありません。残されるギャップはリアルタイム、一目でわかること、そして個人的なものです。</p>
+
+    <h2>スマートフォンで「良い」状態とはどのようなものか</h2>
+    <p>Metabaseのモバイルアプローチを評価するなら、おもちゃとツールを分ける4つのことがあります：</p>
+    <ul>
+      <li><strong>本物のネイティブチャート</strong> — スクリーンショットではなく。任意の点の正確な値を取得するためにラインをタップしてスクラブでき、生データの行が必要なときは基礎テーブルに降りられるべきです。</li>
+      <li><strong>変化時に発火するアラート</strong> — 指標にしきい値を設定し、超えた瞬間にプッシュを受け取ります。理想的には、通常の月曜日のスパイクで午前3時に起こされないよう、季節性を考慮したものであるべきです。</li>
+      <li><strong>平易な言葉での概要</strong> — 何が動いたか、どれだけ動いたか、どの関連数値が一緒に動いたかを述べる一文。ほとんどの場合、グラフを研究したいわけではなく、要点が欲しいのです。</li>
+      <li><strong>理由を説明できるプライバシー</strong> — ダッシュボードは会社で最も機密性の高いデータのいくつかを含んでいます。モバイルレイヤーは、第三者のサーバーを経由せずに<em>あなたの</em>インスタンスに直接接続するべきです。</li>
+    </ul>
+
+    <div class="callout">
+      <strong>このギャップを埋めるために<a href="https://apps.apple.com/gb/app/dashpocket/id6783310367" target="_blank" rel="noopener noreferrer">Dashpocket</a>を作りました。</strong>Metabaseのためのプライベートな読み取り専用コンパニオンです。自分のインスタンスに向けると、ダッシュボードが速くてネイティブでタップ可能なチャートになります。任意の指標にしきい値を設定すると、アプリを閉じているときでも超えた瞬間にプッシュを送ります。主要な数字をホーム画面とロック画面のウィジェットに固定し、<em>デバイス上で</em>生成される平易な言葉のブリーフィングを受け取り、Face IDでアンロックできます。MetabaseにHTTPSで直接通信します——Dashpocketのアカウントもサーバーも存在せず、認証情報はデバイスのキーチェーンにのみ保存されます。無料でダウンロードでき（アカウント不要のサンプルデータデモあり）、買い切りのアンロック——サブスクリプションなし。
+    </div>
+
+    <h2>10分でできるモバイルモニタリングのセットアップ</h2>
+    <p>Dashpocketを使うにしても、独自のスタックを組み立てるにしても、原則は同じです：確認するのをやめ、教えてもらう。実際に使われるセットアップはこのようなものです：</p>
+    <ol>
+      <li><strong>3〜5つの重要な数字を選ぶ。</strong> 30ではなく。本当に動いたら一日を変えるような指標——売上、サインアップ、チャーン、エラーレート、現金。</li>
+      <li><strong>見える場所に固定する。</strong> ホーム画面またはロック画面のウィジェットは、意識的な確認を受動的なグランスに変えます。</li>
+      <li><strong>スケジュールではなく、しきい値を設定する。</strong> 各指標で「異常」が何を意味するかを決め、それが起きたときだけアラートを発火させましょう。良いアラート1回で、毎日のメール10通を上回ります。</li>
+      <li><strong>1日1回のダイジェストを保持する。</strong> コンテキストのための朝の単一スコアカードで十分です——アラートが例外を処理し、ダイジェストがトレンドを処理します。</li>
+      <li><strong>「なぜ」をつなぐ。</strong> 数字が動いたとき、次の質問は常になぜかです。業界や競合他社に関するニュースを指標の隣に並べると、多くの場合、答えの半分になります。</li>
+    </ol>
+
+    <h2>利便性のために自分の数字を手放さないこと</h2>
+    <p>ダッシュボードをスマートフォンに入れようとする焦りの中で見落としやすいので、はっきり言っておく価値があります：多くのモバイルBIツールは、あなたとデータの間に割り込んで機能しています。クエリと結果がベンダーのサーバーを通過し、場合によってはそこにキャッシュされます。マーケティングダッシュボードであればそれでもいいかもしれません。売上、人数、またはNDA下にある何かについては、最も機密性の高い数字を見られる人が静かに増えていきます。</p>
+    <p>より安全なパターンは退屈なものです：あなたがすでに信頼しているインスタンスに<em>直接</em>接続し、認証情報をデバイスのセキュアストレージに保存し、数字を送り出して処理させるのではなくデバイス自体でサマライズを行うモバイルレイヤーです。利便性と機密性は実際には相反するものではありません——両方を求めれば良いだけです。</p>
+
+    <h2>結論</h2>
+    <p>Metabaseはデータへのクエリをするためのツールとして優れています。単独ではできないのは、あなたがオフィスを出た後もついてくることです。解決策は小さなダッシュボードではなく、まったく別の形です：あなたを見つける少数の数字、何かが本当に変わったときに発火するアラート、ラップトップを開くより速いグランス。そのラストワンマイルをうまく機能させれば、あなたが作ったダッシュボードは、ついにあなたが作った目的を果たします。</p>
+
+    <div class="blog-footer-cta">
+      <h3>Metabaseの数字をポケットに入れたいですか？</h3>
+      <p>Dashpocketはダッシュボードをグランスできるチャートとプッシュアラートに変えます——読み取り専用、プライベート、すべてデバイス上で動作。</p>
+      <a href="https://apps.apple.com/gb/app/dashpocket/id6783310367" class="btn btn-primary" target="_blank" rel="noopener noreferrer">App StoreでDashpocketをダウンロード</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG ホーム</a> &middot; <a href="../../#blog">その他の記事</a> &middot; <a href="../../privacy.html">プライバシー</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

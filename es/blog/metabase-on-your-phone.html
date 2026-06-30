@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>Metabase en tu Móvil: Cómo Consultar Dashboards y Recibir Alertas desde el Teléfono</title>
+  <meta name="description" content="Metabase no tiene app móvil oficial. Cómo usar tus dashboards en el teléfono: gráficos táctiles nativos, alertas push cuando un número cambia, y un sistema que mantiene tus datos privados.">
+  <meta name="keywords" content="Metabase app móvil, Metabase en iPhone, Metabase iOS, alertas Metabase, dashboard BI móvil, app monitorización KPI, alertas push dashboard, business intelligence móvil">
+  <meta property="og:title" content="Metabase en tu Móvil: Dashboards y Alertas desde el Teléfono">
+  <meta property="og:description" content="Metabase no tiene app móvil oficial. Cómo consultar dashboards desde el teléfono, recibir alertas cuando un número cambia, y mantener tus datos privados.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/dashpocket/icon.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Metabase en tu Móvil: Dashboards y Alertas desde el Teléfono">
+  <meta name="twitter:description" content="Metabase no tiene app móvil oficial. Cómo consultar dashboards desde el teléfono, recibir alertas cuando un número cambia, y mantener tus datos privados.">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/dashpocket/icon.jpg">
+  <meta property="og:url" content="https://bfgapps.co/es/blog/metabase-on-your-phone.html">
+  <link rel="canonical" href="https://bfgapps.co/es/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/metabase-on-your-phone.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Metabase en tu Móvil: Cómo Consultar Dashboards y Recibir Alertas desde el Teléfono",
+    "description": "Metabase no tiene app móvil oficial. Cómo usar tus dashboards en el teléfono: gráficos táctiles nativos, alertas push cuando un número cambia, y un sistema que mantiene tus datos privados.",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-06-30"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"Article"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menú">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">Apps</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">Disponibles</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studios</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/cardbash/">Card Bash</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+          </div>
+        </div>
+        <a href="/#blog">Blog</a>
+        <a href="/about/">Sobre nosotros</a>
+        <a href="mailto:blueflamegames@proton.me">Contacto</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">ES</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Cambiar tema"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/es/#blog">Blog</a><span class="sep">/</span><span class="tag tag-business">Negocios</span></nav>
+    <div class="blog-article-header">
+      <h1>Metabase en tu Móvil: Cómo Consultar Dashboards y Recibir Alertas desde el Teléfono</h1>
+      <p class="meta">Junio 2026 · 8 min de lectura · Negocios</p>
+    </div>
+
+    <p>Construiste el dashboard. Los números que te dicen cómo va el negocio están ahí mismo en Metabase: ingresos, registros, cancelaciones, pipeline. Y sin embargo, en algún punto entre el cierre del portátil y el comienzo del día, el dashboard queda sin revisar. No porque no te importe, sino porque revisarlo significa abrir el portátil, encontrar la pestaña correcta, volver a iniciar sesión y forzar la vista en un gráfico que nunca fue diseñado para una pantalla de 6 pulgadas.</p>
+
+    <p>Este es el modo de fallo silencioso de la inteligencia empresarial: el dashboard que nadie abre. Los datos están bien. El acceso está bien. Lo que falta es el último tramo: poner el número frente a la persona que lo necesita, en el momento en que importa, en el dispositivo que ya tiene en la mano.</p>
+
+    <h2>Por qué no existe una app móvil oficial de Metabase</h2>
+    <p>Metabase es una de las mejores cosas que le ha pasado al análisis de datos autoservicio. Es de código abierto, rápida de poner en marcha, y permite que personas que no escriben SQL respondan sus propias preguntas. Pero se construyó con la web como prioridad, para el escritorio, y ahí es donde brilla. No existe ninguna app nativa oficial para iPhone o Android.</p>
+    <p>Lo que obtienes en el teléfono es la versión web adaptada, y arrastra la fricción propia de la web: vuelves a iniciar sesión (muchas veces con doble factor), esperas a que se cargue el dashboard completo, y luego haces zoom y te desplazas por gráficos pensados para una pantalla de monitor. Nada de esto es un fallo de Metabase; simplemente, una pestaña del navegador no puede hacer las tres cosas en las que un teléfono es incomparablemente bueno.</p>
+
+    <h2>Las tres cosas que un móvil puede hacer que un dashboard de escritorio no puede</h2>
+    <p>Cuando la gente dice que quiere "Metabase en el móvil", rara vez significa "el mismo dashboard, más pequeño". Significa tres trabajos concretos que una herramienta de BI de escritorio no puede hacer por su estructura:</p>
+    <ul>
+      <li><strong>Encontrarte.</strong> Un dashboard espera a que lo abras. Un teléfono puede darte un toque en el hombro. Lo más valioso que aporta el móvil a la BI es una notificación push cuando un número cruza una línea que te importa, incluso cuando ninguna app está abierta.</li>
+      <li><strong>Ser consultable de un vistazo.</strong> La mejor métrica es la que no tienes que ir a buscar. Un widget en la pantalla de inicio o de bloqueo que muestre los ingresos de hoy o los usuarios activos convierte "déjame revisar" en "ya lo vi".</li>
+      <li><strong>Abrirse al instante.</strong> Face ID y ya tienes tus números. Sin pantalla de inicio de sesión, sin vuelta de dos factores, sin elegir un espacio de trabajo. Toda la interacción debería ser más corta que el pensamiento que la provocó.</li>
+    </ul>
+
+    <h2>Tus opciones para usar Metabase en el móvil</h2>
+    <p>Hay algunas formas honestas de salvar esa distancia hoy, cada una con sus compromisos:</p>
+
+    <table>
+      <tr><th>Enfoque</th><th>Para qué sirve</th><th>El inconveniente</th></tr>
+      <tr><td>Web móvil (Metabase en el navegador)</td><td>Consultas profundas puntuales; funcionalidades completas</td><td>Re-login + 2FA, carga lenta, gráficos para escritorio, sin push, sin widgets</td></tr>
+      <tr><td>Suscripciones por email / Slack</td><td>Resúmenes programados a una hora fija</td><td>Notificaciones por horario, no por <em>cambio</em>; imágenes estáticas que no puedes tocar; satura la bandeja de entrada</td></tr>
+      <tr><td>Capturas de pantalla en un chat grupal</td><td>Compartir un número concreto con el equipo</td><td>Manual, obsoleto al instante, sin historial, sin alertas</td></tr>
+      <tr><td>Desarrollo propio (API + script o app)</td><td>Equipos con tiempo de ingeniería disponible</td><td>Ahora mantienes una app; autenticación, caché, widgets y notificaciones son trabajo real</td></tr>
+      <tr><td>Un companion móvil de solo lectura</td><td>Consultas rápidas, monitorización y alertas en cualquier lugar</td><td>Es de solo lectura por diseño: los dashboards se siguen creando en Metabase</td></tr>
+    </table>
+
+    <p>Las suscripciones de email y Slack de Metabase son genuinamente útiles y vale la pena activarlas. Pero una suscripción se dispara según un <em>horario</em> — a las 8 de la mañana todos los días laborables — no en el momento en que una métrica realmente se mueve. El hueco que queda es real: tiempo real, consultable de un vistazo y personal.</p>
+
+    <h2>Cómo es "bueno" en un móvil</h2>
+    <p>Si evalúas cualquier enfoque móvil para Metabase, cuatro cosas separan un juguete de una herramienta:</p>
+    <ul>
+      <li><strong>Gráficos nativos de verdad</strong>, no capturas de pantalla. Deberías poder tocar y deslizar por una línea para ver el valor exacto en cualquier punto, y bajar a la tabla subyacente cuando quieras los datos en bruto.</li>
+      <li><strong>Alertas que se disparan ante cambios</strong>: fija un umbral en una métrica y recibe un push en el momento en que lo cruza, idealmente con cierta conciencia de la estacionalidad para que un pico normal del lunes no te despierte a las 3 de la madrugada.</li>
+      <li><strong>Una lectura en lenguaje natural</strong>: una frase que diga qué se movió, cuánto, y qué número relacionado se movió con él. La mayoría de las veces no quieres estudiar el gráfico; quieres la conclusión.</li>
+      <li><strong>Privacidad razonable</strong>: tus dashboards contienen algunos de los datos más sensibles que tiene tu empresa. Una capa móvil debería conectarse <em>directamente</em> a tu instancia, no enrutar tus números a través de los servidores de un tercero.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Esta es la brecha que construimos <a href="https://apps.apple.com/gb/app/dashpocket/id6783310367" target="_blank" rel="noopener noreferrer">Dashpocket</a> para cerrar.</strong> Es un companion privado y de solo lectura para Metabase: apúntalo a tu propia instancia y tus dashboards se convierten en gráficos nativos rápidos y táctiles. Fija un umbral en cualquier métrica y te notifica en el momento en que lo cruza, incluso con la app cerrada. Fija tus números clave en widgets para la pantalla de inicio y de bloqueo, recibe resúmenes en lenguaje natural generados <em>en el dispositivo</em>, y desbloquea con Face ID. Se comunica directamente con tu Metabase a través de HTTPS: no hay cuenta de Dashpocket ni servidor de Dashpocket, y tus credenciales viven solo en el Llavero de tu dispositivo. Descarga gratuita (incluye una demo con datos de muestra, sin cuenta), con desbloqueo de pago único: sin suscripción.
+    </div>
+
+    <h2>Una configuración de monitorización móvil en 10 minutos</h2>
+    <p>Tanto si usas Dashpocket como si montas tu propio sistema, el principio es el mismo: deja de revisar y empieza a recibir la información. Una configuración que se usa de verdad tiene este aspecto:</p>
+    <ol>
+      <li><strong>Elige entre tres y cinco números que importan.</strong> No treinta. Las métricas en las que un movimiento real cambiaría tu día: ingresos, registros, cancelaciones, tasa de errores, caja.</li>
+      <li><strong>Fíjalos donde los veas.</strong> Un widget en la pantalla de inicio o de bloqueo convierte una consulta deliberada en un vistazo pasivo.</li>
+      <li><strong>Fija umbrales, no horarios.</strong> Decide qué significa "anormal" para cada métrica y deja que la alerta se dispare solo cuando ocurra. Una buena alerta vale más que diez correos diarios.</li>
+      <li><strong>Mantén un resumen diario.</strong> Un cuadro de mando matinal para el contexto es suficiente: las alertas gestionan las excepciones, el resumen gestiona la tendencia.</li>
+      <li><strong>Conecta el "por qué".</strong> Cuando un número se mueve, la siguiente pregunta siempre es por qué. Seguir las noticias públicas sobre tu sector y tus competidores junto a la métrica suele ser la mitad de la respuesta.</li>
+    </ol>
+
+    <h2>No cambies tus números por comodidad</h2>
+    <p>Vale la pena decirlo claramente, porque es fácil pasarlo por alto en la prisa por tener un dashboard en el teléfono: muchas herramientas de BI móvil funcionan situándose entre tú y tus datos. Tus consultas y resultados pasan a través de, y a veces se almacenan en, los servidores de un proveedor. Para un dashboard de marketing puede estar bien. Para ingresos, plantilla o cualquier cosa bajo NDA, es una expansión silenciosa de quién puede ver tus números más sensibles.</p>
+    <p>El patrón más seguro es el más aburrido: una capa móvil que se conecta <em>directamente</em> a la instancia en la que ya confías, almacena las credenciales en el almacenamiento seguro del dispositivo, y hace cualquier resumen en el propio dispositivo en lugar de enviar tus números a ser procesados en otra parte. La comodidad y la confidencialidad no están en tensión real: solo tienes que exigir ambas.</p>
+
+    <h2>Conclusión</h2>
+    <p>Metabase es excelente para que las personas hagan preguntas sobre sus datos. Lo que no puede hacer por sí solo es seguirte fuera de la oficina. La solución no es un dashboard más pequeño, sino una forma completamente diferente: unos pocos números que te encuentran, alertas que se disparan cuando algo cambia de verdad, y un vistazo más rápido que abrir el portátil. Consigue ese último tramo bien y el dashboard que construiste por fin hace el trabajo para el que lo construiste.</p>
+
+    <div class="blog-footer-cta">
+      <h3>¿Quieres tus números de Metabase en el bolsillo?</h3>
+      <p>Dashpocket convierte tus dashboards en gráficos táctiles y alertas push: de solo lectura, privado y completamente en tu dispositivo.</p>
+      <a href="https://apps.apple.com/gb/app/dashpocket/id6783310367" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Descarga Dashpocket en el App Store</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG Home</a> &middot; <a href="../../#blog">Más artículos</a> &middot; <a href="../../privacy.html">Privacidad</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

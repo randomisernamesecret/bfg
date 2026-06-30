@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>Metabase auf dem Smartphone: Dashboards prüfen und mobil benachrichtigt werden — BFG</title>
+  <meta name="description" content="Metabase hat keine offizielle mobile App. So nutzen Sie Ihre Dashboards auf dem Smartphone – übersichtliche Diagramme, Push-Benachrichtigungen wenn eine Kennzahl sich bewegt, und ein Setup das Ihre Daten privat hält.">
+  <meta name="keywords" content="Metabase mobile App, Metabase auf iPhone, Metabase iOS, Metabase Benachrichtigungen, mobile BI Dashboard, KPI Monitoring App, Dashboard Push-Benachrichtigungen, Business Intelligence mobil">
+  <meta property="og:title" content="Metabase auf dem Smartphone: Dashboards und Benachrichtigungen mobil">
+  <meta property="og:description" content="Metabase hat keine offizielle mobile App. Wie man Dashboards auf dem Smartphone prüft, Benachrichtigungen erhält wenn eine Zahl sich bewegt, und die Daten privat hält.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/dashpocket/icon.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Metabase auf dem Smartphone: Dashboards und Benachrichtigungen mobil">
+  <meta name="twitter:description" content="Metabase hat keine offizielle mobile App. Wie man Dashboards auf dem Smartphone prüft, Benachrichtigungen erhält wenn eine Zahl sich bewegt, und die Daten privat hält.">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/dashpocket/icon.jpg">
+  <meta property="og:url" content="https://bfgapps.co/de/blog/metabase-on-your-phone.html">
+  <link rel="canonical" href="https://bfgapps.co/de/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/metabase-on-your-phone.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/metabase-on-your-phone.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Metabase auf dem Smartphone: Dashboards prüfen und mobil benachrichtigt werden","description":"Metabase hat keine offizielle mobile App. So nutzen Sie Ihre Dashboards auf dem Smartphone – übersichtliche Diagramme, Push-Benachrichtigungen wenn eine Kennzahl sich bewegt, und ein Setup das Ihre Daten privat hält.","author":{"@type":"Person","name":"Daniel Hart","url":"https://bfgapps.co/authors/daniel-hart/"},"publisher":{"@type":"Organization","name":"BFG"},"datePublished":"2026-06-30","inLanguage":"de-DE"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"Artikel"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menü">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">Apps</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">Verfügbar</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studios</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+            <hr>
+            <div class="menu-label">Bald verfügbar</div>
+            <a href="/apps/cardbash/">Card Bash</a>
+          </div>
+        </div>
+        <a href="/#blog">Blog</a>
+        <a href="/about/">Über uns</a>
+        <a href="mailto:blueflamegames@proton.me">Kontakt</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Sprache">DE</a>
+          <div class="nav-dropdown-menu">
+            <a href="/blog/metabase-on-your-phone.html" data-lang="en">English</a>
+            <a href="/de/blog/metabase-on-your-phone.html" data-lang="de">Deutsch</a>
+            <a href="/es/blog/metabase-on-your-phone.html" data-lang="es">Español</a>
+            <a href="/fr/blog/metabase-on-your-phone.html" data-lang="fr">Français</a>
+            <a href="/ja/blog/metabase-on-your-phone.html" data-lang="ja">日本語</a>
+            <a href="/zh-CN/blog/metabase-on-your-phone.html" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Thema wechseln"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">Blog</a><span class="sep">/</span><span class="tag tag-business">Business</span></nav>
+    <div class="blog-article-header">
+      <h1>Metabase auf dem Smartphone: Dashboards prüfen und mobil benachrichtigt werden</h1>
+      <p class="meta">Juni 2026 · 8 Min. Lesezeit · Business</p>
+    </div>
+
+    <p>Sie haben das Dashboard gebaut. Die Zahlen, die zeigen wie das Unternehmen läuft, liegen direkt in Metabase – Umsatz, Anmeldungen, Churn, Pipeline. Und doch: Irgendwo zwischen dem Schließen des Laptops und dem Beginn des Tages bleibt das Dashboard ungeprüft. Nicht weil es einem egal wäre, sondern weil das Prüfen bedeutet, einen Laptop aufzuklappen, den richtigen Tab zu finden, sich erneut anzumelden und auf ein Diagramm zu starren, das nie für einen 15-cm-Bildschirm entworfen wurde.</p>
+
+    <p>Das ist die stille Fehlerquelle von Business Intelligence: das Dashboard, das niemand öffnet. Die Daten sind in Ordnung. Der Zugang ist in Ordnung. Was fehlt, ist die letzte Meile – die Zahl an die Person zu bringen, die sie braucht, im Moment, in dem es zählt, auf dem Gerät, das bereits in ihrer Hand liegt.</p>
+
+    <h2>Warum es keine offizielle Metabase-App gibt</h2>
+    <p>Metabase ist eines der besten Dinge, die dem Self-Serve-Analysebereich passiert sind. Es ist Open Source, schnell aufzusetzen und ermöglicht Menschen ohne SQL-Kenntnisse, eigene Fragen zu beantworten. Aber es wurde web-first für den Desktop entwickelt – und dort glänzt es. Eine offizielle native iPhone- oder Android-App gibt es nicht.</p>
+    <p>Was man auf dem Smartphone bekommt, ist die responsive Webversion – mit dem ganzen Reibungspotenzial des Webs: Man meldet sich erneut an (oft mit Zwei-Faktor-Authentifizierung), wartet auf das vollständige Laden eines Dashboards und zoomt und schwenkt in Diagrammen, die für einen Bildschirm ausgelegt sind. Das ist kein Fehler von Metabase – es ist schlicht so, dass ein Browser-Tab die drei Dinge nicht leisten kann, die ein Smartphone besonders gut beherrscht.</p>
+
+    <h2>Die drei Dinge, die ein Smartphone kann, die ein Desktop-Dashboard nicht kann</h2>
+    <p>Wenn Menschen „Metabase auf dem Smartphone" sagen, meinen sie selten „dasselbe Dashboard, nur kleiner." Sie meinen drei konkrete Aufgaben, die ein Desktop-BI-Tool strukturell nicht erfüllen kann:</p>
+    <ul>
+      <li><strong>Einen erreichen.</strong> Ein Dashboard wartet darauf, geöffnet zu werden. Ein Smartphone kann einen darauf aufmerksam machen. Das Wertvollste, was Mobile zu BI hinzufügt, ist eine Push-Benachrichtigung, wenn eine Zahl eine wichtige Schwelle überschreitet – selbst wenn keine App geöffnet ist.</li>
+      <li><strong>Auf einen Blick erfassbar sein.</strong> Die beste Kennzahl ist jene, nach der man nicht suchen muss. Ein Widget auf dem Home- oder Sperrbildschirm, das den heutigen Umsatz oder die aktiven Nutzer anzeigt, verwandelt „lass mich nachschauen" in „hab ich schon gesehen".</li>
+      <li><strong>Sofort öffnen.</strong> Face ID, dann die Zahlen. Kein Anmeldebildschirm, keine 2FA-Umleitung, keine Workspace-Auswahl. Die gesamte Interaktion sollte kürzer sein als der Gedanke, der sie ausgelöst hat.</li>
+    </ul>
+
+    <h2>Möglichkeiten für Metabase auf dem Smartphone</h2>
+    <p>Es gibt einige ehrliche Wege, die Lücke heute zu überbrücken – jeder mit seinen Kompromissen:</p>
+
+    <table>
+      <tr><th>Ansatz</th><th>Gut für</th><th>Der Haken</th></tr>
+      <tr><td>Mobile Web (Metabase im Browser)</td><td>Gelegentliche Tiefenanalysen; voller Funktionsumfang</td><td>Erneuter Login + 2FA, langsames Laden, Diagramme für Desktop ausgelegt, keine Push-Benachrichtigungen, keine Widgets</td></tr>
+      <tr><td>E-Mail-/Slack-Abonnements</td><td>Geplante Zusammenfassungen zu einem festen Zeitpunkt</td><td>Push nach Zeitplan, nicht bei einer <em>Änderung</em>; statische Bilder, die man nicht antippen kann; verstopft den Posteingang</td></tr>
+      <tr><td>Screenshots im Gruppenchat</td><td>Teilen einer einzelnen Zahl mit dem Team</td><td>Manuell, sofort veraltet, kein Verlauf, keine Benachrichtigungen</td></tr>
+      <tr><td>Selbst bauen (API + Skript oder App)</td><td>Teams mit freien Entwicklerressourcen</td><td>Man wartet jetzt eine App; Authentifizierung, Caching, Widgets und Benachrichtigungen sind echter Aufwand</td></tr>
+      <tr><td>Ein rein-lesender mobiler Begleiter</td><td>Überblick, Monitoring und Benachrichtigungen unterwegs</td><td>Rein-lesend by design – Dashboards erstellt man weiterhin in Metabase selbst</td></tr>
+    </table>
+
+    <p>Metabases eigene E-Mail- und Slack-Abonnements sind wirklich nützlich und sollten aktiviert werden. Aber ein Abonnement wird nach einem <em>Zeitplan</em> ausgelöst – etwa jeden Wochentag um 8 Uhr – nicht in dem Moment, in dem sich eine Kennzahl tatsächlich bewegt. Die verbleibende Lücke ist: Echtzeit, auf einen Blick und persönlich.</p>
+
+    <h2>Was „gut" auf einem Smartphone aussieht</h2>
+    <p>Wer einen mobilen Ansatz für Metabase bewertet, findet vier Dinge, die ein Spielzeug von einem Werkzeug trennen:</p>
+    <ul>
+      <li><strong>Echte, native Diagramme</strong> – kein Screenshot. Man sollte eine Linie antippen und scrubben können, um den genauen Wert an jedem Punkt zu sehen, und zur zugrundeliegenden Tabelle wechseln können, wenn man die Rohdaten will.</li>
+      <li><strong>Benachrichtigungen, die bei Änderungen auslösen</strong> – einen Schwellenwert für eine Kennzahl setzen und eine Push-Benachrichtigung erhalten, sobald er überschritten wird, idealerweise mit einem gewissen Saisonalitäts-Bewusstsein, damit ein normaler Montags-Ausschlag einen nicht um 3 Uhr früh weckt.</li>
+      <li><strong>Eine verständliche Zusammenfassung</strong> – ein Satz, der sagt, was sich verändert hat, um wie viel und welche verwandte Zahl sich mitbewegt hat. Meistens will man das Diagramm nicht studieren; man will das Fazit.</li>
+      <li><strong>Datenschutz, über den man nachdenken kann</strong> – Dashboards gehören zu den sensibelsten Daten eines Unternehmens. Eine mobile Schicht sollte sich direkt mit der eigenen Instanz verbinden, nicht die Zahlen über die Server eines Drittanbieters leiten.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Genau diese Lücke haben wir mit <a href="https://apps.apple.com/gb/app/dashpocket/id6783310367" target="_blank" rel="noopener noreferrer">Dashpocket</a> geschlossen.</strong> Es ist ein privater, rein-lesender Begleiter für Metabase: Man zeigt es auf die eigene Instanz, und die Dashboards werden zu schnellen, nativen, antippbaren Diagrammen. Einen Schwellenwert für eine beliebige Kennzahl setzen – es schickt eine Push-Benachrichtigung, sobald er überschritten wird, auch wenn die App geschlossen ist. Schlüsselzahlen als Home- und Sperrbildschirm-Widgets anheften, eine verständliche Zusammenfassung erhalten, die <em>auf dem Gerät</em> generiert wird, und mit Face ID entsperren. Es kommuniziert direkt über HTTPS mit Metabase – es gibt kein Dashpocket-Konto und keinen Dashpocket-Server, und die Zugangsdaten liegen nur im Schlüsselbund des Geräts. Kostenlos herunterzuladen (es gibt eine Demo mit Beispieldaten, kein Konto erforderlich), mit einem Einmal-Kauf – kein Abonnement.
+    </div>
+
+    <h2>Ein Monitoring-Setup in zehn Minuten</h2>
+    <p>Ob man Dashpocket verwendet oder den eigenen Stack zusammenstellt – das Prinzip ist dasselbe: Aufhören zu prüfen, anfangen informiert zu werden. Ein Setup, das wirklich genutzt wird, sieht so aus:</p>
+    <ol>
+      <li><strong>Drei bis fünf wichtige Zahlen auswählen.</strong> Nicht dreißig. Die Kennzahlen, bei denen eine echte Bewegung den eigenen Tag verändern würde – Umsatz, Anmeldungen, Churn, Fehlerrate, Liquidität.</li>
+      <li><strong>Dort anheften, wo man sie sieht.</strong> Ein Widget auf dem Home- oder Sperrbildschirm verwandelt eine bewusste Überprüfung in einen passiven Blick.</li>
+      <li><strong>Schwellenwerte setzen, keine Zeitpläne.</strong> Festlegen, was für jede Kennzahl „abnormal" bedeutet, und eine Benachrichtigung nur dann auslösen lassen, wenn es passiert. Eine gute Benachrichtigung schlägt zehn tägliche E-Mails.</li>
+      <li><strong>Eine tägliche Zusammenfassung behalten.</strong> Ein einzelner morgendlicher Überblick reicht als Kontext – Benachrichtigungen kümmern sich um die Ausnahmen, die Zusammenfassung um den Trend.</li>
+      <li><strong>Das „Warum" verknüpfen.</strong> Wenn sich eine Zahl bewegt, ist die nächste Frage immer warum. Die öffentlichen Nachrichten rund um die eigene Branche und Wettbewerber neben der Kennzahl zu verfolgen, ist oft die halbe Antwort.</li>
+    </ol>
+
+    <h2>Die Zahlen nicht gegen Komfort eintauschen</h2>
+    <p>Es lohnt sich, das klar zu sagen – denn im Eifer, ein Dashboard aufs Smartphone zu bringen, wird es leicht übersehen: Viele mobile BI-Tools funktionieren, indem sie sich zwischen den Nutzer und seine Daten setzen. Abfragen und Ergebnisse werden über die Server eines Anbieters geleitet – und manchmal dort zwischengespeichert. Für ein Marketing-Dashboard mag das akzeptabel sein. Für Umsatz, Personalstand oder alles unter NDA ist es eine stille Ausweitung des Personenkreises, der die sensibelsten Zahlen einsehen kann.</p>
+    <p>Das sicherere Muster ist das unspektakuläre: eine mobile Schicht, die sich <em>direkt</em> mit der bereits vertrauten Instanz verbindet, Zugangsdaten im sicheren Gerätespeicher ablegt und Zusammenfassungen auf dem Gerät selbst erstellt, anstatt die Zahlen zur Verarbeitung wegzuschicken. Komfort und Vertraulichkeit stehen eigentlich nicht im Widerspruch – man muss nur auf beiden bestehen.</p>
+
+    <h2>Das Fazit</h2>
+    <p>Metabase ist hervorragend darin, Menschen zu ermöglichen, Fragen an ihre Daten zu stellen. Was es allein nicht kann: einem aus dem Büro folgen. Die Lösung ist kein kleineres Dashboard – es ist eine völlig andere Form: ein paar Zahlen, die einen finden, Benachrichtigungen, die auslösen, wenn sich wirklich etwas verändert, und ein Blick, der schneller ist als das Öffnen eines Laptops. Das letzte Stück richtig umgesetzt, und das Dashboard, das man gebaut hat, tut endlich das, wofür man es gebaut hat.</p>
+
+    <div class="blog-footer-cta">
+      <h3>Metabase-Zahlen immer dabei haben?</h3>
+      <p>Dashpocket verwandelt Ihre Dashboards in übersichtliche Diagramme und Push-Benachrichtigungen – rein-lesend, privat und vollständig auf Ihrem Gerät.</p>
+      <a href="https://apps.apple.com/gb/app/dashpocket/id6783310367" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Dashpocket im App Store laden</a>
+    </div>
+    <footer>
+      <p>© 2026 Blue Flame Games · <a href="../../">BFG Home</a> · <a href="../../#blog">Weitere Artikel</a> · <a href="../../privacy.html">Datenschutz</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
