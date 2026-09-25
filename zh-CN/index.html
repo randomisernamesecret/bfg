@@ -179,6 +179,8 @@
     .coming-card h3 a { color: var(--heading); text-decoration: none; }
     .coming-card h3 a:hover { color: var(--accent); }
     .coming-card .card-desc { font-size: 14px; line-height: 1.55; color: var(--text-muted); margin: 0; }
+    .coming-card.has-icon { display: flex; gap: 18px; align-items: flex-start; }
+    .coming-card .coming-icon { width: 72px; height: 72px; border-radius: 16px; flex: none; box-shadow: var(--shadow-sm); }
 
     /* Mobile */
     @media (max-width: 900px) {
@@ -318,7 +320,8 @@
       { "@type": "SoftwareApplication", "name": "Dashpocket", "url": "https://bfgapps.co/apps/dashpocket/" },
       { "@type": "SoftwareApplication", "name": "Merge Monsters", "url": "https://bfgapps.co/apps/mergebash/" },
       { "@type": "SoftwareApplication", "name": "Keystrike", "url": "https://bfgapps.co/apps/keystrike/" },
-      { "@type": "SoftwareApplication", "name": "Pen Licence", "url": "https://bfgapps.co/apps/penlicence/" }
+      { "@type": "SoftwareApplication", "name": "Pen Licence", "url": "https://bfgapps.co/apps/penlicence/" },
+      { "@type": "SoftwareApplication", "name": "Fare Wars", "url": "https://bfgapps.co/apps/farewars/" }
     ]
   }
   </script>
@@ -368,6 +371,9 @@
             <a href="/apps/mergebash/">Merge Monsters</a>
             <a href="/apps/cardbash/">Card Bash</a>
             <a href="/apps/dashpocket/">Dashpocket</a>
+            <hr>
+            <div class="menu-label">即将推出</div>
+            <a href="/zh-CN/apps/farewars/">Fare Wars</a>
           </div>
         </div>
         <a href="#blog">博客</a>
@@ -565,6 +571,23 @@
     </article>
 
   </section>
+
+  <!-- Coming soon -->
+  <div class="section-head">
+    <h2>即将推出</h2>
+    <span class="head-tag">开发中</span>
+  </div>
+  <section class="coming-grid">
+    <article class="coming-card has-icon">
+      <img class="coming-icon" src="/assets/farewars/icon-256.webp" alt="Fare Wars 应用图标" loading="lazy">
+      <div>
+        <div class="card-cat">游戏</div>
+        <h3><a href="/zh-CN/apps/farewars/">Fare Wars</a></h3>
+        <p class="card-desc">和对手巴士抢下每一位乘客。在色彩缤纷的河畔之城 Rivergate 展开街机巴士竞速，还有头目竞速、修复名车车库和涂装工坊。即将登陆 iPhone 和 iPad。</p>
+      </div>
+    </article>
+  </section>
+
   <!-- Blog -->
   <section class="blog-section" id="blog">
     <div class="container">

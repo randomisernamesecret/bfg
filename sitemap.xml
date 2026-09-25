@@ -25,6 +25,10 @@
   <url><loc>https://bfgapps.co/apps/custoda/privacy.html</loc><lastmod>2026-07-08</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/custoda/support.html</loc><lastmod>2026-07-08</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/custoda/terms.html</loc><lastmod>2026-07-08</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bfgapps.co/apps/farewars/</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://bfgapps.co/apps/farewars/privacy.html</loc><lastmod>2026-09-25</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://bfgapps.co/apps/farewars/support.html</loc><lastmod>2026-09-25</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://bfgapps.co/apps/farewars/terms.html</loc><lastmod>2026-09-25</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bfgapps.co/apps/mergebash/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://bfgapps.co/apps/mergebash/privacy.html</loc><lastmod>2026-06-03</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://bfgapps.co/apps/mergebash/support.html</loc><lastmod>2026-06-03</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
@@ -479,4 +483,9 @@
   <url><loc>https://bfgapps.co/zh-CN/apps/penlicence/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bfgapps.co/zh-CN/apps/photoflight/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://bfgapps.co/zh-CN/apps/sparks-studios/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bfgapps.co/de/apps/farewars/</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bfgapps.co/es/apps/farewars/</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bfgapps.co/fr/apps/farewars/</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bfgapps.co/ja/apps/farewars/</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bfgapps.co/zh-CN/apps/farewars/</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

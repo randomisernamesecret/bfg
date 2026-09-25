@@ -178,6 +178,8 @@
     .coming-card h3 a { color: var(--heading); text-decoration: none; }
     .coming-card h3 a:hover { color: var(--accent); }
     .coming-card .card-desc { font-size: 14px; line-height: 1.55; color: var(--text-muted); margin: 0; }
+    .coming-card.has-icon { display: flex; gap: 18px; align-items: flex-start; }
+    .coming-card .coming-icon { width: 72px; height: 72px; border-radius: 16px; flex: none; box-shadow: var(--shadow-sm); }
 
     /* Mobile */
     @media (max-width: 900px) {
@@ -331,7 +333,8 @@
       { "@type": "SoftwareApplication", "name": "Merge Monsters", "url": "https://bfgapps.co/apps/mergebash/" },
       { "@type": "SoftwareApplication", "name": "Keystrike", "url": "https://bfgapps.co/apps/keystrike/" },
       { "@type": "SoftwareApplication", "name": "Pen Licence", "url": "https://bfgapps.co/apps/penlicence/" },
-      { "@type": "SoftwareApplication", "name": "Dashpocket", "url": "https://bfgapps.co/apps/dashpocket/" }
+      { "@type": "SoftwareApplication", "name": "Dashpocket", "url": "https://bfgapps.co/apps/dashpocket/" },
+      { "@type": "SoftwareApplication", "name": "Fare Wars", "url": "https://bfgapps.co/apps/farewars/" }
     ]
   }
   </script>
@@ -382,6 +385,9 @@
             <a href="/apps/cardbash/">Card Bash</a>
             <a href="/apps/custoda/">Custoda</a>
             <a href="/apps/dashpocket/">Dashpocket</a>
+            <hr>
+            <div class="menu-label">Coming Soon</div>
+            <a href="/apps/farewars/">Fare Wars</a>
           </div>
         </div>
         <a href="#blog">Blog</a>
@@ -588,6 +594,22 @@
       </div>
     </article>
 
+  </section>
+
+  <!-- Coming soon -->
+  <div class="section-head">
+    <h2>Coming soon</h2>
+    <span class="head-tag">In development</span>
+  </div>
+  <section class="coming-grid">
+    <article class="coming-card has-icon">
+      <img class="coming-icon" src="/assets/farewars/icon-256.webp" alt="Fare Wars app icon" loading="lazy">
+      <div>
+        <div class="card-cat">Games</div>
+        <h3><a href="/apps/farewars/">Fare Wars</a></h3>
+        <p class="card-desc">Race rival buses for every fare. Arcade bus racing through Rivergate, a colourful river city, with boss races, a garage of restored buses and a paint shop. Coming soon to iPhone &amp; iPad.</p>
+      </div>
+    </article>
   </section>
 
   <!-- Transparency -->
