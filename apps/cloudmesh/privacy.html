@@ -93,9 +93,9 @@
       <li><strong>Barometric readings</strong> — pressure, coordinates, altitude. Retained for 6 hours for the mesh network.</li>
       <li><strong>Weather reports</strong> — conditions and location. Retained for 24 hours.</li>
       <li><strong>Seismic events</strong> — acceleration and confidence. Retained for 1 hour. Beta feature.</li>
-      <li><strong>Push tokens</strong> — device token and approximate location. Stored until expiration.</li>
+      <li><strong>Push tokens</strong> — device token and location for alerts. The precise location (about 250 m) is kept for at most 6 hours; after that only an approximate area (about 10 km) is kept, for up to 30 days, so alerts keep working. Removed when you turn off all alerts.</li>
     </ul>
-    <p>Location used for weather display is not transmitted except within the above readings.</p>
+    <p>Location used for weather display is sent only as a coarsened weather lookup and is not stored except as described above. On your devices, your precise location is kept for up to 6 hours; after that only an approximate area (about 10 km) is kept, for up to 30 days, so widgets, your Apple Watch and rain alerts keep updating when you haven't opened the app.</p>
 
     <h2>Data We Do NOT Collect</h2>
     <ul>
@@ -112,7 +112,7 @@
     <p>No login is required. Non-persistent random IDs are used. Location is coarsened. Data types are isolated. Data is auto-purged within hours — only aggregates persist.</p>
 
     <h2>Push Notifications</h2>
-    <p>Your push token and approximate location are stored on our server. No identity is linked. Disable push notifications via iOS Settings.</p>
+    <p>Your push token and location are stored on our server only to send alerts for your area: the precise location for at most 6 hours, then an approximate area (about 10 km) for up to 30 days. No identity is linked. Turning off all alerts in the app removes the registration; you can also disable notifications in iOS Settings.</p>
 
     <h2>Third-Party Services</h2>
     <ul>
