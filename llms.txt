@@ -11,7 +11,7 @@
 ## Apps
 
 - Kanesh: https://bfgapps.co/apps/kanesh/ — Source-linked financial data terminal with on-device AI. SEC filings, 53 countries, Congress stock tracker. Bloomberg alternative for mobile.
-- Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ exam preparation covering English, Verbal Reasoning, Non-Verbal Reasoning, and the Language Aptitude Test. Adaptive difficulty, unlimited questions.
+- Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights. No account; data stays on the device. 7-day free trial, then a one-time unlock.
 - Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation.
 - Sparks Studio: https://bfgapps.co/apps/sparks-studios/ — Family creative studio and coloring book for kids and grown-ups. 146 pages to color (by hand or by number), draw-and-animate, storybooks, music. No ads, no accounts, nothing leaves the device.
 - PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed.
