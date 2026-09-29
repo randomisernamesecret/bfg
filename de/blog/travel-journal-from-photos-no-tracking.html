@@ -40,6 +40,7 @@
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
     "datePublished": "2026-04-11",
+    "dateModified": "2026-09-29",
     "inLanguage": "de-DE"
   }
   </script>
@@ -145,8 +146,8 @@
 
     <h2>Der Datenschutzfall für fotobasiertes Reise-Tracking</h2>
     <p>Wenn man einen dauerhaften GPS-Tracker verwendet, erzeugt man einen kontinuierlichen Strom von Standortdaten und sendet ihn an die Server eines Unternehmens. Diese Daten offenbaren mehr als nur den Urlaubsplan. Sie offenbaren Schlafgewohnheiten (wenn man nachts aufhört, sich zu bewegen), tägliche Routinen (wenn man die App zu Hause verwendet) und den Echtzeit-Aufenthaltsort in sensiblen Momenten.</p>
-    <p>Das ist kein theoretisches Anliegen. Standortdaten waren wiederholt in realen Datenschutzvorfällen involviert. Im Jahr 2018 enthüllte Stravas globale Heatmap versehentlich die Standorte und Patrouillenrouten von Militärstützpunkten, indem sie zeigte, wo Soldaten mit GPS-Uhren liefen. Im Jahr 2023 zeigten Forscher, dass anonymisierte Standortdatensätze mit überraschender Leichtigkeit de-anonymisiert werden können – nur vier raumzeitliche Datenpunkte reichten aus, um 95 % der Personen in einem Datensatz von 1,5 Millionen Menschen eindeutig zu identifizieren.</p>
-    <p>Fotobasiertes Reise-Tracking umgeht das vollständig. Die GPS-Daten in den Fotos müssen das Gerät nie verlassen. Eine App, die EXIF-Daten lokal liest, kann eine vollständige Reisekarte erstellen, ohne eine einzige Netzwerkanfrage zu stellen.</p>
+    <p>Das ist kein theoretisches Anliegen. Standortdaten waren wiederholt in realen Datenschutzvorfällen involviert. Im Jahr 2018 enthüllte Stravas globale Heatmap versehentlich die Standorte und Patrouillenrouten von Militärstützpunkten, indem sie zeigte, wo Soldaten mit GPS-Uhren liefen. Im Jahr 2013 zeigten Forscher, dass anonymisierte Standortdatensätze mit überraschender Leichtigkeit de-anonymisiert werden können – nur vier raumzeitliche Datenpunkte reichten aus, um 95 % der Personen in einem Datensatz von 1,5 Millionen Menschen eindeutig zu identifizieren (de Montjoye et al., <em>Scientific Reports</em>).</p>
+    <p>Fotobasiertes Reise-Tracking umgeht das vollständig. Die GPS-Daten in den Fotos müssen das Gerät nie verlassen. Eine App, die diese Daten auf dem Handy liest, kann die Reisekarte erstellen, ohne die Fotos irgendwohin zu senden.</p>
     <div class="callout">
       <strong>Wichtiger Hinweis:</strong> Während EXIF-Daten in Fotos privat sind, solange sie auf dem Gerät bleiben, sollte man beim direkten Teilen von Fotos vorsichtig sein. Messaging-Apps wie WhatsApp und Signal entfernen EXIF-Daten vor dem Senden, aber das Teilen per E-Mail oder das Hochladen auf manche Websites kann sie erhalten. Auf dem iPhone kann man Standortdaten vor dem Teilen entfernen, indem man in der Teilen-Ansicht oben auf „Optionen" tippt und „Standort" deaktiviert.
     </div>
@@ -174,7 +175,7 @@
     <ul>
       <li><strong>Standortdienste für die Kamera aktivieren.</strong> Das ist das Fundament. Auf dem iPhone: Einstellungen, Datenschutz &amp; Sicherheit, Ortungsdienste, und sicherstellen, dass die Kamera-App auf „Beim Verwenden der App" eingestellt ist.</li>
       <li><strong>Bewusst Fotos an Schlüsselmomenten aufnehmen.</strong> Man muss nicht alles fotografieren, aber ein Foto bei der Ankunft, an jedem wichtigen Halt und beim Abendessen gibt ein solides Grundgerüst für den Tag.</li>
-      <li><strong>Ein Tool auf dem Gerät verwenden, um die Daten zu verarbeiten.</strong> Apps wie <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">PhotoFlight</a> scannen die Fotobibliothek lokal, extrahieren die GPS-Metadaten und erstellen eine Reisekarte ohne Netzwerkaktivität. Standortdaten verlassen das Gerät nie.</li>
+      <li><strong>Ein Tool auf dem Gerät verwenden, um die Daten zu verarbeiten.</strong> Apps wie <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">PhotoFlight</a> lesen die Fotobibliothek auf dem Gerät und erstellen daraus eine Reisekarte, ohne Tracking im Hintergrund und ohne Konto. Die Fotos werden nie hochgeladen; nur Ortsnamen und Karten kommen von Apple-Diensten.</li>
       <li><strong>EXIF-Daten vor dem externen Teilen von Fotos entfernen.</strong> Dieselben GPS-Daten, die die Reisekarte nützlich machen, sind ein Datenschutzrisiko, wenn man Fotos per E-Mail teilt oder in Foren hochlädt.</li>
       <li><strong>Die ursprünglichen Fotodateien aufbewahren.</strong> Einige Bearbeitungs- und Freigabetools entfernen EXIF-Daten. Ein unbearbeitetes Backup der Originale sollte erhalten bleiben.</li>
     </ul>
@@ -186,13 +187,14 @@
 
     <h2>Verwandte Artikel</h2>
     <ul class="related-posts">
-      <li><a href="/de/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps: Welche Reise-Tracking-App sollte man nutzen?</a></li>
+      <li><a href="/de/blog/photoflight-vs-polarsteps-2026.html">PhotoFlight vs. Polarsteps (2026): Live-Tracking unterwegs oder Reisekarte aus deinen Fotos?</a></li>
       <li><a href="/de/blog/travel-map-from-photos.html">Reisekarte aus Smartphone-Fotos erstellen</a></li>
+      <li><a href="/de/blog/best-travel-tracking-apps-iphone-2026.html">Die besten Reise-Tracking-Apps für das iPhone 2026</a></li>
     </ul>
 
     <div class="blog-footer-cta">
       <h3>Die eigenen Fotos wissen bereits, wo man war</h3>
-      <p>PhotoFlight erstellt die Reisekarte aus vorhandenen Fotos, vollständig auf dem Gerät. Kein Tracking, keine Konten, keine geteilten Daten.</p>
+      <p>PhotoFlight erstellt die Reisekarte aus den Fotos, die man schon hat. Kein Live-Tracking, kein Konto, und der Reiseverlauf bleibt auf dem Gerät.</p>
       <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" class="btn btn-primary" target="_blank" rel="noopener noreferrer">PhotoFlight im App Store laden</a>
     </div>
     <footer>

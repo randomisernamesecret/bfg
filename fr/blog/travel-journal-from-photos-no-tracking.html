@@ -39,7 +39,8 @@
     "description": "Vos photos contiennent déjà un enregistrement complet de vos voyages. Découvrez comment fonctionnent les données GPS EXIF, pourquoi vous n'avez pas besoin d'une géolocalisation permanente, et comment l'analyse de photos en local peut reconstruire des voyages entiers en toute confidentialité.",
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
-    "datePublished": "2026-04-11"
+    "datePublished": "2026-04-11",
+    "dateModified": "2026-09-29"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,8 +146,8 @@
 
     <h2>L'argument pour la confidentialité du suivi basé sur les photos</h2>
     <p>Lorsque vous utilisez un traceur GPS permanent, vous générez un flux continu de données de localisation et les envoyez aux serveurs d'une société. Ces données révèlent plus que votre itinéraire de vacances. Elles révèlent vos habitudes de sommeil (quand vous cessez de bouger la nuit), votre routine quotidienne (si vous utilisez l'application chez vous) et votre position en temps réel lors de moments sensibles. La société qui détient ces données dispose d'une carte détaillée de vos mouvements qui va au-delà de ce que la plupart des gens ont l'intention de partager.</p>
-    <p>Ce n'est pas une préoccupation théorique. Les données de localisation ont été impliquées dans de réels incidents de confidentialité à plusieurs reprises. En 2018, la carte thermique mondiale de Strava a révélé par inadvertance les emplacements et les itinéraires de patrouille de bases militaires en montrant où des soldats couraient avec des montres GPS. En 2023, des chercheurs ont démontré que des ensembles de données de localisation anonymisées pouvaient être désanonymisés avec une facilité surprenante — aussi peu que quatre points de données spatiotemporels suffisaient à identifier de manière unique 95 % des individus dans un ensemble de 1,5 million de personnes (de Montjoye et al., <em>Nature Scientific Reports</em>).</p>
-    <p>Le suivi basé sur les photos contourne entièrement ce problème. Les données GPS de vos photos n'ont jamais besoin de quitter votre appareil. Une application qui lit les données EXIF localement peut créer votre carte de voyage complète sans effectuer une seule requête réseau. Votre historique de voyage n'existe que sur votre téléphone, sous votre contrôle, inaccessible à quiconque à moins que vous ne choisissiez de le partager.</p>
+    <p>Ce n'est pas une préoccupation théorique. Les données de localisation ont été impliquées dans de réels incidents de confidentialité à plusieurs reprises. En 2018, la carte thermique mondiale de Strava a révélé par inadvertance les emplacements et les itinéraires de patrouille de bases militaires en montrant où des soldats couraient avec des montres GPS. En 2013, des chercheurs ont démontré que des ensembles de données de localisation anonymisées pouvaient être désanonymisés avec une facilité surprenante — aussi peu que quatre points de données spatiotemporels suffisaient à identifier de manière unique 95 % des individus dans un ensemble de 1,5 million de personnes (de Montjoye et al., <em>Scientific Reports</em>).</p>
+    <p>Le suivi basé sur les photos contourne entièrement ce problème. Les données GPS de vos photos n'ont jamais besoin de quitter votre appareil. Une application qui lit ces données sur votre téléphone peut créer votre carte de voyage sans envoyer vos photos nulle part. Votre historique de voyage n'existe que sur votre téléphone, sous votre contrôle, inaccessible à quiconque à moins que vous ne choisissiez de le partager.</p>
     <p>Il y a aussi un avantage de confidentialité plus subtil. Le suivi GPS permanent crée des données qui n'existaient pas auparavant — un journal détaillé de vos mouvements qui n'existerait pas sans l'application. Le suivi basé sur les photos, en revanche, fonctionne avec des données qui existent déjà dans des fichiers que vous possédez déjà. Il ne crée pas de nouvelles données de surveillance. Il lit ce qui est déjà là.</p>
     <div class="callout">
       <strong>À noter :</strong> Bien que les données EXIF de vos photos soient privées tant qu'elles restent sur votre appareil, soyez prudent lorsque vous partagez des photos directement. Des applications de messagerie comme WhatsApp et Signal suppriment les données EXIF avant l'envoi, mais partager par e-mail ou télécharger sur certains sites web peut les conserver. Sur iPhone, vous pouvez supprimer les données de localisation avant de partager en appuyant sur « Options » en haut de la feuille de partage et en désactivant Localisation.
@@ -176,7 +177,7 @@
     <ul>
       <li><strong>Activez les services de localisation pour votre appareil photo.</strong> C'est la base. Sur iPhone, allez dans Réglages, Confidentialité et sécurité, Services de localisation, et assurez-vous que l'application Appareil photo est réglée sur « Lors de l'utilisation ». Cela garantit que chaque photo reçoit des coordonnées GPS.</li>
       <li><strong>Prenez des photos intentionnellement aux moments clés.</strong> Vous n'avez pas besoin de tout photographier, mais une photo à l'arrivée, à chaque étape principale et au dîner vous donne un squelette solide pour la journée. Considérez chaque photo comme un point de données dans votre journal de voyage, pas seulement comme un souvenir.</li>
-      <li><strong>Utilisez un outil local pour traiter les données.</strong> Des applications comme <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">PhotoFlight</a> scannent votre bibliothèque de photos en local, extraient les métadonnées GPS et créent une carte de voyage sans aucune activité réseau. Vos données de localisation ne quittent jamais votre appareil.</li>
+      <li><strong>Utilisez un outil local pour traiter les données.</strong> Des applications comme <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">PhotoFlight</a> lisent votre photothèque sur votre appareil et en tirent une carte de voyage, sans suivi en arrière-plan ni compte. Vos photos ne sont jamais envoyées ; seuls les noms de lieux et les cartes proviennent des services Apple.</li>
       <li><strong>Supprimez les données EXIF avant de partager des photos en externe.</strong> Les mêmes données GPS qui rendent votre carte de voyage utile constituent un risque pour la vie privée si vous partagez des photos par e-mail ou les téléchargez sur des forums. Supprimez les données de localisation avant de partager.</li>
       <li><strong>Conservez vos fichiers photos originaux.</strong> Certains outils d'édition et de partage suppriment les données EXIF. Gardez une sauvegarde non éditée de vos originaux pour que les métadonnées GPS soient préservées pour une utilisation future.</li>
     </ul>
@@ -189,14 +190,14 @@
 
     <h2>Articles connexes</h2>
     <ul class="related-posts">
-      <li><a href="/fr/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps : quelle application choisir ?</a></li>
+      <li><a href="/fr/blog/photoflight-vs-polarsteps-2026.html">PhotoFlight vs Polarsteps (2026) : suivi de voyage en direct ou carte créée à partir de vos photos ?</a></li>
       <li><a href="/fr/blog/travel-map-from-photos.html">Comment créer une carte de voyage à partir de vos photos</a></li>
-      <li><a href="/fr/blog/best-travel-tracking-apps-2026.html">Meilleures applications de suivi de voyage en 2026</a></li>
+      <li><a href="/fr/blog/best-travel-tracking-apps-iphone-2026.html">Les meilleures applications de suivi de voyage pour iPhone en 2026</a></li>
     </ul>
 
     <div class="blog-footer-cta">
       <h3>Vos photos savent déjà où vous avez été</h3>
-      <p>PhotoFlight crée votre carte de voyage à partir de vos photos existantes, entièrement sur votre appareil. Pas de suivi, pas de comptes, aucune donnée partagée.</p>
+      <p>PhotoFlight crée votre carte de voyage à partir des photos que vous avez déjà. Sans suivi en direct, sans compte, et votre historique de voyage reste sur votre appareil.</p>
       <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Télécharger PhotoFlight sur l'App Store</a>
     </div>
     <footer>

@@ -39,7 +39,8 @@
     "description": "Your photos already contain a complete travel record. Learn how EXIF GPS data works, why you don't need always-on location tracking, and how on-device photo analysis can reconstruct entire trips privately.",
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
-    "datePublished": "2026-04-11"
+    "datePublished": "2026-04-11",
+    "dateModified": "2026-09-29"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,8 +146,8 @@
 
     <h2>The Privacy Case for Photo-Based Travel Tracking</h2>
     <p>When you use an always-on GPS tracker, you are generating a continuous stream of location data and sending it to a company's servers. This data reveals more than just your holiday itinerary. It reveals your sleep patterns (when you stop moving at night), your daily routine (if you use the app at home), and your real-time whereabouts during sensitive moments. The company holding this data has a detailed map of your movements that goes beyond what most people intend to share.</p>
-    <p>This is not a theoretical concern. Location data has been involved in real-world privacy incidents repeatedly. In 2018, Strava's global heatmap inadvertently revealed the locations and patrol routes of military bases by showing where soldiers were running with GPS watches. In 2023, researchers demonstrated that anonymised location data sets could be de-anonymised with surprising ease — as few as four spatiotemporal data points were enough to uniquely identify 95% of individuals in a data set of 1.5 million people (de Montjoye et al., <em>Nature Scientific Reports</em>).</p>
-    <p>Photo-based travel tracking sidesteps this entirely. The GPS data in your photos never needs to leave your device. An app that reads EXIF data locally can build your complete travel map without making a single network request. Your travel history exists only on your phone, under your control, accessible to no one else unless you choose to share it.</p>
+    <p>This is not a theoretical concern. Location data has been involved in real-world privacy incidents repeatedly. In 2018, Strava's global heatmap inadvertently revealed the locations and patrol routes of military bases by showing where soldiers were running with GPS watches. In 2013, researchers demonstrated that anonymised location data sets could be de-anonymised with surprising ease — as few as four spatiotemporal data points were enough to uniquely identify 95% of individuals in a data set of 1.5 million people (de Montjoye et al., <em>Scientific Reports</em>).</p>
+    <p>Photo-based travel tracking sidesteps this entirely. The GPS data in your photos never needs to leave your device. An app that reads this data on your phone can build your travel map without sending your photos anywhere. Your travel history exists only on your phone, under your control, accessible to no one else unless you choose to share it.</p>
     <p>There is also a subtler privacy advantage. Always-on GPS tracking creates data that did not previously exist — a detailed log of your movements that would not exist without the app. Photo-based tracking, by contrast, works with data that already exists in files you already have. It does not create new surveillance data. It reads what is already there.</p>
     <div class="callout">
       <strong>Worth noting:</strong> While EXIF data in your photos is private as long as it stays on your device, be careful when sharing photos directly. Messaging apps like WhatsApp and Signal strip EXIF data before sending, but sharing via email or uploading to some websites may preserve it. On iPhone, you can remove location data before sharing by tapping "Options" at the top of the Share sheet and toggling off Location.
@@ -176,7 +177,7 @@
     <ul>
       <li><strong>Enable location services for your camera.</strong> This is the foundation. On iPhone, go to Settings, Privacy and Security, Location Services, and ensure the Camera app is set to "While Using." This guarantees every photo gets GPS coordinates.</li>
       <li><strong>Take photos intentionally at key moments.</strong> You do not need to photograph everything, but a photo at arrival, at each major stop, and at dinner gives you a solid skeleton for the day. Think of each photo as a data point in your travel log, not just a memory.</li>
-      <li><strong>Use an on-device tool to process the data.</strong> Apps like <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">PhotoFlight</a> scan your photo library locally, extract the GPS metadata, and build a travel map without any network activity. Your location data never leaves your device.</li>
+      <li><strong>Use an on-device tool to process the data.</strong> Apps like <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" target="_blank" rel="noopener noreferrer">PhotoFlight</a> read your photo library on your device and build a travel map from it, with no background tracking and no account. Your photos are never uploaded; only place names and maps come from Apple's services.</li>
       <li><strong>Strip EXIF data before sharing photos externally.</strong> The same GPS data that makes your travel map useful is a privacy risk if you share photos via email or upload them to forums. Remove location data before sharing.</li>
       <li><strong>Keep your original photo files.</strong> Some editing and sharing tools strip EXIF data. Maintain an unedited backup of your originals so the GPS metadata is preserved for future use.</li>
     </ul>
@@ -189,14 +190,14 @@
 
     <h2>Related Articles</h2>
     <ul class="related-posts">
-      <li><a href="/blog/photoflight-vs-polarsteps.html">PhotoFlight vs Polarsteps: Which Travel Tracking App Should You Use?</a></li>
+      <li><a href="/blog/photoflight-vs-polarsteps-2026.html">PhotoFlight vs Polarsteps (2026): Live Travel Tracking or a Map From Your Photos?</a></li>
       <li><a href="/blog/travel-map-from-photos.html">How to Build a Travel Map From Your Phone Photos</a></li>
-      <li><a href="/blog/best-travel-tracking-apps-2026.html">Best Travel Tracking Apps in 2026</a></li>
+      <li><a href="/blog/best-travel-tracking-apps-iphone-2026.html">Best Travel Tracking Apps for iPhone in 2026</a></li>
     </ul>
 
     <div class="blog-footer-cta">
       <h3>Your photos already know where you have been</h3>
-      <p>PhotoFlight builds your travel map from your existing photos, entirely on-device. No tracking, no accounts, no data shared.</p>
+      <p>PhotoFlight builds your travel map from the photos you already have. No live tracking, no account, and your travel history stays on your device.</p>
       <a href="https://apps.apple.com/gb/app/photoflight/id6761143528" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download PhotoFlight on the App Store</a>
     </div>
     <footer>
