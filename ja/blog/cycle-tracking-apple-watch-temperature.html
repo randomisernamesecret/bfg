@@ -39,7 +39,8 @@
     "description": "Apple Watch Series 8以降には手首体温センサーが搭載されており、排卵の確認に役立ちます。",
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
-    "datePublished": "2026-03-26"
+    "datePublished": "2026-03-26",
+    "dateModified": "2026-09-29"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,13 +116,11 @@
     <h2>どのApple Watchモデルが体温センサーに対応しているか</h2>
     <p>すべてのApple Watchに手首体温センサーが搭載されているわけではありません。対応しているモデルは以下のとおりです。</p>
     <ul>
-      <li><strong>Apple Watch Series 8</strong>（2022年）</li>
-      <li><strong>Apple Watch Series 9</strong>（2023年）</li>
-      <li><strong>Apple Watch Series 10</strong>（2024年）</li>
-      <li><strong>Apple Watch Ultra</strong>（2022年）</li>
-      <li><strong>Apple Watch Ultra 2</strong>（2023年、2024年改訂版）</li>
+      <li><strong>Apple Watch Series 8</strong>（2022年）以降のすべてのSeriesモデル</li>
+      <li><strong>Apple Watch Ultra</strong>：全モデル</li>
+      <li><strong>Apple Watch SE 3</strong>（2025年）</li>
     </ul>
-    <p>Apple Watch SEには体温センサーが搭載されていません。生理周期トラッキングを目的にApple Watchを購入する場合は、上記のモデルのいずれかを選ぶようにしてください。</p>
+    <p>それ以前のApple Watch SEモデルには体温センサーが搭載されていません。生理周期トラッキングを目的にApple Watchを購入する場合は、上記のモデルのいずれかを選ぶようにしてください。</p>
 
     <h2>センサーが実際に計測するもの</h2>
     <p>Apple Watchは2つの体温センサーを使用しています。肌に触れるケース背面のセンサーと、ディスプレイ直下で周囲の温度を計測するセンサーです。両方を比較することで、0.1度セルシウスの精度で手首の体温を算出します。</p>
@@ -165,9 +164,9 @@
     <p>証拠は手首体温が生理周期トラッキングにとって意味のある生理的シグナルであることを支持していますが、手首体温単独で事前に排卵を確実に予測できることを示した研究はありません。</p>
 
     <h2>サードパーティアプリが体温データにアクセスする方法</h2>
-    <p>AppleはHealthKitを通じてサードパーティアプリに手首体温データを提供しています。許可を要求したアプリは夜間の手首体温偏差を読み取り、独自のアルゴリズムで活用できます。</p>
+    <p>Appleは「ヘルスケア」アプリを通じて、サードパーティアプリにも手首体温データを提供しています。アクセスを許可したアプリは夜間の手首体温偏差を読み取り、独自のアルゴリズムで活用できます。</p>
     <p>これは重要な点です。サードパーティアプリは手首体温を子宮頸管粘液の観察、LHテスト結果、心拍変動などの他のデータポイントと組み合わせて、体温単独よりも完全な全体像を構築できます。一部のアプリは複数のバイオマーカーでトレーニングされた機械学習モデルを使用して、体温データ単独よりも早い排卵予測を試みています。</p>
-    <p>例えば<a href="https://apps.apple.com/app/cyla-cycle-period-tracker/id6467952ctl" target="_blank" rel="noopener noreferrer">Cyla</a>は、Apple Watchの手首体温データを他の周期症状やバイオマーカーと組み合わせて周期分析を提供しています。自動的な夜間体温計測と手動で記録した症状を組み合わせることで、いずれか単独のデータソースよりも詳細な周期の見方を提供できます。</p>
+    <p>例えば<a href="https://apps.apple.com/gb/app/cyla-cycle-period-track/id6760896784" target="_blank" rel="noopener noreferrer">Cyla</a>は、Apple Watchの手首体温データをあなたが記録した頸管粘液や排卵検査の結果と組み合わせて周期分析を提供しています。自動的な夜間体温計測と手動で記録した症状を組み合わせることで、いずれか単独のデータソースよりも詳細な周期の見方を提供できます。</p>
 
     <h2>体温センサーを生理周期トラッキングに有効にする方法</h2>
     <p>開始するにはいくつかの手順が必要です。</p>
@@ -175,7 +174,7 @@
       <li><strong>Apple Watchを着けて就寝する。</strong>センサーは睡眠中にのみ計測を行い、睡眠フォーカスを有効にするか自動睡眠検出をオンにする必要があります。</li>
       <li><strong>少なくとも5夜待つ。</strong>Apple Watchが意味のある偏差を報告するためにベースラインを確立する必要があります。</li>
       <li><strong>生理周期トラッキングを有効にする。</strong>iPhoneのヘルスケアアプリで「ブラウズ」から「生理周期」に移動し、設定の指示に従います。体温変化と周期を関連付けるために生理開始日を記録します。</li>
-      <li><strong>使用したいサードパーティの生理周期トラッキングアプリにHealthKitのアクセス許可を付与する。</strong>各アプリは手首体温データへのアクセスを個別に要求します。</li>
+      <li><strong>使用したいサードパーティの生理周期トラッキングアプリに「ヘルスケア」へのアクセスを許可する。</strong>各アプリは手首体温データへのアクセスを個別に要求します。</li>
     </ol>
     <p>最も正確な計測のために、Apple Watchをしっかりと（ゆるくなく）装着し、一貫した睡眠環境を維持するよう努めてください。ある夜は非常に寒い部屋で、次の夜は非常に暖かい部屋で眠ると、体温データにノイズが生じます。</p>
 
