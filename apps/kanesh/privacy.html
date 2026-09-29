@@ -86,42 +86,45 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
-    <p><strong>Privacy by design.</strong> Your queries are processed entirely on your device. We do not collect, store, or transmit your search queries to any server.</p>
+    <p><strong>Last updated: 29 September 2026.</strong></p>
+    <p><strong>Privacy by design.</strong> Kanesh has no account, no analytics, no advertising and no servers of its own. Blue Flame Games never receives your questions, watchlist, holdings, journal, theses or alerts.</p>
 
     <h2>What Stays on Your Device</h2>
     <ul>
-      <li>Search queries (processed by on-device AI)</li>
-      <li>Watchlist tickers (stored in SwiftData)</li>
-      <li>Cached financial data</li>
-      <li>API keys (stored in UserDefaults)</li>
+      <li>Your questions and recent search history</li>
+      <li>Your watchlist, position sizes, price alerts, journal entries and theses (stored in an on-device database)</li>
+      <li>Cached market and economic data</li>
+      <li>Any data-provider API keys you choose to add</li>
       <li>App preferences</li>
     </ul>
 
     <h2>What Is Transmitted</h2>
-    <p>Kanesh makes API requests to the following financial data providers to fetch market and economic data:</p>
+    <p>To show market and economic data, Kanesh requests it directly from the data providers listed below. These requests contain only what the data needs &mdash; ticker symbols, date ranges, series or currency codes &mdash; plus your API key for providers where you added one. Like any web request, the provider can see your device's IP address. No name, email, account, device identifier or location is sent.</p>
     <ul>
-      <li>SEC EDGAR</li>
-      <li>FRED (Federal Reserve Economic Data)</li>
-      <li>Alpha Vantage</li>
-      <li>Financial Modeling Prep</li>
-      <li>Financial Datasets</li>
-      <li>Yahoo Finance</li>
+      <li>Yahoo Finance (quotes, price history, search)</li>
+      <li>SEC EDGAR (company filings and financial statements)</li>
+      <li>An exchange-rate service (ExchangeRate-API), to show prices in your chosen currency</li>
+      <li>FRED, Federal Reserve Economic Data (only if you add a FRED key)</li>
+      <li>Finnhub (only if you add a Finnhub key)</li>
+      <li>Alpha Vantage, Financial Modeling Prep and Financial Datasets (only if you added their keys)</li>
     </ul>
-    <p>These requests contain only the data parameters necessary for the query (ticker symbols, date ranges, series IDs). No personal information is transmitted — no name, email, device identifier, or location data.</p>
-    <p>Kanesh contains no analytics, tracking, or advertising SDKs.</p>
+    <p>Kanesh contains no analytics, tracking or advertising SDKs.</p>
 
-    <h2>On-Device AI</h2>
-    <p>Kanesh uses a large language model that operates entirely on your device. Your questions never leave your phone.</p>
+    <h2>AI Features</h2>
+    <p>Kanesh answers questions with an AI model that runs on your device; on-device answers are never sent anywhere.</p>
+    <p>Kanesh 1.1.x also includes an optional <strong>Cloud AI</strong> mode for Pro users. It is off by default and works only if you enter your own API key for a cloud AI provider. While it is switched on, Kanesh sends that provider, under your own account and subject to its privacy policy: your question, the tickers and prices in your watchlist when you ask about your portfolio, the data shown on a result card when it summarises it, and the text of journal entries you ask it to review. Turn Cloud AI off in Settings &rarr; Data Sources to stop this at any time.</p>
 
     <h2>Third-Party Data Providers</h2>
-    <p>Financial data is sourced from third-party providers, each with their own privacy policies:</p>
+    <p>Each provider has its own privacy policy:</p>
     <ul>
+      <li><a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html">Yahoo Privacy Policy</a></li>
       <li><a href="https://www.sec.gov/privacy">SEC EDGAR Privacy Policy</a></li>
-      <li><a href="https://fred.stlouisfed.org/legal/">FRED Privacy Policy</a></li>
+      <li><a href="https://www.exchangerate-api.com/terms">ExchangeRate-API Terms</a></li>
+      <li><a href="https://fred.stlouisfed.org/legal/">FRED Legal &amp; Privacy</a></li>
+      <li><a href="https://finnhub.io/privacy-policy">Finnhub Privacy Policy</a></li>
       <li><a href="https://www.alphavantage.co/terms_of_service/">Alpha Vantage Terms of Service</a></li>
       <li><a href="https://site.financialmodelingprep.com/privacy-policy">Financial Modeling Prep Privacy Policy</a></li>
       <li><a href="https://www.financialdatasets.ai/privacy-policy">Financial Datasets Privacy Policy</a></li>
-      <li><a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html">Yahoo Finance Privacy Policy</a></li>
     </ul>
 
     <h2>Children's Privacy</h2>
