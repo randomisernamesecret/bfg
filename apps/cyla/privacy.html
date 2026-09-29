@@ -92,6 +92,7 @@
     <ul>
       <li>Cycle tracking data</li>
       <li>Daily logs (mood, symptoms)</li>
+      <li>Smart ring readings, if you pair a supported ring over Bluetooth (heart rate, blood oxygen, stress, HRV, sleep and skin temperature), read directly on your device</li>
       <li>Preferences</li>
     </ul>
     <p>All data is encrypted via iOS storage when your device locks.</p>
@@ -107,8 +108,8 @@
       <li>Zero cloud transmission</li>
     </ul>
 
-    <h2>HealthKit</h2>
-    <p>HealthKit integration is optional. Cyla can access health metrics and sync period dates. This data exchange happens entirely on your device through Apple's HealthKit framework. We never see this data.</p>
+    <h2>Apple Health</h2>
+    <p>Apple Health integration is optional. With your permission, Cyla reads sleep and Apple Watch wrist temperature from Apple Health and saves your period dates and spotting to it. If you use a smart ring, Cyla can also save the ring's sleep to Apple Health: the "Save ring sleep to Apple Health" setting is on by default, and you can turn it off in Cyla's ring screen. Ring sleep is only added for nights that have no sleep from an Apple Watch or another app. This data exchange happens entirely on your device, through Apple Health. We never see this data.</p>
 
     <h2>Payments</h2>
     <p>All payments are processed via the Apple App Store. No financial details reach Cyla.</p>
@@ -117,7 +118,7 @@
     <p>All notifications are local and device-side. No server is involved.</p>
 
     <h2>Deletion</h2>
-    <p>Delete all data from within the app's settings, or export your data as JSON. Uninstalling the app removes everything.</p>
+    <p>Delete all data from within the app's settings, or export your data as JSON. Uninstalling the app removes everything stored in the app, except the trial start date and purchase status, which are kept in the device's keychain so they survive a reinstall. Anything Cyla saved to Apple Health stays there unless you choose "Delete from Cyla and Apple Health" when deleting your data in Cyla's settings.</p>
 
     <h2>Contact</h2>
     <div class="callout">

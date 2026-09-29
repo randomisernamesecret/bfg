@@ -8,7 +8,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
   <title>PhotoFlight Privacy Policy — BFG</title>
-  <meta name="description" content="Privacy policy for PhotoFlight. All photo processing happens on your device. No data collected or transmitted.">
+  <meta name="description" content="Privacy policy for PhotoFlight. Your photos are processed on your device, and we collect none of your data.">
   <link rel="canonical" href="https://bfgapps.co/apps/photoflight/privacy.html">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -87,7 +87,7 @@
     </nav>
 
     <h2>Overview</h2>
-    <p>PhotoFlight is designed with privacy at its core. All photo processing happens entirely on your device. We do not collect, transmit, or store any of your personal data, photos, or location information.</p>
+    <p>PhotoFlight is designed with privacy at its core. Your photos are processed on your device, and we do not collect, receive, or store any of your personal data, photos, or location information. A few features use Apple's services, or an optional third-party service you set up yourself; each is described below.</p>
 
     <h2>Data We Do Not Collect</h2>
     <ul>
@@ -95,17 +95,24 @@
       <li>We do not collect GPS or location data from your photos</li>
       <li>We do not collect your travel history or trip information</li>
       <li>We do not use analytics or tracking SDKs</li>
-      <li>We do not share any data with third parties</li>
+      <li>We do not share any data with third parties; the only data that goes to outside services is what the features below send to Apple and, if you turn it on, to AviationStack</li>
     </ul>
 
     <h2>On-Device Processing</h2>
-    <p>PhotoFlight reads GPS metadata from your photo library to build your travel map. This processing happens entirely on your iPhone. No photo data, location data, or personal information ever leaves your device.</p>
+    <p>PhotoFlight reads GPS metadata from your photo library to build your travel map. This processing happens on your iPhone or iPad, and your photos are never uploaded. To show place names, PhotoFlight sends the coordinates of your photo locations to Apple's place-name lookup (reverse geocoding). Maps, and the addresses and airports you search for, are provided by Apple Maps. These requests are handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 
     <h2>Photo Library Access</h2>
-    <p>PhotoFlight requests access to your photo library to read GPS location metadata and creation dates from your photos. This data is used solely to detect your travel locations and is processed and stored locally on your device.</p>
+    <p>PhotoFlight requests access to your photo library to read GPS location metadata and creation dates from your photos. This data is used solely to detect your travel locations and is processed and stored locally on your device. When you choose to, PhotoFlight can also add or correct the location of photos in your library, or mark photos as favourites. If your photos are stored in iCloud Photos, full-size copies may be downloaded from iCloud to display or share them.</p>
 
     <h2>Location Services</h2>
-    <p>PhotoFlight may request location access to help you set your home address during setup. This is optional and the data is stored only on your device.</p>
+    <p>PhotoFlight does not use your device's current location. You set your home locations by searching for an address with Apple Maps, and they are stored only on your device.</p>
+
+    <h2>Optional Features</h2>
+    <ul>
+      <li><strong>Calendar</strong> — if you connect your calendar, PhotoFlight reads your calendar events on your device to find flight bookings and check your detected trips. It does not add or change events.</li>
+      <li><strong>Enhanced flight lookup</strong> — off by default. If you turn it on and enter your own AviationStack API key, the flight number and date of a flight found in your calendar are sent to AviationStack (api.aviationstack.com) to look up flight details. Your key is stored in your device's keychain.</li>
+      <li><strong>NFC souvenir tags</strong> — on supported iPhones, you can link an NFC tag to a trip, a country or a web album. PhotoFlight writes the trip's or country's details (such as its name, country, dates, distance and location), or the album link, to the tag, and anyone who scans the tag with a phone can read them.</li>
+    </ul>
 
     <h2>In-App Purchases</h2>
     <p>PhotoFlight offers a one-time in-app purchase processed by Apple. We do not collect or have access to your payment information. Purchase transactions are handled entirely by Apple's App Store.</p>

@@ -79,7 +79,7 @@
     <nav style="padding:28px 0;font-size:14px;color:var(--text-dim);margin-bottom:48px;border-bottom:1px solid var(--border-light)"><a href="/" style="color:var(--text-muted)">BFG</a> <span style="margin:0 8px;opacity:.4">/</span> <span style="color:var(--text-muted)">Privacy</span></nav>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 25 March 2026</p>
+    <p class="meta">Last updated: 29 September 2026</p>
 
     <p>Blue Flame Games ("BFG", "we", "us") builds privacy-first iOS apps. This policy covers both the <strong>bfgapps.co</strong> website and all BFG apps available on the Apple App Store.</p>
 
@@ -122,10 +122,8 @@
 
     <p><strong>1. Fully on-device, no network requests.</strong> These apps do not connect to the internet during normal use. All data is stored locally on the device.</p>
     <ul>
-      <li><strong>Sparks Studio</strong> — on-device AI for drawing, stories, and music</li>
-      <li><strong>PhotoFlight</strong> — reads GPS metadata from existing photos locally</li>
+      <li><strong>Sparks Studio</strong> — coloring, drawing, storybooks and music; optional AI features run on the device</li>
       <li><strong>Cyla</strong> — cycle and Apple Watch temperature data via HealthKit</li>
-      <li><strong>PaceGrid</strong> — GPS traces and training load stored locally</li>
       <li><strong>Minua</strong> — built on Apple's parental controls framework; works in airplane mode</li>
       <li><strong>Bellgrave</strong> — single-player game with no cloud saves and no telemetry</li>
     </ul>
@@ -133,15 +131,17 @@
     <p><strong>2. Network used, but no data collected from you.</strong></p>
     <ul>
       <li><strong>Kanesh</strong> — connects to public financial data sources (SEC filings, FRED, market data providers). BFG collects no data about you. The AI runs on your device.</li>
+      <li><strong>PhotoFlight</strong> — reads GPS metadata from existing photos on the device, and travel history stays on the device. Apple's services look up place names and draw maps, and an optional flight lookup sends a flight number and date to AviationStack, using your own key. BFG collects no data about you.</li>
+      <li><strong>Arithmetix</strong> and <strong>Cognithix</strong> — no account or sign-in. Children's profiles, answers and progress stay on the device. Network use is limited to Apple's App Store purchases and optional Game Center challenge scores, which are handled by Apple.</li>
     </ul>
 
     <p><strong>3. Apps that transmit limited, disclosed data.</strong></p>
     <ul>
-      <li><strong>Arithmetix</strong> and <strong>Cognithix</strong> offer optional parent accounts via Google Firebase for cross-device progress sync. A parent email is stored for authentication and aggregated learning progress is stored in the cloud. No per-question answers are uploaded. Accounts are created and managed by a parent or guardian — children cannot create accounts independently.</li>
       <li><strong>Cloudmesh Weather</strong> fetches weather data and transmits anonymous barometric readings and weather observations to support the community mesh network. Location is coarsened and no user ID is attached.</li>
+      <li><strong>PaceGrid</strong> keeps workouts and analysis on the device. It fetches map tiles from OpenFreeMap, sends the points of routes you build to Apple Maps, uploads completed GPS workouts to Strava if you connect it, and, only if you turn on heat alerts, sends an approximate location (rounded to about 10 km) to BFG's Cloudmesh weather service. No account or user ID is attached.</li>
     </ul>
 
-    <p>Apple publishes its own per-app privacy labels on the App Store. Seven BFG apps are labelled "Data Not Collected." Arithmetix is labelled "Data Linked to You" because the Firebase parent account links an email and progress to an account identifier. Cloudmesh Weather is labelled "Data Not Linked to You" for precise location and app-functionality data used by the mesh. We consider the App Store labels and this policy together the authoritative description of what each app does.</p>
+    <p>Apple publishes its own per-app privacy labels on the App Store. Fifteen of the sixteen BFG apps on the App Store are labelled "Data Not Collected." Cloudmesh Weather is labelled "Data Not Linked to You" for precise location and app-functionality data used by the mesh. We consider the App Store labels and this policy together the authoritative description of what each app does.</p>
 
     <h3>Children's privacy</h3>
     <p>Several of our apps are designed for children. All children's apps comply with:</p>
@@ -150,7 +150,7 @@
       <li>The US Children's Online Privacy Protection Act (COPPA)</li>
       <li>Apple's guidelines for Kids Category apps</li>
     </ul>
-    <p>Where accounts are used (Arithmetix, Cognithix), they are created and managed by a parent or guardian. Children cannot create accounts independently.</p>
+    <p>Arithmetix and Cognithix no longer use accounts: each is set up and controlled by a parent or guardian on the device, with purchases, settings and external links behind a parent PIN.</p>
 
     <h3>In-app purchases and subscriptions</h3>
     <p>Some apps offer in-app purchases or subscriptions through Apple's App Store. These transactions are processed entirely by Apple. We do not receive your name, email, or payment details. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> for how Apple handles purchase data.</p>
@@ -172,7 +172,7 @@
     <h2>3. Your Rights</h2>
 
     <p>Under the UK GDPR and EU GDPR, you have the right to access, correct, delete, and port your personal data. For the website and for apps that do not collect personal data, there is nothing for us to provide, correct, or delete.</p>
-    <p>For Arithmetix and Cognithix, parents can delete their account and associated progress data from within the app, which also removes it from our Firebase storage. If you need help exercising any of these rights — or have any other question about your data — contact us at <a href="mailto:blueflamegames@proton.me">blueflamegames@proton.me</a> and we will respond within 30 days.</p>
+    <p>Arithmetix and Cognithix keep their data on the device, where a parent can delete it in the app at any time. Earlier versions of both apps asked a parent to sign in and stored account and progress data in Google Firebase; we will permanently delete all cloud data held for those earlier versions, and you can email us to have yours deleted sooner, to confirm it has gone, or to receive a copy. If you need help exercising any of these rights — or have any other question about your data — contact us at <a href="mailto:blueflamegames@proton.me">blueflamegames@proton.me</a> and we will respond within 30 days.</p>
 
     <h2>4. Data Controller</h2>
 

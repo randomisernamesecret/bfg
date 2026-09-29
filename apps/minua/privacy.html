@@ -77,7 +77,7 @@
 <div class="app-hero">
       <span class="app-tag app-tag-kids">Kids</span>
       <h1>Minua</h1>
-      <p class="app-tagline">Screen time children earn through learning</p>
+      <p class="app-tagline">Earned screen time, for your child or for yourself</p>
     </div>
 
     <nav class="app-nav">
@@ -86,14 +86,15 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
-    <p>All data stays on your device. Minua has no accounts, no servers, and no cloud. We cannot see, access, or share any information about your child or their device usage.</p>
+    <p>All data stays on your device. Minua has no accounts, no servers, and no cloud. We cannot see, access, or share any information about you, your child, or how the device is used.</p>
 
     <h2>Data Stored Locally</h2>
     <ul>
-      <li>App selections (learning and fun apps chosen by the parent)</li>
+      <li>App selections (the earning and fun apps you choose)</li>
       <li>Time bank records (earned and spent minutes per day)</li>
       <li>Schedule preferences (allowed hours, earn-to-spend ratio)</li>
-      <li>Parent PIN (stored as a hash, not plaintext)</li>
+      <li>PIN (a parent PIN in child mode, optional in Myself mode; stored as a hash, not plaintext)</li>
+      <li>Trial start date and purchase status (kept in the device's keychain; see Deletion)</li>
     </ul>
     <p>All data is encrypted via iOS storage when your device locks.</p>
 
@@ -112,16 +113,13 @@
     </ul>
 
     <h2>Children's Data</h2>
-    <p>Minua is designed for parents to configure on their child's device. All child usage data (time earned, time spent) remains on the device and is never transmitted anywhere. The app does not collect names, ages, or any personal identifiers.</p>
-
-    <h2>On-Device AI</h2>
-    <p>On supported devices (iOS 26+), Minua can use Apple's on-device language model to generate personalised activity prompts. This processing happens entirely on your device using Apple's Foundation Models framework. No data is sent to any server.</p>
+    <p>Minua has two modes. In child mode, a parent sets Minua up on their child's device; in Myself mode, an adult sets it up on their own device. In both modes, usage data (time earned, time spent) remains on the device and is never transmitted anywhere. The app does not collect names, ages, or any personal identifiers.</p>
 
     <h2>Payments</h2>
     <p>Minua includes a 7-day free trial. After the trial, a one-time in-app purchase is required to continue using the app. All payments are processed via the Apple App Store. No financial details reach Minua.</p>
 
     <h2>Deletion</h2>
-    <p>Uninstalling the app removes all data permanently. There is no server-side data to delete because none exists.</p>
+    <p>Uninstalling the app permanently removes your settings, time bank records and PIN. Two small records are deliberately kept in the device's keychain so they survive a reinstall: the date your free trial started and whether you have bought the one-time unlock. They are never sent to us. There is no server-side data to delete because none exists.</p>
 
     <h2>Contact</h2>
     <div class="callout">

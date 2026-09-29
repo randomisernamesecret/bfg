@@ -8,7 +8,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
   <title>Privacy Policy — PaceGrid — BFG</title>
-  <meta name="description" content="Privacy policy for PaceGrid. Privacy-by-architecture. Your data stays on your device. No servers.">
+  <meta name="description" content="Privacy policy for PaceGrid. Privacy-by-architecture. Your data stays on your device. No PaceGrid account or server.">
   <link rel="canonical" href="https://bfgapps.co/apps/pacegrid/privacy.html">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -86,12 +86,13 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
-    <p>PaceGrid is built with privacy-by-architecture. Your data stays on your device. There are no servers.</p>
+    <p>PaceGrid is built with privacy-by-architecture. Your data stays on your device: there is no PaceGrid account, and your workouts are never uploaded to a PaceGrid server. Data leaves your device only through the connections listed under Third-Party Services below.</p>
 
     <h2>Data Stored on Device Only</h2>
     <ul>
-      <li><strong>GPS coordinates</strong> — recorded during workouts, stored locally, never leaves your device unless you explicitly share or export</li>
-      <li><strong>Health data from HealthKit</strong> — heart rate, HRV, VO2 Max, processed locally</li>
+      <li><strong>GPS coordinates</strong> — recorded during workouts and stored locally; your tracks leave your device only if you share or export them, or connect Strava (see below)</li>
+      <li><strong>Health data from Apple Health</strong> — heart rate, HRV, VO2 Max, sleep and other workout metrics, read with your permission and processed locally</li>
+      <li><strong>Heart-rate strap and smart ring data</strong> — if you pair a heart-rate strap or a supported smart ring, PaceGrid connects to it over Bluetooth and reads its data (heart rate, and from a ring also data such as blood oxygen, sleep and activity) on your device</li>
       <li><strong>Workout data</strong> — distance, duration, pace, elevation, kept locally</li>
       <li><strong>Settings and preferences</strong> — stored locally</li>
     </ul>
@@ -100,7 +101,7 @@
     <ul>
       <li>Personal identifiers</li>
       <li>No accounts required</li>
-      <li>No background location tracking</li>
+      <li>No location tracking outside the workouts you record</li>
       <li>No analytics SDKs</li>
       <li>No advertising</li>
       <li>No data monetisation</li>
@@ -108,17 +109,18 @@
 
     <h2>Third-Party Services</h2>
     <ul>
-      <li><strong>Strava</strong> — optional. Uploads completed GPX via OAuth 2.0. No credentials stored in PaceGrid.</li>
-      <li><strong>Apple HealthKit</strong> — requires explicit permission. Governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
-      <li><strong>Apple iCloud</strong> — optional sync.</li>
-      <li><strong>OpenStreetMap</strong> — map tiles only. No personal data is sent, only tile coordinates.</li>
+      <li><strong>Strava</strong> — optional. You sign in on Strava's own page (OAuth 2.0), so your Strava password never reaches PaceGrid. Once you connect Strava, each completed GPS workout's track, title, notes and sport type upload to your Strava account automatically. You can disconnect Strava in Settings at any time.</li>
+      <li><strong>Apple Health</strong> — optional and requires your permission. PaceGrid reads your Health data for its analytics, and saves your workouts, plus heart rate, blood oxygen and sleep from a connected smart ring, to Apple Health. Governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+      <li><strong>Apple Maps</strong> — route building. When you build a route, the points you place, and any place you search for, are sent to Apple Maps to calculate directions. Following a saved route works offline.</li>
+      <li><strong>Cloudmesh</strong> — optional heat alerts. Only if you turn on heat alerts in Injury Guard: during outdoor workouts, an approximate location (rounded to about 10 km) is sent to Cloudmesh, Blue Flame Games' weather service, about every 15 minutes. Nothing else about you or your workout is sent, and no account or ID is attached; like any web request, it also carries your device's IP address.</li>
+      <li><strong>OpenFreeMap</strong> — map tiles only. When a map is on screen, or you download an offline region, tiles for that area are fetched from OpenFreeMap. No personal data is sent, only tile coordinates.</li>
     </ul>
 
     <h2>Storage</h2>
     <p>Data is stored in an encrypted SQLite database on your device. GPS tracks are stored in binary format within sandboxed storage.</p>
 
     <h2>Export and Deletion</h2>
-    <p>Export your data in GPX or FIT format. Delete individual activities within the app. Uninstall the app to remove all data.</p>
+    <p>Export your data in GPX or FIT format. Delete individual activities within the app. Uninstall the app to remove all data stored on your device, except the trial start date, which is kept in the device's keychain so the free trial survives a reinstall. Copies you have uploaded to Strava or saved to Apple Health stay there until you delete them.</p>
 
     <h2>Children</h2>
     <p>PaceGrid is not directed at children under 13.</p>
