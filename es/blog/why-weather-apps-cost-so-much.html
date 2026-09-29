@@ -39,7 +39,8 @@
     "description": "Los datos meteorológicos provienen de organismos públicos, ¿por qué las apps del tiempo cobran 30-50 € al año? Dónde va realmente el dinero y cuáles son las alternativas.",
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
-    "datePublished": "2026-04-11"
+    "datePublished": "2026-04-11",
+    "dateModified": "2026-09-29"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,7 +109,7 @@
       <p class="meta">Abril 2026 · 7 min de lectura · Tiempo</p>
     </div>
 
-    <p>Hace una década, la mayoría de las apps del tiempo eran gratuitas o costaban uno o dos euros. Hoy, las más populares cobran 30-50 € al año. CARROT Weather tiene un nivel premium de casi 40 € anuales. Weather Underground eliminó sus funciones gratuitas después de que The Weather Channel lo adquiriera. Dark Sky, adorada por sus previsiones hiperlocales minuto a minuto, fue comprada por Apple y cerrada definitivamente. En Reddit, la frustración es constante: ¿por qué cuesta tanto ver si va a llover, cuando los datos subyacentes provienen de organismos públicos financiados por los contribuyentes?</p>
+    <p>Hace una década, la mayoría de las apps del tiempo eran gratuitas o costaban uno o dos euros. Hoy, las más populares cobran 30-50 € al año. El nivel superior de CARROT Weather, Premium Ultra, cuesta hasta 39,99 US$ al año. Weather Underground eliminó sus funciones gratuitas después de que The Weather Channel lo adquiriera. Dark Sky, adorada por sus previsiones hiperlocales minuto a minuto, fue comprada por Apple y cerrada definitivamente. En Reddit, la frustración es constante: ¿por qué cuesta tanto ver si va a llover, cuando los datos subyacentes provienen de organismos públicos financiados por los contribuyentes?</p>
     <p>Es una pregunta legítima. Pero la respuesta es más complicada que «desarrolladores codiciosos». Aquí es donde va realmente el dinero.</p>
 
     <h2>De dónde vienen los datos meteorológicos</h2>
@@ -139,23 +140,23 @@
     <p>Las suscripciones resuelven esto alineando los ingresos con los costes. Si la factura de la API sube, los ingresos recurrentes la cubren.</p>
 
     <h2>Las alternativas a la suscripción</h2>
-    <p><strong>Usar la propia WeatherKit de Apple.</strong> Apple ofrece WeatherKit, su API de datos meteorológicos, a los desarrolladores. Incluye 500.000 llamadas de API al mes de forma gratuita (con membresía en el Apple Developer Program), suficiente para una app de tamaño pequeño-mediano. Más allá de eso, es 0,50 $ por 1.000 llamadas.</p>
+    <p><strong>Usar el servicio de datos meteorológicos de Apple para desarrolladores.</strong> Apple ofrece a los desarrolladores su propio servicio de datos meteorológicos. La membresía de pago para desarrolladores de Apple incluye 500.000 llamadas al mes, suficiente para una app de tamaño pequeño-mediano, y por encima de esa cifra hay niveles de pago.</p>
     <p><strong>APIs meteorológicas de código abierto.</strong> Open-Meteo es una API meteorológica gratuita y de código abierto que se nutre de fuentes de datos públicos. Proporciona cobertura global sin clave de API requerida para uso no comercial. Esto reduce drásticamente el coste por usuario.</p>
     <p><strong>Caché eficiente.</strong> Las estrategias de caché inteligentes pueden reducir significativamente las llamadas de API. Los datos meteorológicos no cambian cada segundo — una previsión actualizada cada 15-30 minutos es perfectamente adecuada para la mayoría de los usuarios.</p>
 
     <div class="callout">
-      <strong>Vale la pena saber:</strong> <a href="/es/apps/cloudmesh/">Cloudmesh Weather</a> está construida sobre este modelo de compra única. Utiliza fuentes de datos eficientes y procesamiento en el dispositivo para evitar los costes recurrentes de API que fuerzan a otras apps a las suscripciones. Todo se queda en tu dispositivo, sin cuenta requerida.
+      <strong>Vale la pena saber:</strong> <a href="/es/apps/cloudmesh/">Cloudmesh Weather</a> tiene su propio servicio de previsión, que combina 39 fuentes (redes nacionales de observación, radar y modelos de previsión abiertos) en una sola previsión. Eso mantiene los costes de funcionamiento lo bastante bajos como para ofrecer una versión gratuita y un desbloqueo Premium de pago único, sin suscripción. No necesitas cuenta, y tu ubicación se usa de forma aproximada para obtener las previsiones y enviarte los avisos de lluvia.
     </div>
 
     <h2>Lo que realmente cuesta lo «gratis»</h2>
-    <p>También vale la pena considerar el coste de las apps del tiempo gratuitas que no son Apple Tiempo. The Weather Channel (propiedad de Allen Media Group) es gratuita de descargar pero se financia con publicidad agresiva. Su etiqueta de privacidad en el App Store es extensa — recopila datos de ubicación, identificadores, datos de uso y diagnósticos, gran parte de los cuales se usa para publicidad de terceros.</p>
+    <p>También vale la pena considerar el coste de las apps del tiempo gratuitas que no son Apple Tiempo. La app de The Weather Channel (publicada por The Weather Company, que IBM vendió a Francisco Partners en 2024) es gratuita de descargar pero se financia con publicidad agresiva. Su etiqueta de privacidad en el App Store es extensa — recopila datos de ubicación, identificadores, datos de uso y diagnósticos, gran parte de los cuales se usa para publicidad de terceros.</p>
     <p>AccuWeather se monetiza de manera similar a través de anuncios y recopilación de datos. Para estas apps, no eres el cliente — eres el producto. Tu dato de ubicación, comprobado varias veces al día, es extraordinariamente valioso para los anunciantes.</p>
     <p>En este contexto, pagar por una app del tiempo es en parte pagar por la ausencia de vigilancia.</p>
 
     <h2>Cómo elegir sin pagar de más</h2>
     <ul>
       <li><strong>Si Apple Tiempo es suficiente:</strong> Úsala. Es gratuita, privada y genuinamente buena en 2026.</li>
-      <li><strong>Si quieres mejores widgets:</strong> Una app de compra única se amortiza rápidamente frente a una suscripción. Busca apps que usen WeatherKit o fuentes de datos abiertas.</li>
+      <li><strong>Si quieres mejores widgets:</strong> Una app de compra única se amortiza rápidamente frente a una suscripción. Busca apps que usen el servicio de datos meteorológicos de Apple para desarrolladores o fuentes de datos abiertas.</li>
       <li><strong>Si eres un entusiasta del tiempo:</strong> Una suscripción a algo como CARROT Weather Premium puede valer genuinamente la pena si la usas múltiples veces al día.</li>
       <li><strong>Si la privacidad importa:</strong> Evita las apps gratuitas con publicidad. Usa Apple Tiempo o paga por una app que no recopile tus datos.</li>
     </ul>
@@ -168,7 +169,7 @@
 
     <div class="blog-footer-cta">
       <h3>El tiempo sin suscripción</h3>
-      <p>Cloudmesh Weather es una compra única con widgets personalizables y privacidad en el dispositivo. Sin cuenta, sin rastreo.</p>
+      <p>Cloudmesh Weather: versión gratuita, 7 días de prueba y un desbloqueo Premium de pago único. Sin suscripción, sin cuenta, sin anuncios.</p>
       <a href="/es/apps/cloudmesh/" class="btn btn-primary">Descubre Cloudmesh Weather</a>
     </div>
     <footer>

@@ -39,7 +39,8 @@
     "description": "Weather data comes from government agencies, so why do weather apps charge $5-10 per month? Here's where the money actually goes and what the alternatives are.",
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
-    "datePublished": "2026-04-11"
+    "datePublished": "2026-04-11",
+    "dateModified": "2026-09-29"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,7 +109,7 @@
       <p class="meta">April 2026 · 7 min read · Weather</p>
     </div>
 
-    <p>A decade ago, most weather apps were free or cost a dollar or two. Today, the most popular ones charge $30-50 per year. CARROT Weather's premium tier runs $39.99 annually. Weather Underground gutted its free features after The Weather Channel acquired it. Dark Sky, beloved for its hyperlocal minute-by-minute forecasts, was bought by Apple and shut down entirely. On Reddit, the frustration is constant: why does it cost so much to check if it's going to rain, when the underlying data comes from government agencies that taxpayers already fund?</p>
+    <p>A decade ago, most weather apps were free or cost a dollar or two. Today, the most popular ones charge $30-50 per year. CARROT Weather's top Premium Ultra tier runs up to $39.99 a year. Weather Underground gutted its free features after The Weather Channel acquired it. Dark Sky, beloved for its hyperlocal minute-by-minute forecasts, was bought by Apple and shut down entirely. On Reddit, the frustration is constant: why does it cost so much to check if it's going to rain, when the underlying data comes from government agencies that taxpayers already fund?</p>
     <p>It's a fair question. But the answer is more complicated than "greedy developers." Here's where the money actually goes.</p>
 
     <h2>Where Weather Data Actually Comes From</h2>
@@ -132,7 +133,7 @@
     <h2>Why Apple Weather Is "Free" (and What That Means)</h2>
     <p>After acquiring Dark Sky in 2020 and shutting it down in 2023, Apple integrated its technology into the built-in Weather app. Apple Weather now offers minute-by-minute precipitation forecasts, severe weather alerts, air quality data, and next-hour precipitation maps. It's free for every iPhone user.</p>
     <p>But Apple Weather isn't really free. Apple funds it as part of the iOS ecosystem -- it exists to make iPhones more useful, which sells hardware. Apple can absorb the data and infrastructure costs because it makes its money from device sales, services subscriptions, and the App Store. The weather app is a feature, not a product.</p>
-    <p>This creates an awkward dynamic for independent weather developers. They're competing against an app that's pre-installed on every iPhone, costs the user nothing, and is backed by a company with $383 billion in annual revenue. The indie developer, meanwhile, is paying for every API call out of pocket.</p>
+    <p>This creates an awkward dynamic for independent weather developers. They're competing against an app that's pre-installed on every iPhone, costs the user nothing, and is backed by a company with more than $400 billion in annual revenue. The indie developer, meanwhile, is paying for every API call out of pocket.</p>
 
     <h2>What Premium Weather Apps Actually Offer</h2>
     <p>Given that Apple Weather is genuinely good in 2026, why do people still pay for third-party weather apps? The answer lies in what Apple Weather doesn't do well.</p>
@@ -146,31 +147,31 @@
     <p>The one-time purchase model worked when weather data was cheap and API providers were generous with free tiers. An indie developer could charge $2.99 for a weather app, use a free or low-cost API, and the revenue from sales would cover server costs for years. But as the major API providers consolidated and raised prices, that model broke.</p>
     <p>The economics are straightforward. A one-time purchase generates revenue once per user. But the API costs for that user continue for as long as they use the app -- potentially years. If an app charges $4.99 once and the API costs $0.02 per user per month, the developer has roughly 20 months before they're losing money on that user. With Apple taking 30% of the purchase price, it's closer to 14 months.</p>
     <p>Subscriptions solve this by aligning revenue with costs. If the API bill goes up, the recurring revenue covers it. This is why nearly every weather app that once cost a few pounds now charges monthly or annually.</p>
-    <p>But "solves the developer's problem" and "feels fair to the user" are different things. When you're paying $3.33 per month for CARROT Weather Premium (the $39.99/year plan), you're paying more per year than the app used to cost as a one-time purchase. Over three years, that's $120 for a weather app. Many users understandably feel that's excessive for data that ultimately originates from publicly funded agencies.</p>
+    <p>But "solves the developer's problem" and "feels fair to the user" are different things. When you're paying $3.33 per month for CARROT Weather Premium Ultra (the $39.99/year plan), you're paying more per year than the app used to cost as a one-time purchase. Over three years, that's $120 for a weather app. Many users understandably feel that's excessive for data that ultimately originates from publicly funded agencies.</p>
 
     <h2>The Alternatives to Subscriptions</h2>
     <p>Not every weather app has adopted the subscription model. Several approaches exist for developers who want to avoid recurring charges:</p>
-    <p><strong>Using Apple's own WeatherKit.</strong> Apple offers WeatherKit, its weather data API, to developers. It includes 500,000 API calls per month for free (with an Apple Developer Program membership), which is enough for a small-to-medium app. Beyond that, it's $0.50 per 1,000 calls. An app using WeatherKit can keep its API costs low enough to sustain a one-time purchase model, at least at moderate user counts.</p>
+    <p><strong>Using Apple's weather data service for developers.</strong> Apple offers its own weather data service to developers. A paid Apple developer membership includes 500,000 calls a month, which is enough for a small-to-medium app, with paid tiers above that. An app using Apple's weather data service for developers can keep its data costs low enough to sustain a one-time purchase model, at least at moderate user counts.</p>
     <p><strong>Open-source weather APIs.</strong> Open-Meteo is a free, open-source weather API that draws from public data sources including the DWD (Germany's national weather service), NOAA, and Environment Canada. It provides global coverage with no API key required for non-commercial use and reasonable pricing for commercial apps. This dramatically reduces the per-user cost.</p>
     <p><strong>Caching and efficiency.</strong> Smart caching strategies can reduce API calls significantly. Weather data doesn't change every second -- a forecast that's refreshed every 15-30 minutes is perfectly adequate for most users. An app that caches aggressively and avoids redundant requests can serve more users on fewer API calls.</p>
     <p><strong>One-time purchase with optional tips.</strong> Some apps charge once for the full feature set and offer optional tip jars or "buy the developer a coffee" mechanisms. This covers the majority of costs through the purchase price while allowing satisfied users to contribute more.</p>
 
     <div class="callout">
-      <strong>Worth noting:</strong> <a href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">Cloudmesh Weather</a> is built on this one-time purchase model. It uses efficient data sourcing and on-device processing to avoid the recurring API costs that force other apps into subscriptions. Everything stays on your device, no account required.
+      <strong>Worth noting:</strong> <a href="https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651" target="_blank" rel="noopener noreferrer">Cloudmesh Weather</a> runs its own forecast service, which blends 39 sources (national observation networks, radar and open forecast models) into one forecast. That keeps running costs low enough to offer a free tier plus a one-time Premium unlock, with no subscription. There's no account, and your location is used in coarsened form to fetch forecasts and deliver rain alerts.
     </div>
 
     <h2>What "Free" Really Costs</h2>
-    <p>It's also worth considering the cost of free weather apps that aren't Apple Weather. The Weather Channel app (owned by Allen Media Group, which bought it from IBM) is free to download but supported by aggressive advertising. The app's privacy nutrition label on the App Store is extensive -- it collects location data, identifiers, usage data, and diagnostics, much of which is used for third-party advertising.</p>
+    <p>It's also worth considering the cost of free weather apps that aren't Apple Weather. The Weather Channel app (published by The Weather Company, which IBM sold to Francisco Partners in 2024) is free to download but supported by aggressive advertising. The app's privacy nutrition label on the App Store is extensive -- it collects location data, identifiers, usage data, and diagnostics, much of which is used for third-party advertising.</p>
     <p>AccuWeather similarly monetises through ads and data collection. Its privacy label lists browsing history, location, identifiers, and usage data as collected and linked to your identity.</p>
     <p>For these apps, you're not the customer -- you're the product. Your location data, checked multiple times daily, is extraordinarily valuable to advertisers. A free weather app that knows where you are, when you're there, and how often you check (correlating with whether you're planning to go outside) provides rich behavioural signals.</p>
-    <p>In this context, paying for a weather app is partly paying for the absence of surveillance. The $40/year for CARROT Weather Premium isn't just buying sarcastic commentary and custom widgets -- it's also buying a business model that doesn't depend on selling your location history.</p>
+    <p>In this context, paying for a weather app is partly paying for the absence of surveillance. The $40/year for CARROT Weather Premium Ultra isn't just buying sarcastic commentary and custom widgets -- it's also buying a business model that doesn't depend on selling your location history.</p>
 
     <h2>How to Choose Without Overpaying</h2>
     <p>Here's a practical framework for deciding what to spend on weather:</p>
     <ul>
       <li><strong>If Apple Weather is sufficient:</strong> Use it. It's free, private, and genuinely good in 2026. For most people checking tomorrow's forecast or whether to bring an umbrella, it's all you need.</li>
-      <li><strong>If you want better widgets:</strong> A one-time purchase weather app will pay for itself quickly versus a subscription. Look for apps that use WeatherKit or open data sources, as their costs are sustainable without recurring charges.</li>
-      <li><strong>If you're a weather enthusiast:</strong> You probably want multi-model comparison, detailed radar, and data density that Apple Weather doesn't provide. A subscription to something like CARROT Weather Premium or a similar enthusiast-tier app may genuinely be worth it. The $40/year isn't unreasonable for something you use multiple times daily.</li>
+      <li><strong>If you want better widgets:</strong> A one-time purchase weather app will pay for itself quickly versus a subscription. Look for apps that use Apple's weather data service for developers or open data sources, as their costs are sustainable without recurring charges.</li>
+      <li><strong>If you're a weather enthusiast:</strong> You probably want multi-model comparison, detailed radar, and data density that Apple Weather doesn't provide. A subscription to something like CARROT Weather Premium Ultra or a similar enthusiast-tier app may genuinely be worth it. The $40/year isn't unreasonable for something you use multiple times daily.</li>
       <li><strong>If privacy matters:</strong> Avoid free ad-supported weather apps entirely. Either use Apple Weather or pay for an app that doesn't collect your data. Read the App Store privacy label before downloading.</li>
     </ul>
 
@@ -181,15 +182,15 @@
 
     <h2>Related Articles</h2>
     <ul class="related-posts">
-      <li><a href="/blog/best-weather-apps-uk-2026.html">Best Weather Apps for the UK in 2026</a></li>
-      <li><a href="/blog/cloudmesh-weather-vs-carrot-weather.html">Cloudmesh Weather vs CARROT Weather: Which Has Better Widgets?</a></li>
+      <li><a href="/blog/best-uk-weather-apps-2026.html">Best Weather Apps for the UK in 2026: Rain, Radar and Warnings Compared</a></li>
+      <li><a href="/blog/cloudmesh-vs-carrot-weather-2026.html">Cloudmesh Weather vs CARROT Weather (2026): Rain Alerts, Widgets and Pricing Compared</a></li>
       <li><a href="/blog/best-iphone-weather-widgets-2026.html">The Best iPhone Weather Widgets in 2026</a></li>
       <li><a href="/blog/how-community-weather-networks-work.html">How Community Weather Mesh Networks Give You Hyperlocal Forecasts</a></li>
     </ul>
 
     <div class="blog-footer-cta">
       <h3>Weather without the subscription</h3>
-      <p>Cloudmesh Weather is a one-time purchase with customisable widgets and on-device privacy.</p>
+      <p>Cloudmesh Weather: a free tier, a 7-day trial and a one-time Premium unlock. No subscription, no account, no ads.</p>
       <a href="/apps/cloudmesh/" class="btn btn-primary">Learn more about Cloudmesh Weather</a>
     </div>
     <footer>
