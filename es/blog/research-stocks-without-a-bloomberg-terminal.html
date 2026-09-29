@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>Cómo investigar acciones sin un terminal Bloomberg — BFG</title>
+  <meta name="description" content="Qué ofrece un terminal Bloomberg a los profesionales, qué partes necesita de verdad un inversor particular y las fuentes gratuitas y económicas que las cubren en 2026.">
+  <meta name="keywords" content="investigar acciones sin Bloomberg, alternativa al terminal Bloomberg, precio del terminal Bloomberg, herramientas gratuitas para investigar acciones, SEC EDGAR, FRED, app de investigación bursátil">
+  <meta property="og:title" content="Cómo investigar acciones sin un terminal Bloomberg">
+  <meta property="og:description" content="Qué ofrece realmente el terminal Bloomberg, qué necesita un inversor minorista y las fuentes primarias gratuitas y herramientas asequibles que cubren la mayor parte de la diferencia.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cómo investigar acciones sin un terminal Bloomberg">
+  <meta name="twitter:description" content="Qué ofrece realmente el terminal Bloomberg, qué necesita un inversor minorista y las fuentes primarias gratuitas y herramientas asequibles que cubren la mayor parte de la diferencia.">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta property="og:url" content="https://bfgapps.co/es/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="canonical" href="https://bfgapps.co/es/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo investigar acciones sin un terminal Bloomberg",
+    "description": "Qué ofrece un terminal Bloomberg a los profesionales, qué partes necesita de verdad un inversor particular y las fuentes gratuitas y económicas que las cubren en 2026.",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"Article"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menú">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">Apps</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">Disponibles</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/cardbash/">Card Bash</a>
+            <a href="/apps/custoda/">Custoda</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+          </div>
+        </div>
+        <a href="/#blog">Blog</a>
+        <a href="/about/">Acerca de</a>
+        <a href="mailto:blueflamegames@proton.me">Contacto</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">ES</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Cambiar tema"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">Blog</a><span class="sep">/</span><span class="tag tag-finance">Finanzas</span></nav>
+    <div class="blog-article-header">
+      <h1>Cómo investigar acciones sin un terminal Bloomberg</h1>
+      <p class="meta">Septiembre 2026 · 8 min de lectura · Finanzas</p>
+    </div>
+
+    <p>Bloomberg no publica una lista de precios de su terminal, pero la cifra que se cita ampliamente para 2026 es de unos 32.000 $ al año por una suscripción individual, algo menos por puesto para las firmas con varios, normalmente con contrato de dos años. Para una mesa de operaciones es un coste del negocio. Para un particular que investiga un puñado de empresas, es difícil de justificar.</p>
+    <p>La buena noticia es que la mayor parte de lo que necesita un inversor particular está disponible en otro lugar, buena parte gratis y directamente de la fuente original. La menos cómoda es que algunas de las cosas que hace el terminal no tienen un sustituto barato. Esta guía separa ambas cosas, para que sepas a qué renuncias y dónde encontrar el resto.</p>
+
+    <h2>Qué ofrece realmente el terminal a los profesionales</h2>
+    <p>Es tentador pensar en el terminal como una pantalla de cotizaciones carísima. Su valor está en otra parte:</p>
+    <ul>
+      <li><strong>Datos en tiempo real de todas las clases de activos.</strong> No solo renta variable, sino también bonos públicos y corporativos, divisas, materias primas, derivados y mercados monetarios, actualizados a medida que se negocian.</li>
+      <li><strong>Herramientas de análisis construidas sobre esos datos.</strong> Herramientas de valoración y riesgo de bonos, filtros de valor relativo, análisis de carteras y décadas de histórico, todo en un formato coherente.</li>
+      <li><strong>Bloomberg News.</strong> Una gran redacción cuyas noticias suelen mover los mercados, integrada en la misma pantalla que los datos.</li>
+      <li><strong>La red.</strong> Su sistema de mensajería conecta a cientos de miles de profesionales del mercado. Para muchos usuarios, esa es la verdadera razón para pagar.</li>
+      <li><strong>Soporte.</strong> Servicios de ayuda que encuentran un dato o montan una pantalla por ti a cualquier hora.</li>
+    </ul>
+    <p>Muy poco de esto importa a un inversor a largo plazo que compra unas pocas acciones al año. Lo que sí importa son unos fundamentales fiables, el acceso a los documentos primarios y contexto suficiente para entenderlos.</p>
+
+    <h2>Qué necesita realmente un inversor particular</h2>
+    <table>
+      <thead>
+        <tr><th>Necesidad</th><th>Fuente gratuita</th><th>Opción de pago si quieres más</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Informes de las empresas</td><td>SEC EDGAR, páginas de relación con inversores de las empresas</td><td>No hace falta: los informes son la fuente</td></tr>
+        <tr><td>Fundamentales a lo largo del tiempo</td><td>Informes, Yahoo Finance, plan gratuito de Koyfin</td><td>Koyfin Plus, Morningstar Investor</td></tr>
+        <tr><td>Precios y gráficos</td><td>Yahoo Finance, TradingView Basic, tu bróker</td><td>Paquetes de datos en tiempo real de tu bróker</td></tr>
+        <tr><td>Datos económicos</td><td>FRED, Tesoro de EE. UU., Oficina de Estadísticas Laborales</td><td>Rara vez necesario</td></tr>
+        <tr><td>Filtrado</td><td>Finviz, filtros de Yahoo Finance</td><td>Finviz Elite, Koyfin</td></tr>
+        <tr><td>Análisis y opinión</td><td>Conferencias de resultados, informes anuales</td><td>Seeking Alpha Premium, Morningstar</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Empieza por las fuentes primarias</h2>
+    <p>El material de investigación más valioso es gratuito, porque las empresas y los gobiernos están obligados a publicarlo.</p>
+    <ul>
+      <li><strong>SEC EDGAR.</strong> Cada empresa que cotiza en EE. UU. presenta aquí su informe anual (10-K), sus informes trimestrales (10-Q) y sus informes de hechos relevantes (8-K), junto con las operaciones de insiders (Form 4) y las declaraciones de delegación de voto. La búsqueda de texto completo de EDGAR cubre los documentos desde 2001, lo que facilita encontrar todas las menciones de un cliente, un pleito o un producto. La SEC también publica en formato legible por máquina los datos financieros que las empresas etiquetan en sus informes. Si los informes son nuevos para ti, nuestra guía sobre <a href="/es/blog/how-to-read-sec-10k-filing.html">cómo leer un 10-K</a> muestra qué secciones leer primero.</li>
+      <li><strong>Páginas de relación con inversores de las empresas.</strong> Comunicados de resultados, presentaciones y retransmisiones de las conferencias de resultados, a menudo con transcripción. Las palabras de la dirección en una conferencia suelen decirte más que las cifras del titular.</li>
+      <li><strong>FRED.</strong> La base de datos de la Reserva Federal de St. Louis reúne más de 800.000 series temporales económicas de más de 100 fuentes: tipos de interés, inflación, empleo, vivienda y mucho más, con gráficos que puedes crear y compartir gratis.</li>
+      <li><strong>Tesoro de EE. UU. y Oficina de Estadísticas Laborales (BLS).</strong> La curva diaria de tipos del Tesoro y las publicaciones mensuales de empleo e inflación, directamente de los organismos que las elaboran.</li>
+    </ul>
+
+    <h2>Herramientas gratuitas y económicas que merece la pena conocer</h2>
+    <ul>
+      <li><strong>Yahoo Finance.</strong> Amplia cobertura gratuita en más de 100 bolsas, con estados financieros, noticias y carteras. Los planes de pago eliminan los anuncios y añaden análisis.</li>
+      <li><strong>Koyfin.</strong> Lo más parecido a una interfaz de terminal con poco presupuesto. El plan gratuito incluye dos años de estados financieros y un par de listas de seguimiento y filtros; los planes de pago empiezan en 39 $ al mes.</li>
+      <li><strong>Finviz.</strong> Un filtro de acciones web y rápido, con mapas de calor. La versión gratuita usa datos con retraso; Finviz Elite cuesta 39,50 $ al mes o 299,50 $ al año y añade datos en tiempo real, alertas y pruebas retrospectivas (backtesting).</li>
+      <li><strong>OpenBB.</strong> Un conjunto de herramientas de código abierto en Python para reunir datos de muchos proveedores en tu propio análisis. Potente, pero supone que te manejas escribiendo código.</li>
+      <li><strong>Tu biblioteca.</strong> Muchas bibliotecas públicas y universitarias dan a sus socios acceso gratuito a bases de datos de investigación como Morningstar o Value Line. Vale la pena preguntar.</li>
+    </ul>
+
+    <h2>Equivalentes gratuitos de funciones populares del terminal</h2>
+    <p>Los usuarios del terminal navegan con códigos de función cortos. Algunos de los más conocidos se corresponden bien con fuentes gratuitas:</p>
+    <table>
+      <thead>
+        <tr><th>Función del terminal</th><th>Qué muestra</th><th>Equivalente gratuito</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DES</td><td>Descripción de la empresa</td><td>Item 1, Business, del último 10-K</td></tr>
+        <tr><td>FA</td><td>Análisis financiero</td><td>Los estados financieros del 10-K y el 10-Q, o un sitio de datos gratuito</td></tr>
+        <tr><td>GP / HP</td><td>Gráfico e histórico de precios</td><td>Cualquier app de gráficos o tu bróker</td></tr>
+        <tr><td>CN</td><td>Noticias de la empresa</td><td>Los comunicados de prensa de la empresa y los informes 8-K</td></tr>
+        <tr><td>ECO</td><td>Calendario económico</td><td>Calendarios de publicación de FRED, la BLS y los bancos centrales</td></tr>
+        <tr><td>EE</td><td>Estimaciones de resultados</td><td>Parcial: cifras de consenso en sitios gratuitos, con menos detalle</td></tr>
+      </tbody>
+    </table>
+    <p>Las versiones gratuitas cuestan más de reunir y están menos pulidas, pero para un inversor a largo plazo la información es en gran parte la misma y, en el caso de los informes, es el original y no un resumen.</p>
+
+    <h2>Una palabra sobre la calidad de los datos</h2>
+    <p>Los agregadores gratuitos cometen errores, y los de pago también. Los culpables habituales son cifras asignadas al periodo fiscal equivocado, beneficios ajustados mezclados con reportados, errores de divisa o de unidad en valores extranjeros y valores ausentes que se muestran como cero. Nada de esto es motivo para evitar las herramientas gratuitas. Es motivo para contrastar cualquier número que importe con el informe del que procede, que es exactamente lo que hacen también los profesionales.</p>
+
+    <h2>Dónde están las carencias reales</h2>
+    <p>Sé sincero contigo mismo sobre lo que no puedes sustituir con facilidad. Las cotizaciones consolidadas en tiempo real de todos los mercados cuestan dinero, las venda quien las venda. Los datos detallados de bonos son irregulares fuera de la deuda pública, aunque FINRA publica informes de operaciones de muchos bonos corporativos estadounidenses. Las estimaciones de consenso, los datos de empresas no cotizadas y el histórico profundo son donde los servicios profesionales se ganan sus tarifas. Y nada replica la red de personas que usan el terminal a diario.</p>
+    <p>Para la mayoría de los inversores particulares estas carencias no importan. Si mantienes empresas durante años, un retraso de 15 minutos en una cotización es irrelevante, y el informe anual es mejor guía que cualquier flujo en tiempo real.</p>
+
+    <h2>La temporada de resultados sin terminal</h2>
+    <p>Los días de resultados son cuando los profesionales más se apoyan en sus terminales, pero toda la materia prima es pública. La mayoría de las empresas estadounidenses publican sus resultados en un comunicado de prensa presentado con un 8-K, a menudo con una presentación en la web de relación con inversores. Lee primero el comunicado, luego escucha la conferencia o lee la transcripción, prestando atención a las preguntas de los analistas: suelen sondear justo donde las cifras son más débiles. Compara las previsiones de este trimestre con lo que dijo la dirección la vez anterior; los cambios de redacción suelen ser más reveladores que las cifras. El 10-Q completo llega en unas semanas y es donde encontrarás el detalle que el comunicado dejó fuera.</p>
+
+    <h2>Un método de investigación que funciona con poco presupuesto</h2>
+    <ol>
+      <li><strong>Encuentra la idea.</strong> Usa un filtro, una noticia o un producto que uses. Anota por qué te llamó la atención.</li>
+      <li><strong>Lee sobre el negocio.</strong> Empieza por las secciones Business y Risk Factors del último 10-K, luego el 10-Q más reciente y los 8-K presentados desde entonces.</li>
+      <li><strong>Contrasta las cifras con la fuente.</strong> Toma las cifras clave que viste en una app, como ingresos, margen operativo o deuda, y búscalas en el informe. Si difieren, averigua por qué antes de seguir. Nuestra guía para <a href="/es/blog/how-to-verify-financial-data-sources.html">verificar datos financieros</a> explica los motivos habituales.</li>
+      <li><strong>Añade el contexto.</strong> Consulta la serie económica pertinente en FRED: tipos de interés para un prestamista, inicios de viviendas para un constructor, gasto de los consumidores para un minorista.</li>
+      <li><strong>Escribe tu tesis.</strong> Unas frases sobre por qué comprarías, qué esperas que ocurra y qué te haría cambiar de opinión. Revísala cuando lleguen los siguientes resultados.</li>
+    </ol>
+
+    <div class="callout">
+      <strong>Tener las piezas en el móvil:</strong> <a href="/es/apps/kanesh/">Kanesh</a>, nuestra app para iPhone y iPad, mantiene una lista de seguimiento con gráficos de precios y noticias junto a los informes recientes de cada empresa ante la SEC, que se abren en EDGAR, e indica la fuente en sus tarjetas de resultados para que puedas comprobar de dónde sale una cifra. Se descarga gratis y no requiere cuenta. Es un compañero de investigación y no un terminal: sin datos institucionales en tiempo real, sin filtro de acciones y sin red de mensajería.
+    </div>
+
+    <h2>Conclusión</h2>
+    <p>No necesitas un terminal Bloomberg para investigar bien las acciones. Necesitas los documentos primarios, una fuente fiable de fundamentales y precios, algo de contexto económico y la disciplina de contrastar lo que lees. Lo primero es gratis, lo segundo y lo tercero son baratos, y lo último no te lo vende ninguna suscripción.</p>
+    <p>El mayor riesgo al invertir rara vez es que falte información. Es actuar según información que diste por buena y nunca comprobaste.</p>
+
+    <h2>Artículos relacionados</h2>
+    <ul class="related-posts">
+      <li><a href="/es/blog/best-stock-research-apps-2026.html">Las mejores apps de investigación bursátil para inversores autodidactas en 2026</a></li>
+      <li><a href="/es/blog/how-to-read-sec-10k-filing.html">Cómo leer un informe 10-K sin un título en finanzas</a></li>
+      <li><a href="/es/blog/how-to-verify-financial-data-sources.html">Cómo verificar datos financieros antes de tomar decisiones de inversión</a></li>
+      <li><a href="/es/blog/research-international-stocks-on-your-phone.html">Cómo investigar acciones internacionales desde el móvil</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>Ten a mano las fuentes primarias</h3>
+      <p>Kanesh reúne en iPhone y iPad tu lista de seguimiento, los gráficos de precios, las noticias y los informes recientes de cada empresa ante la SEC, con la fuente indicada en sus tarjetas de resultados. Descarga gratuita, sin cuenta.</p>
+      <a href="/es/apps/kanesh/" class="btn btn-primary">Más información sobre Kanesh</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG Home</a> &middot; <a href="../../#blog">Más artículos</a> &middot; <a href="../../privacy.html">Privacidad</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

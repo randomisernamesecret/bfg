@@ -39,7 +39,8 @@
     "description": "SEC 10-K年次報告書を初心者向けにわかりやすく解説するガイド。重要なセクション、注意すべき危険信号、そして15分で任意の企業を評価する方法を学びましょう。",
     "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
     "publisher": { "@type": "Organization", "name": "BFG" },
-    "datePublished": "2026-04-11"
+    "datePublished": "2026-04-11",
+    "dateModified": "2026-09-29"
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,13 +116,13 @@
     <h2>SEC EDGAR で10-Kを見つける方法</h2>
     <p>10-Kを読む前に、まず見つける必要があります。SECの電子データ収集・分析・検索システム（EDGAR）は、すべての公開申告書の公式リポジトリです。</p>
     <ul>
-      <li><strong>sec.gov/cgi-bin/browse-edgar</strong> にアクセスするか、<strong>efts.sec.gov/LATEST/search-index</strong> の全文検索を使用します</li>
+      <li><strong>sec.gov/cgi-bin/browse-edgar</strong> にアクセスするか、<strong>sec.gov/edgar/search</strong> の全文検索を使用します</li>
       <li>企業名またはティッカーシンボルを入力します</li>
       <li>申告書の種類でフィルター：<strong>10-K</strong>（年次報告書）または <strong>10-K/A</strong>（修正年次報告書）</li>
       <li>最新の申告日をクリックしてインデックスページを開きます</li>
       <li>プライマリ文書を探します。通常、サイズが最も大きいファイルが実際の10-Kです</li>
     </ul>
-    <p>EDGARのインターフェースは1990年代後半に設計されたような見た目をしていますが、それは実際にそうだからです。ただし、データは権威あるものです。10-Kに記載されているすべての数字は独立した会計事務所によって監査されており、重要な虚偽があれば法的責任を伴います。これはいかなる金融ウェブサイトやスクリーナーよりも高い基準です。</p>
+    <p>EDGARのインターフェースは1990年代後半に設計されたような見た目をしていますが、それは実際にそうだからです。ただし、データは権威あるものです。10-Kに含まれる財務諸表は独立した会計事務所によって監査されており、提出書類に重要な虚偽があれば、企業は法的責任を負います。これはいかなる金融ウェブサイトやスクリーナーよりも高い基準です。</p>
     <div class="callout">
       <strong>ヒント：</strong> 多くの企業は自社の投資家向け情報ページにも10-Kを掲載しており、より読みやすいPDF形式であることが多いです。「[企業名] investor relations annual report」で検索すると見つかります。
     </div>
@@ -227,7 +228,7 @@
       <li><strong>非GAAPメトリクスの多用。</strong>多くの企業は株式報酬、リストラ費用、またはその他の項目を除いた「調整後」収益を提示します。GAAP収益と調整後収益の差が大きく拡大している場合、除外された項目は経営陣が無視したい経常コストである可能性があります。</li>
     </ul>
 
-    <p>SEC申告書を読むことは、個人投資家が真に身につけられる数少ない優位性の1つです。市場参加者の大多数は要約、アナリストレポート、金融データアグリゲーターに頼っています。一次ソース — 実際の申告書 — に当たることで、誰も解釈したり単純化したりしていない事業の生のビューが得られます。<a href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">Kanesh</a>のようなツールは、SEC申告書から直接金融データを取得して元の文書にリンクバックすることで役立つため、任意の数字をタップで確認できます。しかし、ツールがなくてもEDGARは無料で申告書は公開されています。個人投資家と機関投資家との間の情報の非対称性は、ほとんどの人が考えるよりも小さいです。差はアクセスではなく、実際の文書を読もうとする意欲にあります。</p>
+    <p>SEC申告書を読むことは、個人投資家が真に身につけられる数少ない優位性の1つです。市場参加者の大多数は要約、アナリストレポート、金融データアグリゲーターに頼っています。一次ソース — 実際の申告書 — に当たることで、誰も解釈したり単純化したりしていない事業の生のビューが得られます。<a href="https://apps.apple.com/gb/app/kanesh/id6760582379" target="_blank" rel="noopener noreferrer">Kanesh</a>のようなツールは、企業の最近のSEC申告書を一覧し、それぞれをEDGARで開けるようにすることで、そこまでの手間を短縮できます。しかし、ツールがなくてもEDGARは無料で申告書は公開されています。個人投資家と機関投資家との間の情報の非対称性は、ほとんどの人が考えるよりも小さいです。差はアクセスではなく、実際の文書を読もうとする意欲にあります。</p>
 
     <h2>10-Kを超えて：知っておく価値のある他の申告書</h2>
     <p>10-Kに慣れたら、有用な情報を提供する他のいくつかのSEC申告書があります：</p>
@@ -241,15 +242,15 @@
 
     <h2>関連記事</h2>
     <ul class="related-posts">
-      <li><a href="/ja/blog/stock-research-without-bloomberg.html">Bloomberg なしで株式を調査する方法</a></li>
+      <li><a href="/ja/blog/research-stocks-without-a-bloomberg-terminal.html">Bloomberg ターミナルなしで株式を調査する方法</a></li>
       <li><a href="/ja/blog/how-to-verify-financial-data-sources.html">投資判断前に財務データを検証する方法</a></li>
-      <li><a href="/ja/blog/how-to-research-global-stocks-from-your-phone.html">スマートフォンから海外株式を調査する方法</a></li>
-      <li><a href="/ja/blog/best-finance-apps-investors-2026.html">2026年DIY投資家向けベスト金融アプリ</a></li>
+      <li><a href="/ja/blog/research-international-stocks-on-your-phone.html">スマートフォンで海外株式を調査する方法</a></li>
+      <li><a href="/ja/blog/best-stock-research-apps-2026.html">2026年版 個人投資家向け株式リサーチアプリ比較</a></li>
     </ul>
 
     <div class="blog-footer-cta">
-      <h3>ソースリンク付きデータで株式を調査する</h3>
-      <p>Kanesh はSEC申告書から金融データを取得するため、すべての数字を確認できます。</p>
+      <h3>提出書類を手元に置いて株式を調査する</h3>
+      <p>Kaneshは、各企業の最近のSEC申告書を価格チャートやニュース見出しと並べて一覧し、すべての申告書をEDGARで開けます。</p>
       <a href="/ja/apps/kanesh/" class="btn btn-primary">Kanesh について詳しく</a>
     </div>
     <footer>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>Bloomberg ターミナルなしで株式を調査する方法 — BFG</title>
+  <meta name="description" content="Bloomberg ターミナルがプロに提供するもの、個人投資家が実際に必要とする部分、そして2026年にそれをカバーする無料・低価格の情報源を解説します。">
+  <meta name="keywords" content="Bloomberg なしで株式調査, Bloomberg ターミナル 代替, Bloomberg ターミナル 料金, 無料 株式リサーチ ツール, SEC EDGAR, FRED, 株式リサーチアプリ">
+  <meta property="og:title" content="Bloomberg ターミナルなしで株式を調査する方法">
+  <meta property="og:description" content="Bloomberg ターミナルが実際に提供するもの、個人投資家に必要なもの、そしてそのギャップの大半を埋める無料の一次資料と手頃なツールを紹介します。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bloomberg ターミナルなしで株式を調査する方法">
+  <meta name="twitter:description" content="Bloomberg ターミナルが実際に提供するもの、個人投資家に必要なもの、そしてそのギャップの大半を埋める無料の一次資料と手頃なツールを紹介します。">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta property="og:url" content="https://bfgapps.co/ja/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="canonical" href="https://bfgapps.co/ja/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Bloomberg ターミナルなしで株式を調査する方法",
+    "description": "Bloomberg ターミナルがプロに提供するもの、個人投資家が実際に必要とする部分、そして2026年にそれをカバーする無料・低価格の情報源を解説します。",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"記事"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">アプリ</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">リリース済み</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/cardbash/">Card Bash</a>
+            <a href="/apps/custoda/">Custoda</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+          </div>
+        </div>
+        <a href="/#blog">ブログ</a>
+        <a href="/about/">概要</a>
+        <a href="mailto:blueflamegames@proton.me">お問い合わせ</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Language">JA</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Toggle theme"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">ブログ</a><span class="sep">/</span><span class="tag tag-finance">ファイナンス</span></nav>
+    <div class="blog-article-header">
+      <h1>Bloomberg ターミナルなしで株式を調査する方法</h1>
+      <p class="meta">2026年9月 · 8分で読める · ファイナンス</p>
+    </div>
+
+    <p>Bloombergはターミナルの価格表を公開していませんが、2026年について広く伝えられている金額は、1契約あたり年間約3万2,000ドルです。複数の契約を持つ企業では1席あたりの額が少し下がり、通常は2年契約になります。トレーディングデスクにとっては事業を行うための費用ですが、数社を調べる個人にとっては、正当化するのが難しい金額です。</p>
+    <p>朗報は、個人投資家に必要なもののほとんどが別の場所で手に入り、その多くが無料で、原典から直接得られることです。あまり嬉しくない知らせは、ターミナルの機能の一部には、安価な代替がないことです。この記事ではその2つを切り分け、何を手放すことになるのか、残りをどこで見つけられるのかをお伝えします。</p>
+
+    <h2>ターミナルがプロに提供するもの</h2>
+    <p>ターミナルを、非常に高価な株価表示画面と考えたくなるかもしれません。しかし、その価値は別のところにあります。</p>
+    <ul>
+      <li><strong>あらゆる資産クラスのリアルタイムデータ。</strong>株式だけでなく、国債や社債、通貨、コモディティ、デリバティブ、短期金融市場まで、取引されるとおりに更新されます。</li>
+      <li><strong>そのデータに基づく分析機能。</strong>債券の価格算定とリスクのツール、割安・割高を比べるスクリーン、ポートフォリオ分析、数十年分の履歴が、すべて同じ形式でそろっています。</li>
+      <li><strong>Bloombergニュース。</strong>市場を動かすことも多い記事を出す大規模な報道機関の配信が、データと同じ画面で読めます。</li>
+      <li><strong>ネットワーク。</strong>メッセージシステムが、数十万人の市場関係者をつないでいます。多くの利用者にとっては、これこそが料金を払う本当の理由です。</li>
+      <li><strong>サポート。</strong>ヘルプデスクが、どの時間帯でも、データを探したり画面を作ったりしてくれます。</li>
+    </ul>
+    <p>年に数回だけ株を買う長期投資家にとっては、このほとんどは意味を持ちません。重要なのは、信頼できる財務データ、一次資料へのアクセス、そしてそれを理解するための十分な背景情報です。</p>
+
+    <h2>個人投資家が実際に必要とするもの</h2>
+    <table>
+      <thead>
+        <tr><th>必要なもの</th><th>無料の情報源</th><th>もっと求める場合の有料オプション</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>企業の提出書類</td><td>SEC EDGAR、企業のIRページ</td><td>不要：提出書類そのものが原典です</td></tr>
+        <tr><td>時系列の財務データ</td><td>提出書類、Yahoo Finance、Koyfinの無料プラン</td><td>Koyfin Plus、Morningstar Investor</td></tr>
+        <tr><td>価格とチャート</td><td>Yahoo Finance、TradingView Basic、証券会社</td><td>証券会社のリアルタイムデータパッケージ</td></tr>
+        <tr><td>経済データ</td><td>FRED、米国財務省、労働統計局</td><td>必要になることはまれ</td></tr>
+        <tr><td>スクリーニング</td><td>Finviz、Yahoo Financeのスクリーナー</td><td>Finviz Elite、Koyfin</td></tr>
+        <tr><td>分析と意見</td><td>決算説明会、年次報告書</td><td>Seeking Alpha Premium、Morningstar</td></tr>
+      </tbody>
+    </table>
+
+    <h2>まず一次資料から</h2>
+    <p>最も価値のあるリサーチ資料は、企業や政府に公表が義務づけられているため、無料です。</p>
+    <ul>
+      <li><strong>SEC EDGAR。</strong>米国に上場しているすべての企業が、年次報告書（10-K）、四半期報告書（10-Q）、重要な出来事に関する臨時報告書（8-K）を、インサイダー取引（Form 4）や委任状説明書とともに、ここに提出します。EDGARの全文検索は2001年以降の提出書類が対象で、ある顧客、訴訟、製品への言及をすべて見つけるのが簡単です。SECは、企業が提出書類にタグ付けした財務データも、機械で読み取れる形で公開しています。提出書類に慣れていない方は、<a href="/ja/blog/how-to-read-sec-10k-filing.html">10-Kの読み方</a>のガイドで、どのセクションから読むべきかを確認してください。</li>
+      <li><strong>企業のIRページ。</strong>決算発表、説明資料、決算説明会のウェブキャストが掲載され、書き起こしがあることも少なくありません。説明会での経営陣自身の言葉は、見出しの数字よりも多くを語ることがよくあります。</li>
+      <li><strong>FRED。</strong>セントルイス連邦準備銀行のデータベースには、100以上の提供元から集めた80万件を超える経済時系列が収められています。金利、インフレ、雇用、住宅などのグラフを、無料で作成して共有できます。</li>
+      <li><strong>米国財務省と労働統計局。</strong>日次の財務省証券のイールドカーブと、毎月の雇用統計・インフレ統計を、作成元の機関から直接入手できます。</li>
+    </ul>
+
+    <h2>知っておきたい無料・低価格のツール</h2>
+    <ul>
+      <li><strong>Yahoo Finance。</strong>100以上の取引所を対象とする幅広い無料のカバレッジで、財務諸表、ニュース、ポートフォリオを備えています。有料プランでは広告が消え、リサーチ機能が加わります。</li>
+      <li><strong>Koyfin。</strong>限られた予算で使える、端末風のインターフェースに最も近いツールです。無料プランには2年分の財務データと、いくつかのウォッチリストとスクリーンが含まれ、有料プランは月39ドルからです。</li>
+      <li><strong>Finviz。</strong>ヒートマップを備えた、高速なウェブ版の株式スクリーナーです。無料版は遅延データを使い、Finviz Eliteは月39.50ドル、年299.50ドルで、リアルタイムデータ、アラート、バックテストが加わります。</li>
+      <li><strong>OpenBB。</strong>多数の提供元のデータを自分の分析に取り込める、オープンソースのPythonツールキットです。強力ですが、コードを書くことに抵抗がない人向けです。</li>
+      <li><strong>図書館。</strong>多くの公共図書館や大学図書館では、カード保有者がMorningstarやValue Lineなどのリサーチデータベースを無料で利用できます。尋ねてみる価値があります。</li>
+    </ul>
+
+    <h2>ターミナルの主な機能に相当する無料の手段</h2>
+    <p>ターミナルの利用者は、短いファンクションコードで操作します。よく知られたいくつかは、無料の情報源にそのまま置き換えられます。</p>
+    <table>
+      <thead>
+        <tr><th>ターミナルの機能</th><th>表示される内容</th><th>無料の代替</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DES</td><td>企業の概要</td><td>最新の10-Kの項目1「事業」</td></tr>
+        <tr><td>FA</td><td>財務分析</td><td>10-Kと10-Qの財務諸表、または無料のデータサイト</td></tr>
+        <tr><td>GP / HP</td><td>価格チャートと価格履歴</td><td>任意のチャートアプリまたは証券会社</td></tr>
+        <tr><td>CN</td><td>企業ニュース</td><td>企業のプレスリリースと8-Kの提出書類</td></tr>
+        <tr><td>ECO</td><td>経済カレンダー</td><td>FRED、労働統計局、中央銀行の発表カレンダー</td></tr>
+        <tr><td>EE</td><td>利益予想</td><td>一部のみ：無料サイトのコンセンサス数値で、詳細さは劣ります</td></tr>
+      </tbody>
+    </table>
+    <p>無料の手段は、組み立てに時間がかかり、洗練度も劣りますが、長期投資家にとって情報は概ね同じです。提出書類に関しては、要約ではなく原本そのものです。</p>
+
+    <h2>データの質について</h2>
+    <p>無料の集約サービスも間違えますが、有料のものも同じです。よくある原因は、数値が誤った会計期間に対応づけられていること、調整後の利益と報告ベースの利益が混ざっていること、外国上場銘柄の通貨や単位の誤り、欠損値がゼロとして表示されることです。だからといって無料のツールを避ける理由にはなりません。重要な数値は、もとになった提出書類と照らし合わせて確認するべきだという理由になります。プロも、まさにそうしています。</p>
+
+    <h2>本当のギャップはどこにあるか</h2>
+    <p>簡単には置き換えられないものについて、自分に正直になりましょう。すべての取引所を統合したリアルタイム相場は、誰が売っていても有料です。詳細な債券データは、国債以外では断片的ですが、FINRAは多くの米国社債について取引報告を公表しています。コンセンサス予想、非上場企業のデータ、長期の履歴は、プロ向けサービスが料金に見合う価値を出している領域です。そして、ターミナルを毎日使っている人々のネットワークを再現できるものはありません。</p>
+    <p>ほとんどの個人投資家にとって、これらのギャップは問題になりません。企業を何年も保有するなら、相場の15分の遅れは無関係で、年次報告書は、どんなリアルタイムのフィードよりも優れた指針になります。</p>
+
+    <h2>ターミナルなしで迎える決算シーズン</h2>
+    <p>決算発表の日は、プロがターミナルに最も頼る日ですが、素材はすべて公開されています。米国企業の多くは、8-Kとともに提出されるプレスリリースで決算を発表し、IRサイトに説明資料を掲載することもよくあります。まずリリースを読み、その後で説明会を聞くか書き起こしを読み、アナリストの質問に注目しましょう。質問は、数字が最も弱い部分を的確に突くことが多いものです。今四半期の業績見通しを、前回経営陣が語った内容と比べてください。言葉づかいの変化のほうが、数字より多くを明らかにすることがよくあります。数週間以内に完全な10-Qが提出され、プレスリリースが省いた詳細はそこにあります。</p>
+
+    <h2>予算をかけずにできるリサーチの流れ</h2>
+    <ol>
+      <li><strong>アイデアを見つける。</strong>スクリーナー、ニュース記事、使っている製品などから探します。なぜ気になったのかを書き留めておきましょう。</li>
+      <li><strong>事業を読む。</strong>最新の10-Kの「事業」と「リスク要因」から始め、次に直近の10-Qと、その後に提出された8-Kを読みます。</li>
+      <li><strong>数値を原典と照合する。</strong>アプリで見た売上、営業利益率、負債などの主要な数値を、提出書類の中で探します。食い違っていたら、先に進む前に理由を突き止めてください。よくある理由は、<a href="/ja/blog/how-to-verify-financial-data-sources.html">財務データの検証</a>のガイドで紹介しています。</li>
+      <li><strong>背景を加える。</strong>FREDで関連する経済系列を確認します。金融機関なら金利、住宅建設会社なら住宅着工件数、小売業者なら個人消費です。</li>
+      <li><strong>投資仮説を書く。</strong>なぜ買うのか、何が起きると予想するのか、何があれば考えを変えるのかを、数文で書きます。次の決算が出たら見直しましょう。</li>
+    </ol>
+
+    <div class="callout">
+      <strong>スマートフォンで要素をまとめる：</strong>当社のiPhone・iPad向けアプリ<a href="/ja/apps/kanesh/">Kanesh</a>は、価格チャートとニュース見出しつきのウォッチリストを、各企業の最近のSEC提出書類（EDGARで開きます）の隣に置き、結果カードに出典を明記するので、数値の出どころを確認できます。ダウンロードは無料で、アカウントは不要です。端末ではなくリサーチの相棒であり、機関投資家向けのリアルタイムフィード、スクリーナー、メッセージのネットワークはありません。
+    </div>
+
+    <h2>まとめ</h2>
+    <p>株式を上手に調べるのに、Bloomberg ターミナルは必要ありません。必要なのは、一次資料、信頼できる財務データと価格の情報源、経済の背景、そして読んだ内容を確かめる規律です。1つ目は無料、2つ目と3つ目は安価で、最後の1つは、どんな購読でも買うことはできません。</p>
+    <p>投資で最大のリスクは、情報の不足であることはまれです。正しいと思い込み、一度も確かめなかった情報に基づいて行動することです。</p>
+
+    <h2>関連記事</h2>
+    <ul class="related-posts">
+      <li><a href="/ja/blog/best-stock-research-apps-2026.html">2026年版 個人投資家向け株式リサーチアプリ比較</a></li>
+      <li><a href="/ja/blog/how-to-read-sec-10k-filing.html">財務学の学位なしで10-K申告書を読む方法</a></li>
+      <li><a href="/ja/blog/how-to-verify-financial-data-sources.html">投資判断前に財務データを検証する方法</a></li>
+      <li><a href="/ja/blog/research-international-stocks-on-your-phone.html">スマートフォンで海外株式を調査する方法</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>一次資料を手元に</h3>
+      <p>KaneshはiPhoneとiPadで、ウォッチリスト、価格チャート、ニュース見出し、各企業の最近のSEC提出書類をまとめて確認でき、結果カードに出典を明記します。ダウンロードは無料、アカウントは不要です。</p>
+      <a href="/ja/apps/kanesh/" class="btn btn-primary">Kanesh について詳しく</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG ホーム</a> &middot; <a href="../../#blog">その他の記事</a> &middot; <a href="../../privacy.html">プライバシー</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

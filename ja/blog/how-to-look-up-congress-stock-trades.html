@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>米国議会議員の株式取引を公式開示資料で調べる方法 — BFG</title>
+  <meta name="description" content="米国議会議員が株式取引を開示する場所、下院と上院のデータベースを自分で検索する方法、取引報告書の読み方、そして研究で分かっていることを解説します。">
+  <meta name="keywords" content="議会 株式取引, 議員 株式取引 調べ方, 議員 取引 開示, STOCK Act, 定期取引報告書, 上院 eFD, 下院 財務開示, 政治家 株式取引">
+  <meta property="og:title" content="米国議会議員の株式取引を公式開示資料で調べる方法">
+  <meta property="og:description" content="議員の株式取引の開示に関する実践ガイド。STOCK Actの規則、下院と上院の公式データベース、取引報告書の読み方、2026年の改革法案を取り上げます。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="米国議会議員の株式取引を公式開示資料で調べる方法">
+  <meta name="twitter:description" content="議員の株式取引の開示に関する実践ガイド。STOCK Actの規則、下院と上院の公式データベース、取引報告書の読み方、2026年の改革法案を取り上げます。">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta property="og:url" content="https://bfgapps.co/ja/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="canonical" href="https://bfgapps.co/ja/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/how-to-look-up-congress-stock-trades.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "米国議会議員の株式取引を公式開示資料で調べる方法",
+    "description": "米国議会議員が株式取引を開示する場所、下院と上院のデータベースを自分で検索する方法、取引報告書の読み方、そして研究で分かっていることを解説します。",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"記事"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">アプリ</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">リリース済み</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/cardbash/">Card Bash</a>
+            <a href="/apps/custoda/">Custoda</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+          </div>
+        </div>
+        <a href="/#blog">ブログ</a>
+        <a href="/about/">概要</a>
+        <a href="mailto:blueflamegames@proton.me">お問い合わせ</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Language">JA</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Toggle theme"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">ブログ</a><span class="sep">/</span><span class="tag tag-finance">ファイナンス</span></nav>
+    <div class="blog-article-header">
+      <h1>米国議会議員の株式取引を公式開示資料で調べる方法</h1>
+      <p class="meta">2026年9月 · 9分で読める · ファイナンス</p>
+    </div>
+
+    <p>投資の世界で、米国議会議員の株式取引ほど関心を集める話題は多くありません。議員は、規制を形づくり、契約を発注し、一般には公開されない説明を受ける委員会に所属しているため、何を売買しているのか気になるのは自然なことです。朗報は、その取引が公的記録になっていることです。見るために有料のトラッカーは必要ありません。必要なのは、公式の提出書類がどこにあるのか、どう読むのかを知ることです。</p>
+    <p>この記事では、開示を義務づける規則、2つの公式データベース、取引報告書の読み方、第三者のトラッカーが加える価値、運用成績について研究で分かっていること、そして2026年9月時点の改革の現状を取り上げます。</p>
+
+    <h2>STOCK Actが定めていること</h2>
+    <p>2012年の議会知識に基づく取引禁止法（Stop Trading on Congressional Knowledge Act）、通称STOCK Actは、議員がインサイダー取引法の適用を免れないことを明確にし、取引を報告すべき期限を定めました。主な規則は次のとおりです。</p>
+    <ul>
+      <li><strong>対象者：</strong>下院と上院の議員とその上級スタッフ。本人、配偶者、扶養している子による取引が対象です。</li>
+      <li><strong>対象となる取引：</strong>1,000ドルを超える株式、債券、商品先物、その他の証券の購入、売却、交換。広く分散された投資ファンドは、一般に対象外です。</li>
+      <li><strong>期限：</strong>定期取引報告書（periodic transaction report）で、取引を知ってから30日以内、かつ取引から遅くとも45日以内に提出します。</li>
+      <li><strong>罰則：</strong>提出の遅れには通常200ドルの罰金が科されます。大きな取引に対しては取るに足らない額だという批判があり、報道機関の調査では、多くの議員が遅れて提出していることが分かっています。</li>
+    </ul>
+    <p>これとは別に、議員は毎年5月を期限とする年次の財務開示報告書を提出し、保有資産、収入、負債を明らかにします。取引報告書は何が変わったかを、年次報告書は何を保有しているかを教えてくれます。</p>
+
+    <h2>提出書類の探し方</h2>
+    <h3>下院</h3>
+    <p>下院書記官（Clerk of the House）は、財務開示報告書を開示用ウェブサイト（disclosures-clerk.house.gov）で公開しています。氏名、州、選挙区、提出年で検索できます。取引報告書は、結果の中でPTRと表示されます。最近の提出書類は検索可能なPDFであることが多いものの、古いものや紙で提出されたものはスキャン画像のため、読み込みに時間がかかることがあります。</p>
+    <h3>上院</h3>
+    <p>上院の電子財務開示システムであるeFD（efdsearch.senate.gov）では、検索する前に、報告書の利用に関する法的な制限を理解していることを確認するよう求められます。連邦法は、報告書を違法な目的、報道以外の商業目的、信用格付け、資金の勧誘に使うことを禁じています。その後、上院議員、期間、報告書の種類で絞り込めます。取引を見るには「Periodic Transactions」を選びます。電子提出された報告書はウェブページとして表示され、紙で提出されたものは画像として表示されます。</p>
+
+    <h2>定期取引報告書の読み方</h2>
+    <p>取引報告書は短いものですが、どの項目も重要です。</p>
+    <ul>
+      <li><strong>Owner（所有者）：</strong>資産が議員本人のものか、配偶者（多くはSP）、共同名義口座（JT）、扶養している子（DC）のいずれなのか。話題になる取引の多くは、配偶者によるものです。</li>
+      <li><strong>Asset（資産）：</strong>証券の名称と、通常はティッカー。オプションには注意が必要です。オプションは独自の詳細つきで報告され、株式そのものとはリスクがまったく異なります。</li>
+      <li><strong>Transaction type（取引の種類）：</strong>購入、全部売却、一部売却、交換。</li>
+      <li><strong>Dates（日付）：</strong>取引日と、下院の報告書では議員が通知を受けた日。これらと提出日との間隔から、あなたが目にする時点で情報がどれだけ古くなっているかが分かります。</li>
+      <li><strong>Amount（金額）：</strong>正確な金額ではなく、範囲で示されます。区分は1,001〜15,000ドルと15,001〜50,000ドルに始まり、1,000,001〜5,000,000ドル以上に至るため、1つの記載が、2,000ドルの取引にも14,000ドルの取引にもなり得ます。</li>
+    </ul>
+    <p>議員の中には、代理で売買するアドバイザーを使っている人もいて、提出書類にそう記載されていることもあります。個々の取引に意図を読み込む前に、この点は覚えておく価値があります。</p>
+
+    <h2>よくある読み違い</h2>
+    <p>議員の取引をめぐって拡散する主張のほとんどは、次のいくつかの点のどれかで成り立たなくなります。</p>
+    <ul>
+      <li><strong>オプションは株式ではありません。</strong>満期が遠く行使価格が高いコールオプションは、その株式を買うこととはまったく異なる賭けであり、少額のプレミアムで大きな想定元本のポジションを持てることがあります。</li>
+      <li><strong>範囲は金額ではありません。</strong>1,000,001〜5,000,000ドルの区分の取引は、100万ドルかもしれず、500万ドルに近いかもしれません。</li>
+      <li><strong>売却が常にシグナルとは限りません。</strong>議員も、分散、税金、住宅の購入など、他の人と同じ理由で売却します。1回の売却からは、ほとんど何も分かりません。</li>
+      <li><strong>提出の遅れは不正の証拠ではありません。</strong>報告規則の違反であり、それは重要なことですが、それだけでその取引が未公開情報を使ったことを示すわけではありません。</li>
+    </ul>
+
+    <h2>取引と委員会を結びつける</h2>
+    <p>多くの人が本当に知りたいのは、ある取引が議員の公務に関連しているかどうかです。委員会や小委員会の所属は、各議員のcongress.gov（米国議会の公式サイト）のページと、各委員会自身のウェブサイトに掲載されており、公聴会の日程から、その時期に委員会が何に取り組んでいたかが分かります。軍事委員会の議員が、関連する公聴会の1週間前に防衛関連企業の株を取引したのであれば、詳しく見る価値があります。関連する役割のない議員による同じ取引は、はるかに興味を引きません。</p>
+
+    <h2>第三者のトラッカー</h2>
+    <p>これらの提出書類を解析して検索可能なデータベースにするサービスがいくつかあり、時間の節約になります。</p>
+    <table>
+      <thead>
+        <tr><th>情報源</th><th>得られるもの</th><th>注意点</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>下院書記官と上院eFD</td><td>公式の提出書類</td><td>検索が扱いにくく、PDFとスキャン画像で、アラートもない</td></tr>
+        <tr><td>Capitol Trades</td><td>開示された取引の、無料で検索できるデータベース</td><td>解析されたコピー：詳細は原本で確認</td></tr>
+        <tr><td>Quiver Quantitative</td><td>議員の取引に、ロビー活動と政府契約のデータを並べて表示</td><td>データは無料で、機能が増える有料プランもある</td></tr>
+        <tr><td>Unusual Whales</td><td>議員の取引を、オプションの資金フローのデータと並べて表示</td><td>全面的な利用には購読が必要</td></tr>
+      </tbody>
+    </table>
+    <p>トラッカーは便利ですが、その品質は解析の精度次第です。範囲は読み違えられ、配偶者は議員本人になり、オプションは株式になります。トラッカーから結論を出す前に、もとになった原本の報告書を開いてください。</p>
+
+    <h2>研究で分かっていること</h2>
+    <p>学術的な証拠は、見出しが示すよりも複雑です。広く引用されている2004年のAlan Ziobrowskiらの研究は、1993年から1998年までの上院議員の銘柄選択が、年およそ12%市場を上回っていたと結論づけました。STOCK Act以降は状況が変わりました。<em>Journal of Public Economics</em>に掲載された、Belmont、Sacerdote、Sehgal、Van Hoekによる2022年の研究は、2012年から2020年の取引を調べ、優れた運用成績の証拠を見つけられず、リターンは無作為な銘柄選択と整合的だとしました。さらに最近では、Shang-Jin WeiとYifan Zhouによる2025年のワーキングペーパーが、指導部の地位に就いた少数の議員は、就任後、同等の同僚を大きく上回る成績を上げたと報告しています。</p>
+    <p>実際的な教訓は、議員の取引全体としては、信頼できるシグナルではないということです。仮に好成績があるとしても、開示までのタイムラグが最長45日あるため、あなたが取引を目にするのは、それが行われてからずっと後です。個々の取引を真似ることは、戦略ではありません。</p>
+
+    <h2>改革の現状</h2>
+    <p>議員による個別株取引を禁止する提案は、何年も前から出されてきました。2026年7月、下院は、Stop Insider Trading Act（インサイダー取引防止法）であるH.R. 7008を、賛成232、反対198で可決しました。この法案は、議員、その配偶者、扶養している子が個別株を購入することを禁じ、既存の保有株を売却する前に公表することを求めます。批判する側は不十分だと述べ、法案に付け加えられた、無関係な有権者の本人確認の規定が、民主党の支持を失わせました。2026年9月末の時点で、法案は上院での審議待ちで、見通しは不透明でした。すべての法案の最新の状況は、Congress.gov（米国議会の法案情報サイト）で確認できます。</p>
+
+    <h2>企業のインサイダーは別物</h2>
+    <p>議員の取引は、企業の経営幹部によるインサイダー取引と混同されがちですが、両者は、規則がまったく異なります。役員、取締役、大株主は、通常2営業日以内に、SECへForm 4で取引を報告し、提出書類はEDGARに掲載されます。取引コードから多くのことが分かります。Pは公開市場での購入、Sは公開市場での売却、Aは付与または報酬、Mはオプションの行使、Fは納税のために差し引かれた株式です。投資家が最も注目するのは、公開市場での購入です。経営幹部が売る理由は多様ですが、買う理由は通常ひとつだからです。</p>
+
+    <div class="callout">
+      <strong>企業についての続きの調べ方：</strong>開示された取引に、よく知らない企業の名前があったら、次のステップはその企業自身の提出書類です。当社のiPhone・iPad向けアプリ<a href="/ja/apps/kanesh/">Kanesh</a>は、企業の価格チャート、ニュース見出し、インサイダーの Form 4 を含む最近のSEC提出書類を1か所にまとめ、各提出書類をEDGARで開けます。議員の取引は追跡しません。それについては、上記の下院と上院のデータベースをご利用ください。
+    </div>
+
+    <h2>実践のチェックリスト</h2>
+    <ol>
+      <li><strong>公式の報告書から始める。</strong>取引をトラッカーやSNSの投稿で見つけた場合でも同じです。</li>
+      <li><strong>所有者、日付、範囲を確認する。</strong>規模やタイミングについて何かを決めつける前に行います。</li>
+      <li><strong>単発の取引ではなく、パターンを探す。</strong>複数の議員が同じ企業を買っている、あるいは議員が、所属委員会が監督する業界で取引している、といったケースです。</li>
+      <li><strong>企業自身の提出書類を読む。</strong>事業そのものについて見解を持つ前に行います。</li>
+      <li><strong>タイムラグを忘れない。</strong>取引が公開されるころには、価格には動くための数週間がありました。</li>
+    </ol>
+
+    <h2>まとめ</h2>
+    <p>議員の取引データは公開されており、市民としても投資家としても、その読み方を知っておく価値があります。下院と上院の公式データベースを使い、トラッカーは原典ではなく便利な索引として扱い、数週間前の取引を真似したくなる誘惑に抵抗しましょう。開示情報がもっとも役に立つのは、企業をきちんと調べるきっかけとしてであり、調べる手間を省く近道としてではありません。</p>
+
+    <h2>関連記事</h2>
+    <ul class="related-posts">
+      <li><a href="/ja/blog/how-to-read-sec-10k-filing.html">財務学の学位なしで10-K申告書を読む方法</a></li>
+      <li><a href="/ja/blog/how-to-verify-financial-data-sources.html">投資判断前に財務データを検証する方法</a></li>
+      <li><a href="/ja/blog/research-stocks-without-a-bloomberg-terminal.html">Bloomberg ターミナルなしで株式を調査する方法</a></li>
+      <li><a href="/ja/blog/best-stock-research-apps-2026.html">2026年版 個人投資家向け株式リサーチアプリ比較</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>企業自身の提出書類で続きを確認</h3>
+      <p>KaneshはiPhoneとiPadで、企業の価格チャート、ニュース見出し、インサイダーの Form 4 を含む最近のSEC提出書類をまとめて確認でき、各提出書類をEDGARで開けます。ダウンロードは無料、アカウントは不要です。</p>
+      <a href="/ja/apps/kanesh/" class="btn btn-primary">Kanesh について詳しく</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG ホーム</a> &middot; <a href="../../#blog">その他の記事</a> &middot; <a href="../../privacy.html">プライバシー</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

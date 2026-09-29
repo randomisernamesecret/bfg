@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <title>没有彭博终端，如何研究股票 — BFG</title>
+  <meta name="description" content="彭博终端为专业人士提供什么，个人投资者真正需要其中的哪些部分，以及 2026 年能覆盖这些需求的免费和低成本来源。">
+  <meta name="keywords" content="没有彭博如何研究股票, 彭博终端替代品, 彭博终端价格, 免费股票研究工具, SEC EDGAR, FRED, 股票研究应用">
+  <meta property="og:title" content="没有彭博终端，如何研究股票">
+  <meta property="og:description" content="彭博终端究竟提供什么，散户投资者需要什么，以及能填补大部分差距的免费一手来源和实惠工具。">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="没有彭博终端，如何研究股票">
+  <meta name="twitter:description" content="彭博终端究竟提供什么，散户投资者需要什么，以及能填补大部分差距的免费一手来源和实惠工具。">
+  <meta name="twitter:image" content="https://bfgapps.co/assets/kanesh-hero.png">
+  <meta property="og:url" content="https://bfgapps.co/zh-CN/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="canonical" href="https://bfgapps.co/zh-CN/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="en" href="https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="de" href="https://bfgapps.co/de/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="es" href="https://bfgapps.co/es/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="fr" href="https://bfgapps.co/fr/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="ja" href="https://bfgapps.co/ja/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://bfgapps.co/zh-CN/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="alternate" hreflang="x-default" href="https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "没有彭博终端，如何研究股票",
+    "description": "彭博终端为专业人士提供什么，个人投资者真正需要其中的哪些部分，以及 2026 年能覆盖这些需求的免费和低成本来源。",
+    "author": { "@type": "Person", "name": "Daniel Hart", "url": "https://bfgapps.co/authors/daniel-hart/" },
+    "publisher": { "@type": "Organization", "name": "BFG" },
+    "datePublished": "2026-09-29",
+    "dateModified": "2026-09-29"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg,#f4efe9);color:var(--text,#2d2a26);line-height:1.75;padding-top:64px;-webkit-font-smoothing:antialiased}h1,h2{font-family:'DM Serif Display',Georgia,serif}h1{font-size:42px;font-weight:400;letter-spacing:-.5px;margin-bottom:16px;line-height:1.15}.container{max-width:720px;margin:0 auto;padding:0 28px}.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}.site-nav .nav-inner{max-width:1080px;margin:0 auto;width:100%;height:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-family:'DM Serif Display',Georgia,serif;font-size:22px;text-decoration:none}.site-nav .nav-links{display:flex;gap:32px;align-items:center}.site-nav .nav-links>a,.nav-dropdown>a{font-size:14px;font-weight:500;text-decoration:none}.nav-dropdown{position:relative}.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);left:-20px;border-radius:16px;padding:12px 0;min-width:230px;max-height:calc(100vh - 96px);overflow-y:auto}.nav-dropdown.open .nav-dropdown-menu{display:block}.nav-dropdown-menu a{display:block;padding:10px 24px;font-size:14px}.nav-dropdown-menu .menu-label{padding:10px 24px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}.nav-hamburger{display:none;background:none;border:none;font-size:22px;padding:6px;cursor:pointer}.theme-toggle{position:fixed;top:76px;right:20px;z-index:100;padding:6px 12px;font-size:12px;font-weight:600;border-radius:8px;font-family:'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer}@media(max-width:700px){.nav-hamburger{display:block}.site-nav .nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;padding:8px 0;max-height:calc(100vh - 64px);overflow-y:auto}.site-nav .nav-links.open{display:flex}.nav-dropdown-menu{position:static;display:none;border:none;border-radius:0;box-shadow:none;margin:0;padding-left:20px}.nav-dropdown.open .nav-dropdown-menu{display:block}h1{font-size:30px}.theme-toggle{top:72px;right:12px}}@media(min-width:701px){.nav-hamburger{display:none!important}}</style>
+  <link rel="preload" href="../../style.css" as="style">
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/theme-vars.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://bfgapps.co/#blog"},{"@type":"ListItem","position":3,"name":"文章"}]}
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">BFG</a>
+      <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="/#apps">应用</a>
+          <div class="nav-dropdown-menu">
+            <div class="menu-label">已上架</div>
+            <a href="/apps/keystrike/">Keystrike</a>
+            <a href="/apps/cloudmesh/">Cloudmesh Weather</a>
+            <a href="/apps/bellgrave/">Bellgrave</a>
+            <a href="/apps/minua/">Minua</a>
+            <a href="/apps/cognithix/">Cognithix</a>
+            <a href="/apps/pacegrid/">PaceGrid</a>
+            <a href="/apps/arithmetix/">Arithmetix</a>
+            <a href="/apps/photoflight/">PhotoFlight</a>
+            <a href="/apps/cyla/">Cyla</a>
+            <a href="/apps/kanesh/">Kanesh</a>
+            <a href="/apps/sparks-studios/">Sparks Studio</a>
+            <a href="/apps/penlicence/">Pen Licence</a>
+            <a href="/apps/mergebash/">Merge Monsters</a>
+            <a href="/apps/cardbash/">Card Bash</a>
+            <a href="/apps/custoda/">Custoda</a>
+            <a href="/apps/dashpocket/">Dashpocket</a>
+          </div>
+        </div>
+        <a href="/#blog">博客</a>
+        <a href="/about/">关于</a>
+        <a href="mailto:blueflamegames@proton.me">联系</a>
+        <div class="nav-dropdown lang-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Language">ZH</a>
+          <div class="nav-dropdown-menu">
+            <a href="/" data-lang="en">English</a>
+            <a href="/de/" data-lang="de">Deutsch</a>
+            <a href="/es/" data-lang="es">Español</a>
+            <a href="/fr/" data-lang="fr">Français</a>
+            <a href="/ja/" data-lang="ja">日本語</a>
+            <a href="/zh-CN/" data-lang="zh-CN">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button class="theme-toggle" aria-label="Toggle theme"></button>
+  <div class="container">
+    <nav class="blog-breadcrumb"><a href="/">BFG</a><span class="sep">/</span><a href="/#blog">博客</a><span class="sep">/</span><span class="tag tag-finance">财经</span></nav>
+    <div class="blog-article-header">
+      <h1>没有彭博终端，如何研究股票</h1>
+      <p class="meta">2026年9月 · 8分钟阅读 · 财经</p>
+    </div>
+
+    <p>彭博并不公布终端的价目表，但 2026 年广泛流传的数字是单个订阅每年约 $32,000，拥有多个席位的机构每个席位略低一些，通常需签两年合同。对交易台来说，这是经营成本；对一个只研究几家公司的个人来说，这很难说得通。</p>
+    <p>好消息是，个人投资者需要的大部分内容在别处也能找到，其中很多是免费的，而且直接来自原始出处。不那么让人舒服的消息是，终端的部分功能没有廉价的替代品。本文把这两部分分开，让你知道自己放弃了什么，以及其余部分去哪里找。</p>
+
+    <h2>终端究竟为专业人士提供什么</h2>
+    <p>人们很容易把终端看作一块非常昂贵的股票报价屏。它的价值其实在别处：</p>
+    <ul>
+      <li><strong>覆盖所有资产类别的实时数据。</strong>不只是股票，还有政府债券和公司债券、外汇、大宗商品、衍生品和货币市场，随成交即时更新。</li>
+      <li><strong>建立在这些数据之上的分析工具。</strong>债券定价与风险工具、相对价值筛选、投资组合分析，以及数十年的历史数据，全部采用统一格式。</li>
+      <li><strong>彭博新闻。</strong>一支庞大的新闻团队，其报道常常能影响市场，并与数据呈现在同一个屏幕里。</li>
+      <li><strong>人脉网络。</strong>它的即时通讯系统连接着数十万名市场专业人士。对许多用户来说，这才是付费的真正原因。</li>
+      <li><strong>支持服务。</strong>客服团队随时可以帮你查找某个数据点，或为你搭建一个屏幕。</li>
+    </ul>
+    <p>对于一年只买几只股票的长期投资者来说，这些几乎都不重要。真正重要的是可靠的基本面数据、获取一手文件的渠道，以及足以读懂这些文件的背景知识。</p>
+
+    <h2>个人投资者真正需要什么</h2>
+    <table>
+      <thead>
+        <tr><th>需求</th><th>免费来源</th><th>想要更多时的付费选项</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>公司备案文件</td><td>SEC EDGAR、公司投资者关系页面</td><td>不需要：备案文件本身就是来源</td></tr>
+        <tr><td>历年基本面数据</td><td>备案文件、Yahoo Finance、Koyfin 免费版</td><td>Koyfin Plus、Morningstar Investor</td></tr>
+        <tr><td>价格与图表</td><td>Yahoo Finance、TradingView Basic、你的券商</td><td>券商提供的实时数据包</td></tr>
+        <tr><td>经济数据</td><td>FRED、美国财政部、美国劳工统计局</td><td>很少需要</td></tr>
+        <tr><td>筛选</td><td>Finviz、Yahoo Finance 筛选器</td><td>Finviz Elite、Koyfin</td></tr>
+        <tr><td>分析与观点</td><td>财报电话会议、年报</td><td>Seeking Alpha Premium、Morningstar</td></tr>
+      </tbody>
+    </table>
+
+    <h2>从一手来源入手</h2>
+    <p>最有价值的研究材料是免费的，因为公司和政府依法必须公开发布。</p>
+    <ul>
+      <li><strong>SEC EDGAR。</strong>每家在美国上市的公司都在这里提交年报（10-K）、季报（10-Q）和重大事件的临时报告（8-K），还有内部人士交易（Form 4）和代理声明。EDGAR 的全文检索覆盖 2001 年以来的备案文件，可以轻松找到某个客户、某场诉讼或某款产品的所有提及。SEC 还以机器可读的形式发布公司在备案文件中标记的财务数据。如果你刚接触备案文件，我们的<a href="/zh-CN/blog/how-to-read-sec-10k-filing.html">10-K 阅读指南</a>会告诉你先读哪些章节。</li>
+      <li><strong>公司投资者关系页面。</strong>业绩公告、演示文稿和财报电话会议的网络直播，通常还附有文字记录。管理层在电话会议上的原话，往往比标题数字告诉你更多。</li>
+      <li><strong>FRED。</strong>圣路易斯联储的数据库收录了来自 100 多个来源的 80 多万条经济时间序列：利率、通胀、就业、住房等等，你可以免费制作并分享图表。</li>
+      <li><strong>美国财政部和劳工统计局。</strong>每日国债收益率曲线数据，以及每月的就业和通胀数据发布，直接来自编制这些数据的机构。</li>
+    </ul>
+
+    <h2>值得了解的免费和低成本工具</h2>
+    <ul>
+      <li><strong>Yahoo Finance。</strong>免费覆盖 100 多家交易所，提供财务报表、新闻和投资组合。付费档位去除广告并增加研究内容。</li>
+      <li><strong>Koyfin。</strong>小预算下最接近终端风格界面的选择。免费版包含两年的财务数据以及若干自选列表和筛选器；付费方案每月 $39 起。</li>
+      <li><strong>Finviz。</strong>速度很快的网页版股票筛选器，带有热力图。免费版使用延迟数据；Finviz Elite 每月 $39.50 或每年 $299.50，增加实时数据、提醒和回测。</li>
+      <li><strong>OpenBB。</strong>一个开源的 Python 工具包，可把多家提供方的数据拉入你自己的分析中。功能强大，但要求你习惯写代码。</li>
+      <li><strong>你的图书馆。</strong>许多公共图书馆和大学图书馆会让持证读者免费使用 Morningstar 或 Value Line 等研究数据库。值得去问一问。</li>
+    </ul>
+
+    <h2>常用终端功能的免费对应方案</h2>
+    <p>终端用户靠简短的功能代码来操作。其中几个最知名的功能，恰好能对应到免费来源：</p>
+    <table>
+      <thead>
+        <tr><th>终端功能</th><th>显示内容</th><th>免费对应方案</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DES</td><td>公司简介</td><td>最新 10-K 中的第 1 项“业务”</td></tr>
+        <tr><td>FA</td><td>财务分析</td><td>10-K 和 10-Q 中的财务报表，或免费数据网站</td></tr>
+        <tr><td>GP / HP</td><td>价格图表和历史价格</td><td>任何图表应用或你的券商</td></tr>
+        <tr><td>CN</td><td>公司新闻</td><td>公司的新闻稿和 8-K 备案文件</td></tr>
+        <tr><td>ECO</td><td>经济日历</td><td>FRED、劳工统计局和各国央行的数据发布日历</td></tr>
+        <tr><td>EE</td><td>盈利预期</td><td>部分可得：免费网站上的一致预期数据，细节较少</td></tr>
+      </tbody>
+    </table>
+    <p>免费版本整理起来更慢，也不够精致，但对长期投资者来说信息基本相同，就备案文件而言，你读到的还是原文而不是摘要。</p>
+
+    <h2>关于数据质量</h2>
+    <p>免费的聚合平台会出错，付费的也一样。常见的问题包括：数字对应了错误的财年期间、调整后盈利与报告盈利混在一起、海外上市标的的币种或单位错误，以及缺失值被显示为零。这些都不是回避免费工具的理由，而是让你把任何重要数字与其出处备案文件核对的理由，专业人士也正是这样做的。</p>
+
+    <h2>真正的差距在哪里</h2>
+    <p>对于难以替代的部分，请对自己诚实。汇总所有交易场所的实时行情是要花钱的，无论谁来卖。详细的债券数据在政府证券之外并不完整，不过 FINRA 会公布许多美国公司债的成交报告。一致预期、私营公司数据和深度历史数据，正是专业服务收费的地方。而没有任何东西能复制每天使用终端的那张人脉网络。</p>
+    <p>对大多数个人投资者来说，这些差距并不重要。如果你持有公司多年，行情延迟 15 分钟毫无影响，年报也比任何实时数据流更能指引你。</p>
+
+    <h2>没有终端，如何应对财报季</h2>
+    <p>业绩发布日是专业人士最依赖终端的时候，但原始材料全都是公开的。多数美国公司会以新闻稿的形式发布业绩，并随 8-K 一起提交，投资者关系网站上往往还有演示文稿。先读新闻稿，再听电话会议或读文字记录，留意分析师的提问：他们提出的问题往往正好戳中数字最薄弱的地方。把本季度的业绩指引与管理层上次的说法做比较；措辞的变化往往比数字更能说明问题。完整的 10-Q 会在几周内提交，新闻稿遗漏的细节都在里面。</p>
+
+    <h2>预算有限也行得通的研究流程</h2>
+    <ol>
+      <li><strong>找到想法。</strong>用筛选器、一则新闻，或者你在用的某个产品。写下它为什么吸引了你的注意。</li>
+      <li><strong>读懂这门生意。</strong>从最新 10-K 的“业务”和“风险因素”章节开始，再读最近的 10-Q 以及此后提交的所有 8-K。</li>
+      <li><strong>用来源核对数字。</strong>把你在应用里看到的关键数字，例如营收、营业利润率或债务，在备案文件里找出来。如果不一致，先弄清原因再继续。我们的<a href="/zh-CN/blog/how-to-verify-financial-data-sources.html">验证金融数据</a>指南介绍了常见的原因。</li>
+      <li><strong>补充背景。</strong>在 FRED 上查看相关的经济数据序列：放贷机构看利率，建筑商看新屋开工，零售商看消费者支出。</li>
+      <li><strong>写下你的投资论点。</strong>用几句话说明你为什么会买入、预计会发生什么，以及什么情况会让你改变主意。下次业绩发布时再回头看看。</li>
+    </ol>
+
+    <div class="callout">
+      <strong>把这些资料放进手机：</strong>我们的 iPhone 和 iPad 应用 <a href="/zh-CN/apps/kanesh/">Kanesh</a> 把带价格图表和新闻头条的自选列表，与每家公司近期的 SEC 备案文件放在一起，备案文件可在 EDGAR 上打开，并在结果卡片上标明来源，方便你核对数字从何而来。免费下载，无需账号。它是研究助手，而不是终端：没有机构级实时数据，没有筛选器，也没有通讯网络。
+    </div>
+
+    <h2>结语</h2>
+    <p>研究好股票并不需要彭博终端。你需要的是一手文件、可靠的基本面和价格数据来源、一些经济背景，以及核实所读内容的自律。前一项是免费的，第二、三项花费不多，而最后一项，没有任何订阅能卖给你。</p>
+    <p>投资中最大的风险很少是信息缺失，而是依据自己以为正确、却从未核实的信息行事。</p>
+
+    <h2>相关文章</h2>
+    <ul class="related-posts">
+      <li><a href="/zh-CN/blog/best-stock-research-apps-2026.html">2026年最适合自主投资者的股票研究应用</a></li>
+      <li><a href="/zh-CN/blog/how-to-read-sec-10k-filing.html">无需金融学位也能读懂10-K年报</a></li>
+      <li><a href="/zh-CN/blog/how-to-verify-financial-data-sources.html">做出投资决策前如何验证金融数据</a></li>
+      <li><a href="/zh-CN/blog/research-international-stocks-on-your-phone.html">如何在手机上研究海外股票</a></li>
+    </ul>
+
+    <div class="blog-footer-cta">
+      <h3>让一手来源触手可及</h3>
+      <p>Kanesh 在 iPhone 和 iPad 上汇集你的自选列表、价格图表、新闻头条和每家公司近期的 SEC 备案文件，并在结果卡片上标明数据来源。免费下载，无需账号。</p>
+      <a href="/zh-CN/apps/kanesh/" class="btn btn-primary">了解更多 Kanesh</a>
+    </div>
+    <footer>
+      <p>&copy; 2026 Blue Flame Games &middot; <a href="../../">BFG 首页</a> &middot; <a href="../../#blog">更多文章</a> &middot; <a href="../../privacy.html">隐私政策</a></p>
+    </footer>
+  </div>
+  <script src="../../theme.js"></script>
+  <script src="/nav.js"></script>
+  <script src="/lang.js?v=2"></script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
