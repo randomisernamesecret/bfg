@@ -18,7 +18,7 @@
 - Cyla: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase.
 - Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — 29 weather widgets, AI summaries, and a privacy-first community mesh network. One-time purchase, no subscription.
 - PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, and hike tracking with Injury Guard training load monitoring. Apple Watch support. One-time purchase.
-- Minua: https://bfgapps.co/apps/minua/ — Children earn screen time through learning apps. Built on Apple's parental controls framework. Fully on-device, no accounts.
+- Minua: https://bfgapps.co/apps/minua/ — Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults breaking their own scroll habit. Fully on-device, no accounts.
 - Bellgrave: https://bfgapps.co/apps/bellgrave/ — Action roguelike in a dark 3D cathedral. 11 heroes, 8 bosses, weapon evolutions. One-time unlock, no subscription, no ads.
 - Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device.
 - Merge Bash: https://bfgapps.co/apps/mergebash/ — Merge-to-evolve creature collector with league orders and idle rewards. No energy walls. Game progress stays on device.
