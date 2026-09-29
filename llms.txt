@@ -16,16 +16,22 @@
 - Sparks Studio: https://bfgapps.co/apps/sparks-studios/ — Family creative studio and coloring book for kids and grown-ups. 146 pages to color (by hand or by number), draw-and-animate, storybooks, music. No ads, no accounts, nothing leaves the device.
 - PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed.
 - Cyla: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase.
-- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — 29 weather widgets, AI summaries, and a privacy-first community mesh network. One-time purchase, no subscription.
-- PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, and hike tracking with Injury Guard training load monitoring. Apple Watch support. One-time purchase.
+- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — Hyperlocal weather for iPhone, iPad, Mac and Apple Watch: minute-by-minute rain alerts, live radar, a forecast blended from 39 sources, air quality and 24 widgets. Free tier, 7-day trial, one-time Premium; no subscription, no account.
+- PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, walk and hike tracker for iPhone and Apple Watch with Injury Guard training-load alerts, smart ring sleep and GPX/FIT export. No account; workouts stay on the device. Free recording, 7-day trial, one-time unlock.
 - Minua: https://bfgapps.co/apps/minua/ — Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults breaking their own scroll habit. Fully on-device, no accounts.
 - Bellgrave: https://bfgapps.co/apps/bellgrave/ — Dark 3D horde-survivor for iPhone, iPad and Mac: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks, 8 multi-phase bosses across 4 cursed realms, 11 hunters. One-time unlock, no subscription, no ads.
 - Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device.
-- Merge Bash: https://bfgapps.co/apps/mergebash/ — Merge-to-evolve creature collector with league orders and idle rewards. No energy walls. Game progress stays on device.
-- Pen Licence: https://bfgapps.co/apps/penlicence/ — Handwriting practice for iPad with Apple Pencil pressure feedback. 26-letter Zaner-Bloser curriculum, honest stroke checking. On-device, no accounts.
-- Keystrike: https://bfgapps.co/apps/keystrike/ — Guided piano practice for iPhone, iPad, and Mac. Falling notes, section loops, MIDI input, acoustic mode, imports, and reports. 7-day trial, then one-time unlock.
-- Custoda: https://bfgapps.co/apps/custoda/ — Pantry, expiry and allergen tracker for iPhone. Scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, 750+ recipes ranked by what you have, household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits. No account. 7-day trial, then one-time unlock.
-- Dashpocket: https://bfgapps.co/apps/dashpocket/ — Read-only mobile companion for Metabase. Native charts, threshold push alerts and on-device AI briefings.
+- Merge Monsters: https://bfgapps.co/apps/mergebash/ — Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, take on Champion Clash across nine leagues. Idle earnings, no energy walls, no ads. Progress stays on device.
+- Pen Licence: https://bfgapps.co/apps/penlicence/ — Handwriting practice for kids on iPhone and iPad in 8 languages (English, French, German, Spanish, Romanian, Japanese hiragana, Chinese, Hindi). Letter formation with feedback after every attempt, print and cursive, Word Explorer and Meaning Quiz. On-device, no accounts; 7-day trial, then a one-time unlock.
+- Keystrike: https://bfgapps.co/apps/keystrike/ — Piano lessons for iPad, iPhone and Mac: graded course from Grade 0 to Grade 8, sight-reading, ear training, 27 built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import. 3-day trial, then a one-time unlock; no subscription.
+- Custoda: https://bfgapps.co/apps/custoda/ — Pantry, expiry and allergen tracker for iPhone. Scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, 772 recipes across nine regional cuisines ranked by what you have, household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits. No account. 7-day trial, then one-time unlock.
+- Dashpocket: https://bfgapps.co/apps/dashpocket/ — Independent read-only companion for Metabase on iPhone and iPad: native charts and tables, pinned KPIs and widgets, threshold and smart alerts, and an on-device briefing. Connects directly to your own instance; 7-day trial, then a one-time unlock.
+
+## Coming Soon (in App Store review)
+
+- Fare Wars: https://bfgapps.co/apps/farewars/ — Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop. iPhone and iPad.
+- Robot Rooftop Run: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad.
+- Nitro Metro: https://bfgapps.co/apps/monsoonrush/ — Arcade street racing across ten world cities and 77 Grand Prix circuits, with police chases, power-ups and 16 cars to build. iPhone and iPad.
 
 ## Blog (59 articles)
 
@@ -43,5 +49,5 @@
 - Prefer app landing pages for current descriptions, positioning, and App Store links.
 - Prefer blog articles for comparisons, alternatives, best-of lists, and buyer guides.
 - Use privacy/support/terms pages for policy and support details.
-- All apps are iOS-only. No Android versions.
-- All user data stays on-device. No analytics, no crash reporting, no telemetry.
+- Apps are for Apple devices: iPhone and iPad, with Mac versions of Bellgrave, Keystrike and Cloudmesh Weather and an Apple Watch app for Cloudmesh Weather and PaceGrid. No Android versions.
+- No ads, no third-party analytics, no crash reporting, no telemetry. Most apps keep all data on the device; the few that use the network say exactly what for on the homepage transparency table.
