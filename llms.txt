@@ -10,7 +10,7 @@
 
 ## Apps
 
-- Kanesh: https://bfgapps.co/apps/kanesh/ — Stock and ETF research app for iPhone and iPad. Ask in plain English and get a card that links to its source: prices in your own currency, financials and filings from SEC EDGAR, markets and a watchlist. All AI runs on the device. No account, no ads; optional Kanesh Pro (one-time lifetime purchase or monthly subscription).
+- Kanesh: SEC Filings & Alerts: https://bfgapps.co/apps/kanesh/ — Information app for iPhone and iPad with sourced alerts for your watchlist and the economy: new SEC filings, insider purchases, price crossings, and Recession Watch (a model probability shown with its track record), plus the bond market and plain-English questions answered with sourced cards. Not investment advice. All AI runs on the device. No account, no ads; new users get Kanesh Pro features for 7 days, then Pro is a one-time lifetime purchase or a monthly subscription.
 - Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights. No account; data stays on the device. 7-day free trial, then a one-time unlock.
 - Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation.
 - Sparks Studio: https://bfgapps.co/apps/sparks-studios/ — Family creative studio and coloring book for kids and grown-ups. 146 pages to color (by hand or by number), draw-and-animate, storybooks, music. No ads, no accounts, nothing leaves the device.
