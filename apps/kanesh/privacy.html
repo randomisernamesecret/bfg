@@ -86,36 +86,53 @@
       <a href="terms.html">Terms of Use</a>
     </nav>
 
-    <p><strong>Last updated: 30 September 2026.</strong></p>
+    <p><strong>Last updated: Kanesh 2.1.</strong></p>
     <p><strong>Privacy by design.</strong> Kanesh has no account, no analytics, no advertising and no servers of its own. Blue Flame Games never receives your questions, watchlist, holdings, journal, theses or alerts.</p>
 
     <h2>What Stays on Your Device</h2>
     <ul>
-      <li>Your questions and recent search history</li>
-      <li>Your watchlist, position sizes, price alerts, journal entries and theses (stored in an on-device database)</li>
-      <li>Cached market and economic data</li>
+      <li>Your questions and recent search history, and the thread of a conversation (the company, topic and period of the last answer, kept for ten minutes so that a follow-up question can refer to it)</li>
+      <li>Your watchlist, your holdings (the share counts and costs you type in), price alerts and their history, journal entries and theses (stored in an on-device database)</li>
+      <li>Cached market and economic data, answers and briefs, kept for up to 30 days so they can be shown offline with the time they were fetched</li>
+      <li>The figures your widgets show and the search entries for your tickers and notes (see Widgets and Spotlight Search below)</li>
       <li>Any data-provider API keys you choose to add (FRED and Finnhub in 1.2.0 and later)</li>
-      <li>App preferences</li>
+      <li>App preferences and the start date of the 7-day trial</li>
     </ul>
 
     <h2>What Is Transmitted</h2>
-    <p>To show market and economic data, Kanesh requests it directly from the data providers listed below. These requests contain only what the data needs &mdash; ticker symbols, date ranges, series or currency codes &mdash; plus your API key for providers where you added one. Like any web request, the provider can see your device's IP address. No name, email, account, device identifier or location is sent.</p>
+    <p>To show market and economic data, Kanesh requests it directly from the data providers listed below. These requests contain only what the data needs &mdash; ticker symbols, the words you search for a company by, date ranges, series or currency codes &mdash; plus your API key for providers where you added one. Like any web request, the provider can see your device's IP address. No name, email, account, device identifier or location is sent.</p>
     <ul>
-      <li>Yahoo Finance (quotes, price history, company profiles, news headlines and search)</li>
+      <li>Yahoo Finance (quotes, price history, company profiles, news headlines, search, and exchange-rate history when a price history is shown in your currency)</li>
       <li>SEC EDGAR (company filings, insider transaction reports and financial statements). As the SEC asks of every automated request, these name the app and Blue Flame Games' contact address. They do not name you.</li>
       <li>U.S. Department of the Treasury (yield-curve, real-yield and bill-rate data)</li>
-      <li>U.S. Bureau of Labor Statistics (employment data)</li>
+      <li>U.S. Bureau of Labor Statistics (employment and consumer-price data and release schedules)</li>
+      <li>U.S. Bureau of Economic Analysis (the GDP release schedule)</li>
       <li>An exchange-rate service (ExchangeRate-API), to show prices in your chosen currency</li>
       <li>Alternative.me (the Crypto Fear &amp; Greed Index)</li>
       <li>The public news feeds of CoinTelegraph, Bitcoin Magazine and The Block (crypto headlines)</li>
       <li>FRED, Federal Reserve Economic Data (only if you add a FRED key)</li>
       <li>Finnhub (only if you add a Finnhub key)</li>
     </ul>
-    <p>The requests to the Treasury and the Bureau of Labor Statistics, and those for the exchange-rate table, the crypto index and the crypto headlines, fetch the same public files for everyone. They carry nothing about you, your watchlist or your holdings.</p>
+    <p>The requests to the Treasury, the Bureau of Labor Statistics and the Bureau of Economic Analysis, and those for the exchange-rate table, the crypto index and the crypto headlines, fetch the same public files for everyone. They carry nothing about you, your watchlist or your holdings.</p>
     <p>Purchases are handled by Apple's App Store under your Apple Account, and Blue Flame Games receives no payment details. Alert notifications are created on your device.</p>
     <p>Kanesh contains no analytics, tracking or advertising SDKs.</p>
+
+    <h2>Holdings</h2>
+    <p>The share counts and costs you enter are stored only on your device. Value, day change and gain/loss are calculated on the device from those entries and from the prices and exchange rates fetched as described above. A request for a price contains the ticker. It never contains your share count, your cost or a value.</p>
+
+    <h2>Widgets</h2>
+    <p>So that its widgets have something to show, Kanesh keeps a small copy of your watchlist's figures on the device: the tickers, their latest prices and changes with their times, the Recession Watch readings and, if you use the Kanesh Pro widget and choose to show them, position values. The widgets read that copy and make no requests of their own. The copy never leaves the device. Position values are marked as private, so iOS hides them on a widget while the device is locked.</p>
+
+    <h2>Spotlight Search</h2>
+    <p>Kanesh adds your watchlist tickers, your theses and your journal notes to your device's own search index, so that you can find them from Spotlight search. The index is kept by iOS on the device, and Kanesh sends it nowhere. An item is removed from the index when you delete it in Kanesh, and you can switch Kanesh's search results off in iOS Settings.</p>
+
+    <h2>Siri and Shortcuts</h2>
+    <p>You can ask Kanesh for a figure, open a ticker or get the Recession Watch status through Siri and the Shortcuts app. Kanesh works out the answer on your device, requesting public data from the providers listed above in the same way the app does. When you speak to Siri, Apple processes the voice request under <a href="https://www.apple.com/legal/privacy/">Apple's own privacy policy</a>. Blue Flame Games receives nothing.</p>
+
+    <h2>Share Cards</h2>
+    <p>A share card is an image made on your device. It leaves the device only when you choose to share it, and it goes only where you send it. A card contains public figures with their source and the date of the data. It never contains your share counts, position values, costs or notes. A card made from your brief's moves or from the schedule names the tickers it covers, and those come from your watchlist.</p>
     <h2>Background Activity</h2>
-    <p>Kanesh refreshes your watchlist and checks your own alerts in the background, when iOS allows, by requesting public data from the providers listed above. Nothing about you is uploaded, and there is no Blue Flame Games server involved. Alerts are information and can arrive late.</p>
+    <p>Kanesh refreshes your watchlist, checks your own alerts and prepares your morning brief in the background, when iOS allows, by requesting public data from the providers listed above. Nothing about you is uploaded, and there is no Blue Flame Games server involved. Alerts are information and can arrive late.</p>
 
     <h2>AI Features</h2>
     <p><strong>Kanesh 1.2.0 and later:</strong> all AI runs on your device. Your questions are never sent to any AI service, and there is no cloud AI mode. The only data that leaves your device is what the data providers listed above need to answer a request, such as a ticker symbol.</p>
@@ -128,11 +145,12 @@
       <li><a href="https://www.sec.gov/privacy">SEC EDGAR Privacy Policy</a></li>
       <li><a href="https://home.treasury.gov/subfooter/privacy-policy">U.S. Department of the Treasury Privacy Policy</a></li>
       <li><a href="https://www.bls.gov/bls/pss.htm">Bureau of Labor Statistics Privacy and Security</a></li>
+      <li><a href="https://www.bea.gov/privacy">Bureau of Economic Analysis Privacy</a></li>
       <li><a href="https://www.exchangerate-api.com/terms">ExchangeRate-API Terms</a></li>
       <li><a href="https://alternative.me/privacy/">Alternative.me Privacy</a></li>
       <li><a href="https://fred.stlouisfed.org/legal/">FRED Legal &amp; Privacy</a></li>
       <li><a href="https://finnhub.io/privacy-policy">Finnhub Privacy Policy</a></li>
-      <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> (purchases)</li>
+      <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> (purchases, and voice requests made through Siri)</li>
     </ul>
     <p>CoinTelegraph, Bitcoin Magazine and The Block each publish their own privacy policy on their websites.</p>
 
@@ -140,7 +158,7 @@
     <p>Kanesh is intended for adults aged 18 or over. It is not directed at children.</p>
 
     <h2>Changes to This Policy</h2>
-    <p>If we update this policy, we will revise the "Last updated" date at the top of this page.</p>
+    <p>If we update this policy, we revise the "Last updated" line at the top of this page.</p>
 
     <h2>Contact</h2>
     <div class="callout">
