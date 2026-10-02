@@ -48,6 +48,20 @@
       --media-bg:radial-gradient(120% 120% at 50% 0%,#0e2742 0%,#0a1828 60%,#081019 100%);
       --media-glow:rgba(56,189,248,.2);--nav-bg:rgba(8,16,25,.82);
     }
+    .cm-watch-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin:34px auto 8px;max-width:980px}
+    .cm-watch{margin:0;text-align:center}
+    .cm-watch-case{position:relative;max-width:200px;margin:0 auto;padding:9px;border-radius:46px;background:linear-gradient(155deg,#4a5464 0%,#151b24 45%,#2b333f 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16),inset 0 2px 1px rgba(255,255,255,.12),0 26px 60px rgba(0,0,0,.45),0 0 70px var(--media-glow);transition:transform .35s cubic-bezier(.3,.7,.2,1)}
+    .cm-watch-case::before,.cm-watch-case::after{content:"";position:absolute;right:-5px;width:6px;border-radius:3px;background:linear-gradient(90deg,#6a7484,#272e39)}
+    .cm-watch-case::before{top:24%;height:42px}
+    .cm-watch-case::after{top:52%;height:26px;right:-3px;width:4px}
+    .cm-watch-case img{display:block;width:100%;height:auto;aspect-ratio:416/496;border-radius:38px;background:#000}
+    .cm-watch:hover .cm-watch-case{transform:translateY(-6px) rotate(-1.5deg)}
+    .cm-watch:nth-child(even):hover .cm-watch-case{transform:translateY(-6px) rotate(1.5deg)}
+    .cm-watch figcaption{margin-top:16px;display:flex;flex-direction:column;gap:2px}
+    .cm-watch figcaption strong{color:var(--ink);font-size:15px;font-weight:700}
+    .cm-watch figcaption span{color:var(--ink-faint);font-size:13px}
+    @media(max-width:900px){.cm-watch-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}.cm-watch-case{max-width:170px;border-radius:40px}.cm-watch-case img{border-radius:32px}}
+    @media(prefers-reduced-motion:reduce){.cm-watch-case{transition:none}.cm-watch:hover .cm-watch-case{transform:none}}
   </style>
   <script type="application/ld+json">
   {
@@ -205,6 +219,23 @@
         <div class="ap-shot"><img src="/assets/cloudmesh/08.webp" alt="Tarjetas de paraguas, índice UV y calidad del aire sobre el pronóstico por horas, modo oscuro" loading="lazy"></div>
         <div class="ap-shot"><img src="/assets/cloudmesh/09.webp" alt="Pronóstico de diez días con tarjetas de running y ciclismo, modo claro" loading="lazy"></div>
         <div class="ap-shot"><img src="/assets/cloudmesh/10.webp" alt="Tarjetas de running y ciclismo y una tarjeta del sol con la hora dorada y la hora azul, modo oscuro" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="watch" class="ap-section">
+      <h2>Cloud Buddy en tu muñeca</h2>
+      <p>La app del Apple Watch responde de un vistazo a la única pregunta que importa: ¿me voy a mojar? Verás la temperatura, un aviso de lluvia en una sola línea y un pequeño compañero que interpreta el tiempo.</p>
+      <div class="cm-watch-row">
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/es/classic-sunny.webp" alt="Cloudmesh en el Apple Watch: Cloud Buddy al sol, 21° y sin lluvia prevista" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Cloud Buddy</strong><span>Soleado · Gratis</span></figcaption></figure>
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/es/kitty-rain.webp" alt="Cloudmesh en el Apple Watch: Cloud Kitty bajo la lluvia, 12° y la lluvia para en unos 24 minutos" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Cloud Kitty</strong><span>Lluvia · Premium</span></figcaption></figure>
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/es/drip-rainsoon.webp" alt="Cloudmesh en el Apple Watch: Drip con paraguas, 14° y lluvia en 12 minutos" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Drip</strong><span>Chubascos en camino · Premium</span></figcaption></figure>
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/es/mochi-night.webp" alt="Cloudmesh en el Apple Watch: Mochi con gorro de dormir bajo la luna, 9° y sin lluvia prevista" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Mochi</strong><span>Noche despejada · Premium</span></figcaption></figure>
+      </div>
+      <div class="ap-loop" style="--loop-cols:4">
+        <article><h3>La lluvia de un vistazo</h3><p>«No se espera lluvia», «Lluvia en 12 min» o «Deja de llover en ~24 min», justo donde estás.</p></article>
+        <article><h3>Vestido para el tiempo</h3><p>Gafas de sol con calor, paraguas antes del chubasco, gorro de lana con nieve y gorro de dormir de noche. Toca a tu compañero para jugar y traer un pronóstico nuevo.</p></article>
+        <article><h3>Elige compañero en el iPhone</h3><p>Cloud Buddy es gratis. Cloud Kitty, Drip y Mochi vienen con Premium. Elige uno en la app del iPhone y aparecerá en tu reloj.</p></article>
+        <article><h3>Complicaciones</h3><p>Cuatro complicaciones ponen en tu esfera a tu compañero, el tiempo actual, el aviso de paraguas y la previsión de lluvia.</p></article>
       </div>
     </section>
 

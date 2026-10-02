@@ -48,6 +48,20 @@
       --media-bg:radial-gradient(120% 120% at 50% 0%,#0e2742 0%,#0a1828 60%,#081019 100%);
       --media-glow:rgba(56,189,248,.2);--nav-bg:rgba(8,16,25,.82);
     }
+    .cm-watch-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin:34px auto 8px;max-width:980px}
+    .cm-watch{margin:0;text-align:center}
+    .cm-watch-case{position:relative;max-width:200px;margin:0 auto;padding:9px;border-radius:46px;background:linear-gradient(155deg,#4a5464 0%,#151b24 45%,#2b333f 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16),inset 0 2px 1px rgba(255,255,255,.12),0 26px 60px rgba(0,0,0,.45),0 0 70px var(--media-glow);transition:transform .35s cubic-bezier(.3,.7,.2,1)}
+    .cm-watch-case::before,.cm-watch-case::after{content:"";position:absolute;right:-5px;width:6px;border-radius:3px;background:linear-gradient(90deg,#6a7484,#272e39)}
+    .cm-watch-case::before{top:24%;height:42px}
+    .cm-watch-case::after{top:52%;height:26px;right:-3px;width:4px}
+    .cm-watch-case img{display:block;width:100%;height:auto;aspect-ratio:416/496;border-radius:38px;background:#000}
+    .cm-watch:hover .cm-watch-case{transform:translateY(-6px) rotate(-1.5deg)}
+    .cm-watch:nth-child(even):hover .cm-watch-case{transform:translateY(-6px) rotate(1.5deg)}
+    .cm-watch figcaption{margin-top:16px;display:flex;flex-direction:column;gap:2px}
+    .cm-watch figcaption strong{color:var(--ink);font-size:15px;font-weight:700}
+    .cm-watch figcaption span{color:var(--ink-faint);font-size:13px}
+    @media(max-width:900px){.cm-watch-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}.cm-watch-case{max-width:170px;border-radius:40px}.cm-watch-case img{border-radius:32px}}
+    @media(prefers-reduced-motion:reduce){.cm-watch-case{transition:none}.cm-watch:hover .cm-watch-case{transform:none}}
   </style>
   <script type="application/ld+json">
   {
@@ -205,6 +219,23 @@
         <div class="ap-shot"><img src="/assets/cloudmesh/08.webp" alt="Karten für Schirm, UV-Index und Luftqualität über der stündlichen Vorhersage, dunkler Modus" loading="lazy"></div>
         <div class="ap-shot"><img src="/assets/cloudmesh/09.webp" alt="10-Tage-Vorhersage mit Karten fürs Laufen und Radfahren, heller Modus" loading="lazy"></div>
         <div class="ap-shot"><img src="/assets/cloudmesh/10.webp" alt="Karten fürs Laufen und Radfahren und eine Sonnenkarte mit goldener und blauer Stunde, dunkler Modus" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="watch" class="ap-section">
+      <h2>Cloud Buddy am Handgelenk</h2>
+      <p>Die Apple-Watch-App beantwortet auf einen Blick die eine Frage, die zählt: Werde ich nass? Dazu die Temperatur, eine klare Regenansage in einer Zeile und ein kleiner Buddy, der das Wetter vorspielt.</p>
+      <div class="cm-watch-row">
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/de/classic-sunny.webp" alt="Cloudmesh auf der Apple Watch: Cloud Buddy in der Sonne, 21° und kein Regen erwartet" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Cloud Buddy</strong><span>Sonnig · Gratis</span></figcaption></figure>
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/de/kitty-rain.webp" alt="Cloudmesh auf der Apple Watch: Cloud Kitty im Regen, 12° und der Regen hört in etwa 24 Minuten auf" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Cloud Kitty</strong><span>Regen · Premium</span></figcaption></figure>
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/de/drip-rainsoon.webp" alt="Cloudmesh auf der Apple Watch: Drip mit Regenschirm, 14° und Regen in 12 Minuten" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Drip</strong><span>Schauer im Anmarsch · Premium</span></figcaption></figure>
+        <figure class="cm-watch"><div class="cm-watch-case"><img src="/assets/cloudmesh/watch/de/mochi-night.webp" alt="Cloudmesh auf der Apple Watch: Mochi mit Schlafmütze unter dem Mond, 9° und kein Regen erwartet" width="416" height="496" loading="lazy" decoding="async"></div><figcaption><strong>Mochi</strong><span>Klare Nacht · Premium</span></figcaption></figure>
+      </div>
+      <div class="ap-loop" style="--loop-cols:4">
+        <article><h3>Regen auf einen Blick</h3><p>„Kein Regen erwartet“, „Regen in 12 Min.“ oder „Regen endet in ~24 Min.“, genau für Ihren Standort.</p></article>
+        <article><h3>Passend zum Wetter angezogen</h3><p>Sonnenbrille bei Hitze, Regenschirm vor dem Schauer, Bommelmütze im Schnee und Schlafmütze nach Einbruch der Dunkelheit. Tippen Sie auf Ihren Buddy, dann spielt er und holt eine frische Vorhersage.</p></article>
+        <article><h3>Buddy auf dem iPhone wählen</h3><p>Cloud Buddy ist gratis. Cloud Kitty, Drip und Mochi gehören zu Premium. Wählen Sie einen in der iPhone-App, und er erscheint auf Ihrer Watch.</p></article>
+        <article><h3>Komplikationen</h3><p>Vier Komplikationen bringen Ihren Buddy, das aktuelle Wetter, den Schirm-Hinweis und die Regenaussicht direkt aufs Zifferblatt.</p></article>
       </div>
     </section>
 
