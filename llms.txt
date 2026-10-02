@@ -26,11 +26,11 @@
 - Keystrike: https://bfgapps.co/apps/keystrike/ — Piano lessons for iPad, iPhone and Mac: graded course from Grade 0 to Grade 8, sight-reading, ear training, 27 built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import. 3-day trial, then a one-time unlock; no subscription.
 - Custoda: https://bfgapps.co/apps/custoda/ — Pantry, expiry and allergen tracker for iPhone. Scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, 772 recipes across nine regional cuisines ranked by what you have, household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits. No account. 7-day trial, then one-time unlock.
 - Dashpocket: https://bfgapps.co/apps/dashpocket/ — Independent read-only companion for Metabase on iPhone and iPad: native charts and tables, pinned KPIs and widgets, threshold and smart alerts, and an on-device briefing. Connects directly to your own instance; 7-day trial, then a one-time unlock.
+- Fare Wars: https://bfgapps.co/apps/farewars/ — Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop. Free to play on iPhone and iPad; no ads, progress stays on device.
+- Robot Rooftop Run: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad; no ads, progress stays on device.
 
-## Coming Soon (in App Store review)
+## Coming Soon
 
-- Fare Wars: https://bfgapps.co/apps/farewars/ — Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop. iPhone and iPad.
-- Robot Rooftop Run: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad.
 - Nitro Metro: https://bfgapps.co/apps/monsoonrush/ — Arcade street racing across ten world cities and 77 Grand Prix circuits, with police chases, power-ups and 16 cars to build. iPhone and iPad.
 
 ## Blog (59 articles)
