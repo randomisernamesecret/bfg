@@ -344,3 +344,58 @@ html { overflow-x: clip; }
     padding: 44px 0;
   }
 }
+
+/* "Available now" filter — segmented control with a sliding thumb.
+   Hidden until app-filter.js reveals it, so no-JS visitors see the full grid. */
+.app-filter[hidden], .apps-grid .app-card[hidden] { display: none; }
+.app-filter {
+  position: relative; align-self: center;
+  display: inline-flex; gap: 2px; padding: 4px;
+  background: var(--bg-alt); border: 1px solid var(--border-light);
+  border-radius: 999px;
+}
+.app-filter-thumb {
+  position: absolute; top: 4px; bottom: 4px; left: 0;
+  width: var(--w, 0); transform: translateX(var(--x, 0));
+  border-radius: 999px; background: var(--surface);
+  box-shadow: var(--shadow-sm), 0 0 0 1px var(--border);
+  transition: transform 0.32s cubic-bezier(0.3, 0.7, 0.2, 1), width 0.32s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+.app-filter.no-anim .app-filter-thumb { transition: none; }
+.app-filter button {
+  position: relative; z-index: 1;
+  appearance: none; border: 0; background: none; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px 8px 16px; border-radius: 999px;
+  font: inherit; font-size: 13px; font-weight: 600; line-height: 1.2;
+  color: var(--text-muted); transition: color 0.2s;
+}
+.app-filter button:hover { color: var(--heading); }
+.app-filter button[aria-pressed="true"] { color: var(--heading); }
+.app-filter button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.app-filter .count {
+  min-width: 22px; padding: 2px 7px; border-radius: 999px;
+  font-size: 11px; font-weight: 700; text-align: center;
+  font-variant-numeric: tabular-nums;
+  background: color-mix(in srgb, var(--text-muted) 14%, transparent);
+  transition: background 0.2s, color 0.2s;
+}
+.app-filter button[aria-pressed="true"] .count {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--accent);
+}
+.apps-grid .app-card.is-entering {
+  animation: app-card-in 0.38s cubic-bezier(0.3, 0.7, 0.2, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 35ms);
+}
+@keyframes app-card-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.985); }
+}
+@media (max-width: 640px) {
+  .app-filter { width: 100%; }
+  .app-filter button { flex: 1; justify-content: center; padding-left: 10px; padding-right: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-filter-thumb { transition: none; }
+  .apps-grid .app-card.is-entering { animation: none; }
+}

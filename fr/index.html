@@ -419,11 +419,16 @@
   <!-- Apps -->
   <div class="section-head">
     <h2>Disponibles</h2>
-    <span class="head-tag">Sur l'App Store</span>
+    <div class="app-filter" role="group" aria-label="Filtrer les apps" hidden>
+      <span class="app-filter-thumb" aria-hidden="true"></span>
+      <button type="button" data-kind="all" aria-pressed="true">Tout <span class="count"></span></button>
+      <button type="button" data-kind="app" aria-pressed="false">Apps <span class="count"></span></button>
+      <button type="button" data-kind="game" aria-pressed="false">Jeux <span class="count"></span></button>
+    </div>
   </div>
   <section class="apps-grid" id="apps">
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/keystrike/fr/01.webp" alt="Keystrike — guided piano practice" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Musique</div>
@@ -433,7 +438,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/cloudmesh/fr/01.webp" alt="Cloudmesh Weather — live radar and minute-by-minute rain" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Météo</div>
@@ -443,7 +448,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/bellgrave/01.webp" alt="Bellgrave action roguelike" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Jeux</div>
@@ -453,7 +458,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/minua/fr/01.webp" alt="Minua — du temps d'écran qui se mérite" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Famille &amp; Focus</div>
@@ -463,7 +468,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/cognithix/01.webp" alt="Cognithix — 11+ exam preparation" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Éducation</div>
@@ -473,7 +478,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/pacegrid/fr/01.webp" alt="PaceGrid — fitness tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Sport</div>
@@ -483,7 +488,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/arithmetix/01.webp" alt="Arithmetix home screen with Pip the pet and today's maths plan" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Éducation</div>
@@ -493,7 +498,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/photoflight/fr/01.webp" alt="PhotoFlight — travel map from photos" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Voyage</div>
@@ -503,7 +508,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/cyla/fr/01.webp" alt="Cyla — private cycle tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Santé</div>
@@ -513,7 +518,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/kanesh/01.webp" alt="Écran Alertes de Kanesh avec des alertes de prix et de nouveaux dépôts SEC pour AAPL, MSFT et NVDA" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Finance</div>
@@ -523,7 +528,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/sparks/fr/01.webp" alt="Sparks Studio : studio créatif familial pour dessiner, colorier et créer des livres illustrés" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Enfants</div>
@@ -533,7 +538,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/penlicence/fr/01.webp" alt="Pen Licence — handwriting practice in 8 languages" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Éducation</div>
@@ -543,7 +548,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/mergebash/fr/01.webp" alt="Merge Monsters — neon creature merge game" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Jeux</div>
@@ -553,7 +558,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/CardBash/fr/01.webp" alt="Card Bash" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Jeux</div>
@@ -563,7 +568,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/custoda/fr/01.webp" alt="Custoda — suivi du garde-manger et des dates de péremption avec alertes allergènes" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Alimentation &amp; Santé</div>
@@ -573,7 +578,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/dashpocket/01.webp" alt="Dashpocket" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Productivité</div>
@@ -583,7 +588,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/farewars/01.webp" alt="Fare Wars" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Jeux</div>
@@ -593,7 +598,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/robotrooftoprun/fr/01.webp" alt="Robot Rooftop Run" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">Jeux</div>
@@ -721,6 +726,7 @@
   <script src="/nav.js"></script>
   <script src="/lang.js?v=2"></script>
   <script src="/blog-filter.js"></script>
+  <script src="/app-filter.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

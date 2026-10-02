@@ -419,11 +419,16 @@
   <!-- Apps -->
   <div class="section-head">
     <h2>リリース済み</h2>
-    <span class="head-tag">App Store</span>
+    <div class="app-filter" role="group" aria-label="アプリを絞り込む" hidden>
+      <span class="app-filter-thumb" aria-hidden="true"></span>
+      <button type="button" data-kind="all" aria-pressed="true">すべて <span class="count"></span></button>
+      <button type="button" data-kind="app" aria-pressed="false">アプリ <span class="count"></span></button>
+      <button type="button" data-kind="game" aria-pressed="false">ゲーム <span class="count"></span></button>
+    </div>
   </div>
   <section class="apps-grid" id="apps">
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/keystrike/ja/01.webp" alt="Keystrike — guided piano practice" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">音楽</div>
@@ -433,7 +438,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/cloudmesh/ja/01.webp" alt="Cloudmesh Weather — live radar and minute-by-minute rain" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">天気</div>
@@ -443,7 +448,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/bellgrave/ja/01.webp" alt="Bellgrave action roguelike" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ゲーム</div>
@@ -453,7 +458,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/minua/ja/01.webp" alt="Minua — がんばった分だけスクリーンタイム" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ファミリー・集中</div>
@@ -463,7 +468,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/cognithix/01.webp" alt="Cognithix — 11+ exam preparation" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">教育</div>
@@ -473,7 +478,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/pacegrid/ja/01.webp" alt="PaceGrid — fitness tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">フィットネス</div>
@@ -483,7 +488,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/arithmetix/01.webp" alt="Arithmetix home screen with Pip the pet and today's maths plan" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">教育</div>
@@ -493,7 +498,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/photoflight/ja/01.webp" alt="PhotoFlight — travel map from photos" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">旅行</div>
@@ -503,7 +508,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/cyla/ja/01.webp" alt="Cyla — private cycle tracker" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ヘルス</div>
@@ -513,7 +518,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/kanesh/01.webp" alt="AAPL・MSFT・NVDA の価格アラートと新しい SEC 提出書類アラートを表示した Kanesh のアラート画面" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ファイナンス</div>
@@ -523,7 +528,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/sparks/01.webp" alt="Sparks Studio — 描く、塗る、絵本をつくる家族のクリエイティブスタジオ" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">キッズ</div>
@@ -533,7 +538,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/penlicence/ja/01.webp" alt="Pen Licence — handwriting practice in 8 languages" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">教育</div>
@@ -543,7 +548,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/mergebash/ja/01.webp" alt="Merge Monsters — neon creature merge game" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ゲーム</div>
@@ -553,7 +558,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/CardBash/ja/01.webp" alt="Card Bash" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ゲーム</div>
@@ -563,7 +568,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/custoda/ja/01.webp" alt="Custoda — アレルゲン警告つきの食品管理・賞味期限トラッカー" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">食品 &amp; 健康</div>
@@ -573,7 +578,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="app">
       <div class="card-img"><img src="/assets/dashpocket/01.webp" alt="Dashpocket" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">仕事効率化</div>
@@ -583,7 +588,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/farewars/01.webp" alt="Fare Wars" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ゲーム</div>
@@ -593,7 +598,7 @@
       </div>
     </article>
 
-    <article class="app-card">
+    <article class="app-card" data-kind="game">
       <div class="card-img"><img src="/assets/robotrooftoprun/ja/01.webp" alt="Robot Rooftop Run" loading="lazy"></div>
       <div class="card-body">
         <div class="card-cat">ゲーム</div>
@@ -721,6 +726,7 @@
   <script src="/nav.js"></script>
   <script src="/lang.js?v=2"></script>
   <script src="/blog-filter.js"></script>
+  <script src="/app-filter.js"></script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c5c7f15af9564700b8a8c17a70a81016"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
