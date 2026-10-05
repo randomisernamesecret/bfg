@@ -1,0 +1,54 @@
+{
+  "packs": [
+    {
+      "id": "us",
+      "name": "United States",
+      "version": "2026-10-05",
+      "schemaVersion": 2,
+      "products": 3000,
+      "bytes": 9068544,
+      "sha256": "0776a54e7e91cc6113c6576b11abe561b451189226f601e323a714865c5f32c6",
+      "url": "https://bfgapps.co/apps/custoda/catalog/2026-10-05/us.sqlite"
+    },
+    {
+      "id": "gb",
+      "name": "United Kingdom",
+      "version": "2026-10-05",
+      "schemaVersion": 2,
+      "products": 3000,
+      "bytes": 9113600,
+      "sha256": "ae977d143ac83a8a9995f61e8324bc790db5bc166adfcb06975c4bcef0cc8571",
+      "url": "https://bfgapps.co/apps/custoda/catalog/2026-10-05/gb.sqlite"
+    },
+    {
+      "id": "fr",
+      "name": "France",
+      "version": "2026-10-05",
+      "schemaVersion": 2,
+      "products": 3000,
+      "bytes": 9883648,
+      "sha256": "1f6edf4ca4679d88fa823257a8271878a5df5995c808de48a83893a871970efd",
+      "url": "https://bfgapps.co/apps/custoda/catalog/2026-10-05/fr.sqlite"
+    },
+    {
+      "id": "de",
+      "name": "Germany",
+      "version": "2026-10-05",
+      "schemaVersion": 2,
+      "products": 3000,
+      "bytes": 9342976,
+      "sha256": "bdc4ad971fd1aa5a738f3453194b7ebb1f765c556c539210bfc9b319eeebaa7c",
+      "url": "https://bfgapps.co/apps/custoda/catalog/2026-10-05/de.sqlite"
+    },
+    {
+      "id": "es",
+      "name": "Spain",
+      "version": "2026-10-05",
+      "schemaVersion": 2,
+      "products": 3000,
+      "bytes": 9629696,
+      "sha256": "7c4215f049c79b422f02e4714c926ea90249df7c2519516e126d77fae4595fe5",
+      "url": "https://bfgapps.co/apps/custoda/catalog/2026-10-05/es.sqlite"
+    }
+  ]
+}
