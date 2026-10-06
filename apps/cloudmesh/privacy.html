@@ -119,9 +119,12 @@
     <h2>Third-Party Services</h2>
     <ul>
       <li>Weather data providers receive coordinates only.</li>
+      <li><strong>Route weather</strong> — when you plan a route, Apple Maps works out the route between the places you enter. The app then sends points along that route (about every 20 km, rounded to about 1 km) directly from your device to Open-Meteo (open-meteo.com) to get forecasts. Only those coordinates are sent: no addresses, no identifiers, no account. Forecasts are cached on your device only. Your route is never sent to or stored by BFG.</li>
+      <li><strong>"More apps" list</strong> — about once a week, the app asks Apple's public App Store lookup service for the current names and icons of Blue Flame Games apps. The request contains only those apps' App Store IDs and your device's two-letter region code, so the right store is used. No personal data or identifiers are sent, the result is cached on your device, and nothing is stored by BFG.</li>
       <li>Earthquake and environmental data comes from public feeds.</li>
       <li>Apple processes in-app purchases.</li>
     </ul>
+    <p>None of these requests are used for tracking or advertising, and we do not combine them with any other data.</p>
 
     <h2>In-App Purchases</h2>
     <p>One-time purchases go through Apple's App Store. We do not receive any payment information.</p>
