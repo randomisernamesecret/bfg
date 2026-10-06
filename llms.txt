@@ -27,7 +27,7 @@
 - Custoda: https://bfgapps.co/apps/custoda/ — Pantry, expiry and allergen tracker for iPhone. Scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, 772 recipes across nine regional cuisines ranked by what you have, household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits. No account. 7-day trial, then one-time unlock.
 - Dashpocket: https://bfgapps.co/apps/dashpocket/ — Independent read-only companion for Metabase on iPhone and iPad: native charts and tables, pinned KPIs and widgets, threshold and smart alerts, and an on-device briefing. Connects directly to your own instance; 7-day trial, then a one-time unlock.
 - Fare Wars: https://bfgapps.co/apps/farewars/ — Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop. Free to play on iPhone and iPad; no ads, progress stays on device.
-- Robot Rooftop Run: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad; no ads, progress stays on device.
+- Zoombot: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad; no ads, progress stays on device.
 
 ## Coming Soon
 
