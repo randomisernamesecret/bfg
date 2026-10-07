@@ -19,7 +19,7 @@
 - Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — Hyperlocal weather for iPhone, iPad, Mac and Apple Watch: minute-by-minute rain alerts, live radar, a forecast blended from 39 sources, air quality and 24 widgets. Free tier, 7-day trial, one-time Premium; no subscription, no account.
 - PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, walk and hike tracker for iPhone and Apple Watch with Injury Guard training-load alerts, smart ring sleep and GPX/FIT export. No account; workouts stay on the device. Free recording, 7-day trial, one-time unlock.
 - Minua: https://bfgapps.co/apps/minua/ — Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults breaking their own scroll habit. Fully on-device, no accounts.
-- Bellgrave: https://bfgapps.co/apps/bellgrave/ — Dark 3D horde-survivor for iPhone, iPad and Mac: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks, 8 multi-phase bosses across 4 cursed realms, 11 hunters. One-time unlock, no subscription, no ads.
+- Bellgrave: https://bfgapps.co/apps/bellgrave/ — Dark 3D horde-survivor for iPhone, iPad and Mac: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks, 8 multi-phase bosses across 4 cursed realms, 11 hunters. Play with touch or a PS5 DualSense, Xbox or MFi controller. One-time unlock, no subscription, no ads.
 - Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device.
 - Merge Bash: https://bfgapps.co/apps/mergebash/ — Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, take on Champion Clash across nine leagues. Idle earnings, no energy walls, no ads. Progress stays on device.
 - Inkla: https://bfgapps.co/apps/penlicence/ — Handwriting practice for kids on iPhone and iPad in 8 languages (English, French, German, Spanish, Romanian, Japanese hiragana, Chinese, Hindi). Letter formation with feedback after every attempt, print and cursive, Word Explorer and Meaning Quiz. On-device, no accounts; 7-day trial, then a one-time unlock.
@@ -31,7 +31,8 @@
 
 ## Coming Soon
 
-- Nitro Metro: https://bfgapps.co/apps/monsoonrush/ — Arcade street racing across ten world cities and 77 Grand Prix circuits, with police chases, power-ups and 16 cars to build. iPhone and iPad.
+- Nitro Metro: https://bfgapps.co/apps/monsoonrush/ — Arcade street racing across ten world cities and 77 Grand Prix circuits, with police chases, power-ups and 16 cars to build. Touch or a PS5 DualSense, Xbox or MFi controller. Free to play, no third-party ads. iPhone and iPad.
+- Bellgrave Holdout: https://bfgapps.co/apps/seriousbellgrave/ — First-person survival action: hold the streets of Bellgrave while families escape, with nine weapons, three districts and escalating boss fights. Touch or a PS5 DualSense, Xbox or MFi controller. iPhone and iPad.
 - PhotoGuessr: https://bfgapps.co/apps/photoguessr/ — A family game with your own photos: one shared screen (or the TV via AirPlay), secret pins for where each picture was taken, and a shared reveal. Photos stay on the device; no ads, no accounts. Coming soon to iPhone and iPad.
 
 ## Blog (60 articles)
