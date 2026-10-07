@@ -1,6 +1,6 @@
 # BFG
 
-> Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No ads, no tracking-first business model. Your data stays on your device wherever the product allows.
+> Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
 ## Key Pages
 
@@ -51,4 +51,4 @@
 - Prefer blog articles for comparisons, alternatives, best-of lists, and buyer guides.
 - Use privacy/support/terms pages for policy and support details.
 - Apps are for Apple devices: iPhone and iPad, with Mac versions of Bellgrave, Keystrike and Cloudmesh Weather and an Apple Watch app for Cloudmesh Weather and PaceGrid. No Android versions.
-- No ads, no third-party analytics, no crash reporting, no telemetry. Most apps keep all data on the device; the few that use the network say exactly what for on the homepage transparency table.
+- No third-party ads, no third-party analytics, no crash reporting, no telemetry. Most apps keep all data on the device; the few that use the network say exactly what for on the homepage transparency table.
