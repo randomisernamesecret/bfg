@@ -502,3 +502,6 @@ footer a:hover { color: var(--accent); }
 @media (min-width: 701px) {
   .nav-hamburger { display: none !important; }
 }
+
+/* Blog "Updated N days ago": hidden until /reldate.js has written it */
+time.rel-date:not(.rel-ready) { visibility: hidden; }

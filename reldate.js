@@ -1,34 +1,28 @@
-// Blog meta line: turn <time class="rel-date"> into "Updated 3 days ago" in the
-// page language. The static text keeps the full date for crawlers and no-JS.
+// Blog meta line: turn <time class="rel-date"> into "Updated 3 days ago" (always in
+// days) in the page language. The static text keeps the full date for crawlers;
+// style.css hides it until this has run.
 (function () {
   var TPL = {
-    en: { updated: 'Updated {d}', published: 'Published {d}' },
-    de: { updated: 'Aktualisiert {d}', published: 'Veröffentlicht {d}' },
-    es: { updated: 'Actualizado {d}', published: 'Publicado {d}' },
-    fr: { updated: 'Mis à jour {d}', published: 'Publié {d}' },
-    ja: { updated: '{d}に更新', published: '{d}に公開' },
-    zh: { updated: '{d}更新', published: '{d}发布' }
+    en: 'Updated {d}', de: 'Aktualisiert {d}', es: 'Actualizado {d}',
+    fr: 'Mis à jour {d}', ja: '{d}に更新', zh: '{d}更新'
   };
   var lang = document.documentElement.lang || 'en';
   var tpl = TPL[lang.slice(0, 2)] || TPL.en;
-  if (!window.Intl || !Intl.RelativeTimeFormat) return;
-  var rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' });
-
-  function relative(days) {
-    if (days < 7) return rtf.format(-days, 'day');
-    if (days < 31) return rtf.format(-Math.floor(days / 7), 'week');
-    if (days < 365) return rtf.format(-Math.floor(days / 30.44), 'month');
-    return rtf.format(-Math.floor(days / 365.25), 'year');
+  var els = document.querySelectorAll('time.rel-date');
+  if (!window.Intl || !Intl.RelativeTimeFormat) {
+    els.forEach(function (el) { el.classList.add('rel-ready'); });
+    return;
   }
+  var rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' });
 
   var now = new Date();
   var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  document.querySelectorAll('time.rel-date').forEach(function (el) {
+  els.forEach(function (el) {
     var p = (el.getAttribute('datetime') || '').split('-');
+    el.classList.add('rel-ready');
     if (p.length !== 3) return;
     var then = new Date(+p[0], +p[1] - 1, +p[2]);
     var days = Math.max(0, Math.round((today - then) / 864e5));
-    el.title = el.textContent;
-    el.textContent = (tpl[el.dataset.kind] || tpl.updated).replace('{d}', relative(days));
+    el.textContent = tpl.replace('{d}', rtf.format(-days, 'day'));
   });
 })();
