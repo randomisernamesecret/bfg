@@ -505,3 +505,13 @@ footer a:hover { color: var(--accent); }
 
 /* Blog "Updated N days ago": hidden until /reldate.js has written it */
 time.rel-date:not(.rel-ready) { visibility: hidden; }
+
+/* App pages: "At a glance" facts box (tools/app_facts.py). Colours derive from the
+   page text so it works on light, dark and the immersive per-app themes. */
+.app-facts{margin:10px 0 30px}
+.app-facts-title{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.72;margin:0 0 12px;line-height:1.3}
+.app-facts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:10px;margin:0;padding:0}
+.app-facts-grid div{border:1px solid rgba(127,127,127,.28);background:rgba(127,127,127,.07);border-radius:14px;padding:12px 14px}
+.app-facts-grid dt{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.66;margin:0 0 4px}
+.app-facts-grid dd{margin:0;font-size:15px;line-height:1.4;font-weight:600}
+@media (min-width:700px){.app-facts-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
