@@ -4,6 +4,10 @@
 
 
 
+
+
+
+
 Last updated: 2026-10-26
 
 ## Key Pages
@@ -40,7 +44,7 @@ Last updated: 2026-10-26
 - Mittenly: https://bfgapps.co/apps/mittenly/ — A cosy pixel-art yarn puzzle (store name "Mittenly: Cats & Yarn Puzzle"): untangle the yarn to knit mittens, furnish six homes and look after six cats. Every level is checked to be solvable. 40 levels and a Daily Mitten free, one-time purchase for endless levels; no ads, no lives, no timers, no accounts. Coming soon to iPhone and iPad.
 - Hollowstead: https://bfgapps.co/apps/hollowstead/ — A farming and survival game: inherit a farm in a valley seven years after the Blight, grow food through four seasons, make friends in the fort and the salt town, trade, cook, fish and keep animals, and hold your fences against the Hollowed with defences, traps and lanterns. An endless mine (the Callow Deep), a first-year story in five chapters where choices change who stands with you, and Casual, Survival and Hardcore modes. Chapter 1 free, one-time unlock for the full game; no ads, no tracking, fully on-device. In development, coming soon to iPhone and iPad.
 
-## Blog (63 articles)
+## Blog (67 articles)
 
 Guides, comparisons and buyer's guides by Daniel Hart. Each is also published in German, Spanish, French, Japanese and Simplified Chinese at /de/blog/, /es/blog/, /fr/blog/, /ja/blog/ and /zh-CN/blog/ with the same file name.
 
@@ -83,6 +87,10 @@ Guides, comparisons and buyer's guides by Daniel Hart. Each is also published in
 
 ### Games
 
+- [The Best Bus Games for iPhone and iPad in 2026, and Which Kind Suits You](https://bfgapps.co/blog/best-bus-games-iphone-ipad-2026.html): A fair guide to bus games on iPhone and iPad: realistic simulators, puzzle games and arcade racers, what each does well, how to avoid the ads, and which kind suits you.
+- [The Best Endless Runner Games on iPhone and iPad in 2026 (Including Ones Without Ads)](https://bfgapps.co/blog/best-endless-runner-games-iphone-2026.html): A fair guide to endless runners on iPhone and iPad: what Subway Surfers, Temple Run 2, Jetpack Joyride and Alto's Odyssey do well, what ads and purchases cost you, and how to play one without ads.
+- [The Best Idle Merge Games in 2026, and Which Ones Skip the Ads and Energy Timers](https://bfgapps.co/blog/best-idle-merge-games-no-ads-2026.html): A fair guide to merge games on iPhone and iPad: what Merge Mansion, Travel Town, Merge Dragons and others do well, which ones use ads and energy meters, and how to find one without.
+- [The Best Roguelike Deck-Building Card Games on iPhone and iPad in 2026](https://bfgapps.co/blog/best-roguelike-deck-building-games-iphone-2026.html): A fair guide to roguelike deck-builders on iPhone and iPad: what Slay the Spire, Balatro, Monster Train, Dicey Dungeons and Wildfrost do well, how each one charges, and how to build a deck that wins.
 - [The Best Yarn Puzzle Games in 2026, and How to Play One Without Ads](https://bfgapps.co/blog/best-yarn-puzzle-games-2026.html): A fair guide to yarn and wool puzzle games on iPhone and iPad: what the big names do well, what players complain about, how to avoid the ads, and tips to stop getting tangled.
 - [How to Play iPhone, iPad and Mac Games With a PS5 or Xbox Controller](https://bfgapps.co/blog/play-games-with-ps5-xbox-controller-iphone-ipad-mac.html): Pair a PS5 DualSense or Xbox controller with your iPhone, iPad or Mac, switch between touch and controller, and get more from action and racing games.
 
