@@ -3,6 +3,7 @@
 > Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
 
+
 Last updated: 2026-10-26
 
 ## Key Pages
@@ -23,7 +24,7 @@ Last updated: 2026-10-26
 - PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, walk and hike tracker for iPhone and Apple Watch with Injury Guard training-load alerts, smart ring sleep and GPX/FIT export. No account; workouts stay on the device. Free recording, 7-day trial, one-time unlock. App Store: https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225
 - Minua: https://bfgapps.co/apps/minua/ — Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults breaking their own scroll habit. Fully on-device, no accounts. App Store: https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967
 - Bellgrave: https://bfgapps.co/apps/bellgrave/ — Dark 3D horde-survivor for iPhone, iPad and Mac: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks, 8 multi-phase bosses across 4 cursed realms, 11 hunters. Play with touch or a PS5 DualSense, Xbox or MFi controller. One-time unlock, no subscription, no ads. App Store: https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396
-- Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device. App Store: https://apps.apple.com/app/id6775067276
+- Card Bash: https://bfgapps.co/apps/cardbash/ — Roguelike deck RPG for iPhone and iPad: 200+ neon creature cards, tactical turn-based fights, a new booster to open every 24 hours, daily quests and climbing challenges, duels with a friend nearby over Wi-Fi or Bluetooth, and trades through Messages. No ads, no subscription; optional in-app purchases. Game progress stays on device. App Store: https://apps.apple.com/app/id6775067276
 - Merge Bash: https://bfgapps.co/apps/mergebash/ — Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, take on Champion Clash across nine leagues. Idle earnings, no energy walls, no ads. Progress stays on device. App Store: https://apps.apple.com/gb/app/merge-bash/id6776048979
 - Inkla: https://bfgapps.co/apps/penlicence/ — Handwriting practice for kids on iPhone and iPad in 8 languages (English, French, German, Spanish, Romanian, Japanese hiragana, Chinese, Hindi). Letter formation with feedback after every attempt, print and cursive, Word Explorer and Meaning Quiz. On-device, no accounts; 7-day trial, then a one-time unlock. App Store: https://apps.apple.com/gb/app/id6761393693
 - Keystrike: https://bfgapps.co/apps/keystrike/ — Piano lessons for iPad, iPhone and Mac: graded course from Grade 0 to Grade 8, sight-reading, ear training, 27 built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import. 3-day trial, then a one-time unlock; no subscription. App Store: https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075
