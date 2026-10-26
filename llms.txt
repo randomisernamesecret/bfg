@@ -1,6 +1,9 @@
-# BFG
+# Blue Flame Games (BFG)
 
 > Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
+
+
+Last updated: 2026-10-26
 
 ## Key Pages
 
@@ -10,23 +13,23 @@
 
 ## Apps
 
-- Tickview: SEC Filings & Alerts: https://bfgapps.co/apps/kanesh/ — Information app for iPhone and iPad with sourced alerts for your watchlist and the economy: new SEC filings, insider purchases, price crossings, and Recession Watch (a model probability shown with its track record), plus the bond market and plain-English questions answered with sourced cards. Not investment advice. All AI runs on the device. No account, no ads; new users get Tickview Pro features for 7 days, then Pro is a one-time lifetime purchase or a monthly subscription.
-- Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights. No account; data stays on the device. 7-day free trial, then a one-time unlock.
-- Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation.
-- Doodlebee: https://bfgapps.co/apps/sparks-studios/ — Drawing and coloring app for kids and grown-ups. Draw any shape, tap to fill it, watch it dance; plus 146 pages to color (by hand or by number), storybooks read aloud, music. No ads, no accounts, nothing leaves the device.
-- PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed.
-- Ondi: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase.
-- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — Hyperlocal weather for iPhone, iPad, Mac and Apple Watch: minute-by-minute rain alerts, live radar, a forecast blended from 39 sources, air quality and 24 widgets. Free tier, 7-day trial, one-time Premium; no subscription, no account.
-- PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, walk and hike tracker for iPhone and Apple Watch with Injury Guard training-load alerts, smart ring sleep and GPX/FIT export. No account; workouts stay on the device. Free recording, 7-day trial, one-time unlock.
-- Minua: https://bfgapps.co/apps/minua/ — Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults breaking their own scroll habit. Fully on-device, no accounts.
-- Bellgrave: https://bfgapps.co/apps/bellgrave/ — Dark 3D horde-survivor for iPhone, iPad and Mac: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks, 8 multi-phase bosses across 4 cursed realms, 11 hunters. Play with touch or a PS5 DualSense, Xbox or MFi controller. One-time unlock, no subscription, no ads.
-- Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device.
-- Merge Bash: https://bfgapps.co/apps/mergebash/ — Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, take on Champion Clash across nine leagues. Idle earnings, no energy walls, no ads. Progress stays on device.
-- Inkla: https://bfgapps.co/apps/penlicence/ — Handwriting practice for kids on iPhone and iPad in 8 languages (English, French, German, Spanish, Romanian, Japanese hiragana, Chinese, Hindi). Letter formation with feedback after every attempt, print and cursive, Word Explorer and Meaning Quiz. On-device, no accounts; 7-day trial, then a one-time unlock.
-- Keystrike: https://bfgapps.co/apps/keystrike/ — Piano lessons for iPad, iPhone and Mac: graded course from Grade 0 to Grade 8, sight-reading, ear training, 27 built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import. 3-day trial, then a one-time unlock; no subscription.
-- Custoda: https://bfgapps.co/apps/custoda/ — Pantry, expiry and allergen tracker for iPhone. Scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, 772 recipes across nine regional cuisines ranked by what you have, household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits. No account. 7-day trial, then one-time unlock.
-- Fare Wars: https://bfgapps.co/apps/farewars/ — Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop. Free to play on iPhone and iPad; no ads, progress stays on device.
-- Zoombot: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad; no ads, progress stays on device.
+- Tickview: SEC Filings & Alerts: https://bfgapps.co/apps/kanesh/ — Information app for iPhone and iPad with sourced alerts for your watchlist and the economy: new SEC filings, insider purchases, price crossings, and Recession Watch (a model probability shown with its track record), plus the bond market and plain-English questions answered with sourced cards. Not investment advice. All AI runs on the device. No account, no ads; new users get Tickview Pro features for 7 days, then Pro is a one-time lifetime purchase or a monthly subscription. App Store: https://apps.apple.com/gb/app/kanesh/id6760582379
+- Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights. No account; data stays on the device. 7-day free trial, then a one-time unlock. App Store: https://apps.apple.com/gb/app/cognithix/id6760035436
+- Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation. App Store: https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397
+- Doodlebee: https://bfgapps.co/apps/sparks-studios/ — Drawing and coloring app for kids and grown-ups. Draw any shape, tap to fill it, watch it dance; plus 146 pages to color (by hand or by number), storybooks read aloud, music. No ads, no accounts, nothing leaves the device. App Store: https://apps.apple.com/gb/app/id6760515470
+- PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed. App Store: https://apps.apple.com/gb/app/photoflight/id6761143528
+- Ondi: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase. App Store: https://apps.apple.com/gb/app/id6760896784
+- Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — Hyperlocal weather for iPhone, iPad, Mac and Apple Watch: minute-by-minute rain alerts, live radar, a forecast blended from 39 sources, air quality and 24 widgets. Free tier, 7-day trial, one-time Premium; no subscription, no account. App Store: https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651
+- PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, walk and hike tracker for iPhone and Apple Watch with Injury Guard training-load alerts, smart ring sleep and GPX/FIT export. No account; workouts stay on the device. Free recording, 7-day trial, one-time unlock. App Store: https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225
+- Minua: https://bfgapps.co/apps/minua/ — Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults breaking their own scroll habit. Fully on-device, no accounts. App Store: https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967
+- Bellgrave: https://bfgapps.co/apps/bellgrave/ — Dark 3D horde-survivor for iPhone, iPad and Mac: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks, 8 multi-phase bosses across 4 cursed realms, 11 hunters. Play with touch or a PS5 DualSense, Xbox or MFi controller. One-time unlock, no subscription, no ads. App Store: https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396
+- Card Bash: https://bfgapps.co/apps/cardbash/ — Creature card battler with pack openings, quests, deck building, and optional App Store purchases. Game progress stays on device. App Store: https://apps.apple.com/app/id6775067276
+- Merge Bash: https://bfgapps.co/apps/mergebash/ — Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, take on Champion Clash across nine leagues. Idle earnings, no energy walls, no ads. Progress stays on device. App Store: https://apps.apple.com/gb/app/merge-bash/id6776048979
+- Inkla: https://bfgapps.co/apps/penlicence/ — Handwriting practice for kids on iPhone and iPad in 8 languages (English, French, German, Spanish, Romanian, Japanese hiragana, Chinese, Hindi). Letter formation with feedback after every attempt, print and cursive, Word Explorer and Meaning Quiz. On-device, no accounts; 7-day trial, then a one-time unlock. App Store: https://apps.apple.com/gb/app/id6761393693
+- Keystrike: https://bfgapps.co/apps/keystrike/ — Piano lessons for iPad, iPhone and Mac: graded course from Grade 0 to Grade 8, sight-reading, ear training, 27 built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import. 3-day trial, then a one-time unlock; no subscription. App Store: https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075
+- Custoda: https://bfgapps.co/apps/custoda/ — Pantry, expiry and allergen tracker for iPhone. Scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, 772 recipes across nine regional cuisines ranked by what you have, household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits. No account. 7-day trial, then one-time unlock. App Store: https://apps.apple.com/us/app/custoda-expiry-tracker/id6787263003
+- Fare Wars: https://bfgapps.co/apps/farewars/ — Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop. Free to play on iPhone and iPad; no ads, progress stays on device. App Store: https://apps.apple.com/gb/app/fare-wars/id6815887660
+- Zoombot: https://bfgapps.co/apps/robotrooftoprun/ — Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew, build your own robot in the Workshop. iPhone and iPad; no ads, progress stays on device. App Store: https://apps.apple.com/gb/app/id6811426255
 
 ## Coming Soon
 
@@ -38,12 +41,105 @@
 
 ## Blog (63 articles)
 
-- Blog index: https://bfgapps.co/#blog
-- Categories: Education, Finance, Parenting, Health, Fitness, Travel, Weather, Music, Home, Games
+Guides, comparisons and buyer's guides by Daniel Hart. Each is also published in German, Spanish, French, Japanese and Simplified Chinese at /de/blog/, /es/blog/, /fr/blog/, /ja/blog/ and /zh-CN/blog/ with the same file name.
+
+### Education
+
+- [The 11+ Preparation Guide for 2026](https://bfgapps.co/blog/11-plus-preparation-guide-2026.html): What the 11+ tests in 2026, who sets the papers now, when to start, and how books, apps and tutors fit together, with honest notes on cost and motivation.
+- [Best Handwriting Apps for Kids in 2026: iPad, iPhone and Apple Pencil](https://bfgapps.co/blog/best-handwriting-apps-for-kids-2026.html): A fair comparison of handwriting apps for kids in 2026: Writing Wizard, LetterSchool, iTrace, Wet-Dry-Try and Inkla. What each teaches well, how it charges and who it suits.
+- [Cognithix vs Atom Learning: Which 11+ Option Fits Your Family in 2026?](https://bfgapps.co/blog/cognithix-vs-atom-learning-2026.html): A fair 2026 comparison of Cognithix and Atom Learning for 11+ practice: subjects, maths coverage, pricing, accounts, privacy and which families each one suits.
+- [DoodleMaths or Arithmetix? An Honest Comparison for UK Parents](https://bfgapps.co/blog/doodlemaths-or-arithmetix.html): DoodleMaths and Arithmetix compared for UK primary maths: year groups, times tables and MTC practice, motivation, parent insights, privacy and cost. Checked September 2026.
+- [GL vs CEM in 2026: Which 11+ Test Will Your Child Sit?](https://bfgapps.co/blog/gl-vs-cem-11-plus-2026.html): The GL vs CEM question has changed. CEM's paper 11+ has left grammar schools, GL Assessment sets most tests, and some schools use FSCE or their own papers.
+- [A Calm Learning App Setup for UK Families: Reception to 11+](https://bfgapps.co/blog/learning-apps-reception-to-11-plus.html): How to build a small, joined-up set of learning apps for a UK primary child: handwriting, maths, 11+ practice, music and creative play, plus the cost and data questions to ask first.
+- [The 11+ Timeline: When to Start, What to Practise Each Year](https://bfgapps.co/blog/11-plus-timeline-when-to-start.html): A staged 11+ preparation plan covering Year 3 to Year 6: what to practise each year, when to bring in past papers, and how to avoid last-minute cramming.
+- [UK Primary Maths Year by Year: What Children Should Master in Each Year](https://bfgapps.co/blog/uk-primary-maths-year-by-year.html): A UK National Curriculum maths breakdown from Reception to Year 6: what children should know, the topics that trip them up, and how to practise without a tutor.
+- [How to Teach Your Child to Form Letters: A Parent's Guide](https://bfgapps.co/blog/teach-child-letter-formation-parent-guide.html): A practical, research-aware guide to teaching letter formation: what to correct first, what to ignore, and when to switch from paper to iPad.
+- [Why Handwriting Still Matters in 2026](https://bfgapps.co/blog/why-handwriting-still-matters-2026.html): Research-backed reasons to keep teaching handwriting in a typing-first world: what neuroscience says about learning with a pen, and where Apple Pencil fits.
+- [Can Your Child Pass the 11+ Without an Expensive Tutor?](https://bfgapps.co/blog/11-plus-without-expensive-tutor.html): An honest look at whether 11+ tutoring is worth the cost. When self-study with apps, workbooks, and past papers is enough — and when a tutor genuinely helps.
+- [Why Children Forget Their Times Tables Over Summer (and How to Prevent It)](https://bfgapps.co/blog/why-kids-forget-times-tables-over-summer.html): The summer slide in maths is real. The cognitive science behind why children lose times tables fluency over breaks, and how to prevent it without worksheets.
+- [KS2 SATs Maths: How to Prepare Without the Stress](https://bfgapps.co/blog/ks2-sats-maths-preparation.html): Practical advice for KS2 SATs maths preparation. What to expect from the three papers, how to practise effectively at home, and how to keep your child confident.
+- [School Admissions in England: 10 Things Every Parent Should Know](https://bfgapps.co/blog/school-admissions-england-tips.html): Practical tips for navigating school admissions in England — from understanding catchment areas to waiting lists, appeals, and grammar school options.
+- [Best Ways to Learn Times Tables (Backed by Research)](https://bfgapps.co/blog/times-tables-tips.html): Evidence-based strategies for teaching times tables to primary school children. Adaptive practice, spaced repetition, and why gamification works.
+- [11+ Verbal Reasoning: Tips, Question Types, and How to Practice](https://bfgapps.co/blog/verbal-reasoning-tips-11-plus.html): A practical guide to 11+ verbal reasoning question types, proven tips for improving scores, and the best ways to practise at home for grammar school entrance exams.
+- [What Is the Language Aptitude Test (LAT) in the 11+?](https://bfgapps.co/blog/what-is-the-lat-test-11-plus.html): A clear explanation of language aptitude tests (LAT), used by some schools with a languages specialism for Year 7 entry. What they test, how they work, and how to prepare.
+- [Year 4 Multiplication Tables Check (MTC): Everything Parents Need to Know](https://bfgapps.co/blog/year-4-multiplication-tables-check.html): A complete guide to the Year 4 Multiplication Tables Check (MTC) in England. What it is, when it happens, how it's scored, and how to help your child prepare.
+
+### Finance
+
+- [The Best Stock Research Apps for DIY Investors in 2026](https://bfgapps.co/blog/best-stock-research-apps-2026.html): Yahoo Finance, Seeking Alpha, Morningstar Investor, Koyfin, TradingView and Tickview compared for DIY investors in 2026: data depth, sourcing, price and privacy.
+- [How to Look Up Congress Stock Trades in the Official Disclosures](https://bfgapps.co/blog/how-to-look-up-congress-stock-trades.html): Where members of Congress disclose their stock trades, how to search the House and Senate databases yourself, how to read a transaction report, and what the research says.
+- [How to Research International Stocks on Your Phone](https://bfgapps.co/blog/research-international-stocks-on-your-phone.html): Where to find filings, prices and economic data for companies listed outside the US, the currency and accounting traps to watch for, and a workflow that fits on a phone.
+- [How to Research Stocks Without a Bloomberg Terminal](https://bfgapps.co/blog/research-stocks-without-a-bloomberg-terminal.html): What a Bloomberg Terminal gives professionals, which parts an individual investor actually needs, and the free and low-cost sources that cover them in 2026.
+- [How to Read a 10-K Filing Without a Finance Degree](https://bfgapps.co/blog/how-to-read-sec-10k-filing.html): A beginner-friendly guide to reading SEC 10-K annual reports: which sections matter, the red flags to watch for, and how to evaluate a company in 15 minutes.
+- [How to Verify Financial Data Before Making Investment Decisions](https://bfgapps.co/blog/how-to-verify-financial-data-sources.html): Retail investors often make decisions based on unreliable data. Here's a practical guide to verifying financial data sources before putting real money on the line.
+
+### Fitness
+
+- [Best Apple Watch Running Apps in 2026, Compared](https://bfgapps.co/blog/apple-watch-running-apps-compared.html): An honest 2026 comparison of Apple Watch running apps: Apple's Workout app, Strava, Runna, Nike Run Club, WorkOutDoors and PaceGrid on watch screens, coaching, price and data export.
+- [Garmin Connect+ and the Fitness App Subscription Problem](https://bfgapps.co/blog/garmin-connect-plus-subscription-alternatives.html): Garmin's Connect+ adds a subscription on top of expensive hardware. Why fitness platforms keep doing this, and alternatives for runners who won't pay monthly.
+- [The Best Running Apps That Don't Charge Monthly in 2026](https://bfgapps.co/blog/running-apps-no-subscription.html): Tired of paying monthly just to see your own GPS data? Here are the best running and fitness apps that use a one-time purchase or free model.
+- [What Is Training Load and How It Prevents Running Injuries](https://bfgapps.co/blog/training-load-injury-prevention.html): Understanding training load is the single most effective way to avoid running injuries. Here's how the acute-to-chronic workload ratio works and how to use it.
+
+### Games
+
+- [The Best Yarn Puzzle Games in 2026, and How to Play One Without Ads](https://bfgapps.co/blog/best-yarn-puzzle-games-2026.html): A fair guide to yarn and wool puzzle games on iPhone and iPad: what the big names do well, what players complain about, how to avoid the ads, and tips to stop getting tangled.
+- [How to Play iPhone, iPad and Mac Games With a PS5 or Xbox Controller](https://bfgapps.co/blog/play-games-with-ps5-xbox-controller-iphone-ipad-mac.html): Pair a PS5 DualSense or Xbox controller with your iPhone, iPad or Mac, switch between touch and controller, and get more from action and racing games.
+
+### Health
+
+- [Flo vs Clue vs Ondi: Period Tracker Privacy Compared (2026)](https://bfgapps.co/blog/flo-vs-clue-vs-cyla-period-tracker-privacy.html): Flo, Clue and Ondi compared on privacy, features and price in 2026: where your cycle data is stored, who could access it, and which trade-off suits you.
+- [Allergen Scanner Apps: Why "Unverified" Beats a False "Safe"](https://bfgapps.co/blog/allergen-scanner-apps-unverified-vs-safe.html): Barcode allergen scanners help allergy families shop faster, but product data is often incomplete. Why an honest 'unverified' result matters, what to look for in an app, and a safer scanning routine.
+- [Smart Ring Apps That Keep Your Health Data Private](https://bfgapps.co/blog/smart-ring-private-health-tracking.html): Smart rings track sleep, heart rate, HRV and recovery — but most apps need a cloud account. Here's how to read your ring privately, fully on your iPhone.
+- [Switching Period Trackers: What to Look for Before You Move Your Data](https://bfgapps.co/blog/switching-period-tracker-what-to-look-for.html): A practical guide to switching period tracker apps: feature checklists, data portability, privacy red flags, Apple Health backup, and what on-device means.
+- [How Apple Watch Temperature Sensing Improves Cycle Tracking](https://bfgapps.co/blog/cycle-tracking-apple-watch-temperature.html): Apple Watch Series 8+ includes a wrist temperature sensor that can help confirm ovulation. Here's how it works and which apps can use it.
+- [Why Your Period Tracker's Privacy Policy Actually Matters](https://bfgapps.co/blog/period-tracker-privacy-why-it-matters.html): Period tracking apps handle some of the most intimate health data on your phone. Here's what to look for in a privacy policy and why on-device storage matters.
+
+### Home
+
+- [Smoke Alarms, CO Detectors and First-Aid Kits: The Replace-By Dates Most Homes Forget](https://bfgapps.co/blog/home-safety-replace-by-dates.html): Smoke alarms, carbon monoxide alarms, fire extinguishers and first-aid kits all wear out. Typical lifespans, where to find the date, and a simple routine so nothing lapses.
+- [How to Stop Wasting Food at Home: A Simple Expiry-Date System That Works](https://bfgapps.co/blog/reduce-food-waste-at-home-expiry-system.html): Most household food waste comes from forgotten food and confusing dates. A practical five-minute-a-week system: use by vs best before, an eat-first shelf, a simple inventory and cooking from what you have.
+
+### Music
+
+- [Best Piano Learning Apps for iPad in 2026](https://bfgapps.co/blog/best-piano-learning-apps-ipad-2026.html): An honest comparison of the best piano-learning apps for iPad in 2026: Simply Piano, Flowkey, Skoove, Yousician, Piano Marvel, Synthesia, and Keystrike.
+- [Can You Really Learn Piano on an iPad Without a Keyboard?](https://bfgapps.co/blog/learn-piano-on-ipad-without-a-keyboard.html): How far can you really get learning piano on an iPad without a keyboard? What the on-screen keys teach, what they cannot, and when to buy a MIDI keyboard.
+- [Why Subscription Piano Apps Cost More Than They Look](https://bfgapps.co/blog/piano-app-subscription-vs-one-time.html): Subscription piano apps look cheap monthly, but learning takes years. The real cost of Simply Piano, Flowkey, Skoove and Yousician versus one-time alternatives.
+
+### Parenting
+
+- [A Screen Activity Grandparents and Grandchildren Can Actually Share](https://bfgapps.co/blog/grandparents-grandchildren-photo-game.html): Most screen time pulls generations apart. A photo game puts grandparents and grandchildren on the same side: conversation prompts, tips for visits, and old albums.
+- [How to Play “Where Was This Taken?” With Your Own Family Photos](https://bfgapps.co/blog/where-was-this-taken-family-photo-game.html): A family game night idea that costs nothing: guess where your own photos were taken. How to set it up for mixed ages, fair house rules, and why it works.
+- [How to Reset Your Child's Screen Time Habits Without Going Cold Turkey](https://bfgapps.co/blog/screen-time-reset-without-cold-turkey.html): Screen time has spiralled and cold turkey feels impossible. Here are gradual, research-backed strategies to reset your child's device habits without the meltdowns.
+- [What Children Find Online (and Why Parental Controls Alone Won't Fix It)](https://bfgapps.co/blog/what-kids-find-online-parents-cant-control.html): Parental controls filter which apps kids can open, but not what they absorb through friends and school. A better content strategy works where restrictions fail.
+- [Doodlebee vs Toca Boca: Creative Apps for Kids Compared](https://bfgapps.co/blog/sparks-studios-vs-toca-boca.html): Comparing Doodlebee and Toca Boca for children aged 4 to 12. Creation tools vs play worlds, pricing, privacy, and which approach builds real skills.
+- [Best Parental Control Apps for iPhone in 2026](https://bfgapps.co/blog/best-parental-control-apps-iphone-2026.html): A detailed comparison of iPhone parental control apps in 2026: Apple Screen Time, Qustodio, Bark, Kidslox, OurPact, and Minua on features, privacy, and pricing.
+- [Earn Screen Time: Why Rewarding Learning Works Better Than Hard Limits](https://bfgapps.co/blog/earn-screen-time-kids.html): Hard screen time limits create conflict and resentment. An earn-to-play model where children unlock fun apps through learning builds autonomy and time skills.
+- [Why On-Device AI Makes Kids' Apps Fundamentally Safer](https://bfgapps.co/blog/on-device-ai-kids-apps-safety.html): Cloud AI means your child's prompts, drawings, and stories go to a server. On-device AI keeps everything local. Here's why that matters for children's apps.
+- [Screen Time Without the Guilt: A Practical Guide for Parents](https://bfgapps.co/blog/screen-time-without-guilt-parents-guide.html): Parents report screen time as their biggest source of guilt. Here is what the research actually says, why rigid rules backfire, and practical strategies that work.
+- [Screen Time That's Actually Good: Creative Apps vs Passive Scrolling](https://bfgapps.co/blog/creative-screen-time-for-kids.html): Not all screen time is equal. Creative apps where kids draw, write stories, and compose music build skills. Here's how to tell the difference.
+- [What Happened When We Replaced YouTube With Creative Apps](https://bfgapps.co/blog/getting-rid-of-youtube-kids.html): One family's experience replacing YouTube with creative apps for their kids — and the surprising changes they noticed in behaviour, attention, and imagination.
+- [The Parent's Guide to Choosing Safe Apps for Kids (No Ads, No Tracking)](https://bfgapps.co/blog/safe-apps-for-kids-no-ads-privacy.html): How to evaluate whether a kids' app is truly safe: a practical checklist for privacy, ads, in-app purchases, and data collection before you download.
+
+### Travel
+
+- [What to Do With Thousands of Phone Photos You Never Look At](https://bfgapps.co/blog/what-to-do-with-thousands-of-phone-photos.html): Most of us take thousands of photos and revisit almost none. Practical rituals for rediscovering old trips and getting the whole family to look back together.
+- [Best Travel Tracking Apps for iPhone in 2026: Manual, Automatic and Photo-Based](https://bfgapps.co/blog/best-travel-tracking-apps-iphone-2026.html): The best travel tracking apps for iPhone in 2026, from Visited and Polarsteps to Google Maps Timeline, Arc Timeline and PhotoFlight, and the privacy trade-offs of each approach.
+- [PhotoFlight vs Polarsteps (2026): Live Travel Tracking or a Map From Your Photos?](https://bfgapps.co/blog/photoflight-vs-polarsteps-2026.html): PhotoFlight vs Polarsteps in 2026: how each app records your trips, what it costs, where your data lives, and which suits your way of travelling.
+- [How to Build a Travel Journal From Photos You Already Have — No Location Sharing Required](https://bfgapps.co/blog/travel-journal-from-photos-no-tracking.html): Your photos already hold a complete travel record. How EXIF GPS data works, why you don't need always-on tracking, and how on-device analysis rebuilds trips.
+- [How to Build a Travel Map From Your Phone Photos](https://bfgapps.co/blog/travel-map-from-photos.html): Your phone photos contain GPS data that can map everywhere you've been. How photo geotagging works and how to turn your library into a travel journal.
+
+### Weather
+
+- [Best Weather Apps for the UK in 2026: Rain, Radar and Warnings Compared](https://bfgapps.co/blog/best-uk-weather-apps-2026.html): Met Office, BBC Weather, Apple Weather, CARROT, Acme and Cloudmesh compared for UK users: next-hour rain, radar, severe weather warnings, widgets, cost and privacy.
+- [Cloudmesh Weather vs CARROT Weather (2026): Rain Alerts, Widgets and Pricing Compared](https://bfgapps.co/blog/cloudmesh-vs-carrot-weather-2026.html): Cloudmesh Weather vs CARROT Weather in 2026: rain alerts, radar, widgets, Apple Watch, privacy and what each really costs over three years, compared fairly.
+- [Why Does a Weather App Cost More Than It Used To?](https://bfgapps.co/blog/why-weather-apps-cost-so-much.html): Weather data comes from government agencies, so why do weather apps charge $5-10 per month? Here's where the money actually goes and what the alternatives are.
+- [The Best iPhone Weather Widgets in 2026](https://bfgapps.co/blog/best-iphone-weather-widgets-2026.html): A guide to the best weather widgets for your iPhone home screen and lock screen, from minimal to feature-packed.
+- [How Community Weather Mesh Networks Give You Hyperlocal Forecasts](https://bfgapps.co/blog/how-community-weather-networks-work.html): Traditional weather stations are miles apart. Community mesh networks use thousands of phones to fill the gaps. Here's how they work.
 
 ## Important Collections
 
 - Privacy policy: https://bfgapps.co/privacy.html
+- Full reference (every app with its FAQ, every article summary): https://bfgapps.co/llms-full.txt
 - Sitemap: https://bfgapps.co/sitemap.xml
 - RSS feed: https://bfgapps.co/feed.xml
 
