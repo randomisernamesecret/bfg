@@ -2,7 +2,7 @@
 
 > Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-10-26. Short index: https://bfgapps.co/llms.txt
+Last updated: 2026-11-04. Short index: https://bfgapps.co/llms.txt
 
 ## Company
 
@@ -115,6 +115,10 @@ For looking back at past trips, yes. Polarsteps records trips as you travel and 
 **Does PhotoFlight work from old photos I already took?**
 
 Yes. PhotoFlight reads the dates and locations already stored in your photo library, so trips from years ago appear after the first scan. The free version covers the last three years; PhotoFlight Pro scans your whole photo history.
+
+**Where is PhotoGuessr?**
+
+PhotoGuessr is now part of PhotoFlight rather than a separate app. Open the Passport tab and tap PhotoGuessr. It comes with PhotoFlight Pro and plays with your own photos, on your device.
 
 ### Ondi
 
@@ -426,38 +430,6 @@ On your device. Nitro Metro doesn't collect any data, and purchases are handled 
 
 iPhone and iPad.
 
-### PhotoGuessr
-
-- Page: https://bfgapps.co/apps/photoguessr/
-- Status: coming soon (not yet on the App Store)
-- Platforms: iOS, iPadOS
-
-PhotoGuessr is a free family game for iPhone and iPad that sends you back through your own photos. Pass the phone around the couch, guess where each picture was taken, and rediscover trips and days you had almost forgotten. No ads, no accounts, no in-app purchases.
-
-**When can I play PhotoGuessr?**
-
-PhotoGuessr is coming soon to the App Store for iPhone and iPad. We'll link it here as soon as it's live.
-
-**Is PhotoGuessr free?**
-
-Yes. It's completely free, with no ads, no in-app purchases, no subscriptions and no account.
-
-**Do my photos leave my device?**
-
-No. Photos are read on your device and never uploaded or copied anywhere. To show the place name when an answer is revealed, the photo's location (not the photo) is looked up with Apple Maps.
-
-**Which photos does it use?**
-
-Only photos in your library that have a location. Hidden photos are never shown, and you can limit the game to certain years and albums.
-
-**Can we play on the TV?**
-
-Yes. Mirror your iPhone or iPad to a TV with AirPlay and everyone can see the photo and the reveal.
-
-**Which devices does it run on?**
-
-iPhone and iPad.
-
 ### Mittenly
 
 - Page: https://bfgapps.co/apps/mittenly/
@@ -576,7 +548,7 @@ Pair a PS5 DualSense or Xbox controller with your iPhone, iPad or Mac, switch be
 
 - URL: https://bfgapps.co/blog/grandparents-grandchildren-photo-game.html
 - Category: Parenting
-- Published: 2026-10-02; updated: 2026-10-02
+- Published: 2026-10-02; updated: 2026-11-04
 
 Most screen time pulls generations apart. A photo game puts grandparents and grandchildren on the same side: conversation prompts, tips for visits, and old albums.
 
@@ -584,7 +556,7 @@ Most screen time pulls generations apart. A photo game puts grandparents and gra
 
 - URL: https://bfgapps.co/blog/what-to-do-with-thousands-of-phone-photos.html
 - Category: Travel
-- Published: 2026-10-02; updated: 2026-10-02
+- Published: 2026-10-02; updated: 2026-11-04
 
 Most of us take thousands of photos and revisit almost none. Practical rituals for rediscovering old trips and getting the whole family to look back together.
 
@@ -592,7 +564,7 @@ Most of us take thousands of photos and revisit almost none. Practical rituals f
 
 - URL: https://bfgapps.co/blog/where-was-this-taken-family-photo-game.html
 - Category: Parenting
-- Published: 2026-10-02; updated: 2026-10-02
+- Published: 2026-10-02; updated: 2026-11-04
 
 A family game night idea that costs nothing: guess where your own photos were taken. How to set it up for mixed ages, fair house rules, and why it works.
 

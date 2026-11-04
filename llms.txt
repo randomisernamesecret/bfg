@@ -8,7 +8,9 @@
 
 
 
-Last updated: 2026-10-26
+
+
+Last updated: 2026-11-04
 
 ## Key Pages
 
@@ -22,7 +24,7 @@ Last updated: 2026-10-26
 - Cognithix: https://bfgapps.co/apps/cognithix/ — 11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights. No account; data stays on the device. 7-day free trial, then a one-time unlock. App Store: https://apps.apple.com/gb/app/cognithix/id6760035436
 - Arithmetix: https://bfgapps.co/apps/arithmetix/ — UK National Curriculum maths from Reception to Year 6. Spaced repetition, times tables practice for the Year 4 MTC, virtual pet motivation. App Store: https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397
 - Doodlebee: https://bfgapps.co/apps/sparks-studios/ — Drawing and coloring app for kids and grown-ups. Draw any shape, tap to fill it, watch it dance; plus 146 pages to color (by hand or by number), storybooks read aloud, music. No ads, no accounts, nothing leaves the device. App Store: https://apps.apple.com/gb/app/id6760515470
-- PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed. App Store: https://apps.apple.com/gb/app/photoflight/id6761143528
+- PhotoFlight: https://bfgapps.co/apps/photoflight/ — Travel map built from GPS metadata in existing photos. Countries, cities, flights, achievements. No live tracking needed. Includes PhotoGuessr (Pro), a family game where everyone secretly pins where one of your photos was taken, then you reveal the answer together; it can show the photo on a TV while guesses stay private. App Store: https://apps.apple.com/gb/app/photoflight/id6761143528
 - Ondi: https://bfgapps.co/apps/cyla/ — Private period and cycle tracker. Apple Watch temperature integration. No accounts, no cloud, no servers. One-time purchase. App Store: https://apps.apple.com/gb/app/id6760896784
 - Cloudmesh Weather: https://bfgapps.co/apps/cloudmesh/ — Hyperlocal weather for iPhone, iPad, Mac and Apple Watch: minute-by-minute rain alerts, live radar, a forecast blended from 39 sources, air quality and 24 widgets. Free tier, 7-day trial, one-time Premium; no subscription, no account. App Store: https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651
 - PaceGrid: https://bfgapps.co/apps/pacegrid/ — GPS run, ride, walk and hike tracker for iPhone and Apple Watch with Injury Guard training-load alerts, smart ring sleep and GPX/FIT export. No account; workouts stay on the device. Free recording, 7-day trial, one-time unlock. App Store: https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225
@@ -40,7 +42,6 @@ Last updated: 2026-10-26
 
 - Nitro Metro: https://bfgapps.co/apps/monsoonrush/ — Arcade street racing across ten world cities and 77 Grand Prix circuits, with police chases, power-ups and 16 cars to build. Touch or a PS5 DualSense, Xbox or MFi controller. Free to play, no third-party ads. iPhone and iPad.
 - Bellgrave Holdout: https://bfgapps.co/apps/seriousbellgrave/ — First-person survival action: hold the streets of Bellgrave while families escape, with nine weapons, three districts and escalating boss fights. Touch or a PS5 DualSense, Xbox or MFi controller. iPhone and iPad.
-- PhotoGuessr: https://bfgapps.co/apps/photoguessr/ — A family game with your own photos: one shared screen (or the TV via AirPlay), secret pins for where each picture was taken, and a shared reveal. Photos stay on the device; no ads, no accounts. Coming soon to iPhone and iPad.
 - Mittenly: https://bfgapps.co/apps/mittenly/ — A cosy pixel-art yarn puzzle (store name "Mittenly: Cats & Yarn Puzzle"): untangle the yarn to knit mittens, furnish six homes and look after six cats. Every level is checked to be solvable. 40 levels and a Daily Mitten free, one-time purchase for endless levels; no ads, no lives, no timers, no accounts. Coming soon to iPhone and iPad.
 - Hollowstead: https://bfgapps.co/apps/hollowstead/ — A farming and survival game: inherit a farm in a valley seven years after the Blight, grow food through four seasons, make friends in the fort and the salt town, trade, cook, fish and keep animals, and hold your fences against the Hollowed with defences, traps and lanterns. An endless mine (the Callow Deep), a first-year story in five chapters where choices change who stands with you, and Casual, Survival and Hardcore modes. Chapter 1 free, one-time unlock for the full game; no ads, no tracking, fully on-device. In development, coming soon to iPhone and iPad.
 
