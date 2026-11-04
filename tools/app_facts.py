@@ -88,7 +88,7 @@ APPS = {
     "penlicence": ("6761393693", "trial7", "local", ["iPhone", "iPad"]),
     "farewars": ("6815887660", "f2p_earn", "local", ["iPhone", "iPad"]),
     "robotrooftoprun": ("6811426255", "f2p", "local", ["iPhone", "iPad"]),
-    "monsoonrush": (None, "f2p_earn", "local", ["iPhone", "iPad"]),
+    "nitrometro": (None, "f2p_earn", "local", ["iPhone", "iPad"]),
     "mittenly": (None, "mittenly", "local", ["iPhone", "iPad"]),
     "hollowstead": (None, "hollowstead", "local", ["iPhone", "iPad"]),
     "seriousbellgrave": (None, "holdout", "local", ["iPhone", "iPad"]),

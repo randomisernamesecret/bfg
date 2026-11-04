@@ -388,7 +388,7 @@ iPhone and iPad.
 
 ### Nitro Metro
 
-- Page: https://bfgapps.co/apps/monsoonrush/
+- Page: https://bfgapps.co/apps/nitrometro/
 - Status: coming soon (not yet on the App Store)
 - Platforms: iOS, iPadOS
 
