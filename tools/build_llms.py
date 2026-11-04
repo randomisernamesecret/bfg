@@ -111,8 +111,10 @@ def write_llms(items):
     start = s.index("## Blog")
     end = s.index("## Important Collections")
     s = s[:start] + blog_section(items) + "\n" + s[end:]
-    s = re.sub(r"\nLast updated: \d{4}-\d{2}-\d{2}\n", "\n", s)
-    s = s.replace("\n## Key Pages", f"\nLast updated: {TODAY}\n\n## Key Pages", 1)
+    # Replace the blank lines + date line before "## Key Pages" as one block, so reruns don't pile up blank lines
+    # (the old remove-then-insert left one extra "\n" behind on every run).
+    s = re.sub(r"\n+(?:Last updated: \d{4}-\d{2}-\d{2}\n+)?(?=## Key Pages)",
+               f"\n\nLast updated: {TODAY}\n\n", s, count=1)
     with open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8") as f:
         f.write(s)
 
