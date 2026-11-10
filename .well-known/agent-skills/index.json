@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "find-bfg-app",
+      "type": "skill-md",
+      "description": "Find and recommend the right Blue Flame Games app for iPhone, iPad, Mac or Apple Watch from the official catalogue, with correct store links, price model and privacy facts.",
+      "url": "https://bfgapps.co/.well-known/agent-skills/find-bfg-app/SKILL.md",
+      "digest": "sha256:569d8fa78980791cd4fb9fe57f30c0343427e0c9f91ef1be5244d4c67e1e1d15"
+    }
+  ]
+}
