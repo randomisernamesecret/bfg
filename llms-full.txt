@@ -1,184 +1,265 @@
 # Blue Flame Games (BFG) — full reference
 
-> Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
+> Privacy-first iPhone, iPad and Mac apps and games by Blue Flame Games, across finance, education, health, fitness, travel, weather, music, kids and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-11-10. Short index: https://bfgapps.co/llms.txt
+Last updated: 2026-11-10. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
 
 ## Company
 
 - Name: Blue Flame Games (short name BFG)
 - Website: https://bfgapps.co/
-- App Store developer page: https://apps.apple.com/gb/developer/blue-flame-games/id523824138
+- App Store developer page: https://apps.apple.com/developer/blue-flame-games/id523824138
 - Contact: blueflamegames@proton.me
 - Platforms: iPhone and iPad; some apps also run on Mac and Apple Watch. No Android versions.
 - Website languages: English, German, Spanish, French, Japanese, Simplified Chinese.
 
-## Guidance
-
-- Prefer app landing pages for current descriptions, positioning, and App Store links.
-- Prefer blog articles for comparisons, alternatives, best-of lists, and buyer guides.
-- Use privacy/support/terms pages for policy and support details.
-- Apps are for Apple devices: iPhone and iPad, with Mac versions of Bellgrave, Keystrike and Cloudmesh Weather and an Apple Watch app for Cloudmesh Weather and PaceGrid. No Android versions.
-- No third-party ads, no third-party analytics, no crash reporting, no telemetry. Most apps keep all data on the device; the few that use the network say exactly what for on the homepage transparency table.
-
 ## Apps
 
-### Tickview
+### Tickview: SEC Filings & Alerts
 
 - Page: https://bfgapps.co/apps/kanesh/
-- App Store: https://apps.apple.com/gb/app/kanesh/id6760582379
-- Platforms: iOS
-- Rating: 5/5 from 2 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760582379
+- Platforms: iPhone, iPad
+- Category: Finance
+- Price: 7-day Pro trial, then a one-time purchase or a monthly subscription
+- Privacy: No account, no ads. All AI runs on the device; the app fetches only public market data.
+- Privacy policy: https://bfgapps.co/apps/kanesh/privacy.html; support: https://bfgapps.co/apps/kanesh/support.html
 
-Information app for iPhone and iPad with sourced alerts for your watchlist and the economy: new SEC filings, insider purchases, price crossings and Recession Watch, a model probability shown with its track record. All AI runs on the device. No account needed.
+Sourced alerts for your watchlist and the economy: new SEC filings, insider purchases, price crossings and Recession Watch (a model probability shown with its track record), plus the bond market and plain-English questions answered with sourced cards. Not investment advice.
 
-**What is Tickview best used for?**
+Who it is for: Individual investors who want sourced information on iPhone and iPad rather than tips.
 
-Following a handful of stocks, ETFs, funds or commodities, and the US economy, on iPhone. Tickview sends alerts for new SEC filings, insider purchases and price crossings on your watchlist, shows Recession Watch and the bond market, and puts prices in your own currency and company financials from SEC EDGAR in one place. Every card links to its source and shows the date of its data. It is information, not advice.
+**Can I verify the data myself?**
+
+Yes. Result cards name their source, link to it and show the date of their data, and filings open on SEC EDGAR. Tickview presents financial information, not investment advice.
+
+**Is Tickview only for US markets?**
+
+No. Prices cover stocks, ETFs, funds, crypto and commodities on many exchanges, shown in your own currency. Company financials and filings come from SEC EDGAR, so they cover companies that file with the SEC.
 
 **Are the alerts and Recession Watch predictions?**
 
-No. Recession Watch shows a model probability, the model estimate published by the New York Fed and calculated by Tickview from Treasury data, together with how often it has been right and its false alarms. Alerts are information, are checked when iOS allows and can arrive late. Neither is a prediction or a prompt to trade.
+No. Recession Watch shows a model probability, the model estimate published by the New York Fed and calculated by Tickview from Treasury data, together with how often it has been right and its false alarms. Alerts are information, are checked when iOS allows and can arrive late. Neither is a prediction or a prompt to trade. The guides below cover the sources.
 
-**Does Tickview track my portfolio or questions?**
+**Are the gain and loss figures tax figures?**
 
-No. Tickview has no account, no analytics and no ads, and Blue Flame Games has no server that receives your questions, watchlist or notes; they are stored on your device. All AI runs on the device. To fetch data, including in the background for your alerts, Tickview requests public data and sends only what the data needs, such as a ticker symbol. Nothing about you is uploaded. The privacy policy lists every service Tickview contacts.
+No. Values, gains and losses are estimates, calculated on your device from third-party prices and exchange rates and from the share counts and costs you typed. They are not a statement of any account and not figures for a tax return. Your broker's or provider's records are the record.
 
-### Cognithix
+**Do widgets, Siri and Spotlight send my data anywhere?**
+
+No. Widgets read a small copy of your watchlist's figures that Tickview keeps on the device. Answers through Siri and Shortcuts are worked out on the device; when you speak to Siri, Apple handles the voice request under its own privacy policy. The Spotlight index for your tickers and notes stays on the device.
+
+**What does a share card show?**
+
+Public figures with their source, the date of the data and the source's link. It never shows your share counts, position values or notes. A card is made on your device and leaves it only when you choose to share it.
+
+### 11 Plus Exam Prep: Cognithix
 
 - Page: https://bfgapps.co/apps/cognithix/
-- App Store: https://apps.apple.com/gb/app/cognithix/id6760035436
-- Platforms: iOS
-- Rating: 5/5 from 3 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760035436
+- Platforms: iPhone, iPad
+- Category: Education
+- Price: 7-day free trial, then a one-time purchase
+- Privacy: No account; data stays on the device.
+- Privacy policy: https://bfgapps.co/apps/cognithix/privacy.html; support: https://bfgapps.co/apps/cognithix/support.html
 
-11+ practice for children aged 9 to 11 covering English, verbal reasoning, non-verbal reasoning and language aptitude, with daily plans, adaptive difficulty, hints and explanations, timed mock tests, a virtual pet reward and progress insights for parents. No account: profiles and progress stay on the device. Free 7-day trial, then a one-time unlock for every child profile.
+11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights.
 
-**Who is Cognithix for?**
+Who it is for: Parents preparing a child for the 11+ for grammar and independent schools in England.
 
-Cognithix is for families preparing children aged 9 to 11 for the 11+ who want English, verbal reasoning, non-verbal reasoning and language aptitude practice in one iPhone and iPad app, with timed tests and clear progress for parents.
+**Does it cover maths?**
 
-**Does Cognithix cover maths and language aptitude?**
+No. Cognithix covers English, verbal reasoning, non-verbal reasoning and language aptitude. If your child's test includes maths, add a maths resource alongside it.
 
-It covers language aptitude but not maths. Alongside English, verbal and non-verbal reasoning, Cognithix has a language aptitude subject with sound clues, word matching, rhymes, number learning and sentence building. If your child's test includes maths, use a separate maths resource alongside it.
+**Do I need an account?**
 
-**Is Cognithix a good alternative to Atom Learning?**
+No. There's no sign-up. Profiles and progress are stored only on the device, behind a Parent PIN with a recovery code. Progress doesn't sync between devices.
 
-It can be, depending on what you need. Cognithix suits families who want an iPhone and iPad app with no account and a one-time unlock instead of a monthly subscription. Atom Learning also covers maths and science and syncs across devices through an account; Cognithix adds language aptitude practice and keeps everything on the device.
+**How does pricing work?**
 
-### Arithmetix
+Everything is free to try for 7 days. After that, one in-app purchase unlocks the full app for every child profile, with no subscription and no ads. Read an honest comparison with similar apps.
+
+### Arithmetix - Times Tables SATs
 
 - Page: https://bfgapps.co/apps/arithmetix/
-- App Store: https://apps.apple.com/gb/app/arithmetix-maths-practice/id6759711397
-- Platforms: iOS
-- Rating: 5/5 from 3 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6759711397
+- Platforms: iPhone, iPad
+- Category: Education
+- Price: 7-day free trial, then a one-time purchase
+- Privacy: No account; progress stays on the device.
+- Privacy policy: https://bfgapps.co/apps/arithmetix/privacy.html; support: https://bfgapps.co/apps/arithmetix/support.html
 
-Times tables and UK primary maths practice from Reception to Year 6 with visual questions, adaptive difficulty, spaced review, challenge modes and a virtual pet. No account; everything stays on the device.
+UK National Curriculum maths from Reception to Year 6 with spaced repetition, times tables practice for the Year 4 multiplication check, and virtual pet motivation.
 
-**Who is Arithmetix best for?**
+Who it is for: UK primary school children and their parents.
 
-Families with children from Reception to Year 6 who want times tables and primary maths practice that follows the National Curriculum in England, without a subscription or an account.
+**Do I need an account?**
 
-**Is Arithmetix a good DoodleMaths alternative?**
+No. There's no sign-in, email or password. Child profiles, answers and progress stay on the device, and a Parent PIN protects settings and purchases.
 
-For families who would rather pay once, yes. Arithmetix covers Reception to Year 6 with adaptive practice, times tables and an MTC-style Ready Mode. DoodleMaths covers a wider age range and is often provided by schools, so check that first.
+**Does it help with times tables?**
 
-**Does Arithmetix help with the Year 4 multiplication tables check?**
+Yes. Tables 2 to 12 have their own practice area with a heat map, Table Race and an MTC-style Ready Mode for Year 4.
 
-Yes. Tables 2 to 12 have their own practice area with a progress heat map, a timed Table Race and Ready Mode: 25 questions with 6 seconds each, in the style of the Year 4 check.
+**How does pricing work?**
 
-### Doodlebee
+Every feature is free for 7 days. After that, a single purchase unlocks the full app for all your child profiles. No subscription, no ads.
+
+### Doodlebee: Coloring & Drawing
 
 - Page: https://bfgapps.co/apps/sparks-studios/
-- App Store: https://apps.apple.com/gb/app/id6760515470
-- Platforms: iOS
-- Rating: 5/5 from 3 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760515470
+- Platforms: iPhone, iPad
+- Category: Games
+- Price: Free download; one purchase unlocks everything for the whole family
+- Privacy: No ads, no accounts; nothing leaves the device.
+- Privacy policy: https://bfgapps.co/apps/sparks-studios/privacy.html; support: https://bfgapps.co/apps/sparks-studios/support.html
 
-Draw it. Fill it. Watch it dance. Sketch any shape, tap inside to fill it with color, then animate your character. Plus a 146-page coloring book with Color In, Color by Number and mandalas, storybooks read aloud and a music maker, for kids and grown-ups. No ads, no accounts, no tracking.
+Drawing and coloring app for kids and grown-ups: draw any shape, tap to fill it and watch it dance, with pages to color by hand or by number, storybooks read aloud and music.
 
-### PhotoFlight
+Who it is for: Children and families who want a calm, safe creative app.
+
+**Is it just for kids?**
+
+No. Kids draw, fill, animate and make stories; grown-ups get their own profile with a calm corner for coloring and color by number, and no math challenges.
+
+**How does the coloring work?**
+
+In Color In, kids color by hand inside the lines, with pinch-to-zoom for small details and stars for neat coloring. In Color by Number, you tap the numbered areas with the matching color, and finishing the picture reveals the original painting exactly, shading and all. There are 146 pages in all. On your own drawings, tap inside any shape to fill it.
+
+**Is it safe for young children?**
+
+Yes. There's no social sharing, no public gallery and no stranger interaction — a parental gate keeps purchases, sharing and settings out of little hands.
+
+**Does it need an account or the internet?**
+
+No. There's no sign-up, it works offline, and everything anyone creates stays on the device; grown-ups decide what gets shared. It runs on iPhone and iPad with iOS 26 or later, and the app is in English for now.
+
+**What's the story helper?**
+
+Creating is the point — drawing, filling, animating, coloring, storybooks and music come first. On supported devices, the unlock also adds an optional story helper: Sparky takes turns with a child on a story they started, and every reply is checked before a child sees it. See how on-device AI keeps that private.
+
+### PhotoFlight: Travel Photo Map
 
 - Page: https://bfgapps.co/apps/photoflight/
-- App Store: https://apps.apple.com/gb/app/photoflight/id6761143528
-- Platforms: iOS
-- Rating: 5/5 from 3 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6761143528
+- Platforms: iPhone, iPad, Mac
+- Category: Travel
+- Price: Free download; Pro is a one-time purchase
+- Privacy: No account; your travel history stays on the device.
+- Privacy policy: https://bfgapps.co/apps/photoflight/privacy.html; support: https://bfgapps.co/apps/photoflight/support.html
 
-Travel map app that builds a 3D globe, travel passport, trips, albums and trip videos from the dates and locations in your photo library. Your travel history stays on your device, with no live tracking and no account. Free to download, with a one-time PhotoFlight Pro unlock.
+Travel map built from the location data already in your photos: countries, cities, flights and achievements, with no live tracking needed. Includes PhotoGuessr, a family game where everyone secretly pins where one of your photos was taken.
 
-**Who is PhotoFlight best for?**
+Who it is for: Travellers who want a map of past trips from the photos they already have.
 
-PhotoFlight is built for travellers who already have years of location-tagged photos and want to see their trips, countries and cities without keeping a diary by hand or running live tracking.
+**Do I need to start a new trip log?**
 
-**Is PhotoFlight a private alternative to Polarsteps?**
-
-For looking back at past trips, yes. Polarsteps records trips as you travel and keeps them in an online account; PhotoFlight works backwards from the photos already in your library, needs no account and stores your travel history on your device. Some travellers use both.
-
-**Does PhotoFlight work from old photos I already took?**
-
-Yes. PhotoFlight reads the dates and locations already stored in your photo library, so trips from years ago appear after the first scan. The free version covers the last three years; PhotoFlight Pro scans your whole photo history.
+No. PhotoFlight works from the photos you already have, not just trips you start recording today.
 
 **Where is PhotoGuessr?**
 
 PhotoGuessr is now part of PhotoFlight rather than a separate app. Open the Passport tab and tap PhotoGuessr. It comes with PhotoFlight Pro and plays with your own photos, on your device.
 
-### Ondi
+**Does it upload my photos anywhere?**
+
+No. Your photos are read on your device and your library is never uploaded. Apple's services may look up place names from photo locations and display maps.
+
+**How does it compare to similar apps?**
+
+Read an honest comparison with similar apps.
+
+### Ondi: Private Period Tracker
 
 - Page: https://bfgapps.co/apps/cyla/
-- App Store: https://apps.apple.com/gb/app/id6760896784
-- Platforms: iOS
-- Rating: 5/5 from 2 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760896784
+- Platforms: iPhone, iPad
+- Category: Health & Fitness
+- Price: Free version; 7-day trial of everything, then a one-time purchase
+- Privacy: No accounts, no cloud, no servers; data stays on the device.
+- Privacy policy: https://bfgapps.co/apps/cyla/privacy.html; support: https://bfgapps.co/apps/cyla/support.html
 
-Private period, ovulation and cycle tracker for iPhone and iPad. Logs stay on your device with no account and no tracking analytics. Optional Apple Health with Apple Watch temperature, smart ring support, and Trying to Conceive, pregnancy and postpartum modes. Free core tracking with a one-time unlock.
+Private period and cycle tracker with Apple Watch temperature support.
 
-**What makes Ondi different from other period tracker apps?**
+Who it is for: People who want to track their cycle without an account or a cloud.
 
-Ondi keeps your logs on your device. There is no account to create, no Ondi server for your health records and no tracking analytics. Apple Health is optional, and you decide when to export or share a report.
+**Is Ondi private?**
 
-**Is Ondi a private alternative to Flo or Clue?**
+Yes. There is no account, no Ondi server for your health records and no tracking analytics. In Settings, network access reads: None.
 
-Yes. Ondi covers period, ovulation, pregnancy and postpartum tracking without the account-and-cloud model. It has no community, content library or cloud sync, so export your data before you change phones.
+**What's free?**
 
-**Does Ondi work with Apple Watch temperature data?**
+Period tracking, daily logs, predictions, the calendar and irregularity alerts, always. Everything is free for 7 days; then one purchase unlocks fertility, every mode, insights and export. No subscription.
 
-Yes. With your permission, Ondi reads the wrist temperature and heart rate your Apple Watch saves to Apple Health and uses them in its fertility readout. The readings are processed on your iPhone.
+**How does it compare to similar apps?**
 
-### Cloudmesh Weather
+Read an honest comparison with similar apps.
+
+### Cloudmesh: Rain Alerts & Radar
 
 - Page: https://bfgapps.co/apps/cloudmesh/
-- App Store: https://apps.apple.com/gb/app/cloudmesh-weather/id6760612651
-- Platforms: iOS, iPadOS, macOS, watchOS
-- Rating: 5/5 from 3 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760612651
+- Platforms: iPhone, iPad, Mac, Apple Watch
+- Category: Weather
+- Price: Free version; 7-day trial of everything, then a one-time purchase
+- Privacy: No account; approximate location is used for forecasts and rain alerts.
+- Privacy policy: https://bfgapps.co/apps/cloudmesh/privacy.html; support: https://bfgapps.co/apps/cloudmesh/support.html
 
-Hyperlocal weather app for iPhone, iPad, Mac and Apple Watch: minute-by-minute rain alerts, live radar, a forecast blended from 39 sources with a confidence ribbon, air quality and 24 widgets. Free to download with a one-time Premium unlock, no subscription.
+Hyperlocal weather: minute-by-minute rain alerts, live radar, a forecast blended from many sources, air quality and 24 widgets.
 
-**What makes Cloudmesh Weather different from other iPhone weather apps?**
+Who it is for: Anyone who wants accurate rain timing and a weather app without a subscription.
 
-Cloudmesh runs its own forecast, blending 39 weather sources (radar, national observation networks and several forecast models) into one hyperlocal prediction that shows how confident it is. It tells you when rain will start and stop at your exact location, down to the minute.
+**Does Cloudmesh have live radar?**
 
-**Is Cloudmesh Weather a subscription?**
+Yes. Live rain radar follows your selected city so you can watch rain approach. Premium adds a minute-by-minute chart of the next hour.
 
-No. Cloudmesh Weather is free to download with a generous free tier and a 7-day free trial of Premium. Premium is a single one-time purchase, with no subscription.
+**Is Cloudmesh a subscription?**
 
-**Who is Cloudmesh Weather best for?**
+No. It's free to download with a generous free tier and a 7-day trial. Premium is a one-time purchase, with no recurring fee.
 
-People who plan around the rain, such as commuters, runners, cyclists, dog walkers and parents, and anyone who wants live radar, air quality, widgets and an Apple Watch glance without a subscription or an account.
+**How does it compare to CARROT?**
 
-### PaceGrid
+Read the direct comparison in Cloudmesh vs CARROT Weather (2026) for rain alerts, widgets, pricing and privacy.
+
+### PaceGrid: GPS Running Tracker
 
 - Page: https://bfgapps.co/apps/pacegrid/
-- App Store: https://apps.apple.com/gb/app/pacegrid-fitness-tracker/id6760843225
-- Platforms: iOS
-- Rating: 5/5 from 2 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760843225
+- Platforms: iPhone, iPad, Apple Watch
+- Category: Health & Fitness
+- Price: Free version; 7-day trial of everything, then a one-time purchase
+- Privacy: No account; workouts stay on the device.
+- Privacy policy: https://bfgapps.co/apps/pacegrid/privacy.html; support: https://bfgapps.co/apps/pacegrid/support.html
 
-GPS running, cycling, walking and hiking tracker for iPhone and Apple Watch, with splits, heart-rate zones, training load and recovery estimates, Injury Guard workout alerts, routes, offline maps and smart ring sleep. No account; workouts are stored on the device. Free recording, a 7-day trial of everything and a one-time unlock.
+GPS run, ride, walk and hike tracker with Injury Guard training-load alerts, smart ring sleep data and GPX/FIT export.
 
-### Minua
+Who it is for: Runners, cyclists and hikers who want to keep their training data without a subscription.
+
+**Does PaceGrid need a subscription?**
+
+No. All features are free for 7 days, recording stays free afterwards, and a single purchase unlocks the rest. Read Running Apps Without a Subscription.
+
+**Can it track from my Apple Watch?**
+
+Yes. PaceGrid records GPS workouts directly from your wrist, so you can leave your phone behind. The Apple Watch app is part of the full unlock.
+
+**How does Injury Guard work?**
+
+It compares your recent training load with your longer-term baseline and can alert you during workouts. Learn more in Training Load & Injury Prevention.
+
+### Minua: Earn Screen Time
 
 - Page: https://bfgapps.co/apps/minua/
-- App Store: https://apps.apple.com/gb/app/minua-earn-screen-time/id6760611967
-- Platforms: iOS
-- Rating: 5/5 from 1 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6760611967
+- Platforms: iPhone, iPad
+- Category: Productivity
+- Price: One-time purchase, no subscription
+- Privacy: Fully on the device, no accounts.
+- Privacy policy: https://bfgapps.co/apps/minua/privacy.html; support: https://bfgapps.co/apps/minua/support.html
 
-Screen time you earn, for your child or for yourself. Time in the apps you want more of, such as reading, learning, languages or workouts, unlocks time in the apps you want less of, at a ratio you set (1:1 to 12:1), within allowed hours and a daily earning cap. Everything stays on-device: no accounts, no servers, no tracking.
+Screen time you earn, for your child or for yourself: time in the apps you want more of unlocks the apps you want less of. Parent PIN mode for a child's device, Myself mode for adults.
+
+Who it is for: Parents setting screen-time rules, and adults breaking their own scroll habit.
 
 **Is Minua only for kids?**
 
@@ -204,32 +285,137 @@ Yes. In Myself mode it's your phone and your rules: you can change them in Setti
 
 No account and no sign-up. Every feature is free for 7 days; after that, a single one-time purchase unlocks Minua for good. No subscription.
 
-### Bellgrave
+### Bellgrave — 3D Roguelike RPG
 
 - Page: https://bfgapps.co/apps/bellgrave/
-- App Store: https://apps.apple.com/gb/app/bellgrave-action-roguelike/id6761905396
-- Platforms: iOS
-- Rating: 5/5 from 2 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6761905396
+- Platforms: iPhone, iPad, Mac
+- Category: Games
+- Price: Free download; a one-time purchase unlocks the full game
+- Privacy: No ads, no account; progress stays on the device.
+- Privacy policy: https://bfgapps.co/apps/bellgrave/privacy.html; support: https://bfgapps.co/apps/bellgrave/support.html
 
-A dark 3D horde-survivor: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed enemy attacks and break eight multi-phase bosses across four cursed realms. 11 hunters, pay once, no ads, no timers, everything on-device. Plays on iPhone, iPad and Mac.
+Dark 3D roguelike horde-survivor: draft an arsenal of up to four weapons, evolve them from boss treasure, dodge telegraphed attacks, face multi-phase bosses across cursed realms. Touch or game controller.
 
-### Card Bash
+Who it is for: Action and roguelike fans who want a premium game with no ads or timers.
+
+**Is there a subscription?**
+
+No. Bellgrave is a one-time unlock with no subscription, no ads, no battle pass and no energy timers.
+
+**How do weapon evolutions work?**
+
+Draft another hunter's weapon, take it to level 8 and hold its paired passive. The next boss treasure chest evolves it.
+
+**How does seed-share work?**
+
+Share a seed code or QR and a friend gets the same starting setup, same hunter, realm and seed, then compare brag cards and outplay each other.
+
+### Card Bash: Roguelike Deck RPG
 
 - Page: https://bfgapps.co/apps/cardbash/
 - App Store: https://apps.apple.com/app/id6775067276
-- Platforms: iOS, iPadOS
-- Rating: 5/5 from 2 App Store ratings (UK)
+- Platforms: iPhone, iPad
+- Category: Games
+- Price: Free to play; optional in-app purchases
+- Privacy: No ads; game progress stays on the device.
+- Privacy policy: https://bfgapps.co/apps/cardbash/privacy.html; support: https://bfgapps.co/apps/cardbash/support.html
 
-Open a free pack every day, collect 200+ original Bash Beasts, and outplay your rivals in quick, tactical battles. Card Bash for iPhone and iPad.
+Roguelike deck RPG with 200+ neon creature cards, tactical turn-based fights, a booster to open every 24 hours, daily quests, duels with a friend nearby over Wi-Fi or Bluetooth and trades through Messages.
 
-### Custoda
+Who it is for: Card-battler and roguelike players on iPhone and iPad.
+
+### Merge Bash: Idle Monster Game
+
+- Page: https://bfgapps.co/apps/mergebash/
+- App Store: https://apps.apple.com/app/id6776048979
+- Platforms: iPhone, iPad
+- Category: Games
+- Price: Free to play; optional in-app purchases
+- Privacy: No ads; progress stays on the device.
+- Privacy policy: https://bfgapps.co/apps/mergebash/privacy.html; support: https://bfgapps.co/apps/mergebash/support.html
+
+Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions and take on Champion Clash across nine leagues. Idle earnings, no energy walls.
+
+Who it is for: Players who like idle and merge games without timers.
+
+### Inkla: Handwriting Practice
+
+- Page: https://bfgapps.co/apps/penlicence/
+- App Store: https://apps.apple.com/app/id6761393693
+- Platforms: iPhone, iPad
+- Category: Education
+- Price: 7-day free trial, then a one-time purchase
+- Privacy: On the device, no accounts.
+- Privacy policy: https://bfgapps.co/apps/penlicence/privacy.html; support: https://bfgapps.co/apps/penlicence/support.html
+
+Handwriting practice for kids in 8 languages (English, French, German, Spanish, Romanian, Japanese hiragana, Chinese, Hindi): letter formation with feedback after every attempt, print and cursive, Word Explorer and Meaning Quiz.
+
+Who it is for: Children learning to write and the adults teaching them.
+
+**What age group is it for?**
+
+Children from about age 4 learning their first letters, through confident writers of 8 and up working on words, sentences and joined cursive. Older learners picking up a new script can use it too.
+
+**Do we need an Apple Pencil?**
+
+No. Finger practice works on iPhone and iPad. Apple Pencil on iPad adds pressure coaching; without one, pressure never counts against your child.
+
+**Is there a subscription?**
+
+No. Try Inkla free for 7 days, then unlock it with a one-time in-app purchase. No subscription, no ads.
+
+### Keystrike: Piano Sight Reading
+
+- Page: https://bfgapps.co/apps/keystrike/
+- App Store: https://apps.apple.com/app/id6763947075
+- Platforms: iPhone, iPad, Mac
+- Category: Education
+- Price: 3-day free trial, then a one-time purchase
+- Privacy: No account, no ads, no tracking; progress and recordings stay on the device.
+- Privacy policy: https://bfgapps.co/apps/keystrike/privacy.html; support: https://bfgapps.co/apps/keystrike/support.html
+
+Piano lessons: graded course from Grade 0 to Grade 8, sight-reading, ear training, built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import.
+
+Who it is for: Beginners, returning players and self-taught learners who want a structured path.
+
+**Do I need a MIDI keyboard?**
+
+No. Start with the on-screen piano, use a USB or Bluetooth MIDI keyboard for the most precise input, or play a real piano in acoustic mode through the microphone.
+
+**How many grades are there?**
+
+A Grade 0 foundation, then Grades 1 to 8, each ending with an exam-style check. The grades are Keystrike's own progression, not an external exam qualification.
+
+**Is there an Android version?**
+
+No. Keystrike is built for iPhone, iPad, and Mac.
+
+**Will my progress sync between devices?**
+
+No. Keystrike is local-first, so progress, recordings and imported MIDI files stay on the device they were created on. You can back them up and export them.
+
+**Can I use my own sheet music?**
+
+You can't import PDFs. You can import MIDI files (.mid, .midi), and Keystrike turns them into playable sheet music automatically.
+
+**Is it for children or adults?**
+
+Both. The early grades are gentle enough for a focused eight-year-old; the later grades go deep enough for adults tackling advanced repertoire.
+
+### Custoda: Expiry Tracker
 
 - Page: https://bfgapps.co/apps/custoda/
-- App Store: https://apps.apple.com/us/app/custoda-expiry-tracker/id6787263003
-- Platforms: iOS
-- Rating: 5/5 from 2 App Store ratings (UK)
+- App Store: https://apps.apple.com/app/id6787263003
+- Platforms: iPhone
+- Category: Food & Drink
+- Price: Free version; 7-day trial of everything, then a one-time purchase
+- Privacy: No account; data stays on the device, and barcode lookups send only the barcode number.
+- Privacy policy: https://bfgapps.co/apps/custoda/privacy.html; support: https://bfgapps.co/apps/custoda/support.html
 
-Custoda keeps pantry stock, expiry reminders and recipe ideas together. Scan to track dates, see allergen and diet warnings, cook from 772 recipes ranked by what's on your shelf and share a list with your household. No account. One-time purchase.
+Pantry, expiry and allergen tracker: scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, recipes ranked by what you have, a household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits.
+
+Who it is for: Households that want to waste less food and stay safe with allergens.
 
 **Do I need an account?**
 
@@ -237,7 +423,7 @@ No. Custoda works without sign-up. Your shelf, reminders and allergen and diet p
 
 **Can Custoda tell me a product is safe?**
 
-No, and it never claims to. Custoda flags ingredients on your avoid list when product information is available, and says 'unverified' when data is missing or incomplete. Product data comes from open, community databases. Always check the packaging. Custoda is not medical advice.
+No, and it never claims to. It flags ingredients on your avoid list when product information is available, and says "unverified" when data is missing or incomplete. Product data comes from open, community databases. Always check the packaging. Custoda is not medical advice.
 
 **How does household sharing work?**
 
@@ -251,76 +437,23 @@ Yes. Keep food and drink, medicines, toiletries and household supplies in one in
 
 Try every feature for 7 days with up to 20 items. After the trial you can keep up to 5 items and 3 avoid-list entries free, and warnings for everything on your avoid list are always shown. A one-time purchase adds diets, unlimited items and avoid-list entries, expiry reminders, household sharing (shared list, shared pantry and dinner vote) and recipe sharing. There is no subscription.
 
-**Which devices and languages does it support?**
+**Which devices and languages?**
 
 Custoda is built for iPhone. The app is available in English, German, Spanish, French, Japanese and Simplified Chinese, with light and dark themes that follow your device.
-
-### Merge Bash
-
-- Page: https://bfgapps.co/apps/mergebash/
-- App Store: https://apps.apple.com/gb/app/merge-bash/id6776048979
-- Platforms: iOS, iPadOS
-- Rating: 5/5 from 3 App Store ratings (UK)
-
-Merge two matching Bash Beasts to evolve them from Common to Mythic, haggle with league patrons, send Beasts on expeditions and take on Champion Clash. Idle earnings, no energy walls, no ads. For iPhone and iPad.
-
-### Keystrike
-
-- Page: https://bfgapps.co/apps/keystrike/
-- App Store: https://apps.apple.com/gb/app/keystrike-piano-lessons/id6763947075
-- Platforms: iOS, iPadOS, macOS
-- Rating: 5/5 from 1 App Store ratings (UK)
-
-Piano lessons app for iPad, iPhone and Mac with graded lessons from Grade 0 to Grade 8, sight-reading, ear training, 27 built-in pieces as engraved sheet music or falling notes, MIDI keyboard input, acoustic mode and MIDI import. 3-day trial, then a one-time unlock with no subscription.
-
-**Do I need a real piano keyboard to use Keystrike?**
-
-No. You can start with the on-screen piano. A USB or Bluetooth MIDI keyboard gives the most precise note input and is recommended for chords and two-hand playing. Acoustic mode listens to an acoustic piano through the microphone: it hears single notes in lessons and grades recorded pieces on your device after you finish. Recognition varies with the piano and the room.
-
-**Is Keystrike a subscription?**
-
-No. New users get three days of full access. After that, Ode to Joy stays playable and a single one-time in-app purchase unlocks the full app. There is no subscription and no automatic charge when the trial ends. Existing seven-day trials keep their original expiry.
-
-**Does Keystrike replace a piano teacher?**
-
-No app replaces a thoughtful human teacher. Keystrike is built to complement lessons, give learners a structured path between them, and give self-taught students a credible graded course when a teacher is not an option. Its grades are its own progression, not an external exam qualification.
-
-**Is my data sent anywhere?**
-
-Keystrike runs locally. Progress, recordings, imported MIDI files and settings stay on your device, with backup and export options. There are no accounts, no advertising and no tracking.
-
-**Can I import my own MIDI files?**
-
-Yes. Import standard .mid or .midi files from Files and Keystrike turns them into playable sheet music you can practise like any built-in piece.
-
-### Inkla
-
-- Page: https://bfgapps.co/apps/penlicence/
-- App Store: https://apps.apple.com/gb/app/id6761393693
-- Platforms: iOS
-- Rating: 5/5 from 2 App Store ratings (UK)
-
-Handwriting practice app for children on iPhone and iPad: letter formation with feedback after every attempt, 8 practice languages, a Word Explorer and a spaced-review Meaning Quiz. On-device, no accounts, no ads. Free 7-day trial, then a one-time unlock.
-
-**What age is Inkla designed for?**
-
-Inkla is built for children from about age 4 who are forming their first letters, with age settings for early writers (6–7) and confident writers (8+) who are moving on to words, sentences and joined cursive. Older learners picking up a new script can use it too.
-
-**Do children need an Apple Pencil to use Inkla?**
-
-No. Children can practise with a finger on iPhone or iPad and still get feedback on shape, spacing, line control and rhythm. Pressure feedback depends on the input device: Apple Pencil on iPad lets the app coach a lighter or firmer touch, and finger writers are never marked down for pressure.
-
-**Does Inkla require a parent account?**
-
-No. There is no sign-up, email or account. Practice is stored on the iPhone or iPad, the app works offline, and a PDF practice report is only exported when a grown-up chooses to.
 
 ### Fare Wars
 
 - Page: https://bfgapps.co/apps/farewars/
-- App Store: https://apps.apple.com/gb/app/fare-wars/id6815887660
-- Platforms: iOS, iPadOS
+- App Store: https://apps.apple.com/app/id6815887660
+- Platforms: iPhone, iPad
+- Category: Games
+- Price: Free to play; everything can be earned by playing, with optional purchases
+- Privacy: No ads; progress stays on the device.
+- Privacy policy: https://bfgapps.co/apps/farewars/privacy.html; support: https://bfgapps.co/apps/farewars/support.html
 
-Fare Wars is an arcade bus racing game for iPhone and iPad. Race rival crews to every stop in Rivergate, a colourful river city, beat five boss crews, bank your Mayhem Tin before the police catch you and paint the loudest bus in town. Free to play, no ads, no tracking.
+Arcade bus racing through Rivergate: race rival buses for every fare, boss races, a garage of restored buses and a paint shop.
+
+Who it is for: Arcade racing fans on iPhone and iPad.
 
 **When can I play Fare Wars?**
 
@@ -346,13 +479,19 @@ No. It's cheeky, never mean: parody billboards, rider quips and a police force w
 
 iPhone and iPad.
 
-### Zoombot
+### Zoombot: Robot Running Game
 
 - Page: https://bfgapps.co/apps/robotrooftoprun/
-- App Store: https://apps.apple.com/gb/app/id6811426255
-- Platforms: iOS, iPadOS
+- App Store: https://apps.apple.com/app/id6811426255
+- Platforms: iPhone, iPad
+- Category: Games
+- Price: Free to play; optional in-app purchases
+- Privacy: No ads; progress stays on the device.
+- Privacy policy: https://bfgapps.co/apps/robotrooftoprun/privacy.html; support: https://bfgapps.co/apps/robotrooftoprun/support.html
 
-Zoombot is a one-thumb jetpack runner for iPhone and iPad. Fly over danger, outrun the patrols, beat the bosses, rescue your crew across a city of rooftops and build your own robot from dozens of parts. Free to play, no ads, no tracking.
+Jetpack runner across a city of rooftops: outrun patrols, beat bosses, rescue your crew and build your own robot in the Workshop.
+
+Who it is for: Endless-runner fans on iPhone and iPad.
 
 **When can I play Zoombot?**
 
@@ -386,13 +525,14 @@ No. It is robots against robots: the rogue machines pop into sparks and bolts, w
 
 iPhone and iPad.
 
+## Coming soon
+
 ### Nitro Metro
 
 - Page: https://bfgapps.co/apps/nitrometro/
 - Status: coming soon (not yet on the App Store)
-- Platforms: iOS, iPadOS
 
-Nitro Metro: Street Racing is an arcade street racer for iPhone and iPad. Race friends nearby or online with Game Center, start in Hong Kong and Macau, then take the World Tour across ten cities and 77 Grand Prix circuits. 25 cars, 21 power-ups, police chases. Free to play, no third-party ads, no tracking.
+Arcade street racing across ten world cities with police chases, power-ups and cars to build; race friends nearby or online. Touch or game controller. Coming soon to iPhone and iPad.
 
 **When can I play Nitro Metro?**
 
@@ -438,17 +578,12 @@ iPhone and iPad.
 
 - Page: https://bfgapps.co/apps/hollowstead/
 - Status: coming soon (not yet on the App Store)
-- Platforms: iOS, iPadOS
 
-Hollowstead is a farming and survival game for iPhone and iPad. Inherit a farm seven years after the Blight, grow food through four seasons, make friends, and defend your fences from the Hollowed. No ads, no tracking.
+A farming and survival game with a story, in development. Coming soon to iPhone and iPad.
 
 **When can I play Hollowstead?**
 
 Hollowstead is in development and coming to the App Store for iPhone and iPad. We'll link it here as soon as it's live.
-
-**Is Hollowstead free?**
-
-Chapter 1 is free to play, with no ads. A single one-time purchase unlocks the full game. There is no subscription.
 
 **Who are the Hollowed?**
 
@@ -460,7 +595,7 @@ Yes. Casual has no story: just the farm, the seasons and the people. Survival an
 
 **What is the Callow Deep?**
 
-An endless mine under the old town, with new floors on every visit and better ore the deeper you go. Every fifth floor has a quick way home.
+An endless mine under the old town, with new floors on every visit, better ore the deeper you go, and the Lanternkeepers' pages to find. Every fifth floor has a quick way home.
 
 **Are there ads or tracking?**
 
@@ -580,13 +715,13 @@ The best travel tracking apps for iPhone in 2026, from Visited and Polarsteps to
 
 Met Office, BBC Weather, Apple Weather, CARROT, Acme and Cloudmesh compared for UK users: next-hour rain, radar, severe weather warnings, widgets, cost and privacy.
 
-### Cloudmesh Weather vs CARROT Weather (2026): Rain Alerts, Widgets and Pricing Compared
+### Cloudmesh vs CARROT Weather (2026): Rain Alerts, Widgets and Pricing Compared
 
 - URL: https://bfgapps.co/blog/cloudmesh-vs-carrot-weather-2026.html
 - Category: Weather
 - Published: 2026-09-29; updated: 2026-09-29
 
-Cloudmesh Weather vs CARROT Weather in 2026: rain alerts, radar, widgets, Apple Watch, privacy and what each really costs over three years, compared fairly.
+Cloudmesh vs CARROT Weather in 2026: rain alerts, radar, widgets, Apple Watch, privacy and what each really costs over three years, compared fairly.
 
 ### Cognithix vs Atom Learning: Which 11+ Option Fits Your Family in 2026?
 
