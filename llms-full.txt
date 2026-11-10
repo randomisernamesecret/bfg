@@ -335,9 +335,9 @@ Who it is for: Card-battler and roguelike players on iPhone and iPad.
 - Privacy: No ads; progress stays on the device.
 - Privacy policy: https://bfgapps.co/apps/mergebash/privacy.html; support: https://bfgapps.co/apps/mergebash/support.html
 
-Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions and take on Champion Clash across nine leagues. Idle earnings, no energy walls.
+Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions and take on Champion Clash across nine leagues. Idle earnings while you are away.
 
-Who it is for: Players who like idle and merge games without timers.
+Who it is for: Players who like idle and merge games.
 
 ### Inkla: Handwriting Practice
 
