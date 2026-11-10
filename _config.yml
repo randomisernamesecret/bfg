@@ -1,3 +1,0 @@
-# GitHub Pages skips dot-folders unless they are listed here.
-# .well-known holds the agent-skills index for AI agents.
-include: [".well-known"]
