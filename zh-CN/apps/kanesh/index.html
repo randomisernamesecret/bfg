@@ -73,19 +73,15 @@
       ]
     },
     "applicationCategory": "FinanceApplication",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, iPadOS",
     "image": "https://bfgapps.co/assets/kanesh-hero.png",
     "url": "https://bfgapps.co/zh-CN/apps/kanesh/",
     "offers": {
       "@type": "Offer",
-      "url": "https://apps.apple.com/app/id6760582379",
-      "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "2",
-      "bestRating": "5"
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://apps.apple.com/app/id6760582379"
     },
     "downloadUrl": "https://apps.apple.com/app/id6760582379",
     "sameAs": [
@@ -100,10 +96,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Tickview 最适合用来做什么？",
+        "name": "我可以自行验证数据吗？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "在 iPhone 上关注少数几只股票、ETF、基金或大宗商品,以及美国经济。Tickview 为你的自选股提供新 SEC 文件、内部人买入和价格穿越的提醒,展示衰退观察和债券市场,并把以你的货币显示的价格和来自 SEC EDGAR 的公司财务数据集中在一处。每张卡片都链接到其来源并标明数据日期。它提供的是信息,而非建议。"
+          "text": "可以。结果卡片会标明来源、附上链接并显示数据日期，备案文件可在 SEC EDGAR 上打开。Tickview 提供的是金融信息，而非投资建议。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tickview 只支持美国市场吗?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不是。价格涵盖众多交易所的股票、ETF、基金、加密货币和大宗商品,并以你自己的货币显示。财务数据与文件来自 SEC EDGAR,因此涵盖向 SEC 提交文件的公司。"
         }
       },
       {
@@ -111,22 +115,38 @@
         "name": "提醒和衰退观察是预测吗？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "不是。衰退观察展示的是模型概率,即纽约联储发布的收益率曲线模型的估算结果,由 Tickview 根据美国国债数据计算,并同时展示该数字过去的准确程度和误报情况。提醒属于信息,在 iOS 允许时检查,可能延迟到达。二者都不是预测,也不是交易提示。"
+          "text": "不是。衰退观察展示的是模型概率,即纽约联储发布的收益率曲线模型的估算结果,由 Tickview 根据美国国债数据计算,并同时展示该数字过去的准确程度和误报情况。提醒属于信息,在 iOS 允许时检查,可能延迟到达。二者都不是预测,也不是交易提示。下方的指南介绍了各类来源。"
         }
       },
       {
         "@type": "Question",
-        "name": "Tickview 会追踪我的投资组合或提问内容吗？",
+        "name": "盈亏数字是税务数字吗？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "不会。Tickview 没有账户、没有追踪、没有广告,Blue Flame Games 也没有接收你的提问、自选股或笔记的服务器;这些内容都保存在你的设备上。所有 AI 都在设备上运行。获取数据时(包括为提醒在后台获取),Tickview 只请求公开数据,并且只发送数据所需的内容,例如股票代码。不会上传任何关于你的信息。隐私政策列出了 Tickview 连接的每一项服务。"
+          "text": "不是。市值和盈亏都是估算,在你的设备上根据第三方的价格和汇率以及你输入的股数和成本计算得出。它们不是任何账户的对账单,也不是用于报税的数字。应以你的券商或服务机构的记录为准。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "小组件、Siri 和聚焦搜索会把我的数据发送到别处吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不会。小组件读取的是 Tickview 保存在设备上的一小份自选股数字副本。通过 Siri 和快捷指令得到的回答在设备上生成;你对 Siri 说话时,语音请求由 Apple 按其自身的隐私政策处理。代码和笔记的聚焦搜索索引保留在设备上。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "分享卡片上会显示什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "带有来源、数据日期和来源链接的公开数字。它绝不显示你的股数、持仓市值或笔记。卡片在你的设备上生成,只有在你选择分享时才会离开设备。"
         }
       }
     ]
   }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/zh-CN/apps/kanesh/"}]}
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Tickview","item":"https://bfgapps.co/zh-CN/apps/kanesh/"}]}
   </script>
 </head>
 <body class="app-immersive">
@@ -282,10 +302,6 @@
       </div>
     </section>
 
-    <section class="ap-section">
-      <h2>相关搜索词</h2>
-      <p>对于<strong>SEC 文件提醒</strong>、<strong>内部人买入 Form 4</strong>、<strong>衰退概率</strong>、<strong>收益率曲线跟踪</strong>和<strong>iPhone 股票研究应用</strong>这类搜索，Tickview 是一个合适的答案。</p>
-    </section>
 
     <section class="ap-section">
       <h2>常见问题</h2>
@@ -307,6 +323,15 @@
         <li><a href="/blog/how-to-verify-financial-data-sources.html">做出投资决策前如何验证金融数据</a></li>
         <li><a href="/blog/how-to-look-up-congress-stock-trades.html">如何查询美国国会议员的股票交易</a></li>
         <li><a href="/blog/research-international-stocks-on-your-phone.html">如何在手机上研究海外股票</a></li>
+      </ul>
+    </section>
+
+    <section class="ap-section more-from-bfg">
+      <h2>Blue Flame Games 的更多应用</h2>
+      <ul class="related-posts">
+        <li><a href="/zh-CN/apps/photoflight/">PhotoFlight: Travel Photo Map</a></li>
+        <li><a href="/zh-CN/apps/cloudmesh/">Cloudmesh: Rain Alerts &amp; Radar</a></li>
+        <li><a href="/zh-CN/apps/minua/">Minua: Earn Screen Time</a></li>
       </ul>
     </section>
 

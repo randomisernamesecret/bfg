@@ -73,7 +73,7 @@ APPS = {
     "cognithix": ("6760035436", "trial7", "local", ["iPhone", "iPad"]),
     "arithmetix": ("6759711397", "trial7", "local", ["iPhone", "iPad"]),
     "sparks-studios": ("6760515470", "family_once", "local", ["iPhone", "iPad"]),
-    "photoflight": ("6761143528", "pro_once", "photoflight", ["iPhone", "iPad"]),
+    "photoflight": ("6761143528", "pro_once", "photoflight", ["iPhone", "iPad", "Mac"]),
     "cyla": ("6760896784", "freetier7", "local", ["iPhone", "iPad"]),
     "cloudmesh": ("6760612651", "freetier7", "cloudmesh", ["iPhone", "iPad", "Mac", "Apple Watch"]),
     "pacegrid": ("6760843225", "freetier7", "pacegrid", ["iPhone", "iPad", "Apple Watch"]),
@@ -87,7 +87,7 @@ APPS = {
     "farewars": ("6815887660", "f2p_earn", "local", ["iPhone", "iPad"]),
     "robotrooftoprun": ("6811426255", "f2p", "local", ["iPhone", "iPad"]),
     "nitrometro": (None, "f2p_earn", "local", ["iPhone", "iPad"]),
-    "hollowstead": (None, "hollowstead", "local", ["iPhone", "iPad"]),
+    "hollowstead": (None, None, "local", ["iPhone", "iPad"])  # coming soon: no price claims,
 }
 START, END = "<!-- app-facts -->", "<!-- /app-facts -->"
 
@@ -106,7 +106,8 @@ def box(slug, i, store):
     rows = []
     if not sid:
         rows.append(("status", VALUES["coming"][i]))
-    rows.append(("price", PRICE[price][i]))
+    if price:
+        rows.append(("price", PRICE[price][i]))
     rows.append(("devices", sep.join(devices)))
     if sid:
         s = store[sid]

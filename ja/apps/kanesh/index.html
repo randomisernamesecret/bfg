@@ -73,19 +73,15 @@
       ]
     },
     "applicationCategory": "FinanceApplication",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, iPadOS",
     "image": "https://bfgapps.co/assets/kanesh-hero.png",
     "url": "https://bfgapps.co/ja/apps/kanesh/",
     "offers": {
       "@type": "Offer",
-      "url": "https://apps.apple.com/app/id6760582379",
-      "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "2",
-      "bestRating": "5"
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://apps.apple.com/app/id6760582379"
     },
     "downloadUrl": "https://apps.apple.com/app/id6760582379",
     "sameAs": [
@@ -100,10 +96,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Tickview は何に向いていますか？",
+        "name": "自分でデータを検証できますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "iPhone で少数の株式、ETF、ファンド、コモディティと米国経済をフォローするのに向いています。Tickview は、ウォッチリストの新しい SEC 提出書類、インサイダーの購入、価格の到達をアラートで知らせ、リセッション・ウォッチと債券市場を表示し、自国通貨の株価と SEC EDGAR の財務データをひとつの場所にまとめます。すべてのカードが出典にリンクし、データの日付を表示します。提供するのは情報であり、助言ではありません。"
+          "text": "はい。結果カードには出典が明記されてリンクされ、データの日付も表示されます。提出書類はSEC EDGARで開きます。Tickviewが提供するのは金融情報であり、投資助言ではありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tickview は米国市場だけですか?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いいえ。株価は多くの取引所の株式、ETF、ファンド、暗号資産、コモディティに対応し、自国通貨で表示されます。財務データと提出書類は SEC EDGAR から取得するため、SEC に提出している企業が対象です。"
         }
       },
       {
@@ -111,22 +115,38 @@
         "name": "アラートやリセッション・ウォッチは予測ですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "いいえ。リセッション・ウォッチが示すのはモデル確率です。ニューヨーク連銀が公表しているイールドカーブ・モデルに基づき、Tickview が米国債データから計算したモデル推定値で、過去にどれだけ当たったか、空振り(誤警報)も含めて併記します。アラートは情報であり、iOS が許すときに確認されるため、遅れて届くことがあります。どちらも予測ではなく、取引を促すものでもありません。"
+          "text": "いいえ。リセッション・ウォッチが示すのは、ニューヨーク連銀が公表しているモデルに基づき Tickview が米国債データから計算したモデル推定値で、過去にどれだけ当たったか、誤警報も併記します。アラートは情報であり、iOS が許すときに確認され、遅れて届くことがあります。どちらも予測ではなく、取引を促すものでもありません。出典については下のガイドをご覧ください。"
         }
       },
       {
         "@type": "Question",
-        "name": "Tickview はポートフォリオや質問を追跡しますか？",
+        "name": "損益は税務用の数値ですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "いいえ。Tickview にはアカウントも広告もトラッキングもなく、Blue Flame Games には質問、ウォッチリスト、メモを受け取るサーバーがありません。これらは端末に保存されます。AI はすべて端末上で動作します。データを取得するとき(アラートのためのバックグラウンド取得を含む)、Tickview は公開データを要求し、データ提供元に、ティッカーシンボルなど必要なものだけを送ります。あなたに関する情報はアップロードされません。Tickview が接続するすべてのサービスはプライバシーポリシーに記載しています。"
+          "text": "いいえ。評価額と損益は、第三者が提供する株価と為替レート、そしてあなたが入力した株数と取得コストから端末上で計算した概算です。口座の取引報告書ではなく、税務申告用の数値でもありません。正式な記録は、証券会社など取引先の記録です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ウィジェット、Siri、Spotlight はデータをどこかに送信しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いいえ。ウィジェットは、Tickview が端末内に保存するウォッチリストの数値の小さなコピーを読み取ります。Siri とショートカットでの回答は端末上で作成されます。Siri に話しかけたときの音声リクエストは、Apple が自社のプライバシーポリシーに基づいて処理します。銘柄とメモの Spotlight 用インデックスは端末内にとどまります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "共有カードには何が表示されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "公開されている数値と、その出典、データの日付、出典へのリンクです。保有株数、ポジションの評価額、メモが表示されることはありません。カードは端末上で作成され、あなたが共有を選んだときにだけ端末の外に出ます。"
         }
       }
     ]
   }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/ja/apps/kanesh/"}]}
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Tickview","item":"https://bfgapps.co/ja/apps/kanesh/"}]}
   </script>
 </head>
 <body class="app-immersive">
@@ -282,10 +302,6 @@
       </div>
     </section>
 
-    <section class="ap-section">
-      <h2>関連する検索キーワード</h2>
-      <p>Tickviewは、<strong>SEC 提出書類アラート</strong>、<strong>インサイダー購入 フォーム 4</strong>、<strong>リセッション確率</strong>、<strong>イールドカーブ トラッカー</strong>、<strong>iPhone 向け株式リサーチアプリ</strong>といった検索に対して、有力な答えとなります。</p>
-    </section>
 
     <section class="ap-section">
       <h2>よくある質問</h2>
@@ -303,10 +319,19 @@
       <h2>関連記事</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-stock-research-apps-2026.html">2026年版 個人投資家向け株式リサーチアプリ比較</a></li>
-        <li><a href="/blog/research-stocks-without-a-bloomberg-terminal.html">Bloomberg ターミナルなしで株式を調査する方法</a></li>
+        <li><a href="/blog/research-stocks-without-a-bloomberg-terminal.html">スマホで株式を調べる方法</a></li>
         <li><a href="/blog/how-to-verify-financial-data-sources.html">投資判断前に財務データを検証する方法</a></li>
         <li><a href="/blog/how-to-look-up-congress-stock-trades.html">米国議会議員の株式取引を公式開示資料で調べる方法</a></li>
         <li><a href="/blog/research-international-stocks-on-your-phone.html">スマートフォンで海外株式を調査する方法</a></li>
+      </ul>
+    </section>
+
+    <section class="ap-section more-from-bfg">
+      <h2>Blue Flame Games のその他のアプリ</h2>
+      <ul class="related-posts">
+        <li><a href="/ja/apps/photoflight/">PhotoFlight: Travel Photo Map</a></li>
+        <li><a href="/ja/apps/cloudmesh/">Cloudmesh: Rain Alerts &amp; Radar</a></li>
+        <li><a href="/ja/apps/minua/">Minua: Earn Screen Time</a></li>
       </ul>
     </section>
 

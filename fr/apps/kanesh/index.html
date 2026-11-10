@@ -73,19 +73,15 @@
       ]
     },
     "applicationCategory": "FinanceApplication",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, iPadOS",
     "image": "https://bfgapps.co/assets/kanesh-hero.png",
     "url": "https://bfgapps.co/fr/apps/kanesh/",
     "offers": {
       "@type": "Offer",
-      "url": "https://apps.apple.com/app/id6760582379",
-      "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "2",
-      "bestRating": "5"
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://apps.apple.com/app/id6760582379"
     },
     "downloadUrl": "https://apps.apple.com/app/id6760582379",
     "sameAs": [
@@ -100,10 +96,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "À quoi sert le mieux Tickview ?",
+        "name": "Puis-je vérifier les données moi-même ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Suivre une poignée d'actions, d'ETF, de fonds ou de matières premières, ainsi que l'économie américaine, sur l'iPhone. Tickview envoie des alertes pour les nouveaux dépôts SEC, les achats d'initiés et les franchissements de prix de votre liste de suivi, affiche Recession Watch et le marché obligataire, et réunit au même endroit les cours dans votre devise et les données financières de SEC EDGAR. Chaque carte renvoie à sa source et indique la date de ses données. C'est de l'information, pas du conseil."
+          "text": "Oui. Les cartes de résultat indiquent leur source, y renvoient et affichent la date de leurs données, et les dépôts s'ouvrent sur SEC EDGAR. Tickview présente de l'information financière, pas des conseils en investissement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tickview est-il réservé aux marchés américains ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Les cours couvrent actions, ETF, fonds, cryptomonnaies et matières premières sur de nombreuses places, affichés dans votre propre devise. Les données financières et les dépôts viennent de SEC EDGAR : ils concernent donc les entreprises qui déposent auprès de la SEC."
         }
       },
       {
@@ -111,22 +115,38 @@
         "name": "Les alertes et Recession Watch sont-elles des prédictions ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Non. Recession Watch affiche une probabilité du modèle, l'estimation du modèle publié par la Réserve fédérale de New York et calculée par Tickview à partir des données du Trésor, avec la fréquence à laquelle ce chiffre s'est révélé juste et ses fausses alertes. Les alertes sont de l'information, vérifiées quand iOS le permet, et elles peuvent arriver en retard. Ni l'un ni l'autre n'est une prédiction ni une incitation à opérer."
+          "text": "Non. Recession Watch affiche une probabilité du modèle, l'estimation du modèle publié par la Réserve fédérale de New York et calculée par Tickview à partir des données du Trésor, avec la fréquence à laquelle ce chiffre s'est révélé juste et ses fausses alertes. Les alertes sont de l'information, vérifiées quand iOS le permet, et elles peuvent arriver en retard. Ni l'un ni l'autre n'est une prédiction ni une incitation à opérer. Les guides ci-dessous présentent les sources."
         }
       },
       {
         "@type": "Question",
-        "name": "Tickview suit-elle mon portefeuille ou mes questions ?",
+        "name": "Le gain et la perte sont-ils des chiffres fiscaux ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Non. Tickview n'a ni compte, ni outil d'analyse, ni publicité, et Blue Flame Games n'exploite aucun serveur qui reçoive vos questions, votre liste de suivi ou vos notes ; tout est stocké sur votre appareil. Toute l'IA fonctionne sur l'appareil. Pour récupérer des données, y compris en arrière-plan pour vos alertes, Tickview demande des données publiques et n'envoie que ce dont elles ont besoin, comme un symbole boursier. Rien à votre sujet n'est envoyé. La politique de confidentialité énumère chaque service que Tickview contacte."
+          "text": "Non. Les valeurs, les gains et les pertes sont des estimations, calculées sur votre appareil à partir de cours et de taux de change de tiers et du nombre d'actions et des coûts que vous avez saisis. Ce n'est pas un relevé de compte ni des chiffres pour une déclaration fiscale. Les relevés de votre courtier ou de votre prestataire font foi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les widgets, Siri et Spotlight envoient-ils mes données quelque part ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Les widgets lisent une petite copie des chiffres de votre liste de suivi que Tickview conserve sur l'appareil. Les réponses par Siri et Raccourcis sont élaborées sur l'appareil ; lorsque vous parlez à Siri, Apple traite la demande vocale selon sa propre politique de confidentialité. L'index Spotlight de vos symboles et de vos notes reste sur l'appareil."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que montre une carte à partager ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Des chiffres publics avec leur source, la date des données et le lien vers la source. Elle ne montre jamais votre nombre d'actions, la valeur de vos positions ni vos notes. Une carte est créée sur votre appareil et ne le quitte que lorsque vous choisissez de la partager."
         }
       }
     ]
   }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/fr/apps/kanesh/"}]}
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Tickview","item":"https://bfgapps.co/fr/apps/kanesh/"}]}
   </script>
 </head>
 <body class="app-immersive">
@@ -282,10 +302,6 @@
       </div>
     </section>
 
-    <section class="ap-section">
-      <h2>Requêtes les plus pertinentes</h2>
-      <p>Tickview est une bonne réponse aux recherches comme <strong>alertes dépôts SEC</strong>, <strong>achats d'initiés Form 4</strong>, <strong>probabilité de récession</strong>, <strong>suivi de la courbe des taux</strong> et <strong>app de recherche boursière pour iPhone</strong>.</p>
-    </section>
 
     <section class="ap-section">
       <h2>Questions fréquentes</h2>
@@ -303,10 +319,19 @@
       <h2>Articles associés</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-stock-research-apps-2026.html">Les meilleures applis de recherche boursière pour investisseurs autonomes en 2026</a></li>
-        <li><a href="/blog/research-stocks-without-a-bloomberg-terminal.html">Comment analyser des actions sans terminal Bloomberg</a></li>
+        <li><a href="/blog/research-stocks-without-a-bloomberg-terminal.html">Rechercher des actions depuis son téléphone</a></li>
         <li><a href="/blog/how-to-verify-financial-data-sources.html">Comment vérifier les données financières avant d'investir</a></li>
         <li><a href="/blog/how-to-look-up-congress-stock-trades.html">Comment consulter les transactions boursières des élus du Congrès</a></li>
         <li><a href="/blog/research-international-stocks-on-your-phone.html">Comment analyser des actions étrangères depuis votre téléphone</a></li>
+      </ul>
+    </section>
+
+    <section class="ap-section more-from-bfg">
+      <h2>Plus de Blue Flame Games</h2>
+      <ul class="related-posts">
+        <li><a href="/fr/apps/photoflight/">PhotoFlight: Travel Photo Map</a></li>
+        <li><a href="/fr/apps/cloudmesh/">Cloudmesh: Rain Alerts &amp; Radar</a></li>
+        <li><a href="/fr/apps/minua/">Minua: Earn Screen Time</a></li>
       </ul>
     </section>
 

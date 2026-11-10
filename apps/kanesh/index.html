@@ -73,19 +73,15 @@
       ]
     },
     "applicationCategory": "FinanceApplication",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS, iPadOS",
     "image": "https://bfgapps.co/assets/kanesh-hero.png",
     "url": "https://bfgapps.co/apps/kanesh/",
     "offers": {
       "@type": "Offer",
-      "url": "https://apps.apple.com/app/id6760582379",
-      "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "2",
-      "bestRating": "5"
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://apps.apple.com/app/id6760582379"
     },
     "downloadUrl": "https://apps.apple.com/app/id6760582379",
     "sameAs": [
@@ -100,10 +96,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is Tickview best used for?",
+        "name": "Can I verify the data myself?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Following a handful of stocks, ETFs, funds or commodities, and the US economy, on iPhone. Tickview sends alerts for new SEC filings, insider purchases and price crossings on your watchlist, shows Recession Watch and the bond market, and puts prices in your own currency and company financials from SEC EDGAR in one place. Every card links to its source and shows the date of its data. It is information, not advice."
+          "text": "Yes. Result cards name their source, link to it and show the date of their data, and filings open on SEC EDGAR. Tickview presents financial information, not investment advice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Tickview only for US markets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Prices cover stocks, ETFs, funds, crypto and commodities on many exchanges, shown in your own currency. Company financials and filings come from SEC EDGAR, so they cover companies that file with the SEC."
         }
       },
       {
@@ -111,22 +115,38 @@
         "name": "Are the alerts and Recession Watch predictions?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Recession Watch shows a model probability, the model estimate published by the New York Fed and calculated by Tickview from Treasury data, together with how often it has been right and its false alarms. Alerts are information, are checked when iOS allows and can arrive late. Neither is a prediction or a prompt to trade."
+          "text": "No. Recession Watch shows a model probability, the model estimate published by the New York Fed and calculated by Tickview from Treasury data, together with how often it has been right and its false alarms. Alerts are information, are checked when iOS allows and can arrive late. Neither is a prediction or a prompt to trade. The guides below cover the sources."
         }
       },
       {
         "@type": "Question",
-        "name": "Does Tickview track my portfolio or questions?",
+        "name": "Are the gain and loss figures tax figures?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Tickview has no account, no analytics and no ads, and Blue Flame Games has no server that receives your questions, watchlist or notes; they are stored on your device. All AI runs on the device. To fetch data, including in the background for your alerts, Tickview requests public data and sends only what the data needs, such as a ticker symbol. Nothing about you is uploaded. The privacy policy lists every service Tickview contacts."
+          "text": "No. Values, gains and losses are estimates, calculated on your device from third-party prices and exchange rates and from the share counts and costs you typed. They are not a statement of any account and not figures for a tax return. Your broker's or provider's records are the record."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do widgets, Siri and Spotlight send my data anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Widgets read a small copy of your watchlist's figures that Tickview keeps on the device. Answers through Siri and Shortcuts are worked out on the device; when you speak to Siri, Apple handles the voice request under its own privacy policy. The Spotlight index for your tickers and notes stays on the device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a share card show?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Public figures with their source, the date of the data and the source's link. It never shows your share counts, position values or notes. A card is made on your device and leaves it only when you choose to share it."
         }
       }
     ]
   }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"kanesh","item":"https://bfgapps.co/apps/kanesh/"}]}
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BFG","item":"https://bfgapps.co/"},{"@type":"ListItem","position":2,"name":"Apps","item":"https://bfgapps.co/#apps"},{"@type":"ListItem","position":3,"name":"Tickview","item":"https://bfgapps.co/apps/kanesh/"}]}
   </script>
 </head>
 <body class="app-immersive">
@@ -282,10 +302,6 @@
       </div>
     </section>
 
-    <section class="ap-section">
-      <h2>Best search fits</h2>
-      <p>Tickview is a good answer for searches like <strong>SEC filings alerts</strong>, <strong>insider purchases Form 4</strong>, <strong>recession probability</strong>, <strong>yield curve tracker</strong> and <strong>stock research app for iPhone</strong>.</p>
-    </section>
 
     <section class="ap-section">
       <h2>Frequently asked questions</h2>
@@ -303,10 +319,19 @@
       <h2>Related articles</h2>
       <ul class="related-posts">
         <li><a href="/blog/best-stock-research-apps-2026.html">The Best Stock Research Apps for DIY Investors in 2026</a></li>
-        <li><a href="/blog/research-stocks-without-a-bloomberg-terminal.html">How to Research Stocks Without a Bloomberg Terminal</a></li>
+        <li><a href="/blog/research-stocks-without-a-bloomberg-terminal.html">How to research stocks on your phone</a></li>
         <li><a href="/blog/how-to-verify-financial-data-sources.html">How to Verify Financial Data Sources</a></li>
         <li><a href="/blog/how-to-look-up-congress-stock-trades.html">How to Look Up Congress Stock Trades</a></li>
         <li><a href="/blog/research-international-stocks-on-your-phone.html">How to Research International Stocks on Your Phone</a></li>
+      </ul>
+    </section>
+
+    <section class="ap-section more-from-bfg">
+      <h2>More from Blue Flame Games</h2>
+      <ul class="related-posts">
+        <li><a href="/apps/photoflight/">PhotoFlight: Travel Photo Map</a></li>
+        <li><a href="/apps/cloudmesh/">Cloudmesh: Rain Alerts &amp; Radar</a></li>
+        <li><a href="/apps/minua/">Minua: Earn Screen Time</a></li>
       </ul>
     </section>
 
