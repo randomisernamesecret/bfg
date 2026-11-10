@@ -56,9 +56,7 @@ PRICE = {
     "family_once": ["Free download; one purchase unlocks everything for the whole family", "Kostenloser Download; ein Kauf schaltet alles für die ganze Familie frei", "Descarga gratuita; una sola compra lo desbloquea todo para toda la familia", "Téléchargement gratuit ; un seul achat débloque tout pour toute la famille", "無料ダウンロード。1回の購入で家族全員のすべてを解放", "免费下载；一次购买即可为全家解锁全部内容"],
     "f2p": ["Free to play; optional in-app purchases", "Kostenlos spielbar; optionale In-App-Käufe", "Gratis; compras opcionales dentro de la app", "Gratuit ; achats intégrés facultatifs", "基本プレイ無料。アプリ内課金は任意", "免费游玩；可选内购"],
     "f2p_earn": ["Free to play; everything can be earned by playing, with optional purchases", "Kostenlos spielbar; alles lässt sich erspielen, Käufe sind optional", "Gratis; todo se puede ganar jugando, con compras opcionales", "Gratuit ; tout se gagne en jouant, achats facultatifs", "基本プレイ無料。すべてプレイで入手でき、購入は任意", "免费游玩；一切都能通过游戏获得，购买为可选"],
-    "mittenly": ["40 levels and a daily puzzle free; a one-time purchase unlocks endless levels", "40 Level und ein tägliches Rätsel gratis; ein Einmalkauf schaltet endlose Level frei", "40 niveles y un puzle diario gratis; un pago único desbloquea niveles infinitos", "40 niveaux et un puzzle quotidien gratuits ; un achat unique débloque des niveaux à l'infini", "40レベルとデイリーパズルは無料。買い切りでレベル無制限", "40 关和每日谜题免费；一次性购买解锁无限关卡"],
     "hollowstead": ["Chapter 1 free; a one-time purchase unlocks the full game", "Kapitel 1 gratis; ein Einmalkauf schaltet das ganze Spiel frei", "Capítulo 1 gratis; un pago único desbloquea el juego completo", "Chapitre 1 gratuit ; un achat unique débloque le jeu complet", "第1章は無料。買い切りでゲーム全体を解放", "第 1 章免费；一次性购买解锁完整游戏"],
-    "holdout": ["Free demo; a one-time purchase unlocks the full game", "Kostenlose Demo; ein Einmalkauf schaltet das ganze Spiel frei", "Demo gratuita; un pago único desbloquea el juego completo", "Démo gratuite ; un achat unique débloque le jeu complet", "無料体験版あり。買い切りでゲーム全体を解放", "免费试玩；一次性购买解锁完整游戏"],
 }
 DATA = {
     "local": ["Stays on your device", "Bleiben auf deinem Gerät", "Se quedan en tu dispositivo", "Restent sur votre appareil", "端末内に保存", "保存在你的设备上"],
@@ -89,9 +87,7 @@ APPS = {
     "farewars": ("6815887660", "f2p_earn", "local", ["iPhone", "iPad"]),
     "robotrooftoprun": ("6811426255", "f2p", "local", ["iPhone", "iPad"]),
     "nitrometro": (None, "f2p_earn", "local", ["iPhone", "iPad"]),
-    "mittenly": (None, "mittenly", "local", ["iPhone", "iPad"]),
     "hollowstead": (None, "hollowstead", "local", ["iPhone", "iPad"]),
-    "seriousbellgrave": (None, "holdout", "local", ["iPhone", "iPad"]),
 }
 START, END = "<!-- app-facts -->", "<!-- /app-facts -->"
 

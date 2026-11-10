@@ -2,7 +2,7 @@
 
 > Privacy-first iPhone and iPad apps by Blue Flame Games. Apps across finance, education, health, fitness, travel, weather, music, kids, and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-11-04. Short index: https://bfgapps.co/llms.txt
+Last updated: 2026-11-10. Short index: https://bfgapps.co/llms.txt
 
 ## Company
 
@@ -434,38 +434,6 @@ On your device. Nitro Metro doesn't collect any data, and purchases are handled 
 
 iPhone and iPad.
 
-### Mittenly
-
-- Page: https://bfgapps.co/apps/mittenly/
-- Status: coming soon (not yet on the App Store)
-- Platforms: iOS, iPadOS
-
-Mittenly is a cosy pixel-art yarn puzzle for iPhone and iPad. Untangle the yarn, knit a mitten, furnish six homes and look after six cats. Every level is checked to be solvable. No ads, no lives, no timers.
-
-**When can I play Mittenly?**
-
-Mittenly is coming soon to the App Store for iPhone and iPad, as a download under 50 MB. We'll link it here as soon as it's live.
-
-**Is Mittenly free?**
-
-The first 40 levels and the Daily Mitten are free, with no ads. An optional one-time purchase, Mittenly Forever (US$4.99), unlocks endless levels. There is no subscription.
-
-**Can every level be solved?**
-
-Yes. Every level is checked to be solvable before it reaches you. If you get Tangled, there was a better order, and Undo or Retry lets you find it.
-
-**Are there ads, lives or timers?**
-
-No. There are no ads, no lives, no energy, no timers and no accounts. Play as many mittens as you like, at your own pace.
-
-**Can I play if I'm colour-blind?**
-
-Yes. Turn on patterns in Settings and every yarn colour gets its own pattern. Mittenly also supports VoiceOver, and light and dark mode.
-
-**Where is my progress saved?**
-
-On your device. Closing the app never loses a mitten in progress, and nothing is sent anywhere: there are no accounts and no tracking.
-
 ### Hollowstead
 
 - Page: https://bfgapps.co/apps/hollowstead/
@@ -532,19 +500,11 @@ A fair guide to merge games on iPhone and iPad: what Merge Mansion, Travel Town,
 
 A fair guide to roguelike deck-builders on iPhone and iPad: what Slay the Spire, Balatro, Monster Train, Dicey Dungeons and Wildfrost do well, how each one charges, and how to build a deck that wins.
 
-### The Best Yarn Puzzle Games in 2026, and How to Play One Without Ads
-
-- URL: https://bfgapps.co/blog/best-yarn-puzzle-games-2026.html
-- Category: Games
-- Published: 2026-10-08; updated: 2026-10-08
-
-A fair guide to yarn and wool puzzle games on iPhone and iPad: what the big names do well, what players complain about, how to avoid the ads, and tips to stop getting tangled.
-
 ### How to Play iPhone, iPad and Mac Games With a PS5 or Xbox Controller
 
 - URL: https://bfgapps.co/blog/play-games-with-ps5-xbox-controller-iphone-ipad-mac.html
 - Category: Games
-- Published: 2026-10-07; updated: 2026-10-07
+- Published: 2026-10-07; updated: 2026-11-10
 
 Pair a PS5 DualSense or Xbox controller with your iPhone, iPad or Mac, switch between touch and controller, and get more from action and racing games.
 
