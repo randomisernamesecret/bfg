@@ -93,7 +93,7 @@ Guides, comparisons and buyer's guides by Daniel Hart. Each is also published in
 
 ### Health
 
-- [Flo vs Clue vs Ondi: Period Tracker Privacy Compared (2026)](https://bfgapps.co/blog/flo-vs-clue-vs-cyla-period-tracker-privacy.html): Flo, Clue and Ondi compared on privacy, features and price in 2026: where your cycle data is stored, who could access it, and which trade-off suits you.
+- [Flo vs Clue vs Ondi: Period Tracker Privacy Compared (2026)](https://bfgapps.co/blog/flo-vs-clue-vs-cyla-period-tracker-privacy.html): Flo, Clue and Ondi compared on where your cycle data is stored and what each app says about privacy in 2026, so you can decide what suits you.
 - [Allergen Scanner Apps: Why "Unverified" Beats a False "Safe"](https://bfgapps.co/blog/allergen-scanner-apps-unverified-vs-safe.html): Barcode allergen scanners help allergy families shop faster, but product data is often incomplete. Why an honest 'unverified' result matters, what to look for in an app, and a safer scanning routine.
 - [Smart Ring Apps That Keep Your Health Data Private](https://bfgapps.co/blog/smart-ring-private-health-tracking.html): Smart rings track sleep, heart rate, HRV and recovery — but most apps need a cloud account. Here's how to read your ring privately, fully on your iPhone.
 - [Switching Period Trackers: What to Look for Before You Move Your Data](https://bfgapps.co/blog/switching-period-tracker-what-to-look-for.html): A practical guide to switching period tracker apps: feature checklists, data portability, privacy red flags, Apple Health backup, and what on-device means.

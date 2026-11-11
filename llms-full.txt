@@ -185,11 +185,11 @@ Who it is for: People who want to keep a cycle diary without an account or an On
 
 **Is Ondi private?**
 
-Yes. There is no account, no Ondi server for your health records and no tracking analytics. In Settings, network access reads: None.
+Yes. There is no account, no Ondi server and no tracking analytics. Your logs are stored on your device, and device backups follow Apple's rules. The only network request is an App Store lookup for the names and icons of our other apps; it carries no health data.
 
 **What's free?**
 
-Period tracking, daily logs, predictions, the calendar and irregularity alerts, always. Everything is free for 7 days; then one purchase unlocks fertility, every mode, insights and export. No subscription.
+Logging in every mode, your full history, the calendar, the next-period estimate and export of your own data, always. Everything is free for 7 days; then one purchase unlocks insights, Ask Ondi on supported devices, smart ring insights and the pregnancy, postpartum and post-menopause dashboards. No subscription.
 
 **How does it compare to similar apps?**
 
@@ -743,9 +743,9 @@ DoodleMaths and Arithmetix compared for UK primary maths: year groups, times tab
 
 - URL: https://bfgapps.co/blog/flo-vs-clue-vs-cyla-period-tracker-privacy.html
 - Category: Health
-- Published: 2026-09-29; updated: 2026-09-29
+- Published: 2026-09-29; updated: 2026-11-11
 
-Flo, Clue and Ondi compared on privacy, features and price in 2026: where your cycle data is stored, who could access it, and which trade-off suits you.
+Flo, Clue and Ondi compared on where your cycle data is stored and what each app says about privacy in 2026, so you can decide what suits you.
 
 ### GL vs CEM in 2026: Which 11+ Test Will Your Child Sit?
 
