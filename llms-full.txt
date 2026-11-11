@@ -189,7 +189,7 @@ Yes. There is no account, no Ondi server and no tracking analytics. Your logs ar
 
 **What's free?**
 
-Logging in every mode, your full history, the calendar, the next-period estimate and export of your own data, always. Everything is free for 7 days; then one purchase unlocks insights, Ask Ondi on supported devices, smart ring insights and the pregnancy, postpartum and post-menopause dashboards. No subscription.
+Logging in every mode, your full history, the calendar, the next-period estimate and export of your own data. Everything is free for 7 days; then one purchase unlocks insights, Ask Ondi on supported devices, smart ring insights and the pregnancy, postpartum and post-menopause dashboards. No subscription.
 
 **How does it compare to similar apps?**
 
