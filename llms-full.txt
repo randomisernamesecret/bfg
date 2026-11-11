@@ -176,12 +176,12 @@ Read an honest comparison with similar apps.
 - Platforms: iPhone, iPad
 - Category: Health & Fitness
 - Price: Free version; 7-day trial of everything, then a one-time purchase
-- Privacy: No accounts, no cloud, no servers; data stays on the device.
+- Privacy: No accounts and no Ondi server; logs stay on the device.
 - Privacy policy: https://bfgapps.co/apps/cyla/privacy.html; support: https://bfgapps.co/apps/cyla/support.html
 
-Private period and cycle tracker with Apple Watch temperature support.
+Private period and cycle diary with Apple Watch temperature support.
 
-Who it is for: People who want to track their cycle without an account or a cloud.
+Who it is for: People who want to keep a cycle diary without an account or an Ondi server.
 
 **Is Ondi private?**
 
