@@ -2,7 +2,7 @@
 
 > Privacy-first iPhone, iPad and Mac apps and games by Blue Flame Games, across finance, education, health, fitness, travel, weather, music, kids and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-11-10. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
+Last updated: 2026-11-11. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
 
 ## Company
 
@@ -335,7 +335,7 @@ Who it is for: Card-battler and roguelike players on iPhone and iPad.
 - Privacy: No ads; progress stays on the device.
 - Privacy policy: https://bfgapps.co/apps/mergebash/privacy.html; support: https://bfgapps.co/apps/mergebash/support.html
 
-Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions and take on Champion Clash across nine leagues. Idle earnings while you are away.
+Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, climb nine leagues and face the Tide League's champion in Champion Clash. Idle earnings while you are away.
 
 Who it is for: Players who like idle and merge games.
 

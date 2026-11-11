@@ -64,7 +64,7 @@ APP_TEXT = {
                  "Card-battler and roguelike players on iPhone and iPad.",
                  "No ads; game progress stays on the device."),
     "mergebash": ("Merge Bash: Idle Monster Game", "Merge Bash", "Games",
-                  "Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions and take on Champion Clash across nine leagues. Idle earnings while you are away.",
+                  "Idle merge-to-evolve creature collector: merge Beasts from Common to Mythic, haggle with league patrons, send expeditions, climb nine leagues and face the Tide League's champion in Champion Clash. Idle earnings while you are away.",
                   "Players who like idle and merge games.",
                   "No ads; progress stays on the device."),
     "penlicence": ("Inkla: Handwriting Practice", "Inkla", "Education",
