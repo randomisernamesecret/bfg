@@ -94,7 +94,7 @@
       <li><strong>Barometric readings</strong> — pressure, coordinates, altitude. Retained for 6 hours for the mesh network.</li>
       <li><strong>Weather reports</strong> — conditions and location. Retained for 24 hours.</li>
       <li><strong>Seismic events</strong> — acceleration and confidence. Retained for 1 hour. Beta feature.</li>
-      <li><strong>Push tokens</strong> — device token and location for alerts. The precise location (about 250 m) is kept for at most 6 hours; after that only an approximate area (about 10 km) is kept, for up to 30 days, so alerts keep working. Removed when you turn off all alerts.</li>
+      <li><strong>Push tokens and alert settings</strong> — device token and location for alerts, together with the alert settings you choose in the app: which alert types are on (rain, severe weather, earthquake), your language, Quiet Hours (start and end, and whether they also hold back severe weather warnings), the name of your device's time zone (so Quiet Hours apply at your local time), your rain Frequency (the minimum gap between rain alerts), the earthquake magnitude and distance you set, whether this version of the app can show Time Sensitive notifications, and, only when your alerts follow a saved city instead of your position, that city's name (used in the notification text). The precise location (about 250 m) is kept for at most 6 hours; after that only an approximate area (about 10 km) is kept, for up to 30 days, so alerts keep working. The saved city's name is removed together with the location. The token and the settings are kept until you turn alerts off, or for 90 days without use. Removed when you turn off all alerts.</li>
     </ul>
     <p>Location used for weather display is sent only as a coarsened weather lookup and is not stored except as described above. On your devices, your precise location is kept for up to 6 hours; after that only an approximate area (about 10 km) is kept, for up to 30 days, so widgets, your Apple Watch and rain alerts keep updating when you haven't opened the app.</p>
 
@@ -113,7 +113,7 @@
     <p>No login is required. Non-persistent random IDs are used. Location is coarsened. Data types are isolated. Data is auto-purged within hours — only aggregates persist.</p>
 
     <h2>Push Notifications</h2>
-    <p>Your push token and location are stored on our server only to send alerts for your area: the precise location for at most 6 hours, then an approximate area (about 10 km) for up to 30 days. No identity is linked. Turning off all alerts in the app removes the registration; you can also disable notifications in iOS Settings.</p>
+    <p>Your push token, location and alert settings are stored on our server only to send alerts for your area and to apply the settings you chose: Quiet Hours at your local time (the time-zone name is used for nothing else), the minimum gap between rain alerts, your earthquake magnitude and distance, and the saved city's name when your alerts follow a saved city. The precise location is kept for at most 6 hours, then an approximate area (about 10 km) for up to 30 days; the saved city's name goes with the location. The token and the settings are kept until you turn alerts off, or for 90 days without use. No identity is linked. Turning off all alerts in the app removes the registration; you can also disable notifications in iOS Settings.</p>
 
     <h2>Third-Party Services</h2>
     <ul>
