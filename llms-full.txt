@@ -231,7 +231,7 @@ Read the direct comparison in Cloudmesh vs CARROT Weather (2026) for rain alerts
 - Privacy: No account; workouts stay on the device.
 - Privacy policy: https://bfgapps.co/apps/pacegrid/privacy.html; support: https://bfgapps.co/apps/pacegrid/support.html
 
-GPS run, ride, walk and hike tracker with Injury Guard training-load alerts, smart ring sleep data and GPX/FIT export.
+GPS run, ride, walk and hike tracker with Load Guard training-load alerts, smart ring sleep data and GPX/FIT export.
 
 Who it is for: Runners, cyclists and hikers who want to keep their training data without a subscription.
 
@@ -243,7 +243,7 @@ No. All features are free for 7 days, recording stays free afterwards, and a sin
 
 Yes. PaceGrid records GPS workouts directly from your wrist, so you can leave your phone behind. The Apple Watch app is part of the full unlock.
 
-**How does Injury Guard work?**
+**How does Load Guard work?**
 
 It compares your recent training load with your longer-term baseline and can alert you during workouts. Learn more in Training Load & Injury Prevention.
 

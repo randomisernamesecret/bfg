@@ -48,7 +48,7 @@ APP_TEXT = {
                   "Anyone who wants accurate rain timing and a weather app without a subscription.",
                   "No account; approximate location is used for forecasts and rain alerts."),
     "pacegrid": ("PaceGrid: GPS Running Tracker", "PaceGrid", "Health & Fitness",
-                 "GPS run, ride, walk and hike tracker with Injury Guard training-load alerts, smart ring sleep data and GPX/FIT export.",
+                 "GPS run, ride, walk and hike tracker with Load Guard training-load alerts, smart ring sleep data and GPX/FIT export.",
                  "Runners, cyclists and hikers who want to keep their training data without a subscription.",
                  "No account; workouts stay on the device."),
     "minua": ("Minua: Earn Screen Time", "Minua", "Productivity",
