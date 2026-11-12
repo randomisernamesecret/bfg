@@ -225,7 +225,7 @@ Read the direct comparison in Cloudmesh vs CARROT Weather (2026) for rain alerts
 
 - Page: https://bfgapps.co/apps/pacegrid/
 - App Store: https://apps.apple.com/app/id6760843225
-- Platforms: iPhone, iPad, Apple Watch
+- Platforms: iPhone, Apple Watch
 - Category: Health & Fitness
 - Price: Free version; 7-day trial of everything, then a one-time purchase
 - Privacy: No account; workouts stay on the device.

@@ -76,7 +76,7 @@ APPS = {
     "photoflight": ("6761143528", "pro_once", "photoflight", ["iPhone", "iPad", "Mac"]),
     "cyla": ("6760896784", "freetier7", "local", ["iPhone", "iPad"]),
     "cloudmesh": ("6760612651", "freetier7", "cloudmesh", ["iPhone", "iPad", "Mac", "Apple Watch"]),
-    "pacegrid": ("6760843225", "freetier7", "pacegrid", ["iPhone", "iPad", "Apple Watch"]),
+    "pacegrid": ("6760843225", "freetier7", "pacegrid", ["iPhone", "Apple Watch"]),
     "minua": ("6760611967", "once", "local", ["iPhone", "iPad"]),
     "bellgrave": ("6761905396", "oncegame", "local", ["iPhone", "iPad", "Mac"]),
     "cardbash": ("6775067276", "f2p", "local", ["iPhone", "iPad"]),
