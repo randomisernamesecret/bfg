@@ -205,13 +205,13 @@ Read an honest comparison with similar apps.
 - Privacy: No account; approximate location is used for forecasts and rain alerts.
 - Privacy policy: https://bfgapps.co/apps/cloudmesh/privacy.html; support: https://bfgapps.co/apps/cloudmesh/support.html
 
-Hyperlocal weather: minute-by-minute rain alerts, live radar, a forecast blended from many sources, air quality and 24 widgets.
+Hyperlocal weather: rain alerts, live radar, a forecast blended from many sources, air quality and 24 widgets.
 
 Who it is for: Anyone who wants accurate rain timing and a weather app without a subscription.
 
 **Does Cloudmesh have live radar?**
 
-Yes. Live rain radar follows your selected city so you can watch rain approach. Premium adds a minute-by-minute chart of the next hour.
+Yes. Live rain radar follows your selected city so you can watch rain approach. Premium adds a chart of the next hour of rain.
 
 **Is Cloudmesh a subscription?**
 

@@ -44,7 +44,7 @@ APP_TEXT = {
              "People who want to keep a cycle diary without an account or an Ondi server.",
              "No accounts and no Ondi server; logs stay on the device."),
     "cloudmesh": ("Cloudmesh: Rain Alerts & Radar", "Cloudmesh", "Weather",
-                  "Hyperlocal weather: minute-by-minute rain alerts, live radar, a forecast blended from many sources, air quality and 24 widgets.",
+                  "Hyperlocal weather: rain alerts, live radar, a forecast blended from many sources, air quality and 24 widgets.",
                   "Anyone who wants accurate rain timing and a weather app without a subscription.",
                   "No account; approximate location is used for forecasts and rain alerts."),
     "pacegrid": ("PaceGrid: GPS Running Tracker", "PaceGrid", "Health & Fitness",
