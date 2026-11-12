@@ -2,7 +2,7 @@
 
 > Privacy-first iPhone, iPad and Mac apps and games by Blue Flame Games, across finance, education, health, fitness, travel, weather, music, kids and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-11-11. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
+Last updated: 2026-11-12. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
 
 ## Company
 
@@ -283,7 +283,7 @@ Yes. In Myself mode it's your phone and your rules: you can change them in Setti
 
 **Do I need an account or a subscription?**
 
-No account and no sign-up. Every feature is free for 7 days; after that, a single one-time purchase unlocks Minua for good. No subscription.
+No account and no sign-up. Every feature is free for 7 days; after that, a single one-time purchase unlocks the full app. No subscription.
 
 ### Bellgrave — 3D Roguelike RPG
 
