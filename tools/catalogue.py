@@ -27,7 +27,7 @@ APP_TEXT = {
                   "11+ practice for ages 9 to 11: English, verbal reasoning, non-verbal reasoning and language aptitude (no maths), with daily plans, timed mock papers and parent progress insights.",
                   "Parents preparing a child for the 11+ for grammar and independent schools in England.",
                   "No account; data stays on the device."),
-    "arithmetix": ("Arithmetix - Times Tables SATs", "Arithmetix", "Education",
+    "arithmetix": ("Arithmetix: Times Tables Games", "Arithmetix", "Education",
                    "UK National Curriculum maths from Reception to Year 6 with spaced repetition, times tables practice for the Year 4 multiplication check, and virtual pet motivation.",
                    "UK primary school children and their parents.",
                    "No account; progress stays on the device."),
