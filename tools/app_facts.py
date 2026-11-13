@@ -56,6 +56,7 @@ PRICE = {
     "family_once": ["Free download; one purchase unlocks everything for the whole family", "Kostenloser Download; ein Kauf schaltet alles für die ganze Familie frei", "Descarga gratuita; una sola compra lo desbloquea todo para toda la familia", "Téléchargement gratuit ; un seul achat débloque tout pour toute la famille", "無料ダウンロード。1回の購入で家族全員のすべてを解放", "免费下载；一次购买即可为全家解锁全部内容"],
     "f2p": ["Free to play; optional in-app purchases", "Kostenlos spielbar; optionale In-App-Käufe", "Gratis; compras opcionales dentro de la app", "Gratuit ; achats intégrés facultatifs", "基本プレイ無料。アプリ内課金は任意", "免费游玩；可选内购"],
     "f2p_earn": ["Free to play; everything can be earned by playing, with optional purchases", "Kostenlos spielbar; alles lässt sich erspielen, Käufe sind optional", "Gratis; todo se puede ganar jugando, con compras opcionales", "Gratuit ; tout se gagne en jouant, achats facultatifs", "基本プレイ無料。すべてプレイで入手でき、購入は任意", "免费游玩；一切都能通过游戏获得，购买为可选"],
+    "f2p_farewars": ["Free to play; every decal and every part can be earned by playing, with optional purchases", "Kostenlos spielbar; jeder Aufkleber und jedes Teil lässt sich erspielen, Käufe sind optional", "Gratis; cada calcomanía y cada pieza se puede ganar jugando, con compras opcionales", "Gratuit ; chaque décalcomanie et chaque accessoire se gagne en jouant, achats facultatifs", "基本プレイ無料。どのデカールもどのパーツもプレイで入手でき、購入は任意", "免费游玩；每一款贴花和每一个部件都能通过游戏获得，购买为可选"],
     "hollowstead": ["Chapter 1 free; a one-time purchase unlocks the full game", "Kapitel 1 gratis; ein Einmalkauf schaltet das ganze Spiel frei", "Capítulo 1 gratis; un pago único desbloquea el juego completo", "Chapitre 1 gratuit ; un achat unique débloque le jeu complet", "第1章は無料。買い切りでゲーム全体を解放", "第 1 章免费；一次性购买解锁完整游戏"],
 }
 DATA = {
@@ -84,7 +85,7 @@ APPS = {
     "mergebash": ("6776048979", "f2p", "local", ["iPhone", "iPad"]),
     "keystrike": ("6763947075", "trial3", "local", ["iPhone", "iPad", "Mac"]),
     "penlicence": ("6761393693", "trial7", "local", ["iPhone", "iPad"]),
-    "farewars": ("6815887660", "f2p_earn", "local", ["iPhone", "iPad"]),
+    "farewars": ("6815887660", "f2p_farewars", "local", ["iPhone", "iPad"]),
     "robotrooftoprun": ("6811426255", "f2p", "local", ["iPhone", "iPad"]),
     "nitrometro": (None, "f2p_earn", "local", ["iPhone", "iPad"]),
     "hollowstead": (None, None, "local", ["iPhone", "iPad"])  # coming soon: no price claims,

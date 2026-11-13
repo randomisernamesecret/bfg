@@ -447,7 +447,7 @@ Custoda is built for iPhone and iPad. The app is available in English, German, S
 - App Store: https://apps.apple.com/app/id6815887660
 - Platforms: iPhone, iPad
 - Category: Games
-- Price: Free to play; everything can be earned by playing, with optional purchases
+- Price: Free to play; every decal and every part can be earned by playing, with optional purchases
 - Privacy: No ads; progress stays on the device.
 - Privacy policy: https://bfgapps.co/apps/farewars/privacy.html; support: https://bfgapps.co/apps/farewars/support.html
 
@@ -461,7 +461,7 @@ Right now. Fare Wars is out on the App Store for iPhone and iPad and is free to 
 
 **Is Fare Wars free?**
 
-Yes, it's free to play. The optional purchases are a Coin Crate, Double Fares and two style packs, and everything can be earned by playing.
+Yes, it's free to play. The optional purchases are a Coin Crate, Double Fares and two style packs. Every decal and every part can be earned by playing.
 
 **Are there ads?**
 
