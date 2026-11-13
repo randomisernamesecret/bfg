@@ -403,27 +403,27 @@ You can't import PDFs. You can import MIDI files (.mid, .midi), and Keystrike tu
 
 Both. The early grades are gentle enough for a focused eight-year-old; the later grades go deep enough for adults tackling advanced repertoire.
 
-### Custoda: Expiry Tracker
+### Custoda: Pantry Expiry Tracker
 
 - Page: https://bfgapps.co/apps/custoda/
 - App Store: https://apps.apple.com/app/id6787263003
-- Platforms: iPhone
+- Platforms: iPhone, iPad
 - Category: Food & Drink
 - Price: Free version; 7-day trial of everything, then a one-time purchase
 - Privacy: No account; data stays on the device, and barcode lookups send only the barcode number.
 - Privacy policy: https://bfgapps.co/apps/custoda/privacy.html; support: https://bfgapps.co/apps/custoda/support.html
 
-Pantry, expiry and allergen tracker: scan to track expiry dates, allergen and diet warnings that say "unverified" when data is missing, recipes ranked by what you have, a household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits.
+Pantry, expiry and avoid-list tracker: scan to track expiry dates, get a warning when something from your avoid list turns up and "Read the label" when nothing does, 818 recipes ranked by what you have, a household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits.
 
-Who it is for: Households that want to waste less food and stay safe with allergens.
+Who it is for: Households that want to waste less food and be warned about the ingredients they avoid.
 
 **Do I need an account?**
 
-No. Custoda works without sign-up. Your shelf, reminders and allergen and diet profile live on your iPhone. The optional household features use your own iCloud, and only when you turn them on.
+No. Custoda works without sign-up. Your shelf, reminders and avoid list live on your device. The optional household features use your own iCloud, and only when you turn them on.
 
-**Can Custoda tell me a product is safe?**
+**What does Custoda say when it finds nothing?**
 
-No, and it never claims to. It flags ingredients on your avoid list when product information is available, and says "unverified" when data is missing or incomplete. Product data comes from open, community databases. Always check the packaging. Custoda is not medical advice.
+“Read the label.” Custoda warns you when it finds something from your avoid list in the information it has, and it never says a product is all right. Read the pack every time, and never use Custoda as the only way to manage a severe allergy. Custoda is not medical advice.
 
 **How does household sharing work?**
 
@@ -435,11 +435,11 @@ Yes. Keep food and drink, medicines, toiletries and household supplies in one in
 
 **What does it cost?**
 
-Try every feature for 7 days with up to 20 items. After the trial you can keep up to 5 items and 3 avoid-list entries free, and warnings for everything on your avoid list are always shown. A one-time purchase adds diets, unlimited items and avoid-list entries, expiry reminders, household sharing (shared list, shared pantry and dinner vote) and recipe sharing. There is no subscription.
+Try every feature for 7 days with up to 20 items. After the trial you can keep up to 5 items free, along with medicine and safety reminders, scanning, recipes and your whole avoid list with its warnings. A one-time purchase adds unlimited items, reminders for food and household items, filtering recipes by diet, and sharing with your household (shared list, shared pantry and dinner vote). There is no subscription.
 
 **Which devices and languages?**
 
-Custoda is built for iPhone. The app is available in English, German, Spanish, French, Japanese and Simplified Chinese, with light and dark themes that follow your device.
+Custoda is built for iPhone and iPad. The app is available in English, German, Spanish, French, Japanese and Simplified Chinese, with light and dark themes that follow your device.
 
 ### Fare Wars
 

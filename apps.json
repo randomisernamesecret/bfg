@@ -436,7 +436,7 @@
       ]
     },
     {
-      "name": "Custoda: Expiry Tracker",
+      "name": "Custoda: Pantry Expiry Tracker",
       "shortName": "Custoda",
       "slug": "custoda",
       "appStoreId": "6787263003",
@@ -444,10 +444,11 @@
       "appStoreUrl": "https://apps.apple.com/app/id6787263003",
       "category": "Food & Drink",
       "platforms": [
-        "iPhone"
+        "iPhone",
+        "iPad"
       ],
-      "summary": "Pantry, expiry and allergen tracker: scan to track expiry dates, allergen and diet warnings that say \"unverified\" when data is missing, recipes ranked by what you have, a household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits.",
-      "audience": "Households that want to waste less food and stay safe with allergens.",
+      "summary": "Pantry, expiry and avoid-list tracker: scan to track expiry dates, get a warning when something from your avoid list turns up and \"Read the label\" when nothing does, 818 recipes ranked by what you have, a household shopping list and dinner vote via private iCloud invitations, replace-by dates for smoke alarms and first-aid kits.",
+      "audience": "Households that want to waste less food and be warned about the ingredients they avoid.",
       "priceModel": "Free version; 7-day trial of everything, then a one-time purchase",
       "privacy": "No account; data stays on the device, and barcode lookups send only the barcode number.",
       "account": "Not needed",
