@@ -2,7 +2,7 @@
 
 > Privacy-first iPhone, iPad and Mac apps and games by Blue Flame Games, across finance, education, health, fitness, travel, weather, music, kids and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-11-12. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
+Last updated: 2026-11-13. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
 
 ## Company
 
@@ -77,7 +77,7 @@ No. There's no sign-up. Profiles and progress are stored only on the device, beh
 
 **How does pricing work?**
 
-Everything is free to try for 7 days. After that, one in-app purchase unlocks the full app for every child profile, with no subscription and no ads. Read an honest comparison with similar apps.
+Everything is free to try for 7 days. After that, one in-app purchase unlocks the full app for every child profile, with no subscription and no ads.
 
 ### Arithmetix: Times Tables Games
 
