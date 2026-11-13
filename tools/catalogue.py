@@ -34,7 +34,7 @@ APP_TEXT = {
     "sparks-studios": ("Doodlebee: Coloring & Drawing", "Doodlebee", "Games",
                        "Drawing and coloring app for kids and grown-ups: draw any shape, tap to fill it and watch it dance, with pages to color by hand or by number, storybooks read aloud and music.",
                        "Children and families who want a calm, safe creative app.",
-                       "No ads, no accounts; nothing leaves the device."),
+                       "No ads, no accounts; nothing a child draws, writes or composes is uploaded."),
     "photoflight": ("PhotoFlight: Travel Photo Map", "PhotoFlight", "Travel",
                     "Travel map built from the location data already in your photos: countries, cities, flights and achievements, with no live tracking needed. Includes PhotoGuessr, a family game where everyone secretly pins where one of your photos was taken.",
                     "Travellers who want a map of past trips from the photos they already have.",
