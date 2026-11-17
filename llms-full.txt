@@ -2,7 +2,7 @@
 
 > Privacy-first iPhone, iPad and Mac apps and games by Blue Flame Games, across finance, education, health, fitness, travel, weather, music, kids and games. No third-party ads, no tracking-first business model. Your data stays on your device wherever the product allows.
 
-Last updated: 2026-11-13. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
+Last updated: 2026-11-17. Short index: https://bfgapps.co/llms.txt. Machine-readable catalogue: https://bfgapps.co/apps.json
 
 ## Company
 
@@ -371,7 +371,7 @@ No. Try Inkla free for 7 days, then unlock it with a one-time in-app purchase. N
 - App Store: https://apps.apple.com/app/id6763947075
 - Platforms: iPhone, iPad, Mac
 - Category: Education
-- Price: 3-day free trial, then a one-time purchase
+- Price: 7-day free trial, then a one-time purchase
 - Privacy: No account, no ads, no tracking; progress and recordings stay on the device.
 - Privacy policy: https://bfgapps.co/apps/keystrike/privacy.html; support: https://bfgapps.co/apps/keystrike/support.html
 

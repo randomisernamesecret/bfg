@@ -83,7 +83,7 @@ APPS = {
     "cardbash": ("6775067276", "f2p", "local", ["iPhone", "iPad"]),
     "custoda": ("6787263003", "freetier7", "custoda", ["iPhone", "iPad"]),
     "mergebash": ("6776048979", "f2p", "local", ["iPhone", "iPad"]),
-    "keystrike": ("6763947075", "trial3", "local", ["iPhone", "iPad", "Mac"]),
+    "keystrike": ("6763947075", "trial7", "local", ["iPhone", "iPad", "Mac"]),
     "penlicence": ("6761393693", "trial7", "local", ["iPhone", "iPad"]),
     "farewars": ("6815887660", "f2p_farewars", "local", ["iPhone", "iPad"]),
     "robotrooftoprun": ("6811426255", "f2p", "local", ["iPhone", "iPad"]),
