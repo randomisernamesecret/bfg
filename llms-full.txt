@@ -397,7 +397,7 @@ No. Keystrike is local-first, so progress, recordings and imported MIDI files st
 
 **Can I use my own sheet music?**
 
-You can't import PDFs. You can import MIDI files (.mid, .midi), and Keystrike turns them into playable sheet music automatically.
+You can't import PDFs. You can import your own MIDI files (.mid, .midi), and Keystrike turns them into playable sheet music automatically. You can also import a piano recording: Keystrike finds the notes in it on your device, and you play along with them.
 
 **Is it for children or adults?**
 
