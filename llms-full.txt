@@ -375,7 +375,7 @@ No. Try Inkla free for 7 days, then unlock it with a one-time in-app purchase. N
 - Privacy: No account, no ads, no tracking; progress and recordings stay on the device.
 - Privacy policy: https://bfgapps.co/apps/keystrike/privacy.html; support: https://bfgapps.co/apps/keystrike/support.html
 
-Piano lessons: graded course from Grade 0 to Grade 8, sight-reading, ear training, built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import.
+Piano lessons: graded course from Grade 0 to Grade 8, sight-reading, ear training, built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, import of your own MIDI files or a piano recording.
 
 Who it is for: Beginners, returning players and self-taught learners who want a structured path.
 

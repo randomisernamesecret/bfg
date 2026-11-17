@@ -72,7 +72,7 @@ APP_TEXT = {
                    "Children learning to write and the adults teaching them.",
                    "On the device, no accounts."),
     "keystrike": ("Keystrike: Piano Sight Reading", "Keystrike", "Education",
-                  "Piano lessons: graded course from Grade 0 to Grade 8, sight-reading, ear training, built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, MIDI import.",
+                  "Piano lessons: graded course from Grade 0 to Grade 8, sight-reading, ear training, built-in pieces as engraved sheet music or falling notes, MIDI keyboard or on-screen piano, import of your own MIDI files or a piano recording.",
                   "Beginners, returning players and self-taught learners who want a structured path.",
                   "No account, no ads, no tracking; progress and recordings stay on the device."),
     "custoda": ("Custoda: Pantry Expiry Tracker", "Custoda", "Food & Drink",
