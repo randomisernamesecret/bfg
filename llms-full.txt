@@ -393,7 +393,7 @@ No. Keystrike is built for iPhone, iPad, and Mac.
 
 **Will my progress sync between devices?**
 
-No. Keystrike is local-first, so progress, recordings and imported MIDI files stay on the device they were created on. You can back them up and export them.
+No. Keystrike is local-first, so progress, recordings and imported MIDI files stay on the device they were created on. You can back them up and export them. Imported piano recordings stay on the device too.
 
 **Can I use my own sheet music?**
 
